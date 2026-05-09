@@ -108,6 +108,6 @@ venv.bak
 .vscode/
 
 # Data files
-scratch/
 data/sample/
 data/output/
+logs/

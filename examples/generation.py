@@ -8,15 +8,28 @@ from pprint import pprint
 import json
 from pathlib import Path
 import os
+from time import perf_counter
 from dotenv import load_dotenv
 
 load_dotenv()
 
+process_start = perf_counter()
+step_start = process_start
+
+
+def log_step_timing(step_name: str, start: float) -> float:
+    now = perf_counter()
+    print(f"[timer] {step_name}: {now - start:.3f}s")
+    return now
+
+
 # 1. Define source
 source = {"data": os.getenv("DATA_FILE")}
+step_start = log_step_timing("Define source", step_start)
 
 # 2. Create context
 context = create_context(source=source, name="my_dataset")
+step_start = log_step_timing("Create context", step_start)
 
 print("------------------- Starting Plan Generation and Execution -------------------")
 print(f"Data source: {source['data']}")
@@ -35,6 +48,7 @@ plan = orchestrator.generate_plan(
     context=context,
     metadata_standard=METADATA_STANDARDS["spatial_ecological"]
 )
+step_start = log_step_timing("Generate plan", step_start)
 print("Generated Plan:")
 pprint(plan)
 
@@ -51,6 +65,7 @@ result = executor.execute(
     metadata_standard=METADATA_STANDARDS["spatial_ecological"],
     metadata_standard_name="spatial_ecological"
 )
+step_start = log_step_timing("Execute plan", step_start)
 
 # 5. Get metadata
 metadata_output = result.final_workspace['metadata_output']
@@ -61,4 +76,6 @@ with (output_dir / f"metadata_{context.name}.json").open("w", encoding="utf-8") 
 
 print("Extracted Metadata:")
 print(metadata_output)
+step_start = log_step_timing("Write metadata", step_start)
+print(f"[timer] Whole process: {step_start - process_start:.3f}s")
 print("------------------- End of Execution -------------------")
