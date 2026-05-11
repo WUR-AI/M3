@@ -1,7 +1,11 @@
 # Streamlit Demo
 ## Run
 ```bash
-streamlit run demo/pages/metadata_generation.py
+uv run --group demo streamlit run demo_app.py
+```
+or 
+```bash
+make demo
 ```
 
 ## Folder roles

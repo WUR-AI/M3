@@ -28,6 +28,7 @@ line-length = 88
 target-version = "py312"
 
 include = [
+  "demo_app.py",
   "demo/**/*.py",
   "examples/**/*.py",
   "tests/**/*.py",
@@ -50,4 +51,3 @@ docs = [
     "sphinx-autoapi>=3.0,<4",
     "sphinx-copybutton>=0.5,<0.6",
 ]
-

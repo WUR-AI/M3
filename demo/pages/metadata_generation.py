@@ -5,16 +5,10 @@ triggering the workflow, caching results in Streamlit session state, and
 rendering the workflow output.
 """
 
-import sys
-from pathlib import Path
 from typing import Any
 
 import streamlit as st
 from streamlit.runtime.uploaded_file_manager import UploadedFile
-
-ROOT = Path(__file__).resolve().parents[2]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
 
 from demo.workflows.metadata_generation import (
     SUPPORTED_FILE_TYPES,
@@ -206,4 +200,5 @@ def main() -> None:
         render_result(cached_result)
 
 
-main()
+if __name__ == "__main__":
+    main()

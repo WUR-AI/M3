@@ -58,13 +58,13 @@ install-demo:
 	$(UV) sync --no-default-groups --group demo  # install dependencies for demo group
 	
 demo: install-demo
-	$(UV) run streamlit run demo/pages/metadata_generation.py
+	$(UV) run --group demo streamlit run demo_app.py
 
 lint:
 	$(UV) run ruff check .
 
 compile:
-	$(UV) run python -m compileall src demo tests
+	$(UV) run python -m compileall src demo tests demo_app.py
 
 test:
 	$(UV) run python -m unittest discover -s tests -p 'test*.py'
