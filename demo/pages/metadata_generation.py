@@ -12,6 +12,10 @@ from typing import Any
 import streamlit as st
 from streamlit.runtime.uploaded_file_manager import UploadedFile
 
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from demo.workflows.metadata_generation import (
     SUPPORTED_FILE_TYPES,
     available_metadata_standards,
@@ -21,11 +25,6 @@ from demo.workflows.metadata_generation import (
     load_preview,
     uploaded_file_key,
 )
-
-
-ROOT = Path(__file__).resolve().parents[2]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
 
 
 def render_controls() -> tuple[UploadedFile | None, str]:
