@@ -3,3 +3,5 @@ The complete API reference is generated and rendered by Sphinx, which right now 
 ```bash
 make docs
 ```
+
+Change the configuration in `docs/conf.py`. 

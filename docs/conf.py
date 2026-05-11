@@ -25,7 +25,7 @@ extensions = [
 ]
 
 autoapi_type = "python"
-autoapi_dirs = [str(ROOT / "src")]
+autoapi_dirs = [str(ROOT / "src"), str(ROOT / "demo")]
 autoapi_root = "reference"
 autoapi_keep_files = False
 autoapi_options = [

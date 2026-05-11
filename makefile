@@ -6,7 +6,7 @@ PYTHON-VERSION := 3.11
 PYTHON := $(VENV)/bin/python
 RUFF := $(VENV)/bin/ruff
 
-.PHONY: help uv-setup uv-clean activate install-docs docs docs-clean lint compile test ci
+.PHONY: help uv-setup uv-clean activate install-docs docs docs-update docs-clean lint compile test ci
 
 help:
 	@printf '%s\n' \
@@ -16,6 +16,7 @@ help:
 		'  make uv-clean   - clean the uv virtual environment and uv lock, keep pyproject.toml' \
 		'  make install-docs - build packages from . and install basic dependencies plus those under the docs group' \
 		'  make docs       - build the documentation and open it in the browser' \
+		'  make docs-update - update the documentation' \
 		'  make docs-clean - clean the generated documentation files' \
 		'  make lint       - run ruff linter on the codebase' \
 		'  make compile    - compile the source code to check for syntax errors' \
@@ -50,6 +51,9 @@ docs: install-docs
 	$(UV) run sphinx-build -b html docs docs/_build/html
 	open docs/_build/html/index.html
 
+docs-update:
+	$(UV) run sphinx-build -b html docs docs/_build/html
+	
 docs-clean:
 	rm -rf docs/_build docs/generated
 
