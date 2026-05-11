@@ -1,3 +1,5 @@
+"""Example: send a chat completion request and print the assistant response."""
+
 import json
 import requests
 import os
