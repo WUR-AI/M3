@@ -2,7 +2,6 @@
 Unified Player class for the multi-agent system.
 
 A ``Player`` is a self-contained agent that can:
-
     1. Execute tasks using tools.
     2. Participate in debates by generating work, critiquing, and revising.
     3. Synthesize results from multiple sources.
