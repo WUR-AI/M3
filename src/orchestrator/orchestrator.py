@@ -187,6 +187,19 @@ class Orchestrator:
     def generate_plan(
         self, context: ExecutionContext, metadata_standard: str
     ) -> Optional[Plan]:
+        """Generate an executable metadata extraction plan for a context.
+
+        Classifies the context, builds the player manifest and context summary,
+        invokes the appropriate planning chain, and returns the parsed plan.
+        Returns ``None`` if the planner fails or produces an invalid response.
+
+        Args:
+            context: Execution context containing the available resources.
+            metadata_standard: Metadata standard the generated plan should target.
+
+        Returns:
+            A generated plan when planning succeeds; otherwise ``None``.
+        """
         classified_type = self._classify_context_for_planning(context)
         is_multi_context = classified_type in self.MULTI_CONTEXT_TYPES
 
