@@ -2,3 +2,4 @@ data/sample/
 logs/
 .env
 nginx.metadata-demo.conf
+deploy.sh

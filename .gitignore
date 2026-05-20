@@ -114,3 +114,4 @@ logs/
 
 # Deployment
 nginx.metadata-demo.conf
+deploy.sh
