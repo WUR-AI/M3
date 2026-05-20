@@ -111,3 +111,6 @@ venv.bak
 data/sample/
 data/output/
 logs/
+
+# Deployment
+nginx.metadata-demo.conf

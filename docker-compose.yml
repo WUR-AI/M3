@@ -4,5 +4,17 @@ services:
     restart: unless-stopped
     env_file:
       - .env
+    expose:
+      - "8501"
+
+  nginx:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    depends_on:
+      - metadata-demo
+    environment:
+      SERVER_NAME: ${SERVER_NAME:-_}
     ports:
-      - "127.0.0.1:8501:8501"
+      - "80:80"
+    volumes:
+      - ./nginx.metadata-demo.conf:/etc/nginx/templates/default.conf.template:ro
