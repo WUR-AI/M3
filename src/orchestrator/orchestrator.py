@@ -286,6 +286,18 @@ class Orchestrator:
         metadata_standard: str,
         metadata_standard_name: Optional[str] = None,
     ) -> ExecutionResult:
+        """
+        A wrapper around the PlanExecutor to run a plan with the given context and metadata standard. 
+
+        Args:
+            plan: The plan to execute.
+            context: Execution context containing source data and derived state.
+            metadata_standard: Metadata standard content used by executor steps.
+            metadata_standard_name: Optional standard name for structured output.
+
+        Returns:
+            ExecutionResult produced by the plan executor.
+        """
         context_key = f"ctx_{uuid.uuid4().hex[:8]}"
         register_context(context_key, context)
 
