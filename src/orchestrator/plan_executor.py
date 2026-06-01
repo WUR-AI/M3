@@ -120,9 +120,11 @@ class PlanExecutor:
         for step_index, step_dict in enumerate(plan_steps):
             target_resources = step_dict.get("target_resources", [])
 
+            task = step_dict.get("task", "unknown")
+            logging.info(f"[ui] Step {step_index + 1}: {task}")
             logging.info("")
             logging.info(f"{'='*20} STEP {step_index + 1}/{len(plan_steps)} {'='*20}")
-            logging.info(f"Task: {step_dict.get('task', 'Unknown')}")
+            logging.info(f"Task: {task}")
             logging.info(f"Player: {step_dict.get('player', 'Unknown')}")
             logging.info(f"Rationale: {step_dict.get('rationale', 'None')}")
             if target_resources:

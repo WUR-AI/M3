@@ -4,7 +4,6 @@ Textual-based terminal UI for Metadata Agent.
 
 from pathlib import Path
 import logging
-from pprint import pformat
 import queue
 import threading
 
@@ -50,6 +49,16 @@ from src.tui.references import (
 )
 from src.orchestrator import Orchestrator
 from src.orchestrator.utils import validate_plan_dataflow, validate_plan_tool_compatibility
+from src.tui.metadata_renderer import format_metadata
+from src.tui.plan_renderer import format_plan
+from src.tui.clipboard import (
+    app_quit_bindings,
+    clipboard_shortcut_hint,
+    copy_paste_bindings,
+    read_clipboard,
+    system_clipboard_available,
+    write_system_clipboard,
+)
 from src.context import create_context
 
 
@@ -79,22 +88,24 @@ class TUILogHandler(logging.Handler):
 
     def emit(self, record: logging.LogRecord) -> None:
         try:
-            message = self.format(record)
-            # Reduce noise in TUI: skip artifact dump logs.
-            artifact_markers = (
-                "Artifacts produced:",
-                "Produced artifacts:",
-                "Final Workspace Artifacts",
-                "'artifacts':",
-                '"artifacts":',
-            )
-            if any(marker in message for marker in artifact_markers):
+            message = record.getMessage()
+            if not message.startswith("[ui]"):
+                if self.ui_verbosity == "debug":
+                    formatted = self.format(record)
+                    artifact_markers = (
+                        "Artifacts produced:",
+                        "Produced artifacts:",
+                        "Final Workspace Artifacts",
+                        "'artifacts':",
+                        '"artifacts":',
+                    )
+                    if not any(marker in formatted for marker in artifact_markers):
+                        self.app.ui_events.put(("log", formatted, False))
                 return
-            self.app.ui_events.put(("status", message, False))
+            display = message[5:].strip() if message.startswith("[ui] ") else message[4:].strip()
+            self.app.ui_events.put(("status", display, False))
             if self.ui_verbosity == "debug":
-                self.app.ui_events.put(("log", message, False))
-            elif self.ui_verbosity == "normal" and "[ui]" in message:
-                self.app.ui_events.put(("log", message, False))
+                self.app.ui_events.put(("log", self.format(record), False))
         except Exception:
             # Logging should never crash the UI.
             pass
@@ -140,6 +151,18 @@ class PromptTextArea(TextArea):
     def action_complete_suggestion(self) -> None:
         if isinstance(self.app, MetadataTUI):
             self.app._handle_prompt_tab(self)
+
+    def action_paste(self) -> None:
+        """Paste from the OS clipboard (Textual's default only reads the in-app copy)."""
+        if self.read_only:
+            return
+        clipboard = read_clipboard()
+        if not clipboard:
+            clipboard = self.app.clipboard
+        if not clipboard:
+            return
+        if result := self._replace_via_keyboard(clipboard, *self.selection):
+            self.move_cursor(result.end_location)
 
     def get_line(self, line_index: int) -> Text:
         line = super().get_line(line_index)
@@ -239,6 +262,8 @@ class MetadataTUI(App):
     .message {
         width: 100%;
         margin: 0;
+        overflow-x: hidden;
+        text-wrap: wrap;
     }
 
     .user-message {
@@ -260,7 +285,10 @@ class MetadataTUI(App):
         .replace("__GLOBAL_BACKGROUND__", GLOBAL_BACKGROUND)
     )
 
-    BINDINGS = [("ctrl+c", "quit", "Quit"), ("escape", "quit", "Quit")]
+    BINDINGS = [
+        *copy_paste_bindings(),
+        *app_quit_bindings(),
+    ]
     reference_root = Path.cwd()
     standard_names = sorted(METADATA_STANDARDS.keys())
     reference_session: ReferenceSessionState
@@ -313,13 +341,24 @@ class MetadataTUI(App):
     def _update_status_line(self, message: str) -> None:
         status_widget = self.query_one("#status_line", Static)
         if not self.backend_running:
+            self._status_message = ""
             status_widget.update("")
             status_widget.display = False
             return
         status_widget.display = True
+        self._status_message = self._sanitize_status_message(message)
+        self._render_status_line()
+
+    def _tick_status_moon(self) -> None:
+        if not self.backend_running or not self._status_message:
+            return
+        self.status_icon_index = (self.status_icon_index + 1) % len(self.STATUS_ICONS)
+        self._render_status_line()
+
+    def _render_status_line(self) -> None:
+        status_widget = self.query_one("#status_line", Static)
         icon = self.STATUS_ICONS[self.status_icon_index % len(self.STATUS_ICONS)]
-        self.status_icon_index += 1
-        clean = self._sanitize_status_message(message)
+        clean = self._status_message
         max_len = max(16, status_widget.size.width - 6) if status_widget.size.width else 80
         if len(clean) > max_len:
             clean = clean[: max_len - 3].rstrip() + "..."
@@ -420,7 +459,9 @@ class MetadataTUI(App):
         self.ui_events = queue.Queue()
         self._reset_at_suggestions()
         self.status_icon_index = 0
+        self._status_message = ""
         self.set_interval(0.1, self._flush_ui_events)
+        self.set_interval(1.0, self._tick_status_moon)
 
         self.reference_session = ReferenceSessionState()
         try:
@@ -471,6 +512,7 @@ class MetadataTUI(App):
                 self._append_dialog(message, markup=markup)
             elif kind == "done":
                 self.backend_running = False
+                self._status_message = ""
                 input_widget = self.query_one("#user_input", TextArea)
                 suggestions_widget = self.query_one("#command_suggestions", Static)
                 input_widget.disabled = False
@@ -485,11 +527,73 @@ class MetadataTUI(App):
             elif kind == "status":
                 self._update_status_line(message)
 
+    def action_copy_selection(self) -> None:
+        """Copy the current selection (focused widget or screen) to the clipboard.
+
+        Bound to Ctrl+Shift+C on Linux; mirrors the terminal copy convention.
+        """
+        text = self._current_selection_text()
+        if not text:
+            self.notify("Select some text first, then copy.", severity="warning", timeout=2)
+            return
+        self.copy_to_clipboard(text)
+
+    def action_paste_clipboard(self) -> None:
+        """Paste the OS clipboard into the prompt (Ctrl+Shift+V on Linux)."""
+        if self.backend_running:
+            return
+        focused = self.focused
+        if isinstance(focused, PromptTextArea):
+            focused.action_paste()
+
+    def _current_selection_text(self) -> str:
+        focused = self.focused
+        selected = getattr(focused, "selected_text", "") or ""
+        if selected:
+            return selected
+        try:
+            screen_text = self.screen.get_selected_text()
+        except Exception:
+            screen_text = None
+        return screen_text or ""
+
+    def copy_to_clipboard(self, text: str) -> None:
+        """Copy to the real OS clipboard, then fall back to Textual's OSC 52 path.
+
+        Every native copy route (TextArea Ctrl+C, screen text-selection Ctrl+C)
+        funnels through here, so overriding it makes copy work everywhere even
+        when the terminal ignores OSC 52.
+        """
+        # Keep Textual's internal clipboard and OSC 52 sequence for paste/SSH.
+        super().copy_to_clipboard(text)
+        if not text:
+            return
+
+        if write_system_clipboard(text):
+            preview = text.replace("\n", " ").strip()
+            if len(preview) > 40:
+                preview = preview[:40] + "..."
+            self.notify(f"Copied: {preview}", timeout=2)
+        elif not system_clipboard_available():
+            self.notify(
+                "Copied via terminal escape. For reliable copy install "
+                "wl-clipboard (Wayland) or xclip/xsel (X11).",
+                severity="warning",
+                timeout=5,
+            )
+
+    def _dialog_content_width(self) -> int | None:
+        panel = self.query_one("#panel", Container)
+        if panel.size.width > 0:
+            return max(40, panel.size.width - 6)
+        return None
+
     def _run_pipeline_worker(
         self,
         *,
         source_files: list[str],
         chosen_standard: str,
+        render_width: int | None = None,
     ) -> None:
         if self.orchestrator is None:
             self.ui_events.put(("message", "[red]Backend is not initialized. Unable to run pipeline.[/red]", True))
@@ -499,9 +603,7 @@ class MetadataTUI(App):
         try:
             standard_prompt = METADATA_STANDARDS[chosen_standard]
             output_schema = get_schema_for_standard(chosen_standard)
-            if output_schema:
-                self.ui_events.put(("status", f"Using schema: {output_schema.__name__}", False))
-            else:
+            if not output_schema:
                 self.ui_events.put(
                     (
                         "message",
@@ -509,10 +611,9 @@ class MetadataTUI(App):
                         True,
                     )
                 )
-            self.ui_events.put(("status", "Generating execution context...", False))
             context = create_context(source_files, name="tui_context")
 
-            self.ui_events.put(("status", "Generating plan...", False))
+            self.ui_events.put(("status", "planning", False))
             plan = self.orchestrator.generate_plan(
                 context=context,
                 metadata_standard=standard_prompt,
@@ -522,11 +623,10 @@ class MetadataTUI(App):
                 self.ui_events.put(("done", "", False))
                 return
 
-            plan_dict = plan.to_dict_list()
             self.ui_events.put(
                 (
                     "message",
-                    "[bold cyan]Execution Plan[/bold cyan]\n" + pformat(plan_dict, width=100, sort_dicts=False),
+                    format_plan(plan, width=render_width),
                     True,
                 )
             )
@@ -542,7 +642,6 @@ class MetadataTUI(App):
                             True,
                         )
                     )
-                    self.ui_events.put(("status", "Plan validation failed (dataflow).", False))
                 else:
                     allowed_players = set(self.orchestrator._get_effective_player_pool(context))
                     tools_ok, tools_msg = validate_plan_tool_compatibility(
@@ -557,11 +656,9 @@ class MetadataTUI(App):
                             True,
                         )
                     )
-                    self.ui_events.put(("status", "Plan validation failed (tool compatibility).", False))
                 self.ui_events.put(("done", "", False))
                 return
 
-            self.ui_events.put(("status", "Executing plan...", False))
             result = self.orchestrator.execute_plan(
                 plan=plan,
                 context=context,
@@ -571,18 +668,15 @@ class MetadataTUI(App):
             if result is None:
                 self.ui_events.put(("message", "[red]Pipeline run failed: no result returned.[/red]", True))
             elif result.final_metadata:
-                self.ui_events.put(("status", f"Completed with @{chosen_standard}.", False))
                 self.ui_events.put(("message", f"Pipeline completed with @{chosen_standard}.", False))
                 self.ui_events.put(
                     (
                         "message",
-                        "[bold cyan]Final Metadata[/bold cyan]\n"
-                        + pformat(result.final_metadata, width=100, sort_dicts=False),
+                        format_metadata(result.final_metadata, width=render_width),
                         True,
                     )
                 )
             else:
-                self.ui_events.put(("status", f"Completed with @{chosen_standard} (no final metadata).", False))
                 self.ui_events.put(
                     (
                         "message",
@@ -601,7 +695,8 @@ class MetadataTUI(App):
                 Static("Metadata Agent", id="title"),
                 Static(
                     "This tool works with dataset and table metadata. "
-                    "Describe your need, or type /help for available commands.",
+                    "Describe your need, or type /help for available commands. "
+                    + clipboard_shortcut_hint(),
                     id="welcome",
                 ),
                 Vertical(id="messages"),
@@ -817,11 +912,14 @@ class MetadataTUI(App):
             input_widget.disabled = True
             input_widget.display = False
             self.query_one("#command_suggestions", Static).display = False
-            self.ui_events.put(("status", f"Running pipeline with @{chosen_standard}...", False))
             self._append_dialog(f"Running pipeline with @{chosen_standard}...")
             threading.Thread(
                 target=self._run_pipeline_worker,
-                kwargs={"source_files": source, "chosen_standard": chosen_standard},
+                kwargs={
+                    "source_files": source,
+                    "chosen_standard": chosen_standard,
+                    "render_width": self._dialog_content_width(),
+                },
                 daemon=True,
             ).start()
             return

@@ -197,6 +197,7 @@ class Orchestrator:
         classified_type = self._classify_context_for_planning(context)
         is_multi_context = classified_type in self.MULTI_CONTEXT_TYPES
 
+        logging.info("[ui] planning")
         logging.info("=" * 60)
         logging.info("GENERATING PLAN")
         logging.info(f"Context: {context.name}")
