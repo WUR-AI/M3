@@ -145,7 +145,7 @@ class Orchestrator:
                         config.get("tools", []), context.context_type
                     )
                 player = create_player_from_config(
-                    config, name=role_name, role_key=role_name
+                    config, name=role_name
                 )
                 manifest_parts.append(player.get_tool_manifest())
 

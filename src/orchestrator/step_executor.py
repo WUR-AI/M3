@@ -449,7 +449,7 @@ def create_step_state(
     )
     for i in range(players_per_step):
         player = create_player_from_config(
-            config, name=f"{role_to_use}_{i+1}", role_key=role_to_use
+            config, name=f"{role_to_use}_{i+1}"
         )
         players.append(player)
     

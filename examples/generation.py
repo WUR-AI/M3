@@ -113,6 +113,7 @@ step_start = log_step_timing("Execute plan", step_start)
 
 # 5. Collect and persist the final metadata output produced by the plan.
 log_step_section(5, "Write metadata")
+
 metadata_output = result.final_workspace['metadata_output']
 output_dir = Path(example_config.OUTPUT_DIR)
 output_dir.mkdir(parents=True, exist_ok=True)
