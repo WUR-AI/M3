@@ -77,3 +77,7 @@ ci-install:
 	$(UV) sync --locked --no-default-groups
 
 ci: lint compile test
+
+tui:
+	$(UV) pip install -e .
+	metadata-agent --tui
