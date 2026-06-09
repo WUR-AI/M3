@@ -9,8 +9,6 @@ resulting metadata JSON to disk.
 from src.orchestrator import Orchestrator
 from src.standards import METADATA_STANDARDS
 from src.context.context_factory import create_context
-from src.orchestrator.plan_executor import PlanExecutor
-from src.tools.context_tools import register_context
 from src import config as agent_config
 from examples import config as example_config
 import json
