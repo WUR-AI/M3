@@ -26,12 +26,19 @@ file_set_standard: Dict[str, Dict[str, Any]] = {
 }
 
 record_set_standard: Dict[str, Dict[str, Any]] = {
-    "field": {
-        "type": "CroissantField",
+    "source": {
+        "type": str,
         "default": ...,
-        "description": "Field metadata describing a record.",
+        "description": "Source file name for this record set.",
+        "prompt_hint": "e.g. 'file_a.csv', 'file_b.csv'.",
+    },
+    "fields": {
+        "type": List["CroissantField"],
+        "default": [],
+        "description": "Column definitions for this record set.",
         "prompt_hint": (
-            "Field object with source, dataType, isArray, arrayShape, references."
+            "One CroissantField per dataset column; each must include source "
+            "(column header name), dataType, isArray, arrayShape, references."
         ),
     },
     "key": {
@@ -39,12 +46,6 @@ record_set_standard: Dict[str, Dict[str, Any]] = {
         "default": None,
         "description": "Primary key field for records.",
         "prompt_hint": "Field uniquely identifying a record.",
-    },
-    "data": {
-        "type": List[str],
-        "default": [],
-        "description": "References to fields that compose the record.",
-        "prompt_hint": "List of field identifiers.",
     },
     "examples": {
         "type": List[str],
@@ -55,8 +56,13 @@ record_set_standard: Dict[str, Dict[str, Any]] = {
     "annotation": {
         "type": Optional[str],
         "default": None,
-        "description": "Additional annotation or comments.",
-        "prompt_hint": "Optional notes about the RecordSet.",
+        "description": (
+            "Short summary of what this table contains (one sentence, under 25 words)."
+        ),
+        "prompt_hint": (
+            "One concise sentence: what the table holds and its role, e.g. "
+            "'Species names and taxonomy codes' or 'Sampling locations and dates'."
+        ),
     },
 }
 
@@ -64,8 +70,8 @@ field_standard: Dict[str, Dict[str, Any]] = {
     "source": {
         "type": str,
         "default": ...,
-        "description": "Source column or field path.",
-        "prompt_hint": "Column name in the source CSV.",
+        "description": "Column name in the dataset file.",
+        "prompt_hint": "Exact column header, e.g. 'column_a', 'column_b', 'column_c'.",
     },
     "dataType": {
         "type": str,

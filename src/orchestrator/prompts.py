@@ -35,7 +35,16 @@ Your goal is to generate a step-by-step plan to extract metadata from a resource
 - For simple standards (≤5 fields): Use 2-3 steps maximum (1 analysis step + 1 generation step)
 - For medium standards (6-10 fields): Use 3-4 steps maximum
 - For complex standards (>10 fields): Group related fields and use 4-6 steps maximum
-- If spatial/geospatial requirements are detected in `{metadata_standard}`, the plan SHOULD be exactly 4 steps: (1) data profiling, (2) supporting analysis if needed, (3) `spatial_temporal_specialist`, (4) final `metadata_generator`.
+- If spatial/geospatial requirements are detected in `{metadata_standard}`, the plan SHOULD be exactly 4 steps: (1) data profiling, (2) supporting analysis if needed, (3) `spatial_temporal_specialist`, (4) final metadata output player.
+
+**CRITICAL - Croissant Standard Detection (infer from `{metadata_standard}` text):**
+- If the metadata standard describes Croissant concepts (for example: filesets, recordsets, inLanguage, spatialCoverage, temporalCoverage, CroissantField, dataType, isArray), treat it as a Croissant metadata task.
+- For Croissant standards, BEFORE the final step include:
+  - a `data_analyst` step that runs `get_field_statistics` (and optionally `get_missing_values`) for each resource
+  - a step that captures sample rows via `get_sample_items` (per resource when multiple files exist)
+  - for multi-resource datasets, a `relationship_analyst` step to identify keys and cross-table links
+  - if spatial/temporal fields are present, a `spatial_temporal_specialist` step before final generation
+- For Croissant standards, the FINAL step MUST use `croissant_metadata_generator` (not `metadata_generator`).
 
 **CRITICAL - Data Profiling Requirement (Even for Small Datasets):**
 - At least one step BEFORE the final generation MUST be executed by `data_analyst` and MUST run `get_field_statistics` (optionally also `get_missing_values`) so numeric ranges and distributions are available for metadata values.
@@ -46,7 +55,7 @@ Your goal is to generate a step-by-step plan to extract metadata from a resource
 
 **MANDATORY - FINAL STEP Requirements:**
 The last step MUST:
-1. Use the `metadata_generator` player
+1. Use `metadata_generator` for flat/non-Croissant standards, OR `croissant_metadata_generator` when `{metadata_standard}` indicates Croissant/fileset/recordset structure (infer from standard text; do not rely on standard name matching)
 2. Include `"metadata_standard": "metadata_standard"` in its `inputs` dictionary (THIS IS REQUIRED!)
 3. Set `outputs` to exactly `["metadata_output"]` (THIS IS REQUIRED!)
 4. Include all relevant artifacts from previous steps in `inputs`
@@ -84,10 +93,11 @@ REQUIREMENTS:
 1. Use MINIMUM steps - combine related analyses
 2. If `{metadata_standard}` includes spatial/geospatial concepts (e.g., spatial/geospatial, coordinate, latitude/longitude, extent/coverage, CRS), include one `spatial_temporal_specialist` step before final generation.
 3. For spatial/geospatial standards, produce exactly 4 steps.
-4. FINAL STEP must use `metadata_generator` player
+4. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
 5. FINAL STEP inputs MUST include: {{"metadata_standard": "metadata_standard"}}
 6. FINAL STEP outputs MUST be exactly: ["metadata_output"]
 7. Even for small datasets, include a `data_analyst` step that runs `get_field_statistics` (and optionally `get_missing_values`) before the final step.
+8. For Croissant standards, include a step that runs `get_sample_items` before the final step.
 
 Keep the plan SHORT.""",
             ),
@@ -122,7 +132,7 @@ Your goal is to generate a step-by-step plan to extract metadata from a context 
 2.  **Phase 1 - Resource Analysis**: Analyze resources (can combine multiple resources in one step if similar analysis needed)
 3.  **Phase 2 - Relationship Discovery**: One step to discover relationships between resources
 4.  **Phase 3 (Conditional) - Spatial Analysis**: If the metadata standard contains spatial/geospatial requirements, add a `spatial_temporal_specialist` step before final generation.
-5.  **Phase 4 - Final Generation**: Use `metadata_generator` to produce all metadata values
+5.  **Phase 4 - Final Generation**: Use `metadata_generator` or `croissant_metadata_generator` to produce all metadata values (choose based on `{metadata_standard}` content)
 
 **CRITICAL - Data Profiling Requirement (Even for Small Datasets):**
 - Phase 1 MUST include a `data_analyst` field profiling step using `get_field_statistics` (optionally `get_missing_values`) so numeric ranges/distributions are available for downstream metadata.
@@ -148,11 +158,20 @@ Your goal is to generate a step-by-step plan to extract metadata from a context 
 - **DO NOT** create a separate step for each resource or each field - combine!
 - For 2-3 resources: Use 3-4 steps (1 combined analysis + 1 relationship + 1 generation)
 - For 4+ resources: Use 4-6 steps maximum
-- If spatial/geospatial requirements are detected in `{metadata_standard}`, the plan SHOULD be exactly 4 steps: (1) resource profiling, (2) relationship discovery, (3) `spatial_temporal_specialist`, (4) final `metadata_generator`.
+- If spatial/geospatial requirements are detected in `{metadata_standard}`, the plan SHOULD be exactly 4 steps: (1) resource profiling, (2) relationship discovery, (3) `spatial_temporal_specialist`, (4) final metadata output player.
+
+**CRITICAL - Croissant Standard Detection (infer from `{metadata_standard}` text):**
+- If the metadata standard describes Croissant concepts (for example: filesets, recordsets, inLanguage, spatialCoverage, temporalCoverage, CroissantField, dataType, isArray), treat it as a Croissant metadata task.
+- For Croissant standards, BEFORE the final step include:
+  - a `data_analyst` step with `get_field_statistics` for each resource
+  - a step that captures sample rows via `get_sample_items` for each resource
+  - a `relationship_analyst` step for cross-resource keys and references
+  - if spatial/temporal fields are present, a `spatial_temporal_specialist` step before final generation
+- For Croissant standards, the FINAL step MUST use `croissant_metadata_generator` (not `metadata_generator`).
 
 **MANDATORY - FINAL STEP Requirements:**
 The last step MUST:
-1. Use the `metadata_generator` player
+1. Use `metadata_generator` for flat/non-Croissant standards, OR `croissant_metadata_generator` when `{metadata_standard}` indicates Croissant/fileset/recordset structure (infer from standard text; do not rely on standard name matching)
 2. Include `"metadata_standard": "metadata_standard"` in its `inputs` dictionary (THIS IS REQUIRED!)
 3. Set `outputs` to exactly `["metadata_output"]` (THIS IS REQUIRED!)
 4. Include all relevant artifacts from previous steps in `inputs`
@@ -202,9 +221,10 @@ REQUIREMENTS:
 3. Include at least one `data_analyst` profiling step using `get_field_statistics` (and optionally `get_missing_values`) even if the dataset is small.
 4. If `{metadata_standard}` includes spatial/geospatial concepts (e.g., spatial/geospatial, coordinate, latitude/longitude, extent/coverage, CRS), include one `spatial_temporal_specialist` step before final generation.
 5. For spatial/geospatial standards, produce exactly 4 steps.
-6. FINAL STEP must use `metadata_generator` player
+6. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
 7. FINAL STEP inputs MUST include: {{"metadata_standard": "metadata_standard"}}
 8. FINAL STEP outputs MUST be exactly: ["metadata_output"]
+9. For Croissant standards, include `get_sample_items` in a pre-final profiling step.
 
 Keep the plan SHORT (3-5 steps).""",
             ),

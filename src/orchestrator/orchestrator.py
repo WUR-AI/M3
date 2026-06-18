@@ -18,7 +18,12 @@ from ..config import (
 )
 from ..context import ContextType, ExecutionContext, create_context
 from ..context.context_classifier import classify_context_type
-from ..players import PLAYER_CONFIGS, Player, create_player_from_config
+from ..players import (
+    METADATA_OUTPUT_PLAYER_NAMES,
+    PLAYER_CONFIGS,
+    Player,
+    create_player_from_config,
+)
 from ..tools.context_tools import (
     register_context,
     filter_tools_by_context_type,
@@ -91,12 +96,13 @@ class Orchestrator:
     def _get_effective_player_pool(self, context: ExecutionContext = None) -> list:
         player_pool = list(self.topology.get("player_pool", []))
 
-        # Always add metadata_generator for final step generation
-        if "metadata_generator" not in player_pool:
-            player_pool.append("metadata_generator")
-            logging.info(
-                "Auto-added 'metadata_generator' for final metadata generation"
-            )
+        # Always add metadata output players for final step generation
+        for player_name in METADATA_OUTPUT_PLAYER_NAMES:
+            if player_name not in player_pool:
+                player_pool.append(player_name)
+                logging.info(
+                    "Auto-added '%s' for final metadata generation", player_name
+                )
 
         if context:
             classified_type = self._classify_context_for_planning(context)

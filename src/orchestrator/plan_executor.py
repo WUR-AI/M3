@@ -17,6 +17,7 @@ from pydantic import BaseModel
 
 from src.core.schemas import Plan, ExecutionResult, StepResult
 from src.context import ExecutionContext
+from src.players.configs import METADATA_OUTPUT_PLAYER_NAMES
 from src.standards import get_schema_for_standard
 
 from .step_executor import get_step_execution_graph, create_step_state
@@ -133,11 +134,14 @@ class PlanExecutor:
                 logging.info("Target resources: ALL (context-level)")
 
             try:
-                # Determine if this is the final step (metadata_generator)
-                # Pass the output schema only for the final step
+                # Pass structured output schema for the final metadata generation step
                 is_final_step = (step_index == len(plan_steps) - 1)
-                is_metadata_generator = step_dict.get("player", "") == "metadata_generator"
-                step_output_schema = output_schema if (is_final_step and is_metadata_generator) else None
+                is_metadata_output_player = (
+                    step_dict.get("player", "") in METADATA_OUTPUT_PLAYER_NAMES
+                )
+                step_output_schema = (
+                    output_schema if (is_final_step and is_metadata_output_player) else None
+                )
                 
                 if step_output_schema:
                     logging.info(f"  Final step will use structured output: {step_output_schema.__name__}")
