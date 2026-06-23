@@ -7,8 +7,15 @@ Each standard has:
 """
 
 from pathlib import Path
-from typing import Dict, Optional
-from pydantic import BaseModel, Field
+from typing import Any, Dict, Optional
+
+from pydantic import BaseModel
+
+from src.standards.croissant import (
+    CroissantStandardSubsetMetadata,
+    croissant_standard_subset,
+)
+from src.standards.schema_builder import build_prompt_template, build_schema_for_standard
 
 
 # =============================================================================
@@ -107,45 +114,32 @@ STANDARD_DEFINITIONS: Dict[str, Dict[str, Dict[str, Any]]] = {
             "prompt_hint": "...",
         },
     },
+
+    "croissant_standard_subset": croissant_standard_subset,
 }
 
-
-def _to_model_name(standard_name: str) -> str:
-    return "".join(part.capitalize() for part in standard_name.split("_")) + "Metadata"
-
-
-def _build_schema_for_standard(
-    standard_name: str,
-    field_spec: Dict[str, Dict[str, Any]],
-) -> type[BaseModel]:
-    model_fields: Dict[str, Any] = {}
-    for field_name, spec in field_spec.items():
-        model_fields[field_name] = (
-            spec["type"],
-            Field(default=spec["default"], description=spec["description"]),
-        )
-    return create_model(_to_model_name(standard_name), **model_fields)
-
-
-def _build_prompt_template(field_spec: Dict[str, Dict[str, Any]]) -> str:
-    lines = ["{"]
-    entries = list(field_spec.items())
-    for index, (field_name, spec) in enumerate(entries):
-        prompt_hint = spec.get("prompt_hint", "...")
-        comma = "," if index < len(entries) - 1 else ""
-        lines.append(f'    "{field_name}": "{prompt_hint}"{comma}')
-    lines.append("}")
-    return "\n".join(lines)
+CUSTOM_METADATA_SCHEMAS: Dict[str, type[BaseModel]] = {
+    "croissant_standard_subset": CroissantStandardSubsetMetadata,
+}
 
 
 # =============================================================================
 # SCHEMA REGISTRY - Maps standard names to Pydantic models
 # =============================================================================
 
-METADATA_SCHEMAS: Dict[str, type[BaseModel]] = {
-    standard_name: _build_schema_for_standard(standard_name, field_spec)
-    for standard_name, field_spec in STANDARD_DEFINITIONS.items()
-}
+def _build_metadata_schemas() -> Dict[str, type[BaseModel]]:
+    schemas: Dict[str, type[BaseModel]] = {}
+    for standard_name, field_spec in STANDARD_DEFINITIONS.items():
+        if standard_name in CUSTOM_METADATA_SCHEMAS:
+            schemas[standard_name] = CUSTOM_METADATA_SCHEMAS[standard_name]
+        else:
+            schemas[standard_name] = build_schema_for_standard(
+                standard_name, field_spec
+            )
+    return schemas
+
+
+METADATA_SCHEMAS: Dict[str, type[BaseModel]] = _build_metadata_schemas()
 
 
 def get_schema_for_standard(standard_name: str) -> Optional[type[BaseModel]]:
@@ -161,7 +155,7 @@ def get_schema_for_standard(standard_name: str) -> Optional[type[BaseModel]]:
     return METADATA_SCHEMAS.get(standard_name)
 
 METADATA_STANDARDS = {
-    standard_name: _build_prompt_template(field_spec)
+    standard_name: build_prompt_template(field_spec)
     for standard_name, field_spec in STANDARD_DEFINITIONS.items()
 }
 

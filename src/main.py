@@ -27,7 +27,7 @@ from src.standards import METADATA_STANDARDS, load_metadata_standard
 from src.topology import EXECUTION_TOPOLOGIES
 from src.orchestrator import Orchestrator
 from src.context import create_context
-# from src.tui import run_tui  # Uncomment if TUI is implemented
+from src.tui import run_tui  # Uncomment if TUI is implemented
 
 
 def main():

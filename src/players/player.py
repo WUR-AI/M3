@@ -27,7 +27,6 @@ from ..config import (
     PLAYER_TEMPERATURE,
     create_llm,
     LLM_PROVIDER,
-    PLAYER_TOOL_EXECUTION_MODE,
     PLAYER_MAX_TOOL_ITERATIONS,
 )
 
@@ -59,18 +58,6 @@ def _serialize_tool_result(obj: Any) -> str:
         return str(obj)
 
 
-def _tool_model_fields(tool: BaseTool) -> Dict[str, Any]:
-    sch = getattr(tool, "args_schema", None)
-    if sch is None:
-        return {}
-    return dict(getattr(sch, "model_fields", {}) or {})
-
-
-def _tool_required_names(tool: BaseTool) -> frozenset[str]:
-    fields = _tool_model_fields(tool)
-    return frozenset(n for n, f in fields.items() if f.is_required())
-
-
 def _normalize_tool_call_args(raw: Any) -> Dict[str, Any]:
     if raw is None:
         return {}
@@ -86,23 +73,6 @@ def _normalize_tool_call_args(raw: Any) -> Dict[str, Any]:
         except json.JSONDecodeError:
             return {}
     return {}
-
-
-def _legacy_tool_needs_resource_loop(tool: BaseTool) -> bool:
-    """Heuristic when a tool has no args_schema (unusual for @tool)."""
-    name = tool.name.lower()
-    return any(
-        kw in name
-        for kw in (
-            "resource_info",
-            "item_count",
-            "field",
-            "sample",
-            "statistics",
-            "missing",
-            "unique",
-        )
-    )
 
 
 class Player:
@@ -124,7 +94,6 @@ class Player:
         model_name: str = None,
         temperature: float = None,
         provider: str = None,
-        tool_execution_mode: Optional[str] = None,
         max_tool_iterations: Optional[int] = None,
         role_key: Optional[str] = None,
     ):
@@ -138,7 +107,6 @@ class Player:
             model_name: The LLM model to use (default from config)
             temperature: LLM temperature (default from config)
             provider: LLM provider to use (default from config)
-            tool_execution_mode: "llm" (bind_tools loop) or "eager" (deterministic invokes).
             max_tool_iterations: Cap for LLM tool rounds (default from config).
             role_key: PLAYER_CONFIGS role name (e.g. spatial_temporal_specialist), if known.
         """
@@ -154,11 +122,6 @@ class Player:
             provider=provider,
         )
         self._output_parser = StrOutputParser()
-        self.tool_execution_mode = (
-            tool_execution_mode
-            if tool_execution_mode is not None
-            else PLAYER_TOOL_EXECUTION_MODE
-        )
         self.max_tool_iterations = (
             max_tool_iterations
             if max_tool_iterations is not None
@@ -205,381 +168,6 @@ class Player:
             ctx_info += f"\ncontext_key for tools (injected if omitted): {context_key}"
         return ctx_info
 
-    def _execute_eager_tools(
-        self,
-        context_key: str,
-        resources_to_analyze: List[str],
-        tool_trace: List[Dict[str, Any]],
-    ) -> Dict[str, Any]:
-        """Deterministic tool invokes: only tools whose required args fit context_key/resource."""
-        tool_results: Dict[str, Any] = {}
-
-        for tool in self.tools:
-            fields = _tool_model_fields(tool)
-            if fields:
-                required = _tool_required_names(tool)
-                unsatisfied = required - {"context_key", "resource"}
-                if unsatisfied:
-                    entry = {
-                        "tool": tool.name,
-                        "skipped": True,
-                        "reason": f"eager cannot supply required args: {sorted(unsatisfied)}",
-                        "source": "eager",
-                    }
-                    tool_trace.append(entry)
-                    continue
-
-                has_resource_param = "resource" in fields
-                last_args: Dict[str, Any] | None = None
-                try:
-                    if has_resource_param and resources_to_analyze:
-                        for resource in resources_to_analyze:
-                            args: Dict[str, Any] = {
-                                "context_key": context_key,
-                                "resource": resource,
-                            }
-                            if tool.args_schema is not None:
-                                args = tool.args_schema.model_validate(args).model_dump()
-                            last_args = args
-                            result = tool.invoke(args)
-                            key = f"{resource}:{tool.name}"
-                            tool_results[key] = result
-                            tool_trace.append(
-                                {
-                                    "tool": tool.name,
-                                    "args": args,
-                                    "result": result,
-                                    "source": "eager",
-                                }
-                            )
-                    else:
-                        args = {"context_key": context_key}
-                        if tool.args_schema is not None:
-                            args = tool.args_schema.model_validate(args).model_dump()
-                        last_args = args
-                        result = tool.invoke(args)
-                        tool_results[tool.name] = result
-                        tool_trace.append(
-                            {
-                                "tool": tool.name,
-                                "args": args,
-                                "result": result,
-                                "source": "eager",
-                            }
-                        )
-                except Exception as e:
-                    tool_results[tool.name] = f"Error: {str(e)}"
-                    entry: Dict[str, Any] = {
-                        "tool": tool.name,
-                        "error": str(e),
-                        "source": "eager",
-                    }
-                    if last_args is not None:
-                        entry["args"] = last_args
-                    tool_trace.append(entry)
-                continue
-
-            # Legacy: no schema — keyword heuristics
-            try:
-                if _legacy_tool_needs_resource_loop(tool):
-                    for resource in resources_to_analyze:
-                        try:
-                            result = tool.invoke(
-                                {"context_key": context_key, "resource": resource}
-                            )
-                            tool_results[f"{resource}:{tool.name}"] = result
-                            tool_trace.append(
-                                {
-                                    "tool": tool.name,
-                                    "args": {
-                                        "context_key": context_key,
-                                        "resource": resource,
-                                    },
-                                    "result": result,
-                                    "source": "eager",
-                                }
-                            )
-                        except Exception as e:
-                            resource_args = {
-                                "context_key": context_key,
-                                "resource": resource,
-                            }
-                            try:
-                                fallback_args = {"context_key": context_key}
-                                result = tool.invoke(fallback_args)
-                                tool_results[tool.name] = result
-                                tool_trace.append(
-                                    {
-                                        "tool": tool.name,
-                                        "args": fallback_args,
-                                        "result": result,
-                                        "source": "eager",
-                                    }
-                                )
-                                break
-                            except Exception:
-                                tool_results[f"{resource}:{tool.name}"] = f"Error: {str(e)}"
-                                tool_trace.append(
-                                    {
-                                        "tool": tool.name,
-                                        "args": resource_args,
-                                        "error": str(e),
-                                        "source": "eager",
-                                    }
-                                )
-                else:
-                    result = tool.invoke({"context_key": context_key})
-                    tool_results[tool.name] = result
-                    tool_trace.append(
-                        {
-                            "tool": tool.name,
-                            "args": {"context_key": context_key},
-                            "result": result,
-                            "source": "eager",
-                        }
-                    )
-            except Exception as e:
-                tool_results[tool.name] = f"Error: {str(e)}"
-                tool_trace.append(
-                    {
-                        "tool": tool.name,
-                        "args": {"context_key": context_key},
-                        "error": str(e),
-                        "source": "eager",
-                    }
-                )
-
-        return tool_results
-
-    def _spatial_temporal_eager_extras(
-        self,
-        context_key: str,
-        resources_to_analyze: List[str],
-        tool_results: Dict[str, Any],
-        tool_trace: List[Dict[str, Any]],
-        max_cols: int = 5,
-    ) -> None:
-        """Chained detect → analyze/extent for spatial_temporal specialist (eager / fallback)."""
-        by_name = {t.name: t for t in self.tools}
-        det_t = by_name.get("detect_temporal_columns")
-        det_s = by_name.get("detect_spatial_columns")
-        ana_t = by_name.get("analyze_temporal_column")
-        ana_s = by_name.get("analyze_spatial_column")
-        ext_t = by_name.get("get_temporal_extent")
-        ext_s = by_name.get("get_spatial_extent")
-        ext_tuple = by_name.get("get_spatial_extent_from_tuple_column")
-
-        for resource in resources_to_analyze:
-            if det_t:
-                detect_temporal_args = {
-                    "context_key": context_key,
-                    "resource": resource,
-                }
-                try:
-                    d = det_t.invoke(detect_temporal_args)
-                    key = f"{resource}:detect_temporal_columns:extra"
-                    tool_results[key] = d
-                    tool_trace.append(
-                        {
-                            "tool": "detect_temporal_columns",
-                            "args": detect_temporal_args,
-                            "result": d,
-                            "source": "eager_extra",
-                        }
-                    )
-                    cols = (d or {}).get("temporal_columns") or {}
-                    picked: List[str] = []
-                    for col_name, info in cols.items():
-                        if info.get("detected_type") or info.get("name_suggests_temporal"):
-                            picked.append(col_name)
-                        if len(picked) >= max_cols:
-                            break
-                    if not picked:
-                        picked = list(cols.keys())[:max_cols]
-                    for col in picked:
-                        if ana_t:
-                            analyze_temporal_args = {
-                                "context_key": context_key,
-                                "resource": resource,
-                                "column": col,
-                            }
-                            try:
-                                out = ana_t.invoke(analyze_temporal_args)
-                                rk = f"{resource}:analyze_temporal_column:{col}"
-                                tool_results[rk] = out
-                                tool_trace.append(
-                                    {
-                                        "tool": "analyze_temporal_column",
-                                        "args": analyze_temporal_args,
-                                        "result": out,
-                                        "source": "eager_extra",
-                                    }
-                                )
-                            except Exception as e:
-                                tool_trace.append(
-                                    {
-                                        "tool": "analyze_temporal_column",
-                                        "args": analyze_temporal_args,
-                                        "error": str(e),
-                                        "source": "eager_extra",
-                                    }
-                                )
-                        if ext_t:
-                            temporal_extent_args = {
-                                "context_key": context_key,
-                                "resource": resource,
-                                "time_column": col,
-                            }
-                            try:
-                                out = ext_t.invoke(temporal_extent_args)
-                                rk = f"{resource}:get_temporal_extent:{col}"
-                                tool_results[rk] = out
-                                tool_trace.append(
-                                    {
-                                        "tool": "get_temporal_extent",
-                                        "args": temporal_extent_args,
-                                        "result": out,
-                                        "source": "eager_extra",
-                                    }
-                                )
-                            except Exception as e:
-                                tool_trace.append(
-                                    {
-                                        "tool": "get_temporal_extent",
-                                        "args": temporal_extent_args,
-                                        "error": str(e),
-                                        "source": "eager_extra",
-                                    }
-                                )
-                except Exception as e:
-                    tool_trace.append(
-                        {
-                            "tool": "detect_temporal_columns",
-                            "args": detect_temporal_args,
-                            "error": str(e),
-                            "source": "eager_extra",
-                        }
-                    )
-
-            if det_s:
-                detect_spatial_args = {
-                    "context_key": context_key,
-                    "resource": resource,
-                }
-                try:
-                    ds = det_s.invoke(detect_spatial_args)
-                    key = f"{resource}:detect_spatial_columns:extra"
-                    tool_results[key] = ds
-                    tool_trace.append(
-                        {
-                            "tool": "detect_spatial_columns",
-                            "args": detect_spatial_args,
-                            "result": ds,
-                            "source": "eager_extra",
-                        }
-                    )
-                    pairs = (ds or {}).get("detected_coordinate_pairs") or []
-                    for pair in pairs[:3]:
-                        lat_c = pair.get("latitude")
-                        lon_c = pair.get("longitude")
-                        if ext_s and lat_c and lon_c:
-                            spatial_extent_args = {
-                                "context_key": context_key,
-                                "resource": resource,
-                                "lat_column": lat_c,
-                                "lon_column": lon_c,
-                            }
-                            try:
-                                out = ext_s.invoke(spatial_extent_args)
-                                rk = f"{resource}:get_spatial_extent:{lat_c}:{lon_c}"
-                                tool_results[rk] = out
-                                tool_trace.append(
-                                    {
-                                        "tool": "get_spatial_extent",
-                                        "args": spatial_extent_args,
-                                        "result": out,
-                                        "source": "eager_extra",
-                                    }
-                                )
-                            except Exception as e:
-                                tool_trace.append(
-                                    {
-                                        "tool": "get_spatial_extent",
-                                        "args": spatial_extent_args,
-                                        "error": str(e),
-                                        "source": "eager_extra",
-                                    }
-                                )
-                    for tcc in (ds or {}).get("tuple_coord_columns") or []:
-                        col_t = tcc.get("column")
-                        order_t = tcc.get("tuple_order", "lon_lat")
-                        if ext_tuple and col_t:
-                            tuple_extent_args = {
-                                "context_key": context_key,
-                                "resource": resource,
-                                "column": col_t,
-                                "tuple_order": order_t,
-                            }
-                            try:
-                                tout = ext_tuple.invoke(tuple_extent_args)
-                                rk = f"{resource}:get_spatial_extent_from_tuple_column:{col_t}"
-                                tool_results[rk] = tout
-                                tool_trace.append(
-                                    {
-                                        "tool": "get_spatial_extent_from_tuple_column",
-                                        "args": tuple_extent_args,
-                                        "result": tout,
-                                        "source": "eager_extra",
-                                    }
-                                )
-                            except Exception as e:
-                                tool_trace.append(
-                                    {
-                                        "tool": "get_spatial_extent_from_tuple_column",
-                                        "args": tuple_extent_args,
-                                        "error": str(e),
-                                        "source": "eager_extra",
-                                    }
-                                )
-                    spatial_cols = (ds or {}).get("spatial_columns") or {}
-                    for col_name, info in list(spatial_cols.items())[:max_cols]:
-                        if ana_s and info.get("detected_type"):
-                            analyze_spatial_args = {
-                                "context_key": context_key,
-                                "resource": resource,
-                                "column": col_name,
-                            }
-                            try:
-                                out = ana_s.invoke(analyze_spatial_args)
-                                rk = f"{resource}:analyze_spatial_column:{col_name}"
-                                tool_results[rk] = out
-                                tool_trace.append(
-                                    {
-                                        "tool": "analyze_spatial_column",
-                                        "args": analyze_spatial_args,
-                                        "result": out,
-                                        "source": "eager_extra",
-                                    }
-                                )
-                            except Exception as e:
-                                tool_trace.append(
-                                    {
-                                        "tool": "analyze_spatial_column",
-                                        "args": analyze_spatial_args,
-                                        "error": str(e),
-                                        "source": "eager_extra",
-                                    }
-                                )
-                except Exception as e:
-                    tool_trace.append(
-                        {
-                            "tool": "detect_spatial_columns",
-                            "args": detect_spatial_args,
-                            "error": str(e),
-                            "source": "eager_extra",
-                        }
-                    )
-
     def _run_llm_tool_loop(
         self,
         context_key: str,
@@ -593,14 +181,32 @@ class Player:
         Optional model-driven tool calling. Returns None if bind_tools is unavailable.
         """
         if not self.tools:
+            logging.info(
+                "Player '%s': LLM tool loop skipped (no tools configured)",
+                self.name,
+            )
             return {}, [], ""
 
         tools_by_name = {t.name: t for t in self.tools}
+        tool_names = [t.name for t in self.tools]
         try:
             llm_tools = self.llm.bind_tools(self.tools)
         except Exception as e:
-            logging.warning("bind_tools failed for player %s: %s", self.name, e)
+            logging.warning(
+                "Player '%s': bind_tools FAILED — LLM tool calling unavailable. Error: %s",
+                self.name,
+                e,
+            )
             return None
+
+        logging.info(
+            "Player '%s': bind_tools OK — starting LLM tool loop "
+            "(%d tools, max %d iterations): %s",
+            self.name,
+            len(self.tools),
+            self.max_tool_iterations,
+            ", ".join(tool_names),
+        )
 
         system = f"""You are {self.name}. {self.role_prompt}
 
@@ -635,12 +241,21 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
             tcalls = list(getattr(ai_msg, "tool_calls", None) or [])
             if not tcalls:
                 text = _stringify_message_content(ai_msg.content)
+                logging.info(
+                    "Player '%s': LLM tool loop finished after %d iteration(s), "
+                    "%d tool invocation(s) — model returned final analysis",
+                    self.name,
+                    iteration + 1,
+                    len(tool_trace),
+                )
                 return tool_results, tool_trace, text
 
+            called_names = []
             for idx, tc in enumerate(tcalls):
                 name = tc.get("name")
                 if not name and isinstance(tc.get("function"), dict):
                     name = tc["function"].get("name")
+                called_names.append(name or "?")
                 raw_args = tc.get("args")
                 if raw_args is None and isinstance(tc.get("function"), dict):
                     raw_args = tc["function"].get("arguments")
@@ -696,6 +311,14 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
                     )
                 )
 
+            logging.info(
+                "Player '%s': LLM tool loop iteration %d — model requested %d tool(s): %s",
+                self.name,
+                iteration + 1,
+                len(tcalls),
+                ", ".join(called_names),
+            )
+
         final_nudge = HumanMessage(
             content="Provide your final analysis for the task. Do not request more tools."
         )
@@ -703,6 +326,13 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
         text = _stringify_message_content(final_ai.content)
         tool_trace.append(
             {"note": "max_tool_iterations reached; final summary without bind_tools", "source": "llm"}
+        )
+        logging.info(
+            "Player '%s': LLM tool loop hit max iterations (%d), "
+            "%d tool invocation(s) — requesting final summary without tools",
+            self.name,
+            self.max_tool_iterations,
+            len(tool_trace),
         )
         return tool_results, tool_trace, text
 
@@ -716,13 +346,9 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
         target_resources: List[str] = None,
     ) -> Dict[str, Any]:
         """
-        Execute a specific task using available tools.
+        Execute a specific task using available tools via LLM-driven tool calling.
 
-        tool_execution_mode:
-        - "llm": model chooses optional tool calls via bind_tools (args from model).
-        - "eager": invoke each tool deterministically when schema allows context_key/resource only.
-
-        Returns tool_trace for debugging (optional tools / skips / errors).
+        Returns tool_trace for debugging (tool calls / skips / errors).
         """
         resolved_inputs: Dict[str, Any] = {}
         for param_name, artifact_name in inputs.items():
@@ -791,22 +417,30 @@ Execute this task and provide a comprehensive response. Include:
 
         chain = prompt | self.llm | self._output_parser
 
-        if target_resources:
-            resources_to_analyze = list(target_resources)
-        else:
-            resources_to_analyze = list(resources)
+        target_info = (
+            ", ".join(target_resources)
+            if target_resources
+            else ("All resources" if is_multi_csv else "N/A")
+        )
 
         tool_trace: List[Dict[str, Any]] = []
         llm_result: Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str]] = None
 
-        mode = (self.tool_execution_mode or "eager").lower().strip()
-        if mode == "llm" and self.tools:
+        logging.info(
+            "Player '%s' (role=%s): %d tool(s) available",
+            self.name,
+            self.role_key or "unknown",
+            len(self.tools),
+        )
+        if self.tools:
+            logging.info(
+                "Player '%s': attempting LLM-driven tool calling",
+                self.name,
+            )
             llm_result = self._run_llm_tool_loop(
                 context_key=context_key,
                 task=task,
-                target_resources=", ".join(target_resources)
-                if target_resources
-                else ("All resources" if is_multi_csv else "N/A"),
+                target_resources=target_info,
                 input_context=input_context,
                 ctx_info=ctx_info,
                 tool_descriptions=tool_descriptions,
@@ -815,13 +449,21 @@ Execute this task and provide a comprehensive response. Include:
         if llm_result is not None:
             tool_results, trace_llm, analysis_text = llm_result
             tool_trace.extend(trace_llm)
+            llm_tool_calls = sum(
+                1 for e in trace_llm if e.get("source") == "llm" and "tool" in e
+            )
+            logging.info(
+                "Player '%s': using LLM tool path — %d tool result(s), "
+                "%d trace entry/entries",
+                self.name,
+                len(tool_results),
+                llm_tool_calls,
+            )
             if not analysis_text.strip():
                 analysis_text = chain.invoke(
                     {
                         "task": task,
-                        "target_resources": ", ".join(target_resources)
-                        if target_resources
-                        else ("All resources" if is_multi_csv else "N/A"),
+                        "target_resources": target_info,
                         "input_context": input_context
                         + "\n\nTool Results:\n"
                         + str(tool_results),
@@ -837,28 +479,22 @@ Execute this task and provide a comprehensive response. Include:
                 "is_multi_csv": is_multi_csv,
             }
 
-        tool_results = self._execute_eager_tools(
-            context_key, resources_to_analyze, tool_trace
-        )
-        if self.role_key == "spatial_temporal_specialist":
-            self._spatial_temporal_eager_extras(
-                context_key, resources_to_analyze, tool_results, tool_trace
+        tool_results: Dict[str, Any] = {}
+        if self.tools:
+            logging.warning(
+                "Player '%s': LLM tool calling unavailable — continuing with analysis only",
+                self.name,
             )
 
-        target_info = (
-            ", ".join(target_resources)
-            if target_resources
-            else ("All resources" if is_multi_csv else "N/A")
-        )
         llm_response = chain.invoke(
             {
                 "task": task,
                 "target_resources": target_info,
-                "input_context": input_context + "\n\nTool Results:\n" + str(tool_results),
+                "input_context": input_context,
             }
         )
 
-        out: Dict[str, Any] = {
+        return {
             "player": self.name,
             "task": task,
             "tool_results": tool_results,
@@ -867,11 +503,6 @@ Execute this task and provide a comprehensive response. Include:
             "success": True,
             "is_multi_csv": is_multi_csv,
         }
-        if mode == "llm" and self.tools and llm_result is None:
-            out["tool_execution_fallback"] = (
-                "eager_after_bind_tools_failed_or_unsupported"
-            )
-        return out
 
     def generate_initial_work(
         self,
@@ -1112,18 +743,21 @@ Provide the consolidated result for this task. Output only the result, no commen
                     "system",
                     f"""You are {self.name}. {self.role_prompt}
 
-You are synthesizing results from multiple analysts into a structured format.
+You are consolidating prior analysis into the required structured metadata format.
+
+The analyses below already contain the findings from earlier steps. Your job is NOT to
+re-analyze the dataset or discover new information—only to consolidate what is already
+present into the required schema.
 
 **Your job:**
-- Extract and consolidate all relevant information from the analyses
-- Fill in ALL fields in the schema with concrete values from the gathered information
-- Use null/None for fields where information is truly unavailable
+- Extract and map relevant information from the analyses into each schema field
 - Resolve conflicts by choosing the most accurate/complete information
+- Use null/None for fields with no supporting information in the analyses
 
 **CRITICAL:**
 - Output MUST conform exactly to the provided schema
-- Use actual values, not placeholders like "..."
-- Be specific and concrete""",
+- Use actual values from the analyses, not placeholders like "..."
+- Do not invent or infer values beyond what the analyses already provide""",
                 ),
                 (
                     "human",
@@ -1132,7 +766,7 @@ You are synthesizing results from multiple analysts into a structured format.
 Results from all analysts:
 {all_results}
 
-Generate the final structured output.""",
+Consolidate the above into the required structured output.""",
                 ),
             ]
         )
@@ -1171,7 +805,6 @@ def create_player_from_config(
         model_name=config.get("model_name"),
         temperature=config.get("temperature"),
         provider=provider,
-        tool_execution_mode=config.get("tool_execution_mode"),
         max_tool_iterations=config.get("max_tool_iterations"),
         role_key=rk,
     )

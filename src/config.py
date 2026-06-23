@@ -61,11 +61,7 @@ PLANNING_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE_PLANNING", "0.0"))
 # Can be overridden by environment variable: LLM_TEMPERATURE_PLAYER  
 PLAYER_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE_PLAYER", "0.3"))
 
-# Player tool execution: "llm" = model chooses tools and arguments (bind_tools loop);
-# "eager" = invoke all compatible tools deterministically (legacy).
-PLAYER_TOOL_EXECUTION_MODE = os.getenv("PLAYER_TOOL_EXECUTION_MODE", "eager")
-
-# Max model↔tool rounds per task when tool_execution_mode is "llm".
+# Max model↔tool rounds per player task.
 PLAYER_MAX_TOOL_ITERATIONS = int(os.getenv("PLAYER_MAX_TOOL_ITERATIONS", "8"))
 
 

@@ -105,8 +105,17 @@ PLAYER_CONFIGS: Dict[str, Dict[str, Any]] = {
             "STRICT Rules:\n"
             "1. Output ONLY a valid JSON object matching the metadata standard schema EXACTLY\n"
             "2. Include ONLY fields that exist in the metadata standard - DO NOT add extra fields!\n"
-            "3. Fill in ALL fields from the standard with actual values from the gathered information\n"
-            "4. Use null for fields where information is unavailable\n"
+            "3. Field population policy (by field type):\n"
+            "   a. OBJECTIVE fields (e.g., creator, license, owner, version, format): populate "
+            "ONLY with values directly supported by gathered information; use null when unsupported\n"
+            "   b. SUBJECTIVE fields (e.g., description, methods, subject, title): you MAY "
+            "infer from gathered information; note the basis in the value "
+            "(e.g., \"based on the data in the dataset\")\n"
+            "   c. SPATIAL/TEMPORAL fields (e.g., spatial_coverage, spatial_resolution, "
+            "temporal_coverage, temporal_resolution): you MAY infer from relevant gathered "
+            "information when spatial-temporal analysis or data characteristics support it\n"
+            "4. For objective fields, do NOT infer, guess, extrapolate, or approximate—use null "
+            "when no direct support exists\n"
             "5. NO explanations, NO commentary, NO markdown - ONLY the JSON object\n"
             "6. DO NOT invent or add fields that are not in the standard schema\n\n"
             "Remember: Output ONLY fields from the metadata standard. Nothing more, nothing less."
@@ -115,7 +124,49 @@ PLAYER_CONFIGS: Dict[str, Dict[str, Any]] = {
             context_tools.get_context_overview,
             context_tools.get_context_schema,
         ],
-        "temperature": 0.2,  # Low temperature for consistent, structured output
+        "temperature": 0.0,  # Low temperature for consistent, structured output
+    },
+    # Croissant-specific final metadata generation (MLCommons Croissant subset)
+    "croissant_metadata_generator": {
+        "role_prompt": (
+            "You are a Croissant metadata generation expert. Your SOLE responsibility is to "
+            "produce a valid Croissant subset metadata JSON object from prior analysis artifacts.\n\n"
+            "STRICT Rules:\n"
+            "1. Output ONLY a JSON object matching the metadata standard schema EXACTLY\n"
+            "2. Include ONLY fields defined in the metadata standard - DO NOT add extra fields\n"
+            "3. NO explanations, NO commentary, NO markdown - ONLY the JSON object\n\n"
+            "Croissant-specific population rules:\n"
+            "- `filesets`: Use ONE FileSet object with `includes` listing every data file name "
+            "(e.g. ['file_a.csv', 'file_b.csv']); set `excludes` to [] unless exclusions are known\n"
+            "- `recordsets`: Create ONE RecordSet per logical table/file in the dataset\n"
+            "- Each RecordSet must include `name`, `source` (file name), and `fields` listing "
+            "every column in that table\n"
+            "- `fields` MUST include one CroissantField per column in the table—no missing "
+            "columns, no extra columns; use profiling/schema artifacts to match the table exactly\n"
+            "- Each CroissantField in `fields` must include `source` set to the column "
+            "header, plus dataType from profiling; do NOT use dataType 'table'\n"
+            "- Set RecordSet `key` to the primary-key column when known from profiling or relationships\n"
+            "- `examples` MUST be non-empty for every RecordSet: include 1-3 representative "
+            "example rows derived from sample data in prior artifacts or tools; never leave "
+            "examples as []\n"
+            "- `annotation`: One short sentence (under 25 words) summarizing what the "
+            "table contains—factual, no long narratives\n"
+            "- `description`, `keywords`, `inLanguage`: Infer from dataset content when supported\n"
+            "- `spatialCoverage` / `temporalCoverage`: Populate only when spatial-temporal analysis "
+            "artifacts support them; otherwise use null\n"
+            "- Use `references` on CroissantField when a column links to another recordset "
+            "(format: 'recordset_name.column_name')\n\n"
+            "Use tools to verify schema, column types, and sample rows when workspace artifacts "
+            "are insufficient."
+        ),
+        "tools": [
+            context_tools.get_context_overview,
+            context_tools.get_context_schema,
+            context_tools.get_field_names,
+            context_tools.get_field_types,
+            context_tools.get_sample_items,
+        ],
+        "temperature": 0.0,
     },
     # Specialized player for spatial and temporal data analysis
     "spatial_temporal_specialist": {
@@ -158,7 +209,12 @@ PLAYER_CONFIGS: Dict[str, Dict[str, Any]] = {
             context_tools.get_temporal_extent,
         ],
         # Model-driven tool calls supply required args (column, lat/lon, etc.).
-        "tool_execution_mode": "llm",
         "temperature": 0.3,  # Lower for more precise technical analysis
     },
 }
+
+# Players that produce final structured metadata output (used by plan executor).
+METADATA_OUTPUT_PLAYER_NAMES = frozenset({
+    "metadata_generator",
+    "croissant_metadata_generator",
+})
