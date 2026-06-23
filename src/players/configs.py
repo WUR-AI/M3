@@ -51,6 +51,19 @@ PLAYER_CONFIGS: Dict[str, Dict[str, Any]] = {
             context_tools.get_sample_items,
         ],
     },
+    "dataset_schema_preview": {
+        "role_prompt": (
+            "You are a dataset schema preview specialist. Your job is to capture the "
+            "column structure and a representative first row for each dataset resource. "
+            "Call get_columns_with_first_row once (omit resource to cover all tables) "
+            "and return the tool output as your artifact—do not paraphrase or omit columns."
+        ),
+        "tools": [
+            context_tools.get_columns_with_first_row,
+            context_tools.list_resources,
+        ],
+        "temperature": 0.0,
+    },
     "metadata_specialist": {
         "role_prompt": (
             "You are a metadata specialist familiar with standards like Dublin Core, "
@@ -172,37 +185,44 @@ PLAYER_CONFIGS: Dict[str, Dict[str, Any]] = {
     "spatial_temporal_specialist": {
         "role_prompt": (
             "You are a spatial-temporal data specialist with expertise in geographic "
-            "information systems (GIS) and time-series data. Your job is to:\n\n"
-            "1. TEMPORAL ANALYSIS:\n"
-            "   - Identify columns containing dates, times, timestamps, or durations\n"
-            "   - Determine temporal granularity (second, minute, hour, day, month, year)\n"
-            "   - Extract temporal extent (start date, end date, time span)\n"
-            "   - Identify time zones and date/time formats used\n"
-            "   - Detect temporal patterns and coverage gaps\n\n"
-            "2. SPATIAL ANALYSIS:\n"
-            "   - Identify columns containing geographic coordinates (lat/lon)\n"
-            "   - Detect geometry columns (WKT, GeoJSON, etc.)\n"
-            "   - Determine coordinate reference systems (CRS/SRID)\n"
-            "   - Calculate spatial extent (bounding box)\n"
-            "   - Identify location-related text fields (addresses, place names)\n\n"
-            "3. METADATA OUTPUT:\n"
-            "   - Report temporal coverage for metadata standards\n"
-            "   - Report spatial coverage and coordinate systems\n"
-            "   - Provide structured spatial-temporal metadata suitable for "
-            "     standards like ISO 19115, Dublin Core spatial extensions, or DCAT\n\n"
+            "information systems (GIS) and time-series data. Follow this workflow:\n\n"
+            "1. TEMPORAL DETECTION:\n"
+            "   - Call detect_temporal_columns for each target resource\n"
+            "   - Note which columns contain dates, times, timestamps, or durations\n\n"
+            "2. SPATIAL DETECTION:\n"
+            "   - Call detect_spatial_columns for each target resource\n"
+            "   - Note coordinate columns, geometry columns, lat/lon pairs, and "
+            "tuple_coord_columns (e.g. '(lon, lat)' strings)\n\n"
+            "3. EXTRACT ACTUAL VALUES (required):\n"
+            "   - Based on steps 1–2, call one or two follow-up tools to obtain "
+            "concrete values—not just column names:\n"
+            "     • analyze_temporal_column — date range, granularity, timezone for a "
+            "specific temporal column\n"
+            "     • analyze_spatial_column — value ranges, geometry types for a "
+            "specific spatial column\n"
+            "     • get_spatial_extent — bounding box from separate lat and lon columns\n"
+            "     • get_spatial_extent_from_tuple_column — bounding box from a "
+            "'(lon, lat)' or '(lat, lon)' tuple column\n"
+            "     • get_temporal_extent — start/end dates and coverage for a "
+            "timestamp column\n"
+            "   - Pick the tool(s) that match what detection found; do not call all "
+            "five. Examples:\n"
+            "     • temporal column only → get_temporal_extent or analyze_temporal_column\n"
+            "     • lat + lon columns → get_spatial_extent\n"
+            "     • tuple_coords column → get_spatial_extent_from_tuple_column\n"
+            "     • both spatial and temporal → call one spatial tool and one temporal tool\n\n"
+            "4. METADATA OUTPUT:\n"
+            "   - Report temporalCoverage and spatialCoverage using the actual values "
+            "from step 3 (min/max dates, bounding box coordinates)\n"
+            "   - Include coordinate system notes and per-resource coverage when relevant\n\n"
             "Be precise about coordinate systems, date formats, and geographic extents. "
             "For multi_csv contexts, analyze spatial-temporal characteristics of each resource "
             "and identify any temporal or spatial relationships between resources."
         ),
         "tools": [
-            context_tools.get_context_overview,
-            context_tools.get_resource_info,
-            context_tools.get_field_names,
-            context_tools.get_field_types,
-            context_tools.get_sample_items,
             context_tools.detect_temporal_columns,
-            context_tools.analyze_temporal_column,
             context_tools.detect_spatial_columns,
+            context_tools.analyze_temporal_column,
             context_tools.analyze_spatial_column,
             context_tools.get_spatial_extent,
             context_tools.get_spatial_extent_from_tuple_column,

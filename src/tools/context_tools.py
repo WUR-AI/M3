@@ -1,7 +1,11 @@
 """
 Unified ExecutionContext Tools for the Multi-Agent System.
 """
+#TODO: date modified tool
+#TODO: spatial and temporal resolution fields
+
 import ast
+import json
 import re
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -159,6 +163,55 @@ def get_sample_items(context_key: str, resource: str = "", n: int = 5) -> str:
         return df.to_string()
     except Exception as e:
         return f"Error: {str(e)}"
+
+
+def _serialize_cell(value: Any) -> Any:
+    """Convert a DataFrame cell to a JSON-serializable value."""
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return None
+    if pd.isna(value):
+        return None
+    if hasattr(value, "item"):
+        try:
+            return value.item()
+        except (ValueError, AttributeError):
+            pass
+    return value
+
+
+def _preview_resource_columns_and_first_row(ctx: Any, resource: str) -> Dict[str, Any]:
+    info = ctx.get_resource_info(resource)
+    df = ctx.read_resource(resource, limit=1)
+    if df.empty:
+        first_row: Dict[str, Any] = {}
+    else:
+        first_row = {
+            col: _serialize_cell(df.iloc[0][col]) for col in info.field_names
+        }
+    return {"columns": info.field_names, "first_row": first_row}
+
+
+@tool
+def get_columns_with_first_row(context_key: str, resource: str = "") -> str:
+    """
+    Get column names and the first data row for one or all resources.
+
+    Returns dictionary-style text: for each resource, lists every column name
+    and the first row as column -> value pairs. Omit resource to preview all
+    resources in the context in a single call.
+    """
+    try:
+        ctx = get_context(context_key)
+        if resource:
+            preview = {resource: _preview_resource_columns_and_first_row(ctx, resource)}
+        else:
+            preview = {
+                res: _preview_resource_columns_and_first_row(ctx, res)
+                for res in ctx.resources
+            }
+        return json.dumps(preview, indent=2, default=str)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
 
 
 @tool
@@ -906,6 +959,7 @@ def get_all_context_tools() -> List:
         get_field_names,
         get_field_types,
         get_sample_items,
+        get_columns_with_first_row,
         get_field_statistics,
         get_missing_values,
         get_unique_values,
@@ -933,6 +987,7 @@ def _get_tool_context_compatibility() -> Dict[str, Set[ContextType]]:
         "get_field_names": csv_types,
         "get_field_types": csv_types,
         "get_sample_items": csv_types,
+        "get_columns_with_first_row": csv_types,
         "get_field_statistics": csv_types,
         "get_missing_values": csv_types,
         "get_unique_values": csv_types,

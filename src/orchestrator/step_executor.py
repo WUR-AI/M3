@@ -47,6 +47,7 @@ def execute_parallel_node(state: StepExecutionState) -> Dict[str, Any]:
     target_resources = state.get("target_resources", [])
     workspace = state["workspace"]
     input_mappings = state["input_mappings"]
+    tool_tracer = state.get("tool_tracer")
     
     is_multi_csv = context_info.get("is_multi_csv", False)
     
@@ -69,7 +70,8 @@ def execute_parallel_node(state: StepExecutionState) -> Dict[str, Any]:
                 context_info=context_info,
                 workspace=workspace,
                 inputs=input_mappings,
-                target_resources=target_resources
+                target_resources=target_resources,
+                tool_tracer=tool_tracer,
             )
             
             player_results.append({
@@ -406,7 +408,8 @@ def create_step_state(
     players_per_step: int,
     debate_rounds: int,
     player_pool: List[str],
-    output_schema: Optional[Type[BaseModel]] = None
+    output_schema: Optional[Type[BaseModel]] = None,
+    tool_tracer: Optional[Any] = None,
 ) -> StepExecutionState:
     """
     Create the initial state for executing a step.
@@ -470,6 +473,7 @@ def create_step_state(
         context_info=context.to_dict(),
         workspace=workspace,
         metadata_standard=metadata_standard,
+        tool_tracer=tool_tracer,
         players=players,
         synthesizer=synthesizer,
         max_debate_rounds=debate_rounds,

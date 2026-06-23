@@ -50,20 +50,11 @@ record_set_standard: Dict[str, Dict[str, Any]] = {
     "examples": {
         "type": List[str],
         "default": [],
-        "description": "Example record values.",
-        "prompt_hint": "Representative examples of records.",
-    },
-    "annotation": {
-        "type": Optional[str],
-        "default": None,
-        "description": (
-            "Short summary of what this table contains (one sentence, under 25 words)."
-        ),
+        "description": "Example row(s) from this table.",
         "prompt_hint": (
-            "One concise sentence: what the table holds and its role, e.g. "
-            "'Species names and taxonomy codes' or 'Sampling locations and dates'."
+            "Representative row; for non-tabular data, a dataset record."
         ),
-    },
+    }
 }
 
 field_standard: Dict[str, Dict[str, Any]] = {

@@ -15,6 +15,7 @@ from typing import Dict, Any, List, Optional, Type
 
 from pydantic import BaseModel
 
+from src.core import ToolTrace
 from src.core.schemas import Plan, ExecutionResult, StepResult
 from src.context import ExecutionContext
 from src.players.configs import METADATA_OUTPUT_PLAYER_NAMES
@@ -50,6 +51,7 @@ class PlanExecutor:
         self.topology_name = topology_name
         self.topology = EXECUTION_TOPOLOGIES[topology_name]
         self.step_graph = get_step_execution_graph()
+        self.tool_trace = ToolTrace()
 
         logging.info(f"PlanExecutor initialized with topology: {topology_name}")
         logging.info(f"  Players per step: {self.topology['players_per_step']}")
@@ -80,6 +82,7 @@ class PlanExecutor:
             ExecutionResult with all step results and final metadata
         """
         effective_player_pool = player_pool or self.topology["player_pool"]
+        self.tool_trace = ToolTrace()
         
         # Try to get the Pydantic schema for structured output
         output_schema: Optional[Type[BaseModel]] = None
@@ -158,6 +161,7 @@ class PlanExecutor:
                     debate_rounds=self.topology["debate_rounds"],
                     player_pool=effective_player_pool,
                     output_schema=step_output_schema,
+                    tool_tracer=self.tool_trace,
                 )
 
                 # Execute the step graph
@@ -279,6 +283,14 @@ class PlanExecutor:
             success=overall_success,
             error=None if overall_success else "Some steps failed",
         )
+
+    def list_tools_called(self) -> List[str]:
+        """List tool names called during the most recent plan execution."""
+        return self.tool_trace.list_tools_called()
+
+    def find_tool_calls(self, tool: str) -> List[Dict[str, Any]]:
+        """Find agent, input, and output records for a tool in the latest run."""
+        return self.tool_trace.find_tool_calls(tool)
 
     def _filter_workspace(self, workspace: Dict[str, Any]) -> Dict[str, Any]:
         """Filter out internal workspace keys."""

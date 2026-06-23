@@ -56,6 +56,7 @@ class StepExecutionState(TypedDict):
     context_info: Dict[str, Any]       # Serialized ExecutionContext info
     workspace: Dict[str, Any]          # Artifacts from previous steps
     metadata_standard: str             # The metadata standard to follow
+    tool_tracer: Optional[Any]          # Shared tool trace for this plan execution
     
     # --- Player Configuration ---
     players: List[Any]                 # List of Player instances for this step

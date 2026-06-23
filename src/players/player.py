@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import json
 import logging
-from typing import Any, Dict, List, Optional, Tuple, Union, Type
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, Union, Type
 
 from pydantic import BaseModel, ValidationError
 from langchain_core.tools import BaseTool
@@ -29,6 +29,9 @@ from ..config import (
     LLM_PROVIDER,
     PLAYER_MAX_TOOL_ITERATIONS,
 )
+
+if TYPE_CHECKING:
+    from src.core import ToolTrace
 
 
 def _stringify_message_content(content: Any) -> str:
@@ -176,6 +179,7 @@ class Player:
         input_context: str,
         ctx_info: str,
         tool_descriptions: str,
+        tool_tracer: Optional["ToolTrace"] = None,
     ) -> Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str]]:
         """
         Optional model-driven tool calling. Returns None if bind_tools is unavailable.
@@ -265,12 +269,20 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
                 tool = tools_by_name.get(name or "")
                 if tool is None:
                     err = f"Unknown tool: {name}"
+                    out = {"error": err}
                     tool_trace.append(
                         {"tool": name, "args": args, "error": err, "source": "llm"}
                     )
+                    if tool_tracer is not None:
+                        tool_tracer.record_tool_call(
+                            tool=name,
+                            agent=self.name,
+                            tool_input=args,
+                            output=out,
+                        )
                     messages.append(
                         ToolMessage(
-                            content=_serialize_tool_result({"error": err}),
+                            content=_serialize_tool_result(out),
                             tool_call_id=tid,
                         )
                     )
@@ -300,6 +312,13 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
                             "result": out,
                             "source": "llm",
                         }
+                    )
+                if tool_tracer is not None:
+                    tool_tracer.record_tool_call(
+                        tool=tool.name,
+                        agent=self.name,
+                        tool_input=merged,
+                        output=out,
                     )
 
                 trace_key = f"llm:{iteration}:{tool.name}:{tid}"
@@ -344,6 +363,7 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
         workspace: Dict[str, Any],
         inputs: Dict[str, str],
         target_resources: List[str] = None,
+        tool_tracer: Optional["ToolTrace"] = None,
     ) -> Dict[str, Any]:
         """
         Execute a specific task using available tools via LLM-driven tool calling.
@@ -444,6 +464,7 @@ Execute this task and provide a comprehensive response. Include:
                 input_context=input_context,
                 ctx_info=ctx_info,
                 tool_descriptions=tool_descriptions,
+                tool_tracer=tool_tracer,
             )
 
         if llm_result is not None:

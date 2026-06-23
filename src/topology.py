@@ -34,6 +34,7 @@ EXECUTION_TOPOLOGIES: Dict[str, Dict[str, Any]] = {
         "players_per_step": 3,
         "debate_rounds": 2,
         "player_pool": [
+            "dataset_schema_preview",
             "data_analyst",
             "schema_expert",
             "metadata_specialist",
@@ -49,6 +50,7 @@ EXECUTION_TOPOLOGIES: Dict[str, Dict[str, Any]] = {
         "players_per_step": 2,
         "debate_rounds": 1,
         "player_pool": [
+            "dataset_schema_preview",
             "data_analyst",
             "schema_expert",
             "metadata_specialist",
@@ -64,6 +66,7 @@ EXECUTION_TOPOLOGIES: Dict[str, Dict[str, Any]] = {
         "players_per_step": 4,
         "debate_rounds": 3,
         "player_pool": [
+            "dataset_schema_preview",
             "data_analyst",
             "schema_expert",
             "metadata_specialist",
@@ -79,6 +82,7 @@ EXECUTION_TOPOLOGIES: Dict[str, Dict[str, Any]] = {
         "players_per_step": 1,
         "debate_rounds": 0,
         "player_pool": [
+            "dataset_schema_preview",
             "data_analyst",
             "schema_expert",
             "metadata_specialist",
