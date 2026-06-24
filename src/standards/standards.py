@@ -122,6 +122,27 @@ CUSTOM_METADATA_SCHEMAS: Dict[str, type[BaseModel]] = {
     "croissant_standard_subset": CroissantStandardSubsetMetadata,
 }
 
+CROISSANT_STANDARD_NAMES = frozenset(CUSTOM_METADATA_SCHEMAS.keys())
+
+
+def is_croissant_standard(standard_name: Optional[str]) -> bool:
+    return standard_name in CROISSANT_STANDARD_NAMES
+
+
+def planning_metadata_standard(
+    metadata_standard: str, metadata_standard_name: Optional[str] = None
+) -> str:
+    """Add a short planner directive when the active standard is Croissant."""
+    if not is_croissant_standard(metadata_standard_name):
+        return metadata_standard
+    return (
+        "ACTIVE STANDARD: croissant_standard_subset (treat as a Croissant task).\n"
+        "Use the Croissant player order: dataset_schema_preview, then "
+        "relationship_analyst, then spatial_temporal_specialist (if spatial/temporal "
+        "fields apply), then croissant_metadata_generator as the final step.\n\n"
+        f"{metadata_standard}"
+    )
+
 
 # =============================================================================
 # SCHEMA REGISTRY - Maps standard names to Pydantic models

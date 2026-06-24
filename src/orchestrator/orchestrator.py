@@ -31,6 +31,7 @@ from ..tools.context_tools import (
 from ..topology import EXECUTION_TOPOLOGIES
 from .plan_executor import PlanExecutor
 from .prompts import get_multi_csv_planning_prompt, get_single_csv_planning_prompt
+from ..standards.standards import planning_metadata_standard
 from .utils import validate_plan_dataflow, validate_plan_tool_compatibility
 
 
@@ -198,7 +199,10 @@ class Orchestrator:
         return "\n".join(info_parts)
 
     def generate_plan(
-        self, context: ExecutionContext, metadata_standard: str
+        self,
+        context: ExecutionContext,
+        metadata_standard: str,
+        metadata_standard_name: Optional[str] = None,
     ) -> Optional[Plan]:
         classified_type = self._classify_context_for_planning(context)
         is_multi_context = classified_type in self.MULTI_CONTEXT_TYPES
@@ -211,10 +215,15 @@ class Orchestrator:
         logging.info(f"Classified planning type: {classified_type.value}")
         logging.info(f"Resources: {context.resources}")
         logging.info(f"Is multi-context: {is_multi_context}")
+        if metadata_standard_name:
+            logging.info(f"Metadata standard name: {metadata_standard_name}")
         logging.info("=" * 60)
 
         manifest = self._generate_player_manifest(context)
         context_info = self._generate_context_info(context)
+        planner_standard = planning_metadata_standard(
+            metadata_standard, metadata_standard_name
+        )
 
         logging.info("Prepared planning inputs.")
         logging.info("  Context summary length: %d chars", len(context_info))
@@ -232,7 +241,7 @@ class Orchestrator:
                     "table_names": ", ".join(context.resources),
                     "file_type": context.context_type.value.upper(),
                     "available_players": manifest,
-                    "metadata_standard": metadata_standard,
+                    "metadata_standard": planner_standard,
                     "format_instructions": format_instructions,
                 }
 
@@ -241,7 +250,7 @@ class Orchestrator:
                 prompt_inputs = {
                     "file_type": context.context_type.value.upper(),
                     "available_players": manifest,
-                    "metadata_standard": metadata_standard,
+                    "metadata_standard": planner_standard,
                     "format_instructions": format_instructions,
                 }
 
@@ -342,7 +351,11 @@ class Orchestrator:
             logging.info(f"Metadata standard: {metadata_standard_name} (structured output)")
         logging.info("=" * 60)
 
-        plan = self.generate_plan(context=context, metadata_standard=metadata_standard)
+        plan = self.generate_plan(
+            context=context,
+            metadata_standard=metadata_standard,
+            metadata_standard_name=metadata_standard_name,
+        )
 
         if plan is None:
             logging.error("Failed to generate plan. Aborting execution.")

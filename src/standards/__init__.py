@@ -16,7 +16,9 @@ from src.standards.standards import (
     METADATA_STANDARDS,
     STANDARD_DEFINITIONS,
     get_schema_for_standard,
+    is_croissant_standard,
     load_metadata_standard,
+    planning_metadata_standard,
 )
 
 __all__ = [
@@ -32,6 +34,8 @@ __all__ = [
     "field_standard",
     "file_set_standard",
     "get_schema_for_standard",
+    "is_croissant_standard",
     "load_metadata_standard",
+    "planning_metadata_standard",
     "record_set_standard",
 ]

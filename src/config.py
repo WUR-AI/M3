@@ -64,6 +64,10 @@ PLAYER_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE_PLAYER", "0.3"))
 # Max model↔tool rounds per player task.
 PLAYER_MAX_TOOL_ITERATIONS = int(os.getenv("PLAYER_MAX_TOOL_ITERATIONS", "8"))
 
+# Per-request LLM timeout (seconds). Prevents calls from hanging forever.
+# Can be overridden by environment variable: LLM_REQUEST_TIMEOUT
+LLM_REQUEST_TIMEOUT = float(os.getenv("LLM_REQUEST_TIMEOUT", "180"))
+
 
 # =============================================================================
 # PROVIDER-SPECIFIC API KEYS AND ENDPOINTS
@@ -199,6 +203,7 @@ def create_llm(
             openai_api_key=SURF_API_KEY,
             openai_api_base=SURF_API_BASE,
             model_kwargs=model_kwargs,
+            request_timeout=kwargs.pop("request_timeout", LLM_REQUEST_TIMEOUT),
             **kwargs
         )
     
@@ -214,6 +219,7 @@ def create_llm(
             model=model,
             temperature=temperature,
             openai_api_key=OPENAI_API_KEY,
+            request_timeout=kwargs.pop("request_timeout", LLM_REQUEST_TIMEOUT),
             **kwargs
         )
     

@@ -2,7 +2,6 @@
 Unified ExecutionContext Tools for the Multi-Agent System.
 """
 #TODO: date modified tool
-#TODO: spatial and temporal resolution fields
 
 import ast
 import json

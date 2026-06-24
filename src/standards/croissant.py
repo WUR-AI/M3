@@ -101,11 +101,6 @@ field_standard: Dict[str, Dict[str, Any]] = {
 }
 
 
-# date modified ?
-# spatial temporal resolution
-
-# 
-
 croissant_standard_subset: Dict[str, Dict[str, Any]] = {
     "name": {
         "type": str,
@@ -126,10 +121,14 @@ croissant_standard_subset: Dict[str, Dict[str, Any]] = {
         "prompt_hint": "List search terms or tags.",
     },
     "filesets": {
-        "type": List["FileSet"],
-        "default": [],
+        "type": "FileSet",
+        "default": {"includes": [], "excludes": []},
         "description": "Physical files belonging to the dataset",
-        "prompt_hint": "One object per file or file collection.",
+        "prompt_hint": (
+            "Single object with includes listing all data file names "
+            "(e.g. ['file_a.csv', 'file_b.csv']) and excludes for omitted files "
+            "(e.g. ['README.md']); use [] when none apply"
+        ),
     },
     "recordsets": {
         "type": List["RecordSet"],
@@ -159,10 +158,30 @@ croissant_standard_subset: Dict[str, Dict[str, Any]] = {
         ),
     },
     "temporalCoverage": {
+        "type": Optional[Dict[str, str]],
+        "default": None,
+        "description": "Time period covered with keys: from, to",
+        "prompt_hint": (
+            "Time period covered with ISO 8601 date or datetime strings: "
+            "from, to"
+        ),
+    },
+    "spatial": {
         "type": Optional[str],
         "default": None,
-        "description": "Time period covered, from and to date",
-        "prompt_hint": "Time period covered, from and to date",
+        "description": "Spatial resolution of the data",
+        "prompt_hint": (
+            "Spatial resolution of the data, e.g. 10 m, 0.25 degree, "
+            "point locations"
+        ),
+    },
+    "temporal": {
+        "type": Optional[str],
+        "default": None,
+        "description": "Temporal resolution of the data",
+        "prompt_hint": (
+            "Temporal resolution of the data, e.g. daily, monthly, yearly"
+        ),
     },
 }
 

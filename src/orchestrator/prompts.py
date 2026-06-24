@@ -35,14 +35,16 @@ Your goal is to generate a step-by-step plan to extract metadata from a resource
 - For simple standards (≤5 fields): Use 2-3 steps maximum (1 analysis step + 1 generation step)
 - For medium standards (6-10 fields): Use 3-4 steps maximum
 - For complex standards (>10 fields): Group related fields and use 4-6 steps maximum
-- If spatial/geospatial requirements are detected in `{metadata_standard}`, the plan SHOULD be exactly 4 steps: (1) data profiling, (2) supporting analysis if needed, (3) `spatial_temporal_specialist`, (4) final metadata output player.
+- If spatial/geospatial requirements are detected in `{metadata_standard}`:
+  - **Croissant**: exactly 3–4 steps — `dataset_schema_preview` → `relationship_analyst` → `spatial_temporal_specialist` (if spatial/temporal fields) → `croissant_metadata_generator`. Step 1 MUST be `dataset_schema_preview`; never `data_analyst`.
+  - **Non-Croissant**: exactly 4 steps — `data_analyst` → supporting analysis if needed → `spatial_temporal_specialist` → final metadata output player.
 
 **CRITICAL - Croissant Standard Detection (infer from `{metadata_standard}` text):**
-- If the metadata standard describes Croissant concepts (for example: filesets, recordsets, inLanguage, spatialCoverage, temporalCoverage, CroissantField, dataType, isArray), treat it as a Croissant metadata task.
-- For Croissant standards, center the plan on `dataset_schema_preview`, `relationship_analyst`, `spatial_temporal_specialist` (when spatial or temporal fields apply), and `croissant_metadata_generator`:
+- If the metadata standard describes Croissant concepts (for example: filesets, recordsets, inLanguage, spatialCoverage, temporalCoverage, spatial, temporal, CroissantField, dataType, isArray), treat it as a Croissant metadata task.
+- For Croissant standards, Step 1 MUST be `dataset_schema_preview` (never `data_analyst`). Then `relationship_analyst`, `spatial_temporal_specialist` when spatial/temporal fields apply, and `croissant_metadata_generator` last:
   - `dataset_schema_preview` runs `get_columns_with_first_row` (omit `resource` to cover all tables in one call) to capture every column name and a first-row value map per resource
   - `relationship_analyst` consumes the schema preview to surface primary keys, foreign keys, and cross-table references needed for recordset linkage and CroissantField `references`
-  - `spatial_temporal_specialist` runs when `{metadata_standard}` or the previewed schema suggests coordinates, geometry, or date/time columns; use ``get_spatial_extent_from_tuple_column`` when coordinates appear as ``(lon, lat)`` or ``(lat, lon)`` strings, and ``get_spatial_extent`` only for separate numeric latitude and longitude columns
+  - `spatial_temporal_specialist` runs when `{metadata_standard}` or the previewed schema suggests coordinates, geometry, or date/time columns; it MUST call `detect_temporal_columns` and `detect_spatial_columns` per target resource, then extent/analysis tools (`get_temporal_extent`, `get_spatial_extent`, `get_spatial_extent_from_tuple_column`, etc.) — do not infer coverage from schema preview alone; use ``get_spatial_extent_from_tuple_column`` when coordinates appear as ``(lon, lat)`` or ``(lat, lon)`` strings, and ``get_spatial_extent`` only for separate numeric latitude and longitude columns
   - `croissant_metadata_generator` is the FINAL step only (never `metadata_generator`); wire prior artifacts into `inputs` together with `"metadata_standard": "metadata_standard"` and set `outputs` to `["metadata_output"]`
 - Do not add `data_analyst` / `get_field_statistics` steps for Croissant plans unless a required metadata field cannot be populated from the schema preview, relationship, and spatial-temporal artifacts.
 
@@ -51,7 +53,7 @@ Your goal is to generate a step-by-step plan to extract metadata from a resource
 - For non-Croissant multi-resource contexts, run `get_field_statistics` for each resource (or a combined step that still produces per-resource `field_stats` artifacts).
 - If **Metadata Standard** indicates spatial/geospatial requirements, you MUST include a `spatial_temporal_specialist` step before final metadata generation.
 - Infer this from the text of `{metadata_standard}` (for example: spatial, geospatial, geometry, coordinate, latitude, longitude, bbox/bounding box, CRS, extent, coverage). Do not rely on standard name matching.
-- If coordinates are stored in one column as ``(lon, lat)`` or ``(lat, lon)`` text tuples (e.g. ``tuple_coords``), the `spatial_temporal_specialist` can use ``get_spatial_extent_from_tuple_column`` for bounding boxes; use ``get_spatial_extent`` only when separate numeric latitude and longitude columns exist.
+- If coordinates are stored in one column as ``(lon, lat)`` or ``(lat, lon)`` text tuples (e.g. ``tuple_coords``), the `spatial_temporal_specialist` MUST call detection tools first, then use ``get_spatial_extent_from_tuple_column`` for bounding boxes; use ``get_spatial_extent`` only when separate numeric latitude and longitude columns exist.
 
 **MANDATORY - FINAL STEP Requirements:**
 The last step MUST:
@@ -91,13 +93,13 @@ You MUST output **ONLY** a JSON object that conforms to the following schema:
 
 REQUIREMENTS:
 1. Use MINIMUM steps - combine related analyses
-2. If `{metadata_standard}` includes spatial/geospatial concepts (e.g., spatial/geospatial, coordinate, latitude/longitude, extent/coverage, CRS), include one `spatial_temporal_specialist` step before final generation.
-3. For spatial/geospatial standards, produce exactly 4 steps.
-4. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
-5. FINAL STEP inputs MUST include: {{"metadata_standard": "metadata_standard"}}
-6. FINAL STEP outputs MUST be exactly: ["metadata_output"]
-7. For non-Croissant standards, include a `data_analyst` step that runs `get_field_statistics` (and optionally `get_missing_values`) before the final step.
-8. For Croissant standards, follow the Croissant player guidance in the system prompt (`dataset_schema_preview`, `relationship_analyst`, `spatial_temporal_specialist` when applicable, `croissant_metadata_generator`).
+2. If `{metadata_standard}` is Croissant: Step 1 = `dataset_schema_preview`, then `relationship_analyst`, optional `spatial_temporal_specialist`, final = `croissant_metadata_generator` (never `data_analyst`).
+3. If `{metadata_standard}` includes spatial/geospatial concepts and is NOT Croissant, include `spatial_temporal_specialist` before final generation.
+4. For non-Croissant spatial standards, produce exactly 4 steps.
+5. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
+6. FINAL STEP inputs MUST include: {{"metadata_standard": "metadata_standard"}}
+7. FINAL STEP outputs MUST be exactly: ["metadata_output"]
+8. For non-Croissant standards only, include a `data_analyst` step with `get_field_statistics` before the final step.
 
 Keep the plan SHORT.""",
             ),
@@ -129,7 +131,7 @@ Your goal is to generate a step-by-step plan to extract metadata from a context 
 **Key Instructions for Multi-CSV Analysis:**
 
 1.  **Be CONCISE**: Create the MINIMUM number of steps. Combine analyses where possible.
-2.  **Phase 1 - Resource Analysis**: Analyze resources (can combine multiple resources in one step if similar analysis needed)
+2.  **Phase 1**: For Croissant, `dataset_schema_preview`; for non-Croissant, resource profiling via `data_analyst`
 3.  **Phase 2 - Relationship Discovery**: One step to discover relationships between resources
 4.  **Phase 3 (Conditional) - Spatial Analysis**: If the metadata standard contains spatial/geospatial requirements, add a `spatial_temporal_specialist` step before final generation.
 5.  **Phase 4 - Final Generation**: Use `metadata_generator` or `croissant_metadata_generator` to produce all metadata values (choose based on `{metadata_standard}` content)
@@ -139,7 +141,7 @@ Your goal is to generate a step-by-step plan to extract metadata from a context 
 - For non-Croissant multi_csv contexts, ensure `get_field_statistics` is executed for each resource (or produces per-resource `field_stats` artifacts).
 - If **Metadata Standard** indicates spatial/geospatial requirements, you MUST include a `spatial_temporal_specialist` step after relationship discovery and before final metadata generation.
 - Infer this from the text of `{metadata_standard}` (for example: spatial, geospatial, geometry, coordinate, latitude, longitude, bbox/bounding box, CRS, extent, coverage). Do not rely on standard name matching.
-- If any resource has coordinates as a single column of ``(lon, lat)`` or ``(lat, lon)`` tuples (e.g. ``tuple_coords``), the `spatial_temporal_specialist` should use ``get_spatial_extent_from_tuple_column`` for extent; use ``get_spatial_extent`` only for separate numeric lat/lon columns.
+- If any resource has coordinates as a single column of ``(lon, lat)`` or ``(lat, lon)`` tuples (e.g. ``tuple_coords``), the `spatial_temporal_specialist` MUST call detection tools first, then use ``get_spatial_extent_from_tuple_column`` for extent; use ``get_spatial_extent`` only for separate numeric lat/lon columns.
 
 **Step Schema**: Each step must include:
 - `task`: The specific task to perform
@@ -158,14 +160,16 @@ Your goal is to generate a step-by-step plan to extract metadata from a context 
 - **DO NOT** create a separate step for each resource or each field - combine!
 - For 2-3 resources: Use 3-4 steps (1 combined analysis + 1 relationship + 1 generation)
 - For 4+ resources: Use 4-6 steps maximum
-- If spatial/geospatial requirements are detected in `{metadata_standard}`, the plan SHOULD be exactly 4 steps: (1) resource profiling, (2) relationship discovery, (3) `spatial_temporal_specialist`, (4) final metadata output player.
+- If spatial/geospatial requirements are detected in `{metadata_standard}`:
+  - **Croissant**: exactly 3–4 steps — `dataset_schema_preview` → `relationship_analyst` → `spatial_temporal_specialist` (if spatial/temporal fields) → `croissant_metadata_generator`. Step 1 MUST be `dataset_schema_preview`; never `data_analyst`.
+  - **Non-Croissant**: exactly 4 steps — `data_analyst` → relationship discovery → `spatial_temporal_specialist` → final metadata output player.
 
 **CRITICAL - Croissant Standard Detection (infer from `{metadata_standard}` text):**
-- If the metadata standard describes Croissant concepts (for example: filesets, recordsets, inLanguage, spatialCoverage, temporalCoverage, CroissantField, dataType, isArray), treat it as a Croissant metadata task.
-- For Croissant standards, center the plan on `dataset_schema_preview`, `relationship_analyst`, `spatial_temporal_specialist` (when spatial or temporal fields apply), and `croissant_metadata_generator`:
+- If the metadata standard describes Croissant concepts (for example: filesets, recordsets, inLanguage, spatialCoverage, temporalCoverage, spatial, temporal, CroissantField, dataType, isArray), treat it as a Croissant metadata task.
+- For Croissant standards, Step 1 MUST be `dataset_schema_preview` (never `data_analyst`). Then `relationship_analyst`, `spatial_temporal_specialist` when spatial/temporal fields apply, and `croissant_metadata_generator` last:
   - `dataset_schema_preview` runs `get_columns_with_first_row` (omit `resource` to cover all tables in one call) to capture every column name and a first-row value map per resource
   - `relationship_analyst` consumes the schema preview to surface primary keys, foreign keys, and cross-table references needed for recordset linkage and CroissantField `references`
-  - `spatial_temporal_specialist` runs when `{metadata_standard}` or the previewed schema suggests coordinates, geometry, or date/time columns; use ``get_spatial_extent_from_tuple_column`` when coordinates appear as ``(lon, lat)`` or ``(lat, lon)`` strings, and ``get_spatial_extent`` only for separate numeric latitude and longitude columns
+  - `spatial_temporal_specialist` runs when `{metadata_standard}` or the previewed schema suggests coordinates, geometry, or date/time columns; it MUST call `detect_temporal_columns` and `detect_spatial_columns` per target resource, then extent/analysis tools (`get_temporal_extent`, `get_spatial_extent`, `get_spatial_extent_from_tuple_column`, etc.) — do not infer coverage from schema preview alone; use ``get_spatial_extent_from_tuple_column`` when coordinates appear as ``(lon, lat)`` or ``(lat, lon)`` strings, and ``get_spatial_extent`` only for separate numeric latitude and longitude columns
   - `croissant_metadata_generator` is the FINAL step only (never `metadata_generator`); wire prior artifacts into `inputs` together with `"metadata_standard": "metadata_standard"` and set `outputs` to `["metadata_output"]`
 - Do not add `data_analyst` / `get_field_statistics` steps for Croissant plans unless a required metadata field cannot be populated from the schema preview, relationship, and spatial-temporal artifacts.
 
@@ -217,14 +221,12 @@ File type: {file_type}
 
 REQUIREMENTS:
 1. Use MINIMUM steps - combine resource analyses
-2. Include ONE relationship discovery step  
-3. For non-Croissant standards, include at least one `data_analyst` profiling step using `get_field_statistics` (and optionally `get_missing_values`) even if the dataset is small.
-4. If `{metadata_standard}` includes spatial/geospatial concepts (e.g., spatial/geospatial, coordinate, latitude/longitude, extent/coverage, CRS), include one `spatial_temporal_specialist` step before final generation.
-5. For spatial/geospatial standards, produce exactly 4 steps.
-6. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
-7. FINAL STEP inputs MUST include: {{"metadata_standard": "metadata_standard"}}
-8. FINAL STEP outputs MUST be exactly: ["metadata_output"]
-9. For Croissant standards, follow the Croissant player guidance in the system prompt (`dataset_schema_preview`, `relationship_analyst`, `spatial_temporal_specialist` when applicable, `croissant_metadata_generator`).
+2. If Croissant: Step 1 = `dataset_schema_preview` → `relationship_analyst` → optional `spatial_temporal_specialist` → `croissant_metadata_generator` (never `data_analyst`)
+3. For non-Croissant only: include ONE relationship discovery step and at least one `data_analyst` step with `get_field_statistics`
+4. If non-Croissant and spatial/geospatial concepts apply, include `spatial_temporal_specialist` before final generation
+5. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
+6. FINAL STEP inputs MUST include: {{"metadata_standard": "metadata_standard"}}
+7. FINAL STEP outputs MUST be exactly: ["metadata_output"]
 
 Keep the plan SHORT (3-5 steps).""",
             ),

@@ -99,6 +99,8 @@ class Player:
         provider: str = None,
         max_tool_iterations: Optional[int] = None,
         role_key: Optional[str] = None,
+        require_tool_calls: bool = False,
+        required_tools: Optional[List[str]] = None,
     ):
         """
         Initialize a Player with a role and tools.
@@ -112,6 +114,8 @@ class Player:
             provider: LLM provider to use (default from config)
             max_tool_iterations: Cap for LLM tool rounds (default from config).
             role_key: PLAYER_CONFIGS role name (e.g. spatial_temporal_specialist), if known.
+            require_tool_calls: When True, required_tools must be called before finish.
+            required_tools: Tool names that must each be called at least once.
         """
         temperature = temperature if temperature is not None else PLAYER_TEMPERATURE
         provider = provider or LLM_PROVIDER
@@ -131,6 +135,37 @@ class Player:
             else PLAYER_MAX_TOOL_ITERATIONS
         )
         self.role_key = role_key
+        self.require_tool_calls = require_tool_calls
+        self.required_tools = list(required_tools or [])
+
+    def _missing_required_tools(self, tool_trace: List[Dict[str, Any]]) -> List[str]:
+        if not self.require_tool_calls:
+            return []
+        called = {
+            entry["tool"]
+            for entry in tool_trace
+            if entry.get("source") == "llm" and "tool" in entry and "error" not in entry
+        }
+        if not self.required_tools:
+            return [] if called else ["at least one assigned tool"]
+        return [tool for tool in self.required_tools if tool not in called]
+
+    def _tool_loop_guidance(self) -> Tuple[str, str]:
+        if self.require_tool_calls:
+            return (
+                "CRITICAL: You MUST call your assigned tools before producing your final "
+                "analysis. Do not skip tool calls or infer spatial/temporal coverage from "
+                "prior step text alone. Run detection tools for each target resource, then "
+                "call extent/analysis tools when relevant columns are found.",
+                "You MUST invoke your tools first, then summarize tool results in your final "
+                "analysis (approach, findings, and concrete spatial/temporal values).",
+            )
+        return (
+            "You may call tools when they help complete the task. Tools are optional — "
+            "skip them if not needed.",
+            "Use tools only when necessary, then give a clear analysis covering approach, "
+            "findings, and results.",
+        )
 
     def get_tool_manifest(self) -> str:
         """
@@ -193,6 +228,7 @@ class Player:
 
         tools_by_name = {t.name: t for t in self.tools}
         tool_names = [t.name for t in self.tools]
+        tool_guidance, human_guidance = self._tool_loop_guidance()
         try:
             llm_tools = self.llm.bind_tools(self.tools)
         except Exception as e:
@@ -214,7 +250,7 @@ class Player:
 
         system = f"""You are {self.name}. {self.role_prompt}
 
-You may call tools when they help complete the task. Tools are optional — skip them if not needed.
+{tool_guidance}
 When you call a tool, pass correct argument names and values (e.g. resource, column, lat_column, lon_column, time_column).
 The execution environment always provides context_key; if you omit context_key it will be filled in for you.
 
@@ -230,7 +266,7 @@ Target resources for this step: {target_resources}
 Input context from previous steps:
 {input_context}
 
-Use tools only when necessary, then give a clear analysis covering approach, findings, and results."""
+{human_guidance}"""
 
         messages: List[Union[SystemMessage, HumanMessage, AIMessage, ToolMessage]] = [
             SystemMessage(content=system),
@@ -245,6 +281,22 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
             tcalls = list(getattr(ai_msg, "tool_calls", None) or [])
             if not tcalls:
                 text = _stringify_message_content(ai_msg.content)
+                missing = self._missing_required_tools(tool_trace)
+                if missing:
+                    logging.info(
+                        "Player '%s': blocking finish — still need: %s",
+                        self.name,
+                        ", ".join(missing),
+                    )
+                    messages.append(
+                        HumanMessage(
+                            content=(
+                                "Cannot finish yet. Call these tools first: "
+                                + ", ".join(missing)
+                            )
+                        )
+                    )
+                    continue
                 logging.info(
                     "Player '%s': LLM tool loop finished after %d iteration(s), "
                     "%d tool invocation(s) — model returned final analysis",
@@ -393,11 +445,7 @@ Use tools only when necessary, then give a clear analysis covering approach, fin
             context_key, context_info, is_multi_csv, resources, target_resources
         )
 
-        prompt = ChatPromptTemplate.from_messages(
-            [
-                (
-                    "system",
-                    f"""You are {self.name}. {self.role_prompt}
+        system_content = f"""You are {self.name}. {self.role_prompt}
 
 You have access to the following tools:
 {tool_descriptions}
@@ -410,8 +458,10 @@ For multi-CSV contexts (multiple CSV resources), consider:
 - How resources might relate to each other
 - Common fields that could be foreign keys
 - Data integrity across resources
-""",
-                ),
+"""
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                SystemMessage(content=system_content),
                 (
                     "human",
                     """Task: {task}
@@ -544,12 +594,11 @@ Execute this task and provide a comprehensive response. Include:
         """
         prompt = ChatPromptTemplate.from_messages(
             [
-                (
-                    "system",
-                    f"""You are {self.name}. {self.role_prompt}
+                SystemMessage(
+                    content=f"""You are {self.name}. {self.role_prompt}
 
 You are participating in a multi-agent analysis of a context (dataset, API, etc.).
-Your goal is to provide your unique perspective and insights.""",
+Your goal is to provide your unique perspective and insights."""
                 ),
                 (
                     "human",
@@ -592,13 +641,12 @@ Focus on what you can contribute based on your role.""",
         """
         prompt = ChatPromptTemplate.from_messages(
             [
-                (
-                    "system",
-                    f"""You are {self.name}. {self.role_prompt}
+                SystemMessage(
+                    content=f"""You are {self.name}. {self.role_prompt}
 
 You are reviewing the work of other analysts. Provide constructive criticism
 that helps improve the overall analysis. Be specific about what could be
-improved, what's missing, or what might be incorrect.""",
+improved, what's missing, or what might be incorrect."""
                 ),
                 (
                     "human",
@@ -643,12 +691,11 @@ Provide your critique. Focus on:
         """
         prompt = ChatPromptTemplate.from_messages(
             [
-                (
-                    "system",
-                    f"""You are {self.name}. {self.role_prompt}
+                SystemMessage(
+                    content=f"""You are {self.name}. {self.role_prompt}
 
 You are revising your work based on feedback from other analysts.
-Incorporate valid criticisms while maintaining your unique perspective.""",
+Incorporate valid criticisms while maintaining your unique perspective."""
                 ),
                 (
                     "human",
@@ -711,11 +758,7 @@ while maintaining accuracy and your analytical perspective.""",
 
     def _synthesize_string(self, task: str, results_str: str) -> str:
         """Synthesize results as a string (legacy behavior)."""
-        prompt = ChatPromptTemplate.from_messages(
-            [
-                (
-                    "system",
-                    f"""You are {self.name}. {self.role_prompt}
+        system_content = f"""You are {self.name}. {self.role_prompt}
 
 You are now synthesizing results from multiple analysts who worked on the same task.
 
@@ -729,8 +772,10 @@ You are now synthesizing results from multiple analysts who worked on the same t
 - Output ONLY the consolidated result
 - NO meta-commentary like "Based on the analyses..." or "The players found..."
 - NO explanations of your synthesis process
-- Keep the format appropriate for the task (e.g., numbers for counts, lists for columns)""",
-                ),
+- Keep the format appropriate for the task (e.g., numbers for counts, lists for columns)"""
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                SystemMessage(content=system_content),
                 (
                     "human",
                     """Task: {task}
@@ -758,11 +803,7 @@ Provide the consolidated result for this task. Output only the result, no commen
 
         Uses LangChain's with_structured_output() for guaranteed schema compliance.
         """
-        prompt = ChatPromptTemplate.from_messages(
-            [
-                (
-                    "system",
-                    f"""You are {self.name}. {self.role_prompt}
+        system_content = f"""You are {self.name}. {self.role_prompt}
 
 You are consolidating prior analysis into the required structured metadata format.
 
@@ -778,8 +819,10 @@ present into the required schema.
 **CRITICAL:**
 - Output MUST conform exactly to the provided schema
 - Use actual values from the analyses, not placeholders like "..."
-- Do not invent or infer values beyond what the analyses already provide""",
-                ),
+- Do not invent or infer values beyond what the analyses already provide"""
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                SystemMessage(content=system_content),
                 (
                     "human",
                     """Task: {task}
@@ -828,4 +871,6 @@ def create_player_from_config(
         provider=provider,
         max_tool_iterations=config.get("max_tool_iterations"),
         role_key=rk,
+        require_tool_calls=config.get("require_tool_calls", False),
+        required_tools=config.get("required_tools"),
     )
