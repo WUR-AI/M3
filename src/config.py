@@ -235,19 +235,19 @@ def create_llm(
             )
         
         model_kwargs = kwargs.pop("model_kwargs", {}) or {}
-        extra_body = model_kwargs.get("extra_body", {}) or {}
+        extra_body = model_kwargs.pop("extra_body", {}) or {}
         chat_template_kwargs = extra_body.get("chat_template_kwargs", {}) or {}
         # Disable reasoning/thinking output by default for Surf-compatible backends.
         # This helps keep responses clean for downstream structured parsing.
         chat_template_kwargs.setdefault("enable_thinking", SURF_ENABLE_THINKING)
         extra_body["chat_template_kwargs"] = chat_template_kwargs
-        model_kwargs["extra_body"] = extra_body
 
         return ChatOpenAI(
             model=model,
             temperature=temperature,
             openai_api_key=SURF_API_KEY,
             openai_api_base=SURF_API_BASE,
+            extra_body=extra_body,
             model_kwargs=model_kwargs,
             **kwargs
         )

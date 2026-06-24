@@ -1,16 +1,9 @@
 from typing import List, Dict, Any, Tuple, Optional, Set
 
 from src.context.base_context import ContextType
+from src.core.constants import DEFAULT_WORKSPACE_ARTIFACTS
 from src.players.configs import PLAYER_CONFIGS
 from src.tools.context_tools import filter_tools_by_context_type
-
-# Pre-populated artifacts available in the workspace at execution start
-DEFAULT_WORKSPACE_ARTIFACTS = {
-    "metadata_standard",
-    "_context_key",
-    "_context_info", 
-    "_schema",
-}
 
 
 def validate_plan_dataflow(
