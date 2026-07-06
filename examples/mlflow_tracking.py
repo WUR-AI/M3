@@ -1,3 +1,4 @@
+//tood: use mlflow tracing instead of wandb weave for this example. 
 """Generate spatial ecological metadata for a dataset.
 
 This example loads a dataset path from the environment, builds a context around
@@ -15,7 +16,6 @@ import json
 import logging
 from pathlib import Path
 from time import perf_counter
-from urllib.parse import urlparse
 
 import wandb
 import weave
@@ -75,14 +75,6 @@ def log_step_timing(step_name: str, start: float) -> float:
     logger.info("[timer] %s: %.3fs", step_name, now - start)
     return now
 
-
-def artifact_reference_uri(path_or_uri: str) -> str:
-    """Return a W&B artifact reference URI for local paths and remote URIs."""
-    parsed = urlparse(path_or_uri)
-    if parsed.scheme:
-        return path_or_uri
-    return Path(path_or_uri).expanduser().resolve().as_uri()
-
 logger.info("**************************** Start of Workflow ****************************")
 
 # 1. Define the input source. DATA_FILE should point at the dataset that will be
@@ -93,11 +85,10 @@ topology_name = agent_config.DEFAULT_TOPOLOGY
 
 with wandb.init(
     project="metadata-agent-wandb-weave",
-    name="spatial-ecological-my-dataset",
 ) as run:
     dataset_artifact = wandb.Artifact(name="input_dataset", type="dataset")
     # dataset_artifact.add_file(example_config.DATA_FILE)
-    dataset_artifact.add_reference(artifact_reference_uri(example_config.DATA_FILE))
+    dataset_artifact.add_reference(example_config.DATA_FILE)
 
     run.log_artifact(dataset_artifact)
 
