@@ -109,9 +109,11 @@ def generate_metadata(
     try:
         dataset_name = Path(file_name).stem
         metadata_standard = load_metadata_standard(standard_name)
+        _publish_progress(progress_callback, "creating_context")
         context = create_context({"data": temp_path}, name=dataset_name)
         _publish_progress(progress_callback, "context_created", context.to_dict())
 
+        _publish_progress(progress_callback, "initializing_orchestrator")
         orchestrator = Orchestrator(
             topology_name=topology_name,
             model_name=get_model_name(),
@@ -119,6 +121,7 @@ def generate_metadata(
             provider=LLM_PROVIDER,
         )
 
+        _publish_progress(progress_callback, "generating_plan")
         plan = orchestrator.generate_plan(
             context=context,
             metadata_standard=metadata_standard,
@@ -132,6 +135,7 @@ def generate_metadata(
         if not orchestrator._validate_plan(plan, context):
             raise RuntimeError("Generated metadata plan failed validation.")
 
+        _publish_progress(progress_callback, "executing_plan")
         result = orchestrator.execute_plan(
             plan=plan,
             context=context,

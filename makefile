@@ -50,11 +50,11 @@ uv-clean:
 
 
 # Auto documentation
-install-docs:
+docs-install:
 	$(UV) pip install -e .
 	$(UV) sync --no-default-groups --group docs  # install dependencies for docs group
 
-docs: install-docs
+docs: docs-install
 	$(UV) run sphinx-build -b html docs docs/_build/html
 	open docs/_build/html/index.html
 
@@ -65,10 +65,10 @@ docs-clean:
 	rm -rf docs/_build docs/generated
 
 
-install-demo:
+demo-install:
 	$(UV) sync --no-default-groups --group demo  # install dependencies for demo group
 	
-demo: install-demo
+demo: demo-install
 	$(UV) run --group demo streamlit run demo_app.py
 
 docker-install-demo:
@@ -106,3 +106,7 @@ ci: lint compile test
 tui:
 	$(UV) pip install -e .
 	metadata-agent --tui
+
+tracking-install: 
+	$(UV) sync --no-default-groups --group tracking
+

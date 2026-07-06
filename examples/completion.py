@@ -23,5 +23,9 @@ response = requests.post(
     headers=headers
 ).json()
 
-print(response["choices"][0]["message"]["content"])
+try:
+    print(response["choices"][0]["message"]["content"])
+except Exception as e:
+    print(f"Error: {e}")
+    print(f"Original response: {response}")
 print("\n----------- Done -----------")

@@ -1,9 +1,43 @@
 """
-This file contains predefined, named metadata standards that can be used by the orchestrator.
+Predefined metadata standards used by the orchestrator.
 
-Each standard has:
-1. A string template (METADATA_STANDARDS) - used for prompting the LLM
-2. A Pydantic model (METADATA_SCHEMAS) - used for structured output validation
+Each standard is defined once in :data:`STANDARD_DEFINITIONS`. From that single
+source of truth this module derives:
+
+1. :data:`METADATA_STANDARDS`, string templates used for LLM prompting.
+2. :data:`METADATA_SCHEMAS`, Pydantic models used for structured output
+   validation.
+
+Supported metadata standards
+============================
+
+``spatial_ecological``
+    Metadata for spatial and ecological datasets.
+
+    Fields:
+        - ``title`` (``str``): Title of the dataset.
+        - ``description`` (``str``): Description of the dataset.
+        - ``subject`` (``Optional[str]``): Subject/topic.
+        - ``spatial_coverage`` (``Optional[Dict[str, float]]``): Geographic
+          bounding box with keys: ``min_lat``, ``min_lon``, ``max_lat``,
+          ``max_lon``.
+        - ``spatial_resolution`` (``Optional[str]``): Spatial resolution of the
+          data.
+        - ``temporal_coverage`` (``Optional[str]``): Time period covered, from
+          and to date.
+        - ``temporal_resolution`` (``Optional[str]``): Temporal resolution of
+          the data.
+        - ``methods`` (``Optional[str]``): Methods used for data collection.
+        - ``format`` (``Optional[str]``): Data format.
+
+``dummy_standard``
+    Minimal metadata standard used for tests and TUI multi-selection behavior.
+
+    Fields:
+        - ``title`` (``str``): Dummy title field.
+        - ``summary`` (``Optional[str]``): Dummy summary field.
+        - ``owner`` (``Optional[str]``): Dummy owner field.
+        - ``version`` (``Optional[str]``): Dummy version field.
 """
 
 from pathlib import Path
@@ -114,6 +148,33 @@ def _to_model_name(standard_name: str) -> str:
     return "".join(part.capitalize() for part in standard_name.split("_")) + "Metadata"
 
 
+def _format_type_name(annotation: Any) -> str:
+    if isinstance(annotation, type):
+        return annotation.__name__
+    return str(annotation).replace("typing.", "")
+
+
+def _build_standard_docstring(
+    standard_name: str,
+    field_spec: Dict[str, Dict[str, Any]],
+) -> str:
+    lines = [
+        f"Structured metadata schema for ``{standard_name}``.",
+        "",
+        "Fields",
+        "------",
+    ]
+    for field_name, spec in field_spec.items():
+        required = "required" if spec["default"] is ... else "optional"
+        lines.extend(
+            [
+                f"{field_name} : {_format_type_name(spec['type'])}",
+                f"    {spec['description']} ({required}).",
+            ]
+        )
+    return "\n".join(lines)
+
+
 def _build_schema_for_standard(
     standard_name: str,
     field_spec: Dict[str, Dict[str, Any]],
@@ -124,7 +185,12 @@ def _build_schema_for_standard(
             spec["type"],
             Field(default=spec["default"], description=spec["description"]),
         )
-    return create_model(_to_model_name(standard_name), **model_fields)
+    return create_model(
+        _to_model_name(standard_name),
+        __doc__=_build_standard_docstring(standard_name, field_spec),
+        __module__=__name__,
+        **model_fields,
+    )
 
 
 def _build_prompt_template(field_spec: Dict[str, Dict[str, Any]]) -> str:

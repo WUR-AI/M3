@@ -10,7 +10,7 @@ dependencies = [
     "langchain>=1.2.15",
     "langchain-google-genai>=4.2.2",
     "langchain-openai>=1.2.0",
-    "langgraph>=1.1.9",
+    "langgraph>=1.2.4",
     "myst-parser>=3.0.1",
     "pandas>=2.2,<3",
     "pydantic>=2.13.3",
@@ -50,7 +50,9 @@ exclude = [
 
 [dependency-groups]
 demo = [
+    "pyyaml>=6.0.3",
     "streamlit>=1.57.0",
+    "watchdog>=6.0.0",
 ]
 docs = [
     "myst-parser>=2,<4",

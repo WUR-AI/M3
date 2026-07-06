@@ -13,6 +13,8 @@ from typing import Any, Dict, List, Optional, Set
 
 from pydantic import BaseModel, Field, validator
 
+from src.core.constants import DEFAULT_WORKSPACE_ARTIFACTS
+
 
 class Task(BaseModel):
     """
@@ -70,7 +72,7 @@ class Plan(BaseModel):
         - This validator is **non-fatal**: it logs a warning on unmet dependencies
           but does NOT raise, to avoid hard failures on imperfect LLM plans.
         """
-        produced_artifacts: Set[str] = set()
+        produced_artifacts: Set[str] = set(DEFAULT_WORKSPACE_ARTIFACTS)
 
         for i, step in enumerate(steps):
             # Get the names of the artifacts required by the current step

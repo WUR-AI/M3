@@ -110,7 +110,11 @@ venv.bak
 # Data files
 data/sample/
 data/output/
+data/schema/
 logs/
+
+# Apple 
+.DS_Store
 
 # Deployment
 temp/
