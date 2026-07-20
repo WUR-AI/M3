@@ -1,14 +1,14 @@
 <div align="center">
 <img width="233" height="233" alt="New Project(2)" src="https://github.com/user-attachments/assets/45d652b6-492f-4ee7-a353-d06310c069cb" />
 
-# Metadata Agent
+# $M^3$
 [![arXiv](https://img.shields.io/badge/arXiv-coming--soon-lightgrey.svg)](https://github.com/com3dian/metadata_agent)
 ![python](https://img.shields.io/badge/python-3.12%2B-blue)
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](https://github.com/com3dian/metadata_agent) <br>
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/com3dian/metadata_agent/pulls)
 [![Issues](https://img.shields.io/github/issues/com3dian/metadata_agent)](https://github.com/com3dian/metadata_agent/issues)
 ![GitHub Tag](https://img.shields.io/github/v/tag/com3dian/metadata_agent)
-[![test-main](https://github.com/com3dian/metadata_agent/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/com3dian/metadata_agent/actions/workflows/ci.yml)
+[![test-main](https://github.com/WUR-AI/M3/actions/workflows/ci-uv.yml/badge.svg?branch=main)](https://github.com/WUR-AI/M3/actions/workflows/ci-uv.yml)
 [![contributors](https://img.shields.io/github/contributors/com3dian/metadata_agent.svg)](https://github.com/com3dian/metadata_agent/graphs/contributors)
 
 </div>
