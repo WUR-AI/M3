@@ -107,9 +107,10 @@ venv.bak
 .idea/
 .vscode/
 
-# Project data files
+# Project data files (track only data/experiment/)
 data/*
-!data/.gitkeep
+!data/experiment/
+!data/experiment/**
 
 # OS files
 .DS_Store
