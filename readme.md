@@ -1,5 +1,6 @@
 <div align="center">
-<img width="233" height="233" alt="New Project(2)" src="https://github.com/user-attachments/assets/45d652b6-492f-4ee7-a353-d06310c069cb" />
+<img width="6696" height="2456" alt="Frame 1(4)" src="https://github.com/user-attachments/assets/e8fe8071-8531-494b-9d65-942b25202486" />
+
 
 # $M^3$
 [![arXiv](https://img.shields.io/badge/arXiv-coming--soon-lightgrey.svg)](https://github.com/com3dian/metadata_agent)
