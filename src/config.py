@@ -62,7 +62,7 @@ PLANNING_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE_PLANNING", "0.0"))
 PLAYER_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE_PLAYER", "0.3"))
 
 # Max model↔tool rounds per player task.
-PLAYER_MAX_TOOL_ITERATIONS = int(os.getenv("PLAYER_MAX_TOOL_ITERATIONS", "8"))
+PLAYER_MAX_TOOL_ITERATIONS = int(os.getenv("PLAYER_MAX_TOOL_ITERATIONS", "16"))
 
 # Per-request LLM timeout (seconds). Prevents calls from hanging forever.
 # Can be overridden by environment variable: LLM_REQUEST_TIMEOUT
@@ -189,13 +189,16 @@ def create_llm(
             )
         
         model_kwargs = kwargs.pop("model_kwargs", {}) or {}
-        extra_body = model_kwargs.get("extra_body", {}) or {}
-        chat_template_kwargs = extra_body.get("chat_template_kwargs", {}) or {}
-        # Disable reasoning/thinking output by default for Surf-compatible backends.
-        # This helps keep responses clean for downstream structured parsing.
-        chat_template_kwargs.setdefault("enable_thinking", SURF_ENABLE_THINKING)
-        extra_body["chat_template_kwargs"] = chat_template_kwargs
-        model_kwargs["extra_body"] = extra_body
+        extra_body = dict(model_kwargs.get("extra_body") or {})
+        # Mistral tokenizers reject chat_template_kwargs on Willma/SURF.
+        if "mistral" not in model.lower() and "devstral" not in model.lower():
+            chat_template_kwargs = dict(extra_body.get("chat_template_kwargs") or {})
+            # Disable reasoning/thinking output by default for Surf-compatible backends.
+            # This helps keep responses clean for downstream structured parsing.
+            chat_template_kwargs.setdefault("enable_thinking", SURF_ENABLE_THINKING)
+            extra_body["chat_template_kwargs"] = chat_template_kwargs
+        if extra_body:
+            model_kwargs["extra_body"] = extra_body
 
         return ChatOpenAI(
             model=model,

@@ -106,7 +106,10 @@ croissant_standard_subset: Dict[str, Dict[str, Any]] = {
         "type": str,
         "default": ...,
         "description": "Dataset name",
-        "prompt_hint": "Name of the dataset.",
+        "prompt_hint": (
+            "Short descriptive dataset title inferred from file names, columns, "
+            "and content; do not copy the internal context name/id."
+        ),
     },
     "description": {
         "type": Optional[str],
@@ -185,6 +188,70 @@ croissant_standard_subset: Dict[str, Dict[str, Any]] = {
     },
 }
 
+croissant_pangaea_standard: Dict[str, Dict[str, Any]] = {
+    "name": {
+        "type": str,
+        "default": ...,
+        "description": "Dataset name",
+        "prompt_hint": (
+            "Short descriptive dataset title inferred from file names, columns, "
+            "and content; do not copy the internal context name/id."
+        ),
+    },
+    "description": {
+        "type": Optional[str],
+        "default": None,
+        "description": "Dataset description",
+        "prompt_hint": "Explain what the dataset contains.",
+    },
+    "keywords": {
+        "type": List[str],
+        "default": [],
+        "description": "Keywords associated with the dataset",
+        "prompt_hint": "List search terms or tags.",
+    }
+}
+
+croissant_inaturalist_standard: Dict[str, Dict[str, Any]] = {
+    "spatialCoverage": {
+        "type": Optional[Dict[str, float]],
+        "default": None,
+        "description": (
+            "Geographic bounding box with keys: "
+            "min_lat, min_lon, max_lat, max_lon"
+        ),
+        "prompt_hint": (
+            "Geographic bounding box in WGS84 with numeric fields: "
+            "min_lat, min_lon, max_lat, max_lon"
+        ),
+    },
+    "temporalCoverage": {
+        "type": Optional[Dict[str, str]],
+        "default": None,
+        "description": "Time period covered with keys: from, to",
+        "prompt_hint": (
+            "Time period covered with ISO 8601 date or datetime strings: "
+            "from, to"
+        ),
+    },
+    # "spatial": {
+    #     "type": Optional[str],
+    #     "default": None,
+    #     "description": "Spatial resolution of the data",
+    #     "prompt_hint": (
+    #         "Spatial resolution of the data, e.g. 10 m, 0.25 degree, "
+    #         "point locations"
+    #     ),
+    # },
+    # "temporal": {
+    #     "type": Optional[str],
+    #     "default": None,
+    #     "description": "Temporal resolution of the data",
+    #     "prompt_hint": (
+    #         "Temporal resolution of the data, e.g. daily, monthly, yearly"
+    #     ),
+    # },
+}
 
 FileSet = build_schema_for_standard(
     "file_set",
@@ -212,5 +279,19 @@ CroissantStandardSubsetMetadata = build_schema_for_standard(
     "croissant_standard_subset",
     croissant_standard_subset,
     model_name="CroissantStandardSubsetMetadata",
+    model_registry=CROISSANT_MODEL_REGISTRY,
+)
+
+CroissantPangaeaMetadata = build_schema_for_standard(
+    "croissant_pangaea_standard",
+    croissant_pangaea_standard,
+    model_name="CroissantPangaeaMetadata",
+    model_registry=CROISSANT_MODEL_REGISTRY,
+)
+
+CroissantINaturalistMetadata = build_schema_for_standard(
+    "croissant_inaturalist_standard",
+    croissant_inaturalist_standard,
+    model_name="CroissantINaturalistMetadata",
     model_registry=CROISSANT_MODEL_REGISTRY,
 )

@@ -12,7 +12,11 @@ from typing import Any, Dict, Optional
 from pydantic import BaseModel
 
 from src.standards.croissant import (
+    CroissantINaturalistMetadata,
     CroissantStandardSubsetMetadata,
+    CroissantPangaeaMetadata,
+    croissant_inaturalist_standard,
+    croissant_pangaea_standard,
     croissant_standard_subset,
 )
 from src.standards.schema_builder import build_prompt_template, build_schema_for_standard
@@ -116,10 +120,14 @@ STANDARD_DEFINITIONS: Dict[str, Dict[str, Dict[str, Any]]] = {
     },
 
     "croissant_standard_subset": croissant_standard_subset,
+    "croissant_pangaea_standard": croissant_pangaea_standard,
+    "croissant_inaturalist_standard": croissant_inaturalist_standard,
 }
 
 CUSTOM_METADATA_SCHEMAS: Dict[str, type[BaseModel]] = {
     "croissant_standard_subset": CroissantStandardSubsetMetadata,
+    "croissant_pangaea_standard": CroissantPangaeaMetadata,
+    "croissant_inaturalist_standard": CroissantINaturalistMetadata,
 }
 
 CROISSANT_STANDARD_NAMES = frozenset(CUSTOM_METADATA_SCHEMAS.keys())
@@ -132,7 +140,27 @@ def is_croissant_standard(standard_name: Optional[str]) -> bool:
 def planning_metadata_standard(
     metadata_standard: str, metadata_standard_name: Optional[str] = None
 ) -> str:
-    """Add a short planner directive when the active standard is Croissant."""
+    """Add a short planner directive when the active standard needs special routing."""
+    if metadata_standard_name == "croissant_inaturalist_standard":
+        return (
+            "ACTIVE STANDARD: croissant_inaturalist_standard.\n"
+            "This standard requires ONLY spatialCoverage and temporalCoverage.\n"
+            "Use exactly 2 steps: spatial_temporal_specialist, then "
+            "croissant_inaturalist_metadata_generator as the final step (never "
+            "croissant_metadata_generator, dataset_schema_preview, or "
+            "relationship_analyst).\n\n"
+            f"{metadata_standard}"
+        )
+    if metadata_standard_name == "croissant_pangaea_standard":
+        return (
+            "ACTIVE STANDARD: croissant_pangaea_standard.\n"
+            "This standard requires ONLY name, description, and keywords.\n"
+            "Use exactly 4 steps: dataset_schema_preview → relationship_analyst → "
+            "spatial_temporal_specialist → croissant_pangaea_metadata_generator as "
+            "the final step (never croissant_metadata_generator, "
+            "croissant_inaturalist_metadata_generator, or data_analyst).\n\n"
+            f"{metadata_standard}"
+        )
     if not is_croissant_standard(metadata_standard_name):
         return metadata_standard
     return (

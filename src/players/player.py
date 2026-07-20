@@ -61,6 +61,19 @@ def _serialize_tool_result(obj: Any) -> str:
         return str(obj)
 
 
+def _format_results_for_synthesis(all_results: List[Dict[str, Any]]) -> str:
+    blocks: List[str] = []
+    for r in all_results:
+        player = r.get("player", "Unknown")
+        analysis = r.get("analysis", str(r))
+        block = f"=== {player} ===\nAnalysis:\n{analysis}"
+        tool_results = r.get("tool_results")
+        if tool_results:
+            block += f"\n\nTool results:\n{_serialize_tool_result(tool_results)}"
+        blocks.append(block)
+    return "\n\n".join(blocks)
+
+
 def _normalize_tool_call_args(raw: Any) -> Dict[str, Any]:
     if raw is None:
         return {}
@@ -149,6 +162,69 @@ class Player:
         if not self.required_tools:
             return [] if called else ["at least one assigned tool"]
         return [tool for tool in self.required_tools if tool not in called]
+
+    def _tool_call_matches(
+        self,
+        actual: Dict[str, Any],
+        recommended: Dict[str, Any],
+    ) -> bool:
+        if actual.get("tool") != recommended.get("tool"):
+            return False
+        actual_args = actual.get("args") or {}
+        recommended_args = recommended.get("args") or {}
+        return all(actual_args.get(key) == value for key, value in recommended_args.items())
+
+    def _format_recommended_call(self, call: Dict[str, Any]) -> str:
+        args = call.get("args") or {}
+        arg_text = ", ".join(f"{key}={value!r}" for key, value in args.items())
+        return f"{call.get('tool')}({arg_text})"
+
+    def _missing_recommended_followups(
+        self,
+        tool_trace: List[Dict[str, Any]],
+    ) -> List[str]:
+        """
+        Detection tools can return follow-up calls when they find columns.
+
+        required_followup_calls are a checklist: every call must run.
+        recommended_followup_calls are alternatives when no required calls are present:
+        at least one recommended follow-up from that result must run.
+        """
+        called = [
+            entry
+            for entry in tool_trace
+            if entry.get("source") == "llm" and "tool" in entry and "error" not in entry
+        ]
+        missing: List[str] = []
+
+        for entry in called:
+            result = entry.get("result")
+            if not isinstance(result, dict):
+                continue
+            required = result.get("required_followup_calls") or []
+            for call in required:
+                if not any(self._tool_call_matches(actual, call) for actual in called):
+                    missing.append(self._format_recommended_call(call))
+
+            if required:
+                continue
+
+            recommendations = result.get("recommended_followup_calls") or []
+            if not recommendations:
+                continue
+            if any(
+                self._tool_call_matches(actual, recommended)
+                for actual in called
+                for recommended in recommendations
+            ):
+                continue
+            missing.append(
+                " or ".join(
+                    self._format_recommended_call(call) for call in recommendations
+                )
+            )
+
+        return missing
 
     def _tool_loop_guidance(self) -> Tuple[str, str]:
         if self.require_tool_calls:
@@ -293,6 +369,26 @@ Input context from previous steps:
                             content=(
                                 "Cannot finish yet. Call these tools first: "
                                 + ", ".join(missing)
+                            )
+                        )
+                    )
+                    continue
+                missing_followups = self._missing_recommended_followups(tool_trace)
+                if missing_followups:
+                    logging.info(
+                        "Player '%s': blocking finish — still need recommended "
+                        "follow-up tool call(s): %s",
+                        self.name,
+                        "; ".join(missing_followups),
+                    )
+                    messages.append(
+                        HumanMessage(
+                            content=(
+                                "Cannot finish yet. Detection tools returned follow-up "
+                                "calls for detected columns. Call the required follow-ups "
+                                "and at least one recommended follow-up from each "
+                                "alternative group before final analysis:\n- "
+                                + "\n- ".join(missing_followups)
                             )
                         )
                     )
@@ -747,10 +843,7 @@ while maintaining accuracy and your analytical perspective.""",
         Returns:
             Synthesized result as a string or Pydantic model instance
         """
-        results_str = "\n\n".join(
-            f"=== {r.get('player', 'Unknown')} ===\n{r.get('analysis', str(r))}"
-            for r in all_results
-        )
+        results_str = _format_results_for_synthesis(all_results)
 
         if output_schema is not None:
             return self._synthesize_structured(task, results_str, output_schema)
@@ -766,6 +859,10 @@ You are now synthesizing results from multiple analysts who worked on the same t
 - Consolidate the findings into a single, authoritative result
 - Resolve any conflicts by choosing the most accurate/complete information
 - Preserve important details while removing redundancy
+- Prefer structured tool results over incomplete analysis prose when they conflict
+- For spatial/temporal coverage, use extent tool outputs
+  (get_spatial_extent, get_spatial_extent_from_tuple_column, get_temporal_extent).
+  Never compute coverage from detect_* sample_values.
 - Output a clear, concise result appropriate for the task
 
 **Output requirements:**
@@ -807,12 +904,16 @@ Provide the consolidated result for this task. Output only the result, no commen
 
 You are consolidating prior analysis into the required structured metadata format.
 
-The analyses below already contain the findings from earlier steps. Your job is NOT to
+The analyses and tool results below already contain the findings from earlier steps. Your job is NOT to
 re-analyze the dataset or discover new information—only to consolidate what is already
 present into the required schema.
 
 **Your job:**
-- Extract and map relevant information from the analyses into each schema field
+- Extract and map relevant information from the analyses and tool results into each schema field
+- Prefer structured tool results over incomplete analysis prose when they conflict
+- For spatial/temporal coverage, use extent tool outputs
+  (get_spatial_extent, get_spatial_extent_from_tuple_column, get_temporal_extent).
+  Never compute coverage from detect_* sample_values.
 - Resolve conflicts by choosing the most accurate/complete information
 - Use null/None for fields with no supporting information in the analyses
 
@@ -835,10 +936,15 @@ Consolidate the above into the required structured output.""",
             ]
         )
 
-        structured_llm = self.llm.with_structured_output(output_schema)
-        chain = prompt | structured_llm
-
-        return chain.invoke({"task": task, "all_results": results_str})
+        inputs = {"task": task, "all_results": results_str}
+        try:
+            chain = prompt | self.llm.with_structured_output(output_schema)
+            return chain.invoke(inputs)
+        except ValueError:
+            chain = prompt | self.llm.with_structured_output(
+                output_schema, method="function_calling"
+            )
+            return chain.invoke(inputs)
 
     def __repr__(self):
         return f"Player(name={self.name}, tools={len(self.tools)})"

@@ -48,6 +48,20 @@ Your goal is to generate a step-by-step plan to extract metadata from a resource
   - `croissant_metadata_generator` is the FINAL step only (never `metadata_generator`); wire prior artifacts into `inputs` (schema/relationships/spatial-temporal artifacts as available), MUST include `"metadata_standard": "metadata_standard"` (workspace artifact name—never a standard registry name like `croissant_standard_subset`), and set `outputs` to `["metadata_output"]`
 - Do not add `data_analyst` / `get_field_statistics` steps for Croissant plans unless a required metadata field cannot be populated from the schema preview, relationship, and spatial-temporal artifacts.
 
+**CRITICAL - iNaturalist Croissant (when `{metadata_standard}` contains ONLY spatialCoverage and temporalCoverage):**
+- Use exactly 2 steps: `spatial_temporal_specialist` → `croissant_inaturalist_metadata_generator`
+- Do NOT use `dataset_schema_preview`, `relationship_analyst`, or `croissant_metadata_generator`
+- `spatial_temporal_specialist` MUST call detection and extent tools as described above
+- `croissant_inaturalist_metadata_generator` is the FINAL step; wire `"metadata_standard": "metadata_standard"` and `"spatial_temporal": "spatial_temporal_data"` in `inputs`, set `outputs` to `["metadata_output"]`
+
+**CRITICAL - PANGAEA Croissant (when `{metadata_standard}` contains ONLY name, description, and keywords):**
+- Use exactly 4 steps: `dataset_schema_preview` → `relationship_analyst` → `spatial_temporal_specialist` → `croissant_pangaea_metadata_generator`
+- Do NOT use `croissant_metadata_generator`, `croissant_inaturalist_metadata_generator`, or `data_analyst`
+- `dataset_schema_preview` captures column structure and first-row samples
+- `relationship_analyst` surfaces keys and cross-field structure from the schema preview
+- `spatial_temporal_specialist` MUST call detection and extent tools when date/time or coordinate columns exist in the preview
+- `croissant_pangaea_metadata_generator` is the FINAL step; wire `"metadata_standard": "metadata_standard"` plus prior artifacts (`schema`, `relationships`, `spatial_temporal` as available) in `inputs`, set `outputs` to `["metadata_output"]`
+
 **CRITICAL - Data Profiling Requirement (Even for Small Datasets):**
 - For non-Croissant standards: at least one step BEFORE the final generation MUST be executed by `data_analyst` and MUST run `get_field_statistics` (optionally also `get_missing_values`) so numeric ranges and distributions are available for metadata values.
 - For non-Croissant multi-resource contexts, run `get_field_statistics` for each resource (or a combined step that still produces per-resource `field_stats` artifacts).
@@ -57,7 +71,7 @@ Your goal is to generate a step-by-step plan to extract metadata from a resource
 
 **MANDATORY - FINAL STEP Requirements:**
 The last step MUST:
-1. Use `metadata_generator` for flat/non-Croissant standards, OR `croissant_metadata_generator` when `{metadata_standard}` indicates Croissant/fileset/recordset structure (infer from standard text; do not rely on standard name matching)
+1. Use `metadata_generator` for flat/non-Croissant standards, OR `croissant_metadata_generator` when `{metadata_standard}` indicates full Croissant/fileset/recordset structure, OR `croissant_inaturalist_metadata_generator` when `{metadata_standard}` contains ONLY spatialCoverage and temporalCoverage, OR `croissant_pangaea_metadata_generator` when `{metadata_standard}` contains ONLY name, description, and keywords
 2. Include `"metadata_standard": "metadata_standard"` in `inputs` for every final step (Croissant and non-Croissant); the value must always be the workspace artifact `metadata_standard`, never a standard registry name
 3. Set `outputs` to exactly `["metadata_output"]` (THIS IS REQUIRED!)
 4. Include all relevant artifacts from previous steps in `inputs`
@@ -83,6 +97,16 @@ Example Croissant final step inputs format:
 "inputs": {{"metadata_standard": "metadata_standard", "schema": "schema_preview", "relationships": "relationship_data", "spatial_temporal": "spatial_temporal_data"}}
 ```
 
+Example iNaturalist Croissant final step inputs format:
+```json
+"inputs": {{"metadata_standard": "metadata_standard", "spatial_temporal": "spatial_temporal_data"}}
+```
+
+Example PANGAEA Croissant final step inputs format:
+```json
+"inputs": {{"metadata_standard": "metadata_standard", "schema": "schema_preview", "relationships": "relationship_data", "spatial_temporal": "spatial_temporal_data"}}
+```
+
 **Available Players:** 
 {available_players}
 
@@ -98,13 +122,15 @@ You MUST output **ONLY** a JSON object that conforms to the following schema:
 
 REQUIREMENTS:
 1. Use MINIMUM steps - combine related analyses
-2. If `{metadata_standard}` is Croissant: Step 1 = `dataset_schema_preview`, then `relationship_analyst`, optional `spatial_temporal_specialist`, final = `croissant_metadata_generator` (never `data_analyst`).
-3. If `{metadata_standard}` includes spatial/geospatial concepts and is NOT Croissant, include `spatial_temporal_specialist` before final generation.
-4. For non-Croissant spatial standards, produce exactly 4 steps.
-5. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
-6. FINAL STEP inputs MUST include `"metadata_standard": "metadata_standard"` (workspace artifact name, not the standard registry name).
-7. FINAL STEP outputs MUST be exactly: ["metadata_output"]
-8. For non-Croissant standards only, include a `data_analyst` step with `get_field_statistics` before the final step.
+2. If `{metadata_standard}` contains ONLY spatialCoverage and temporalCoverage: exactly 2 steps — `spatial_temporal_specialist` → `croissant_inaturalist_metadata_generator`
+3. If `{metadata_standard}` contains ONLY name, description, and keywords: exactly 4 steps — `dataset_schema_preview` → `relationship_analyst` → `spatial_temporal_specialist` → `croissant_pangaea_metadata_generator`
+4. If `{metadata_standard}` is full Croissant (filesets/recordsets): Step 1 = `dataset_schema_preview`, then `relationship_analyst`, optional `spatial_temporal_specialist`, final = `croissant_metadata_generator` (never `data_analyst`).
+5. If `{metadata_standard}` includes spatial/geospatial concepts and is NOT Croissant, include `spatial_temporal_specialist` before final generation.
+6. For non-Croissant spatial standards, produce exactly 4 steps.
+7. FINAL STEP must use `metadata_generator`, `croissant_metadata_generator`, `croissant_pangaea_metadata_generator`, or `croissant_inaturalist_metadata_generator` (match the standard as above)
+8. FINAL STEP inputs MUST include `"metadata_standard": "metadata_standard"` (workspace artifact name, not the standard registry name).
+9. FINAL STEP outputs MUST be exactly: ["metadata_output"]
+10. For non-Croissant standards only, include a `data_analyst` step with `get_field_statistics` before the final step.
 
 Keep the plan SHORT.""",
             ),
@@ -178,9 +204,23 @@ Your goal is to generate a step-by-step plan to extract metadata from a context 
   - `croissant_metadata_generator` is the FINAL step only (never `metadata_generator`); wire prior artifacts into `inputs` (schema/relationships/spatial-temporal artifacts as available), MUST include `"metadata_standard": "metadata_standard"` (workspace artifact name—never a standard registry name like `croissant_standard_subset`), and set `outputs` to `["metadata_output"]`
 - Do not add `data_analyst` / `get_field_statistics` steps for Croissant plans unless a required metadata field cannot be populated from the schema preview, relationship, and spatial-temporal artifacts.
 
+**CRITICAL - iNaturalist Croissant (when `{metadata_standard}` contains ONLY spatialCoverage and temporalCoverage):**
+- Use exactly 2 steps: `spatial_temporal_specialist` → `croissant_inaturalist_metadata_generator`
+- Do NOT use `dataset_schema_preview`, `relationship_analyst`, or `croissant_metadata_generator`
+- `spatial_temporal_specialist` MUST call detection and extent tools as described above
+- `croissant_inaturalist_metadata_generator` is the FINAL step; wire `"metadata_standard": "metadata_standard"` and `"spatial_temporal": "spatial_temporal_data"` in `inputs`, set `outputs` to `["metadata_output"]`
+
+**CRITICAL - PANGAEA Croissant (when `{metadata_standard}` contains ONLY name, description, and keywords):**
+- Use exactly 4 steps: `dataset_schema_preview` → `relationship_analyst` → `spatial_temporal_specialist` → `croissant_pangaea_metadata_generator`
+- Do NOT use `croissant_metadata_generator`, `croissant_inaturalist_metadata_generator`, or `data_analyst`
+- `dataset_schema_preview` captures column structure and first-row samples
+- `relationship_analyst` surfaces keys and cross-field structure from the schema preview
+- `spatial_temporal_specialist` MUST call detection and extent tools when date/time or coordinate columns exist in the preview
+- `croissant_pangaea_metadata_generator` is the FINAL step; wire `"metadata_standard": "metadata_standard"` plus prior artifacts (`schema`, `relationships`, `spatial_temporal` as available) in `inputs`, set `outputs` to `["metadata_output"]`
+
 **MANDATORY - FINAL STEP Requirements:**
 The last step MUST:
-1. Use `metadata_generator` for flat/non-Croissant standards, OR `croissant_metadata_generator` when `{metadata_standard}` indicates Croissant/fileset/recordset structure (infer from standard text; do not rely on standard name matching)
+1. Use `metadata_generator` for flat/non-Croissant standards, OR `croissant_metadata_generator` when `{metadata_standard}` indicates full Croissant/fileset/recordset structure, OR `croissant_inaturalist_metadata_generator` when `{metadata_standard}` contains ONLY spatialCoverage and temporalCoverage, OR `croissant_pangaea_metadata_generator` when `{metadata_standard}` contains ONLY name, description, and keywords
 2. Include `"metadata_standard": "metadata_standard"` in `inputs` for every final step (Croissant and non-Croissant); the value must always be the workspace artifact `metadata_standard`, never a standard registry name
 3. Set `outputs` to exactly `["metadata_output"]` (THIS IS REQUIRED!)
 4. Include all relevant artifacts from previous steps in `inputs`
@@ -202,6 +242,16 @@ Example non-Croissant final step inputs format:
 ```
 
 Example Croissant final step inputs format:
+```json
+"inputs": {{"metadata_standard": "metadata_standard", "schema": "schema_preview", "relationships": "relationship_data", "spatial_temporal": "spatial_temporal_data"}}
+```
+
+Example iNaturalist Croissant final step inputs format:
+```json
+"inputs": {{"metadata_standard": "metadata_standard", "spatial_temporal": "spatial_temporal_data"}}
+```
+
+Example PANGAEA Croissant final step inputs format:
 ```json
 "inputs": {{"metadata_standard": "metadata_standard", "schema": "schema_preview", "relationships": "relationship_data", "spatial_temporal": "spatial_temporal_data"}}
 ```
@@ -231,14 +281,16 @@ File type: {file_type}
 
 REQUIREMENTS:
 1. Use MINIMUM steps - combine resource analyses
-2. If Croissant: Step 1 = `dataset_schema_preview` → `relationship_analyst` → optional `spatial_temporal_specialist` → `croissant_metadata_generator` (never `data_analyst`)
-3. For non-Croissant only: include ONE relationship discovery step and at least one `data_analyst` step with `get_field_statistics`
-4. If non-Croissant and spatial/geospatial concepts apply, include `spatial_temporal_specialist` before final generation
-5. FINAL STEP must use `metadata_generator` OR `croissant_metadata_generator` (use the latter when `{metadata_standard}` describes Croissant/fileset/recordset structure)
-6. FINAL STEP inputs MUST include `"metadata_standard": "metadata_standard"` (workspace artifact name, not the standard registry name).
-7. FINAL STEP outputs MUST be exactly: ["metadata_output"]
+2. If `{metadata_standard}` contains ONLY spatialCoverage and temporalCoverage: exactly 2 steps — `spatial_temporal_specialist` → `croissant_inaturalist_metadata_generator`
+3. If `{metadata_standard}` contains ONLY name, description, and keywords: exactly 4 steps — `dataset_schema_preview` → `relationship_analyst` → `spatial_temporal_specialist` → `croissant_pangaea_metadata_generator`
+4. If full Croissant (filesets/recordsets): Step 1 = `dataset_schema_preview` → `relationship_analyst` → optional `spatial_temporal_specialist` → `croissant_metadata_generator` (never `data_analyst`)
+5. For non-Croissant only: include ONE relationship discovery step and at least one `data_analyst` step with `get_field_statistics`
+6. If non-Croissant and spatial/geospatial concepts apply, include `spatial_temporal_specialist` before final generation
+7. FINAL STEP must use `metadata_generator`, `croissant_metadata_generator`, `croissant_pangaea_metadata_generator`, or `croissant_inaturalist_metadata_generator` (match the standard as above)
+8. FINAL STEP inputs MUST include `"metadata_standard": "metadata_standard"` (workspace artifact name, not the standard registry name).
+9. FINAL STEP outputs MUST be exactly: ["metadata_output"]
 
-Keep the plan SHORT (3-5 steps).""",
+Keep the plan SHORT (2-5 steps).""",
             ),
         ]
     )
