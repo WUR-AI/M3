@@ -108,8 +108,7 @@ venv.bak
 .vscode/
 
 # Data files
-data/sample/
-data/output/
+data/
 logs/
 
 # Deployment
