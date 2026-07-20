@@ -20,13 +20,29 @@
 $M^3$ is a multi-agent tool that plans and analyzes over datasets to produce structured metadata. It is built based on the [MAST4Science template](https://github.com/com3dian/multi_agent_system_template).
 
 Experiments are maintained on the [`kddexperiment`](https://github.com/com3dian/metadata_agent/tree/kddexperiment) branch; to reproduce them, use the notebooks in [`notebooks/experiments/`](https://github.com/com3dian/metadata_agent/tree/kddexperiment/notebooks/experiments).
+
+<br>
+
+## Installation
+
+Requires Python 3.12+ and [uv](https://docs.astral.sh/uv/).
+
+```bash
+git clone https://github.com/com3dian/metadata_agent.git
+cd metadata_agent
+make uv-setup
+uv pip install -e .
+```
+
+See [`src/readme.md`](./src/readme.md) for optional dependency groups, LLM configuration, and usage.
+
 <br>
 
 ## Where to find what
 
 | Path | What you'll find |
 |------|------------------|
-| [`src/`](./src) | Core library: orchestration, agents, data access, and metadata standards |
+| [`src/`](./src) | Core library — see [`src/readme.md`](./src/readme.md) for setup and usage |
 | [`src/orchestrator/`](./src/orchestrator) | Planning and step execution (parallel agents, debate, synthesis) |
 | [`src/players/`](./src/players) | Agent roles, prompts, and tool assignments |
 | [`src/context/`](./src/context) | Unified data layer for CSV, SQLite, and multi-table inputs |
@@ -47,7 +63,6 @@ Experiments are maintained on the [`kddexperiment`](https://github.com/com3dian/
 
 **Getting started**
 
-- **Setup:** `make uv-setup` — create the virtual environment and install dependencies
 - **Tutorial:** [`docs/tutorial.md`](./docs/tutorial.md) — full walkthrough from configuration to output
 - **Architecture:** [`docs/architecture.md`](./docs/architecture.md) — how planning, execution, and debate fit together
 - **CLI:** `metadata-agent --source ./data/my_data.csv`
