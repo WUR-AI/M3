@@ -17,7 +17,7 @@
 
 ## 📝 Description
 
-$M^3$(Multi-agent Metadata Maker) is an agentic tool that plans and analyzes over datasets to produce structured metadata. It is built based on the [MAST4Science template](https://github.com/com3dian/multi_agent_system_template).
+$M^3$ (Multi-agent Metadata Maker) is an agentic tool that plans and analyzes over datasets to produce structured metadata. It is built based on the [MAST4Science template](https://github.com/com3dian/multi_agent_system_template).
 
 Experiments are maintained on the [`kddexperiment`](https://github.com/com3dian/metadata_agent/tree/kddexperiment) branch; to reproduce them, use the notebooks in [`notebooks/experiments/`](https://github.com/com3dian/metadata_agent/tree/kddexperiment/notebooks/experiments).
 
