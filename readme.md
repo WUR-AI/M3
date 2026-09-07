@@ -66,3 +66,6 @@ See [`src/readme.md`](./src/readme.md) for optional dependency groups, LLM confi
 - **Terminal UI:** `metadata-agent --tui`
 - **Web demo:** `make demo`
 - **Example script:** `python -m examples.generation`
+
+**Eval**
+https://github.com/WUR-AI/process_data_metadata_agent
