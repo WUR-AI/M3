@@ -1,0 +1,66 @@
+{
+  "csv": "rhamnus_prinoides.csv",
+  "dataset_id": "rhamnus_prinoides",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "8ee8278168643beaf4fc2fec06e84f6d772962f5a3a0c26a145bb2126b9204b9",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3455,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.270302,
+      "min_lon": 18.623497,
+      "max_lat": 9.583515,
+      "max_lon": 39.979389
+    },
+    "temporalCoverage": {
+      "from": "1971-10-02T00:00:00+00:00",
+      "to": "2026-06-15T12:34:06+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "rhamnus_prinoides"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "rhamnus_prinoides",
+        "resource": "rhamnus_prinoides"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "rhamnus_prinoides",
+        "resource": "rhamnus_prinoides",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "rhamnus_prinoides",
+        "resource": "rhamnus_prinoides"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "rhamnus_prinoides",
+        "resource": "rhamnus_prinoides",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.271,
+  "status": "ok"
+}

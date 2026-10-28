@@ -1,0 +1,33 @@
+{
+  "csv": "971851.csv",
+  "dataset_id": "971851",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13",
+  "contract_sha256": "86491fced18b3f094d53e260bd24449976ecc82183944a3ec4e8a6e7f79b75e0",
+  "prompt_tokens": 39107,
+  "metadata": {
+    "name": "971851",
+    "description": "Dataset file: 971851.csv",
+    "keywords": [],
+    "spatialCoverage": {
+      "min_lat": -90.0,
+      "min_lon": -180.0,
+      "max_lat": 90.0,
+      "max_lon": 180.0
+    },
+    "temporalCoverage": {
+      "from": "1900-01-01",
+      "to": "2000-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 19.589,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "pterostylis_alpina.csv",
+  "dataset_id": "pterostylis_alpina",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "05aa054705df401d185cfd3ba54c9fe2e7e32290d77ad72467f187974b8b03bb",
+  "contract_sha256": "608f859f8198dbeb20a99f188b4c7acdc49ce332de3b2707cd997ab9e4953b75",
+  "prompt_tokens": 322789,
+  "status": "skipped",
+  "reason": "context_window"
+}

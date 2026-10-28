@@ -1,0 +1,16 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 14,
+  "n_columns": 44,
+  "description": "Sediment mineral and geochemical data for 14 samples",
+  "dataset_description": "Earth and environmental measurements recorded on 2021-05-30 across 14 entries in a single table.",
+  "runtime_seconds": 104.283,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/978983/dictionary.json"
+}

@@ -1,0 +1,37 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "contract_sha256": "419e70b16f8d86c34a2df3d5dfb7fb95a83f331d465e07e36942483ebd34e510",
+  "prompt_tokens": 1622,
+  "metadata": {
+    "name": "M. balthica shell length and frequency data from Rönnebank, Baltic Sea",
+    "description": "Dataset containing measurements of Mytilus balthica shell length and frequency counts from sampling sites in the Rönnebank area of the Baltic Sea, collected during June 2023. Data includes samples from both a Marine Protected Area and a Reference area.",
+    "keywords": [
+      "Mytilus balthica",
+      "shell length",
+      "frequency",
+      "Baltic Sea",
+      "Rönnebank",
+      "marine protected area",
+      "reference area",
+      "EMB320"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2023-06-01",
+      "to": "2023-06-30"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 1.845,
+  "status": "ok"
+}

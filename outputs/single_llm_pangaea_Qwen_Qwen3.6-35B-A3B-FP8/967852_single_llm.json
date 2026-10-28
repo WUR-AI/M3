@@ -1,0 +1,40 @@
+{
+  "csv": "967852.csv",
+  "dataset_id": "967852",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8",
+  "contract_sha256": "162825d7b4a959b1b6ffb1b218cfeb0ee36b7ba2133b3f9c4c0d438565f21e17",
+  "prompt_tokens": 1804,
+  "metadata": {
+    "name": "Santiurde section stratigraphic and geochemical data",
+    "description": "Stratigraphic measurements and mineralogical composition (Quartz, Clay, Calcite, Gypsum, Dolomite, Pyrite) for samples from the Santiurde section, including thickness, ratios, and stratigraphic height.",
+    "keywords": [
+      "Santiurde section",
+      "stratigraphy",
+      "geochemistry",
+      "mineralogy",
+      "Quartz",
+      "Clay",
+      "Calcite",
+      "Dolomite",
+      "Pyrite"
+    ],
+    "spatialCoverage": {
+      "min_lat": 43.0685608,
+      "min_lon": -4.0878295,
+      "max_lat": 43.0685608,
+      "max_lon": -4.0878295
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.376,
+  "status": "ok"
+}

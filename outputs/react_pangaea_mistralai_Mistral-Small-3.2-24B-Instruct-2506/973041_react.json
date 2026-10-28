@@ -1,0 +1,99 @@
+{
+  "csv": "973041.csv",
+  "dataset_id": "973041",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4139,
+  "metadata": {
+    "name": "Archaeological Sites Dataset",
+    "description": "This dataset contains information about archaeological sites, including their locations, dating methods, and references.",
+    "keywords": [
+      "archaeology",
+      "sites",
+      "Malaysia",
+      "dating methods",
+      "references"
+    ],
+    "spatialCoverage": {
+      "min_lat": 1.2167,
+      "min_lon": 103.35,
+      "max_lat": 7.35,
+      "max_lon": 118.85
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00+00:00",
+      "to": "1970-01-01T00:00:00.000000046+00:00"
+    },
+    "spatial": "not specified",
+    "temporal": "not specified"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973041"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Age dated"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Age dated std dev"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Age dated_2"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Age dated std dev_2"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    }
+  ],
+  "runtime_seconds": 31.063,
+  "status": "ok"
+}

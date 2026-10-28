@@ -1,0 +1,16 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 106,
+  "n_columns": 9,
+  "description": "Atmospheric observations (HRMS, VRMS) with location, elevation, timestamp, status, description, and event.",
+  "dataset_description": "106 atmospheric observations recorded over 28 minutes on 2012-02-03 for Earth science analysis.",
+  "runtime_seconds": 39.103,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/901510/dictionary.json"
+}

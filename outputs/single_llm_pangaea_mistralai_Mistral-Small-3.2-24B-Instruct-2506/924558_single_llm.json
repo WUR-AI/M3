@@ -1,0 +1,41 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "contract_sha256": "fa25424c0b7a3cdfb236604b178f80fceebf7e0a559f4b89d2e2c29e43de3281",
+  "prompt_tokens": 25573,
+  "metadata": {
+    "name": "Mytilus galloprovincialis (mollusk) development under different CO2 conditions",
+    "description": "This dataset contains information on the development stages of Mytilus galloprovincialis (mollusk) under different CO2 conditions over various time periods.",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "development",
+      "CO2 conditions",
+      "laboratory experiment",
+      "development stages",
+      "marine species"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": {
+      "from": "1942-01-01",
+      "to": "1971-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 14.114,
+  "status": "ok"
+}

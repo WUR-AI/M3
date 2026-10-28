@@ -1,0 +1,16 @@
+{
+  "csv": "958774.csv",
+  "dataset_id": "958774",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 104,
+  "n_columns": 11,
+  "description": "Environmental data with depth, location, and phosphorus concentration measurements for Earth science research.",
+  "dataset_description": "Environmental data tables, each with 104 rows, for Earth and environmental science research.",
+  "runtime_seconds": 10.017,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/958774/dictionary.json"
+}

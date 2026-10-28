@@ -1,0 +1,39 @@
+{
+  "dataset_id": "973907",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973907.csv",
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:47:50.192176+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MSM44_362-1 Sediment Core Data",
+    "description": "This dataset contains sediment core measurements including depth, section, core diameter deviation, P-wave travel time, P-wave velocity (Vp-a), acoustic impedance (AGR), and spatial-temporal information for the event MSM44_362-1.",
+    "keywords": [
+      "sediment core",
+      "P-wave travel time",
+      "acoustic impedance",
+      "geophysical measurements",
+      "MSM44_362-1"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12T15:22:00+00:00",
+      "to": "2015-07-12T15:22:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973907_133fd434b4d044d38008ba0cb49b5d54.jsonl",
+  "runtime_seconds": 316.11
+}

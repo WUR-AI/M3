@@ -1,0 +1,16 @@
+{
+  "csv": "haritalodes_derogata.csv",
+  "dataset_id": "haritalodes_derogata",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "1001 Haritalodes derogata occurrence records (2008‑2026) with taxonomy, location, date, and observer metadata.",
+  "dataset_description": "Contains 1001 occurrence records of a species spanning 2008‑2026 for biodiversity monitoring.",
+  "runtime_seconds": 87.882,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/haritalodes_derogata/dictionary.json"
+}

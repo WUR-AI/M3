@@ -1,0 +1,16 @@
+{
+  "csv": "990164.csv",
+  "dataset_id": "990164",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 41,
+  "n_columns": 26,
+  "description": "Sediment depth, age, elemental concentrations, location, and event data for 41 samples collected 2022‑04‑08.",
+  "dataset_description": "Earth and environmental measurements recorded on 2022-04-08, comprising 41 observations in a single table.",
+  "runtime_seconds": 73.469,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/990164/dictionary.json"
+}

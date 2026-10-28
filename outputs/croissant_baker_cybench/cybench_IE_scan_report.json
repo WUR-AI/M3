@@ -1,0 +1,47 @@
+{
+  "total": 9,
+  "described": 9,
+  "linked": 0,
+  "referenced": 0,
+  "undescribed": 0,
+  "by_reason": {},
+  "by_diagnostic": {},
+  "files": [
+    {
+      "path": "meteo_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "yield_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "ndvi_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "crop_calendar_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "fpar_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "crop_mask_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "soil_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "location_maize_IE.csv",
+      "outcome": "described"
+    },
+    {
+      "path": "soil_moisture_maize_IE.csv",
+      "outcome": "described"
+    }
+  ]
+}

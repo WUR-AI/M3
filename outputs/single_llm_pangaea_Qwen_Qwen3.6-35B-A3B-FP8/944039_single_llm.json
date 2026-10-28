@@ -1,0 +1,39 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "55d46e24577143b018c4593de878282a9eae1a62cd1170fd5c86363b4d761535",
+  "prompt_tokens": 3759,
+  "metadata": {
+    "name": "Belgian collector trial pre-impact elemental composition",
+    "description": "Geochemical analysis of sediment core samples from the Belgian collector trial pre-impact event, including elemental concentrations (Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) and their relative abundances.",
+    "keywords": [
+      "geochemistry",
+      "sediment core",
+      "elemental analysis",
+      "Belgian collector trial",
+      "pre-impact"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20T02:30:12",
+      "to": "2019-03-20T02:30:12"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.59,
+  "status": "ok"
+}

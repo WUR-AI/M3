@@ -1,0 +1,28 @@
+{
+  "dataset_id": "phebalium_squamulosum",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/phebalium_squamulosum.csv",
+  "source_sha256": "e0710fb9cd8e05bde812f41412f515d98bc73618bfdcca901507617a975c61f1",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:17:39.158863+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -38.178698,
+      "min_lon": 144.992263,
+      "max_lat": -29.456289,
+      "max_lon": 152.188308
+    },
+    "temporalCoverage": {
+      "from": "1990-12-30T15:15:00+00:00",
+      "to": "2026-06-12T11:35:11+00:00"
+    }
+  },
+  "plan_steps_count": 5,
+  "steps_completed": 5,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/phebalium_squamulosum_d43da68de3b4492b9b679d5c05ee9bc0.jsonl",
+  "runtime_seconds": 227.9
+}

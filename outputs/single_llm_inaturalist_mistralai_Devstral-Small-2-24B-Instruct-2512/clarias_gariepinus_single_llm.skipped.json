@@ -1,0 +1,15 @@
+{
+  "csv": "clarias_gariepinus.csv",
+  "dataset_id": "clarias_gariepinus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c314e5d79c1e7fa3b8657c666bbf0e6d785a17db9dad4cb9157d873b4234c731",
+  "contract_sha256": "cee46bb756fd7a00e04efeac888794b840e0fbc35beab3fc2b74509eec05646b",
+  "prompt_tokens": 316609,
+  "status": "skipped",
+  "reason": "context_window"
+}

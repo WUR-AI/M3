@@ -1,0 +1,799 @@
+{
+  "dataset_name": "974295",
+  "list_of_tables": [
+    "974295"
+  ],
+  "tables": {
+    "974295": {
+      "table_name": "974295",
+      "row_count": 97,
+      "number_of_columns": 8,
+      "list_of_columns": [
+        "Season",
+        "Profile ID",
+        "Instrument",
+        "Radar prod",
+        "netCDF",
+        "netCDF (Size)",
+        "GIS",
+        "IMAGE"
+      ],
+      "columns": {
+        "Season": {
+          "column_name": "Season",
+          "data_type": "string",
+          "sample_values": [
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98",
+            "ANT 1997/98"
+          ],
+          "data_patterns": {
+            "AAA 9999/99": 97
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "ANT 1997/98",
+                97
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Antarctic field season spanning the 1997/98 period."
+        },
+        "Profile ID": {
+          "column_name": "Profile ID",
+          "data_type": "integer",
+          "semantic_type": "identifier",
+          "sample_values": [
+            19983403,
+            19983065,
+            19983060,
+            19983001,
+            19983208,
+            19983006,
+            19983412,
+            19983005,
+            19983061,
+            19983016,
+            19983002,
+            19983401,
+            19983255,
+            19983019,
+            19983018,
+            19983413,
+            19982203,
+            19983201,
+            19983416,
+            19983257,
+            19983202,
+            19982206,
+            19983203,
+            19983004,
+            19982208,
+            19982201,
+            19983204,
+            19983013,
+            19983014,
+            19983406,
+            19982302,
+            19982418,
+            19983205,
+            19983009,
+            19983253,
+            19983062,
+            19982402,
+            19983101,
+            19983057,
+            19983254,
+            19983410,
+            19983411,
+            19983252,
+            19982406,
+            19983064,
+            19982204,
+            19983408,
+            19983418,
+            19983054,
+            19983454
+          ],
+          "data_patterns": {
+            "99999999": 97
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 97,
+          "stats": {
+            "type": "numeric",
+            "min": 19982101.0,
+            "max": 19983457.0,
+            "mean": 19982990.597938143,
+            "median": 19983060.0,
+            "std": 395.8505520762069
+          },
+          "description": "Unique numeric identifiers for each of the 97 environmental profiles."
+        },
+        "Instrument": {
+          "column_name": "Instrument",
+          "data_type": "string",
+          "sample_values": [
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR",
+            "EMR"
+          ],
+          "data_patterns": {
+            "AAA": 97
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "EMR",
+                97
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Instrument identifies the EMR device used for environmental profile data collection."
+        },
+        "Radar prod": {
+          "column_name": "Radar prod",
+          "data_type": "string",
+          "sample_values": [
+            "60 ns pulse",
+            "600 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "600 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "600 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "600 ns pulse",
+            "600 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "600 ns pulse",
+            "600 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "600 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "60 ns pulse",
+            "600 ns pulse"
+          ],
+          "data_patterns": {
+            "99 aa aaaaa": 77,
+            "999 aa aaaaa": 20
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "60 ns pulse",
+                77
+              ],
+              [
+                "600 ns pulse",
+                20
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Radar pulse duration in nanoseconds for environmental instrument profiles."
+        },
+        "netCDF": {
+          "column_name": "netCDF",
+          "data_type": "string",
+          "sample_values": [
+            "19983059_stp10.nc",
+            "19982207_stp10.nc",
+            "19983201_stp10.nc",
+            "19983006_stp10.nc",
+            "19983406_stp10.nc",
+            "19983257_stp10.nc",
+            "19983064_stp10.nc",
+            "19983411_stp10.nc",
+            "19983010_stp10.nc",
+            "19982406_stp10.nc",
+            "19983019_stp10.nc",
+            "19983204_stp10.nc",
+            "19983067_stp10.nc",
+            "19983018_stp10.nc",
+            "19983101_stp10.nc",
+            "19983207_stp10.nc",
+            "19983418_stp10.nc",
+            "19982252_stp10.nc",
+            "19983005_stp10.nc",
+            "19983402_stp10.nc",
+            "19983413_stp10.nc",
+            "19983002_stp10.nc",
+            "19983410_stp10.nc",
+            "19983454_stp10.nc",
+            "19983053_stp10.nc",
+            "19983416_stp10.nc",
+            "19983255_stp10.nc",
+            "19983061_stp10.nc",
+            "19983252_stp10.nc",
+            "19983003_stp10.nc",
+            "19983414_stp10.nc",
+            "19983063_stp10.nc",
+            "19983070_stp10.nc",
+            "19983065_stp10.nc",
+            "19983208_stp10.nc",
+            "19983054_stp10.nc",
+            "19982101_stp10.nc",
+            "19983066_stp10.nc",
+            "19983253_stp10.nc",
+            "19983205_stp10.nc",
+            "19983401_stp10.nc",
+            "19983457_stp10.nc",
+            "19983055_stp10.nc",
+            "19982418_stp10.nc",
+            "19983056_stp10.nc",
+            "19983408_stp10.nc",
+            "19982102_stp10.nc",
+            "19982208_stp10.nc",
+            "19983057_stp10.nc",
+            "19983456_stp10.nc"
+          ],
+          "data_patterns": {
+            "99999999_aaa99.aa": 97
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 97,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "19983202_stp10.nc",
+                1
+              ],
+              [
+                "19983052_stp10.nc",
+                1
+              ],
+              [
+                "19983418_stp10.nc",
+                1
+              ],
+              [
+                "19982408_stp10.nc",
+                1
+              ],
+              [
+                "19983404_stp10.nc",
+                1
+              ],
+              [
+                "19983407_stp10.nc",
+                1
+              ],
+              [
+                "19983204_stp10.nc",
+                1
+              ],
+              [
+                "19983054_stp10.nc",
+                1
+              ],
+              [
+                "19982252_stp10.nc",
+                1
+              ],
+              [
+                "19982101_stp10.nc",
+                1
+              ]
+            ],
+            "unique_count": 97
+          },
+          "description": "NetCDF filename for each environmental profile instrument data file."
+        },
+        "netCDF (Size)": {
+          "column_name": "netCDF (Size)",
+          "data_type": "string",
+          "sample_values": [
+            "134.6 MBytes",
+            "44 MBytes",
+            "172.5 MBytes",
+            "43.8 MBytes",
+            "68.7 MBytes",
+            "214.6 MBytes",
+            "20.9 MBytes",
+            "97.2 MBytes",
+            "20 MBytes",
+            "227.5 MBytes",
+            "75.4 MBytes",
+            "278.3 MBytes",
+            "56.6 MBytes",
+            "69.5 MBytes",
+            "39.7 MBytes",
+            "20.2 MBytes",
+            "125.5 MBytes",
+            "90.1 MBytes",
+            "97.3 MBytes",
+            "18.2 MBytes",
+            "154.8 MBytes",
+            "113.1 MBytes",
+            "63.9 MBytes",
+            "21 MBytes",
+            "111.4 MBytes",
+            "56.1 MBytes",
+            "39.4 MBytes",
+            "84.4 MBytes",
+            "141.6 MBytes",
+            "146.2 MBytes",
+            "67.9 MBytes",
+            "81.2 MBytes",
+            "56.4 MBytes",
+            "60.3 MBytes",
+            "72.2 MBytes",
+            "88.7 MBytes",
+            "165.9 MBytes",
+            "224.2 MBytes",
+            "54.7 MBytes",
+            "124.3 MBytes",
+            "148.7 MBytes",
+            "98.7 MBytes",
+            "187.9 MBytes",
+            "80.5 MBytes",
+            "145.6 MBytes",
+            "43.5 MBytes",
+            "96.4 MBytes",
+            "74.3 MBytes",
+            "218.8 MBytes",
+            "63.6 MBytes"
+          ],
+          "data_patterns": {
+            "99.9 AAaaaa": 55,
+            "999.9 AAaaaa": 33,
+            "99 AAaaaa": 4,
+            "999 AAaaaa": 3,
+            "9.9 AAaaaa": 2
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 97,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "7.8 MBytes",
+                1
+              ],
+              [
+                "74.3 MBytes",
+                1
+              ],
+              [
+                "42.9 MBytes",
+                1
+              ],
+              [
+                "75.4 MBytes",
+                1
+              ],
+              [
+                "56.1 MBytes",
+                1
+              ],
+              [
+                "68.2 MBytes",
+                1
+              ],
+              [
+                "60.3 MBytes",
+                1
+              ],
+              [
+                "207.3 MBytes",
+                1
+              ],
+              [
+                "43.9 MBytes",
+                1
+              ],
+              [
+                "89.1 MBytes",
+                1
+              ]
+            ],
+            "unique_count": 97
+          },
+          "description": "File size of netCDF data files in megabytes."
+        },
+        "GIS": {
+          "column_name": "GIS",
+          "data_type": "string",
+          "sample_values": [
+            "19983061_stp10.kml",
+            "19982405_stp10.kml",
+            "19983102_stp10.kml",
+            "19983403_stp10.kml",
+            "19982404_stp10.kml",
+            "19983060_stp10.kml",
+            "19983253_stp10.kml",
+            "19983418_stp10.kml",
+            "19982204_stp10.kml",
+            "19982301_stp10.kml",
+            "19983412_stp10.kml",
+            "19983019_stp10.kml",
+            "19983202_stp10.kml",
+            "19983051_stp10.kml",
+            "19983004_stp10.kml",
+            "19983206_stp10.kml",
+            "19983007_stp10.kml",
+            "19983052_stp10.kml",
+            "19983404_stp10.kml",
+            "19983006_stp10.kml",
+            "19983407_stp10.kml",
+            "19983456_stp10.kml",
+            "19982206_stp10.kml",
+            "19982203_stp10.kml",
+            "19983002_stp10.kml",
+            "19983068_stp10.kml",
+            "19983053_stp10.kml",
+            "19982202_stp10.kml",
+            "19983410_stp10.kml",
+            "19983065_stp10.kml",
+            "19983408_stp10.kml",
+            "19983010_stp10.kml",
+            "19983258_stp10.kml",
+            "19983411_stp10.kml",
+            "19983013_stp10.kml",
+            "19983401_stp10.kml",
+            "19983416_stp10.kml",
+            "19983058_stp10.kml",
+            "19983018_stp10.kml",
+            "19983251_stp10.kml",
+            "19983056_stp10.kml",
+            "19982406_stp10.kml",
+            "19983101_stp10.kml",
+            "19983054_stp10.kml",
+            "19983203_stp10.kml",
+            "19982201_stp10.kml",
+            "19983257_stp10.kml",
+            "19983406_stp10.kml",
+            "19983207_stp10.kml",
+            "19982101_stp10.kml"
+          ],
+          "data_patterns": {
+            "99999999_aaa99.aaa": 97
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 97,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "19983202_stp10.kml",
+                1
+              ],
+              [
+                "19983052_stp10.kml",
+                1
+              ],
+              [
+                "19983418_stp10.kml",
+                1
+              ],
+              [
+                "19982408_stp10.kml",
+                1
+              ],
+              [
+                "19983404_stp10.kml",
+                1
+              ],
+              [
+                "19983407_stp10.kml",
+                1
+              ],
+              [
+                "19983204_stp10.kml",
+                1
+              ],
+              [
+                "19983054_stp10.kml",
+                1
+              ],
+              [
+                "19982252_stp10.kml",
+                1
+              ],
+              [
+                "19982101_stp10.kml",
+                1
+              ]
+            ],
+            "unique_count": 97
+          },
+          "description": "Geographic Information System file names in KML format for environmental profiles."
+        },
+        "IMAGE": {
+          "column_name": "IMAGE",
+          "data_type": "string",
+          "sample_values": [
+            "19982203_stp10.jpg",
+            "19983062_stp10.jpg",
+            "19983257_stp10.jpg",
+            "19983204_stp10.jpg",
+            "19983012_stp10.jpg",
+            "19983004_stp10.jpg",
+            "19983014_stp10.jpg",
+            "19982201_stp10.jpg",
+            "19983057_stp10.jpg",
+            "19982405_stp10.jpg",
+            "19983064_stp10.jpg",
+            "19983410_stp10.jpg",
+            "19982407_stp10.jpg",
+            "19983206_stp10.jpg",
+            "19983017_stp10.jpg",
+            "19983417_stp10.jpg",
+            "19983454_stp10.jpg",
+            "19983411_stp10.jpg",
+            "19983002_stp10.jpg",
+            "19983416_stp10.jpg",
+            "19983102_stp10.jpg",
+            "19982406_stp10.jpg",
+            "19983413_stp10.jpg",
+            "19983251_stp10.jpg",
+            "19983256_stp10.jpg",
+            "19983409_stp10.jpg",
+            "19983051_stp10.jpg",
+            "19983060_stp10.jpg",
+            "19983018_stp10.jpg",
+            "19983016_stp10.jpg",
+            "19983258_stp10.jpg",
+            "19982205_stp10.jpg",
+            "19983054_stp10.jpg",
+            "19983253_stp10.jpg",
+            "19983010_stp10.jpg",
+            "19983254_stp10.jpg",
+            "19983201_stp10.jpg",
+            "19983401_stp10.jpg",
+            "19982101_stp10.jpg",
+            "19983058_stp10.jpg",
+            "19983067_stp10.jpg",
+            "19983066_stp10.jpg",
+            "19983059_stp10.jpg",
+            "19982202_stp10.jpg",
+            "19983418_stp10.jpg",
+            "19983101_stp10.jpg",
+            "19983001_stp10.jpg",
+            "19983011_stp10.jpg",
+            "19983008_stp10.jpg",
+            "19983414_stp10.jpg"
+          ],
+          "data_patterns": {
+            "99999999_aaa99.aaa": 97
+          },
+          "total_rows": 97,
+          "null_count": 0,
+          "unique_count": 97,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "19983202_stp10.jpg",
+                1
+              ],
+              [
+                "19983052_stp10.jpg",
+                1
+              ],
+              [
+                "19983418_stp10.jpg",
+                1
+              ],
+              [
+                "19982408_stp10.jpg",
+                1
+              ],
+              [
+                "19983404_stp10.jpg",
+                1
+              ],
+              [
+                "19983407_stp10.jpg",
+                1
+              ],
+              [
+                "19983204_stp10.jpg",
+                1
+              ],
+              [
+                "19983054_stp10.jpg",
+                1
+              ],
+              [
+                "19982252_stp10.jpg",
+                1
+              ],
+              [
+                "19982101_stp10.jpg",
+                1
+              ]
+            ],
+            "unique_count": 97
+          },
+          "description": "Filename of the JPEG image file associated with each environmental profile."
+        }
+      },
+      "sample_rows": [
+        {
+          "Season": "ANT 1997/98",
+          "Profile ID": 19983202,
+          "Instrument": "EMR",
+          "Radar prod": "60 ns pulse",
+          "netCDF": "19983202_stp10.nc",
+          "netCDF (Size)": "7.8 MBytes",
+          "GIS": "19983202_stp10.kml",
+          "IMAGE": "19983202_stp10.jpg"
+        },
+        {
+          "Season": "ANT 1997/98",
+          "Profile ID": 19983052,
+          "Instrument": "EMR",
+          "Radar prod": "60 ns pulse",
+          "netCDF": "19983052_stp10.nc",
+          "netCDF (Size)": "74.3 MBytes",
+          "GIS": "19983052_stp10.kml",
+          "IMAGE": "19983052_stp10.jpg"
+        },
+        {
+          "Season": "ANT 1997/98",
+          "Profile ID": 19983418,
+          "Instrument": "EMR",
+          "Radar prod": "60 ns pulse",
+          "netCDF": "19983418_stp10.nc",
+          "netCDF (Size)": "42.9 MBytes",
+          "GIS": "19983418_stp10.kml",
+          "IMAGE": "19983418_stp10.jpg"
+        }
+      ],
+      "description": "Table lists 97 environmental profiles with instrument details and associated file metadata.",
+      "is_row_capped": false,
+      "rows_processed": 97,
+      "total_rows_in_file": 97
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset containing 974,295 tables with 97 rows each."
+}

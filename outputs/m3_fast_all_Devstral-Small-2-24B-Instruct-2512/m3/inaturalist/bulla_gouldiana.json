@@ -1,0 +1,28 @@
+{
+  "dataset_id": "bulla_gouldiana",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/bulla_gouldiana.csv",
+  "source_sha256": "13e51a020b12d9206106b5e65236fa5522099fc00e87a4235cb0faf5570e152b",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T03:55:19.558189+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -2.205288,
+      "min_lon": -122.879824,
+      "max_lat": 38.143208,
+      "max_lon": -80.792543
+    },
+    "temporalCoverage": {
+      "from": "1970-09-01T14:58:00+00:00",
+      "to": "2026-06-12T11:25:03+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/bulla_gouldiana_e19da59bbbd7419ba35aa8c36b89f407.jsonl",
+  "runtime_seconds": 140.89
+}

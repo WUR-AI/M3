@@ -1,0 +1,18 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "title": "954529",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "n_rows": 10,
+  "n_columns": 2,
+  "sample_size": 10,
+  "topic": "Topographic Mapping",
+  "dataset_profile": "The key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. ",
+  "datamart_semantic_notes": "",
+  "semantic_profile": "The key semantic information for this dataset includes:\n**GIS**: Represents location. Contains spatial data (resolution: Location). Domain-specific type: spatial. Function/Usage context: spatial. \n**XLSX**: ",
+  "prompt": "Answer the question using the following information.\n\nFirst, consider the dataset sample:\n\nGIS,XLSX\nBig_Skidder.zip,\nBlack_Hills.zip,\nBlue_Hills.zip,\nCougar_Mountain.zip,\nDevils_Mountain.zip,\nDow_Mountain.zip,\nFidalgo_Island.zip,\nLopez_Island.zip,\nSan_Juan.zip,\n,TopographicHigh_RawData.xlsx\n\n\nAdditionally, the dataset profile is as follows:\n\nThe key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. \n\nBased on this profile, please add sentence(s) to enrich the dataset description.\n\nFurthermore, the semantic profile of the dataset columns is as follows:\nThe key semantic information for this dataset includes:\n**GIS**: Represents location. Contains spatial data (resolution: Location). Domain-specific type: spatial. Function/Usage context: spatial. \n**XLSX**: \n\nBased on this information, please add sentence(s) discussing the semantic profile in the description.\n\nMoreover, the dataset topic is: Topographic Mapping. Based on this topic, please add sentence(s) describing what this dataset can be used for.\n\nQuestion: Based on the information above and the requirements, provide a dataset description in sentences. Use only natural, readable sentences without special formatting.\n\nAnswer:\n\nTarget length: approximately 100 words.",
+  "description": "This dataset is focused on topographic mapping and contains spatial data related to various locations. It includes two main types of data: GIS files, which represent specific locations and contain spatial data, and an XLSX file that likely contains additional relevant data. The GIS files are named after different geographical features such as mountains and islands, suggesting that the dataset covers a range of topographic features. This dataset can be used for creating detailed topographic maps, analyzing terrain features, and conducting spatial analysis. Researchers and professionals in fields such as geography, environmental science, and urban planning may find this dataset particularly useful for their studies and projects.",
+  "runtime_seconds": 10.179,
+  "status": "ok"
+}

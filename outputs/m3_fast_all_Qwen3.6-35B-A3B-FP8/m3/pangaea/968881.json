@@ -1,0 +1,41 @@
+{
+  "dataset_id": "968881",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/968881.csv",
+  "source_sha256": "a5f4883152b119b5e65cbc0e9ef4eecb1cdd0ad4f95d8a3cf836b7d7c1f68b95",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:01:23.716942+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic Snow and Ice Density and Depth Measurements (DML21/22)",
+    "description": "This dataset contains 578 snow and ice physical property measurements collected in Dronning Maud Land, Antarctica, between December 10, 2021, and January 8, 2022. The data includes snow density, depth measurements (total depth, top, and bottom of layers), and precise geographic coordinates (Latitude, Longitude) for each observation event.",
+    "keywords": [
+      "Antarctica",
+      "Dronning Maud Land",
+      "snow density",
+      "ice depth",
+      "glaciology",
+      "DML21/22",
+      "field measurements"
+    ],
+    "spatialCoverage": {
+      "min_lat": -73.4254031,
+      "min_lon": -14.5274876,
+      "max_lat": -72.8567119,
+      "max_lon": -12.014326
+    },
+    "temporalCoverage": {
+      "from": "2021-12-10T13:50:00+00:00",
+      "to": "2022-01-08T14:49:00+00:00"
+    },
+    "spatial": "Point locations (WGS84)",
+    "temporal": "Irregular (23 distinct event timestamps over 29 days)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/968881_bed23b81c0e5401ea77d8c269abcddcf.jsonl",
+  "runtime_seconds": 87.95
+}

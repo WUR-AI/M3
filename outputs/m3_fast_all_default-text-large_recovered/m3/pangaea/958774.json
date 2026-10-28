@@ -1,0 +1,42 @@
+{
+  "dataset_id": "958774",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/958774.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:22:37.218521+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Lake Constance Total‑Phosphorus Measurements (1951‑2010)",
+    "description": "Total phosphorus (TP, µg L⁻¹) measurements from the Lake Constance Fischbach‑Uttwil site (47.6240037651 N, 9.3754994815 E). The dataset contains 104 records spanning 1951‑01‑01 to 2010‑12‑31, derived from the integer Year obs column (the Date/Time column is empty). Each record includes a surface depth (Depth top = 0 m) and a bottom depth of either 20 m (shallow) or 250 m (deep), with corresponding water depth values and a seasonal description (winter mixing vs. summer months). Constant metadata columns are Event, Latitude, Longitude, and Elevation (‑252 m).",
+    "keywords": [
+      "Lake Constance",
+      "total phosphorus",
+      "TP",
+      "water quality",
+      "depth profile",
+      "annual",
+      "lake monitoring"
+    ],
+    "spatialCoverage": {
+      "min_lat": 47.6240037651,
+      "min_lon": 9.3754994815,
+      "max_lat": 47.6240037651,
+      "max_lon": 9.3754994815
+    },
+    "temporalCoverage": {
+      "from": "1951-01-01",
+      "to": "2010-12-31"
+    },
+    "spatial": "point",
+    "temporal": "yearly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/958774_d5929ed389d8454eab23319dda051051.jsonl",
+  "runtime_seconds": 440.58,
+  "recovered_from_trace": true,
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "chlorurus_bleekeri.csv",
+  "dataset_id": "chlorurus_bleekeri",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 999,
+  "n_columns": 50,
+  "description": "Species occurrence data for Chlorurus bleekeri, 2009-2026, 999 records.",
+  "dataset_description": "Species occurrence data for Chlorurus bleekeri, 2009-2026, 999 records.",
+  "runtime_seconds": 37.319,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/chlorurus_bleekeri/dictionary.json"
+}

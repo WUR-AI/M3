@@ -1,0 +1,84 @@
+{
+  "csv": "990164.csv",
+  "dataset_id": "990164",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1d710fa4e7e67deb32c461c72ea2cec1a2a5054abd977ba644575d06fdf628bd",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4213,
+  "metadata": {
+    "name": "990164",
+    "description": "The dataset contains chemical and spatial data from sediment samples. It includes various chemical elements measured in sediment layers, along with their corresponding depths, ages, and geographic coordinates.",
+    "keywords": [
+      "sediment",
+      "chemical analysis",
+      "geographic coordinates",
+      "depth",
+      "age"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "990164"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 24.456,
+  "status": "ok"
+}

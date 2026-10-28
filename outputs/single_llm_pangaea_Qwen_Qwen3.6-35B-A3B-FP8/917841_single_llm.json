@@ -1,0 +1,43 @@
+{
+  "csv": "917841.csv",
+  "dataset_id": "917841",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "contract_sha256": "75609e2d6f7a903c54502d0ae89b2d41d01486cc813cd42c76bd2a38a31fa69f",
+  "prompt_tokens": 1233,
+  "metadata": {
+    "name": "Macapule Lagoon Water Quality Measurements",
+    "description": "Water quality data including temperature, salinity, dissolved oxygen, pH, ammonia, nitrate, and phosphate concentrations collected from Macapule Lagoon.",
+    "keywords": [
+      "Macapule Lagoon",
+      "water quality",
+      "temperature",
+      "salinity",
+      "dissolved oxygen",
+      "pH",
+      "ammonia",
+      "nitrate",
+      "phosphate"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-01",
+      "to": "2015-06-01"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.245,
+  "status": "ok"
+}

@@ -1,0 +1,41 @@
+{
+  "csv": "990054.csv",
+  "dataset_id": "990054",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "contract_sha256": "c5dd19a781e57ae91108bec6de180bdb0fe4de43a8de4e4b4bd8f9da3044ee6b",
+  "prompt_tokens": 23006,
+  "metadata": {
+    "name": "MOSAiC Ice Core Chlorophyll a and Phaeophytin Data",
+    "description": "Dataset containing measurements of Chlorophyll a (Chl a) and Phaeophytin (Phae) concentrations from sea ice cores collected during the MOSAiC expedition. Data includes depth intervals, ice/snow depth, and geographic coordinates for sampling events between October 2019 and July 2020.",
+    "keywords": [
+      "MOSAiC",
+      "sea ice",
+      "ice core",
+      "Chlorophyll a",
+      "Phaeophytin",
+      "PS122",
+      "Arctic"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28",
+      "to": "2020-07-20"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.59,
+  "status": "ok"
+}

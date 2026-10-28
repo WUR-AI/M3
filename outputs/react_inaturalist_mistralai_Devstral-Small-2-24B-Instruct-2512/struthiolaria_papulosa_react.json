@@ -1,0 +1,60 @@
+{
+  "csv": "struthiolaria_papulosa.csv",
+  "dataset_id": "struthiolaria_papulosa",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "9f17658d337b2df68728fbc6f5605ff7ad6c0aae51b18485c48b0d7d9cef3a8f",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2582,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -47.000031,
+      "min_lon": 166.55639,
+      "max_lat": -34.420495,
+      "max_lon": 177.902708
+    },
+    "temporalCoverage": {
+      "from": "2000-01-20",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "struthiolaria_papulosa",
+        "resource": "struthiolaria_papulosa.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "struthiolaria_papulosa",
+        "resource": "struthiolaria_papulosa"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "struthiolaria_papulosa",
+        "resource": "struthiolaria_papulosa",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "struthiolaria_papulosa",
+        "resource": "struthiolaria_papulosa",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.555,
+  "status": "ok"
+}

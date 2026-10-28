@@ -1,0 +1,44 @@
+{
+  "csv": "965135.csv",
+  "dataset_id": "965135",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "contract_sha256": "6e9e52e3ada7ba16c54b70228d7a679b5030cdce573ea1d932c1b76accd56f27",
+  "prompt_tokens": 6535,
+  "metadata": {
+    "name": "TIAREI-A1 Coral Isotope Data",
+    "description": "This dataset contains isotopic data from a Porites sp. coral core (TIAREI-A1) collected from the South Pacific. The data includes measurements of Sr/Ca, Mg/Ca, δ18O, and δ13C, along with age information and geographic coordinates.",
+    "keywords": [
+      "coral",
+      "isotope",
+      "Porites sp.",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "South Pacific",
+      "paleoclimate",
+      "TIAREI-A1"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "1999-07-01",
+      "to": "2008-07-01"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 11.509,
+  "status": "ok"
+}

@@ -1,0 +1,45 @@
+{
+  "dataset_id": "917841",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917841.csv",
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:28:44.788245+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Macapule Lagoon Water Quality Monitoring Data",
+    "description": "Time-series dataset of water quality parameters including temperature, salinity, dissolved oxygen, pH, and nutrient concentrations (ammonia, nitrate, phosphate) collected at a single monitoring station in Macapule Lagoon.",
+    "keywords": [
+      "water quality",
+      "Macapule Lagoon",
+      "temperature",
+      "salinity",
+      "dissolved oxygen",
+      "pH",
+      "ammonia",
+      "nitrate",
+      "phosphate",
+      "nutrients",
+      "environmental monitoring"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-01",
+      "to": "2015-06-01"
+    },
+    "spatial": "point",
+    "temporal": "semi-annual"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917841_b34c105c12f04819a39816891d4b079f.jsonl",
+  "runtime_seconds": 126.26
+}

@@ -1,0 +1,44 @@
+{
+  "dataset_id": "972178",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972178.csv",
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:27:46.299620+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Aalen, Germany Geospatial Imagery Catalog (1984-2023)",
+    "description": "A metadata catalog for geospatial imagery focused on Aalen, Germany (Site c7126), containing 288 records spanning 1984 to 2023. The dataset links observation periods and geographic coordinates to specific file assets, primarily 6-band color composite GeoTIFFs and associated Shapefiles.",
+    "keywords": [
+      "Aalen",
+      "Germany",
+      "geospatial imagery",
+      "GeoTIFF",
+      "Shapefile",
+      "time series",
+      "remote sensing",
+      "c7126",
+      "ESIS_Aalen",
+      "6 band color composits"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.79899472,
+      "min_lon": 9.998824433,
+      "max_lat": 48.79899472,
+      "max_lon": 9.998824433
+    },
+    "temporalCoverage": {
+      "from": "1984-08-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point",
+    "temporal": "irregular"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972178_f3fd2b527a664f1bb6dbe9da82969cde.jsonl",
+  "runtime_seconds": 134.34
+}

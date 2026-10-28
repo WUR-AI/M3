@@ -1,0 +1,65 @@
+{
+  "csv": "972178.csv",
+  "dataset_id": "972178",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1907,
+  "metadata": {
+    "name": "Aalen Germany 6‑band color composites (1984‑1986)",
+    "description": "A time‑series of six‑band colour composite satellite images for the Aalen region in Germany, covering the period 1984‑1986. Each record provides the observation year, start and end dates of the composite, geographic coordinates of the site, and references to the associated GeoTIFF and shapefile resources.",
+    "keywords": [
+      "Aalen",
+      "Germany",
+      "satellite",
+      "remote sensing",
+      "6‑band",
+      "color composite",
+      "GeoTIFF",
+      "shapefile",
+      "time series"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.798995,
+      "min_lon": 9.998824,
+      "max_lat": 48.798995,
+      "max_lon": 9.998824
+    },
+    "temporalCoverage": {
+      "from": "1984-08-01",
+      "to": "1986-10-31"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "972178"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "n": 5
+      }
+    }
+  ],
+  "runtime_seconds": 9.57,
+  "status": "ok"
+}

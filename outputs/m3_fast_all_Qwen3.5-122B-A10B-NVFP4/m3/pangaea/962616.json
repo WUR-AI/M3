@@ -1,0 +1,42 @@
+{
+  "dataset_id": "962616",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/962616.csv",
+  "source_sha256": "53878bd4aff9f3cab58fba0c5229d29a9b6de5e5bd93a55093c97e80fb7cd00e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:51:01.479937+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "CapeBlossom 7cm Survey Metadata Log for Event P6_224_Perma_X_2021_2106250301",
+    "description": "A metadata inventory log containing 11 records of geospatial survey assets generated for a single event at a fixed location in Alaska. The dataset tracks file names, content descriptions, and sizes for a survey conducted on June 25, 2021, at coordinates 66.891836 N, -162.596512 W.",
+    "keywords": [
+      "CapeBlossom",
+      "geospatial survey",
+      "metadata log",
+      "Alaska",
+      "7cm resolution",
+      "RGB preview",
+      "survey assets",
+      "P6_224_Perma_X_2021_2106250301"
+    ],
+    "spatialCoverage": {
+      "min_lat": 66.891836,
+      "min_lon": -162.596512,
+      "max_lat": 66.891836,
+      "max_lon": -162.596512
+    },
+    "temporalCoverage": {
+      "from": "2021-06-25T21:21:30+00:00",
+      "to": "2021-06-25T21:21:30+00:00"
+    },
+    "spatial": "7 cm",
+    "temporal": "instantaneous"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/962616_cf643becc2b74815b2c97be77dd0f72f.jsonl",
+  "runtime_seconds": 128.87
+}

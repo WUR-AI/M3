@@ -1,0 +1,41 @@
+{
+  "csv": "948933.csv",
+  "dataset_id": "948933",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "contract_sha256": "79ce88f1705b851ae0b1fecfc79ef6742c9c6f0e2cdb3d44958fa70ed04c7742",
+  "prompt_tokens": 1159,
+  "metadata": {
+    "name": "Sylt trawl data",
+    "description": "This dataset contains information on trawling events, including geographic coordinates, bathymetric data, environmental parameters, and observations of S. scombrus (Atlantic mackerel) in the Sylt area.",
+    "keywords": [
+      "trawl",
+      "Sylt",
+      "Benthic",
+      "S. scombrus",
+      "Atlantic mackerel",
+      "marine",
+      "biodiversity"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.98965,
+      "min_lon": 8.426567,
+      "max_lat": 55.058033,
+      "max_lon": 8.51045
+    },
+    "temporalCoverage": {
+      "from": "2021-06-29",
+      "to": "2021-09-07"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 8.552,
+  "status": "ok"
+}

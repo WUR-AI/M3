@@ -1,0 +1,102 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4512,
+  "metadata": {
+    "name": "MITAPI 2015-2010 Difference NetCDF Files Catalog",
+    "description": "Catalog of NetCDF files containing MITAPI (Model of Integrated Terrestrial and Atmospheric Processes for India) difference data for various sectors (AGR, ENE, IND, PPA, PRO, RCO, REF, SHIP, SWD, TNG, TRF, TRO). Files are stored in NetCDF format and accessible via PANGAEA data repository.",
+    "keywords": [
+      "MITAPI",
+      "NetCDF",
+      "India",
+      "climate model",
+      "difference data",
+      "sector analysis",
+      "AGR",
+      "ENE",
+      "IND",
+      "PPA",
+      "PRO",
+      "RCO",
+      "REF",
+      "SHIP",
+      "SWD",
+      "TNG",
+      "TRF",
+      "TRO"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": "1x1 degree",
+    "temporal": "unknown"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "899705"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705",
+        "n": 12
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    }
+  ],
+  "runtime_seconds": 15.832,
+  "status": "ok"
+}

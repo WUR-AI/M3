@@ -1,0 +1,15 @@
+{
+  "csv": "colpomenia_peregrina.csv",
+  "dataset_id": "colpomenia_peregrina",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5bc906a0341b4d38c2e058aac9b7f62d331a4357a14916adb022ffde81c3305a",
+  "contract_sha256": "42e9bb8334c77ff43d52f60c411afa8aaa0517e27c86c81ed47024cc14999b6e",
+  "prompt_tokens": 325610,
+  "status": "skipped",
+  "reason": "context_window"
+}

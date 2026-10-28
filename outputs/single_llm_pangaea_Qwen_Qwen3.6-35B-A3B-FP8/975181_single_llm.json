@@ -1,0 +1,41 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ecb7b5ed9a1a17db139f60404906a6597234581b11225c226aeee09add86bffa",
+  "contract_sha256": "fd36036754707f3f29753e833a8872b8bfb5ebb4051a90e3b43f30d7e386bfad",
+  "prompt_tokens": 13400,
+  "metadata": {
+    "name": "Uvigerina spp. Isotope Data from Gulf of Mexico Core M78/1_181-3",
+    "description": "Geochemical analysis of Uvigerina spp. forameniferan foraminifera from sediment core M78/1_181-3, including carbon and oxygen isotope ratios (δ13C, δ18O), sediment depth, and estimated age.",
+    "keywords": [
+      "Uvigerina",
+      "isotopes",
+      "delta13C",
+      "delta18O",
+      "sediment core",
+      "Gulf of Mexico",
+      "paleoceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": 29.0,
+      "min_lon": -88.33333333,
+      "max_lat": 29.0,
+      "max_lon": -88.33333333
+    },
+    "temporalCoverage": {
+      "from": "2009-03-04",
+      "to": "2009-03-04"
+    },
+    "spatial": "point locations",
+    "temporal": "point locations"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.687,
+  "status": "ok"
+}

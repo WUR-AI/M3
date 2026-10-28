@@ -1,0 +1,42 @@
+{
+  "dataset_id": "986963",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/986963.csv",
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T02:26:11.874992+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Sediment Core Analysis Dataset",
+    "description": "This dataset contains geochemical and sedimentological data from Arctic sediment cores, including measurements of total organic carbon (TOC), total inorganic carbon (TIC), total nitrogen (TN), carbon and nitrogen isotope ratios (δ13C and δ15N), sedimentation rates, and particle size distributions. The data also includes temporal and spatial information, with samples collected at various depths and locations in the Arctic region.",
+    "keywords": [
+      "Arctic",
+      "sediment core",
+      "geochemistry",
+      "paleoenvironment",
+      "carbon isotopes",
+      "nitrogen isotopes",
+      "sedimentation rate",
+      "particle size distribution"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "2018-09-28T19:07:00+00:00",
+      "to": "2021-03-06T02:53:02+00:00"
+    },
+    "spatial": "Point locations with coordinates precise to 4 decimal places (~11 meters at the equator)",
+    "temporal": "Hourly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/986963_827b0a2c2a5244e89177ecf4321e5c8d.jsonl",
+  "runtime_seconds": 328.43
+}

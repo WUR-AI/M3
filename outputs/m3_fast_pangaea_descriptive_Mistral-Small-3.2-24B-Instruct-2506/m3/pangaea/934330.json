@@ -1,0 +1,32 @@
+{
+  "dataset_id": "934330",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/934330.csv",
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T12:21:33.436875+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Stordalen Sediment Core Dating Data",
+    "description": "This dataset contains sediment core dating information from the Stordalen region, including depth, sample thickness, age data, and location details. It records various events with associated ages, uncertainties, and comments, along with spatial coordinates and elevation.",
+    "keywords": [
+      "sediment core",
+      "dating",
+      "Stordalen",
+      "depth",
+      "age",
+      "uncertainty",
+      "latitude",
+      "longitude",
+      "elevation",
+      "paleoclimate"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/934330_60347de0e1cb4cda85177ca276721c4c.jsonl",
+  "runtime_seconds": 1005.11
+}

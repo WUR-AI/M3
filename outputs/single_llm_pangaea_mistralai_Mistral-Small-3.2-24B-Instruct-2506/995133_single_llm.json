@@ -1,0 +1,35 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "contract_sha256": "2e8f2c85e70607cd13f61562363595ac6eb5e103409cae57958f201003b93663",
+  "prompt_tokens": 1622,
+  "metadata": {
+    "name": "M. balthica shell length frequency data",
+    "description": "This dataset contains information on the shell length frequency of M. balthica collected from Rönnebank in the Baltic Sea during June 2023. The data is categorized by site type: Marine Protected Area and Reference area.",
+    "keywords": [
+      "M. balthica",
+      "shell length",
+      "Baltic Sea",
+      "Rönnebank",
+      "Marine Protected Area",
+      "Reference area"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2023-06-01",
+      "to": "2023-06-30"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.53,
+  "status": "ok"
+}

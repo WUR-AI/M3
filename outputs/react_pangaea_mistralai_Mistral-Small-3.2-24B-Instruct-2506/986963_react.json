@@ -1,0 +1,85 @@
+{
+  "csv": "986963.csv",
+  "dataset_id": "986963",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3893,
+  "metadata": {
+    "name": "986963",
+    "description": "The dataset contains various environmental and sedimentary data collected at different events. Key fields include event identifiers, geographic coordinates (latitude and longitude), sediment depth, age-related measurements, sediment rates, carbon and nitrogen content, and grain size distributions. The data appears to be from sediment core samples, with measurements taken at specific depths and times.",
+    "keywords": [
+      "environmental data",
+      "sediment cores",
+      "geographic coordinates",
+      "carbon content",
+      "nitrogen content",
+      "grain size distribution"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "2018-09-28",
+      "to": "2021-03-06"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "986963"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 27.986,
+  "status": "ok"
+}

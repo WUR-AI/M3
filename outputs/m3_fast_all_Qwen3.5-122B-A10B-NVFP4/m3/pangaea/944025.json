@@ -1,0 +1,45 @@
+{
+  "dataset_id": "944025",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/944025.csv",
+  "source_sha256": "a530a26bc0e4fe56a3fdc94260921220a39b3ec5b60be156d609cd00803f6e1c",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:09:23.235807+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Sediment Analysis from German Collector Trial Pre-Impact (SO268/1_43-1)",
+    "description": "Geochemical sediment analysis data from a vertical core profile collected at station SO268_043MUC in the German collector trial pre-impact area. The dataset contains 106 columns representing elemental concentrations (Al, Ba, Ca2+, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) with associated relative and absolute error metrics, organized into primary measurements and two derived sets (_2 and _3). Data was collected on 2019-03-10 at a single location in the Pacific Ocean (11.93°N, 117.02°W) at a depth of approximately 4088 meters, with samples taken at 7 different sediment depths ranging from 0.0625 to 0.225.",
+    "keywords": [
+      "geochemistry",
+      "sediment",
+      "core profile",
+      "elemental analysis",
+      "marine sediment",
+      "German collector trial",
+      "pre-impact",
+      "SO268",
+      "Pacific Ocean",
+      "trace metals",
+      "major elements"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.93056667,
+      "min_lon": -117.0224333,
+      "max_lat": 11.93056667,
+      "max_lon": -117.0224333
+    },
+    "temporalCoverage": {
+      "from": "2019-03-10T10:48:26+00:00",
+      "to": "2019-03-10T10:48:26+00:00"
+    },
+    "spatial": "Point location (single station SO268_043MUC)",
+    "temporal": "Snapshot (single sampling event on 2019-03-10)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/944025_3ba582f7a36547c8836a52b7fa13a9fe.jsonl",
+  "runtime_seconds": 225.6
+}

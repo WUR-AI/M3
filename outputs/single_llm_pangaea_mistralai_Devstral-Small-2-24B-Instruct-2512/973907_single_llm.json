@@ -1,0 +1,40 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "8c0878b89851ad098ac08623d6d0fcc39bfc58509c7da063d5c7790148cd9dc8",
+  "prompt_tokens": 17690,
+  "metadata": {
+    "name": "MSM44_362-1 Core Data",
+    "description": "Dataset containing sediment core data including depth, section, core diameter deviation, P-wave travel time, Vp-a, AGR, event, latitude, longitude, elevation, and date/time for core MSM44_362-1.",
+    "keywords": [
+      "sediment core",
+      "P-wave travel time",
+      "Vp-a",
+      "AGR",
+      "MSM44_362-1",
+      "geophysical data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12",
+      "to": "2015-07-12"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.853,
+  "status": "ok"
+}

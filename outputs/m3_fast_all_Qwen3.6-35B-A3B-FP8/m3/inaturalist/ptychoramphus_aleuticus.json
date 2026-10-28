@@ -1,0 +1,28 @@
+{
+  "dataset_id": "ptychoramphus_aleuticus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/ptychoramphus_aleuticus.csv",
+  "source_sha256": "80bfff6219ff696f223ae202c2d3cba494e22facb5b9b9c22706699c63f449c1",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T03:05:25.661222+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 27.82253,
+      "min_lon": -179.579871,
+      "max_lat": 59.854992,
+      "max_lon": 175.888891
+    },
+    "temporalCoverage": {
+      "from": "1984-05-25T00:00:00+00:00",
+      "to": "2026-06-14T14:25:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/ptychoramphus_aleuticus_9099879808524ae1acdcfdc7357e0bce.jsonl",
+  "runtime_seconds": 51.83
+}

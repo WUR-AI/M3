@@ -1,0 +1,46 @@
+{
+  "dataset_id": "982395",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/982395.csv",
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T02:15:33.707604+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Geochemical and Grain Size Analysis",
+    "description": "This dataset contains sediment geochemical and grain size analysis data, including measurements of total organic carbon (TOC), black carbon (BC), calcium carbonate (CaCO3), pH, particle size fractions, magnetic susceptibility, total phosphorus (TP), heavy metals (Pb, Zn, Cu), sulfur (S), stable carbon and nitrogen isotopes (δ13C, δ15N), and spatial-temporal information.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "grain size",
+      "TOC",
+      "BC",
+      "CaCO3",
+      "pH",
+      "magnetic susceptibility",
+      "heavy metals",
+      "isotopes",
+      "spatial data",
+      "temporal data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 51.410785,
+      "min_lon": 12.079572,
+      "max_lat": 51.41327778,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22",
+      "to": "2019-08-12"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/982395_c9b84d41587348c9a18c4511ae26ce91.jsonl",
+  "runtime_seconds": 315.98
+}

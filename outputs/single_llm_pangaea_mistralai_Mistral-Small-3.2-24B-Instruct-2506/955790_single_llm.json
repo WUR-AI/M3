@@ -1,0 +1,38 @@
+{
+  "csv": "955790.csv",
+  "dataset_id": "955790",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "32ff85ba761f2a60c1fca4b652694970cb3bcf7223b0d2f265d2c0637be78677",
+  "contract_sha256": "459c7a9b5b6211b6fc40abd0ba27ccbc713f81f594ab9b2b2be0378913eabf0f",
+  "prompt_tokens": 1190,
+  "metadata": {
+    "name": "Mn nodule data",
+    "description": "Dataset containing information about manganese nodules, including their chemical composition, location, and type.",
+    "keywords": [
+      "manganese nodules",
+      "chemical composition",
+      "deep-sea mining",
+      "marine geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": -14.05,
+      "min_lon": -175.7167,
+      "max_lat": -12.0,
+      "max_lon": -149.3
+    },
+    "temporalCoverage": {
+      "from": "1970-09-02",
+      "to": "1970-09-25"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.669,
+  "status": "ok"
+}

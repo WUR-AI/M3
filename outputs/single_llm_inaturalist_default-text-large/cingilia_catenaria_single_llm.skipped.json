@@ -1,0 +1,15 @@
+{
+  "csv": "cingilia_catenaria.csv",
+  "dataset_id": "cingilia_catenaria",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "17a2a9cb99bf42306bf8693a8209ea5a32f31cb1d703c5f62815aaa17e0dfe3f",
+  "contract_sha256": "c8281feabadfd67796ca4e6e790373894bbb08b145c4a69bb59db646537a6c06",
+  "prompt_tokens": 314246,
+  "status": "skipped",
+  "reason": "context_window"
+}

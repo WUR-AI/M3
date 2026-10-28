@@ -1,0 +1,28 @@
+{
+  "dataset_id": "lactuca_viminea",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/lactuca_viminea.csv",
+  "source_sha256": "d08b817053f69667f465199f2fecb8c501dc2d0a3be8b947c93640cd49cafcb3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:42:58.090612+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.606585,
+      "min_lon": -17.907803,
+      "max_lat": 50.041159,
+      "max_lon": 47.839824
+    },
+    "temporalCoverage": {
+      "from": "2001-08-02T00:00:00+00:00",
+      "to": "2026-06-07T14:17:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/lactuca_viminea_085f0697537348dab6650f54ecab9852.jsonl",
+  "runtime_seconds": 42.23
+}

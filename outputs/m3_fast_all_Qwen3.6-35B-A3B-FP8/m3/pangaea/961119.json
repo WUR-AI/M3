@@ -1,0 +1,41 @@
+{
+  "dataset_id": "961119",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961119.csv",
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:42:53.006484+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Baltic Sea pCO2 Dataset Catalog",
+    "description": "A metadata catalog entry listing two downloadable datasets related to the Baltic Sea partial pressure of carbon dioxide (pCO2): a climatology dataset and a long-term trend dataset. The catalog provides file names, sizes, and integrity hashes for each dataset.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "climatology",
+      "trend",
+      "carbon dioxide",
+      "oceanography",
+      "metadata catalog"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.0,
+      "min_lon": 8.0,
+      "max_lat": 66.0,
+      "max_lon": 28.0
+    },
+    "temporalCoverage": {
+      "from": "1990",
+      "to": "2020"
+    },
+    "spatial": "Regional (Baltic Sea)",
+    "temporal": "Climatology / Long-term trend"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961119_e62ca8cf00444239bb87ebc3d55a915e.jsonl",
+  "runtime_seconds": 58.32
+}

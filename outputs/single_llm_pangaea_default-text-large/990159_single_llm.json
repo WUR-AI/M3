@@ -1,0 +1,41 @@
+{
+  "csv": "990159.csv",
+  "dataset_id": "990159",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5007b7d93b30afc7d7831d726516842ce7d797b656068ef61a8267a80e9e4aeb",
+  "contract_sha256": "2e308d43e091275556960219a995ed71f983cc8cac78c2b953e1e6bd69947c23",
+  "prompt_tokens": 2379,
+  "metadata": {
+    "name": "Sediment 210Pb Profile",
+    "description": "Measurements of 210Pb activity, its supported and unsupported fractions, and associated standard deviations at multiple sediment depth intervals for a single site (latitude 21.277661, longitude -104.690167) collected on 2022-04-08.",
+    "keywords": [
+      "210Pb",
+      "sediment",
+      "depth profile",
+      "radioisotope",
+      "geochemistry",
+      "point location",
+      "2022-04-08"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point location",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.419,
+  "status": "ok"
+}

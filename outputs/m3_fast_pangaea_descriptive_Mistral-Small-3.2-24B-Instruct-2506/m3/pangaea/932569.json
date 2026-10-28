@@ -1,0 +1,33 @@
+{
+  "dataset_id": "932569",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/932569.csv",
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T12:08:28.739096+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Aerosol Chemical Composition and Spatial Data",
+    "description": "This dataset contains information about aerosol samples, including event details, sample IDs, stages, aerosol size ranges, dates/times, geographical coordinates, height, and various chemical concentrations such as Cl-, [NO3]-, [SO4]2-, [C2O4]2-, [NO2]-, Br-, F-, MSA, [PO4]3-, Na+, [NH4]+, K+, and Mg2+. The data covers a period from May 24, 2017, to July 16, 2017, with samples collected across a wide range of latitudes and longitudes.",
+    "keywords": [
+      "aerosol",
+      "chemical composition",
+      "environmental data",
+      "geographical coordinates",
+      "spatial data",
+      "temporal data",
+      "atmospheric chemistry",
+      "2017",
+      "May",
+      "June",
+      "July"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/932569_eb288a95b28b4a52983eb0b49c2e9718.jsonl",
+  "runtime_seconds": 784.7
+}

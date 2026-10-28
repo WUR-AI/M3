@@ -1,0 +1,86 @@
+{
+  "csv": "932569.csv",
+  "dataset_id": "932569",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 7372,
+  "metadata": {
+    "name": "Atmospheric aerosol chemical composition measurements from PS106 flight track",
+    "description": "Dataset of aerosol chemical species concentrations (Cl‑, NO₃‑, SO₄²‑, C₂O₄²‑, NO₂‑, Br‑, F‑, MSA, PO₄³‑, Na⁺, NH₄⁺, K⁺, Mg²⁺) measured at different aerosol size ranges and stages during the PS106/1‑track flight campaign.",
+    "keywords": [
+      "aerosol",
+      "chemical composition",
+      "atmospheric",
+      "flight measurements",
+      "PS106",
+      "size distribution",
+      "2017",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.420486,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24T20:50:00+00:00",
+      "to": "2017-07-16T10:35:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "932569"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "932569"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "time_column": "Date/Time_2"
+      }
+    }
+  ],
+  "runtime_seconds": 24.026,
+  "status": "ok"
+}

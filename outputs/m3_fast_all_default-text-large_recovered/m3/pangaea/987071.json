@@ -1,0 +1,46 @@
+{
+  "dataset_id": "987071",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987071.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:45:52.985448+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment depth profile of TOC & TIC – GeoB16320-2 (23.8384 N, –87.1501 W, 2012-03-24)",
+    "description": "Dataset of 34 sediment samples collected during a single event (Event = GeoB16320-2) at latitude 23.8384167 N, longitude –87.15005 W, elevation –626 m on 2012‑03‑24 21:28 UTC. Each record provides depth (m), total organic carbon (TOC, % wt), and total inorganic carbon (TIC, % wt).",
+    "keywords": [
+      "sediment",
+      "depth profile",
+      "TOC",
+      "TIC",
+      "total organic carbon",
+      "total inorganic carbon",
+      "geochemistry",
+      "single event",
+      "2012-03-24",
+      "latitude 23.8384",
+      "longitude -87.1501"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24T21:28:00+00:00",
+      "to": "2012-03-24T21:28:00+00:00"
+    },
+    "spatial": "point-level (precision ~1e-6°)",
+    "temporal": "sub-second granularity"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987071_171f2f387d6b43e98ec0dd55c09e25b5.jsonl",
+  "runtime_seconds": 132.59,
+  "recovered_from_trace": true,
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843"
+}

@@ -1,0 +1,83 @@
+{
+  "csv": "lactuca_viminea.csv",
+  "dataset_id": "lactuca_viminea",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "d08b817053f69667f465199f2fecb8c501dc2d0a3be8b947c93640cd49cafcb3",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4817,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.606585,
+      "min_lon": -17.907803,
+      "max_lat": 50.041159,
+      "max_lon": 47.839824
+    },
+    "temporalCoverage": {
+      "from": "2001-08-02",
+      "to": "2026-06-07"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 20.494,
+  "status": "ok"
+}

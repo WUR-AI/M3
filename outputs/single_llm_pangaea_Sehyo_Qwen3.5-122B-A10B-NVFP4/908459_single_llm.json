@@ -1,0 +1,48 @@
+{
+  "csv": "908459.csv",
+  "dataset_id": "908459",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b08ef1a0c309b4a4def9f5e67e45bd39c8e3237b14d0e69bd9b469b86c4cda96",
+  "contract_sha256": "37c580052514138cc66a38ad49a3fdc0ceaa4cea5ff15ace44e44290d92971f8",
+  "prompt_tokens": 6449,
+  "metadata": {
+    "name": "Magallana hongkongensis (mollusk) laboratory experiment data",
+    "description": "Laboratory dataset containing physicochemical parameters and mechanical properties (stiffness, hardness, density) of Magallana hongkongensis (mollusk) under various treatments. Includes water chemistry data such as pH, temperature, salinity, alkalinity, pCO2, carbonate ion concentration, and saturation states (Omega Cal, Omega Arg).",
+    "keywords": [
+      "Magallana hongkongensis",
+      "mollusk",
+      "laboratory",
+      "stiffness",
+      "hardness",
+      "density",
+      "pH",
+      "temperature",
+      "salinity",
+      "alkalinity",
+      "pCO2",
+      "carbonate chemistry",
+      "saturation state",
+      "Zhanjiang"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.33333,
+      "min_lon": 110.66667,
+      "max_lat": 21.33333,
+      "max_lon": 110.66667
+    },
+    "temporalCoverage": {
+      "from": "2016-06-01",
+      "to": "2016-06-01"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.786,
+  "status": "ok"
+}

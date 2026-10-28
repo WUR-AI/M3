@@ -1,0 +1,37 @@
+{
+  "dataset_id": "974800",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974800.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:29:25.034290+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory experiment of zooplankton treatments – X. umbellata pulsation measurements",
+    "description": "The dataset contains 60 complete records from a laboratory experiment. Each record includes the constant study type \"Laboratory experiment\", a tank identifier (12 distinct tanks), a treatment type (4 distinct treatments), a DOE value ranging from 0 to 28 (mean 14), and X. umbellata pulsation measurements ranging from 22 to 41.33 (mean 33.91). No temporal or geographic information is provided.",
+    "keywords": [
+      "laboratory experiment",
+      "zooplankton",
+      "tank",
+      "DOE",
+      "X. umbellata",
+      "pulsation",
+      "experimental data",
+      "ecology",
+      "laboratory study",
+      "tank experiment"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974800_6e41be70d7aa4a6eb1879872b8e4839c.jsonl",
+  "runtime_seconds": 116.16,
+  "recovered_from_trace": true,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8"
+}

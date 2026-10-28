@@ -1,0 +1,47 @@
+{
+  "csv": "966669.csv",
+  "dataset_id": "966669",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "38d45ebddb5ad7c83655f2d23207ed3d800aa60a12fe7468bb6274122192cd99",
+  "contract_sha256": "e9b40add573b88562a6a482733d66b7fafbc9448cd055588d87a84b5b0ccec0b",
+  "prompt_tokens": 8836,
+  "metadata": {
+    "name": "Flade Isblink Ice Cap Radiometric Data",
+    "description": "Radiometric measurements from cryoconite and river sediment samples collected from Flade Isblink Ice Cap, including isotopes like 137Cs, 210Pb, 241Am, and plutonium isotopes, along with organic matter content (LOI) and carbon data.",
+    "keywords": [
+      "radiometric data",
+      "cryoconite",
+      "river sediment",
+      "ice cap",
+      "isotopes",
+      "137Cs",
+      "210Pb",
+      "241Am",
+      "plutonium",
+      "LOI",
+      "carbon",
+      "Arctic",
+      "Greenland"
+    ],
+    "spatialCoverage": {
+      "min_lat": 81.5169,
+      "min_lon": -16.1222,
+      "max_lat": 81.5441,
+      "max_lon": -15.8786
+    },
+    "temporalCoverage": {
+      "from": "2022-08-02",
+      "to": "2022-08-04"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.74,
+  "status": "ok"
+}

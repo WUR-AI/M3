@@ -1,0 +1,15 @@
+{
+  "csv": "tiedemannia_filiformis.csv",
+  "dataset_id": "tiedemannia_filiformis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5d43915b0622ccd09a463fd227d792e5711599effdd9a7e78223922f4efaf9f0",
+  "contract_sha256": "4e14e7ca4d22b7c7df9ac8442a2f9ec7a6e3d436007a38a8401a28cebe2d7025",
+  "prompt_tokens": 320115,
+  "status": "skipped",
+  "reason": "context_window"
+}

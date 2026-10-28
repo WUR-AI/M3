@@ -1,0 +1,59 @@
+{
+  "csv": "clavulinopsis_aurantiocinnabarina.csv",
+  "dataset_id": "clavulinopsis_aurantiocinnabarina",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "dc0948be4539ff05293c804aa97d27394d988b323ed356596cb9c6a18cfd1f51",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 2042,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 3.484675,
+      "min_lon": -122.379326,
+      "max_lat": 50.676255,
+      "max_lon": 114.389815
+    },
+    "temporalCoverage": {
+      "from": "2004-08-14T00:00:00+00:00",
+      "to": "2026-06-11T13:33:58+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "clavulinopsis_aurantiocinnabarina"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "clavulinopsis_aurantiocinnabarina",
+        "resource": "clavulinopsis_aurantiocinnabarina"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "clavulinopsis_aurantiocinnabarina",
+        "resource": "clavulinopsis_aurantiocinnabarina",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "clavulinopsis_aurantiocinnabarina",
+        "resource": "clavulinopsis_aurantiocinnabarina",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.61,
+  "status": "ok"
+}

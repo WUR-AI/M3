@@ -1,0 +1,40 @@
+{
+  "dataset_id": "897882",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/897882.csv",
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T08:57:49.108289+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "E. fimbriata Biological and Environmental Data",
+    "description": "Dataset containing biological measurements of E. fimbriata oocytes, environmental parameters (temperature, salinity), and geographical coordinates collected during events in Senegal in January 2014.",
+    "keywords": [
+      "E. fimbriata",
+      "oocyte measurements",
+      "biological data",
+      "environmental parameters",
+      "temperature",
+      "salinity",
+      "lipids",
+      "protein",
+      "calorific content",
+      "elemental ratios",
+      "Senegal",
+      "Foundiougne",
+      "Djifer",
+      "Joal",
+      "2014",
+      "January",
+      "marine biology",
+      "biochemical composition"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/897882_8d90a5d5f85742b48749d47ca5be40aa.jsonl",
+  "runtime_seconds": 524.47
+}

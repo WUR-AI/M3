@@ -1,0 +1,521 @@
+{
+  "dataset_name": "948933",
+  "list_of_tables": [
+    "948933"
+  ],
+  "tables": {
+    "948933": {
+      "table_name": "948933",
+      "row_count": 6,
+      "number_of_columns": 15,
+      "list_of_columns": [
+        "Sample label",
+        "Latitude",
+        "Longitude",
+        "Latitude 2",
+        "Longitude 2",
+        "Bathy depth",
+        "Bathy depth_2",
+        "Date/Time",
+        "Date/Time_2",
+        "Habitat",
+        "S. scombrus TL",
+        "S. scombrus",
+        "Sal",
+        "Temp",
+        "Event"
+      ],
+      "columns": {
+        "Sample label": {
+          "column_name": "Sample label",
+          "data_type": "string",
+          "sample_values": [
+            "Sylt-9 trawl 2",
+            "Sylt-1 trawl 4",
+            "Sylt-9 trawl 2",
+            "Sylt-1 trawl 6",
+            "Sylt-9 trawl 2",
+            "Sylt-9 trawl 2"
+          ],
+          "data_patterns": {
+            "Aaaa-9 aaaaa 9": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Sylt-9 trawl 2",
+                4
+              ],
+              [
+                "Sylt-1 trawl 4",
+                1
+              ],
+              [
+                "Sylt-1 trawl 6",
+                1
+              ]
+            ],
+            "unique_count": 3
+          },
+          "description": "Sample label identifies trawl samples from Sylt locations."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            54.996367,
+            55.056917,
+            55.0526,
+            54.996367,
+            54.996367,
+            54.996367
+          ],
+          "data_patterns": {
+            "99.999999": 5,
+            "99.9999": 1
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 54.996367,
+            "max": 55.056917,
+            "mean": 55.01583083333333,
+            "median": 54.996367,
+            "std": 0.03018412808359117
+          },
+          "description": "Geographic coordinate measuring degrees north of the equator."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            8.492533,
+            8.432083,
+            8.492533,
+            8.4442,
+            8.492533,
+            8.492533
+          ],
+          "data_patterns": {
+            "9.999999": 5,
+            "9.9999": 1
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 8.432083,
+            "max": 8.492533,
+            "mean": 8.474402500000002,
+            "median": 8.492533,
+            "std": 0.02834780840735285
+          },
+          "description": "Geographic coordinate representing east-west position in decimal degrees."
+        },
+        "Latitude 2": {
+          "column_name": "Latitude 2",
+          "data_type": "float",
+          "sample_values": [
+            54.98965,
+            54.98965,
+            55.05165,
+            54.98965,
+            55.058033,
+            54.98965
+          ],
+          "data_patterns": {
+            "99.99999": 5,
+            "99.999999": 1
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 54.98965,
+            "max": 55.058033,
+            "mean": 55.011380499999994,
+            "median": 54.98965,
+            "std": 0.0337252039504605
+          },
+          "description": "Geographic coordinate in decimal degrees, representing northern hemisphere locations."
+        },
+        "Longitude 2": {
+          "column_name": "Longitude 2",
+          "data_type": "float",
+          "sample_values": [
+            8.51045,
+            8.51045,
+            8.51045,
+            8.448433,
+            8.51045,
+            8.426567
+          ],
+          "data_patterns": {
+            "9.99999": 4,
+            "9.999999": 2
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 8.426567,
+            "max": 8.51045,
+            "mean": 8.486133333333333,
+            "median": 8.51045,
+            "std": 0.03830055955552978
+          },
+          "description": "Longitude 2: Geographic coordinate in decimal degrees, east of the prime meridian."
+        },
+        "Bathy depth": {
+          "column_name": "Bathy depth",
+          "data_type": "float",
+          "sample_values": [
+            3.9,
+            3.9,
+            3.9,
+            7.8,
+            9.4,
+            3.9
+          ],
+          "data_patterns": {
+            "9.9": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 3.9,
+            "max": 9.4,
+            "mean": 5.466666666666666,
+            "median": 3.9,
+            "std": 2.479247197571607
+          },
+          "description": "Bathy depth in meters, continuous numerical values from 3.9 to 9.4."
+        },
+        "Bathy depth_2": {
+          "column_name": "Bathy depth_2",
+          "data_type": "float",
+          "sample_values": [
+            11.3,
+            6.9,
+            6.9,
+            6.9,
+            6.9,
+            8.2
+          ],
+          "data_patterns": {
+            "9.9": 5,
+            "99.9": 1
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 6.9,
+            "max": 11.3,
+            "mean": 7.849999999999999,
+            "median": 6.9,
+            "std": 1.7683325479106016
+          },
+          "description": "Bathy depth2 in meters, continuous numerical values from 6.9 to 11.3."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2021-06-29T07:50:07",
+            "2021-06-29T11:58:20",
+            "2021-09-07T08:11:55",
+            "2021-06-29T11:58:20",
+            "2021-06-29T11:58:20",
+            "2021-06-29T11:58:20"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2021-06-29T07:50:07",
+            "max_date": "2021-09-07T08:11:55"
+          },
+          "description": "Timestamp of observations from June–September 2021."
+        },
+        "Date/Time_2": {
+          "column_name": "Date/Time_2",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2021-06-29T12:13:20",
+            "2021-06-29T08:05:54",
+            "2021-06-29T12:13:20",
+            "2021-06-29T12:13:20",
+            "2021-09-07T08:26:01",
+            "2021-06-29T12:13:20"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2021-06-29T08:05:54",
+            "max_date": "2021-09-07T08:26:01"
+          },
+          "description": "Timestamp of observations spanning June–September 2021."
+        },
+        "Habitat": {
+          "column_name": "Habitat",
+          "data_type": "string",
+          "sample_values": [
+            "Benthic",
+            "Benthic",
+            "Benthic",
+            "Benthic",
+            "Benthic",
+            "Benthic"
+          ],
+          "data_patterns": {
+            "Aaaaaaa": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Benthic",
+                6
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Habitat classification, exclusively Benthic in this dataset."
+        },
+        "S. scombrus TL": {
+          "column_name": "S. scombrus TL",
+          "data_type": "integer",
+          "sample_values": [
+            240,
+            250,
+            270,
+            280,
+            180,
+            230
+          ],
+          "data_patterns": {
+            "999": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 180.0,
+            "max": 280.0,
+            "mean": 241.66666666666666,
+            "median": 245.0,
+            "std": 35.44949458972111
+          },
+          "description": "Total length of Scomber scombrus (Atlantic mackerel) in millimeters."
+        },
+        "S. scombrus": {
+          "column_name": "S. scombrus",
+          "data_type": "integer",
+          "sample_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "data_patterns": {
+            "9": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 2.0,
+            "mean": 1.1666666666666667,
+            "median": 1.0,
+            "std": 0.408248290463863
+          },
+          "description": "S. scombrus count, integer values 1 or 2, no missing data."
+        },
+        "Sal": {
+          "column_name": "Sal",
+          "data_type": "float",
+          "sample_values": [
+            27.8,
+            30.27,
+            27.8,
+            28.0,
+            27.8,
+            27.8
+          ],
+          "data_patterns": {
+            "99.9": 5,
+            "99.99": 1
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 27.8,
+            "max": 30.27,
+            "mean": 28.245,
+            "median": 27.8,
+            "std": 0.9952637841296141
+          },
+          "description": "Salinity in practical salinity units (PSU) measured in seawater samples."
+        },
+        "Temp": {
+          "column_name": "Temp",
+          "data_type": "float",
+          "semantic_type": "clinical_measurement",
+          "sample_values": [
+            17.6,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            18.6
+          ],
+          "data_patterns": {
+            "99.9": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 17.6,
+            "max": 19.2,
+            "mean": 18.833333333333332,
+            "median": 19.2,
+            "std": 0.6501281924871936
+          },
+          "description": "Temperature in degrees Celsius, continuous numerical values."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Sylt_trawl",
+            "Sylt_trawl",
+            "Sylt_trawl",
+            "Sylt_trawl",
+            "Sylt_trawl",
+            "Sylt_trawl"
+          ],
+          "data_patterns": {
+            "Aaaa_aaaaa": 6
+          },
+          "total_rows": 6,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Sylt_trawl",
+                6
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event type identifier, consistently labeled as Sylttrawl across all records."
+        }
+      },
+      "time_period_covered": {
+        "start": "2021-06-29T07:50:07",
+        "end": "2021-09-07T08:26:01"
+      },
+      "sample_rows": [
+        {
+          "Sample label": "Sylt-1 trawl 4",
+          "Latitude": 55.0526,
+          "Longitude": 8.4442,
+          "Latitude 2": 55.058033,
+          "Longitude 2": 8.426567,
+          "Bathy depth": 9.4,
+          "Bathy depth_2": 8.2,
+          "Date/Time": "2021-06-29T07:50:07",
+          "Date/Time_2": "2021-06-29T08:05:54",
+          "Habitat": "Benthic",
+          "S. scombrus TL": 280,
+          "S. scombrus": 1,
+          "Sal": 28.0,
+          "Temp": 18.6,
+          "Event": "Sylt_trawl"
+        },
+        {
+          "Sample label": "Sylt-9 trawl 2",
+          "Latitude": 54.996367,
+          "Longitude": 8.492533,
+          "Latitude 2": 54.98965,
+          "Longitude 2": 8.51045,
+          "Bathy depth": 3.9,
+          "Bathy depth_2": 6.9,
+          "Date/Time": "2021-06-29T11:58:20",
+          "Date/Time_2": "2021-06-29T12:13:20",
+          "Habitat": "Benthic",
+          "S. scombrus TL": 230,
+          "S. scombrus": 1,
+          "Sal": 27.8,
+          "Temp": 19.2,
+          "Event": "Sylt_trawl"
+        },
+        {
+          "Sample label": "Sylt-1 trawl 6",
+          "Latitude": 55.056917,
+          "Longitude": 8.432083,
+          "Latitude 2": 55.05165,
+          "Longitude 2": 8.448433,
+          "Bathy depth": 7.8,
+          "Bathy depth_2": 11.3,
+          "Date/Time": "2021-09-07T08:11:55",
+          "Date/Time_2": "2021-09-07T08:26:01",
+          "Habitat": "Benthic",
+          "S. scombrus TL": 180,
+          "S. scombrus": 1,
+          "Sal": 30.27,
+          "Temp": 17.6,
+          "Event": "Sylt_trawl"
+        }
+      ],
+      "description": "Earth and environmental science data with 6 rows, 15 columns, June–September 2021.",
+      "is_row_capped": false,
+      "rows_processed": 6,
+      "total_rows_in_file": 6
+    }
+  },
+  "time_period_covered": {
+    "start": "2021-06-29T07:50:07",
+    "end": "2021-09-07T08:26:01"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset with 948,933 tables, 6 rows each, covering June–September 2021."
+}

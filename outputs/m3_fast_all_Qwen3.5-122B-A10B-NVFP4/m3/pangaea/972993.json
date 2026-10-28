@@ -1,0 +1,44 @@
+{
+  "dataset_id": "972993",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972993.csv",
+  "source_sha256": "e025ea37fdfb8676c93e7a6316bc0e2b338a8f54454d19976b10958278c38745",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:30:00.642748+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Global Marine Sediment Core Geochemical and Geological Compilation",
+    "description": "A comprehensive dataset containing geochemical and geological measurements from marine sediment cores collected globally, primarily from Ocean Drilling Program (ODP) sites. The data includes parameters such as sulfur isotopes (δ34S Py), age, methane content (CH4), lithology, calcium carbonate (CaCO3), total organic carbon (TOC), and analytical methods, with spatial coordinates and temporal information for a subset of records.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "geology",
+      "ODP",
+      "sediment core",
+      "pyrite",
+      "methane",
+      "lithology",
+      "organic carbon",
+      "calcium carbonate"
+    ],
+    "spatialCoverage": {
+      "min_lat": -46.5797,
+      "min_lon": -178.1665,
+      "max_lat": 87.89,
+      "max_lon": 174.3141
+    },
+    "temporalCoverage": {
+      "from": "1974-07-18T00:00:00+00:00",
+      "to": "2016-07-04T00:00:00+00:00"
+    },
+    "spatial": "Point locations (individual sample coordinates)",
+    "temporal": "Daily (discrete sampling events, irregular distribution)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972993_d779f5ffb0f145a0b4a48b42678edc38.jsonl",
+  "runtime_seconds": 170.01
+}

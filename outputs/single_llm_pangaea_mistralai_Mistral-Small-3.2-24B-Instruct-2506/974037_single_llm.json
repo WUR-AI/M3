@@ -1,0 +1,39 @@
+{
+  "csv": "974037.csv",
+  "dataset_id": "974037",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "674b5362b09af672f9d2f6e1d054926fbaafd85b28bc7eddef1bbdaad4d0ec74",
+  "contract_sha256": "5f1a050d70d5aeb36099204d6f8a788f740d95c4a557820ba8d70d4312c3031a",
+  "prompt_tokens": 1748,
+  "metadata": {
+    "name": "Sucha_Woda_Flood",
+    "description": "Dataset containing measurements of boulder diameters, number of trunks, and elevation at various sites during a flood event in Sucha Woda.",
+    "keywords": [
+      "flood",
+      "boulder diameters",
+      "trunks",
+      "elevation",
+      "Sucha Woda"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.2725,
+      "min_lon": 20.0336,
+      "max_lat": 49.2855,
+      "max_lon": 20.0466
+    },
+    "temporalCoverage": {
+      "from": "2018-07-24",
+      "to": "2018-07-24"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.565,
+  "status": "ok"
+}

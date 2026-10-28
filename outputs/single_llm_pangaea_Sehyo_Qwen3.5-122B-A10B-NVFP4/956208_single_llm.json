@@ -1,0 +1,50 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "contract_sha256": "1a3c3f7cc0a85bbe7e407200ae8e551872da67e1d9f49613226f4177974a4fec",
+  "prompt_tokens": 9503,
+  "metadata": {
+    "name": "B. saida biological and environmental data from expeditions PS80, PS92, PS106, and PS122",
+    "description": "Dataset containing biological measurements (Total Length, Standard Length, wet mass, sex, Condition Index, Degree of digestion, stomach content mass and content) and environmental data (location, depth, date, gear type) for the species B. saida collected during expeditions PS80, PS92, PS106, and PS122. Samples were preserved and analyzed for stomach content and other biological parameters.",
+    "keywords": [
+      "B. saida",
+      "biological data",
+      "stomach content",
+      "Condition Index",
+      "Total Length",
+      "Standard Length",
+      "wet mass",
+      "sex",
+      "stomach content mass",
+      "stomach content",
+      "Degree of digestion",
+      "preserved specimen",
+      "expedition PS80",
+      "expedition PS92",
+      "expedition PS106",
+      "expedition PS122"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 89.143898,
+      "max_lon": 130.033
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2020-09-19"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.431,
+  "status": "ok"
+}

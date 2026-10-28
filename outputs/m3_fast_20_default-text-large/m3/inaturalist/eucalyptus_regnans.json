@@ -1,0 +1,28 @@
+{
+  "dataset_id": "eucalyptus_regnans",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/eucalyptus_regnans.csv",
+  "source_sha256": "dde21dc3dedd4567d4dd4dfbcd5b607b2438bdb2df760e94d9c0da3c568e15ea",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T14:04:12.750652+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -45.860728,
+      "min_lon": 143.3705,
+      "max_lat": -37.328952,
+      "max_lon": 175.056697
+    },
+    "temporalCoverage": {
+      "from": "1992-04-19T08:15:00+00:00",
+      "to": "2026-05-06T13:14:20+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/eucalyptus_regnans_4ada6bbefb414b4cbae370d190bcfcdc.jsonl",
+  "runtime_seconds": 91.77
+}

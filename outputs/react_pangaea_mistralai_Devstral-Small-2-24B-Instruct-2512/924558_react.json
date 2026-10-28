@@ -1,0 +1,96 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 5769,
+  "metadata": {
+    "name": "Laboratory Experiment Data on Mytilus galloprovincialis",
+    "description": "This dataset contains laboratory experiment data on the mollusk species Mytilus galloprovincialis. It includes measurements such as temperature, pH, salinity, dissolved inorganic carbon (DIC), and other chemical parameters. The data also includes experimental conditions, treatment types, and developmental stages.",
+    "keywords": [
+      "laboratory experiment",
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "temperature",
+      "pH",
+      "salinity",
+      "DIC",
+      "chemical parameters",
+      "developmental stages"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00.000000002+00:00",
+      "to": "1970-01-01T00:00:00.000000144+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "924558"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "time_column": "Time h"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 18.96,
+  "status": "ok"
+}

@@ -1,0 +1,43 @@
+{
+  "dataset_id": "972178",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972178.csv",
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:14:56.624865+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "ESIS Aalen Remote Sensing Data Catalog (1984-2023)",
+    "description": "A catalog of remote sensing acquisitions for Aalen, Germany, spanning 1984 to 2023. The dataset contains 288 records representing observation events, including file references (GeoTIFFs and Shapefiles), observation periods, and geographic coordinates. Approximately half the records include detailed acquisition dates and GeoTIFF references, while the other half contain Shapefile references without specific observation dates.",
+    "keywords": [
+      "remote sensing",
+      "GIS",
+      "Aalen",
+      "Germany",
+      "GeoTIFF",
+      "Shapefile",
+      "ESIS",
+      "spatial data",
+      "geospatial catalog"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.79899472,
+      "min_lon": 9.998824433,
+      "max_lat": 48.79899472,
+      "max_lon": 9.998824433
+    },
+    "temporalCoverage": {
+      "from": "1984-08-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "Point location (48.79899472, 9.998824433)",
+    "temporal": "Irregular (1984-2023)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972178_66087fb2ef694aaca3bdd541722138d8.jsonl",
+  "runtime_seconds": 96.2
+}

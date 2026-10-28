@@ -1,0 +1,16 @@
+{
+  "csv": "acontia_cretata.csv",
+  "dataset_id": "acontia_cretata",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1002,
+  "n_columns": 50,
+  "description": "Occurrence records of Acontia cretata (2010‑2026) with taxonomy, coordinates, dates, observers, and media.",
+  "dataset_description": "Species occurrence records spanning 2010‑2026, enabling biodiversity analysis of a moth species.",
+  "runtime_seconds": 84.93,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/acontia_cretata/dictionary.json"
+}

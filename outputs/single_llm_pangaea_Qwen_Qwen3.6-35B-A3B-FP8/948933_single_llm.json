@@ -1,0 +1,41 @@
+{
+  "csv": "948933.csv",
+  "dataset_id": "948933",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "contract_sha256": "513711b16d946aa95f5bfd4d0d4048f908073dd5be28ae33d898b578fd24a95a",
+  "prompt_tokens": 1159,
+  "metadata": {
+    "name": "Sylt Trawl Survey Data 2021",
+    "description": "Dataset containing trawl survey data from the Sylt region, including coordinates, bathymetry, environmental parameters (salinity, temperature), and biological observations (S. scombrus) collected in 2021.",
+    "keywords": [
+      "Sylt",
+      "trawl",
+      "benthic",
+      "Scomber scombrus",
+      "bathymetry",
+      "salinity",
+      "temperature"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.98965,
+      "min_lon": 8.426567,
+      "max_lat": 55.058033,
+      "max_lon": 8.51045
+    },
+    "temporalCoverage": {
+      "from": "2021-06-29T07:50:07",
+      "to": "2021-09-07T08:26:01"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.074,
+  "status": "ok"
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_id": "984573",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/984573.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:38:02.825884+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic sediment‑core depth, age & SST measurements (2019) (based on columns and first‑row values)",
+    "description": "Based on the dataset columns and tool outputs, this collection contains 150 sediment‑core records collected at a single Antarctic location (≈ -56.1512° lat, -115.1341° lon) between 2019‑05‑31T15:15:00+00:00 and 2019‑06‑05T15:30:00+00:00. Each record provides identifiers (Event, Sample label), sediment depth, geological age (Ma), cluster assignment, sea‑surface temperature (°C) with its standard deviation, and elevation (depth below sea level).",
+    "keywords": [
+      "sediment core",
+      "depth",
+      "age",
+      "sea surface temperature",
+      "SST",
+      "Antarctica",
+      "paleoceanography",
+      "geochemistry",
+      "marine sediment",
+      "temperature",
+      "geochronology"
+    ],
+    "spatialCoverage": {
+      "min_lat": -56.1512,
+      "min_lon": -115.1341,
+      "max_lat": -56.151,
+      "max_lon": -115.1338
+    },
+    "temporalCoverage": {
+      "from": "2019-05-31T15:15:00+00:00",
+      "to": "2019-06-05T15:30:00+00:00"
+    },
+    "spatial": "point locations (~10 m precision) (derived from 5‑decimal‑place latitude/longitude precision)",
+    "temporal": "sub‑second granularity (based on parse_success_rate = 1.0 and apparent_granularity = sub‑second from analyze_temporal_column)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/984573_02ba5a83c049486685def32b99f6b860.jsonl",
+  "runtime_seconds": 175.98,
+  "recovered_from_trace": true,
+  "source_sha256": "091ca8fc4435bce03f857f31f55d706c49a7bb2568db46eb23333b3fc886c50a"
+}

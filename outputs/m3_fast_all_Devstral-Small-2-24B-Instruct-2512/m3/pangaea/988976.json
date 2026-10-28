@@ -1,0 +1,38 @@
+{
+  "dataset_id": "988976",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/988976.csv",
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T02:44:45.896696+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Diatom Composition Analysis from Sediment Core AMK75-6150",
+    "description": "This dataset contains diatom composition analysis from a sediment core sample identified as AMK75-6150. It includes measurements of various diatom species and categories, sediment depth, age, and geospatial coordinates. The data is derived from a single location with varying sediment depths and ages, providing insights into diatom distribution and environmental conditions.",
+    "keywords": [
+      "diatom",
+      "sediment core",
+      "paleoceanography",
+      "marine microscopy",
+      "Arctic",
+      "microfossil",
+      "AMK75-6150"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": null,
+    "spatial": "point location",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/988976_15117eb8c7a14579988a0b8777562b79.jsonl",
+  "runtime_seconds": 618.18
+}

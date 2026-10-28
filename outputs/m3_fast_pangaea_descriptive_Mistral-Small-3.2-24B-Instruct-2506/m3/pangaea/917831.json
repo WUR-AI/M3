@@ -1,0 +1,29 @@
+{
+  "dataset_id": "917831",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917831.csv",
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T11:00:14.438771+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Biological Measurements at Macapule Lagoon",
+    "description": "Dataset containing biological measurements of individual samples collected at Macapule Lagoon, including mass, organ weights, and biochemical parameters, with temporal and spatial metadata from 2013 to 2015.",
+    "keywords": [
+      "biological measurements",
+      "Macapule Lagoon",
+      "organ weights",
+      "biochemical parameters",
+      "temporal data",
+      "spatial data",
+      "2013-2015"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917831_6255886378584769aee58f2bebaeef41.jsonl",
+  "runtime_seconds": 390.42
+}

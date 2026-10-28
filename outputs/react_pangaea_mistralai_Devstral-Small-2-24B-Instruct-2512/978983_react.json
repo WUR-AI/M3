@@ -1,0 +1,87 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 5055,
+  "metadata": {
+    "name": "978983",
+    "description": "Dataset containing sediment sample data with mineralogical composition, geographic coordinates, and sampling information.",
+    "keywords": [
+      "sediment",
+      "mineralogy",
+      "geochemistry",
+      "sampling",
+      "latitude",
+      "longitude",
+      "elevation",
+      "date/time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "978983"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 15.499,
+  "status": "ok"
+}

@@ -1,0 +1,40 @@
+{
+  "csv": "990157.csv",
+  "dataset_id": "990157",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1783f619857ad835a2a0ca14fccc4da08e4c0ffcf008dccad424fd57de27c4e8",
+  "contract_sha256": "73b3ad3bbeb8ea8ec352eef05b70960505c2f4066cf067ffb9f545ca140857e1",
+  "prompt_tokens": 2693,
+  "metadata": {
+    "name": "Sediment core LSMo22-1 210Pb and 137Cs measurements",
+    "description": "Dataset containing sediment depth profiles with measurements of Lead-210 (210Pb) and Cesium-137 (137Cs) activity, including supported and unsupported fractions, standard deviations, and sample metadata such as location and date.",
+    "keywords": [
+      "210Pb",
+      "137Cs",
+      "sediment",
+      "radioisotopes",
+      "geochronology",
+      "LSMo22-1"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.365278,
+      "min_lon": -104.568333,
+      "max_lat": 21.365278,
+      "max_lon": -104.568333
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.174,
+  "status": "ok"
+}

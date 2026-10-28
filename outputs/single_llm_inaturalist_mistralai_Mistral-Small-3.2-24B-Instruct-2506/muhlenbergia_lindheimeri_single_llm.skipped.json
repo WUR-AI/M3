@@ -1,0 +1,15 @@
+{
+  "csv": "muhlenbergia_lindheimeri.csv",
+  "dataset_id": "muhlenbergia_lindheimeri",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "30f6271c3bb7ec0a1c6f22d04a355c286c69c45bb30d401432ef4d308f906e36",
+  "contract_sha256": "f1722cc9e8006d552d939fb2be056149cce32febffb09a45bbe05f4966650af4",
+  "prompt_tokens": 316398,
+  "status": "skipped",
+  "reason": "context_window"
+}

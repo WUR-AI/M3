@@ -1,0 +1,39 @@
+{
+  "csv": "990164.csv",
+  "dataset_id": "990164",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1d710fa4e7e67deb32c461c72ea2cec1a2a5054abd977ba644575d06fdf628bd",
+  "contract_sha256": "cd67503afa699b4e6976a92f5f7fa27a24352513041553ecdb8b1033294c5f6a",
+  "prompt_tokens": 5910,
+  "metadata": {
+    "name": "990164",
+    "description": "This dataset contains sediment core data with various chemical elements and age information.",
+    "keywords": [
+      "sediment",
+      "core",
+      "chemical elements",
+      "age",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "1922-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.946,
+  "status": "ok"
+}

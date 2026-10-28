@@ -1,0 +1,16 @@
+{
+  "csv": "990054.csv",
+  "dataset_id": "990054",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 271,
+  "n_columns": 14,
+  "description": "Observations of ice core samples from MOSAiC campaign, including location, depth, chlorophyll and phaeophytin measurements.",
+  "dataset_description": "Earth environmental observations recorded between Oct 2019 and Jul 2020, comprising 271 entries.",
+  "runtime_seconds": 45.237,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/990054/dictionary.json"
+}

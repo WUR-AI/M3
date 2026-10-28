@@ -1,0 +1,16 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 219,
+  "n_columns": 9,
+  "description": "Earth and environmental science data with sediment depth, age, isotopic measurements, location, and event details.",
+  "dataset_description": "Single-table dataset with 219 rows, covering Earth and environmental science on 2009-03-04.",
+  "runtime_seconds": 7.273,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/975181/dictionary.json"
+}

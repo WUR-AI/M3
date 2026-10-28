@@ -1,0 +1,115 @@
+{
+  "csv": "906209.csv",
+  "dataset_id": "906209",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4387,
+  "metadata": {
+    "name": "Supplementary files for El Bizri et al. 2019 - Hunting and pregnancy data",
+    "description": "Catalog of supplementary Excel files containing interviews on pregnancy diagnoses, pacas hunting registers, and catch-per-unit-effort records associated with the publication by El Bizri et al. 2019.",
+    "keywords": [
+      "hunting",
+      "pregnancy",
+      "pacas",
+      "interviews",
+      "CPUE",
+      "wildlife management"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "906209"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209",
+        "field": "Content",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209",
+        "field": "File name",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209",
+        "field": "URL file",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "906209"
+      }
+    }
+  ],
+  "runtime_seconds": 12.31,
+  "status": "ok"
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_id": "963353",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/963353.csv",
+  "source_sha256": "d3518df69c24bf623efa16940fd790900b0a2d9177bc8d03033bd76598a0b5dd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:53:10.355061+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Ice and Snow Sampling Event NM01_04_S01 at Antarctic Site",
+    "description": "Dataset containing 53 ice and snow samples collected at a single location (Latitude: -70.65491, Longitude: -8.25491) on December 29, 2004. Includes measurements of depth, density, and associated image references for each sample.",
+    "keywords": [
+      "ice",
+      "snow",
+      "sampling",
+      "Antarctic",
+      "density",
+      "depth",
+      "NM01_04_S01"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65491,
+      "min_lon": -8.25491,
+      "max_lat": -70.65491,
+      "max_lon": -8.25491
+    },
+    "temporalCoverage": {
+      "from": "2004-12-29T00:00:00+00:00",
+      "to": "2004-12-29T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/963353_981ca8722d804b9d9595139dac891231.jsonl",
+  "runtime_seconds": 119.68
+}

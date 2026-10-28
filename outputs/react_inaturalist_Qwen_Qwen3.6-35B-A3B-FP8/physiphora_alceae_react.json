@@ -1,0 +1,73 @@
+{
+  "csv": "physiphora_alceae.csv",
+  "dataset_id": "physiphora_alceae",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "df273451b92741ef3fe6862a02f626fe1512ce17f503138b29fecd0c7b3125be",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3726,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.005597,
+      "min_lon": -157.830457,
+      "max_lat": 61.609092,
+      "max_lon": 142.163501
+    },
+    "temporalCoverage": {
+      "from": "2002-06-01T15:00:00+00:00",
+      "to": "2026-06-15T08:06:50+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "physiphora_alceae"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 7.838,
+  "status": "ok"
+}

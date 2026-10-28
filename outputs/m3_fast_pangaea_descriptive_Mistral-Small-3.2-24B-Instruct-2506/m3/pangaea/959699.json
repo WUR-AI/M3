@@ -1,0 +1,32 @@
+{
+  "dataset_id": "959699",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959699.csv",
+  "source_sha256": "d87404ae4cb54d2c047cc4dfa914442133bcd62fd72d51157bfe09e65bddd118",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T14:22:10.310790+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Manganese Nodule Chemical Composition Data",
+    "description": "This dataset contains chemical composition data of manganese nodules collected during the event PLDS04MV-109BX on August 27, 1976. The data includes various chemical elements such as Al, Si, Ca, Mn, Fe, Co, Ni, Cu, Zn, Ba, Sc, Sb, La, Ce, Nd, Sm, Eu, Tb, Ho, Yb, Lu, Hf, Th, and U, along with spatial coordinates (Latitude, Longitude) and other sample details.",
+    "keywords": [
+      "Manganese nodules",
+      "Chemical composition",
+      "Deep-sea minerals",
+      "Pacific Ocean",
+      "1976",
+      "Geochemical analysis",
+      "Marine geology",
+      "Trace elements",
+      "Spatial data",
+      "Temporal data"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959699_b6ebf83291964e17b9deeca233e1e161.jsonl",
+  "runtime_seconds": 507.78
+}

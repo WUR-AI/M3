@@ -1,0 +1,125 @@
+{
+  "csv": "940249.csv",
+  "dataset_id": "940249",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ffa4a37e09f9eea211d093f3922c021eba2066b56fa4d80fea1d68ec7cf9c123",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 5730,
+  "metadata": {
+    "name": "WDC06A Ice Core Measurements",
+    "description": "Ice core measurements from the WDC06A core including depth, gas age, isotopic ratios (δ18O, δ18O_2), and other measurements (Δ36, Δ36_2).",
+    "keywords": [
+      "ice core",
+      "WDC06A",
+      "isotopes",
+      "δ18O",
+      "gas age",
+      "Antarctica"
+    ],
+    "spatialCoverage": {
+      "min_lat": -79.46763,
+      "min_lon": -112.08648,
+      "max_lat": -79.46763,
+      "max_lon": -112.08648
+    },
+    "temporalCoverage": {
+      "from": "2006-12-09",
+      "to": "2006-12-09"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "940249"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "940249",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude",
+        "resource": "940249"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249",
+        "field": "Core",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249",
+        "field": "Event",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249"
+      }
+    }
+  ],
+  "runtime_seconds": 13.573,
+  "status": "ok"
+}

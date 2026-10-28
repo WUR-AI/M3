@@ -1,0 +1,42 @@
+{
+  "csv": "937579.csv",
+  "dataset_id": "937579",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "156fa955ff4d43d3d0a0f15b5f40e346e65b3ba52e0f21a776a715bde33d718e",
+  "contract_sha256": "958420a9a3c733862f86e7d61a050ce7908dd1ee8fd137edac48070e2a1ab7aa",
+  "prompt_tokens": 10467,
+  "metadata": {
+    "name": "Mackenzie Shelf Water Isotope Data (NunaWP4 Mackenzie 2019)",
+    "description": "Dataset containing stable water isotope measurements (delta O-18, delta D, and deuterium excess) from water samples collected during the NunaWP4 Mackenzie expedition in 2019. The data includes station identifiers, geographic coordinates, sampling dates, and water depth.",
+    "keywords": [
+      "Mackenzie Shelf",
+      "stable isotopes",
+      "delta O-18",
+      "delta D",
+      "deuterium excess",
+      "NunaWP4",
+      "Arctic Ocean",
+      "water sampling"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -137.8048,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20",
+      "to": "2019-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.827,
+  "status": "ok"
+}

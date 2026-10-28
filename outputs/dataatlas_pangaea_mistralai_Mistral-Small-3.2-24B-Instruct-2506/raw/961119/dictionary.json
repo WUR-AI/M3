@@ -1,0 +1,161 @@
+{
+  "dataset_name": "961119",
+  "list_of_tables": [
+    "961119"
+  ],
+  "tables": {
+    "961119": {
+      "table_name": "961119",
+      "row_count": 2,
+      "number_of_columns": 4,
+      "list_of_columns": [
+        "Description",
+        "CSV",
+        "CSV (Size)",
+        "CSV (Hash)"
+      ],
+      "columns": {
+        "Description": {
+          "column_name": "Description",
+          "data_type": "string",
+          "sample_values": [
+            "Baltic Sea pCO2 trend",
+            "Baltic Sea pCO2 climatology"
+          ],
+          "data_patterns": {
+            "Aaaaaa Aaa aAA9 aaaaa": 1,
+            "Aaaaaa Aaa aAA9 aaaaaaaaaaa": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Baltic Sea pCO2 trend",
+                1
+              ],
+              [
+                "Baltic Sea pCO2 climatology",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Baltic Sea pCO2 data descriptions."
+        },
+        "CSV": {
+          "column_name": "CSV",
+          "data_type": "string",
+          "sample_values": [
+            "Baltic_Sea_pCO2_climato.csv",
+            "Baltic_Sea_pCO2_long_term_trend.csv"
+          ],
+          "data_patterns": {
+            "Aaaaaa_Aaa_aAA9_aaaa_aaaa_aaaaa.aaa": 1,
+            "Aaaaaa_Aaa_aAA9_aaaaaaa.aaa": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Baltic_Sea_pCO2_long_term_trend.csv",
+                1
+              ],
+              [
+                "Baltic_Sea_pCO2_climato.csv",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "File names related to Baltic Sea pCO2 data."
+        },
+        "CSV (Size)": {
+          "column_name": "CSV (Size)",
+          "data_type": "string",
+          "sample_values": [
+            "7.3 MBytes",
+            "366 kBytes"
+          ],
+          "data_patterns": {
+            "999 aAaaaa": 1,
+            "9.9 AAaaaa": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "366 kBytes",
+                1
+              ],
+              [
+                "7.3 MBytes",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "File sizes in megabytes and kilobytes."
+        },
+        "CSV (Hash)": {
+          "column_name": "CSV (Hash)",
+          "data_type": "string",
+          "sample_values": [
+            "2a48f5a33b20fdba94d490bb6a15c219",
+            "30b3b72c922bf6c05d223acbb3ddeace"
+          ],
+          "data_patterns": {
+            "9a99a9a99a99aaaa99a999aa9a99a999": 1,
+            "99a9a99a999aa9a99a999aaaa9aaaaaa": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "2a48f5a33b20fdba94d490bb6a15c219",
+                1
+              ],
+              [
+                "30b3b72c922bf6c05d223acbb3ddeace",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "CSV hash identifiers for earth and environmental science data files."
+        }
+      },
+      "sample_rows": [
+        {
+          "Description": "Baltic Sea pCO2 trend",
+          "CSV": "Baltic_Sea_pCO2_long_term_trend.csv",
+          "CSV (Size)": "366 kBytes",
+          "CSV (Hash)": "2a48f5a33b20fdba94d490bb6a15c219"
+        },
+        {
+          "Description": "Baltic Sea pCO2 climatology",
+          "CSV": "Baltic_Sea_pCO2_climato.csv",
+          "CSV (Size)": "7.3 MBytes",
+          "CSV (Hash)": "30b3b72c922bf6c05d223acbb3ddeace"
+        }
+      ],
+      "description": "Earth and environmental science data with file details and descriptions.",
+      "is_row_capped": false,
+      "rows_processed": 2,
+      "total_rows_in_file": 2
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science data, 961119 tables, 2 rows each, unspecified time coverage."
+}

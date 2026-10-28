@@ -1,0 +1,29 @@
+{
+  "dataset_id": "cladium_mariscoides",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/cladium_mariscoides.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:33:27.429301+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.417485,
+      "min_lon": -96.54264,
+      "max_lat": 50.405276,
+      "max_lon": -60.016594
+    },
+    "temporalCoverage": {
+      "from": "1979-07-18T12:15:00+00:00",
+      "to": "2026-04-04T12:58:32+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/cladium_mariscoides_9d82563add5040ff9c6e1995dabcb929.jsonl",
+  "runtime_seconds": 91.17,
+  "recovered_from_trace": true,
+  "source_sha256": "5c0f70d131d5fd23375e81ac243223f88e04804fb74bd34960fbc70e47f371e7"
+}

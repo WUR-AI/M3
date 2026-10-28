@@ -1,0 +1,101 @@
+{
+  "csv": "990054.csv",
+  "dataset_id": "990054",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3162,
+  "metadata": {
+    "name": "MOSAiC",
+    "description": "The dataset contains measurements from the MOSAiC expedition, including various activities and events with their respective dates, times, and locations. It also includes details about the devices used, security labels, comments, depth descriptions, and measurements of chlorophyll a, phaeopigments, and elevation.",
+    "keywords": [
+      "MOSAiC",
+      "expedition",
+      "measurements",
+      "activities",
+      "events",
+      "dates",
+      "times",
+      "locations",
+      "devices",
+      "security labels",
+      "comments",
+      "depth descriptions",
+      "chlorophyll a",
+      "phaeopigments",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28",
+      "to": "2020-07-20"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "990054"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 27.624,
+  "status": "ok"
+}

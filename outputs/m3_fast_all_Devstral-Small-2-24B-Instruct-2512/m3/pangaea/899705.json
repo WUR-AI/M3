@@ -1,0 +1,34 @@
+{
+  "dataset_id": "899705",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/899705.csv",
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T20:24:46.268649+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MITAPI 2010-2015 Difference Data",
+    "description": "A dataset containing NetCDF files with difference data for various sectors (AGR, ENE, IND, PPA, PRO) from 2010 to 2015, hosted on Pangaea.",
+    "keywords": [
+      "NetCDF",
+      "difference data",
+      "2010-2015",
+      "Pangaea",
+      "MITAPI"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": null,
+    "temporal": "yearly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/899705_dd3b22e4e8014151ae2b896df3bb054e.jsonl",
+  "runtime_seconds": 182.47
+}

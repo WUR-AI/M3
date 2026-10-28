@@ -135,6 +135,21 @@ def get_model_name(override: Optional[str] = None) -> str:
     return PROVIDER_CONFIGS.get(LLM_PROVIDER, {}).get("default_model", "gpt-4o-mini")
 
 
+def get_surf_extra_body(model_name: Optional[str] = None) -> dict[str, Any]:
+    """Return Willma/SURF extra_body defaults for a chat-completions request.
+
+    Mistral/Devstral tokenizers reject ``chat_template_kwargs``. Other models
+    get ``enable_thinking`` so reasoning traces do not leak into generations.
+    """
+    model = (model_name or get_model_name() or "").lower()
+    extra_body: dict[str, Any] = {}
+    if "mistral" not in model and "devstral" not in model:
+        extra_body["chat_template_kwargs"] = {
+            "enable_thinking": SURF_ENABLE_THINKING,
+        }
+    return extra_body
+
+
 def create_llm(
     model_name: Optional[str] = None,
     temperature: float = 0.0,
@@ -188,17 +203,20 @@ def create_llm(
                 "SURF_API_KEY not found. Set it in your .env file."
             )
         
-        model_kwargs = kwargs.pop("model_kwargs", {}) or {}
-        extra_body = dict(model_kwargs.get("extra_body") or {})
-        # Mistral tokenizers reject chat_template_kwargs on Willma/SURF.
-        if "mistral" not in model.lower() and "devstral" not in model.lower():
-            chat_template_kwargs = dict(extra_body.get("chat_template_kwargs") or {})
-            # Disable reasoning/thinking output by default for Surf-compatible backends.
-            # This helps keep responses clean for downstream structured parsing.
-            chat_template_kwargs.setdefault("enable_thinking", SURF_ENABLE_THINKING)
-            extra_body["chat_template_kwargs"] = chat_template_kwargs
-        if extra_body:
-            model_kwargs["extra_body"] = extra_body
+        model_kwargs = dict(kwargs.pop("model_kwargs", {}) or {})
+        extra_body = dict(get_surf_extra_body(model))
+        for supplied_extra in (
+            model_kwargs.pop("extra_body", None),
+            kwargs.pop("extra_body", None),
+        ):
+            caller_extra = dict(supplied_extra or {})
+            caller_ctk = dict(caller_extra.pop("chat_template_kwargs", None) or {})
+            extra_body.update(caller_extra)
+            if caller_ctk or extra_body.get("chat_template_kwargs"):
+                extra_body["chat_template_kwargs"] = {
+                    **dict(extra_body.get("chat_template_kwargs") or {}),
+                    **caller_ctk,
+                }
 
         return ChatOpenAI(
             model=model,
@@ -206,6 +224,7 @@ def create_llm(
             openai_api_key=SURF_API_KEY,
             openai_api_base=SURF_API_BASE,
             model_kwargs=model_kwargs,
+            extra_body=extra_body or None,
             request_timeout=kwargs.pop("request_timeout", LLM_REQUEST_TIMEOUT),
             **kwargs
         )

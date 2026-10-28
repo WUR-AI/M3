@@ -1,0 +1,44 @@
+{
+  "dataset_id": "955790",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/955790.csv",
+  "source_sha256": "32ff85ba761f2a60c1fca4b652694970cb3bcf7223b0d2f265d2c0637be78677",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:21:24.173165+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Deep-sea manganese nodule geochemical survey data from the Pacific Ocean (1970)",
+    "description": "Geochemical analysis of 7 manganese nodule samples collected from the deep Pacific Ocean in September 1970. The dataset includes coordinates, sediment depth, and concentrations of manganese, iron, nickel, cobalt, and copper.",
+    "keywords": [
+      "manganese nodule",
+      "geochemistry",
+      "deep-sea",
+      "Pacific Ocean",
+      "Clarion-Clipperton Zone",
+      "Mn",
+      "Fe",
+      "Ni",
+      "Co",
+      "Cu"
+    ],
+    "spatialCoverage": {
+      "min_lat": -14.05,
+      "min_lon": -175.7167,
+      "max_lat": 12.0,
+      "max_lon": -149.3
+    },
+    "temporalCoverage": {
+      "from": "1970-09-02T00:00:00+00:00",
+      "to": "1970-09-25T00:00:00+00:00"
+    },
+    "spatial": "Point locations with variable precision (~10 m to ~1 km)",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/955790_e785d801ef87495393280c6593c3c089.jsonl",
+  "runtime_seconds": 94.4
+}

@@ -1,0 +1,109 @@
+{
+  "csv": "932569.csv",
+  "dataset_id": "932569",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 7551,
+  "metadata": {
+    "name": "Aerosol chemical composition measurements from RV Polarstern expeditions PS106",
+    "description": "Size-segregated aerosol chemical composition measurements collected at 25m height during RV Polarstern expeditions PS106/1-track and PS106/2-track. The dataset contains concentrations of major ions (Cl-, NO3-, SO4 2-, oxalate, NO2-, Br-, F-, MSA, PO4 3-) and cations (Na+, NH4+, K+, Mg2+) across five aerosol size ranges (0.05-10 μm) using a multi-stage impactor sampler.",
+    "keywords": [
+      "aerosol",
+      "chemical composition",
+      "ions",
+      "Arctic",
+      "Antarctic",
+      "atmospheric",
+      "PS106",
+      "size-segregated",
+      "marine boundary layer"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.420486,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24T20:50:00+00:00",
+      "to": "2017-07-13T10:05:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "932569"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "field": "Stage",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "932569",
+        "resource": "932569",
+        "field": "Aerosol size range",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 14.159,
+  "status": "ok"
+}

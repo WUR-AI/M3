@@ -1,0 +1,36 @@
+{
+  "csv": "974800.csv",
+  "dataset_id": "974800",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "contract_sha256": "7eaac6ee82a43b5f5874d97b12dbd155a9052ed10137606bef870dd38402b691",
+  "prompt_tokens": 1711,
+  "metadata": {
+    "name": "X. umbellata pulsation",
+    "description": "This dataset contains measurements of X. umbellata pulsation under different treatments and time points in a laboratory experiment.",
+    "keywords": [
+      "laboratory experiment",
+      "X. umbellata",
+      "pulsation",
+      "zooplankton",
+      "phytoplankton",
+      "DOC",
+      "control"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2023-01-01",
+      "to": "2023-01-28"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.807,
+  "status": "ok"
+}

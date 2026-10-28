@@ -1,0 +1,15 @@
+{
+  "csv": "pterostylis_alpina.csv",
+  "dataset_id": "pterostylis_alpina",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "05aa054705df401d185cfd3ba54c9fe2e7e32290d77ad72467f187974b8b03bb",
+  "contract_sha256": "547a90e5319be4a72978ce913a22462f7b917033341e3781197c828b0de0816f",
+  "prompt_tokens": 322789,
+  "status": "skipped",
+  "reason": "context_window"
+}

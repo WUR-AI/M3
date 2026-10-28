@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "output_dir": "/home/com3dian/Github/metadata_agent/outputs/single_llm_inaturalist_Qwen_Qwen3.6-35B-A3B-FP8",
+  "expected": 100,
+  "successful": 0,
+  "skipped": 100,
+  "processed": 100,
+  "remaining": 0
+}

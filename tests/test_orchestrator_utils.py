@@ -5,7 +5,7 @@ import os
 # Add the src directory to the Python path to allow for absolute imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.orchestrator.utils import validate_plan_dataflow
+from src.orchestrator.utils import validate_plan_completion, validate_plan_dataflow
 
 class TestPlanValidation(unittest.TestCase):
 
@@ -79,11 +79,42 @@ class TestPlanValidation(unittest.TestCase):
         self.assertEqual(message, "Plan dataflow is valid.")
 
     def test_empty_plan(self):
-        """Tests that an empty plan is considered valid."""
+        """An empty plan cannot count as a successful extraction."""
         plan = []
         is_valid, message = validate_plan_dataflow(plan)
-        self.assertTrue(is_valid)
-        self.assertEqual(message, "Plan dataflow is valid.")
+        self.assertFalse(is_valid)
+        self.assertIn("no steps", message)
+
+    def test_duplicate_output_is_rejected(self):
+        plan = [
+            {"task": "first", "inputs": {}, "outputs": ["schema"]},
+            {"task": "second", "inputs": {}, "outputs": ["schema"]},
+        ]
+        self.assertFalse(validate_plan_dataflow(plan)[0])
+
+    def test_final_generator_is_required(self):
+        plan = [
+            {"player": "data_analyst", "outputs": ["analysis"], "inputs": {}},
+            {"player": "metadata_specialist", "outputs": ["metadata_output"],
+             "inputs": {"metadata_standard": "metadata_standard"}},
+        ]
+        valid, reason = validate_plan_completion(plan, "croissant_pangaea_standard")
+        self.assertFalse(valid)
+        self.assertIn("croissant_pangaea_metadata_generator", reason)
+
+    def test_inaturalist_plan_requires_coverage_evidence(self):
+        plan = [
+            {"player": "data_analyst", "outputs": ["facts"], "inputs": {}},
+            {"player": "croissant_inaturalist_metadata_generator",
+             "outputs": ["metadata_output"],
+             "inputs": {"metadata_standard": "metadata_standard", "facts": "facts"}},
+        ]
+        valid, reason = validate_plan_completion(plan, "croissant_inaturalist_standard")
+        self.assertFalse(valid)
+        self.assertIn("spatial_temporal_specialist", reason)
+
+        plan[0]["player"] = "spatial_temporal_specialist"
+        self.assertTrue(validate_plan_completion(plan, "croissant_inaturalist_standard")[0])
 
     def test_valid_plan_multiple_inputs(self):
         """Tests a valid plan with a step that requires multiple inputs."""

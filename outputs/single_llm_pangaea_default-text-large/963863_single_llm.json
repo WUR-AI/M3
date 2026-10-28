@@ -1,0 +1,34 @@
+{
+  "csv": "963863.csv",
+  "dataset_id": "963863",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e",
+  "contract_sha256": "696ffe718abb1a84da9ea44949127cd350e565bdc6253319786de1a65d7e826b",
+  "prompt_tokens": 1032,
+  "metadata": {
+    "name": "Environmental Monitoring Data Collection",
+    "description": "A collection of environmental measurement files covering physico‑chemical parameters, particulate matter composition, temperature records, and hydrological discharge data, each accompanied by a metadata description file.",
+    "keywords": [
+      "physicochemical",
+      "particulate matter",
+      "temperature",
+      "hydrological",
+      "environmental monitoring",
+      "water quality",
+      "trace elements",
+      "nutrients"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.522,
+  "status": "ok"
+}

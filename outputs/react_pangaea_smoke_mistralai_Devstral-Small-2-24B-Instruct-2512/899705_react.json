@@ -1,0 +1,55 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 1654,
+  "metadata": {
+    "name": "MITAPI 2015-2010 Difference Data",
+    "description": "Dataset containing difference data from MITAPI for various regions (AGR, ENE, IND, PPA, PRO) in NetCDF format. The data appears to represent differences over a time period from 2010 to 2015.",
+    "keywords": [
+      "MITAPI",
+      "difference data",
+      "NetCDF",
+      "climate data",
+      "regional data"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": "regional point locations",
+    "temporal": "yearly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "899705"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    }
+  ],
+  "runtime_seconds": 9.816,
+  "status": "ok"
+}

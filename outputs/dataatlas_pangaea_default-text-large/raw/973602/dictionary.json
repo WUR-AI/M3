@@ -1,0 +1,491 @@
+{
+  "dataset_name": "973602",
+  "list_of_tables": [
+    "973602"
+  ],
+  "tables": {
+    "973602": {
+      "table_name": "973602",
+      "row_count": 2,
+      "number_of_columns": 17,
+      "list_of_columns": [
+        "Sample ID",
+        "SiO2",
+        "TiO2",
+        "Al2O3",
+        "Fe2O3",
+        "MnO",
+        "MgO",
+        "CaO",
+        "Na2O",
+        "K2O",
+        "P2O5",
+        "Total",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Sample ID": {
+          "column_name": "Sample ID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "PS101/186-R2",
+            "PS101/186-R1"
+          ],
+          "data_patterns": {
+            "AA999/999-A9": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "PS101/186-R2",
+                1
+              ],
+              [
+                "PS101/186-R1",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Unique alphanumeric code distinguishing each rock sample in the dataset."
+        },
+        "SiO2": {
+          "column_name": "SiO2",
+          "data_type": "float",
+          "sample_values": [
+            47.69,
+            48.7
+          ],
+          "data_patterns": {
+            "99.99": 1,
+            "99.9": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 47.69,
+            "max": 48.7,
+            "mean": 48.195,
+            "median": 48.195,
+            "std": 0.7141778489984166
+          },
+          "description": "Silicon dioxide content expressed as weight percent of the rock sample."
+        },
+        "TiO2": {
+          "column_name": "TiO2",
+          "data_type": "float",
+          "sample_values": [
+            1.2,
+            1.26
+          ],
+          "data_patterns": {
+            "9.9": 1,
+            "9.99": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 1.2,
+            "max": 1.26,
+            "mean": 1.23,
+            "median": 1.23,
+            "std": 0.04242640687119289
+          },
+          "description": "Titanium dioxide content expressed as weight percent of the rock sample."
+        },
+        "Al2O3": {
+          "column_name": "Al2O3",
+          "data_type": "float",
+          "sample_values": [
+            15.99,
+            16.28
+          ],
+          "data_patterns": {
+            "99.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 15.99,
+            "max": 16.28,
+            "mean": 16.135,
+            "median": 16.135,
+            "std": 0.20506096654409944
+          },
+          "description": "Al2O3 content expressed as weight percent of the rock sample."
+        },
+        "Fe2O3": {
+          "column_name": "Fe2O3",
+          "data_type": "float",
+          "sample_values": [
+            8.67,
+            8.46
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 8.46,
+            "max": 8.67,
+            "mean": 8.565000000000001,
+            "median": 8.565000000000001,
+            "std": 0.14849242404917432
+          },
+          "description": "Fe2O3 content expressed as weight percent of iron(III) oxide in rock samples."
+        },
+        "MnO": {
+          "column_name": "MnO",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.14,
+            0.15
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.14,
+            "max": 0.15,
+            "mean": 0.14500000000000002,
+            "median": 0.14500000000000002,
+            "std": 0.007071067811865462
+          },
+          "description": "Manganese oxide content expressed as weight percent of the rock sample."
+        },
+        "MgO": {
+          "column_name": "MgO",
+          "data_type": "float",
+          "sample_values": [
+            9.22,
+            8.93
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 8.93,
+            "max": 9.22,
+            "mean": 9.075,
+            "median": 9.075,
+            "std": 0.20506096654409944
+          },
+          "description": "MgO content expressed as weight percent of the rock sample."
+        },
+        "CaO": {
+          "column_name": "CaO",
+          "data_type": "float",
+          "sample_values": [
+            10.63,
+            10.76
+          ],
+          "data_patterns": {
+            "99.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 10.63,
+            "max": 10.76,
+            "mean": 10.695,
+            "median": 10.695,
+            "std": 0.09192388155425048
+          },
+          "description": "Calcium oxide content expressed as weight percent of the rock sample."
+        },
+        "Na2O": {
+          "column_name": "Na2O",
+          "data_type": "float",
+          "sample_values": [
+            2.97,
+            2.86
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 2.86,
+            "max": 2.97,
+            "mean": 2.915,
+            "median": 2.915,
+            "std": 0.07778174593052045
+          },
+          "description": "Sodium oxide content expressed as weight percent in each rock sample."
+        },
+        "K2O": {
+          "column_name": "K2O",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.19,
+            0.17
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.17,
+            "max": 0.19,
+            "mean": 0.18,
+            "median": 0.18,
+            "std": 0.014142135623730944
+          },
+          "description": "Binary probability score ranging between 0.17 and 0.19."
+        },
+        "P2O5": {
+          "column_name": "P2O5",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.13,
+            0.14
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.13,
+            "max": 0.14,
+            "mean": 0.135,
+            "median": 0.135,
+            "std": 0.007071067811865481
+          },
+          "description": "P2O5 probability score, expressed as a proportion between zero and one."
+        },
+        "Total": {
+          "column_name": "Total",
+          "data_type": "float",
+          "sample_values": [
+            96.7,
+            98.2
+          ],
+          "data_patterns": {
+            "99.9": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 96.7,
+            "max": 98.2,
+            "mean": 97.45,
+            "median": 97.45,
+            "std": 1.0606601717798212
+          },
+          "description": "Total oxide percentage of each rock sample, ranging near 100%."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "PS101/186-1",
+            "PS101/186-1"
+          ],
+          "data_patterns": {
+            "AA999/999-9": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "PS101/186-1",
+                2
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Identifier for the 2016 rock-sample observation event."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            86.961,
+            86.961
+          ],
+          "data_patterns": {
+            "99.999": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 86.961,
+            "max": 86.961,
+            "mean": 86.961,
+            "median": 86.961,
+            "std": 0.0
+          },
+          "description": "Geographic latitude in decimal degrees for the observation site."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            55.68667,
+            55.68667
+          ],
+          "data_patterns": {
+            "99.99999": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 55.68667,
+            "max": 55.68667,
+            "mean": 55.68667,
+            "median": 55.68667,
+            "std": 0.0
+          },
+          "description": "Geographic longitude in decimal degrees for the observation site."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -3254.0,
+            -3254.0
+          ],
+          "data_patterns": {
+            "-9999.9": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -3254.0,
+            "max": -3254.0,
+            "mean": -3254.0,
+            "median": -3254.0,
+            "std": 0.0
+          },
+          "description": "Elevation of sampling site in meters, consistently -3254 meters."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2016-10-04T17:21:00",
+            "2016-10-04T17:21:00"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2016-10-04T17:21:00",
+            "max_date": "2016-10-04T17:21:00"
+          },
+          "description": "Observation timestamp recorded at 2016-10-04 17:21:00 for all samples."
+        }
+      },
+      "time_period_covered": {
+        "start": "2016-10-04T17:21:00",
+        "end": "2016-10-04T17:21:00"
+      },
+      "sample_rows": [
+        {
+          "Sample ID": "PS101/186-R2",
+          "SiO2": 47.69,
+          "TiO2": 1.2,
+          "Al2O3": 15.99,
+          "Fe2O3": 8.46,
+          "MnO": 0.14,
+          "MgO": 9.22,
+          "CaO": 10.63,
+          "Na2O": 2.86,
+          "K2O": 0.17,
+          "P2O5": 0.13,
+          "Total": 96.7,
+          "Event": "PS101/186-1",
+          "Latitude": 86.961,
+          "Longitude": 55.68667,
+          "Elevation": -3254.0,
+          "Date/Time": "2016-10-04T17:21:00"
+        },
+        {
+          "Sample ID": "PS101/186-R1",
+          "SiO2": 48.7,
+          "TiO2": 1.26,
+          "Al2O3": 16.28,
+          "Fe2O3": 8.67,
+          "MnO": 0.15,
+          "MgO": 8.93,
+          "CaO": 10.76,
+          "Na2O": 2.97,
+          "K2O": 0.19,
+          "P2O5": 0.14,
+          "Total": 98.2,
+          "Event": "PS101/186-1",
+          "Latitude": 86.961,
+          "Longitude": 55.68667,
+          "Elevation": -3254.0,
+          "Date/Time": "2016-10-04T17:21:00"
+        }
+      ],
+      "description": "Two rock sample analyses with oxide percentages, location, elevation, and timestamp for a 2016 event.",
+      "is_row_capped": false,
+      "rows_processed": 2,
+      "total_rows_in_file": 2
+    }
+  },
+  "time_period_covered": {
+    "start": "2016-10-04T17:21:00",
+    "end": "2016-10-04T17:21:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Two Earth‑environment observations recorded at 201"
+}

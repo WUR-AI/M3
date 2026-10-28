@@ -1,0 +1,46 @@
+{
+  "csv": "961147.csv",
+  "dataset_id": "961147",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "contract_sha256": "4befa3f5553d33970ddeada8adabdaf23b0e26e0eb2b1bc3e127da82ab933acc",
+  "prompt_tokens": 24039,
+  "metadata": {
+    "name": "Marine Salp and Pyrosome Sample Dataset",
+    "description": "A compilation of marine biological samples collected during multiple research expeditions (2004‑2008) using bongo nets and other gear. The data include species identifiers (salps, pyrosomes, tunicates), sample measurements (size, mass, elemental composition), sampling depth, geographic coordinates, date/time, vessel and station information for locations in the Northeast Pacific, Southern Ocean and New Zealand's Chatham Rise.",
+    "keywords": [
+      "salp",
+      "pyrosome",
+      "marine biology",
+      "oceanography",
+      "bongo net",
+      "research vessel",
+      "expedition",
+      "species composition",
+      "biomass",
+      "Southern Ocean",
+      "Northeast Pacific",
+      "Chatham Rise"
+    ],
+    "spatialCoverage": {
+      "min_lat": -44.338,
+      "min_lon": -145.0,
+      "max_lat": 50.941,
+      "max_lon": -42.7475
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12T23:45:00",
+      "to": "2008-06-10T01:54:00"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 19.826,
+  "status": "ok"
+}

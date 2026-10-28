@@ -1,0 +1,16 @@
+{
+  "csv": "967852.csv",
+  "dataset_id": "967852",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 19,
+  "n_columns": 16,
+  "description": "Observational dataset of 19 soil/rock samples with mineral composition, thickness, location, and stratigraphic data.",
+  "dataset_description": "Contains 19 Earth and environmental science records for observational analysis.",
+  "runtime_seconds": 55.382,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/967852/dictionary.json"
+}

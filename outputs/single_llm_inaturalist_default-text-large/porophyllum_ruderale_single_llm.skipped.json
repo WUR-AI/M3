@@ -1,0 +1,15 @@
+{
+  "csv": "porophyllum_ruderale.csv",
+  "dataset_id": "porophyllum_ruderale",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ad771d6c7d557f21d859d0f98880daaf4547021eadf1a28382610a2e9661606b",
+  "contract_sha256": "87e29bd268c52b609764ce2f2cbfd6f10f868dba2a18b979239dbca4db560bfe",
+  "prompt_tokens": 328125,
+  "status": "skipped",
+  "reason": "context_window"
+}

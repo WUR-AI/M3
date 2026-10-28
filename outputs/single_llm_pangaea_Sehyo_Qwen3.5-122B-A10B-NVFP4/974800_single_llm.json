@@ -1,0 +1,33 @@
+{
+  "csv": "974800.csv",
+  "dataset_id": "974800",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "contract_sha256": "ed448a94725ff9f11d9d7669cc17269f9aaffab65db2c8f53583f9a1e8f1ca2e",
+  "prompt_tokens": 1711,
+  "metadata": {
+    "name": "X. umbellata pulsation under different treatments",
+    "description": "Laboratory experiment data measuring X. umbellata pulsation rates across 12 tanks (T1-T12) under different treatments (Zooplankton, Control, DOC, Phytoplankton) at time intervals of 0, 7, 14, 21, and 28 days.",
+    "keywords": [
+      "X. umbellata",
+      "pulsation",
+      "zooplankton",
+      "phytoplankton",
+      "DOC",
+      "control",
+      "laboratory experiment"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "weekly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.586,
+  "status": "ok"
+}

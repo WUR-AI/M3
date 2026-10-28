@@ -1,0 +1,44 @@
+{
+  "dataset_id": "965137",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/965137.csv",
+  "source_sha256": "040ea113a6459c88179610e781f09b1e537c72d84cbcae2faf2a0ceb52eca11c",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T00:18:12.085863+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "TIAREI-3B Coral Isotope Data",
+    "description": "Dataset containing chemical isotope measurements (Sr/Ca, Mg/Ca, δ18O, δ13C) from Porites coral samples collected at a single location in the South Pacific Ocean on 2008-07-01. The dataset includes age-related fields, geospatial coordinates, and elevation.",
+    "keywords": [
+      "coral",
+      "isotopes",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "TIAREI-3B",
+      "South Pacific",
+      "paleoclimate",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2008-07-01",
+      "to": "2008-07-01"
+    },
+    "spatial": "point location",
+    "temporal": "single day"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/965137_5e78657b3d1f41e1adc1a680f8bc0a3e.jsonl",
+  "runtime_seconds": 292.25
+}

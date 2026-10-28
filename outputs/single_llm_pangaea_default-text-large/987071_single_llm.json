@@ -1,0 +1,44 @@
+{
+  "csv": "987071.csv",
+  "dataset_id": "987071",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843",
+  "contract_sha256": "699ee319f7111b01c88bcd5dadadd6573be75c856e698837653eb4067a0380b9",
+  "prompt_tokens": 2416,
+  "metadata": {
+    "name": "GeoB16320-2 sediment geochemistry profile",
+    "description": "Measurements of sediment depth, total organic carbon (TOC), total inorganic carbon (TIC), and associated metadata (event ID, latitude, longitude, elevation, and timestamp) for the GeoB16320-2 site.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "depth",
+      "latitude",
+      "longitude",
+      "elevation",
+      "marine",
+      "GeoB16320-2"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24T21:28:00",
+      "to": "2012-03-24T21:28:00"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.217,
+  "status": "ok"
+}

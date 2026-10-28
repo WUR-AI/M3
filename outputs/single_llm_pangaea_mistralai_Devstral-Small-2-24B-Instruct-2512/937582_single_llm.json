@@ -1,0 +1,42 @@
+{
+  "csv": "937582.csv",
+  "dataset_id": "937582",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1b4437a62c7a6600b478b9acf419a05aebf9f4af6fd8023b6d8e709a67082012",
+  "contract_sha256": "3ecf8a869b7da9086d966d9bd3930908e800e084b0f10e5fc05f3dec93ca6462",
+  "prompt_tokens": 17932,
+  "metadata": {
+    "name": "NunaWP4Mackenzie19",
+    "description": "Dataset containing measurements of various FDOM parameters (C1, C2, C3, A-peak, C-peak, M-peak, T-peak, FI, HI, BI) along with latitude, longitude, date/time, station, and depth water from multiple expeditions and stations in the Mackenzie region.",
+    "keywords": [
+      "FDOM",
+      "Mackenzie",
+      "Expedition",
+      "Latitude",
+      "Longitude",
+      "Date/Time",
+      "Station",
+      "Depth water"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20",
+      "to": "2019-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 8.196,
+  "status": "ok"
+}

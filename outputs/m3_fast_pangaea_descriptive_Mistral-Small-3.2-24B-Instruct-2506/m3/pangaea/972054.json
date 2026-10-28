@@ -1,0 +1,31 @@
+{
+  "dataset_id": "972054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972054.csv",
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T17:30:49.118917+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Uelzen, Germany Remote Sensing Data",
+    "description": "This dataset contains remote sensing data for Uelzen, Germany, including 6 band color composites and NDVI data from 1984 to 2023. The data includes GeoTIFF files, site information, and event details, with spatial coverage centered at 52.798539332, 9.998781436.",
+    "keywords": [
+      "remote sensing",
+      "Uelzen",
+      "Germany",
+      "GeoTIFF",
+      "NDVI",
+      "6 band color composites",
+      "1984-2023",
+      "ESIS_Uelzen",
+      "c3126"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972054_603ba5804ac847d89b92e5b64230d849.jsonl",
+  "runtime_seconds": 510.05
+}

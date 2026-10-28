@@ -1,0 +1,94 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 5616,
+  "metadata": {
+    "name": "973695",
+    "description": "Dataset containing sediment core data with chemical and isotopic measurements, including depth, elemental concentrations, and stable isotope ratios. The data also includes spatial and temporal information for each sample.",
+    "keywords": [
+      "sediment core",
+      "chemical analysis",
+      "isotopic ratios",
+      "Pleistocene",
+      "Pliocene",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05",
+      "to": "1986-11-05"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973695"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "field": "Epoch",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 16.503,
+  "status": "ok"
+}

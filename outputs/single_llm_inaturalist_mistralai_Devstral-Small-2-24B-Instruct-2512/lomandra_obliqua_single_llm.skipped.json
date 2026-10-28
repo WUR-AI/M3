@@ -1,0 +1,15 @@
+{
+  "csv": "lomandra_obliqua.csv",
+  "dataset_id": "lomandra_obliqua",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e934e71d13affe60a786f193b85311e68d992a2e94d3edb130395103aae9414f",
+  "contract_sha256": "88e9d49c308616faaf16fbff483a967ce6cf41d864b2c6ee9f8dee924409db3d",
+  "prompt_tokens": 321020,
+  "status": "skipped",
+  "reason": "context_window"
+}

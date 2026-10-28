@@ -1,0 +1,65 @@
+{
+  "csv": "idea_leuconoe.csv",
+  "dataset_id": "idea_leuconoe",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "d842e3d2f74c9f7a37e90c376a8cd45b3195e171648746b82b5cebc268c19649",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 2715,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -3.965004,
+      "min_lon": 97.436133,
+      "max_lat": 34.857409,
+      "max_lon": 138.139091
+    },
+    "temporalCoverage": {
+      "from": "1970-01-21T21:41:12+00:00",
+      "to": "2026-06-15T14:59:45+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "idea_leuconoe"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "idea_leuconoe"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.722,
+  "status": "ok"
+}

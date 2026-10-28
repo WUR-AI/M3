@@ -1,0 +1,16 @@
+{
+  "csv": "965137.csv",
+  "dataset_id": "965137",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 91,
+  "n_columns": 11,
+  "description": "Earth environmental measurements from July 1 2008: coral isotope ratios, ages, event, location, elevation (91",
+  "dataset_description": "Earth environmental measurements recorded on July 1 2008, comprising 91 observations across one table.",
+  "runtime_seconds": 50.422,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/965137/dictionary.json"
+}

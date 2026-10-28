@@ -1,0 +1,28 @@
+{
+  "dataset_id": "959883",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959883.csv",
+  "source_sha256": "de3317d8fc807ed86c4722f03ef6a7bf025cc4bf9ffc0fd8a0c71f52b6b45ce0",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T14:30:38.095202+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Geochemistry at Station M186_50-1GC",
+    "description": "This dataset contains geochemical measurements of marine sediment samples collected at a single location (38.74047° N, 28.58108° W) on 2022-12-15. The measurements include concentrations of various ions and elements such as nitrate, nitrite, ammonium, phosphate, chloride, sulfate, bromide, boron, manganese, calcium, iron, sodium, magnesium, strontium, silicon, barium, lithium, and potassium at different sediment depths.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "ion concentrations",
+      "elemental analysis",
+      "North Atlantic",
+      "2022"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959883_6b4ca5cba3864285bb90e0f5a59cc643.jsonl",
+  "runtime_seconds": 433.85
+}

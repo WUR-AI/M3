@@ -212,6 +212,17 @@ croissant_pangaea_standard: Dict[str, Dict[str, Any]] = {
     }
 }
 
+# Shared seven-field target for the PANGAEA descriptive + technical comparison.
+pangaea_descriptive_technical_standard: Dict[str, Dict[str, Any]] = {
+    **croissant_pangaea_standard,
+    **{
+        field_name: croissant_standard_subset[field_name]
+        for field_name in (
+            "spatialCoverage", "temporalCoverage", "spatial", "temporal"
+        )
+    },
+}
+
 croissant_inaturalist_standard: Dict[str, Dict[str, Any]] = {
     "spatialCoverage": {
         "type": Optional[Dict[str, float]],

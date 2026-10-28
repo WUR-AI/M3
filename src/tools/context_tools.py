@@ -30,6 +30,11 @@ def get_context(key: str) -> Any:
     return _context_registry[key]
 
 
+def unregister_context(key: str) -> None:
+    """Release one run's context without disturbing concurrent runs."""
+    _context_registry.pop(key, None)
+
+
 def clear_registry():
     """Clear all registered ExecutionContexts."""
     _context_registry.clear()
@@ -443,7 +448,7 @@ def _is_standalone_calendar_component(column_name: str) -> bool:
 
 def _detect_wkt_geometry(series: pd.Series) -> Optional[str]:
     """Detect if string values contain WKT geometry."""
-    if series.dtype != object and str(series.dtype) != "string":
+    if series.dtype != object and not pd.api.types.is_string_dtype(series.dtype):
         return None
     
     sample = series.dropna().head(50)
@@ -717,7 +722,7 @@ def detect_spatial_columns(context_key: str, resource: str = "") -> Dict[str, An
             # Tuple string pairs "(lon, lat)" — common in ecology / BMS exports
             if (
                 col_info["detected_type"] is None
-                and (df[col].dtype == object or str(df[col].dtype) == "string")
+                and (df[col].dtype == object or pd.api.types.is_string_dtype(df[col].dtype))
             ):
                 parsed, tried = _sample_tuple_parse_rate(df[col])
                 if tried > 0 and parsed / tried >= 0.75:
@@ -759,6 +764,15 @@ def detect_spatial_columns(context_key: str, resource: str = "") -> Dict[str, An
                 lat_col = alt_lat
             else:
                 lat_col = lon_col = None
+
+        # A parsed coordinate tuple is stronger evidence than two unrelated
+        # numeric columns whose values merely fit the latitude/longitude ranges.
+        named_axes = (
+            any(re.search(r"lat", name.lower()) for name in spatial_columns)
+            and any(re.search(r"lon", name.lower()) for name in spatial_columns)
+        )
+        if tuple_coord_columns and not named_axes:
+            lat_col = lon_col = None
 
         if lat_col and lon_col:
             coordinate_pairs = [{"latitude": lat_col, "longitude": lon_col}]

@@ -1,0 +1,15 @@
+{
+  "csv": "lactuca_viminea.csv",
+  "dataset_id": "lactuca_viminea",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "d08b817053f69667f465199f2fecb8c501dc2d0a3be8b947c93640cd49cafcb3",
+  "contract_sha256": "f2523cebdd77dde4808ed8d1fa01ac663b73ffcaac2de6b3c3192739d4244dc7",
+  "prompt_tokens": 331686,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,35 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "3edab174c4d23947d0a135c529a2ecc08e2d395961f8eecaa5084a0cfa5460e3",
+  "prompt_tokens": 1253,
+  "metadata": {
+    "name": "MITAPI 2015-2010 Difference Data Files",
+    "description": "Collection of NetCDF files containing difference data (2015 minus 2010) for various parameters (AGR, ENE, IND, PPA, PRO, RCO, REF, SHIP, SWD, TNG, TRF, TRO) with a spatial resolution of 0.1x0.1 degrees.",
+    "keywords": [
+      "MITAPI",
+      "difference",
+      "2015",
+      "2010",
+      "NetCDF",
+      "oceanography"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": "0.1x0.1 degree",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 1.92,
+  "status": "ok"
+}

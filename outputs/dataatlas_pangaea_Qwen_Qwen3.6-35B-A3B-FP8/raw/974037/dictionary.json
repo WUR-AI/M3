@@ -1,0 +1,1296 @@
+{
+  "dataset_name": "974037",
+  "list_of_tables": [
+    "974037"
+  ],
+  "tables": {
+    "974037": {
+      "table_name": "974037",
+      "row_count": 11,
+      "number_of_columns": 33,
+      "list_of_columns": [
+        "Site",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "N trunks",
+        "N trunks_2",
+        "Boulder diam",
+        "Boulder diam_2",
+        "Boulder diam_3",
+        "Boulder diam_4",
+        "Boulder diam_5",
+        "Boulder diam_6",
+        "Boulder diam_7",
+        "Boulder diam_8",
+        "Boulder diam_9",
+        "Boulder diam_10",
+        "Boulder diam_11",
+        "Boulder diam_12",
+        "Boulder diam_13",
+        "Boulder diam_14",
+        "Boulder diam_15",
+        "Boulder diam_16",
+        "Boulder diam_17",
+        "Boulder diam_18",
+        "Boulder diam_19",
+        "Boulder diam_20",
+        "Boulder diam_21",
+        "Boulder diam_22",
+        "Boulder diam_23",
+        "Boulder diam_24",
+        "Boulder diam_25",
+        "Event",
+        "Date/Time"
+      ],
+      "columns": {
+        "Site": {
+          "column_name": "Site",
+          "data_type": "string",
+          "sample_values": [
+            "Site 6",
+            "Site 5",
+            "Site 7",
+            "Site 3",
+            "Site 9",
+            "Site 4",
+            "Site 11",
+            "Site 1",
+            "Site 2",
+            "Site 10",
+            "Site 8"
+          ],
+          "data_patterns": {
+            "Aaaa 9": 9,
+            "Aaaa 99": 2
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Site 6",
+                1
+              ],
+              [
+                "Site 1",
+                1
+              ],
+              [
+                "Site 10",
+                1
+              ],
+              [
+                "Site 11",
+                1
+              ],
+              [
+                "Site 3",
+                1
+              ],
+              [
+                "Site 2",
+                1
+              ],
+              [
+                "Site 9",
+                1
+              ],
+              [
+                "Site 5",
+                1
+              ],
+              [
+                "Site 8",
+                1
+              ],
+              [
+                "Site 4",
+                1
+              ]
+            ],
+            "unique_count": 11
+          },
+          "description": "Site identifiers for the Sucha Woda Flood event monitoring locations."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            49.2852,
+            49.2852,
+            49.2741,
+            49.2725,
+            49.2838,
+            49.2813,
+            49.273,
+            49.283,
+            49.2855,
+            49.2852,
+            49.2847
+          ],
+          "data_patterns": {
+            "99.9999": 9,
+            "99.999": 2
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 49.2725,
+            "max": 49.2855,
+            "mean": 49.28122727272728,
+            "median": 49.2838,
+            "std": 0.005311137525821249
+          },
+          "description": "Geographic latitude in decimal degrees for the recorded site locations."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            20.0383,
+            20.0336,
+            20.0358,
+            20.0455,
+            20.0463,
+            20.0458,
+            20.0466,
+            20.0336,
+            20.035,
+            20.0416,
+            20.035
+          ],
+          "data_patterns": {
+            "99.9999": 9,
+            "99.999": 2
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 20.0336,
+            "max": 20.0466,
+            "mean": 20.03973636363636,
+            "median": 20.0383,
+            "std": 0.0054898584184428145
+          },
+          "description": "Decimal degrees of geographic longitude for the recorded sites."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "integer",
+          "sample_values": [
+            987,
+            980,
+            1165,
+            1017,
+            1180,
+            1105,
+            1177,
+            982,
+            1047,
+            919,
+            1089
+          ],
+          "data_patterns": {
+            "9999": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 919.0,
+            "max": 1180.0,
+            "mean": 1058.909090909091,
+            "median": 1047.0,
+            "std": 90.3763846869906
+          },
+          "description": "Elevation values in meters for the Sucha Woda Flood event sites."
+        },
+        "N trunks": {
+          "column_name": "N trunks",
+          "data_type": "integer",
+          "sample_values": [
+            36,
+            1,
+            13,
+            2,
+            28,
+            9,
+            22,
+            18,
+            13,
+            27,
+            16
+          ],
+          "data_patterns": {
+            "99": 8,
+            "9": 3
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 36.0,
+            "mean": 16.818181818181817,
+            "median": 16.0,
+            "std": 10.888693051217688
+          },
+          "description": "Count of tree trunks recorded at each site."
+        },
+        "N trunks_2": {
+          "column_name": "N trunks_2",
+          "data_type": "integer",
+          "sample_values": [
+            14,
+            16,
+            16,
+            13,
+            2,
+            11,
+            7,
+            4,
+            17,
+            4,
+            20
+          ],
+          "data_patterns": {
+            "99": 7,
+            "9": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 20.0,
+            "mean": 11.272727272727273,
+            "median": 13.0,
+            "std": 6.11704028253712
+          },
+          "description": "Count of tree trunks recorded at each site."
+        },
+        "Boulder diam": {
+          "column_name": "Boulder diam",
+          "data_type": "integer",
+          "sample_values": [
+            110,
+            90,
+            108,
+            194,
+            110,
+            75,
+            165,
+            151,
+            51,
+            100,
+            150
+          ],
+          "data_patterns": {
+            "999": 8,
+            "99": 3
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 51.0,
+            "max": 194.0,
+            "mean": 118.54545454545455,
+            "median": 110.0,
+            "std": 42.15296819054059
+          },
+          "description": "Boulder diameters in millimeters for the Sucha Woda Flood event."
+        },
+        "Boulder diam_2": {
+          "column_name": "Boulder diam_2",
+          "data_type": "integer",
+          "sample_values": [
+            70,
+            120,
+            68,
+            80,
+            120,
+            176,
+            76,
+            33,
+            80,
+            199,
+            140
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 33.0,
+            "max": 199.0,
+            "mean": 105.63636363636364,
+            "median": 80.0,
+            "std": 50.414824659563635
+          },
+          "description": "Boulder diameter measurements in millimeters ranging from 33 to 199."
+        },
+        "Boulder diam_3": {
+          "column_name": "Boulder diam_3",
+          "data_type": "integer",
+          "sample_values": [
+            75,
+            130,
+            90,
+            120,
+            52,
+            69,
+            200,
+            85,
+            130,
+            80,
+            178
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 52.0,
+            "max": 200.0,
+            "mean": 109.9090909090909,
+            "median": 90.0,
+            "std": 46.71071514214816
+          },
+          "description": "Boulder diameter measurements in millimeters ranging from 52 to 200."
+        },
+        "Boulder diam_4": {
+          "column_name": "Boulder diam_4",
+          "data_type": "integer",
+          "sample_values": [
+            110,
+            120,
+            45,
+            215,
+            70,
+            176,
+            71,
+            130,
+            100,
+            95,
+            100
+          ],
+          "data_patterns": {
+            "999": 7,
+            "99": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 45.0,
+            "max": 215.0,
+            "mean": 112.0,
+            "median": 100.0,
+            "std": 48.58806437799308
+          },
+          "description": "Boulder diameter measurements in millimeters for the fourth recorded boulder."
+        },
+        "Boulder diam_5": {
+          "column_name": "Boulder diam_5",
+          "data_type": "integer",
+          "sample_values": [
+            135,
+            160,
+            167,
+            90,
+            57,
+            110,
+            40,
+            73,
+            120,
+            70,
+            192
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 40.0,
+            "max": 192.0,
+            "mean": 110.36363636363636,
+            "median": 110.0,
+            "std": 49.269204838870145
+          },
+          "description": "Boulder diameter measurements in millimeters ranging from 40 to 192."
+        },
+        "Boulder diam_6": {
+          "column_name": "Boulder diam_6",
+          "data_type": "integer",
+          "sample_values": [
+            100,
+            85,
+            199,
+            140,
+            80,
+            70,
+            140,
+            39,
+            100,
+            140,
+            75
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 39.0,
+            "max": 199.0,
+            "mean": 106.18181818181819,
+            "median": 100.0,
+            "std": 44.779053544750546
+          },
+          "description": "Boulder diameter measurements in millimeters for the Sucha Woda Flood event."
+        },
+        "Boulder diam_7": {
+          "column_name": "Boulder diam_7",
+          "data_type": "integer",
+          "sample_values": [
+            57,
+            130,
+            94,
+            120,
+            131,
+            80,
+            45,
+            70,
+            95,
+            170,
+            39
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 39.0,
+            "max": 170.0,
+            "mean": 93.72727272727273,
+            "median": 94.0,
+            "std": 40.84627500541735
+          },
+          "description": "Boulder diameter measurements in millimeters recorded during the Sucha Woda Flood event."
+        },
+        "Boulder diam_8": {
+          "column_name": "Boulder diam_8",
+          "data_type": "integer",
+          "sample_values": [
+            120,
+            51,
+            199,
+            50,
+            49,
+            80,
+            200,
+            90,
+            75,
+            80,
+            187
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 49.0,
+            "max": 200.0,
+            "mean": 107.36363636363636,
+            "median": 80.0,
+            "std": 60.16688911232278
+          },
+          "description": "Boulder diameter measurements in millimeters ranging from 49 to 200."
+        },
+        "Boulder diam_9": {
+          "column_name": "Boulder diam_9",
+          "data_type": "integer",
+          "sample_values": [
+            65,
+            166,
+            100,
+            153,
+            56,
+            120,
+            53,
+            75,
+            90,
+            140,
+            90
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 53.0,
+            "max": 166.0,
+            "mean": 100.72727272727273,
+            "median": 90.0,
+            "std": 39.184412485300605
+          },
+          "description": "Boulder diameter measurements in millimeters recorded during the Sucha Woda Flood event."
+        },
+        "Boulder diam_10": {
+          "column_name": "Boulder diam_10",
+          "data_type": "integer",
+          "sample_values": [
+            120,
+            65,
+            90,
+            90,
+            37,
+            90,
+            64,
+            80,
+            196,
+            70,
+            200
+          ],
+          "data_patterns": {
+            "99": 8,
+            "999": 3
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 37.0,
+            "max": 200.0,
+            "mean": 100.18181818181819,
+            "median": 90.0,
+            "std": 52.636143821177065
+          },
+          "description": "Diameter of the tenth largest boulder in millimeters."
+        },
+        "Boulder diam_11": {
+          "column_name": "Boulder diam_11",
+          "data_type": "integer",
+          "sample_values": [
+            80,
+            50,
+            170,
+            65,
+            100,
+            75,
+            61,
+            170,
+            41,
+            173,
+            150
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 41.0,
+            "max": 173.0,
+            "mean": 103.18181818181819,
+            "median": 80.0,
+            "std": 52.22033738270594
+          },
+          "description": "Boulder diameter 11 measurements in millimeters."
+        },
+        "Boulder diam_12": {
+          "column_name": "Boulder diam_12",
+          "data_type": "integer",
+          "sample_values": [
+            43,
+            110,
+            60,
+            157,
+            76,
+            178,
+            80,
+            100,
+            70,
+            110,
+            140
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 43.0,
+            "max": 178.0,
+            "mean": 102.18181818181819,
+            "median": 100.0,
+            "std": 42.19672542228409
+          },
+          "description": "Boulder diameter measurements in millimeters recorded during the Sucha Woda Flood event."
+        },
+        "Boulder diam_13": {
+          "column_name": "Boulder diam_13",
+          "data_type": "integer",
+          "sample_values": [
+            175,
+            75,
+            100,
+            165,
+            140,
+            77,
+            39,
+            90,
+            140,
+            80,
+            70
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 39.0,
+            "max": 175.0,
+            "mean": 104.63636363636364,
+            "median": 90.0,
+            "std": 43.69043997780917
+          },
+          "description": "Boulder diameter 13 measurements in millimeters."
+        },
+        "Boulder diam_14": {
+          "column_name": "Boulder diam_14",
+          "data_type": "integer",
+          "sample_values": [
+            150,
+            130,
+            54,
+            59,
+            90,
+            75,
+            270,
+            110,
+            135,
+            65,
+            80
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 54.0,
+            "max": 270.0,
+            "mean": 110.72727272727273,
+            "median": 90.0,
+            "std": 62.05334948105687
+          },
+          "description": "Boulder diameter 14 measurements in millimeters."
+        },
+        "Boulder diam_15": {
+          "column_name": "Boulder diam_15",
+          "data_type": "integer",
+          "sample_values": [
+            230,
+            60,
+            67,
+            80,
+            55,
+            100,
+            120,
+            83,
+            178,
+            85,
+            115
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 55.0,
+            "max": 230.0,
+            "mean": 106.63636363636364,
+            "median": 85.0,
+            "std": 53.621400069883904
+          },
+          "description": "Boulder diameter measurements in millimeters for the Sucha Woda Flood event."
+        },
+        "Boulder diam_16": {
+          "column_name": "Boulder diam_16",
+          "data_type": "integer",
+          "sample_values": [
+            145,
+            150,
+            90,
+            80,
+            50,
+            95,
+            198,
+            76,
+            52,
+            154,
+            77
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 50.0,
+            "max": 198.0,
+            "mean": 106.0909090909091,
+            "median": 90.0,
+            "std": 48.0321861785502
+          },
+          "description": "Boulder diameter 16 measurements in millimeters."
+        },
+        "Boulder diam_17": {
+          "column_name": "Boulder diam_17",
+          "data_type": "integer",
+          "sample_values": [
+            95,
+            150,
+            187,
+            198,
+            60,
+            60,
+            80,
+            55,
+            140,
+            51,
+            80
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 51.0,
+            "max": 198.0,
+            "mean": 105.0909090909091,
+            "median": 80.0,
+            "std": 54.25763456962448
+          },
+          "description": "Boulder diameter 17 measured in millimeters."
+        },
+        "Boulder diam_18": {
+          "column_name": "Boulder diam_18",
+          "data_type": "integer",
+          "sample_values": [
+            80,
+            85,
+            70,
+            56,
+            75,
+            135,
+            100,
+            83,
+            110,
+            182,
+            202
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 56.0,
+            "max": 202.0,
+            "mean": 107.0909090909091,
+            "median": 85.0,
+            "std": 47.1963018582061
+          },
+          "description": "Boulder diameter 18 measurements in millimeters."
+        },
+        "Boulder diam_19": {
+          "column_name": "Boulder diam_19",
+          "data_type": "integer",
+          "sample_values": [
+            62,
+            178,
+            170,
+            55,
+            56,
+            68,
+            167,
+            40,
+            85,
+            170,
+            100
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 40.0,
+            "max": 178.0,
+            "mean": 104.63636363636364,
+            "median": 85.0,
+            "std": 55.12762053140463
+          },
+          "description": "Boulder diameter 19 records integer measurements in millimeters."
+        },
+        "Boulder diam_20": {
+          "column_name": "Boulder diam_20",
+          "data_type": "integer",
+          "sample_values": [
+            50,
+            187,
+            94,
+            154,
+            140,
+            45,
+            105,
+            130,
+            66,
+            120,
+            80
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 45.0,
+            "max": 187.0,
+            "mean": 106.45454545454545,
+            "median": 105.0,
+            "std": 44.798133077983586
+          },
+          "description": "Boulder diameter measurements in millimeters ranging from 45 to 187."
+        },
+        "Boulder diam_21": {
+          "column_name": "Boulder diam_21",
+          "data_type": "integer",
+          "sample_values": [
+            95,
+            67,
+            46,
+            167,
+            65,
+            190,
+            110,
+            110,
+            209,
+            66,
+            55
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 46.0,
+            "max": 209.0,
+            "mean": 107.27272727272727,
+            "median": 95.0,
+            "std": 57.02997616883758
+          },
+          "description": "Boulder diameter measurements in millimeters."
+        },
+        "Boulder diam_22": {
+          "column_name": "Boulder diam_22",
+          "data_type": "integer",
+          "sample_values": [
+            178,
+            60,
+            100,
+            170,
+            71,
+            54,
+            80,
+            90,
+            88,
+            130,
+            182
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 54.0,
+            "max": 182.0,
+            "mean": 109.36363636363636,
+            "median": 90.0,
+            "std": 47.79596787862492
+          },
+          "description": "Boulder diam22 records boulder diameters in millimeters."
+        },
+        "Boulder diam_23": {
+          "column_name": "Boulder diam_23",
+          "data_type": "integer",
+          "sample_values": [
+            72,
+            80,
+            162,
+            55,
+            140,
+            185,
+            150,
+            80,
+            75,
+            53,
+            75
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 53.0,
+            "max": 185.0,
+            "mean": 102.45454545454545,
+            "median": 80.0,
+            "std": 47.08580175883944
+          },
+          "description": "Boulder diameter measurements in millimeters for the Sucha Woda Flood event."
+        },
+        "Boulder diam_24": {
+          "column_name": "Boulder diam_24",
+          "data_type": "integer",
+          "sample_values": [
+            80,
+            83,
+            196,
+            167,
+            100,
+            130,
+            90,
+            120,
+            52,
+            150,
+            70
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 52.0,
+            "max": 196.0,
+            "mean": 112.54545454545455,
+            "median": 100.0,
+            "std": 44.459787755596935
+          },
+          "description": "Boulder diameters in millimeters, ranging from 52 to 196."
+        },
+        "Boulder diam_25": {
+          "column_name": "Boulder diam_25",
+          "data_type": "integer",
+          "sample_values": [
+            190,
+            100,
+            75,
+            161,
+            170,
+            100,
+            150,
+            81,
+            68,
+            65,
+            51
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 51.0,
+            "max": 190.0,
+            "mean": 110.0909090909091,
+            "median": 100.0,
+            "std": 48.72053888342071
+          },
+          "description": "Boulder diameter measurements in millimeters."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood"
+          ],
+          "data_patterns": {
+            "Aaaaa_Aaaa_Aaaaa": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Sucha_Woda_Flood",
+                11
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "The event name for the Sucha Woda Flood."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24"
+          ],
+          "data_patterns": {
+            "9999-99-99": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2018-07-24T00:00:00",
+            "max_date": "2018-07-24T00:00:00"
+          },
+          "description": "The timestamp records the date and time of the Sucha Woda Flood event."
+        }
+      },
+      "time_period_covered": {
+        "start": "2018-07-24T00:00:00",
+        "end": "2018-07-24T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Site": "Site 6",
+          "Latitude": 49.2838,
+          "Longitude": 20.0383,
+          "Elevation": 1047,
+          "N trunks": 22,
+          "N trunks_2": 13,
+          "Boulder diam": 194,
+          "Boulder diam_2": 176,
+          "Boulder diam_3": 200,
+          "Boulder diam_4": 176,
+          "Boulder diam_5": 192,
+          "Boulder diam_6": 199,
+          "Boulder diam_7": 170,
+          "Boulder diam_8": 187,
+          "Boulder diam_9": 166,
+          "Boulder diam_10": 196,
+          "Boulder diam_11": 170,
+          "Boulder diam_12": 178,
+          "Boulder diam_13": 175,
+          "Boulder diam_14": 270,
+          "Boulder diam_15": 178,
+          "Boulder diam_16": 198,
+          "Boulder diam_17": 187,
+          "Boulder diam_18": 202,
+          "Boulder diam_19": 178,
+          "Boulder diam_20": 187,
+          "Boulder diam_21": 209,
+          "Boulder diam_22": 178,
+          "Boulder diam_23": 162,
+          "Boulder diam_24": 196,
+          "Boulder diam_25": 170,
+          "Event": "Sucha_Woda_Flood",
+          "Date/Time": "2018-07-24"
+        },
+        {
+          "Site": "Site 1",
+          "Latitude": 49.2725,
+          "Longitude": 20.0358,
+          "Elevation": 1180,
+          "N trunks": 2,
+          "N trunks_2": 4,
+          "Boulder diam": 51,
+          "Boulder diam_2": 33,
+          "Boulder diam_3": 52,
+          "Boulder diam_4": 45,
+          "Boulder diam_5": 57,
+          "Boulder diam_6": 39,
+          "Boulder diam_7": 39,
+          "Boulder diam_8": 51,
+          "Boulder diam_9": 56,
+          "Boulder diam_10": 37,
+          "Boulder diam_11": 41,
+          "Boulder diam_12": 43,
+          "Boulder diam_13": 39,
+          "Boulder diam_14": 59,
+          "Boulder diam_15": 67,
+          "Boulder diam_16": 52,
+          "Boulder diam_17": 51,
+          "Boulder diam_18": 56,
+          "Boulder diam_19": 56,
+          "Boulder diam_20": 66,
+          "Boulder diam_21": 46,
+          "Boulder diam_22": 54,
+          "Boulder diam_23": 53,
+          "Boulder diam_24": 52,
+          "Boulder diam_25": 51,
+          "Event": "Sucha_Woda_Flood",
+          "Date/Time": "2018-07-24"
+        },
+        {
+          "Site": "Site 10",
+          "Latitude": 49.2852,
+          "Longitude": 20.0463,
+          "Elevation": 982,
+          "N trunks": 27,
+          "N trunks_2": 17,
+          "Boulder diam": 90,
+          "Boulder diam_2": 70,
+          "Boulder diam_3": 75,
+          "Boulder diam_4": 70,
+          "Boulder diam_5": 120,
+          "Boulder diam_6": 75,
+          "Boulder diam_7": 45,
+          "Boulder diam_8": 50,
+          "Boulder diam_9": 100,
+          "Boulder diam_10": 65,
+          "Boulder diam_11": 50,
+          "Boulder diam_12": 60,
+          "Boulder diam_13": 80,
+          "Boulder diam_14": 65,
+          "Boulder diam_15": 55,
+          "Boulder diam_16": 50,
+          "Boulder diam_17": 55,
+          "Boulder diam_18": 70,
+          "Boulder diam_19": 55,
+          "Boulder diam_20": 45,
+          "Boulder diam_21": 55,
+          "Boulder diam_22": 80,
+          "Boulder diam_23": 55,
+          "Boulder diam_24": 80,
+          "Boulder diam_25": 75,
+          "Event": "Sucha_Woda_Flood",
+          "Date/Time": "2018-07-24"
+        }
+      ],
+      "description": "Records site coordinates, elevation, trunk counts, and boulder diameters for the Sucha Woda Flood event",
+      "is_row_capped": false,
+      "rows_processed": 11,
+      "total_rows_in_file": 11
+    }
+  },
+  "time_period_covered": {
+    "start": "2018-07-24T00:00:00",
+    "end": "2018-07-24T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Contains 974,037 tables of Earth and environmental science data recorded on July 24, 2018."
+}

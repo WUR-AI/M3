@@ -1,0 +1,30 @@
+{
+  "dataset_id": "973041",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973041.csv",
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T18:08:41.805922+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Archaeological Site Dating Data",
+    "description": "This dataset contains information on archaeological sites in Malaysia and Indonesia, including radiocarbon age dating, calibrated ages, and references to scientific literature. It provides details on various sites, their locations, and the methods used for dating.",
+    "keywords": [
+      "archaeology",
+      "radiocarbon dating",
+      "Malaysia",
+      "Indonesia",
+      "prehistory",
+      "age dating",
+      "calibrated ages",
+      "scientific references"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973041_a6a4f41a3c1e4918afcb5fc3f6b2788d.jsonl",
+  "runtime_seconds": 1067.04
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "932569.csv",
+  "dataset_id": "932569",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 75,
+  "n_columns": 24,
+  "description": "Environmental aerosol data with ion concentrations, locations, and timestamps from May to July 2017.",
+  "dataset_description": "Environmental data collected from May to July 2017, 75 records per table.",
+  "runtime_seconds": 20.37,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/932569/dictionary.json"
+}

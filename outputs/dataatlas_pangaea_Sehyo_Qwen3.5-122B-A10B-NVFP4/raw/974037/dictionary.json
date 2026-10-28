@@ -1,0 +1,1296 @@
+{
+  "dataset_name": "974037",
+  "list_of_tables": [
+    "974037"
+  ],
+  "tables": {
+    "974037": {
+      "table_name": "974037",
+      "row_count": 11,
+      "number_of_columns": 33,
+      "list_of_columns": [
+        "Site",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "N trunks",
+        "N trunks_2",
+        "Boulder diam",
+        "Boulder diam_2",
+        "Boulder diam_3",
+        "Boulder diam_4",
+        "Boulder diam_5",
+        "Boulder diam_6",
+        "Boulder diam_7",
+        "Boulder diam_8",
+        "Boulder diam_9",
+        "Boulder diam_10",
+        "Boulder diam_11",
+        "Boulder diam_12",
+        "Boulder diam_13",
+        "Boulder diam_14",
+        "Boulder diam_15",
+        "Boulder diam_16",
+        "Boulder diam_17",
+        "Boulder diam_18",
+        "Boulder diam_19",
+        "Boulder diam_20",
+        "Boulder diam_21",
+        "Boulder diam_22",
+        "Boulder diam_23",
+        "Boulder diam_24",
+        "Boulder diam_25",
+        "Event",
+        "Date/Time"
+      ],
+      "columns": {
+        "Site": {
+          "column_name": "Site",
+          "data_type": "string",
+          "sample_values": [
+            "Site 6",
+            "Site 8",
+            "Site 1",
+            "Site 5",
+            "Site 10",
+            "Site 7",
+            "Site 3",
+            "Site 9",
+            "Site 11",
+            "Site 2",
+            "Site 4"
+          ],
+          "data_patterns": {
+            "Aaaa 9": 9,
+            "Aaaa 99": 2
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Site 6",
+                1
+              ],
+              [
+                "Site 1",
+                1
+              ],
+              [
+                "Site 10",
+                1
+              ],
+              [
+                "Site 11",
+                1
+              ],
+              [
+                "Site 3",
+                1
+              ],
+              [
+                "Site 2",
+                1
+              ],
+              [
+                "Site 9",
+                1
+              ],
+              [
+                "Site 5",
+                1
+              ],
+              [
+                "Site 8",
+                1
+              ],
+              [
+                "Site 4",
+                1
+              ]
+            ],
+            "unique_count": 11
+          },
+          "description": "Site identifiers for boulder measurement locations numbered one through eleven."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            49.2847,
+            49.283,
+            49.2852,
+            49.2813,
+            49.2852,
+            49.2855,
+            49.2838,
+            49.2852,
+            49.273,
+            49.2725,
+            49.2741
+          ],
+          "data_patterns": {
+            "99.9999": 9,
+            "99.999": 2
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 49.2725,
+            "max": 49.2855,
+            "mean": 49.28122727272728,
+            "median": 49.2838,
+            "std": 0.005311137525821249
+          },
+          "description": "Geographic latitude coordinates in decimal degrees for boulder sampling sites."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            20.0458,
+            20.0416,
+            20.035,
+            20.0455,
+            20.0466,
+            20.035,
+            20.0336,
+            20.0383,
+            20.0463,
+            20.0336,
+            20.0358
+          ],
+          "data_patterns": {
+            "99.9999": 9,
+            "99.999": 2
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 20.0336,
+            "max": 20.0466,
+            "mean": 20.03973636363636,
+            "median": 20.0383,
+            "std": 0.0054898584184428145
+          },
+          "description": "Geographic longitude coordinates in decimal degrees for boulder sampling sites."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "integer",
+          "sample_values": [
+            1105,
+            1017,
+            1089,
+            1180,
+            987,
+            1177,
+            1047,
+            919,
+            1165,
+            982,
+            980
+          ],
+          "data_patterns": {
+            "9999": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 919.0,
+            "max": 1180.0,
+            "mean": 1058.909090909091,
+            "median": 1047.0,
+            "std": 90.3763846869906
+          },
+          "description": "Elevation values in meters recorded at various boulder sites."
+        },
+        "N trunks": {
+          "column_name": "N trunks",
+          "data_type": "integer",
+          "sample_values": [
+            18,
+            13,
+            9,
+            13,
+            2,
+            27,
+            16,
+            28,
+            36,
+            1,
+            22
+          ],
+          "data_patterns": {
+            "99": 8,
+            "9": 3
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 36.0,
+            "mean": 16.818181818181817,
+            "median": 16.0,
+            "std": 10.888693051217688
+          },
+          "description": "Number of tree trunks counted at each boulder site."
+        },
+        "N trunks_2": {
+          "column_name": "N trunks_2",
+          "data_type": "integer",
+          "sample_values": [
+            11,
+            16,
+            14,
+            2,
+            16,
+            17,
+            13,
+            20,
+            4,
+            7,
+            4
+          ],
+          "data_patterns": {
+            "99": 7,
+            "9": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 20.0,
+            "mean": 11.272727272727273,
+            "median": 13.0,
+            "std": 6.11704028253712
+          },
+          "description": "Number of tree trunks counted at each boulder site."
+        },
+        "Boulder diam": {
+          "column_name": "Boulder diam",
+          "data_type": "integer",
+          "sample_values": [
+            165,
+            194,
+            108,
+            110,
+            151,
+            90,
+            75,
+            150,
+            110,
+            100,
+            51
+          ],
+          "data_patterns": {
+            "999": 8,
+            "99": 3
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 51.0,
+            "max": 194.0,
+            "mean": 118.54545454545455,
+            "median": 110.0,
+            "std": 42.15296819054059
+          },
+          "description": "Boulder diameters measured in centimeters range from 51 to 194."
+        },
+        "Boulder diam_2": {
+          "column_name": "Boulder diam_2",
+          "data_type": "integer",
+          "sample_values": [
+            140,
+            80,
+            33,
+            199,
+            80,
+            76,
+            120,
+            120,
+            176,
+            70,
+            68
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 33.0,
+            "max": 199.0,
+            "mean": 105.63636363636364,
+            "median": 80.0,
+            "std": 50.414824659563635
+          },
+          "description": "Boulder diam2 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_3": {
+          "column_name": "Boulder diam_3",
+          "data_type": "integer",
+          "sample_values": [
+            85,
+            69,
+            178,
+            130,
+            80,
+            200,
+            130,
+            75,
+            90,
+            120,
+            52
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 52.0,
+            "max": 200.0,
+            "mean": 109.9090909090909,
+            "median": 90.0,
+            "std": 46.71071514214816
+          },
+          "description": "Boulder diameters measured in centimeters range from 52 to 200."
+        },
+        "Boulder diam_4": {
+          "column_name": "Boulder diam_4",
+          "data_type": "integer",
+          "sample_values": [
+            95,
+            100,
+            120,
+            70,
+            215,
+            130,
+            71,
+            100,
+            176,
+            110,
+            45
+          ],
+          "data_patterns": {
+            "999": 7,
+            "99": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 45.0,
+            "max": 215.0,
+            "mean": 112.0,
+            "median": 100.0,
+            "std": 48.58806437799308
+          },
+          "description": "Boulder diam4 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_5": {
+          "column_name": "Boulder diam_5",
+          "data_type": "integer",
+          "sample_values": [
+            167,
+            40,
+            70,
+            120,
+            135,
+            73,
+            110,
+            57,
+            90,
+            192,
+            160
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 40.0,
+            "max": 192.0,
+            "mean": 110.36363636363636,
+            "median": 110.0,
+            "std": 49.269204838870145
+          },
+          "description": "Boulder diam5 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_6": {
+          "column_name": "Boulder diam_6",
+          "data_type": "integer",
+          "sample_values": [
+            70,
+            140,
+            100,
+            75,
+            39,
+            140,
+            85,
+            100,
+            199,
+            80,
+            140
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 39.0,
+            "max": 199.0,
+            "mean": 106.18181818181819,
+            "median": 100.0,
+            "std": 44.779053544750546
+          },
+          "description": "Boulder diam6 records boulder diameters in unspecified units ranging from 39 to 199."
+        },
+        "Boulder diam_7": {
+          "column_name": "Boulder diam_7",
+          "data_type": "integer",
+          "sample_values": [
+            130,
+            120,
+            70,
+            39,
+            170,
+            80,
+            95,
+            57,
+            131,
+            45,
+            94
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 39.0,
+            "max": 170.0,
+            "mean": 93.72727272727273,
+            "median": 94.0,
+            "std": 40.84627500541735
+          },
+          "description": "Boulder diam7 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_8": {
+          "column_name": "Boulder diam_8",
+          "data_type": "integer",
+          "sample_values": [
+            200,
+            75,
+            199,
+            187,
+            120,
+            51,
+            50,
+            80,
+            90,
+            80,
+            49
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 49.0,
+            "max": 200.0,
+            "mean": 107.36363636363636,
+            "median": 80.0,
+            "std": 60.16688911232278
+          },
+          "description": "Boulder diam8 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_9": {
+          "column_name": "Boulder diam_9",
+          "data_type": "integer",
+          "sample_values": [
+            90,
+            100,
+            53,
+            56,
+            166,
+            120,
+            140,
+            90,
+            153,
+            75,
+            65
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 53.0,
+            "max": 166.0,
+            "mean": 100.72727272727273,
+            "median": 90.0,
+            "std": 39.184412485300605
+          },
+          "description": "Boulder diam9 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_10": {
+          "column_name": "Boulder diam_10",
+          "data_type": "integer",
+          "sample_values": [
+            120,
+            200,
+            196,
+            70,
+            90,
+            80,
+            37,
+            65,
+            64,
+            90,
+            90
+          ],
+          "data_patterns": {
+            "99": 8,
+            "999": 3
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 37.0,
+            "max": 200.0,
+            "mean": 100.18181818181819,
+            "median": 90.0,
+            "std": 52.636143821177065
+          },
+          "description": "Boulder diameters measured in centimeters ranging from 37 to 200."
+        },
+        "Boulder diam_11": {
+          "column_name": "Boulder diam_11",
+          "data_type": "integer",
+          "sample_values": [
+            61,
+            150,
+            80,
+            173,
+            170,
+            75,
+            170,
+            41,
+            100,
+            65,
+            50
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 41.0,
+            "max": 173.0,
+            "mean": 103.18181818181819,
+            "median": 80.0,
+            "std": 52.22033738270594
+          },
+          "description": "Boulder diameters measured in centimeters for the 11 recorded sites."
+        },
+        "Boulder diam_12": {
+          "column_name": "Boulder diam_12",
+          "data_type": "integer",
+          "sample_values": [
+            157,
+            110,
+            60,
+            178,
+            43,
+            110,
+            70,
+            80,
+            140,
+            100,
+            76
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 43.0,
+            "max": 178.0,
+            "mean": 102.18181818181819,
+            "median": 100.0,
+            "std": 42.19672542228409
+          },
+          "description": "Boulder diam12 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_13": {
+          "column_name": "Boulder diam_13",
+          "data_type": "integer",
+          "sample_values": [
+            77,
+            90,
+            80,
+            70,
+            175,
+            165,
+            39,
+            75,
+            140,
+            140,
+            100
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 39.0,
+            "max": 175.0,
+            "mean": 104.63636363636364,
+            "median": 90.0,
+            "std": 43.69043997780917
+          },
+          "description": "Boulder diam13 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_14": {
+          "column_name": "Boulder diam_14",
+          "data_type": "integer",
+          "sample_values": [
+            54,
+            80,
+            110,
+            75,
+            59,
+            65,
+            130,
+            270,
+            150,
+            135,
+            90
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 54.0,
+            "max": 270.0,
+            "mean": 110.72727272727273,
+            "median": 90.0,
+            "std": 62.05334948105687
+          },
+          "description": "Boulder diameters measured in centimeters for the July 24, 2018 site survey."
+        },
+        "Boulder diam_15": {
+          "column_name": "Boulder diam_15",
+          "data_type": "integer",
+          "sample_values": [
+            55,
+            80,
+            120,
+            100,
+            230,
+            85,
+            60,
+            67,
+            178,
+            115,
+            83
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 55.0,
+            "max": 230.0,
+            "mean": 106.63636363636364,
+            "median": 85.0,
+            "std": 53.621400069883904
+          },
+          "description": "Boulder diameters measured in centimeters for the specified site."
+        },
+        "Boulder diam_16": {
+          "column_name": "Boulder diam_16",
+          "data_type": "integer",
+          "sample_values": [
+            77,
+            90,
+            80,
+            154,
+            52,
+            76,
+            198,
+            150,
+            145,
+            50,
+            95
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 50.0,
+            "max": 198.0,
+            "mean": 106.0909090909091,
+            "median": 90.0,
+            "std": 48.0321861785502
+          },
+          "description": "Boulder diam16 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_17": {
+          "column_name": "Boulder diam_17",
+          "data_type": "integer",
+          "sample_values": [
+            140,
+            80,
+            150,
+            60,
+            187,
+            198,
+            55,
+            95,
+            60,
+            80,
+            51
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 51.0,
+            "max": 198.0,
+            "mean": 105.0909090909091,
+            "median": 80.0,
+            "std": 54.25763456962448
+          },
+          "description": "Boulder diameters measured in centimeters for specific field sites."
+        },
+        "Boulder diam_18": {
+          "column_name": "Boulder diam_18",
+          "data_type": "integer",
+          "sample_values": [
+            85,
+            110,
+            83,
+            135,
+            182,
+            80,
+            202,
+            100,
+            56,
+            70,
+            75
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 56.0,
+            "max": 202.0,
+            "mean": 107.0909090909091,
+            "median": 85.0,
+            "std": 47.1963018582061
+          },
+          "description": "Boulder diameters in centimeters measured on July 24, 2018."
+        },
+        "Boulder diam_19": {
+          "column_name": "Boulder diam_19",
+          "data_type": "integer",
+          "sample_values": [
+            62,
+            56,
+            170,
+            100,
+            55,
+            85,
+            178,
+            68,
+            170,
+            167,
+            40
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 40.0,
+            "max": 178.0,
+            "mean": 104.63636363636364,
+            "median": 85.0,
+            "std": 55.12762053140463
+          },
+          "description": "Boulder diameters measured in centimeters ranging from 40 to 178."
+        },
+        "Boulder diam_20": {
+          "column_name": "Boulder diam_20",
+          "data_type": "integer",
+          "sample_values": [
+            80,
+            154,
+            187,
+            105,
+            120,
+            140,
+            45,
+            66,
+            130,
+            94,
+            50
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 45.0,
+            "max": 187.0,
+            "mean": 106.45454545454545,
+            "median": 105.0,
+            "std": 44.798133077983586
+          },
+          "description": "Boulder diam20 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_21": {
+          "column_name": "Boulder diam_21",
+          "data_type": "integer",
+          "sample_values": [
+            95,
+            55,
+            67,
+            66,
+            46,
+            110,
+            190,
+            110,
+            167,
+            209,
+            65
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 46.0,
+            "max": 209.0,
+            "mean": 107.27272727272727,
+            "median": 95.0,
+            "std": 57.02997616883758
+          },
+          "description": "Boulder diam21 records integer diameter measurements in unspecified units."
+        },
+        "Boulder diam_22": {
+          "column_name": "Boulder diam_22",
+          "data_type": "integer",
+          "sample_values": [
+            54,
+            130,
+            178,
+            182,
+            100,
+            60,
+            90,
+            88,
+            71,
+            80,
+            170
+          ],
+          "data_patterns": {
+            "99": 6,
+            "999": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 54.0,
+            "max": 182.0,
+            "mean": 109.36363636363636,
+            "median": 90.0,
+            "std": 47.79596787862492
+          },
+          "description": "Boulder diameters measured in centimeters for the July 24, 2018 site survey."
+        },
+        "Boulder diam_23": {
+          "column_name": "Boulder diam_23",
+          "data_type": "integer",
+          "sample_values": [
+            162,
+            55,
+            53,
+            185,
+            80,
+            80,
+            75,
+            75,
+            150,
+            72,
+            140
+          ],
+          "data_patterns": {
+            "99": 7,
+            "999": 4
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 53.0,
+            "max": 185.0,
+            "mean": 102.45454545454545,
+            "median": 80.0,
+            "std": 47.08580175883944
+          },
+          "description": "Boulder diameters measured in centimeters ranging from 53 to 185."
+        },
+        "Boulder diam_24": {
+          "column_name": "Boulder diam_24",
+          "data_type": "integer",
+          "sample_values": [
+            130,
+            52,
+            83,
+            167,
+            90,
+            70,
+            120,
+            80,
+            150,
+            196,
+            100
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 52.0,
+            "max": 196.0,
+            "mean": 112.54545454545455,
+            "median": 100.0,
+            "std": 44.459787755596935
+          },
+          "description": "Boulder diameters measured in centimeters on July 24, 2018."
+        },
+        "Boulder diam_25": {
+          "column_name": "Boulder diam_25",
+          "data_type": "integer",
+          "sample_values": [
+            150,
+            190,
+            68,
+            100,
+            100,
+            51,
+            65,
+            75,
+            170,
+            161,
+            81
+          ],
+          "data_patterns": {
+            "999": 6,
+            "99": 5
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 51.0,
+            "max": 190.0,
+            "mean": 110.0909090909091,
+            "median": 100.0,
+            "std": 48.72053888342071
+          },
+          "description": "Boulder diam25 records integer diameter measurements in unspecified units."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood",
+            "Sucha_Woda_Flood"
+          ],
+          "data_patterns": {
+            "Aaaaa_Aaaa_Aaaaa": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Sucha_Woda_Flood",
+                11
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event names identifying the SuchaWodaFlood occurrence across all records."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24",
+            "2018-07-24"
+          ],
+          "data_patterns": {
+            "9999-99-99": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2018-07-24T00:00:00",
+            "max_date": "2018-07-24T00:00:00"
+          },
+          "description": "Recording date and time for all boulder measurements on July 24, 2018."
+        }
+      },
+      "time_period_covered": {
+        "start": "2018-07-24T00:00:00",
+        "end": "2018-07-24T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Site": "Site 6",
+          "Latitude": 49.2838,
+          "Longitude": 20.0383,
+          "Elevation": 1047,
+          "N trunks": 22,
+          "N trunks_2": 13,
+          "Boulder diam": 194,
+          "Boulder diam_2": 176,
+          "Boulder diam_3": 200,
+          "Boulder diam_4": 176,
+          "Boulder diam_5": 192,
+          "Boulder diam_6": 199,
+          "Boulder diam_7": 170,
+          "Boulder diam_8": 187,
+          "Boulder diam_9": 166,
+          "Boulder diam_10": 196,
+          "Boulder diam_11": 170,
+          "Boulder diam_12": 178,
+          "Boulder diam_13": 175,
+          "Boulder diam_14": 270,
+          "Boulder diam_15": 178,
+          "Boulder diam_16": 198,
+          "Boulder diam_17": 187,
+          "Boulder diam_18": 202,
+          "Boulder diam_19": 178,
+          "Boulder diam_20": 187,
+          "Boulder diam_21": 209,
+          "Boulder diam_22": 178,
+          "Boulder diam_23": 162,
+          "Boulder diam_24": 196,
+          "Boulder diam_25": 170,
+          "Event": "Sucha_Woda_Flood",
+          "Date/Time": "2018-07-24"
+        },
+        {
+          "Site": "Site 1",
+          "Latitude": 49.2725,
+          "Longitude": 20.0358,
+          "Elevation": 1180,
+          "N trunks": 2,
+          "N trunks_2": 4,
+          "Boulder diam": 51,
+          "Boulder diam_2": 33,
+          "Boulder diam_3": 52,
+          "Boulder diam_4": 45,
+          "Boulder diam_5": 57,
+          "Boulder diam_6": 39,
+          "Boulder diam_7": 39,
+          "Boulder diam_8": 51,
+          "Boulder diam_9": 56,
+          "Boulder diam_10": 37,
+          "Boulder diam_11": 41,
+          "Boulder diam_12": 43,
+          "Boulder diam_13": 39,
+          "Boulder diam_14": 59,
+          "Boulder diam_15": 67,
+          "Boulder diam_16": 52,
+          "Boulder diam_17": 51,
+          "Boulder diam_18": 56,
+          "Boulder diam_19": 56,
+          "Boulder diam_20": 66,
+          "Boulder diam_21": 46,
+          "Boulder diam_22": 54,
+          "Boulder diam_23": 53,
+          "Boulder diam_24": 52,
+          "Boulder diam_25": 51,
+          "Event": "Sucha_Woda_Flood",
+          "Date/Time": "2018-07-24"
+        },
+        {
+          "Site": "Site 10",
+          "Latitude": 49.2852,
+          "Longitude": 20.0463,
+          "Elevation": 982,
+          "N trunks": 27,
+          "N trunks_2": 17,
+          "Boulder diam": 90,
+          "Boulder diam_2": 70,
+          "Boulder diam_3": 75,
+          "Boulder diam_4": 70,
+          "Boulder diam_5": 120,
+          "Boulder diam_6": 75,
+          "Boulder diam_7": 45,
+          "Boulder diam_8": 50,
+          "Boulder diam_9": 100,
+          "Boulder diam_10": 65,
+          "Boulder diam_11": 50,
+          "Boulder diam_12": 60,
+          "Boulder diam_13": 80,
+          "Boulder diam_14": 65,
+          "Boulder diam_15": 55,
+          "Boulder diam_16": 50,
+          "Boulder diam_17": 55,
+          "Boulder diam_18": 70,
+          "Boulder diam_19": 55,
+          "Boulder diam_20": 45,
+          "Boulder diam_21": 55,
+          "Boulder diam_22": 80,
+          "Boulder diam_23": 55,
+          "Boulder diam_24": 80,
+          "Boulder diam_25": 75,
+          "Event": "Sucha_Woda_Flood",
+          "Date/Time": "2018-07-24"
+        }
+      ],
+      "description": "Earth science table with 11 records of boulder diameters and site data from July 24,",
+      "is_row_capped": false,
+      "rows_processed": 11,
+      "total_rows_in_file": 11
+    }
+  },
+  "time_period_covered": {
+    "start": "2018-07-24T00:00:00",
+    "end": "2018-07-24T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth science dataset containing 11 records from July 24, 2018."
+}

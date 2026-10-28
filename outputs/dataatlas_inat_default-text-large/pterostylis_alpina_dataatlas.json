@@ -1,0 +1,16 @@
+{
+  "csv": "pterostylis_alpina.csv",
+  "dataset_id": "pterostylis_alpina",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 996,
+  "n_columns": 50,
+  "description": "Occurrence records of Pterostylis alpina in Australia (2009‑2026) with taxonomy, location, date, and observer details.",
+  "dataset_description": "Records of Pterostylis alpina occurrences from 2009‑2026, supporting biodiversity monitoring.",
+  "runtime_seconds": 70.642,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/pterostylis_alpina/dictionary.json"
+}

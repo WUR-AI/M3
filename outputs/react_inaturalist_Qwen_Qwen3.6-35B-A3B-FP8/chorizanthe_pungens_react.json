@@ -1,0 +1,74 @@
+{
+  "csv": "chorizanthe_pungens.csv",
+  "dataset_id": "chorizanthe_pungens",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5a7172072bf1547a22cc104c0ab85db3e45a36d4498c3e80a1d6f23b2719694f",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3960,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 36.424869,
+      "min_lon": -122.374875,
+      "max_lat": 37.199948,
+      "max_lon": -121.600442
+    },
+    "temporalCoverage": {
+      "from": "2011-04-24T12:23:00+00:00",
+      "to": "2026-06-13T18:06:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "chorizanthe_pungens"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "chorizanthe_pungens",
+        "resource": "chorizanthe_pungens"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "chorizanthe_pungens",
+        "resource": "chorizanthe_pungens",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "chorizanthe_pungens",
+        "resource": "chorizanthe_pungens"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "chorizanthe_pungens",
+        "resource": "chorizanthe_pungens",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "chorizanthe_pungens",
+        "resource": "chorizanthe_pungens",
+        "time_column": "dateIdentified"
+      }
+    }
+  ],
+  "runtime_seconds": 8.242,
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": "anaspis_maculata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/anaspis_maculata.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:15:35.262386+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 37.246379,
+      "min_lon": -9.369493,
+      "max_lat": 57.6803,
+      "max_lon": 26.501811
+    },
+    "temporalCoverage": {
+      "from": "2007-05-15T12:39:00+00:00",
+      "to": "2026-06-13T17:14:10+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/anaspis_maculata_8a82cd235d8e48808a383e4fde1e1073.jsonl",
+  "runtime_seconds": 84.26,
+  "recovered_from_trace": true,
+  "source_sha256": "8b426ec76e169131799f5173869a6c3b44a45e5d44ea433e0c81deb3038e3224"
+}

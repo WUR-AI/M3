@@ -1,0 +1,16 @@
+{
+  "csv": "990157.csv",
+  "dataset_id": "990157",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Earth and environmental science",
+  "n_rows": 29,
+  "n_columns": 16,
+  "description": "29 sediment samples with 210Pb and 137Cs concentrations, depths, and geographic coordinates.",
+  "dataset_description": "Contains 990,157 tables of Earth and environmental science data recorded on April 8, 2022.",
+  "runtime_seconds": 7.547,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Qwen_Qwen3.6-35B-A3B-FP8/raw/990157/dictionary.json"
+}

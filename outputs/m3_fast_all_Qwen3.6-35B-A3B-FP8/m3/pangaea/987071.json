@@ -1,0 +1,45 @@
+{
+  "dataset_id": "987071",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987071.csv",
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:46:18.023877+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Geochemical Profile from Gulf of Mexico (GeoB16320-2)",
+    "description": "Vertical sediment core profile dataset containing 34 depth-resolved samples of Total Organic Carbon (TOC) and Total Inorganic Carbon (TIC) concentrations from a single station in the Gulf of Mexico (Bay of Campeche). All samples were collected at a fixed location (23.84°N, 87.15°W) at a water depth of 626 m on March 24, 2012. The dataset covers sediment depths from 0.03 m to 4.18 m.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "Total Organic Carbon",
+      "Total Inorganic Carbon",
+      "Gulf of Mexico",
+      "Bay of Campeche",
+      "sediment core",
+      "vertical profile",
+      "GeoB16320"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24T21:28:00+00:00",
+      "to": "2012-03-24T21:28:00+00:00"
+    },
+    "spatial": "Point location (single station) with vertical resolution defined by sediment depth intervals (cm-scale)",
+    "temporal": "Single timepoint (2012-03-24T21:28:00 UTC)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987071_c1c3d8ea2d444b538e0ae370fce0f645.jsonl",
+  "runtime_seconds": 82.07
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "asota_plana",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/asota_plana.csv",
+  "source_sha256": "52f4e3c2299dfa0840da2d6641c81c907d3d770def638f66afb4e6cb05950cc5",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-16T23:50:16.107117+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -9.228321,
+      "min_lon": 73.239488,
+      "max_lat": 33.111278,
+      "max_lon": 144.097689
+    },
+    "temporalCoverage": {
+      "from": "2005-05-16T09:24:00+00:00",
+      "to": "2026-06-12T11:24:28+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/asota_plana_6cff6987699a484394a728b90e8f94d7.jsonl",
+  "runtime_seconds": 58.41
+}

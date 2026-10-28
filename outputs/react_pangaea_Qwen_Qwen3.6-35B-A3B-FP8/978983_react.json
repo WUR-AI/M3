@@ -1,0 +1,130 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 11822,
+  "metadata": {
+    "name": "IBCR Expedition 386 M0095B Sediment Core Mineralogy Data",
+    "description": "Mineralogical composition data from sediment core samples collected during IBCR Expedition 386, Site M0095B. The dataset contains 14 samples with quantitative mineral abundances (in percent or relative units) for minerals including quartz, plagioclase, sodic plagioclase, muscovite, biotite, chlorite, amphibole, and various clay minerals. Samples span sediment depths from 0.21 to 26.81 meters. All samples were collected at a single location in the Pacific Ocean at approximately 36.89°N, 143.41°E, at a water depth of 7697 meters below sea level. Samples were collected on 2021-05-30.",
+    "keywords": [
+      "IBCR",
+      "Expedition 386",
+      "M0095B",
+      "sediment core",
+      "mineralogy",
+      "clay minerals",
+      "XRD",
+      "Pacific Ocean",
+      "IODP"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "978983"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "978983",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "field": "Comment",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "field": "Prop IGSN",
+        "limit": 15
+      }
+    }
+  ],
+  "runtime_seconds": 16.401,
+  "status": "ok"
+}

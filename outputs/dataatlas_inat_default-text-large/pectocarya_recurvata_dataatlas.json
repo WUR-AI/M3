@@ -1,0 +1,16 @@
+{
+  "csv": "pectocarya_recurvata.csv",
+  "dataset_id": "pectocarya_recurvata",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1002,
+  "n_columns": 50,
+  "description": "GBIF occurrence records of Pectocarya recurvata (2008‑2026) with taxonomy, coordinates, dates, and observer metadata.",
+  "dataset_description": "Occurrences of Pectocarya recurvata recorded from 2008 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 72.873,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/pectocarya_recurvata/dictionary.json"
+}

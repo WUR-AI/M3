@@ -1,0 +1,43 @@
+{
+  "dataset_id": "948933",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/948933.csv",
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T22:51:39.948841+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sylt Trawl Sampling Data",
+    "description": "This dataset contains sampling data from trawling events near Sylt, including geographical coordinates, bathymetric measurements, environmental parameters (salinity and temperature), and biological observations of S. scombrus (Atlantic mackerel). The data covers benthic habitat sampling events over a period of 70 days.",
+    "keywords": [
+      "Sylt",
+      "trawl",
+      "benthic",
+      "S. scombrus",
+      "Atlantic mackerel",
+      "sampling",
+      "salinity",
+      "temperature",
+      "bathymetry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.996367,
+      "min_lon": 8.432083,
+      "max_lat": 55.056917,
+      "max_lon": 8.492533
+    },
+    "temporalCoverage": {
+      "from": "2021-06-29T07:50:07+00:00",
+      "to": "2021-09-07T08:26:01+00:00"
+    },
+    "spatial": "~0.06° latitude and longitude",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/948933_9507b5f57e374da999fd3865183006f4.jsonl",
+  "runtime_seconds": 298.81
+}

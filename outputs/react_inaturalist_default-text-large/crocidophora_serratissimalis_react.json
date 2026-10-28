@@ -1,0 +1,65 @@
+{
+  "csv": "crocidophora_serratissimalis.csv",
+  "dataset_id": "crocidophora_serratissimalis",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ac42d91a9c815f7f4ab7c337bdafd6f0e6893b45fc8d2c503d22d8e39858c38f",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 2838,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.508248,
+      "min_lon": -100.027428,
+      "max_lat": 47.290284,
+      "max_lon": -64.2582
+    },
+    "temporalCoverage": {
+      "from": "2001-05-22T06:26:00+00:00",
+      "to": "2026-06-13T21:08:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "crocidophora_serratissimalis"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "crocidophora_serratissimalis",
+        "resource": "crocidophora_serratissimalis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "crocidophora_serratissimalis",
+        "resource": "crocidophora_serratissimalis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "crocidophora_serratissimalis"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "crocidophora_serratissimalis",
+        "resource": "crocidophora_serratissimalis",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.053,
+  "status": "ok"
+}

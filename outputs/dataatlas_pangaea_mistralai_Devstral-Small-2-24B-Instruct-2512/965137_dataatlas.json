@@ -1,0 +1,16 @@
+{
+  "csv": "965137.csv",
+  "dataset_id": "965137",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 91,
+  "n_columns": 11,
+  "description": "Earth and environmental science data with 91 rows of coral geochemical and location measurements.",
+  "dataset_description": "Earth and environmental science data with 965,137 tables, 91 rows each, from 2008-07-01.",
+  "runtime_seconds": 8.724,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/965137/dictionary.json"
+}

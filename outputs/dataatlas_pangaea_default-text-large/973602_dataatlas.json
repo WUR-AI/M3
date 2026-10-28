@@ -1,0 +1,16 @@
+{
+  "csv": "973602.csv",
+  "dataset_id": "973602",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 2,
+  "n_columns": 17,
+  "description": "Two rock sample analyses with oxide percentages, location, elevation, and timestamp for a 2016 event.",
+  "dataset_description": "Two Earth‑environment observations recorded at 201",
+  "runtime_seconds": 45.338,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/973602/dictionary.json"
+}

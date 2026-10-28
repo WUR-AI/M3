@@ -1,0 +1,9 @@
+{
+  "model": "default-text-large",
+  "output_dir": "/home/com3dian/Github/metadata_agent/outputs/single_llm_inaturalist_default-text-large",
+  "expected": 100,
+  "successful": 0,
+  "skipped": 100,
+  "processed": 100,
+  "remaining": 0
+}

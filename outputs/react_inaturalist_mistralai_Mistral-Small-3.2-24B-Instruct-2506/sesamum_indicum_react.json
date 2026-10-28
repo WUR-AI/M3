@@ -1,0 +1,88 @@
+{
+  "csv": "sesamum_indicum.csv",
+  "dataset_id": "sesamum_indicum",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c8f4c84876bf4a93d7fc94ae7cdf7114f028269b8b8d40b4d86b1b5f5e571703",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4222,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.875253,
+      "min_lon": -118.287597,
+      "max_lat": 53.213368,
+      "max_lon": 145.328675
+    },
+    "temporalCoverage": {
+      "from": "2002-11-29",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 19.543,
+  "status": "ok"
+}

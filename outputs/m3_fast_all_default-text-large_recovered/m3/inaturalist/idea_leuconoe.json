@@ -1,0 +1,29 @@
+{
+  "dataset_id": "idea_leuconoe",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/idea_leuconoe.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:59:27.515361+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -3.965004,
+      "min_lon": 97.436133,
+      "max_lat": 34.857409,
+      "max_lon": 138.139091
+    },
+    "temporalCoverage": {
+      "from": "1970-01-21T21:41:12+00:00",
+      "to": "2026-06-15T14:59:45+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/idea_leuconoe_2b40bf522dfd4e6983d9ac09a30d207d.jsonl",
+  "runtime_seconds": 81.83,
+  "recovered_from_trace": true,
+  "source_sha256": "d842e3d2f74c9f7a37e90c376a8cd45b3195e171648746b82b5cebc268c19649"
+}

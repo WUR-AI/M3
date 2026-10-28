@@ -1,0 +1,364 @@
+{
+  "dataset_name": "987056",
+  "list_of_tables": [
+    "987056"
+  ],
+  "tables": {
+    "987056": {
+      "table_name": "987056",
+      "row_count": 15,
+      "number_of_columns": 8,
+      "list_of_columns": [
+        "Depth sed",
+        "TOC",
+        "TIC",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "sample_values": [
+            3.05,
+            1.7,
+            2.26,
+            2.05,
+            0.15,
+            2.45,
+            1.35,
+            4.85,
+            1.85,
+            2.65,
+            2.85,
+            3.25,
+            0.95,
+            4.35,
+            0.6
+          ],
+          "data_patterns": {
+            "9.99": 13,
+            "9.9": 2
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 15,
+          "stats": {
+            "type": "numeric",
+            "min": 0.15,
+            "max": 4.85,
+            "mean": 2.2906666666666666,
+            "median": 2.26,
+            "std": 1.2950535933017635
+          },
+          "description": "Sediment depth measurements in meters."
+        },
+        "TOC": {
+          "column_name": "TOC",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.438,
+            0.319,
+            0.701,
+            0.655,
+            0.624,
+            0.245,
+            0.289,
+            0.165,
+            0.267,
+            0.591,
+            0.153,
+            0.154,
+            0.502,
+            0.369,
+            0.14
+          ],
+          "data_patterns": {
+            "9.999": 14,
+            "9.99": 1
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 15,
+          "stats": {
+            "type": "numeric",
+            "min": 0.14,
+            "max": 0.701,
+            "mean": 0.37413333333333326,
+            "median": 0.319,
+            "std": 0.19820655411776394
+          },
+          "description": "Total organic carbon content as a probability score."
+        },
+        "TIC": {
+          "column_name": "TIC",
+          "data_type": "float",
+          "sample_values": [
+            10.145,
+            10.181,
+            9.647,
+            10.355,
+            10.376,
+            10.209,
+            10.611,
+            10.131,
+            10.198,
+            10.46,
+            10.562,
+            10.033,
+            9.846,
+            10.199,
+            10.235
+          ],
+          "data_patterns": {
+            "99.999": 12,
+            "9.999": 2,
+            "99.99": 1
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 15,
+          "stats": {
+            "type": "numeric",
+            "min": 9.647,
+            "max": 10.611,
+            "mean": 10.212533333333333,
+            "median": 10.199,
+            "std": 0.25194695208846385
+          },
+          "description": "Sediment total inorganic carbon content percentage."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2",
+            "GeoB16310-2"
+          ],
+          "data_patterns": {
+            "AaaA99999-9": 15
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "GeoB16310-2",
+                15
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event identifier for sediment data collection."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405,
+            23.82405
+          ],
+          "data_patterns": {
+            "99.99999": 15
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 23.82405,
+            "max": 23.82405,
+            "mean": 23.82405,
+            "median": 23.82405,
+            "std": 0.0
+          },
+          "description": "Locations northern coordinate in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333,
+            -87.170283333333
+          ],
+          "data_patterns": {
+            "-99.999999999999": 15
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -87.170283333333,
+            "max": -87.170283333333,
+            "mean": -87.17028333333299,
+            "median": -87.170283333333,
+            "std": 1.4709632111668204e-14
+          },
+          "description": "Longitude in decimal degrees for Earth science data location."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0,
+            -565.0
+          ],
+          "data_patterns": {
+            "-999.9": 15
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -565.0,
+            "max": -565.0,
+            "mean": -565.0,
+            "median": -565.0,
+            "std": 0.0
+          },
+          "description": "Elevation in meters, constant value across all records."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00",
+            "2012-03-22T23:07:00"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 15
+          },
+          "total_rows": 15,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2012-03-22T23:07:00",
+            "max_date": "2012-03-22T23:07:00"
+          },
+          "description": "Single timestamp recorded for each data entry."
+        }
+      },
+      "time_period_covered": {
+        "start": "2012-03-22T23:07:00",
+        "end": "2012-03-22T23:07:00"
+      },
+      "sample_rows": [
+        {
+          "Depth sed": 2.65,
+          "TOC": 0.319,
+          "TIC": 10.181,
+          "Event": "GeoB16310-2",
+          "Latitude": 23.82405,
+          "Longitude": -87.170283333333,
+          "Elevation": -565.0,
+          "Date/Time": "2012-03-22T23:07:00"
+        },
+        {
+          "Depth sed": 3.05,
+          "TOC": 0.369,
+          "TIC": 10.131,
+          "Event": "GeoB16310-2",
+          "Latitude": 23.82405,
+          "Longitude": -87.170283333333,
+          "Elevation": -565.0,
+          "Date/Time": "2012-03-22T23:07:00"
+        },
+        {
+          "Depth sed": 0.15,
+          "TOC": 0.701,
+          "TIC": 10.199,
+          "Event": "GeoB16310-2",
+          "Latitude": 23.82405,
+          "Longitude": -87.170283333333,
+          "Elevation": -565.0,
+          "Date/Time": "2012-03-22T23:07:00"
+        }
+      ],
+      "description": "Earth science data: sediment depth, carbon content, location, and single timestamp.",
+      "is_row_capped": false,
+      "rows_processed": 15,
+      "total_rows_in_file": 15
+    }
+  },
+  "time_period_covered": {
+    "start": "2012-03-22T23:07:00",
+    "end": "2012-03-22T23:07:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science data, 987056 tables, 15 rows each, single timestamp."
+}

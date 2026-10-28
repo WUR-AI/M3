@@ -1,0 +1,43 @@
+{
+  "csv": "955790.csv",
+  "dataset_id": "955790",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "32ff85ba761f2a60c1fca4b652694970cb3bcf7223b0d2f265d2c0637be78677",
+  "contract_sha256": "486a7266bad678ff41bc1b992b5d609d347887dfec1980ac8379ebd536a68321",
+  "prompt_tokens": 1190,
+  "metadata": {
+    "name": "Mn nodule geochemical data from CHALICE and OKSH expeditions",
+    "description": "Dataset containing geochemical measurements (Mn, Fe, Ni, Co, Cu) and physical descriptions of manganese nodules collected from various locations in the Pacific Ocean. The data includes sample IDs, coordinates, elevation, sediment depth, and collection dates from 1970.",
+    "keywords": [
+      "Mn nodule",
+      "geochemistry",
+      "Pacific Ocean",
+      "Manganese",
+      "Iron",
+      "Nickel",
+      "Cobalt",
+      "Copper",
+      "sediment"
+    ],
+    "spatialCoverage": {
+      "min_lat": -14.05,
+      "min_lon": -150.6333,
+      "max_lat": 12.0,
+      "max_lon": -149.3
+    },
+    "temporalCoverage": {
+      "from": "1970-09-02",
+      "to": "1970-09-25"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.796,
+  "status": "ok"
+}

@@ -1,0 +1,427 @@
+{
+  "dataset_name": "953747",
+  "list_of_tables": [
+    "953747"
+  ],
+  "tables": {
+    "953747": {
+      "table_name": "953747",
+      "row_count": 22,
+      "number_of_columns": 7,
+      "list_of_columns": [
+        "Date/Time",
+        "Survey ID",
+        "Binary",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation"
+      ],
+      "columns": {
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08",
+            "2020-09-08"
+          ],
+          "data_patterns": {
+            "9999-99-99": 22
+          },
+          "total_rows": 22,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2020-09-08T00:00:00",
+            "max_date": "2020-09-08T00:00:00"
+          },
+          "description": "The timestamp records the date and time of the survey event."
+        },
+        "Survey ID": {
+          "column_name": "Survey ID",
+          "data_type": "integer",
+          "semantic_type": "identifier",
+          "sample_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "data_patterns": {
+            "9": 22
+          },
+          "total_rows": 22,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "std": 0.0
+          },
+          "description": "Numeric identifier for the survey event recorded on September 8, 2020."
+        },
+        "Binary": {
+          "column_name": "Binary",
+          "data_type": "string",
+          "sample_values": [
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ADCP_DVL.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Optics_Position_Transmission_PAR.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Positioning_Lat_Lon.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_DepthProfile_1_GPCTD.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Telemetry_Timeseries.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_VIPER_Spectra_Timeseries.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Depth_Profile_1_VIPER_Spectra.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ECO_Map.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Depth_Profile_1_Transmittance.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Sea_Ice_Draft_Distribution.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_GPCTD_Timeseries.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Depth_Profile_2_VIPER_Spectra.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_DepthProfile_1_ECO.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Sea_Ice_Draft_Map.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ADCP_Status.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ECO_Timeseries.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Optics_Position_Transmittance.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Transmittance_3D.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Positioning.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_pH_Overview.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ADCP_Current_Backscatter.png",
+            "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_GPCTD_Map.png"
+          ],
+          "data_patterns": {
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaa_Aaaaaaa_9_AAAAA_Aaaaaaa.aaa": 2,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaaa_Aaaaaaaa_Aaaaaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAA_Aaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAAA_AAA.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAAA_Aaaaaaa_Aaaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaaaaaaaa_Aaa_Aaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaa_Aaaaaaa_9_Aaaaaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAAAA_Aaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAAAA_Aaaaaaa_Aaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AaaaaAaaaaaa_9_AAAAA.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaa_Aaa_Aaaaa_Aaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaaa_Aaaaaaaa_Aaaaaaaaaaaa_AAA.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AaaaaAaaaaaa_9_AAA.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaaaaaa_Aaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaa_Aaa_Aaaaa_Aaaaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAA_Aaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAAA_Aaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_aA_Aaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_AAAAA_Aaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaaaaaaaa.aaa": 1,
+            "AA999_9_99_99_99999999_9_AAA_AAAAAAAAA_Aaaaaaaaaaaaa_9A.aaa": 1
+          },
+          "total_rows": 22,
+          "null_count": 0,
+          "unique_count": 22,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ADCP_Current_Backscatter.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Optics_Position_Transmittance.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ECO_Map.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ADCP_DVL.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Positioning_Lat_Lon.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Depth_Profile_1_Transmittance.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_VIPER_Spectra_Timeseries.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_GPCTD_Timeseries.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_DepthProfile_1_ECO.png",
+                1
+              ],
+              [
+                "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_DepthProfile_1_GPCTD.png",
+                1
+              ]
+            ],
+            "unique_count": 22
+          },
+          "description": "Binary filenames for ROV quicklook images including ADCP, optics, positioning, and telemetry data."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35",
+            "PS122/5_61-35"
+          ],
+          "data_patterns": {
+            "AA999/9_99-99": 22
+          },
+          "total_rows": 22,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "PS122/5_61-35",
+                22
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Unique identifier for the survey event recorded on September 8, 2020."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993,
+            88.675993
+          ],
+          "data_patterns": {
+            "99.999999": 22
+          },
+          "total_rows": 22,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 88.675993,
+            "max": 88.675993,
+            "mean": 88.67599300000002,
+            "median": 88.675993,
+            "std": 1.4545273521638335e-14
+          },
+          "description": "Geographic latitude coordinates in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519,
+            112.324519
+          ],
+          "data_patterns": {
+            "999.999999": 22
+          },
+          "total_rows": 22,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 112.324519,
+            "max": 112.324519,
+            "mean": 112.32451899999997,
+            "median": 112.324519,
+            "std": 2.909054704327667e-14
+          },
+          "description": "Continuous decimal values representing geographic longitude coordinates."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4,
+            -4291.4
+          ],
+          "data_patterns": {
+            "-9999.9": 22
+          },
+          "total_rows": 22,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -4291.4,
+            "max": -4291.4,
+            "mean": -4291.399999999998,
+            "median": -4291.4,
+            "std": 1.861795010769707e-12
+          },
+          "description": "Elevation values in meters, consistently recorded at -4291.4."
+        }
+      },
+      "time_period_covered": {
+        "start": "2020-09-08T00:00:00",
+        "end": "2020-09-08T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Date/Time": "2020-09-08",
+          "Survey ID": 1,
+          "Binary": "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ADCP_Current_Backscatter.png",
+          "Event": "PS122/5_61-35",
+          "Latitude": 88.675993,
+          "Longitude": 112.324519,
+          "Elevation": -4291.4
+        },
+        {
+          "Date/Time": "2020-09-08",
+          "Survey ID": 1,
+          "Binary": "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_Optics_Position_Transmittance.png",
+          "Event": "PS122/5_61-35",
+          "Latitude": 88.675993,
+          "Longitude": 112.324519,
+          "Elevation": -4291.4
+        },
+        {
+          "Date/Time": "2020-09-08",
+          "Survey ID": 1,
+          "Binary": "PS122_5_61_35_20200908_1_ROV_QUICKLOOK_ECO_Map.png",
+          "Event": "PS122/5_61-35",
+          "Latitude": 88.675993,
+          "Longitude": 112.324519,
+          "Elevation": -4291.4
+        }
+      ],
+      "description": "Records survey metadata, coordinates, and binary file names for 22 events on September 8, 2020.",
+      "is_row_capped": false,
+      "rows_processed": 22,
+      "total_rows_in_file": 22
+    }
+  },
+  "time_period_covered": {
+    "start": "2020-09-08T00:00:00",
+    "end": "2020-09-08T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Ninety-five thousand tables of Earth science data recorded on September 8, 2020."
+}

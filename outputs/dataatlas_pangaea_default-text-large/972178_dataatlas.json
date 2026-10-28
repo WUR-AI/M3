@@ -1,0 +1,16 @@
+{
+  "csv": "972178.csv",
+  "dataset_id": "972178",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 288,
+  "n_columns": 13,
+  "description": "Observational environmental records (1984‑2023) with site metadata, timestamps, and associated GIS files.",
+  "dataset_description": "Observational Earth environmental measurements spanning 1984‑2023, containing 288 records in a single table.",
+  "runtime_seconds": 57.279,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/972178/dictionary.json"
+}

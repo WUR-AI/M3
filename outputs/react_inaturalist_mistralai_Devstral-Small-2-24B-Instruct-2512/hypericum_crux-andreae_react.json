@@ -1,0 +1,59 @@
+{
+  "csv": "hypericum_crux-andreae.csv",
+  "dataset_id": "hypericum_crux-andreae",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "df65c7d977a649ec4f147c4fd9c380bea381f08e3133104e30fb277578e74cfb",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2830,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 26.179852,
+      "min_lon": -95.888703,
+      "max_lat": 39.959616,
+      "max_lon": -74.217163
+    },
+    "temporalCoverage": {
+      "from": "2001-08-04",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "hypericum_crux-andreae"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "hypericum_crux-andreae",
+        "resource": "hypericum_crux-andreae"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "hypericum_crux-andreae",
+        "resource": "hypericum_crux-andreae",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "hypericum_crux-andreae",
+        "resource": "hypericum_crux-andreae",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 10.153,
+  "status": "ok"
+}

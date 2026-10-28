@@ -1,0 +1,46 @@
+{
+  "dataset_id": "959885",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959885.csv",
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:37:42.280874+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine sediment porewater chemistry from Azores deep-sea core M186_54-1GC",
+    "description": "Dataset containing 19 porewater samples from a single deep-sea sediment core (Station M186_54-1GC) collected during cruise event M186_54-1 in the Azores region. The core spans approximately 0.28 to 3.81 meters sediment depth at a subsea elevation of -1234 m. Measurements include major ions (Cl⁻, Na⁺, SO₄²⁻, Mg²⁺, Br⁻, Ca²⁺, Sr²⁺, K⁺, Li⁺, B, Si) in millimolar (mM), nutrients ([NO₃]⁻, [NO₂]⁻, [NH₄]⁺, [PO₄]³⁻) and trace elements (Mn, Fe, Ba) in micromolar (µM), and alkalinity (AT) in mM. All samples were collected at a single location and timestamp (2022-12-16 07:56:17 UTC), representing a vertical profile for diagenetic and redox zonation analysis.",
+    "keywords": [
+      "marine sediment",
+      "porewater chemistry",
+      "Azores",
+      "deep-sea core",
+      "nutrients",
+      "major ions",
+      "trace elements",
+      "alkalinity",
+      "redox",
+      "diagenesis",
+      "M186_54-1",
+      "M186_54-1GC"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16T07:56:17+00:00",
+      "to": "2022-12-16T07:56:17+00:00"
+    },
+    "spatial": "point location at 38.74553°N, 28.56587°W; vertical resolution defined by 19 discrete sediment depth intervals from 0.28 m to 3.81 m",
+    "temporal": "single point in time (2022-12-16 07:56:17 UTC); second-level precision"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959885_33702b14087d44358273baa4f8f24e9e.jsonl",
+  "runtime_seconds": 137.51
+}

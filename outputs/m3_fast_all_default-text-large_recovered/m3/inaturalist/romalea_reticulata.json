@@ -1,0 +1,29 @@
+{
+  "dataset_id": "romalea_reticulata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/romalea_reticulata.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:45:58.920946+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 9.334171,
+      "min_lon": -90.29288,
+      "max_lat": 17.247216,
+      "max_lon": -82.269193
+    },
+    "temporalCoverage": {
+      "from": "1992-08-10T12:14:00Z",
+      "to": "2026-06-08T15:11:03Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/romalea_reticulata_25f5cbfc69914b05a87e34c3263c6f80.jsonl",
+  "runtime_seconds": 77.04,
+  "recovered_from_trace": true,
+  "source_sha256": "45739faacb79e10e4e304f82fe1d6207a18745899930124e90c96de7b495effc"
+}

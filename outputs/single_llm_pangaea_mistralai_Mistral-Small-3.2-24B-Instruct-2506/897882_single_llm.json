@@ -1,0 +1,42 @@
+{
+  "csv": "897882.csv",
+  "dataset_id": "897882",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "contract_sha256": "f90f83a8094b368a4418ad134bb6d18c086f2fa0346a80f8cdc1cea2d60fd91b",
+  "prompt_tokens": 7434,
+  "metadata": {
+    "name": "897882",
+    "description": "This dataset contains various biological and environmental measurements related to E. fimbriata, including oocyte diameter, volume, lipid and protein content, calorific value, and elemental ratios (Ba/Ca, Sr/Ca, Zn/Ca). The data is collected from different locations (Foundiougne, Djifer, Joal) over several months in 2014.",
+    "keywords": [
+      "E. fimbriata",
+      "oocyte",
+      "biological measurements",
+      "environmental data",
+      "Foundiougne",
+      "Djifer",
+      "Joal",
+      "Senegal"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-01-01",
+      "to": "2014-10-01"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 11.525,
+  "status": "ok"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "967852.csv",
+  "dataset_id": "967852",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 19,
+  "n_columns": 16,
+  "description": "Earth and environmental science data with 19 samples, mineral composition, and geographic coordinates.",
+  "dataset_description": "Earth and environmental science dataset with 967,852 tables, 19 rows each, no time coverage.",
+  "runtime_seconds": 10.054,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/967852/dictionary.json"
+}

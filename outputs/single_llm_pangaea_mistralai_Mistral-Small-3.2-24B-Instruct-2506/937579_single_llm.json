@@ -1,0 +1,42 @@
+{
+  "csv": "937579.csv",
+  "dataset_id": "937579",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "156fa955ff4d43d3d0a0f15b5f40e346e65b3ba52e0f21a776a715bde33d718e",
+  "contract_sha256": "fa078f4876ed390b51a8f261c68b26566c46265aaced5c16a281601bc0dceeba",
+  "prompt_tokens": 10467,
+  "metadata": {
+    "name": "NunaWP4Mackenzie19",
+    "description": "This dataset contains isotopic data from various stations during the NunaWP4Mackenzie19 expedition. The data includes measurements of δ18O, δD, and d xs at different latitudes, longitudes, and depths.",
+    "keywords": [
+      "NunaWP4Mackenzie19",
+      "isotopic data",
+      "δ18O",
+      "δD",
+      "d xs",
+      "expedition",
+      "Arctic",
+      "hydrography"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20",
+      "to": "2019-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 11.238,
+  "status": "ok"
+}

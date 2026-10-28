@@ -1,0 +1,114 @@
+{
+  "csv": "euplectes_progne.csv",
+  "dataset_id": "euplectes_progne",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "cbd2979bba5b8ef91369550ea4c153241bdbe260ea7e0930163c4b5f21a3a243",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5874,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -33.757769,
+      "min_lon": 19.31326,
+      "max_lat": 0.610585,
+      "max_lon": 37.090836
+    },
+    "temporalCoverage": {
+      "from": "1986-12-24",
+      "to": "2026-05-28"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne",
+        "column": "eventDate"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne",
+        "column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "euplectes_progne",
+        "resource": "euplectes_progne",
+        "column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 28.619,
+  "status": "ok"
+}

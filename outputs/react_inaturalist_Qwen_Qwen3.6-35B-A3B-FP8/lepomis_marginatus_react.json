@@ -1,0 +1,72 @@
+{
+  "csv": "lepomis_marginatus.csv",
+  "dataset_id": "lepomis_marginatus",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "201489860b58ed8160622c29ab2dedc2a01399f31af50d749ed840efe18b86a8",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3893,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.426387,
+      "min_lon": -96.438837,
+      "max_lat": 37.197585,
+      "max_lon": -76.849875
+    },
+    "temporalCoverage": {
+      "from": "1992-03-15T12:00:00+00:00",
+      "to": "2026-06-13T14:32:44+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "lepomis_marginatus"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "lepomis_marginatus",
+        "resource": "lepomis_marginatus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lepomis_marginatus",
+        "resource": "lepomis_marginatus",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "lepomis_marginatus",
+        "resource": "lepomis_marginatus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "lepomis_marginatus",
+        "resource": "lepomis_marginatus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "lepomis_marginatus"
+      }
+    }
+  ],
+  "runtime_seconds": 7.873,
+  "status": "ok"
+}

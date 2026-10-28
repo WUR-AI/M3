@@ -1,0 +1,107 @@
+{
+  "csv": "wisteriopsis_reticulata.csv",
+  "dataset_id": "wisteriopsis_reticulata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "7abeb8e2499bdb8b04c240f0f39e9a8da4f95c340f3701405ef6635e4048ff40",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5899,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 21.909958,
+      "min_lon": -97.797128,
+      "max_lat": 34.7332,
+      "max_lon": 122.077416
+    },
+    "temporalCoverage": {
+      "from": "2004-07-17",
+      "to": "2026-06-10"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "wisteriopsis_reticulata",
+        "resource": "wisteriopsis_reticulata",
+        "time_column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 24.535,
+  "status": "ok"
+}

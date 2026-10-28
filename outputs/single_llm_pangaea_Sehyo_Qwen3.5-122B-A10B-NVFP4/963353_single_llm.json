@@ -1,0 +1,40 @@
+{
+  "csv": "963353.csv",
+  "dataset_id": "963353",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d3518df69c24bf623efa16940fd790900b0a2d9177bc8d03033bd76598a0b5dd",
+  "contract_sha256": "97d17b91befd56446228ff386d87789306b2d70f39ab9d531181aba3a7715948",
+  "prompt_tokens": 3601,
+  "metadata": {
+    "name": "NM01_04_S01 Ice and Snow Density and Depth Measurements",
+    "description": "Dataset containing measurements of ice/snow depth, ice density, and descriptive depth for samples collected at a single location on 2004-12-29. The data includes sample identifiers, depth intervals, and associated image filenames.",
+    "keywords": [
+      "ice",
+      "snow",
+      "density",
+      "depth",
+      "polar",
+      "NM01_04_S01"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65491,
+      "min_lon": -8.25491,
+      "max_lat": -70.65491,
+      "max_lon": -8.25491
+    },
+    "temporalCoverage": {
+      "from": "2004-12-29",
+      "to": "2004-12-29"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.896,
+  "status": "ok"
+}

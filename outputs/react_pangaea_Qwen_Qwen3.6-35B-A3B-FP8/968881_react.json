@@ -1,0 +1,88 @@
+{
+  "csv": "968881.csv",
+  "dataset_id": "968881",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a5f4883152b119b5e65cbc0e9ef4eecb1cdd0ad4f95d8a3cf836b7d7c1f68b95",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4563,
+  "metadata": {
+    "name": "DML 2021/22 Snow Density and Radar Profile Measurements",
+    "description": "Dataset containing 578 records of snow density measurements at various depths, along with radar reflection profiles and snow property measurements (ice/snow depth, top and bottom depths) collected during the DML21/22 campaign in Dronning Maud Land, Antarctica.",
+    "keywords": [
+      "snow density",
+      "radar profiles",
+      "ice/snow depth",
+      "Dronning Maud Land",
+      "Antarctica",
+      "polar research"
+    ],
+    "spatialCoverage": {
+      "min_lat": -73.4254031,
+      "min_lon": -14.5274876,
+      "max_lat": -72.8567119,
+      "max_lon": -12.014326
+    },
+    "temporalCoverage": {
+      "from": "2021-12-10",
+      "to": "2022-01-08"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "968881"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "field": "Event",
+        "limit": 30
+      }
+    }
+  ],
+  "runtime_seconds": 17.647,
+  "status": "ok"
+}

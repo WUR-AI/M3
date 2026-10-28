@@ -1,0 +1,42 @@
+{
+  "csv": "972178.csv",
+  "dataset_id": "972178",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "contract_sha256": "61095b83b10de9f803e8a684ca68b0c01f64d25de524ddf2ac7f91e2c91d30a8",
+  "prompt_tokens": 22432,
+  "metadata": {
+    "name": "ESIS_Aalen",
+    "description": "This dataset contains various types of imagery and shapefiles for the area of Aalen, Germany, spanning from 1984 to 2023. The data includes 6 band color composites, vegetation indices, metabolism indices, and shapefiles with attribute and projection information.",
+    "keywords": [
+      "Aalen",
+      "Germany",
+      "imagery",
+      "vegetation index",
+      "metabolism index",
+      "shapefiles",
+      "remote sensing",
+      "time series"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.79899472,
+      "min_lon": 9.998824433,
+      "max_lat": 48.79899472,
+      "max_lon": 9.998824433
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 15.175,
+  "status": "ok"
+}

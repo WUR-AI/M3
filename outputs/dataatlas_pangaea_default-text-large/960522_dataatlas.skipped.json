@@ -1,0 +1,12 @@
+{
+  "status": "skipped",
+  "reason": "timeout",
+  "csv": "960522.csv",
+  "dataset_id": "960522",
+  "method": "DataAtlas",
+  "provider": "surf",
+  "model": "default-text-large",
+  "timeout_seconds": 600,
+  "runtime_seconds": 600.136,
+  "message": "DataAtlas exceeded 600s on 960522.csv"
+}

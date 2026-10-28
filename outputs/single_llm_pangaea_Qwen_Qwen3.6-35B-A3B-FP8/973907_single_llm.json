@@ -1,0 +1,39 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "8c0878b89851ad098ac08623d6d0fcc39bfc58509c7da063d5c7790148cd9dc8",
+  "prompt_tokens": 17690,
+  "metadata": {
+    "name": "P-wave velocity and acoustic properties from core MSM44_362-1",
+    "description": "Measurements of P-wave travel time, P-wave velocity (Vp-a), and acoustic grain density (AGR) from sediment core MSM44_362-1, including depth, section, and core diameter deviation data.",
+    "keywords": [
+      "P-wave velocity",
+      "acoustic grain density",
+      "sediment core",
+      "MSM44_362-1",
+      "geophysics"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12",
+      "to": "2015-07-12"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.67,
+  "status": "ok"
+}

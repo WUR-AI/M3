@@ -1,0 +1,93 @@
+{
+  "csv": "931282.csv",
+  "dataset_id": "931282",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 2591,
+  "metadata": {
+    "name": "931282",
+    "description": "Dataset containing sensor data with binary files, event information, and geographic coordinates.",
+    "keywords": [
+      "sensor",
+      "binary",
+      "event",
+      "latitude",
+      "longitude",
+      "elevation",
+      "date/time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11",
+      "to": "2020-03-11"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "931282"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 13.792,
+  "status": "ok"
+}

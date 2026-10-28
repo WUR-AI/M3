@@ -1,0 +1,44 @@
+{
+  "dataset_id": "988976",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/988976.csv",
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:09:34.504570+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Paleoceanographic diatom assemblage from sediment core AMK75-6150",
+    "description": "High-resolution diatom abundance and ecological group data from a deep-sea sediment core (AMK75-6150) located at 74.78°N, 8.44°E, covering a depth interval of 0.005m to 0.305m and a sediment age range of approximately 0.06 to 2.85 ka. The dataset includes total diatom counts, warm/cold/ice-neritic/sea ice/sublittoral/freshwater/fossil ecological group percentages, and abundances of 26 specific diatom taxa, dominated by C. radiatus and T. nitzschioides, indicating a warm-water dominated assemblage despite the high-latitude location.",
+    "keywords": [
+      "paleoceanography",
+      "diatoms",
+      "sediment core",
+      "AMK75-6150",
+      "Arctic",
+      "high latitude",
+      "C. radiatus",
+      "T. nitzschioides",
+      "warm-water assemblage",
+      "climate proxy"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": {
+      "from": "null",
+      "to": "null"
+    },
+    "spatial": "Point location (single deep-sea core site)",
+    "temporal": "null"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/988976_85219ae6f3094794917492aa103865db.jsonl",
+  "runtime_seconds": 506.26
+}

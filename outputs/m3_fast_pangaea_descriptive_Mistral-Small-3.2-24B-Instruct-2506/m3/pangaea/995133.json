@@ -1,0 +1,33 @@
+{
+  "dataset_id": "995133",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995133.csv",
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T20:59:21.263045+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Baltic Sea Macoma balthica Shell Length and Frequency Data",
+    "description": "Dataset containing measurements of Macoma balthica shell length and frequency from the Baltic Sea, collected during the EMB320 expedition in June 2023 at Rönnebank, including Marine Protected Areas and Reference areas.",
+    "keywords": [
+      "Baltic Sea",
+      "Macoma balthica",
+      "shell length",
+      "frequency",
+      "marine biology",
+      "ecology",
+      "June 2023",
+      "Rönnebank",
+      "Marine Protected Area",
+      "Reference area",
+      "EMB320"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995133_f6e2a0cd4bc149309585c0d813ccdd99.jsonl",
+  "runtime_seconds": 386.85
+}

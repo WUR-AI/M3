@@ -1,0 +1,66 @@
+{
+  "csv": "luridiblatta_trivittata.csv",
+  "dataset_id": "luridiblatta_trivittata",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e7e05ed62f883f5d399eec7e0640ff26ed43608e869a227bfc075accc91ec6bb",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3408,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.935157,
+      "min_lon": -124.151688,
+      "max_lat": 43.710541,
+      "max_lon": 34.814256
+    },
+    "temporalCoverage": {
+      "from": "2013-06-27T17:23:23+00:00",
+      "to": "2026-06-07T10:58:15+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "luridiblatta_trivittata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.26,
+  "status": "ok"
+}

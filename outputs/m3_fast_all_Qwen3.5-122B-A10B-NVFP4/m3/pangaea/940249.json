@@ -1,0 +1,44 @@
+{
+  "dataset_id": "940249",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/940249.csv",
+  "source_sha256": "ffa4a37e09f9eea211d093f3922c021eba2066b56fa4d80fea1d68ec7cf9c123",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:07:06.732932+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "WDC06A Ice Core Depth Profile: Isotopic and Gas Age Measurements",
+    "description": "A vertical depth profile dataset from the WDC06A ice core in West Antarctica, containing 32 records of isotopic measurements (δ18O, Δ36) and gas age data collected at a single fixed location on 2006-12-09. The data spans depths from approximately 2450m to 2555m, representing a stratigraphic snapshot of paleoclimate conditions.",
+    "keywords": [
+      "ice core",
+      "WDC06A",
+      "paleoclimate",
+      "isotopes",
+      "δ18O",
+      "Δ36",
+      "gas age",
+      "depth profile",
+      "Antarctica",
+      "stratigraphy"
+    ],
+    "spatialCoverage": {
+      "min_lat": -79.46763,
+      "min_lon": -112.08648,
+      "max_lat": -79.46763,
+      "max_lon": -112.08648
+    },
+    "temporalCoverage": {
+      "from": "2006-12-09T00:00:00+00:00",
+      "to": "2006-12-09T00:00:00+00:00"
+    },
+    "spatial": "Single point location (fixed core site)",
+    "temporal": "Single day snapshot (depth profile represents time via depth)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/940249_d4dca0ce66b1432b934e611c2b7be9a6.jsonl",
+  "runtime_seconds": 136.5
+}

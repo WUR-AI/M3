@@ -1,0 +1,43 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "contract_sha256": "1a3c3f7cc0a85bbe7e407200ae8e551872da67e1d9f49613226f4177974a4fec",
+  "prompt_tokens": 9503,
+  "metadata": {
+    "name": "Preserved fish specimens from Arctic expeditions PS80, PS92, PS106, and PS122",
+    "description": "Dataset containing biological measurements and sampling details for preserved fish specimens collected during multiple Arctic expeditions (PS80, PS92, PS106, PS122). Data includes specimen IDs, collection dates, geographic coordinates (latitude/longitude), depth, and morphological metrics such as total length, standard length, weight, sex, and condition index.",
+    "keywords": [
+      "fish",
+      "Arctic",
+      "specimens",
+      "morphometrics",
+      "biodiversity",
+      "PS80",
+      "PS92",
+      "PS106",
+      "PS122"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 89.143898,
+      "max_lon": 130.863
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2020-09-19"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.07,
+  "status": "ok"
+}

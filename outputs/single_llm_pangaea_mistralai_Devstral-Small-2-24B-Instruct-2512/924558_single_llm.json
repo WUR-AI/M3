@@ -1,0 +1,41 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "contract_sha256": "a225ed0bf169fdf669d9450de013528050bbceb364b70f4a415bb6d3a7f4eb77",
+  "prompt_tokens": 25573,
+  "metadata": {
+    "name": "Mytilus galloprovincialis development under CO2 conditions",
+    "description": "Dataset containing laboratory observations of Mytilus galloprovincialis (mollusk) development stages under control and high CO2 conditions at different time points. Includes measurements of various chemical parameters and developmental percentages.",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "CO2",
+      "development",
+      "laboratory",
+      "ocean acidification",
+      "marine biology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": {
+      "from": "1942-01-01",
+      "to": "1956-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 8.707,
+  "status": "ok"
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "hellula_rogatalis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/hellula_rogatalis.csv",
+  "source_sha256": "095adc5831b9a4bc58e4116789902cee37cd1285cecdd2ddfd7037b7adf8fdf6",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T04:54:43.324381+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 18.903435,
+      "min_lon": -123.681117,
+      "max_lat": 42.633347,
+      "max_lon": -9.662854
+    },
+    "temporalCoverage": {
+      "from": "2002-09-02T00:00:00+00:00",
+      "to": "2026-06-11T21:39:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/hellula_rogatalis_6895bb0422e64c519c1f499567c4b767.jsonl",
+  "runtime_seconds": 124.23
+}

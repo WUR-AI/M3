@@ -1,0 +1,66 @@
+{
+  "csv": "prasinocyma_semicrocea.csv",
+  "dataset_id": "prasinocyma_semicrocea",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "44c1bf7f8d6e847e922a8f123482ba418df3f3764ce6dece8a789090849ff898",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 4379,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -43.390418,
+      "min_lon": 115.027269,
+      "max_lat": -17.207478,
+      "max_lon": 153.377214
+    },
+    "temporalCoverage": {
+      "from": "2007-04-24T10:28:47+00:00",
+      "to": "2026-06-14T22:01:50+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "prasinocyma_semicrocea"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "prasinocyma_semicrocea",
+        "resource": "prasinocyma_semicrocea"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "prasinocyma_semicrocea",
+        "resource": "prasinocyma_semicrocea",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "prasinocyma_semicrocea",
+        "resource": "prasinocyma_semicrocea"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "prasinocyma_semicrocea",
+        "resource": "prasinocyma_semicrocea",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 13.977,
+  "status": "ok"
+}

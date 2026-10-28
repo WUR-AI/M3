@@ -1,0 +1,16 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 249,
+  "n_columns": 12,
+  "description": "Earth/environmental science data from 2015-07-12, 249 rows, 11 columns.",
+  "dataset_description": "Single-table dataset with 249 rows, covering Earth/environmental science on 2015-07-12.",
+  "runtime_seconds": 9.377,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/973907/dictionary.json"
+}

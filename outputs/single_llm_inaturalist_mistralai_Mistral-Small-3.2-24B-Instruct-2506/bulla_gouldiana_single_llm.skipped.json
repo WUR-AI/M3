@@ -1,0 +1,15 @@
+{
+  "csv": "bulla_gouldiana.csv",
+  "dataset_id": "bulla_gouldiana",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "13e51a020b12d9206106b5e65236fa5522099fc00e87a4235cb0faf5570e152b",
+  "contract_sha256": "0ce81b1712f3edc18e07b3232f2198ab5b84bde98a66aab9fbdfb5383eaa2121",
+  "prompt_tokens": 303906,
+  "status": "skipped",
+  "reason": "context_window"
+}

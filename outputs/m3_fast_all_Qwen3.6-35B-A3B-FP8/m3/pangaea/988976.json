@@ -1,0 +1,40 @@
+{
+  "dataset_id": "988976",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/988976.csv",
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:47:40.092621+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Sediment Core Diatom Abundance and Species Composition (AMK75-6150)",
+    "description": "Paleoceanographic dataset from a single sediment core (AMK75-6150) in the Arctic Fram Strait (74.78°N, 8.44°E). Contains 31 stratigraphic samples with total diatom abundance, ecological group percentages (warm, cold, ice-neritic, sea ice, sublittoral, freshwater, fossil), and relative abundance of 26 individual diatom species. Temporal context is provided by sediment depth and estimated age in thousands of years; calendar dates are not available.",
+    "keywords": [
+      "diatoms",
+      "paleoceanography",
+      "sediment core",
+      "Arctic",
+      "Fram Strait",
+      "species composition",
+      "abundance",
+      "ecological groups",
+      "AMK75-6150"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": null,
+    "spatial": "Point location (single core site)",
+    "temporal": "Stratigraphic (sediment depth and estimated age in kyr)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/988976_61142fabfb224a628671182ab1abfc61.jsonl",
+  "runtime_seconds": 296.15
+}

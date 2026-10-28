@@ -1,0 +1,43 @@
+{
+  "dataset_id": "944039",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/944039.csv",
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:14:03.069048+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Core Geochemistry from SO268 Expedition Station SO268_074MUC",
+    "description": "Depth-resolved geochemical analysis of marine sediment core 18 from the SO268 expedition (2019), collected at a single deep-ocean site in the eastern Pacific Ocean (14.135°N, 125.864°W, 4518 m depth). The dataset contains primary and secondary concentration measurements for 17 elements (Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) along with enrichment factors, across 9 sediment depth intervals (0.06–0.23 m).",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "sediment core",
+      "elemental concentrations",
+      "enrichment factors",
+      "SO268 expedition",
+      "Pacific Ocean",
+      "deep-sea",
+      "marine geoscience"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20T02:30:12+00:00",
+      "to": "2019-03-20T02:30:12+00:00"
+    },
+    "spatial": "point location (14.13508333°N, 125.86365°W)",
+    "temporal": "single point in time (2019-03-20T02:30:12Z)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/944039_d17207eec1df4b2da698f6d8661ca485.jsonl",
+  "runtime_seconds": 194.99
+}

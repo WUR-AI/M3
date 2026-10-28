@@ -1,0 +1,61 @@
+{
+  "dataset_id": "944025",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/944025.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:12:09.017463+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical sediment‑core data from German collector trial (pre‑impact)",
+    "description": "Elemental concentrations (ppm) and relative errors (%) for 7 depth‑specific sediment core samples (depth 0.06–0.23 m) collected at Station SO268_043MUC. Each record includes latitude, longitude, elevation, and a timestamp (2019‑03‑10 10:48:26 UTC).",
+    "keywords": [
+      "geochemistry",
+      "sediment core",
+      "trace elements",
+      "major elements",
+      "German collector trial",
+      "pre‑impact",
+      "Al",
+      "Ba",
+      "Ca2+",
+      "Cr",
+      "Cu",
+      "Fe",
+      "K+",
+      "La",
+      "Li",
+      "Mg2+",
+      "Mn",
+      "Na+",
+      "Ni",
+      "P",
+      "Sr",
+      "Ti",
+      "depth",
+      "latitude",
+      "longitude",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.93056667,
+      "min_lon": -117.0224333,
+      "max_lat": 11.93056667,
+      "max_lon": -117.0224333
+    },
+    "temporalCoverage": {
+      "from": "2019-03-10T10:48:26+00:00",
+      "to": "2019-03-10T10:48:26+00:00"
+    },
+    "spatial": "point",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/944025_e68a4636a15d4dd98d4a25fdca2e66fc.jsonl",
+  "runtime_seconds": 311.69,
+  "recovered_from_trace": true,
+  "source_sha256": "a530a26bc0e4fe56a3fdc94260921220a39b3ec5b60be156d609cd00803f6e1c"
+}

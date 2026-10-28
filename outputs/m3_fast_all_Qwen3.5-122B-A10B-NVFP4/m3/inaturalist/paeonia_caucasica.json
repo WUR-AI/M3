@@ -1,0 +1,28 @@
+{
+  "dataset_id": "paeonia_caucasica",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/paeonia_caucasica.csv",
+  "source_sha256": "87f39c45fb88b07fd6d3b969bda5d7e5c340e69f7d92cea084b16e2adafe4fee",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:15:21.372823+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 41.520111,
+      "min_lon": 37.364618,
+      "max_lat": 55.836338,
+      "max_lon": 45.757789
+    },
+    "temporalCoverage": {
+      "from": "2000-05-13T00:00:00+00:00",
+      "to": "2026-06-10T12:58:31+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/paeonia_caucasica_609513c5e1f642e08005837ff37eb77f.jsonl",
+  "runtime_seconds": 60.68
+}

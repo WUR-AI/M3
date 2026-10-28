@@ -19,6 +19,7 @@ class PlayerResult(TypedDict):
     player_name: str
     task: str
     tool_results: Dict[str, Any]
+    tool_trace: List[Dict[str, Any]]
     analysis: str
     success: bool
 
@@ -57,6 +58,7 @@ class StepExecutionState(TypedDict):
     workspace: Dict[str, Any]          # Artifacts from previous steps
     metadata_standard: str             # The metadata standard to follow
     tool_tracer: Optional[Any]          # Shared tool trace for this plan execution
+    recorder: Optional[Any]             # Durable run trace
     
     # --- Player Configuration ---
     players: List[Any]                 # List of Player instances for this step
@@ -68,6 +70,7 @@ class StepExecutionState(TypedDict):
     
     # --- Dynamic State ---
     player_results: List[PlayerResult] # Results from parallel execution
+    agent_messages: Dict[str, List[Any]] # Each agent's uninterrupted conversation
     debate_log: List[DebateEntry]      # Log of debate entries
     
     # --- Structured Output ---

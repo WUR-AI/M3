@@ -1,0 +1,16 @@
+{
+  "csv": "913868.csv",
+  "dataset_id": "913868",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 8754,
+  "n_columns": 72,
+  "description": "Hourly aerosol size distribution measurements at Neumayer station, 2019‑2020, with height, location, and event metadata.",
+  "dataset_description": "Environmental measurements from 2019‑2020, 8754 records in a single Earth science table.",
+  "runtime_seconds": 395.642,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/913868/dictionary.json"
+}

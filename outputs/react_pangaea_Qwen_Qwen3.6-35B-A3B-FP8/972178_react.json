@@ -1,0 +1,113 @@
+{
+  "csv": "972178.csv",
+  "dataset_id": "972178",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 6008,
+  "metadata": {
+    "name": "Aalen, Germany - Satellite Imagery and Vegetation Indices (1984-2023)",
+    "description": "Satellite imagery data including 6-band color composites and vegetation/metabolism indices for Aalen, Germany, along with associated shapefiles. The dataset spans from 1984 to 2023 with observations primarily in May-August and July-October periods.",
+    "keywords": [
+      "Aalen",
+      "Germany",
+      "satellite imagery",
+      "vegetation index",
+      "metabolism index",
+      "GeoTIFF",
+      "shapefile",
+      "remote sensing"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.79899472,
+      "min_lon": 9.998824433,
+      "max_lat": 48.79899472,
+      "max_lon": 9.998824433
+    },
+    "temporalCoverage": {
+      "from": "1984-08-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular annual"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "972178"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "time_column": "Date/time start"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "time_column": "Date/time end"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "field": "Content",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "field": "File type",
+        "limit": 20
+      }
+    }
+  ],
+  "runtime_seconds": 19.795,
+  "status": "ok"
+}

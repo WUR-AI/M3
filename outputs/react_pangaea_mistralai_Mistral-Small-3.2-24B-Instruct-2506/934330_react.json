@@ -1,0 +1,84 @@
+{
+  "csv": "934330.csv",
+  "dataset_id": "934330",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3306,
+  "metadata": {
+    "name": "934330",
+    "description": "The dataset contains information about sediment samples, including depth, sample thickness, age dating, and location details. It provides data on various parameters such as age, age uncertainty, dated material, lab labels, comments, events, latitude, longitude, elevation, and date/time.",
+    "keywords": [
+      "sediment",
+      "age dating",
+      "location",
+      "depth",
+      "sample thickness"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00+00:00",
+      "to": "1970-01-01T00:00:00.000000004+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "934330"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "time_column": "Age dated"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 27.812,
+  "status": "ok"
+}

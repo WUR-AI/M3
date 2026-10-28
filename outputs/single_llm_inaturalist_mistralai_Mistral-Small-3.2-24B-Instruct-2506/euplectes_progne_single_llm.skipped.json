@@ -1,0 +1,15 @@
+{
+  "csv": "euplectes_progne.csv",
+  "dataset_id": "euplectes_progne",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "cbd2979bba5b8ef91369550ea4c153241bdbe260ea7e0930163c4b5f21a3a243",
+  "contract_sha256": "428dfb43c9fdcf5043f0b256cf60552516e1d6729c70568a2b0fb8ed46d96bcd",
+  "prompt_tokens": 320189,
+  "status": "skipped",
+  "reason": "context_window"
+}

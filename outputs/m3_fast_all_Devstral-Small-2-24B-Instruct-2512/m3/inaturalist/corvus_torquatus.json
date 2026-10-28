@@ -1,0 +1,28 @@
+{
+  "dataset_id": "corvus_torquatus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/corvus_torquatus.csv",
+  "source_sha256": "97ab93f16ef676b37fd174bca510e5108072df15b91d63c266e4aaff6741eafa",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T04:22:30.535260+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 22.200002,
+      "min_lon": 94.009522,
+      "max_lat": 43.26624,
+      "max_lon": 128.874965
+    },
+    "temporalCoverage": {
+      "from": "2003-02-09T07:42:00+00:00",
+      "to": "2026-06-05T09:25:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/corvus_torquatus_969194dcc7074fa7805c6d4b62da2a2a.jsonl",
+  "runtime_seconds": 117.5
+}

@@ -1,0 +1,42 @@
+{
+  "csv": "944025.csv",
+  "dataset_id": "944025",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "a530a26bc0e4fe56a3fdc94260921220a39b3ec5b60be156d609cd00803f6e1c",
+  "contract_sha256": "c6f02ac8ca5cbb2da7ba4289c80ea331d33a1f2d3719b2b83b54bab9be05a2e7",
+  "prompt_tokens": 4165,
+  "metadata": {
+    "name": "German collector trial pre-impact dataset",
+    "description": "Chemical element concentration measurements from sediment cores collected at station SO268_043MUC (Latitude 11.93056667, Longitude -117.0224333) during a pre‑impact German collector trial. Each row includes depth, elemental concentrations (e.g., Al, Ba, Ca, Fe, etc.), elevation, and the acquisition timestamp.",
+    "keywords": [
+      "German collector",
+      "pre-impact",
+      "sediment",
+      "chemical analysis",
+      "element concentrations",
+      "core",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.93056667,
+      "min_lon": -117.0224333,
+      "max_lat": 11.93056667,
+      "max_lon": -117.0224333
+    },
+    "temporalCoverage": {
+      "from": "2019-03-10",
+      "to": "2019-03-10"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.31,
+  "status": "ok"
+}

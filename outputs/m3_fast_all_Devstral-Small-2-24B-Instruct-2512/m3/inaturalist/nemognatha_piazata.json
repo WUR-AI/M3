@@ -1,0 +1,15 @@
+{
+  "dataset_id": "nemognatha_piazata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/nemognatha_piazata.csv",
+  "source_sha256": "07e210698659a6a3aed8a882bb3dbb2a24c71b67eee91b06f79d6e96fa8d37be",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-19T10:34:05.242636+00:00",
+  "status": "failed",
+  "error": "RuntimeError: Planning failed",
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/nemognatha_piazata_50087b8bd5ba44cd971e232cce1b8649.jsonl",
+  "runtime_seconds": 542.02
+}

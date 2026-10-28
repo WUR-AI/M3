@@ -1,0 +1,28 @@
+{
+  "dataset_id": "erica_canariensis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/erica_canariensis.csv",
+  "source_sha256": "392218ab3a231973f9b6cb028d95d0c84d68be1bc54109f712aa74aaeed9201c",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:29:34.472422+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 27.731097,
+      "min_lon": -18.125358,
+      "max_lat": 32.831942,
+      "max_lon": -15.508269
+    },
+    "temporalCoverage": {
+      "from": "1982-04-10T00:00:00+00:00",
+      "to": "2026-06-07T10:42:03+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/erica_canariensis_801c20cfab0b43929a60a109d2a5917a.jsonl",
+  "runtime_seconds": 59.79
+}

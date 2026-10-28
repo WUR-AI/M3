@@ -1,0 +1,15 @@
+{
+  "csv": "myripristis_jacobus.csv",
+  "dataset_id": "myripristis_jacobus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "250b641ea5b52d323b215a4a995d691c02abe17d968b24c2d19418b638e70ffb",
+  "contract_sha256": "b940eae0237fd73bdebbc66a1090ac39426f6da3df1394ee51d629cef41c43d1",
+  "prompt_tokens": 322602,
+  "status": "skipped",
+  "reason": "context_window"
+}

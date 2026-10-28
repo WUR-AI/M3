@@ -1,0 +1,16 @@
+{
+  "csv": "995327.csv",
+  "dataset_id": "995327",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Earth and environmental science",
+  "n_rows": 5,
+  "n_columns": 32,
+  "description": "Five-row sediment samples with mineralogical data, coordinates, and dates from 1994.",
+  "dataset_description": "Single-day 1994 Earth science dataset containing 995,327 tables with five rows each.",
+  "runtime_seconds": 12.788,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Qwen_Qwen3.6-35B-A3B-FP8/raw/995327/dictionary.json"
+}

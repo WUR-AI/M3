@@ -1,0 +1,46 @@
+{
+  "dataset_id": "978983",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/978983.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:35:06.831056+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment mineral composition – 386-M0095B (2021-05-30)",
+    "description": "Dataset of 14 sediment samples collected at a single location (latitude 36.89168333, longitude 143.4078833, elevation -7697 m) on 2021-05-30. Each record includes unique identifiers (Sample label, Prop IGSN), sediment depth, and weight‑percent mineralogical and chemical components such as quartz, plagioclase, chlorite, NaCl, etc.",
+    "keywords": [
+      "sediment",
+      "mineral composition",
+      "quartz",
+      "plagioclase",
+      "chlorite",
+      "NaCl",
+      "depth",
+      "geochemistry",
+      "IGSN",
+      "sample label",
+      "Japan"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "max_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30T00:00:00+00:00",
+      "to": "2021-05-30T00:00:00+00:00"
+    },
+    "spatial": "point (no spatial variation)",
+    "temporal": "date (effective 1‑day resolution)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/978983_60b209959db74d7cab1f7b734dbc3aa6.jsonl",
+  "runtime_seconds": 208.51,
+  "recovered_from_trace": true,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59"
+}

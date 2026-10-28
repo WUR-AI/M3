@@ -1,0 +1,47 @@
+{
+  "dataset_id": "972178",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972178.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:39:30.274035+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Aalen Germany Remote Sensing Observations (1984‑2023)",
+    "description": "A single‑site collection of remote‑sensing observations for Aalen, Germany. The dataset contains 288 records of two types: raster entries with GeoTIFF files and associated observation start/end dates, and vector entries with Shapefile references. Each record includes the observation year, content description, file type, and constant geographic coordinates (latitude 48.79899472 N, longitude 9.998824433 E). The `Date/Time` column is a constant placeholder (always 1985‑05‑01) and is not part of the temporal coverage. Raster records span from 1984‑08‑01 to 2023‑10‑31.",
+    "keywords": [
+      "Aalen",
+      "Germany",
+      "remote sensing",
+      "raster",
+      "vector",
+      "GeoTIFF",
+      "Shapefile",
+      "multiband",
+      "color composites",
+      "multispectral",
+      "time series",
+      "environmental monitoring"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.79899472,
+      "min_lon": 9.998824433,
+      "max_lat": 48.79899472,
+      "max_lon": 9.998824433
+    },
+    "temporalCoverage": {
+      "from": "1984-08-01T00:00:00Z",
+      "to": "2023-10-31T00:00:00Z"
+    },
+    "spatial": "point‑level (single location, no variation)",
+    "temporal": "monthly (based on observation start/end windows)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972178_363efb99c84d4afda8dfa61531b867e9.jsonl",
+  "runtime_seconds": 221.17,
+  "recovered_from_trace": true,
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4"
+}

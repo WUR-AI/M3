@@ -1,0 +1,15 @@
+{
+  "csv": "colpomenia_peregrina.csv",
+  "dataset_id": "colpomenia_peregrina",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5bc906a0341b4d38c2e058aac9b7f62d331a4357a14916adb022ffde81c3305a",
+  "contract_sha256": "c10d440b6e7f090d88f58a1758b57b258fa3424c4733eeabd1b917b823ea9a9d",
+  "prompt_tokens": 325610,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "lychnosea_intermicata.csv",
+  "dataset_id": "lychnosea_intermicata",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 997,
+  "n_columns": 50,
+  "description": "Species occurrence records for Lychnosea intermicata, 2012-2026, with 997 rows and 42 columns.",
+  "dataset_description": "Species occurrence records for Lychnosea intermicata, 2012-2026, biodiversity domain.",
+  "runtime_seconds": 32.593,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/lychnosea_intermicata/dictionary.json"
+}

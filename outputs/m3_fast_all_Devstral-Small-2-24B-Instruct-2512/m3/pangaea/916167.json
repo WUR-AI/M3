@@ -1,0 +1,34 @@
+{
+  "dataset_id": "916167",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/916167.csv",
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:02:49.289020+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Katharinentalerhof_Pforzheim Dataset",
+    "description": "A dataset containing file information, geographic coordinates, and event details for the Katharinentalerhof_Pforzheim event.",
+    "keywords": [
+      "Katharinentalerhof_Pforzheim",
+      "geographic data",
+      "file metadata"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/916167_4664a14d447f467ba83688db1640a50a.jsonl",
+  "runtime_seconds": 632.82
+}

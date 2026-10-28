@@ -11,18 +11,35 @@ This module provides the PlanExecutor class that:
 Uses the unified ExecutionContext abstraction for all data access.
 """
 import logging
+import json
 from typing import Dict, Any, List, Optional, Type
 
 from pydantic import BaseModel
 
 from src.core import ToolTrace
+from src.core.run_trace import RunTraceRecorder
 from src.core.schemas import Plan, ExecutionResult, StepResult
 from src.context import ExecutionContext
 from src.players.configs import METADATA_OUTPUT_PLAYER_NAMES
 from src.standards import get_schema_for_standard
 
 from .step_executor import get_step_execution_graph, create_step_state
+from .utils import (
+    apply_verified_coverage, validate_plan_completion,
+    validate_plan_dataflow, validate_plan_tool_compatibility,
+    verified_tool_observations,
+)
 from ..topology import EXECUTION_TOPOLOGIES
+
+
+def _empty_artifact(value: Any) -> bool:
+    if value is None:
+        return True
+    if isinstance(value, str):
+        return not value.strip()
+    if isinstance(value, (dict, list, tuple, set)):
+        return len(value) == 0
+    return False
 
 
 class PlanExecutor:
@@ -35,7 +52,11 @@ class PlanExecutor:
     Uses ExecutionContext for unified data access across all source types.
     """
 
-    def __init__(self, topology_name: str = "default"):
+    def __init__(
+        self, topology_name: str = "default",
+        model_name: Optional[str] = None,
+        provider: Optional[str] = None,
+    ):
         """
         Initialize the PlanExecutor with a topology.
 
@@ -50,6 +71,8 @@ class PlanExecutor:
 
         self.topology_name = topology_name
         self.topology = EXECUTION_TOPOLOGIES[topology_name]
+        self.model_name = model_name
+        self.provider = provider
         self.step_graph = get_step_execution_graph()
         self.tool_trace = ToolTrace()
 
@@ -65,7 +88,8 @@ class PlanExecutor:
         context_key: str,
         metadata_standard: str,
         metadata_standard_name: Optional[str] = "",
-        player_pool: List[str] = [],
+        player_pool: Optional[List[str]] = None,
+        recorder: Optional[RunTraceRecorder] = None,
     ) -> ExecutionResult:
         """
         Execute the complete plan.
@@ -82,7 +106,25 @@ class PlanExecutor:
             ExecutionResult with all step results and final metadata
         """
         effective_player_pool = player_pool or self.topology["player_pool"]
+        recorder = recorder or RunTraceRecorder.create(context.name)
         self.tool_trace = ToolTrace()
+
+        plan_steps = plan.to_dict_list()
+        dataflow_ok, dataflow_error = validate_plan_dataflow(plan_steps)
+        completion_ok, completion_error = validate_plan_completion(
+            plan_steps, metadata_standard_name, context.resources
+        )
+        tools_ok, tools_error = validate_plan_tool_compatibility(
+            plan_steps, context.context_type,
+            set(effective_player_pool) | set(METADATA_OUTPUT_PLAYER_NAMES),
+        )
+        if not dataflow_ok or not completion_ok or not tools_ok:
+            reason = (
+                dataflow_error if not dataflow_ok else
+                completion_error if not completion_ok else tools_error
+            )
+            recorder.record("invalid_plan", plan=plan_steps, error=reason)
+            raise ValueError(reason)
         
         # Try to get the Pydantic schema for structured output
         output_schema: Optional[Type[BaseModel]] = None
@@ -106,6 +148,7 @@ class PlanExecutor:
             "_context_key": context_key,
             "_context_info": context.to_dict(),
             "metadata_standard": metadata_standard,  # Available as input for final synthesis step
+            "_verified_evidence": [],
         }
         step_results: List[StepResult] = []
         resource_metadata: Dict[str, Any] = {}
@@ -118,8 +161,6 @@ class PlanExecutor:
             logging.warning(f"Could not pre-load schema: {e}")
 
         # Convert plan steps to dict for processing
-        plan_steps = plan.to_dict_list()
-
         # Execute each step
         for step_index, step_dict in enumerate(plan_steps):
             target_resources = step_dict.get("target_resources", [])
@@ -135,6 +176,14 @@ class PlanExecutor:
                 logging.info(f"Target resources: {target_resources}")
             elif context.is_multi_csv:
                 logging.info("Target resources: ALL (context-level)")
+            recorder.record(
+                "step_start", step_index=step_index, task=task,
+                player=step_dict.get("player"), inputs=step_dict.get("inputs"),
+                resolved_inputs={
+                    key: workspace.get(artifact)
+                    for key, artifact in step_dict.get("inputs", {}).items()
+                }, target_resources=target_resources,
+            )
 
             try:
                 # Pass structured output schema for the final metadata generation step
@@ -162,6 +211,9 @@ class PlanExecutor:
                     player_pool=effective_player_pool,
                     output_schema=step_output_schema,
                     tool_tracer=self.tool_trace,
+                    recorder=recorder,
+                    model_name=self.model_name,
+                    provider=self.provider,
                 )
 
                 # Execute the step graph
@@ -177,7 +229,7 @@ class PlanExecutor:
                             step_index=step_index,
                             task=step_dict.get("task", ""),
                             player_role=step_dict.get("player", ""),
-                            individual_results=[],
+                            individual_results=final_step_state.get("player_results", []),
                             debate_rounds_completed=final_step_state.get(
                                 "current_debate_round", 0
                             ),
@@ -187,16 +239,34 @@ class PlanExecutor:
                             error=error_msg,
                         )
                     )
-
-                    # Continue to next step (or could choose to abort)
-                    continue
+                    recorder.record(
+                        "step_failed", step_index=step_index, error=error_msg,
+                        player_results=final_step_state.get("player_results", []),
+                        debate_log=final_step_state.get("debate_log", []),
+                    )
+                    break
 
                 # Extract results
                 produced_artifacts = final_step_state.get("produced_artifacts", {})
                 consolidated_result = final_step_state.get("consolidated_result", "")
+                if not produced_artifacts or any(
+                    name not in produced_artifacts
+                    or _empty_artifact(produced_artifacts[name])
+                    for name in step_dict["outputs"]
+                ):
+                    raise ValueError("Step did not produce its declared outputs")
 
                 # Update workspace with new artifacts
                 workspace.update(produced_artifacts)
+                observations = verified_tool_observations(
+                    final_step_state.get("player_results", []), step_index
+                )
+                if observations:
+                    workspace["_verified_evidence"].extend(observations)
+                    recorder.record(
+                        "verified_observations", step_index=step_index,
+                        observations=observations,
+                    )
 
                 # Collect per-resource metadata
                 if context.is_multi_csv and target_resources:
@@ -229,6 +299,12 @@ class PlanExecutor:
                 )
 
                 logging.info(f"Step {step_index + 1} completed successfully")
+                recorder.record(
+                    "step_end", step_index=step_index,
+                    player_results=final_step_state.get("player_results", []),
+                    debate_log=final_step_state.get("debate_log", []),
+                    artifacts=produced_artifacts,
+                )
                 logging.info(
                     f"  Artifacts produced: {list(produced_artifacts.keys())}"
                 )
@@ -253,10 +329,32 @@ class PlanExecutor:
                         error=error_msg,
                     )
                 )
+                recorder.record("step_failed", step_index=step_index, error=error_msg)
+                break
 
         # Determine overall success
         successful_steps = sum(1 for r in step_results if r.success)
-        overall_success = successful_steps == len(plan_steps)
+        final_metadata = self._extract_final_metadata(workspace)
+        metadata_error = None
+        if final_metadata is not None:
+            final_metadata, corrections = apply_verified_coverage(
+                final_metadata, workspace["_verified_evidence"], metadata_standard_name
+            )
+            if corrections:
+                workspace["metadata_output"] = final_metadata
+                recorder.record("metadata_correction", corrections=corrections)
+        if final_metadata is not None and output_schema is not None:
+            try:
+                final_metadata = output_schema.model_validate(final_metadata).model_dump(by_alias=True)
+            except Exception as exc:
+                metadata_error = f"Final metadata failed schema validation: {exc}"
+                final_metadata = None
+        if not final_metadata or not any(
+            not _empty_artifact(value) for value in final_metadata.values()
+        ):
+            metadata_error = metadata_error or "No nonempty final metadata was produced"
+            final_metadata = None
+        overall_success = successful_steps == len(plan_steps) and final_metadata is not None
 
         # Get relationships from context
         relationships = [r.to_dict() for r in context.get_relationships()]
@@ -276,12 +374,13 @@ class PlanExecutor:
             steps_completed=successful_steps,
             step_results=step_results,
             final_workspace=self._filter_workspace(workspace),
-            final_metadata=self._extract_final_metadata(workspace, context),
+            final_metadata=final_metadata,
             context_info=context.to_dict(),
             resource_metadata=resource_metadata,
             relationships=relationships,
             success=overall_success,
-            error=None if overall_success else "Some steps failed",
+            error=None if overall_success else (metadata_error or "Some steps failed"),
+            trace_path=str(recorder.path),
         )
 
     def list_tools_called(self) -> List[str]:
@@ -302,82 +401,18 @@ class PlanExecutor:
     def _extract_final_metadata(
         self,
         workspace: Dict[str, Any],
-        context: ExecutionContext,
     ) -> Optional[Dict[str, Any]]:
-        """
-        Extract the final metadata from the workspace.
-
-        If the final step produced structured output (a dict from Pydantic),
-        it will be in an artifact like 'final_metadata' or similar.
-        This method looks for that and returns it directly if found.
-
-        Args:
-            workspace: The final workspace with all artifacts
-            context: The ExecutionContext that was analyzed
-
-        Returns:
-            Structured metadata dictionary, or None if not found
-        """
-        filtered = self._filter_workspace(workspace)
-        
-        # Look for common final metadata artifact names
-        # These are typically produced by the metadata_generator player
-        final_artifact_names = [
-            "final_metadata", "metadata", "generated_metadata", 
-            "metadata_output", "final_output"
-        ]
-        
-        for name in final_artifact_names:
-            if name in filtered:
-                value = filtered[name]
-                # If it's already a dict (from structured output), return it
-                if isinstance(value, dict):
-                    logging.info(f"Found structured metadata in artifact '{name}'")
-                    return value
-        
-        # Fallback: check if any artifact is a dict that looks like metadata
-        # (has common metadata fields like 'title', 'description', etc.)
-        for key, value in filtered.items():
-            if isinstance(value, dict):
-                # Check if it looks like metadata output
-                if any(field in value for field in ['title', 'description', 'dataset', 'dataset_name']):
-                    logging.info(f"Found metadata-like structure in artifact '{key}'")
-                    return value
-        
-        # Legacy fallback: organize artifacts by resource
-        if context.is_multi_csv:
-            # Organize artifacts by resource
-            resource_artifacts: Dict[str, Dict[str, Any]] = {}
-            context_level: Dict[str, Any] = {}
-
-            for key, value in filtered.items():
-                if ":" in key:
-                    resource, artifact = key.split(":", 1)
-                    if resource not in resource_artifacts:
-                        resource_artifacts[resource] = {}
-                    resource_artifacts[resource][artifact] = value
-                else:
-                    context_level[key] = value
-
-            return {
-                "type": "multi_csv",
-                "name": context.name,
-                "context_type": context.context_type.value,
-                "resources": resource_artifacts,
-                "context_level": context_level,
-                "artifact_count": len(filtered),
-            }
-
-        # Single-resource context fallback
-        primary_resource = context.resources[0] if context.resources else None
-        return {
-            "type": "single_csv",
-            "name": context.name,
-            "context_type": context.context_type.value,
-            "resource": primary_resource,
-            "artifacts": filtered,
-            "artifact_count": len(filtered),
-        }
+        """Accept only the declared final metadata artifact, never a fallback wrapper."""
+        value = workspace.get("metadata_output")
+        if isinstance(value, dict):
+            return value
+        if isinstance(value, str):
+            try:
+                parsed = json.loads(value)
+            except json.JSONDecodeError:
+                return None
+            return parsed if isinstance(parsed, dict) else None
+        return None
 
 
 def execute_plan(

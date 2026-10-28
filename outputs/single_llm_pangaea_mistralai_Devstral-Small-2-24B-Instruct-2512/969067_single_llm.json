@@ -1,0 +1,42 @@
+{
+  "csv": "969067.csv",
+  "dataset_id": "969067",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "7f0009de0409d11e20040ec51d5d017676533d678668d8751deb28f03b0fd453",
+  "contract_sha256": "31b22dac0604abefe1e192b3f62604f1915e62e441ba9cc44837a11abb4cd827",
+  "prompt_tokens": 180587,
+  "metadata": {
+    "name": "Puchalski AWS Weather Data",
+    "description": "Daily weather observations from Puchalski AWS station including temperature, humidity, wind speed, solar radiation, and precipitation data.",
+    "keywords": [
+      "weather",
+      "meteorology",
+      "climate",
+      "temperature",
+      "humidity",
+      "wind",
+      "precipitation",
+      "solar radiation"
+    ],
+    "spatialCoverage": {
+      "min_lat": -62.1641,
+      "min_lon": -58.4701,
+      "max_lat": -62.1641,
+      "max_lon": -58.4701
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01",
+      "to": "2023-12-31"
+    },
+    "spatial": "point location",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 64.31,
+  "status": "ok"
+}

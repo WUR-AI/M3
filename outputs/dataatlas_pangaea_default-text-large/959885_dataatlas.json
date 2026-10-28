@@ -1,0 +1,16 @@
+{
+  "csv": "959885.csv",
+  "dataset_id": "959885",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 19,
+  "n_columns": 27,
+  "description": "19 sediment samples from station M18654-1GC, measuring depth, temperature, ion concentrations, and coordinates.",
+  "dataset_description": "19 Earth‑environmental observations captured at a single timestamp for scientific analysis.",
+  "runtime_seconds": 462.182,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/959885/dictionary.json"
+}

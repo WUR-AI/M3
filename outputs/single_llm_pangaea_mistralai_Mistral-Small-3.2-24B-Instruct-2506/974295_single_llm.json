@@ -1,0 +1,37 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "718278d739412e705994d1c4c4b5ec2861be8c8cb8cb0ca775d1f2e139bf8863",
+  "prompt_tokens": 5991,
+  "metadata": {
+    "name": "ANT 1997/98 Radar Profiles",
+    "description": "This dataset contains radar profiles collected during the Antarctic 1997/98 season. It includes information about the profile ID, instrument used, radar product, netCDF file size, GIS data, and image files.",
+    "keywords": [
+      "Antarctica",
+      "Radar",
+      "Profiles",
+      "EMR",
+      "1997/98",
+      "netCDF",
+      "GIS",
+      "Images"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "1997-11-01",
+      "to": "1998-02-28"
+    },
+    "spatial": "point locations",
+    "temporal": "seasonal"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 9.157,
+  "status": "ok"
+}

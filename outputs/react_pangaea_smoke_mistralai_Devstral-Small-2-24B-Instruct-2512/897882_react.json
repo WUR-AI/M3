@@ -1,0 +1,86 @@
+{
+  "csv": "897882.csv",
+  "dataset_id": "897882",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3694,
+  "metadata": {
+    "name": "897882",
+    "description": "Dataset containing biological and environmental data, including temperature, salinity, and various chemical measurements related to E. fimbriata oocytes, collected at specific geographic locations.",
+    "keywords": [
+      "biological data",
+      "environmental data",
+      "temperature",
+      "salinity",
+      "chemical measurements",
+      "E. fimbriata",
+      "oocytes"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-01-01",
+      "to": "2014-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "897882"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "897882",
+        "resource": "897882"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "897882",
+        "resource": "897882"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "897882",
+        "resource": "897882",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "897882",
+        "resource": "897882"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "897882",
+        "resource": "897882",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 282.707,
+  "status": "ok"
+}

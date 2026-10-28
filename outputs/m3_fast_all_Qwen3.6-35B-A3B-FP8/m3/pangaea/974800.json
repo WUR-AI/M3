@@ -1,0 +1,33 @@
+{
+  "dataset_id": "974800",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974800.csv",
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:32:19.690782+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory experiment on Xenoturbella umbellata pulsation rates under different treatments",
+    "description": "Dataset from a balanced laboratory experiment (60 observations across 12 tanks and 4 treatment groups) measuring the pulsation rate of the marine invertebrate Xenoturbella umbellata. The study tracks experimental conditions including tank identifiers and treatment types (e.g., Zooplankton), with Days of Exposure (DOE) ranging from 0 to 28 days. Pulsation measurements range from 22.0 to 41.33 beats per unit time, with a mean of approximately 33.91.",
+    "keywords": [
+      "Xenoturbella umbellata",
+      "pulsation rate",
+      "laboratory experiment",
+      "marine invertebrate",
+      "zooplankton",
+      "treatment effects",
+      "Days of Exposure"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974800_89326af34787423186c5d5528a616ae8.jsonl",
+  "runtime_seconds": 70.92
+}

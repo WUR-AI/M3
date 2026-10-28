@@ -1,0 +1,28 @@
+{
+  "dataset_id": "lachnagrostis_billardierei",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/lachnagrostis_billardierei.csv",
+  "source_sha256": "6aeaf7ffbf2724abed133cb21f87960abe4833b94bf0bffa8b6489bf55d6caad",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:41:08.023167+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -47.032868,
+      "min_lon": -176.41822,
+      "max_lat": -30.067336,
+      "max_lon": 178.462403
+    },
+    "temporalCoverage": {
+      "from": "1997-12-22T00:00:00+00:00",
+      "to": "2026-06-13T10:25:00+00:00"
+    }
+  },
+  "plan_steps_count": 5,
+  "steps_completed": 5,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/lachnagrostis_billardierei_d909e00bde1a4c43bc9cf5d1621d1344.jsonl",
+  "runtime_seconds": 230.93
+}

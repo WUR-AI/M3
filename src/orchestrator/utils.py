@@ -1,7 +1,10 @@
+import json
 from typing import List, Dict, Any, Tuple, Optional, Set
 
 from src.context.base_context import ContextType
+from src.core.tool_trace import tool_result_is_error
 from src.players.configs import PLAYER_CONFIGS
+from src.players.configs import METADATA_OUTPUT_PLAYER_NAMES
 from src.tools.context_tools import filter_tools_by_context_type
 
 # Pre-populated artifacts available in the workspace at execution start
@@ -32,14 +35,27 @@ def validate_plan_dataflow(
         A tuple containing a boolean (True if valid, False if invalid) and a
         status message.
     """
+    if not plan:
+        return False, "Validation Error: the plan has no steps."
+
     # Start with pre-populated workspace artifacts
     if initial_artifacts is None:
         initial_artifacts = DEFAULT_WORKSPACE_ARTIFACTS
     produced_artifacts = set(initial_artifacts)
     
     for i, step in enumerate(plan):
+        task_name = step.get("task", "<unknown>")
+        outputs = step.get("outputs", [])
+        if not isinstance(outputs, list) or not outputs:
+            return False, f"Validation Error in Step {i+1} ('{task_name}'): no outputs declared."
+        if any(not isinstance(name, str) or not name.strip() for name in outputs):
+            return False, f"Validation Error in Step {i+1} ('{task_name}'): empty output name."
+        if len(outputs) != len(set(outputs)) or any(name in produced_artifacts for name in outputs):
+            return False, f"Validation Error in Step {i+1} ('{task_name}'): duplicate output artifact."
         # Check the inputs required by the current step
         for param, artifact_name in step.get("inputs", {}).items():
+            if not isinstance(artifact_name, str) or not artifact_name.strip() or "," in artifact_name:
+                return False, f"Validation Error in Step {i+1} ('{task_name}'): invalid input artifact '{artifact_name}'."
             if artifact_name not in produced_artifacts:
                 error_msg = (
                     f"Validation Error in Step {i+1} ('{step['task']}'): "
@@ -49,12 +65,171 @@ def validate_plan_dataflow(
                 return (False, error_msg)
         
         # Register the outputs of the current step for subsequent steps to use
-        for artifact_name in step.get("outputs", []):
-            # Optional: You could add a check here for duplicate artifact names
-            # if you want to enforce that every artifact name is unique.
+        for artifact_name in outputs:
             produced_artifacts.add(artifact_name)
             
     return (True, "Plan dataflow is valid.")
+
+
+def validate_plan_completion(
+    plan: List[Dict[str, Any]],
+    standard_name: Optional[str] = None,
+    resources: Optional[List[str]] = None,
+) -> Tuple[bool, str]:
+    """Require a compatible final generator and real target resources."""
+    if not plan:
+        return False, "Plan has no final metadata step."
+    if len(plan) < 2:
+        return False, "Plan must inspect the source before generating metadata."
+    valid_resources = set(resources or [])
+    for index, step in enumerate(plan):
+        targets = step.get("target_resources") or []
+        unknown = set(targets) - valid_resources
+        if resources is not None and unknown:
+            return False, f"Step {index+1} targets unknown resources: {sorted(unknown)}"
+        if index < len(plan) - 1 and step.get("player") in METADATA_OUTPUT_PLAYER_NAMES:
+            return False, f"Step {index+1} generates metadata before the final step."
+
+    final = plan[-1]
+    expected_role = {
+        "croissant_inaturalist_standard": "croissant_inaturalist_metadata_generator",
+        "croissant_pangaea_standard": "croissant_pangaea_metadata_generator",
+        "croissant_standard_subset": "croissant_metadata_generator",
+        "pangaea_descriptive_technical_standard": "metadata_generator",
+    }.get(standard_name)
+    if expected_role is not None and final.get("player") != expected_role:
+        return False, f"Final step must use '{expected_role}'."
+    if expected_role is None and final.get("player") not in METADATA_OUTPUT_PLAYER_NAMES:
+        return False, "Final step must use a metadata generator."
+    if standard_name in {
+        "croissant_pangaea_standard", "croissant_standard_subset",
+        "pangaea_descriptive_technical_standard",
+    }:
+        if plan[0].get("player") != "dataset_schema_preview":
+            return False, "Croissant plans must start with dataset_schema_preview."
+    if standard_name == "croissant_inaturalist_standard":
+        specialists = [
+            step for step in plan[:-1]
+            if step.get("player") == "spatial_temporal_specialist"
+        ]
+        if not specialists:
+            return False, "iNaturalist coverage requires a spatial_temporal_specialist step."
+        specialist_outputs = {
+            output for step in specialists for output in step.get("outputs", [])
+        }
+        if not specialist_outputs.intersection(final.get("inputs", {}).values()):
+            return False, "Final step must read the spatial and temporal evidence artifact."
+    if standard_name == "pangaea_descriptive_technical_standard":
+        specialist_outputs = {
+            output for step in plan[:-1]
+            if step.get("player") == "spatial_temporal_specialist"
+            for output in step.get("outputs", [])
+        }
+        if not specialist_outputs.intersection(final.get("inputs", {}).values()):
+            return False, "Final step must read the spatial and temporal evidence artifact."
+    if final.get("inputs", {}).get("metadata_standard") != "metadata_standard":
+        return False, "Final step must read the metadata_standard workspace artifact."
+    earlier_outputs = {
+        output for step in plan[:-1] for output in step.get("outputs", [])
+    }
+    if not earlier_outputs.intersection(final.get("inputs", {}).values()):
+        return False, "Final step must consume an artifact from an earlier step."
+    if final.get("outputs") != ["metadata_output"]:
+        return False, "Final step must produce only metadata_output."
+    return True, "Plan completion is valid."
+
+
+def verified_tool_observations(
+    player_results: List[Dict[str, Any]], step_index: int,
+) -> List[Dict[str, Any]]:
+    """Deduplicate successful tool outputs while retaining their source columns."""
+    observations: List[Dict[str, Any]] = []
+    seen: Set[str] = set()
+    for player_result in player_results:
+        for call in player_result.get("tool_trace", []):
+            result = call.get("result")
+            if not call.get("tool") or "error" in call:
+                continue
+            if tool_result_is_error(result):
+                continue
+            if result is None:
+                continue
+            entry = {
+                "step_index": step_index,
+                "tool": call["tool"],
+                "args": call.get("args", {}),
+                "result": result,
+            }
+            identity = json.dumps(entry, sort_keys=True, default=str)
+            if identity not in seen:
+                seen.add(identity)
+                observations.append(entry)
+    return observations
+
+
+def apply_verified_coverage(
+    metadata: Dict[str, Any], observations: List[Dict[str, Any]],
+    standard_name: Optional[str],
+) -> Tuple[Dict[str, Any], List[Dict[str, Any]]]:
+    """Use full-data extent tools for iNaturalist fields they directly support."""
+    if standard_name != "croissant_inaturalist_standard":
+        return metadata, []
+    corrected = dict(metadata)
+    changes: List[Dict[str, Any]] = []
+
+    def valid_box(box: Dict[str, Any]) -> bool:
+        try:
+            return (
+                -90 <= float(box["min_lat"]) <= float(box["max_lat"]) <= 90
+                and -180 <= float(box["min_lon"]) <= float(box["max_lon"]) <= 180
+            )
+        except (KeyError, TypeError, ValueError):
+            return False
+
+    spatial_calls = [
+        call for call in observations
+        if call["tool"] in {"get_spatial_extent", "get_spatial_extent_from_tuple_column"}
+        and isinstance(call["result"], dict)
+        and isinstance(call["result"].get("bounding_box"), dict)
+        and valid_box(call["result"]["bounding_box"])
+        and (
+            call["tool"] == "get_spatial_extent_from_tuple_column"
+            or (
+                "lat" in call["args"].get("lat_column", "").lower()
+                and "lon" in call["args"].get("lon_column", "").lower()
+            )
+        )
+    ]
+    spatial_calls.sort(key=lambda call: (
+        call["args"].get("lat_column", "").lower() != "decimallatitude"
+        or call["args"].get("lon_column", "").lower() != "decimallongitude"
+    ))
+    temporal_calls = [
+        call for call in observations
+        if call["tool"] == "get_temporal_extent"
+        and isinstance(call["result"], dict)
+        and call["result"].get("from") and call["result"].get("to")
+        and call["args"].get("time_column", "").lower().replace("_", "") == "eventdate"
+    ]
+
+    for field, calls, result_key in (
+        ("spatialCoverage", spatial_calls, "bounding_box"),
+        ("temporalCoverage", temporal_calls, None),
+    ):
+        if not calls:
+            continue
+        call = calls[0]
+        value = call["result"][result_key] if result_key else {
+            "from": call["result"]["from"],
+            "to": call["result"]["to"],
+        }
+        if corrected.get(field) != value:
+            changes.append({
+                "field": field, "previous": corrected.get(field),
+                "verified": value, "tool": call["tool"], "args": call["args"],
+            })
+            corrected[field] = value
+    return corrected, changes
 
 
 def validate_plan_tool_compatibility(

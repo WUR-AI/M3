@@ -1,0 +1,92 @@
+{
+  "csv": "966669.csv",
+  "dataset_id": "966669",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "38d45ebddb5ad7c83655f2d23207ed3d800aa60a12fe7468bb6274122192cd99",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4980,
+  "metadata": {
+    "name": "Flade Isblink ice cap FI-02",
+    "description": "Dataset containing radiometric and isotopic measurements from the Flade Isblink ice cap, including sample information, location data, and various analytical results.",
+    "keywords": [
+      "Flade Isblink",
+      "ice cap",
+      "radiometric measurements",
+      "isotopic analysis",
+      "cryoconite",
+      "environmental sampling"
+    ],
+    "spatialCoverage": {
+      "min_lat": 81.5169,
+      "min_lon": -16.1222,
+      "max_lat": 81.5441,
+      "max_lon": -15.8786
+    },
+    "temporalCoverage": {
+      "from": "2022-08-02T22:00:00+00:00",
+      "to": "2022-08-04T02:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "966669"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "966669",
+        "resource": "966669"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "966669",
+        "resource": "966669"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "966669",
+        "resource": "966669"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "966669",
+        "resource": "966669",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "966669",
+        "resource": "966669"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "966669",
+        "resource": "966669",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 28.813,
+  "status": "ok"
+}

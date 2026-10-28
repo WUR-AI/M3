@@ -1,0 +1,66 @@
+{
+  "csv": "rusa_timorensis.csv",
+  "dataset_id": "rusa_timorensis",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6fa0258ffadc6d9cb8c40e67b641c0301b57168b900a8c4f085faeb57ef692b7",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 3861,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -36.785755,
+      "min_lon": -50.143602,
+      "max_lat": 4.383618,
+      "max_lon": 166.828412
+    },
+    "temporalCoverage": {
+      "from": "1986-12-28T00:00:00+00:00",
+      "to": "2026-06-13T10:42:26+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "rusa_timorensis"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "rusa_timorensis",
+        "resource": "rusa_timorensis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "rusa_timorensis",
+        "resource": "rusa_timorensis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "rusa_timorensis",
+        "resource": "rusa_timorensis"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "rusa_timorensis",
+        "resource": "rusa_timorensis",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 11.224,
+  "status": "ok"
+}

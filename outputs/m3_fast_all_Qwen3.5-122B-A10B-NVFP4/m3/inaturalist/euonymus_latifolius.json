@@ -1,0 +1,28 @@
+{
+  "dataset_id": "euonymus_latifolius",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/euonymus_latifolius.csv",
+  "source_sha256": "4605294cd787b9674aa9d7c779a1d6e4f13aef24067a753e664f536ff515c639",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:27:41.795417+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 36.82312,
+      "min_lon": -77.304868,
+      "max_lat": 60.382925,
+      "max_lon": 139.435162
+    },
+    "temporalCoverage": {
+      "from": "1989-08-01T12:00:00+00:00",
+      "to": "2026-06-10T15:42:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/euonymus_latifolius_ee473c85d9ed4854ba727808ecf62c8f.jsonl",
+  "runtime_seconds": 53.68
+}

@@ -1,0 +1,59 @@
+{
+  "csv": "acrothamnus_colensoi.csv",
+  "dataset_id": "acrothamnus_colensoi",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "32e3d47a690bf1d7da9ae1b3daff2f97a295d385c2d114e9f59a4b6588d877a1",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 1992,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -45.848455,
+      "min_lon": 167.669761,
+      "max_lat": -39.145751,
+      "max_lon": 176.213639
+    },
+    "temporalCoverage": {
+      "from": "1977-12-11T00:00:00+00:00",
+      "to": "2026-06-14T14:02:14+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "acrothamnus_colensoi"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.223,
+  "status": "ok"
+}

@@ -1,0 +1,66 @@
+{
+  "csv": "nemognatha_piazata.csv",
+  "dataset_id": "nemognatha_piazata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "07e210698659a6a3aed8a882bb3dbb2a24c71b67eee91b06f79d6e96fa8d37be",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 3372,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 21.157906,
+      "min_lon": -112.713959,
+      "max_lat": 50.87664,
+      "max_lon": -78.840473
+    },
+    "temporalCoverage": {
+      "from": "1932-08-06",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "nemognatha_piazata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.833,
+  "status": "ok"
+}

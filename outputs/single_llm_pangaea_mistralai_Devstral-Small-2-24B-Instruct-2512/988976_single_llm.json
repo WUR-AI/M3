@@ -1,0 +1,36 @@
+{
+  "csv": "988976.csv",
+  "dataset_id": "988976",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "contract_sha256": "050ea54ff5318b035dfb77dc0dcf65243d4e56e1d46a81deb86420a5677c0532",
+  "prompt_tokens": 6396,
+  "metadata": {
+    "name": "988976",
+    "description": "Dataset containing diatom species counts and related environmental data from sediment cores, including depth, age, latitude, longitude, elevation, and date/time.",
+    "keywords": [
+      "diatoms",
+      "sediment cores",
+      "paleoceanography",
+      "microfossils",
+      "environmental data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.825,
+  "status": "ok"
+}

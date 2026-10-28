@@ -1,0 +1,414 @@
+{
+  "dataset_name": "995133",
+  "list_of_tables": [
+    "995133"
+  ],
+  "tables": {
+    "995133": {
+      "table_name": "995133",
+      "row_count": 36,
+      "number_of_columns": 6,
+      "list_of_columns": [
+        "Expedition",
+        "Location",
+        "Sampling date",
+        "Site",
+        "M. balthica shell l",
+        "M. balthica l-freq"
+      ],
+      "columns": {
+        "Expedition": {
+          "column_name": "Expedition",
+          "data_type": "string",
+          "sample_values": [
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320",
+            "EMB320"
+          ],
+          "data_patterns": {
+            "AAA999": 36
+          },
+          "total_rows": 36,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "EMB320",
+                36
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Expedition identifier for Baltic Sea M. balthica sampling campaigns."
+        },
+        "Location": {
+          "column_name": "Location",
+          "data_type": "string",
+          "sample_values": [
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)",
+            "Rönnebank (Baltic Sea)"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaa (Aaaaaa Aaa)": 36
+          },
+          "total_rows": 36,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Rönnebank (Baltic Sea)",
+                36
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Geographic location of sampling sites within the Baltic Sea."
+        },
+        "Sampling date": {
+          "column_name": "Sampling date",
+          "data_type": "string",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023",
+            "June 2023"
+          ],
+          "data_patterns": {
+            "Aaaa 9999": 36
+          },
+          "total_rows": 36,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "June 2023",
+                36
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "The sampling date records the month and year of data collection."
+        },
+        "Site": {
+          "column_name": "Site",
+          "data_type": "string",
+          "sample_values": [
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Reference area",
+            "Marine Protected Area",
+            "Reference area",
+            "Reference area",
+            "Reference area",
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Reference area",
+            "Reference area",
+            "Reference area",
+            "Marine Protected Area",
+            "Reference area",
+            "Reference area",
+            "Reference area",
+            "Marine Protected Area",
+            "Reference area",
+            "Marine Protected Area",
+            "Reference area",
+            "Reference area",
+            "Marine Protected Area",
+            "Reference area",
+            "Marine Protected Area",
+            "Reference area",
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Marine Protected Area",
+            "Reference area",
+            "Marine Protected Area",
+            "Reference area",
+            "Reference area"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaa aaaa": 18,
+            "Aaaaaa Aaaaaaaaa Aaaa": 18
+          },
+          "total_rows": 36,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Reference area",
+                18
+              ],
+              [
+                "Marine Protected Area",
+                18
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Site designates the sampling location as either a Marine Protected Area or a Reference area."
+        },
+        "M. balthica shell l": {
+          "column_name": "M. balthica shell l",
+          "data_type": "integer",
+          "sample_values": [
+            1,
+            8,
+            12,
+            9,
+            5,
+            17,
+            14,
+            12,
+            10,
+            18,
+            10,
+            6,
+            13,
+            5,
+            4,
+            11,
+            2,
+            15,
+            2,
+            11,
+            16,
+            16,
+            6,
+            15,
+            7,
+            3,
+            1,
+            18,
+            4,
+            13,
+            14,
+            9,
+            7,
+            3,
+            17,
+            8
+          ],
+          "data_patterns": {
+            "99": 18,
+            "9": 18
+          },
+          "total_rows": 36,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 18.0,
+            "mean": 9.5,
+            "median": 9.5,
+            "std": 5.261721608534063
+          },
+          "description": "Integer values representing Baltic Sea M. balthica shell lengths in millimeters."
+        },
+        "M. balthica l-freq": {
+          "column_name": "M. balthica l-freq",
+          "data_type": "integer",
+          "sample_values": [
+            35,
+            7,
+            24,
+            1,
+            7,
+            53,
+            107,
+            167,
+            1,
+            7,
+            28,
+            1,
+            1,
+            4,
+            8,
+            112,
+            23,
+            8,
+            53,
+            11,
+            5,
+            4,
+            0,
+            24,
+            16,
+            25,
+            9,
+            67,
+            15,
+            36,
+            10,
+            5,
+            93,
+            16,
+            106,
+            2
+          ],
+          "data_patterns": {
+            "9": 16,
+            "99": 16,
+            "999": 4
+          },
+          "total_rows": 36,
+          "null_count": 0,
+          "unique_count": 25,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 167.0,
+            "mean": 30.305555555555557,
+            "median": 13.0,
+            "std": 39.937679626741634
+          },
+          "description": "Integer counts of Baltic Sea M. balthica shells observed during June 2023 expeditions."
+        }
+      },
+      "sample_rows": [
+        {
+          "Expedition": "EMB320",
+          "Location": "Rönnebank (Baltic Sea)",
+          "Sampling date": "June 2023",
+          "Site": "Reference area",
+          "M. balthica shell l": 18,
+          "M. balthica l-freq": 1
+        },
+        {
+          "Expedition": "EMB320",
+          "Location": "Rönnebank (Baltic Sea)",
+          "Sampling date": "June 2023",
+          "Site": "Marine Protected Area",
+          "M. balthica shell l": 14,
+          "M. balthica l-freq": 11
+        },
+        {
+          "Expedition": "EMB320",
+          "Location": "Rönnebank (Baltic Sea)",
+          "Sampling date": "June 2023",
+          "Site": "Reference area",
+          "M. balthica shell l": 9,
+          "M. balthica l-freq": 4
+        }
+      ],
+      "description": "Records Baltic Sea M. balthica shell length and frequency from June 2023 expeditions.",
+      "is_row_capped": false,
+      "rows_processed": 36,
+      "total_rows_in_file": 36
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Contains 995,133 tables with 36 rows each, covering Earth and environmental science data."
+}

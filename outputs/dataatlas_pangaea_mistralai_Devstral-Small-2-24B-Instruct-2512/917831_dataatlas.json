@@ -1,0 +1,16 @@
+{
+  "csv": "917831.csv",
+  "dataset_id": "917831",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 123,
+  "n_columns": 22,
+  "description": "Earth and environmental science data with 123 rows, 2013-2015, including biological and spatial measurements.",
+  "dataset_description": "Earth and environmental science data, 917,831 tables, 123 rows, 2013-2015 time coverage.",
+  "runtime_seconds": 15.492,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/917831/dictionary.json"
+}

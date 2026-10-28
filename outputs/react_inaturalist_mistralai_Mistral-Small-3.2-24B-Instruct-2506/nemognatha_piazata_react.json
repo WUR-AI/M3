@@ -1,0 +1,90 @@
+{
+  "csv": "nemognatha_piazata.csv",
+  "dataset_id": "nemognatha_piazata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "07e210698659a6a3aed8a882bb3dbb2a24c71b67eee91b06f79d6e96fa8d37be",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5033,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 21.157906,
+      "min_lon": -112.713959,
+      "max_lat": 50.87664,
+      "max_lon": -78.840473
+    },
+    "temporalCoverage": {
+      "from": "1932-08-06T13:45:00+00:00",
+      "to": "2026-06-14T09:33:07+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nemognatha_piazata",
+        "resource": "nemognatha_piazata",
+        "time_column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 27.174,
+  "status": "ok"
+}

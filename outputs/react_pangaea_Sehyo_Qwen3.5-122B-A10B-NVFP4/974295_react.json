@@ -1,0 +1,106 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 10002,
+  "metadata": {
+    "name": "ANT 1997/98 EMR Radar Profiles",
+    "description": "Dataset containing 97 profile records from the ANT 1997/98 Antarctic expedition with EMR instrument data, radar product information (600 ns pulse and 60 ns pulse), and references to associated netCDF files, GIS (KML) files, and images.",
+    "keywords": [
+      "ANT",
+      "EMR",
+      "radar",
+      "profile",
+      "netCDF",
+      "GIS",
+      "Antarctic"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974295"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295",
+        "n": 10
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295",
+        "field": "Season",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295",
+        "field": "Radar prod",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "974295"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "974295"
+      }
+    }
+  ],
+  "runtime_seconds": 38.759,
+  "status": "ok"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "myripristis_jacobus.csv",
+  "dataset_id": "myripristis_jacobus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 997,
+  "n_columns": 50,
+  "description": "997 Myripristis jacobus occurrence records (1987‑2026) with taxonomy, location, date, and observer details.",
+  "dataset_description": "Contains 997 Myripristis jacobus occurrence records from 1987 to 2026 for biodiversity analysis.",
+  "runtime_seconds": 79.065,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/myripristis_jacobus/dictionary.json"
+}

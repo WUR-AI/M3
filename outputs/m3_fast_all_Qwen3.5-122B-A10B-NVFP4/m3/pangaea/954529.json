@@ -1,0 +1,32 @@
+{
+  "dataset_id": "954529",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/954529.csv",
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:21:04.362512+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "GIS and XLSX File Manifest",
+    "description": "A manifest dataset containing references to GIS file archives and associated Excel spreadsheets. The dataset lists 9 unique GIS files, with only one entry having a corresponding Excel file link.",
+    "keywords": [
+      "GIS",
+      "manifest",
+      "file index",
+      "Big_Skidder",
+      "TopographicHigh",
+      "file references"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/954529_7a816ca38baf4131a2ca79a93f4d2723.jsonl",
+  "runtime_seconds": 70.45
+}

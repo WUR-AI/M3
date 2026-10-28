@@ -1,0 +1,39 @@
+{
+  "dataset_id": "959883",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959883.csv",
+  "source_sha256": "de3317d8fc807ed86c4722f03ef6a7bf025cc4bf9ffc0fd8a0c71f52b6b45ce0",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T23:33:37.876471+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Chemical and Physical Measurements from Station M186_50-1GC",
+    "description": "This dataset contains chemical and physical measurements from sediment samples collected at a single geographic location and time. It includes various chemical concentrations such as nitrates, phosphates, sulfates, and trace elements, as well as physical parameters like temperature and sediment depth.",
+    "keywords": [
+      "chemical measurements",
+      "sediment analysis",
+      "marine chemistry",
+      "trace elements",
+      "water quality"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74047,
+      "min_lon": -28.58108,
+      "max_lat": 38.74047,
+      "max_lon": -28.58108
+    },
+    "temporalCoverage": {
+      "from": "2022-12-15T15:14:36+00:00",
+      "to": "2022-12-15T15:14:36+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959883_05b187f6dcf04a9da10be5106a7fe9bc.jsonl",
+  "runtime_seconds": 412.12
+}

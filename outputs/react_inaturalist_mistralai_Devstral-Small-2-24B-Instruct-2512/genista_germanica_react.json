@@ -1,0 +1,52 @@
+{
+  "csv": "genista_germanica.csv",
+  "dataset_id": "genista_germanica",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "35e546b1513c22ab969f75667e4dd26db15ed9453e4e5a8295bb087dd6eaa834",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 1761,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 42.739556,
+      "min_lon": -3.93686,
+      "max_lat": 56.990576,
+      "max_lon": 47.319546
+    },
+    "temporalCoverage": {
+      "from": "1990-05-12",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "genista_germanica"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "genista_germanica",
+        "resource": "genista_germanica",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "genista_germanica",
+        "resource": "genista_germanica",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.057,
+  "status": "ok"
+}

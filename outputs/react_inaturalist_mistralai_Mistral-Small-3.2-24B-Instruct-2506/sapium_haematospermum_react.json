@@ -1,0 +1,104 @@
+{
+  "csv": "sapium_haematospermum.csv",
+  "dataset_id": "sapium_haematospermum",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bdc0443ab65fba07247a201c7d786d8159da4c7ac747301b6c7c89539d50223a",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5218,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -37.095011,
+      "min_lon": -66.88899,
+      "max_lat": -17.785292,
+      "max_lon": -53.700504
+    },
+    "temporalCoverage": {
+      "from": "2006-07-24",
+      "to": "2026-06-13"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "sapium_haematospermum",
+        "resource": "sapium_haematospermum",
+        "time_column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 25.913,
+  "status": "ok"
+}

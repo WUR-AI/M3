@@ -1,0 +1,66 @@
+{
+  "csv": "eucalyptus_regnans.csv",
+  "dataset_id": "eucalyptus_regnans",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "dde21dc3dedd4567d4dd4dfbcd5b607b2438bdb2df760e94d9c0da3c568e15ea",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 4086,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -45.860728,
+      "min_lon": 143.3705,
+      "max_lat": -37.328952,
+      "max_lon": 175.056697
+    },
+    "temporalCoverage": {
+      "from": "1992-04-19T08:15:00+00:00",
+      "to": "2026-05-06T13:14:20+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "eucalyptus_regnans"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "eucalyptus_regnans",
+        "resource": "eucalyptus_regnans"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "eucalyptus_regnans",
+        "resource": "eucalyptus_regnans",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "eucalyptus_regnans",
+        "resource": "eucalyptus_regnans"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "eucalyptus_regnans",
+        "resource": "eucalyptus_regnans",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 12.24,
+  "status": "ok"
+}

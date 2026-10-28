@@ -1,0 +1,456 @@
+{
+  "dataset_name": "971414",
+  "list_of_tables": [
+    "971414"
+  ],
+  "tables": {
+    "971414": {
+      "table_name": "971414",
+      "row_count": 19,
+      "number_of_columns": 9,
+      "list_of_columns": [
+        "Event",
+        "Sample ID",
+        "Section",
+        "Age",
+        "SR",
+        "Reference",
+        "Latitude",
+        "Longitude",
+        "Date/Time"
+      ],
+      "columns": {
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Kiwada_Kazusa_Chiba_Ono_River_section",
+            "Kiwada_Kazusa_Chiba_Ono_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Yuki_River_section",
+            "Kiwada_Kazusa_Chiba_Ono_River_section"
+          ],
+          "data_patterns": {
+            "Aaaaaa_Aaaaaa_Aaaaa_Aaaa_Aaaaa_aaaaaaa": 16,
+            "Aaaaaa_Aaaaaa_Aaaaa_Aaa_Aaaaa_aaaaaaa": 3
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Kiwada_Kazusa_Chiba_Yuki_River_section",
+                16
+              ],
+              [
+                "Kiwada_Kazusa_Chiba_Ono_River_section",
+                3
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Event names for Kazusa, Chiba river sections."
+        },
+        "Sample ID": {
+          "column_name": "Sample ID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "A1031-06",
+            "C0321-03",
+            "B0711-14",
+            "B0711-13",
+            "B0711-04",
+            "B0412-03",
+            "A0926-02",
+            "B0608-10",
+            "B0711-01",
+            "A1031-03",
+            "A1122-03",
+            "C0321-08",
+            "C0321-06",
+            "B0608-09",
+            "A1011-01",
+            "A0921-01",
+            "A1012-01",
+            "B0608-12",
+            "A1011-02"
+          ],
+          "data_patterns": {
+            "A9999-99": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "C0321-08",
+                1
+              ],
+              [
+                "B0608-10",
+                1
+              ],
+              [
+                "B0412-03",
+                1
+              ],
+              [
+                "C0321-06",
+                1
+              ],
+              [
+                "A1012-01",
+                1
+              ],
+              [
+                "B0711-13",
+                1
+              ],
+              [
+                "A0926-02",
+                1
+              ],
+              [
+                "B0711-04",
+                1
+              ],
+              [
+                "A1031-06",
+                1
+              ],
+              [
+                "B0711-14",
+                1
+              ]
+            ],
+            "unique_count": 19
+          },
+          "description": "Unique identifiers for environmental samples."
+        },
+        "Section": {
+          "column_name": "Section",
+          "data_type": "float",
+          "sample_values": [
+            146.27,
+            72.21,
+            -0.15,
+            121.28,
+            107.58,
+            120.1,
+            123.43,
+            67.38,
+            26.78,
+            139.05,
+            16.19,
+            19.07,
+            95.39,
+            141.35,
+            56.99,
+            144.19,
+            49.23,
+            85.6,
+            88.31
+          ],
+          "data_patterns": {
+            "99.99": 9,
+            "999.99": 7,
+            "-9.99": 1,
+            "99.9": 1,
+            "999.9": 1
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "numeric",
+            "min": -0.15,
+            "max": 146.27,
+            "mean": 85.27631578947367,
+            "median": 88.31,
+            "std": 47.29737756537252
+          },
+          "description": "Section measurements in unspecified units, ranging from -0.15 to 146.27."
+        },
+        "Age": {
+          "column_name": "Age",
+          "data_type": "integer",
+          "semantic_type": "age",
+          "sample_values": [
+            1274,
+            1296,
+            1218,
+            1220,
+            1260,
+            1198,
+            1290,
+            1202,
+            1252,
+            1240,
+            1206,
+            1294,
+            1200,
+            1214,
+            1262,
+            1254,
+            1280,
+            1248,
+            1310
+          ],
+          "data_patterns": {
+            "9999": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "numeric",
+            "min": 1198.0,
+            "max": 1310.0,
+            "mean": 1248.3157894736842,
+            "median": 1252.0,
+            "std": 36.290575194576576
+          },
+          "description": "Age in years of environmental samples."
+        },
+        "SR": {
+          "column_name": "SR",
+          "data_type": "float",
+          "sample_values": [
+            177.0,
+            129.0,
+            144.0,
+            54.0,
+            59.0,
+            63.0,
+            242.0,
+            195.0,
+            225.0,
+            152.0,
+            117.0,
+            136.0,
+            223.0,
+            193.0,
+            104.0,
+            87.0,
+            142.0,
+            58.0
+          ],
+          "data_patterns": {
+            "999.9": 13,
+            "99.9": 5
+          },
+          "total_rows": 19,
+          "null_count": 1,
+          "unique_count": 19,
+          "stats": {
+            "type": "numeric",
+            "min": 54.0,
+            "max": 242.0,
+            "mean": 138.88888888888889,
+            "median": 139.0,
+            "std": 60.993624439134805
+          },
+          "description": "Strontium ratio measurements in environmental samples."
+        },
+        "Reference": {
+          "column_name": "Reference",
+          "data_type": "string",
+          "sample_values": [
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "This study",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "This study",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)",
+            "This study",
+            "This study",
+            "Kuwano et al. (2021)",
+            "Kuwano et al. (2021)"
+          ],
+          "data_patterns": {
+            "Aaaaaa aa aa. (9999)": 15,
+            "Aaaa aaaaa": 4
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Kuwano et al. (2021)",
+                15
+              ],
+              [
+                "This study",
+                4
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Citation sources for environmental data entries."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.27,
+            35.22,
+            35.27,
+            35.27,
+            35.22,
+            35.22,
+            35.22,
+            35.22,
+            35.22
+          ],
+          "data_patterns": {
+            "99.99": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 35.22,
+            "max": 35.27,
+            "mean": 35.22789473684211,
+            "median": 35.22,
+            "std": 0.018731716231635477
+          },
+          "description": "Geographic coordinate measuring degrees north of the equator."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            140.15,
+            140.15,
+            140.15,
+            140.15,
+            140.29,
+            140.15,
+            140.15,
+            140.15,
+            140.15,
+            140.15,
+            140.29,
+            140.15,
+            140.15,
+            140.15,
+            140.15,
+            140.15,
+            140.15,
+            140.15,
+            140.29
+          ],
+          "data_patterns": {
+            "999.99": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 140.15,
+            "max": 140.29,
+            "mean": 140.1721052631579,
+            "median": 140.15,
+            "std": 0.052448805448569745
+          },
+          "description": "Geographic coordinate in decimal degrees east of prime meridian."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "null",
+          "semantic_type": "timestamp",
+          "sample_values": [],
+          "data_patterns": {},
+          "total_rows": 19,
+          "null_count": 19,
+          "unique_count": 1,
+          "description": "Timestamp of environmental data collection event."
+        }
+      },
+      "sample_rows": [
+        {
+          "Event": "Kiwada_Kazusa_Chiba_Ono_River_section",
+          "Sample ID": "C0321-08",
+          "Section": 146.27,
+          "Age": 1198,
+          "SR": 104.0,
+          "Reference": "This study",
+          "Latitude": 35.27,
+          "Longitude": 140.29,
+          "Date/Time": null
+        },
+        {
+          "Event": "Kiwada_Kazusa_Chiba_Yuki_River_section",
+          "Sample ID": "B0608-10",
+          "Section": 121.28,
+          "Age": 1218,
+          "SR": 59.0,
+          "Reference": "Kuwano et al. (2021)",
+          "Latitude": 35.22,
+          "Longitude": 140.15,
+          "Date/Time": null
+        },
+        {
+          "Event": "Kiwada_Kazusa_Chiba_Yuki_River_section",
+          "Sample ID": "B0412-03",
+          "Section": 72.21,
+          "Age": 1260,
+          "SR": 242.0,
+          "Reference": "Kuwano et al. (2021)",
+          "Latitude": 35.22,
+          "Longitude": 140.15,
+          "Date/Time": null
+        }
+      ],
+      "description": "Environmental data with event, sample, section, age, SR, reference, location, and date/time.",
+      "is_row_capped": false,
+      "rows_processed": 19,
+      "total_rows_in_file": 19
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Environmental data tables, each with 19 rows, for Earth and environmental science research."
+}

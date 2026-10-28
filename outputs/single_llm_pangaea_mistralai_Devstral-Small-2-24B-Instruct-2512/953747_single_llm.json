@@ -1,0 +1,46 @@
+{
+  "csv": "953747.csv",
+  "dataset_id": "953747",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8",
+  "contract_sha256": "e5e29e0d12eaeab07c49bf1dcfd264374c8ca7876b7c1ea2da61db4c6161ff1b",
+  "prompt_tokens": 2059,
+  "metadata": {
+    "name": "PS122 ROV Quicklook Data",
+    "description": "Dataset containing ROV quicklook images and associated metadata from survey PS122/5_61-35, including ADCP, DVL, depth profiles, optics, positioning, sea ice draft, telemetry, transmittance, and pH data.",
+    "keywords": [
+      "ROV",
+      "ADCP",
+      "DVL",
+      "depth profile",
+      "optics",
+      "positioning",
+      "sea ice",
+      "telemetry",
+      "transmittance",
+      "pH",
+      "Arctic",
+      "PS122"
+    ],
+    "spatialCoverage": {
+      "min_lat": 88.675993,
+      "min_lon": 112.324519,
+      "max_lat": 88.675993,
+      "max_lon": 112.324519
+    },
+    "temporalCoverage": {
+      "from": "2020-09-08",
+      "to": "2020-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.733,
+  "status": "ok"
+}

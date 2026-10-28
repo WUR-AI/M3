@@ -1,0 +1,51 @@
+{
+  "csv": "961119.csv",
+  "dataset_id": "961119",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1520,
+  "metadata": {
+    "name": "Baltic Sea pCO2 Data",
+    "description": "The dataset contains two CSV files related to Baltic Sea pCO2 data. One file is a climatology with a size of 7.3 MBytes and the other is a long-term trend with a size of 366 kBytes. The files have unique hash values for verification purposes.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "climatology",
+      "long-term trend"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "961119"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    }
+  ],
+  "runtime_seconds": 10.782,
+  "status": "ok"
+}

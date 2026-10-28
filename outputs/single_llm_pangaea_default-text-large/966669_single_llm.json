@@ -1,0 +1,41 @@
+{
+  "csv": "966669.csv",
+  "dataset_id": "966669",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "38d45ebddb5ad7c83655f2d23207ed3d800aa60a12fe7468bb6274122192cd99",
+  "contract_sha256": "095b29fdb151eadf56a4618539225d44133b5747c5a57e5da34dfe747c220c4a",
+  "prompt_tokens": 8836,
+  "metadata": {
+    "name": "Flade Isblink Ice Cap Cryoconite Sample Data",
+    "description": "Dataset of cryoconite and river sediment samples collected on the Flade Isblink ice cap in Greenland. Each record includes sample ID, geographic coordinates, collection date/time, depth, sample type, and a suite of measured radionuclide concentrations and related parameters.",
+    "keywords": [
+      "Flade Isblink",
+      "ice cap",
+      "cryoconite",
+      "radionuclide",
+      "environmental sampling",
+      "Arctic",
+      "Greenland"
+    ],
+    "spatialCoverage": {
+      "min_lat": 81.5169,
+      "min_lon": -15.9266,
+      "max_lat": 81.5441,
+      "max_lon": -15.8786
+    },
+    "temporalCoverage": {
+      "from": "2022-08-02",
+      "to": "2022-08-04"
+    },
+    "spatial": "point locations",
+    "temporal": "5 minutes"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.943,
+  "status": "ok"
+}

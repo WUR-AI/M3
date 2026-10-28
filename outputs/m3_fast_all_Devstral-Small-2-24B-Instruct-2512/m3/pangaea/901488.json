@@ -1,0 +1,40 @@
+{
+  "dataset_id": "901488",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901488.csv",
+  "source_sha256": "c43d3f554bb169bcda8fb03f880a0f8620b128000d75d47294281b850cc47662",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T20:27:48.742771+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Elwha River Delta Survey Data",
+    "description": "Dataset containing geographic, elevation, and measurement data collected during the Elwha River Delta event on March 20, 2011. Includes latitude, longitude, elevation, horizontal and vertical root mean square errors, status, description, and timestamps for 211 records.",
+    "keywords": [
+      "Elwha River Delta",
+      "geospatial data",
+      "elevation",
+      "HRMS",
+      "VRMS",
+      "survey data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551062,
+      "min_lon": -125.9387874,
+      "max_lat": 49.570186,
+      "max_lon": -125.9302033
+    },
+    "temporalCoverage": {
+      "from": "2011-03-20T05:21:00+00:00",
+      "to": "2011-03-20T07:32:00+00:00"
+    },
+    "spatial": "Point locations with a bounding box spanning approximately 1.5 km in latitude and 0.8 km in longitude",
+    "temporal": "Sub-second resolution"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901488_b4475e2b383240d2a662a942a75805e9.jsonl",
+  "runtime_seconds": 281.22
+}

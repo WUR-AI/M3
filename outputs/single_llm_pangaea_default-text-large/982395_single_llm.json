@@ -1,0 +1,44 @@
+{
+  "csv": "982395.csv",
+  "dataset_id": "982395",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "contract_sha256": "018597f24c8aa97d024db7e2786a5db02895cb7c357bed6401bbb1160db35a20",
+  "prompt_tokens": 3038,
+  "metadata": {
+    "name": "Sediment Geochemical Measurements with Spatial Coordinates",
+    "description": "A collection of sediment geochemistry observations including depth, total organic carbon (TOC), pH, CaCO3, grain‑size fractions, and trace element concentrations, recorded at specific latitude/longitude points for two sampling events (BH‑II and BH‑rec) on 2018‑07‑22 and 2019‑08‑12.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "TOC",
+      "pH",
+      "CaCO3",
+      "trace elements",
+      "latitude",
+      "longitude",
+      "elevation",
+      "depth"
+    ],
+    "spatialCoverage": {
+      "min_lat": 51.410785,
+      "min_lon": 12.079572,
+      "max_lat": 51.41327778,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22",
+      "to": "2019-08-12"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.681,
+  "status": "ok"
+}

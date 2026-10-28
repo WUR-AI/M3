@@ -1,0 +1,46 @@
+{
+  "csv": "897882.csv",
+  "dataset_id": "897882",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "contract_sha256": "7ec73a32e5e65111cb75000dffc8cbe463e6de26448aa8a30d88afdccd7caadc",
+  "prompt_tokens": 7434,
+  "metadata": {
+    "name": "E. fimbriata oocyte and spawning data from Foundiougne, Djifer, and Joal",
+    "description": "Dataset containing measurements of E. fimbriata oocyte dry mass, volume, lipids, protein, calorific content, and elemental ratios (Ba/Ca, Sr/Ca, Zn/Ca) alongside environmental parameters (temperature, salinity) and spawning batch data. Samples were collected from three locations in Senegal (Foundiougne, Djifer, Joal) between February and October 2014.",
+    "keywords": [
+      "E. fimbriata",
+      "oocyte",
+      "spawning",
+      "lipids",
+      "protein",
+      "calorific content",
+      "Ba/Ca",
+      "Sr/Ca",
+      "Zn/Ca",
+      "temperature",
+      "salinity",
+      "Senegal"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-02-01",
+      "to": "2014-10-01"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.88,
+  "status": "ok"
+}

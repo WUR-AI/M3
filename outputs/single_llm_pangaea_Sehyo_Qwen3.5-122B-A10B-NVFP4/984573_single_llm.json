@@ -1,0 +1,41 @@
+{
+  "csv": "984573.csv",
+  "dataset_id": "984573",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "091ca8fc4435bce03f857f31f55d706c49a7bb2568db46eb23333b3fc886c50a",
+  "contract_sha256": "a430b0a2c26b4d3f0f6cbb1fdb6eeed1af428024af04c2d1399621c070509364",
+  "prompt_tokens": 14125,
+  "metadata": {
+    "name": "IODP Site 383-U1539 Sediment Core Paleotemperature Data",
+    "description": "Paleotemperature (SST) and standard deviation measurements from sediment core samples collected at IODP Site 383 (cores U1539A, U1539C, U1539D). The dataset includes sample labels, sediment depth, age, cluster information, and sampling dates.",
+    "keywords": [
+      "SST",
+      "Sea Surface Temperature",
+      "Sediment Core",
+      "IODP",
+      "Paleoclimate",
+      "U1539",
+      "Ocean Drilling"
+    ],
+    "spatialCoverage": {
+      "min_lat": -56.1512,
+      "min_lon": -115.1341,
+      "max_lat": -56.151,
+      "max_lon": -115.1338
+    },
+    "temporalCoverage": {
+      "from": "2019-05-31",
+      "to": "2019-06-05"
+    },
+    "spatial": "point locations",
+    "temporal": "point measurements"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.096,
+  "status": "ok"
+}

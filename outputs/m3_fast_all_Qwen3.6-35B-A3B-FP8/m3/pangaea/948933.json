@@ -1,0 +1,44 @@
+{
+  "dataset_id": "948933",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/948933.csv",
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:17:18.059600+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sylt North Sea Benthic Trawl Survey: Atlantic Mackerel and Environmental Data",
+    "description": "Marine trawl survey dataset from the Sylt region in the North Sea, containing paired start/end coordinates, bathymetric depths, and timestamps for benthic trawl events. The dataset records environmental parameters (salinity, water temperature) and biological observations of Atlantic mackerel (Scomber scombrus), including individual counts and total lengths.",
+    "keywords": [
+      "North Sea",
+      "Sylt",
+      "trawl survey",
+      "benthic",
+      "Scomber scombrus",
+      "Atlantic mackerel",
+      "salinity",
+      "water temperature",
+      "bathymetry",
+      "marine biology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.98965,
+      "min_lon": 8.426567,
+      "max_lat": 55.058033,
+      "max_lon": 8.51045
+    },
+    "temporalCoverage": {
+      "from": "2021-06-29T07:50:07Z",
+      "to": "2021-09-07T08:26:01Z"
+    },
+    "spatial": "Point locations with ~0.1–10 meter precision (4–6 decimal places in decimal degrees)",
+    "temporal": "Second-level precision"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/948933_934a5ee160ca4528988d37ed9c3aee65.jsonl",
+  "runtime_seconds": 117.24
+}

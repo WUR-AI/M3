@@ -1,0 +1,40 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "contract_sha256": "52ed44ec4410282b49ff956049e7a090caec299122905437fa2893cedb548ab9",
+  "prompt_tokens": 592,
+  "metadata": {
+    "name": "TopographicHigh_RawData",
+    "description": "Dataset containing raw data files for various geographic locations including Big Skidder, Black Hills, Blue Hills, Cougar Mountain, Devils Mountain, Dow Mountain, Fidalgo Island, Lopez Island, and San Juan, provided in GIS, XLSX, and ZIP formats.",
+    "keywords": [
+      "GIS",
+      "XLSX",
+      "ZIP",
+      "TopographicHigh",
+      "RawData",
+      "Big Skidder",
+      "Black Hills",
+      "Blue Hills",
+      "Cougar Mountain",
+      "Devils Mountain",
+      "Dow Mountain",
+      "Fidalgo Island",
+      "Lopez Island",
+      "San Juan"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.563,
+  "status": "ok"
+}

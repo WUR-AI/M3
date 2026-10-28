@@ -1,0 +1,42 @@
+{
+  "csv": "944025.csv",
+  "dataset_id": "944025",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a530a26bc0e4fe56a3fdc94260921220a39b3ec5b60be156d609cd00803f6e1c",
+  "contract_sha256": "adc294e4fc09901d3bcb599a778604999e18b68aec0dab6ef26c277c5e4a559a",
+  "prompt_tokens": 4165,
+  "metadata": {
+    "name": "SO268_043MUC German collector trial pre-impact sediment core geochemistry",
+    "description": "Geochemical data from a sediment core (SO268_043MUC) collected during the German collector trial pre-impact. The dataset includes elemental concentrations (Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) and their relative values at various sediment depths, along with station metadata, geographic coordinates, elevation, and collection timestamp.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "trace elements",
+      "major elements",
+      "German collector trial",
+      "pre-impact",
+      "SO268",
+      "deep sea"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.93056667,
+      "min_lon": -117.0224333,
+      "max_lat": 11.93056667,
+      "max_lon": -117.0224333
+    },
+    "temporalCoverage": {
+      "from": "2019-03-10T10:48:26",
+      "to": "2019-03-10T10:48:26"
+    },
+    "spatial": "point locations",
+    "temporal": "instantaneous"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.599,
+  "status": "ok"
+}

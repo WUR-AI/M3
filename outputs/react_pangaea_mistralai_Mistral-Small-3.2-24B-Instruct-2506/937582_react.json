@@ -1,0 +1,85 @@
+{
+  "csv": "937582.csv",
+  "dataset_id": "937582",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1b4437a62c7a6600b478b9acf419a05aebf9f4af6fd8023b6d8e709a67082012",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3864,
+  "metadata": {
+    "name": "937582",
+    "description": "The dataset contains measurements of various fluorescent dissolved organic matter (fDOM) parameters collected during an expedition. The data includes event information, expedition details, geographic coordinates (latitude and longitude), timestamps, station identifiers, water depth, and multiple fDOM measurements (IFDOM C1, C2, C3, FDOM A-peak, C-peak, M-peak, T-peak, fDOM FI, HI, BI).",
+    "keywords": [
+      "fDOM",
+      "IFDOM",
+      "Expedition",
+      "Water Depth",
+      "Geographic Coordinates",
+      "Temporal Data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20T15:34:00+00:00",
+      "to": "2019-09-08T12:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "937582"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "937582",
+        "resource": "937582"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "937582",
+        "resource": "937582"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "937582",
+        "resource": "937582"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "937582",
+        "resource": "937582",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "937582",
+        "resource": "937582",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 29.826,
+  "status": "ok"
+}

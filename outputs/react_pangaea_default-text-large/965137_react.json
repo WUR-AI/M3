@@ -1,0 +1,98 @@
+{
+  "csv": "965137.csv",
+  "dataset_id": "965137",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "040ea113a6459c88179610e781f09b1e537c72d84cbcae2faf2a0ceb52eca11c",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4111,
+  "metadata": {
+    "name": "Porites coral geochemical measurements from TIAREI-3B (2008)",
+    "description": "Dataset of geochemical proxy measurements (Sr/Ca, Mg/Ca, δ¹⁸O, δ¹³C) from a Porites coral core collected at the TIAREI-3B site. Includes age model values, latitude, longitude, elevation, and the sampling date (2008‑07‑01).",
+    "keywords": [
+      "coral",
+      "Porites",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "geochemistry",
+      "paleoceanography",
+      "TIAREI-3B",
+      "2008",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2008-07-01T00:00:00+00:00",
+      "to": "2008-07-01T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "965137"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "field": "Date/Time",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "965137"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "965137"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 18.918,
+  "status": "ok"
+}

@@ -1,0 +1,39 @@
+{
+  "dataset_id": "897882",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/897882.csv",
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:17:36.875909+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "E. fimbriata oocyte characteristics and elemental composition off Senegal",
+    "description": "Dataset containing biological and environmental measurements for the fish species E. fimbriata, including oocyte diameter and volume, lipid and protein content, calorific values, and elemental ratios (Ba/Ca, Sr/Ca, Zn/Ca). Environmental data includes water temperature and salinity. Samples were collected off the coast of Senegal near Foundiougne.",
+    "keywords": [
+      "E. fimbriata",
+      "oocyte",
+      "fish",
+      "Senegal",
+      "Atlantic Ocean",
+      "elemental composition",
+      "biochemical analysis",
+      "reproductive biology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/897882_c34ef01473be45229a88faab86e5e425.jsonl",
+  "runtime_seconds": 137.66
+}

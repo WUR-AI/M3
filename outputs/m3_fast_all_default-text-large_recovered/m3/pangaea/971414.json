@@ -1,0 +1,39 @@
+{
+  "dataset_id": "971414",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971414.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:03:52.461755+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Chiba River Section Measurements",
+    "description": "Dataset of 19 river‑section samples collected in the Chiba region of Japan. Includes Event identifiers, unique Sample IDs, Section position, Age (years), SR (sedimentation rate), Reference source, and geographic coordinates (Latitude, Longitude). The Date/Time column is empty, so no temporal information is available.",
+    "keywords": [
+      "river",
+      "section",
+      "Chiba",
+      "Japan",
+      "age",
+      "sedimentation rate",
+      "sample"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": null,
+    "spatial": "0.05° latitude × 0.14° longitude",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971414_59e71c8cf2e442ac803f63665abe1370.jsonl",
+  "runtime_seconds": 460.57,
+  "recovered_from_trace": true,
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54"
+}

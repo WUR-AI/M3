@@ -1,0 +1,44 @@
+{
+  "dataset_id": "917831",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917831.csv",
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:26:01.037212+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Physiological and Biochemical Measurements of Aquatic Organisms from Macapule Lagoon",
+    "description": "A dataset containing morphometric measurements, organ weights, and biochemical markers (triglycerides, cholesterol, glucose) for individual aquatic organisms sampled at Macapule Lagoon. The data includes specimen length, mass, condition factors, and seasonal variations collected between December 2013 and August 2015.",
+    "keywords": [
+      "aquatic organisms",
+      "physiology",
+      "biochemistry",
+      "Macapule Lagoon",
+      "morphometrics",
+      "organ weights",
+      "triglycerides",
+      "cholesterol",
+      "glucose",
+      "seasonal variation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12",
+      "to": "2015-08-31"
+    },
+    "spatial": "Point location (Macapule Lagoon)",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917831_e3770f6fcbb043bf84a65077a9c96a8e.jsonl",
+  "runtime_seconds": 163.75
+}

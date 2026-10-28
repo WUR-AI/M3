@@ -1,0 +1,44 @@
+{
+  "csv": "986963.csv",
+  "dataset_id": "986963",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "contract_sha256": "0ede468b1d032aa6701e14763e1fa90eae8e7c335580ea39e7678fb243f87e21",
+  "prompt_tokens": 14577,
+  "metadata": {
+    "name": "Paleo core geochemical measurements",
+    "description": "A collection of geochemical and isotopic measurements (e.g., TOC, TIC, δ13C, δ15N, grain size fractions, age, and other parameters) from multiple sediment cores (NPAL04, NPAL05, NPAL07, NPAL08, NPAL12, NPAL14, NPAL15, NPAL17, NPAL19, AeN_Q1_P1_BC1) with associated depth, latitude, longitude, and sampling date information.",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "isotopes",
+      "δ13C",
+      "δ15N",
+      "paleoenvironment",
+      "depth profile",
+      "age model"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "2018-09-28",
+      "to": "2021-03-06"
+    },
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.165,
+  "status": "ok"
+}

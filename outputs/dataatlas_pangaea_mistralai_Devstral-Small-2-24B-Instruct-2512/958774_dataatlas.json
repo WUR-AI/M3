@@ -1,0 +1,16 @@
+{
+  "csv": "958774.csv",
+  "dataset_id": "958774",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 104,
+  "n_columns": 11,
+  "description": "Earth and environmental science data with 104 rows, including year, depth, TP, location, and event",
+  "dataset_description": "Earth and environmental science dataset with 958,774 tables, each containing 104 rows.",
+  "runtime_seconds": 8.013,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/958774/dictionary.json"
+}

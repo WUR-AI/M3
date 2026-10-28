@@ -1,0 +1,49 @@
+{
+  "dataset_id": "973602",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973602.csv",
+  "source_sha256": "fbdd17a1da291bff3da59cc7371ccf8e55bfb0b47ba5f0e376f7264ea887d8be",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:37:35.879914+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Analysis of Polar Samples",
+    "description": "This dataset contains geochemical analysis of two samples collected from the same location near the North Pole. It includes chemical composition data for various oxides (SiO2, TiO2, Al2O3, Fe2O3, MnO, MgO, CaO, Na2O, K2O, P2O5) and their total percentage, along with metadata such as sample ID, event, latitude, longitude, elevation, and date/time of collection.",
+    "keywords": [
+      "geochemistry",
+      "polar samples",
+      "chemical composition",
+      "oxide analysis",
+      "North Pole",
+      "SiO2",
+      "TiO2",
+      "Al2O3",
+      "Fe2O3",
+      "MnO",
+      "MgO",
+      "CaO",
+      "Na2O",
+      "K2O",
+      "P2O5"
+    ],
+    "spatialCoverage": {
+      "min_lat": 86.961,
+      "min_lon": 55.68667,
+      "max_lat": 86.961,
+      "max_lon": 55.68667
+    },
+    "temporalCoverage": {
+      "from": "2016-10-04T17:21:00+00:00",
+      "to": "2016-10-04T17:21:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973602_beb6f70fd517484d8a40fe13beee032c.jsonl",
+  "runtime_seconds": 249.45
+}

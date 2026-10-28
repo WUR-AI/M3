@@ -1,0 +1,99 @@
+{
+  "csv": "913868.csv",
+  "dataset_id": "913868",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c0511e76b8edf563e4cac8c8b2d4c1f3fc73731ceba37608306521e4ec2d8afa",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 9298,
+  "metadata": {
+    "name": "913868",
+    "description": "The dataset contains atmospheric particle size distribution measurements. It includes various columns representing particle concentrations at different sizes, along with temporal and spatial information.",
+    "keywords": [
+      "Atmospheric particles",
+      "size distribution",
+      "temporal data",
+      "spatial data"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2019-01-01T00:30:00+00:00",
+      "to": "2019-12-31T23:05:00+00:00"
+    },
+    "spatial": "Point locations",
+    "temporal": "Hourly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "913868"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "time_column": "Date/time end"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "time_column": "Time min"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 29.329,
+  "status": "ok"
+}

@@ -1,0 +1,44 @@
+{
+  "dataset_id": "978983",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/978983.csv",
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:52:43.413145+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Deep-Sea Sediment Core Mineralogical Composition from Event 386-M0095B",
+    "description": "A dataset containing mineralogical composition data (percentages of various minerals) for 14 sediment samples collected from a single deep-sea drilling event (386-M0095B) at a depth of approximately 7,697 meters in the western Pacific Ocean. The data includes sample identification, geospatial coordinates, sediment depth, and quantitative mineral abundance values.",
+    "keywords": [
+      "deep-sea sediment",
+      "mineralogical composition",
+      "sediment core",
+      "geological sample",
+      "western Pacific Ocean",
+      "quartz",
+      "plagioclase",
+      "muscovite",
+      "halite",
+      "chlorite"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30T00:00:00+00:00",
+      "to": "2021-05-30T00:00:00+00:00"
+    },
+    "spatial": "Point location (single drilling site at 36.89168333°N, 143.4078833°E, -7697m elevation)",
+    "temporal": "Single day (2021-05-30)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/978983_f0ce5667e9ab4341973775157ef2a2e6.jsonl",
+  "runtime_seconds": 157.38
+}

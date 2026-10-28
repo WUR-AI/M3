@@ -1,0 +1,67 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ecb7b5ed9a1a17db139f60404906a6597234581b11225c226aeee09add86bffa",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1896,
+  "metadata": {
+    "name": "Geochemical measurements of Uvigerina spp. isotopes from marine sediment core M78/1",
+    "description": "This dataset contains geochemical data from a marine sediment core (Event M78/1_181-3) collected at a single location (Latitude 29.0 °N, Longitude –88.333333 °E). For each depth interval the file provides sediment depth, age, δ13C and δ18O values of the foraminifera *Uvigerina* spp., as well as the elevation of the core and the date/time of sampling.",
+    "keywords": [
+      "sediment core",
+      "isotope",
+      "δ13C",
+      "δ18O",
+      "Uvigerina",
+      "marine",
+      "paleoceanography",
+      "age-depth",
+      "geochemistry",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": 29.0,
+      "min_lon": -88.333333,
+      "max_lat": 29.0,
+      "max_lon": -88.333333
+    },
+    "temporalCoverage": {
+      "from": "2009-03-04",
+      "to": "2009-03-04"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "975181"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181",
+        "n": 5
+      }
+    }
+  ],
+  "runtime_seconds": 9.646,
+  "status": "ok"
+}

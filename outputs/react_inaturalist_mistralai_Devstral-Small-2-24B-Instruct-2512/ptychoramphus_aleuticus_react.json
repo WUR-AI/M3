@@ -1,0 +1,60 @@
+{
+  "csv": "ptychoramphus_aleuticus.csv",
+  "dataset_id": "ptychoramphus_aleuticus",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "80bfff6219ff696f223ae202c2d3cba494e22facb5b9b9c22706699c63f449c1",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2633,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 27.82253,
+      "min_lon": -179.579871,
+      "max_lat": 59.854992,
+      "max_lon": 175.888891
+    },
+    "temporalCoverage": {
+      "from": "1984-05-25",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "ptychoramphus_aleuticus",
+        "resource": "ptychoramphus_aleuticus.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "ptychoramphus_aleuticus",
+        "resource": "ptychoramphus_aleuticus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "ptychoramphus_aleuticus",
+        "resource": "ptychoramphus_aleuticus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ptychoramphus_aleuticus",
+        "resource": "ptychoramphus_aleuticus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 10.194,
+  "status": "ok"
+}

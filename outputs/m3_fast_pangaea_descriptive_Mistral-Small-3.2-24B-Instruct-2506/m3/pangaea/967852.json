@@ -1,0 +1,28 @@
+{
+  "dataset_id": "967852",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/967852.csv",
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T16:06:14.911863+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Santiurde Section Sediment Samples",
+    "description": "Dataset containing sediment sample measurements and compositions from the Santiurde section, including sample IDs, labels, thickness, ratios, stratigraphic heights, and mineral compositions (Qz, Clay, Cal, Gp, Dol, Py). The samples are georeferenced with latitude, longitude, and elevation data.",
+    "keywords": [
+      "sediment samples",
+      "Santiurde section",
+      "mineral composition",
+      "stratigraphy",
+      "georeferenced data",
+      "Spain"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/967852_3a329b656dec46aa862a5d36dd6d7547.jsonl",
+  "runtime_seconds": 1995.79
+}

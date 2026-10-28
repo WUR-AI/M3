@@ -1,0 +1,78 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3074,
+  "metadata": {
+    "name": "973907",
+    "description": "Dataset containing sediment depth, section, core diameter deviation, P-wave travel time, Vp-a, AGR, event, latitude, longitude, elevation, and date/time information.",
+    "keywords": [],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12",
+      "to": "2015-07-12"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973907"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 13.671,
+  "status": "ok"
+}

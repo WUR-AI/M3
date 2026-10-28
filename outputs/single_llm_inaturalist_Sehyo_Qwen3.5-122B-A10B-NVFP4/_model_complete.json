@@ -1,0 +1,9 @@
+{
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "output_dir": "/home/com3dian/Github/metadata_agent/outputs/single_llm_inaturalist_Sehyo_Qwen3.5-122B-A10B-NVFP4",
+  "expected": 100,
+  "successful": 0,
+  "skipped": 100,
+  "processed": 100,
+  "remaining": 0
+}

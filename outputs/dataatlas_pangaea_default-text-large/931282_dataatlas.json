@@ -1,0 +1,16 @@
+{
+  "csv": "931282.csv",
+  "dataset_id": "931282",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 2,
+  "n_columns": 8,
+  "description": "Two Earth environmental measurement records from 2020‑03‑11 with file metadata and location.",
+  "dataset_description": "Two records of Earth environmental measurements captured on 2020-03-11.",
+  "runtime_seconds": 21.016,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/931282/dictionary.json"
+}

@@ -1,0 +1,88 @@
+{
+  "csv": "asaphodes_beata.csv",
+  "dataset_id": "asaphodes_beata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b47f407db4d9c70ffa77a008a03c7b989a3385dcba2541f3fc99c7ed3a2eecc8",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4170,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -46.90579,
+      "min_lon": 167.36141,
+      "max_lat": -35.256996,
+      "max_lon": 177.524484
+    },
+    "temporalCoverage": {
+      "from": "2005-03-20",
+      "to": "2026-06-13"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 19.243,
+  "status": "ok"
+}

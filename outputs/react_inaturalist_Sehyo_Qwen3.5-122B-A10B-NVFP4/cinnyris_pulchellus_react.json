@@ -1,0 +1,52 @@
+{
+  "csv": "cinnyris_pulchellus.csv",
+  "dataset_id": "cinnyris_pulchellus",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ddc15a0c8a3ff9a94bae2d95048c53b18ef8a6c7f295156ee77642bc51cb4d93",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2928,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -7.760696,
+      "min_lon": -17.492088,
+      "max_lat": 16.46969,
+      "max_lon": 40.107593
+    },
+    "temporalCoverage": {
+      "from": "1986-02-15",
+      "to": "2026-06-03"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "cinnyris_pulchellus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "cinnyris_pulchellus",
+        "resource": "cinnyris_pulchellus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "cinnyris_pulchellus",
+        "resource": "cinnyris_pulchellus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 11.753,
+  "status": "ok"
+}

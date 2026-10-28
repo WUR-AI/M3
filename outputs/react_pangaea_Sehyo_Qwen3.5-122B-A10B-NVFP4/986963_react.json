@@ -1,0 +1,130 @@
+{
+  "csv": "986963.csv",
+  "dataset_id": "986963",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 14600,
+  "metadata": {
+    "name": "Arctic sediment core geochemical measurements",
+    "description": "Dataset containing 140 records of sediment core measurements from multiple locations in the Arctic region. Measurements include depth, age, sedimentation rate, accumulation rate, total organic carbon (TOC), total inorganic carbon (TIC), total nitrogen (TN), stable carbon and nitrogen isotopes (δ13C, δ15N), and grain size fractions (>63 µm, 63-2 µm, <2 µm).",
+    "keywords": [
+      "sediment",
+      "core",
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "TN",
+      "δ13C",
+      "δ15N",
+      "grain size",
+      "Arctic"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "2018-09-28",
+      "to": "2021-03-06"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "986963"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "n": 10
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "field": "Event",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "field": "Date/Time",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "986963",
+        "resource": "986963",
+        "n": 3
+      }
+    }
+  ],
+  "runtime_seconds": 58.436,
+  "status": "ok"
+}

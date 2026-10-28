@@ -1,0 +1,15 @@
+{
+  "csv": "acrothamnus_colensoi.csv",
+  "dataset_id": "acrothamnus_colensoi",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "32e3d47a690bf1d7da9ae1b3daff2f97a295d385c2d114e9f59a4b6588d877a1",
+  "contract_sha256": "6f4bc873ae265d73a3784b54e0fc107e07500c0c615c79d21a13079ef53f7c9b",
+  "prompt_tokens": 326237,
+  "status": "skipped",
+  "reason": "context_window"
+}

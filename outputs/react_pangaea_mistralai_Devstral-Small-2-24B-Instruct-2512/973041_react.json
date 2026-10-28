@@ -1,0 +1,132 @@
+{
+  "csv": "973041.csv",
+  "dataset_id": "973041",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 5193,
+  "metadata": {
+    "name": "Radiocarbon and U-series dating of archaeological sites in Borneo",
+    "description": "This dataset contains radiocarbon and U-series dating information for archaeological sites in Borneo, including site names, countries, provinces, lab labels, dating methods, ages, and references.",
+    "keywords": [
+      "radiocarbon dating",
+      "U-series dating",
+      "archaeological sites",
+      "Borneo",
+      "Malaysia",
+      "Indonesia",
+      "Sarawak",
+      "Sabah",
+      "Kalimantan",
+      "archaeology",
+      "prehistory"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01",
+      "to": "1970-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "uncalibrated and calibrated ages"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973041"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Country",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Province",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Dating meth",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Comm",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Age dated"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Age dated_2"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    }
+  ],
+  "runtime_seconds": 21.282,
+  "status": "ok"
+}

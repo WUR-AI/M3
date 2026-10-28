@@ -1,0 +1,15 @@
+{
+  "csv": "capsus_ater.csv",
+  "dataset_id": "capsus_ater",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b5ae8c8b23df0476c417aa444aaae4e37a5ab5a3782472e6cd6d830a7bb9d711",
+  "contract_sha256": "21baf48c04efc0a4059dd8db3866ba1f9cd14b33fb05fee209f24bb4f1019d25",
+  "prompt_tokens": 307800,
+  "status": "skipped",
+  "reason": "context_window"
+}

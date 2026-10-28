@@ -1,0 +1,16 @@
+{
+  "csv": "968881.csv",
+  "dataset_id": "968881",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 578,
+  "n_columns": 8,
+  "description": "Environmental measurements of ice/snow depth, density, and location for 578 observations Dec 2021–Jan 2022.",
+  "dataset_description": "Environmental measurements recorded Dec 2021–Jan 2022 across 578 observations in a single table.",
+  "runtime_seconds": 27.364,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/968881/dictionary.json"
+}

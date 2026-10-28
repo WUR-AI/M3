@@ -1,0 +1,28 @@
+{
+  "dataset_id": "clarias_gariepinus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/clarias_gariepinus.csv",
+  "source_sha256": "c314e5d79c1e7fa3b8657c666bbf0e6d785a17db9dad4cb9157d873b4234c731",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T04:16:20.813595+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.345058,
+      "min_lon": -83.745918,
+      "max_lat": 55.485209,
+      "max_lon": 144.756285
+    },
+    "temporalCoverage": {
+      "from": "1965-09-10T08:58:50+00:00",
+      "to": "2026-06-09T20:40:43+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/clarias_gariepinus_877d06c2b447413894747f7a1345c459.jsonl",
+  "runtime_seconds": 135.57
+}

@@ -1,0 +1,995 @@
+{
+  "dataset_name": "995327",
+  "list_of_tables": [
+    "995327"
+  ],
+  "tables": {
+    "995327": {
+      "table_name": "995327",
+      "row_count": 5,
+      "number_of_columns": 32,
+      "list_of_columns": [
+        "Sample label",
+        "Depth sed",
+        "Sample comment",
+        "HM",
+        "Transparent",
+        "Opaque",
+        "Turbid",
+        "Zrn",
+        "Tur",
+        "Rt",
+        "Grt",
+        "Ttn",
+        "Ep",
+        "Zoisite+clinozoisite",
+        "Cld",
+        "St",
+        "Glaucophane-crossite",
+        "Ky",
+        "And",
+        "Lws",
+        "Ves",
+        "Ol",
+        "Ant",
+        "Brk",
+        "Mnz",
+        "Xtm",
+        "Crn",
+        "Min unident",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Date/Time"
+      ],
+      "columns": {
+        "Sample label": {
+          "column_name": "Sample label",
+          "data_type": "string",
+          "sample_values": [
+            "La20",
+            "La16",
+            "La3",
+            "La10",
+            "La7"
+          ],
+          "data_patterns": {
+            "Aa99": 3,
+            "Aa9": 2
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "La7",
+                1
+              ],
+              [
+                "La20",
+                1
+              ],
+              [
+                "La10",
+                1
+              ],
+              [
+                "La3",
+                1
+              ],
+              [
+                "La16",
+                1
+              ]
+            ],
+            "unique_count": 5
+          },
+          "description": "Sediment sample identifiers with La prefix and numeric suffixes."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "sample_values": [
+            12.43,
+            15.02,
+            27.5,
+            23.5,
+            20.76
+          ],
+          "data_patterns": {
+            "99.99": 3,
+            "99.9": 2
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 12.43,
+            "max": 27.5,
+            "mean": 19.842000000000002,
+            "median": 20.76,
+            "std": 6.145284370962829
+          },
+          "description": "Sediment depth in meters, ranging from 12.43 to 27.5."
+        },
+        "Sample comment": {
+          "column_name": "Sample comment",
+          "data_type": "string",
+          "sample_values": [
+            "2-4 phi",
+            "2-4 phi",
+            "2-4 phi",
+            "2-4 phi",
+            "2-4 phi"
+          ],
+          "data_patterns": {
+            "9-9 aaa": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "2-4 phi",
+                5
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Sediment grain size classification in phi units."
+        },
+        "HM": {
+          "column_name": "HM",
+          "data_type": "float",
+          "sample_values": [
+            1.0,
+            0.8,
+            1.1,
+            1.4,
+            0.6
+          ],
+          "data_patterns": {
+            "9.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.6,
+            "max": 1.4,
+            "mean": 0.9800000000000001,
+            "median": 1.0,
+            "std": 0.30331501776206204
+          },
+          "description": "Mineral composition percentage in sediment samples."
+        },
+        "Transparent": {
+          "column_name": "Transparent",
+          "data_type": "float",
+          "sample_values": [
+            35.9,
+            45.8,
+            22.2,
+            37.0,
+            38.4
+          ],
+          "data_patterns": {
+            "99.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 22.2,
+            "max": 45.8,
+            "mean": 35.86,
+            "median": 37.0,
+            "std": 8.560841080174306
+          },
+          "description": "Mineral transparency percentage in sediment samples."
+        },
+        "Opaque": {
+          "column_name": "Opaque",
+          "data_type": "float",
+          "sample_values": [
+            51.7,
+            32.9,
+            25.6,
+            29.4,
+            34.3
+          ],
+          "data_patterns": {
+            "99.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 25.6,
+            "max": 51.7,
+            "mean": 34.779999999999994,
+            "median": 32.9,
+            "std": 10.040766902981069
+          },
+          "description": "Opaque mineral content percentage in sediment samples."
+        },
+        "Turbid": {
+          "column_name": "Turbid",
+          "data_type": "float",
+          "semantic_type": "identifier",
+          "sample_values": [
+            28.6,
+            33.6,
+            28.7,
+            26.1,
+            29.8
+          ],
+          "data_patterns": {
+            "99.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 26.1,
+            "max": 33.6,
+            "mean": 29.359999999999996,
+            "median": 28.7,
+            "std": 2.73001831495688
+          },
+          "description": "Turbidity measurement in NTU units for sediment samples."
+        },
+        "Zrn": {
+          "column_name": "Zrn",
+          "data_type": "float",
+          "sample_values": [
+            24.5,
+            23.5,
+            12.0,
+            11.0,
+            13.5
+          ],
+          "data_patterns": {
+            "99.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 11.0,
+            "max": 24.5,
+            "mean": 16.9,
+            "median": 13.5,
+            "std": 6.5517173321198765
+          },
+          "description": "Zirconium content in sediment samples, measured in percentage."
+        },
+        "Tur": {
+          "column_name": "Tur",
+          "data_type": "float",
+          "sample_values": [
+            12.0,
+            11.5,
+            13.5,
+            20.5,
+            10.0
+          ],
+          "data_patterns": {
+            "99.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 10.0,
+            "max": 20.5,
+            "mean": 13.5,
+            "median": 12.0,
+            "std": 4.107919181288746
+          },
+          "description": "Turbulence intensity in arbitrary units."
+        },
+        "Rt": {
+          "column_name": "Rt",
+          "data_type": "float",
+          "sample_values": [
+            3.5,
+            1.5,
+            1.5,
+            0.5,
+            0.5
+          ],
+          "data_patterns": {
+            "9.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 3.5,
+            "mean": 1.5,
+            "median": 1.5,
+            "std": 1.224744871391589
+          },
+          "description": "Mineral retention time in sediment samples, measured in arbitrary units."
+        },
+        "Grt": {
+          "column_name": "Grt",
+          "data_type": "float",
+          "sample_values": [
+            18.5,
+            33.5,
+            23.5,
+            25.5,
+            22.5
+          ],
+          "data_patterns": {
+            "99.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 18.5,
+            "max": 33.5,
+            "mean": 24.7,
+            "median": 23.5,
+            "std": 5.540758070878027
+          },
+          "description": "Garnett content percentage by weight in sediment samples."
+        },
+        "Ttn": {
+          "column_name": "Ttn",
+          "data_type": "float",
+          "sample_values": [
+            1.5,
+            0.5,
+            10.5
+          ],
+          "data_patterns": {
+            "9.9": 2,
+            "99.9": 1
+          },
+          "total_rows": 5,
+          "null_count": 2,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 10.5,
+            "mean": 4.166666666666667,
+            "median": 1.5,
+            "std": 5.507570547286102
+          },
+          "description": "Titanium content in sediment samples, measured in percentage."
+        },
+        "Ep": {
+          "column_name": "Ep",
+          "data_type": "float",
+          "sample_values": [
+            6.5,
+            6.0,
+            3.0,
+            6.5,
+            7.0
+          ],
+          "data_patterns": {
+            "9.9": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 3.0,
+            "max": 7.0,
+            "mean": 5.8,
+            "median": 6.5,
+            "std": 1.6046806535881213
+          },
+          "description": "Mineral composition measurement in pH units."
+        },
+        "Zoisite+clinozoisite": {
+          "column_name": "Zoisite+clinozoisite",
+          "data_type": "float",
+          "sample_values": [
+            1.5,
+            11.5,
+            5.5,
+            3.5
+          ],
+          "data_patterns": {
+            "9.9": 3,
+            "99.9": 1
+          },
+          "total_rows": 5,
+          "null_count": 1,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 1.5,
+            "max": 11.5,
+            "mean": 5.5,
+            "median": 4.5,
+            "std": 4.320493798938574
+          },
+          "description": "Zoisite+clinozoisite mineral composition percentage in sediment samples."
+        },
+        "Cld": {
+          "column_name": "Cld",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.5,
+            0.01
+          ],
+          "data_patterns": {
+            "9.9": 1,
+            "9.99": 1
+          },
+          "total_rows": 5,
+          "null_count": 3,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.01,
+            "max": 0.5,
+            "mean": 0.255,
+            "median": 0.255,
+            "std": 0.3464823227814083
+          },
+          "description": "Mineral composition probability score, ranging 0.01 to 0.5."
+        },
+        "St": {
+          "column_name": "St",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.5
+          ],
+          "data_patterns": {
+            "9.9": 1
+          },
+          "total_rows": 5,
+          "null_count": 4,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 0.5,
+            "mean": 0.5,
+            "median": 0.5,
+            "std": null
+          },
+          "description": "Mineral presence probability score, constant at 0.5."
+        },
+        "Glaucophane-crossite": {
+          "column_name": "Glaucophane-crossite",
+          "data_type": "float",
+          "sample_values": [
+            1.5,
+            3.0
+          ],
+          "data_patterns": {
+            "9.9": 2
+          },
+          "total_rows": 5,
+          "null_count": 3,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 1.5,
+            "max": 3.0,
+            "mean": 2.25,
+            "median": 2.25,
+            "std": 1.0606601717798212
+          },
+          "description": "Glaucophane-crossite mineral composition percentage in sediment samples."
+        },
+        "Ky": {
+          "column_name": "Ky",
+          "data_type": "float",
+          "sample_values": [
+            6.0,
+            13.0,
+            12.5,
+            5.0
+          ],
+          "data_patterns": {
+            "9.9": 2,
+            "99.9": 2
+          },
+          "total_rows": 5,
+          "null_count": 1,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 5.0,
+            "max": 13.0,
+            "mean": 9.125,
+            "median": 9.25,
+            "std": 4.2106016988865935
+          },
+          "description": "Ky values range from 5.0 to 13.0, with a mean of 9.125."
+        },
+        "And": {
+          "column_name": "And",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.01,
+            0.01
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 5,
+          "null_count": 3,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.01,
+            "max": 0.01,
+            "mean": 0.01,
+            "median": 0.01,
+            "std": 0.0
+          },
+          "description": "Probability score of sediment sample mineral composition, ranging 0.01."
+        },
+        "Lws": {
+          "column_name": "Lws",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.01
+          ],
+          "data_patterns": {
+            "9.99": 1
+          },
+          "total_rows": 5,
+          "null_count": 4,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.01,
+            "max": 0.01,
+            "mean": 0.01,
+            "median": 0.01,
+            "std": null
+          },
+          "description": "Likelihood score of sediment sample mineral composition, ranging from 0.01 to 0.01."
+        },
+        "Ves": {
+          "column_name": "Ves",
+          "data_type": "float",
+          "sample_values": [
+            2.0,
+            0.5,
+            1.5,
+            1.5
+          ],
+          "data_patterns": {
+            "9.9": 4
+          },
+          "total_rows": 5,
+          "null_count": 1,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 2.0,
+            "mean": 1.375,
+            "median": 1.5,
+            "std": 0.6291528696058958
+          },
+          "description": "Vesinite percentage in sediment samples, ranging from 0.5% to 2.0%."
+        },
+        "Ol": {
+          "column_name": "Ol",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.5
+          ],
+          "data_patterns": {
+            "9.9": 1
+          },
+          "total_rows": 5,
+          "null_count": 4,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 0.5,
+            "mean": 0.5,
+            "median": 0.5,
+            "std": null
+          },
+          "description": "Ol is a probability score representing a single value of 0.5."
+        },
+        "Ant": {
+          "column_name": "Ant",
+          "data_type": "float",
+          "sample_values": [
+            27.5,
+            5.0,
+            10.5
+          ],
+          "data_patterns": {
+            "99.9": 2,
+            "9.9": 1
+          },
+          "total_rows": 5,
+          "null_count": 2,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 5.0,
+            "max": 27.5,
+            "mean": 14.333333333333334,
+            "median": 10.5,
+            "std": 11.729592206608604
+          },
+          "description": "Antigorite percentage by weight in sediment samples."
+        },
+        "Brk": {
+          "column_name": "Brk",
+          "data_type": "float",
+          "sample_values": [
+            23.0,
+            14.5,
+            0.5,
+            9.5,
+            6.0
+          ],
+          "data_patterns": {
+            "9.9": 3,
+            "99.9": 2
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 23.0,
+            "mean": 10.7,
+            "median": 9.5,
+            "std": 8.563001810113088
+          },
+          "description": "Bromine content in sediment samples, measured in parts per million."
+        },
+        "Mnz": {
+          "column_name": "Mnz",
+          "data_type": "float",
+          "sample_values": [
+            0.01,
+            1.5,
+            0.5
+          ],
+          "data_patterns": {
+            "9.9": 2,
+            "9.99": 1
+          },
+          "total_rows": 5,
+          "null_count": 2,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 0.01,
+            "max": 1.5,
+            "mean": 0.6699999999999999,
+            "median": 0.5,
+            "std": 0.7594076639065476
+          },
+          "description": "Manganese concentration in sediment samples, measured in percentage."
+        },
+        "Xtm": {
+          "column_name": "Xtm",
+          "data_type": "float",
+          "sample_values": [
+            4.0
+          ],
+          "data_patterns": {
+            "9.9": 1
+          },
+          "total_rows": 5,
+          "null_count": 4,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 4.0,
+            "max": 4.0,
+            "mean": 4.0,
+            "median": 4.0,
+            "std": null
+          },
+          "description": "Sediment sample depth in meters, constant value of 4.0."
+        },
+        "Crn": {
+          "column_name": "Crn",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            1.0,
+            1.0
+          ],
+          "data_patterns": {
+            "9.9": 2
+          },
+          "total_rows": 5,
+          "null_count": 3,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "std": 0.0
+          },
+          "description": "Probability score ranging from 1.0 to 1.0, with a mean of 1.0."
+        },
+        "Min unident": {
+          "column_name": "Min unident",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            1.0
+          ],
+          "data_patterns": {
+            "9.9": 1
+          },
+          "total_rows": 5,
+          "null_count": 4,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "std": null
+          },
+          "description": "Mineral identification probability score, ranging from 0 to 1."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Lanaittu_core",
+            "Lanaittu_core",
+            "Lanaittu_core",
+            "Lanaittu_core",
+            "Lanaittu_core"
+          ],
+          "data_patterns": {
+            "Aaaaaaaa_aaaa": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Lanaittu_core",
+                5
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Sediment sample event identifier, consistently labeled as Lanaittucore."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            40.2592,
+            40.2592,
+            40.2592,
+            40.2592,
+            40.2592
+          ],
+          "data_patterns": {
+            "99.9999": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 40.2592,
+            "max": 40.2592,
+            "mean": 40.2592,
+            "median": 40.2592,
+            "std": 0.0
+          },
+          "description": "Geographic coordinate representing location in degrees north of the equator."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            9.5014,
+            9.5014,
+            9.5014,
+            9.5014,
+            9.5014
+          ],
+          "data_patterns": {
+            "9.9999": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 9.5014,
+            "max": 9.5014,
+            "mean": 9.5014,
+            "median": 9.5014,
+            "std": 0.0
+          },
+          "description": "Longitude in decimal degrees, fixed at 9.5014 for all samples."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "1994-01-01",
+            "1994-01-01",
+            "1994-01-01",
+            "1994-01-01",
+            "1994-01-01"
+          ],
+          "data_patterns": {
+            "9999-99-99": 5
+          },
+          "total_rows": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "1994-01-01T00:00:00",
+            "max_date": "1994-01-01T00:00:00"
+          },
+          "description": "Sample collection date and time for sediment analysis."
+        }
+      },
+      "time_period_covered": {
+        "start": "1994-01-01T00:00:00",
+        "end": "1994-01-01T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Sample label": "La7",
+          "Depth sed": 15.02,
+          "Sample comment": "2-4 phi",
+          "HM": 0.6,
+          "Transparent": 38.4,
+          "Opaque": 32.9,
+          "Turbid": 28.7,
+          "Zrn": 23.5,
+          "Tur": 20.5,
+          "Rt": 1.5,
+          "Grt": 33.5,
+          "Ttn": null,
+          "Ep": 3.0,
+          "Zoisite+clinozoisite": 1.5,
+          "Cld": null,
+          "St": null,
+          "Glaucophane-crossite": 1.5,
+          "Ky": 5.0,
+          "And": null,
+          "Lws": null,
+          "Ves": null,
+          "Ol": null,
+          "Ant": null,
+          "Brk": 9.5,
+          "Mnz": 0.5,
+          "Xtm": null,
+          "Crn": null,
+          "Min unident": null,
+          "Event": "Lanaittu_core",
+          "Latitude": 40.2592,
+          "Longitude": 9.5014,
+          "Date/Time": "1994-01-01"
+        },
+        {
+          "Sample label": "La20",
+          "Depth sed": 27.5,
+          "Sample comment": "2-4 phi",
+          "HM": 1.1,
+          "Transparent": 22.2,
+          "Opaque": 51.7,
+          "Turbid": 26.1,
+          "Zrn": 12.0,
+          "Tur": 10.0,
+          "Rt": 0.5,
+          "Grt": 23.5,
+          "Ttn": 10.5,
+          "Ep": 7.0,
+          "Zoisite+clinozoisite": null,
+          "Cld": 0.5,
+          "St": 0.5,
+          "Glaucophane-crossite": 3.0,
+          "Ky": null,
+          "And": 0.01,
+          "Lws": 0.01,
+          "Ves": 0.5,
+          "Ol": 0.5,
+          "Ant": 27.5,
+          "Brk": 0.5,
+          "Mnz": 1.5,
+          "Xtm": null,
+          "Crn": 1.0,
+          "Min unident": 1.0,
+          "Event": "Lanaittu_core",
+          "Latitude": 40.2592,
+          "Longitude": 9.5014,
+          "Date/Time": "1994-01-01"
+        },
+        {
+          "Sample label": "La10",
+          "Depth sed": 20.76,
+          "Sample comment": "2-4 phi",
+          "HM": 1.4,
+          "Transparent": 35.9,
+          "Opaque": 34.3,
+          "Turbid": 29.8,
+          "Zrn": 24.5,
+          "Tur": 12.0,
+          "Rt": 0.5,
+          "Grt": 25.5,
+          "Ttn": null,
+          "Ep": 6.0,
+          "Zoisite+clinozoisite": 11.5,
+          "Cld": 0.01,
+          "St": null,
+          "Glaucophane-crossite": null,
+          "Ky": 12.5,
+          "And": 0.01,
+          "Lws": null,
+          "Ves": 1.5,
+          "Ol": null,
+          "Ant": null,
+          "Brk": 6.0,
+          "Mnz": 0.01,
+          "Xtm": null,
+          "Crn": null,
+          "Min unident": null,
+          "Event": "Lanaittu_core",
+          "Latitude": 40.2592,
+          "Longitude": 9.5014,
+          "Date/Time": "1994-01-01"
+        }
+      ],
+      "description": "Earth and environmental science sediment sample data with mineral composition, depth, and location.",
+      "is_row_capped": false,
+      "rows_processed": 5,
+      "total_rows_in_file": 5
+    }
+  },
+  "time_period_covered": {
+    "start": "1994-01-01T00:00:00",
+    "end": "1994-01-01T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset with 995,327 tables, 5 rows each, covering 1994-01-01."
+}

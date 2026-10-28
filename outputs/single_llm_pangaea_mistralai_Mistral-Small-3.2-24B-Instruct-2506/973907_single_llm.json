@@ -1,0 +1,43 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "c92a4482a0d5f4b050f0f21aea05c4b3c602a571c470829b9f1416a78df5a91c",
+  "prompt_tokens": 17690,
+  "metadata": {
+    "name": "973907",
+    "description": "This dataset contains sediment core data including depth, section, core diameter deviation, P-wave travel time, P-wave velocity (Vp-a), acoustic grain size (AGR), event, latitude, longitude, elevation, and date/time.",
+    "keywords": [
+      "sediment core",
+      "depth",
+      "P-wave travel time",
+      "P-wave velocity",
+      "acoustic grain size",
+      "latitude",
+      "longitude",
+      "elevation",
+      "date/time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12",
+      "to": "2015-07-12"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 12.935,
+  "status": "ok"
+}

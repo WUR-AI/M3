@@ -1,0 +1,46 @@
+{
+  "csv": "897882.csv",
+  "dataset_id": "897882",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "contract_sha256": "f90f83a8094b368a4418ad134bb6d18c086f2fa0346a80f8cdc1cea2d60fd91b",
+  "prompt_tokens": 7434,
+  "metadata": {
+    "name": "E. fimbriata oocyte composition measurements across Senegal coastal sites (2014)",
+    "description": "Dataset of biochemical and physical measurements of E. fimbriata oocytes collected from three coastal locations in Senegal (Foundiougne, Djifer, Joal) during 2014. Includes temperature, salinity, oocyte size, lipid and protein content, elemental ratios, and associated latitude/longitude for each sample.",
+    "keywords": [
+      "E. fimbriata",
+      "oocyte",
+      "lipids",
+      "protein",
+      "marine biology",
+      "Senegal",
+      "coastal",
+      "temperature",
+      "salinity",
+      "2014",
+      "biochemistry",
+      "fish reproduction"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-01-01",
+      "to": "2014-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.781,
+  "status": "ok"
+}

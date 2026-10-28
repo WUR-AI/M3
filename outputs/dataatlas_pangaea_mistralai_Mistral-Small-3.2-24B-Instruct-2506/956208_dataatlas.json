@@ -1,0 +1,16 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 86,
+  "n_columns": 23,
+  "description": "Earth science observations of B. saida from 2012 to 2021.",
+  "dataset_description": "Environmental data tables documenting Earth science observations from 2012 to 2021.",
+  "runtime_seconds": 17.403,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/956208/dictionary.json"
+}

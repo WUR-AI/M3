@@ -1,0 +1,50 @@
+{
+  "dataset_id": "986963",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/986963.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:41:21.796998+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Marine Sediment Core Geochemistry and Grain‑Size (2018‑2021)",
+    "description": "A dataset of 140 sediment core samples collected in the Arctic (latitudes 76‑83° N, longitudes 27.5‑34° E) between 28 Sep 2018 and 6 Mar 2021. Each record includes event ID, geographic coordinates, water‑depth (negative elevation), sediment depth, age estimates, sedimentation and accumulation rates, total organic carbon (TOC), total inorganic carbon (TIC), total nitrogen, stable isotope ratios (δ13C, δ15N), and grain‑size fractions (>63 µm, 63‑2 µm, <2 µm).",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "grain size",
+      "Arctic",
+      "marine",
+      "TOC",
+      "TIC",
+      "δ13C",
+      "δ15N",
+      "sedimentation rate",
+      "water depth",
+      "age",
+      "latitude",
+      "longitude",
+      "2018‑2021"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "max_lat": 83.2704,
+      "min_lon": 27.5191,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "2018-09-28T19:07:00+00:00",
+      "to": "2021-03-06T02:53:02+00:00"
+    },
+    "spatial": "≈ 0.00001° (~1 m) coordinate precision",
+    "temporal": "sub‑second granularity"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/986963_8b8c629c579442529d4022a6347cf5bd.jsonl",
+  "runtime_seconds": 198.96,
+  "recovered_from_trace": true,
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75"
+}

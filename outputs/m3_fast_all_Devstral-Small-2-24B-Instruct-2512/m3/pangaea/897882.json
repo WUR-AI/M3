@@ -1,0 +1,43 @@
+{
+  "dataset_id": "897882",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/897882.csv",
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T20:14:06.370366+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Oocyte and Environmental Data from Foundiougne and Djifer",
+    "description": "This dataset contains measurements of oocyte characteristics, environmental parameters (temperature and salinity), and chemical compositions (Ba/Ca, Sr/Ca, Zn/Ca) for the species E. fimbriata. The data is collected from two locations, Foundiougne and Djifer, with spatial coverage in the region around 14.13441 latitude and -16.47588 longitude. Temporal coverage is limited to a single date, 2014-01-01.",
+    "keywords": [
+      "oocyte",
+      "E. fimbriata",
+      "temperature",
+      "salinity",
+      "Ba/Ca",
+      "Sr/Ca",
+      "Zn/Ca",
+      "Foundiougne",
+      "Djifer"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-01-01",
+      "to": "2014-01-01"
+    },
+    "spatial": "Point locations",
+    "temporal": "Single day"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/897882_4def0a3ccb0f4a51a4c02d55e2fa512d.jsonl",
+  "runtime_seconds": 639.9
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "ancylis_burgessiana.csv",
+  "dataset_id": "ancylis_burgessiana",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "dd8c769148d1b6aa70f519fbd5fe0f04d0a18f747e977874d016f31477c1a410",
+  "contract_sha256": "4632d1e5327245a249bc8029f48d7460e14a8b790bc2aeab30b923c53a420b51",
+  "prompt_tokens": 308064,
+  "status": "skipped",
+  "reason": "context_window"
+}

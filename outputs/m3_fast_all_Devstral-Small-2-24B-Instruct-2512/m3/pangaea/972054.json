@@ -1,0 +1,41 @@
+{
+  "dataset_id": "972054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972054.csv",
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:09:58.811740+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Uelzen, Germany Remote Sensing Data",
+    "description": "This dataset contains remote sensing observations for Uelzen, Germany, spanning from 1984 to 2023. It includes various content types such as 6 band color composits, with associated GeoTIFF and Shapefile data. The observations are geolocated to a single point in Uelzen, Germany.",
+    "keywords": [
+      "remote sensing",
+      "Uelzen",
+      "Germany",
+      "GeoTIFF",
+      "Shapefile",
+      "6 band color composits",
+      "ESIS_Uelzen"
+    ],
+    "spatialCoverage": {
+      "min_lat": 52.798539332,
+      "min_lon": 9.998781436,
+      "max_lat": 52.798539332,
+      "max_lon": 9.998781436
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972054_5a64cdfea65c461bbfc4b828f5db7774.jsonl",
+  "runtime_seconds": 330.68
+}

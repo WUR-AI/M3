@@ -1,0 +1,40 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "8c0878b89851ad098ac08623d6d0fcc39bfc58509c7da063d5c7790148cd9dc8",
+  "prompt_tokens": 17690,
+  "metadata": {
+    "name": "MSM44_362-1 Sediment Core Physical Properties",
+    "description": "Dataset containing physical property measurements from sediment core MSM44_362-1, including depth, section, core diameter deviation, P-wave travel time, P-wave velocity (Vp-a), and acoustic grain size (AGR). Data was collected at a single location on July 12, 2015.",
+    "keywords": [
+      "sediment",
+      "core",
+      "P-wave",
+      "velocity",
+      "physical properties",
+      "MSM44_362-1"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12T15:22:00",
+      "to": "2015-07-12T15:22:00"
+    },
+    "spatial": "point locations",
+    "temporal": "instantaneous"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.436,
+  "status": "ok"
+}

@@ -1,0 +1,40 @@
+{
+  "csv": "959699.csv",
+  "dataset_id": "959699",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "d87404ae4cb54d2c047cc4dfa914442133bcd62fd72d51157bfe09e65bddd118",
+  "contract_sha256": "938a9a8031917795e986aa2a853f14618408a88e4bc457b64987917e41c33ebb",
+  "prompt_tokens": 1101,
+  "metadata": {
+    "name": "Mn nodule geochemical dataset PLDS04MV-109BX",
+    "description": "Geochemical composition measurements of manganese nodules collected at site PLDS04MV-109BX in the Pacific Ocean, including latitude, longitude, elevation, sample type, and elemental concentrations, recorded on 1976-08-27.",
+    "keywords": [
+      "manganese nodule",
+      "geochemistry",
+      "Pacific Ocean",
+      "deep sea",
+      "elemental composition",
+      "sediment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.072,
+      "min_lon": -140.047,
+      "max_lat": 11.072,
+      "max_lon": -140.047
+    },
+    "temporalCoverage": {
+      "from": "1976-08-27",
+      "to": "1976-08-27"
+    },
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.867,
+  "status": "ok"
+}

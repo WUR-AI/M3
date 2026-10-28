@@ -1,0 +1,15 @@
+{
+  "csv": "wisteriopsis_reticulata.csv",
+  "dataset_id": "wisteriopsis_reticulata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "7abeb8e2499bdb8b04c240f0f39e9a8da4f95c340f3701405ef6635e4048ff40",
+  "contract_sha256": "deaa77e25e282453ac5b44d73b7d3ee58523b4f0a522a00da4793622490caed6",
+  "prompt_tokens": 329507,
+  "status": "skipped",
+  "reason": "context_window"
+}

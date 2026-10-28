@@ -1,0 +1,43 @@
+{
+  "dataset_id": "913861",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/913861.csv",
+  "source_sha256": "4f12a0e5810b32b5ec78c9788b9f5e7c7f24d917d0544d283992885714b59cc2",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:11:49.316021+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Aerosol Size Distribution Measurements at Neumayer Station, Antarctica (2018)",
+    "description": "Time-series dataset containing aerosol particle size distribution measurements (number concentration per logarithmic size bin) recorded at the Neumayer SPUSO station in Antarctica throughout the year 2018. The data includes 8,518 records of particle concentrations across 61 size bins ranging from approximately 93 nm to 4846 nm, along with metadata including measurement timestamps, duration, and fixed geographic coordinates.",
+    "keywords": [
+      "aerosol",
+      "particle size distribution",
+      "atmospheric science",
+      "Neumayer Station",
+      "Antarctica",
+      "SPUSO",
+      "dN/dlogDp",
+      "airborne particles",
+      "2018"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01T00:25:00+00:00",
+      "to": "2018-12-31T23:55:00+00:00"
+    },
+    "spatial": "Point location (Neumayer SPUSO station, Antarctica)",
+    "temporal": "Variable (median 60 minutes, range 35-910 minutes)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/913861_a550f4b59d5c4fea974fc2f4a1ec045a.jsonl",
+  "runtime_seconds": 237.18
+}

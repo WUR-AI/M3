@@ -1,0 +1,16 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 45,
+  "n_columns": 46,
+  "description": "45 sediment samples from a single 1986‑11‑05 event, with geochemical, isotopic, and spatial measurements.",
+  "dataset_description": "45 Earth‑environment observations recorded on 1986‑11‑05, covering a single timestamp.",
+  "runtime_seconds": 170.198,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/973695/dictionary.json"
+}

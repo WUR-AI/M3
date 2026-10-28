@@ -1,0 +1,29 @@
+{
+  "dataset_id": "961147",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961147.csv",
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T14:59:59.410317+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Biological Sampling Data",
+    "description": "This dataset contains marine biological sampling data collected during various expeditions. It includes information on events, sample IDs, expeditions, dates, vessels, stations, gear types, depth measurements, locations, species identifiers, orders, sizes, tissue descriptors, methods, life stages, mass measurements, and chemical compositions such as carbon, nitrogen, and hydrogen content.",
+    "keywords": [
+      "marine biology",
+      "biological sampling",
+      "expeditions",
+      "species identifiers",
+      "chemical composition",
+      "Northeast Pacific",
+      "2004-2021"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961147_dd6a36fc496445f9a5eaad05772b38f2.jsonl",
+  "runtime_seconds": 1182.94
+}

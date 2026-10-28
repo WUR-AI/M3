@@ -1,0 +1,74 @@
+{
+  "csv": "924708.csv",
+  "dataset_id": "924708",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2489,
+  "metadata": {
+    "name": "Whale Sightings from PS87 Track (2014)",
+    "description": "A collection of 8 whale sighting records observed during the PS87 tracking campaign in 2014. Each record includes the date and time of the observation, geographic coordinates (latitude and longitude), the identified whale species or group, a certainty rating for the identification, an indicator value, and the associated event label.",
+    "keywords": [
+      "whale",
+      "sighting",
+      "marine mammals",
+      "PS87",
+      "2014",
+      "latitude",
+      "longitude",
+      "species",
+      "certainty"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06T10:34:00+00:00",
+      "to": "2014-10-01T11:50:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "924708"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 10.078,
+  "status": "ok"
+}

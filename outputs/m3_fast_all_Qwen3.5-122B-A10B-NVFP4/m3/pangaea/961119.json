@@ -1,0 +1,31 @@
+{
+  "dataset_id": "961119",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961119.csv",
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:46:45.012368+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Baltic Sea pCO2 climatology",
+    "description": "Metadata manifest referencing the Baltic Sea pCO2 climatology dataset, containing file references and integrity information for external data files.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "climatology",
+      "metadata",
+      "manifest"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961119_e4f3b22175dd4669b6014b3d0023d62d.jsonl",
+  "runtime_seconds": 83.6
+}

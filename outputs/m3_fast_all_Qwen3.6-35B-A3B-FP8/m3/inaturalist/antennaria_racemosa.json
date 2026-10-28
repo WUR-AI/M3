@@ -1,0 +1,28 @@
+{
+  "dataset_id": "antennaria_racemosa",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/antennaria_racemosa.csv",
+  "source_sha256": "a0082804826202276c78998302de267b81bf2c22269f656fb7c895c309920012",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:10:14.859353+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 41.495411,
+      "min_lon": -127.186775,
+      "max_lat": 56.589731,
+      "max_lon": -107.212837
+    },
+    "temporalCoverage": {
+      "from": "2004-06-21T10:01:00+00:00",
+      "to": "2026-06-14T12:22:03+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/antennaria_racemosa_82222b00cef247dd88f590eb31ae42a8.jsonl",
+  "runtime_seconds": 46.19
+}

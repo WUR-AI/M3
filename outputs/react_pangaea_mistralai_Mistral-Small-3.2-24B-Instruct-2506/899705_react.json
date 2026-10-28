@@ -1,0 +1,97 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3785,
+  "metadata": {
+    "name": "MITAPI 2015-2010 Differential Data",
+    "description": "This dataset contains differential data from various sectors (AGR, ENE, IND, etc.) for the years 2015-2010. The data is stored in NetCDF format and is published by Dasadhikari et al. in 2019. The dataset includes information about file names, formats, sizes, and URLs.",
+    "keywords": [
+      "MITAPI",
+      "Differential Data",
+      "AGR",
+      "ENE",
+      "IND",
+      "NetCDF",
+      "Dasadhikari",
+      "2019",
+      "Pangaea"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "899705"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705",
+        "field": "File name",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705",
+        "field": "URL file",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705",
+        "field": "File format",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 50.008,
+  "status": "ok"
+}

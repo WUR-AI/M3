@@ -1,0 +1,110 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 7415,
+  "metadata": {
+    "name": "P-wave travel time measurements from sediment core MSM44_362-1",
+    "description": "Dataset containing 249 P-wave travel time measurements and related geophysical parameters (Vp-a, AGR, core diameter deviation) from sediment core MSM44_362-1. The data includes depth measurements, spatial coordinates, elevation, and timestamp information collected during event MSM44_362-1.",
+    "keywords": [
+      "P-wave",
+      "travel time",
+      "sediment core",
+      "geophysical",
+      "marine",
+      "MSM44",
+      "Vp-a",
+      "AGR",
+      "core diameter"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12T15:22:00+00:00",
+      "to": "2015-07-12T15:22:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single point in time"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973907"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "973907",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "field": "Sect"
+      }
+    }
+  ],
+  "runtime_seconds": 23.634,
+  "status": "ok"
+}

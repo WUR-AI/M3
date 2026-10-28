@@ -1,0 +1,32 @@
+{
+  "dataset_id": "965135",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/965135.csv",
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T15:39:53.050835+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Porites Coral Geochemical Data from TIAREI-A1",
+    "description": "Dataset containing geochemical measurements (Sr/Ca, Mg/Ca, δ18O, δ13C) from Porites coral samples collected at a single location in French Polynesia on July 1, 2008. The data includes age information, event identifiers, and spatial coordinates.",
+    "keywords": [
+      "Porites coral",
+      "geochemical measurements",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "French Polynesia",
+      "2008",
+      "paleoclimatology",
+      "marine geochemistry"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/965135_d8b7d9f4e04f40d0a60a3cebb22812d1.jsonl",
+  "runtime_seconds": 420.0
+}

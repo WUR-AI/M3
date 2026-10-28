@@ -1,0 +1,88 @@
+{
+  "csv": "lomandra_obliqua.csv",
+  "dataset_id": "lomandra_obliqua",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e934e71d13affe60a786f193b85311e68d992a2e94d3edb130395103aae9414f",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4266,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -36.102534,
+      "min_lon": 149.754228,
+      "max_lat": -27.374955,
+      "max_lon": 153.323989
+    },
+    "temporalCoverage": {
+      "from": "1991-10-22",
+      "to": "2026-06-12"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lomandra_obliqua",
+        "resource": "lomandra_obliqua",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 20.504,
+  "status": "ok"
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_id": "944039",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/944039.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:04:38.758280+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical profile of a Belgian collector‑trial sediment core (pre‑impact, 2019‑03‑20)",
+    "description": "Dataset of major and trace element concentrations and their relative errors measured in sediment core samples from the Belgian collector trial pre‑impact. The data cover a single core (Core 18) at a fixed location (latitude 14.13508333, longitude ‑125.86365, elevation ‑4518.1 m) with depths from 0.0625 m to 0.225 m, recorded at a single timestamp 2019‑03‑20 02:30:12 UTC.",
+    "keywords": [
+      "geochemistry",
+      "sediment",
+      "core",
+      "major elements",
+      "trace elements",
+      "Belgian collector trial",
+      "pre‑impact",
+      "depth profile",
+      "latitude 14.13508333",
+      "longitude -125.86365",
+      "2019"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20T02:30:12Z",
+      "to": "2019-03-20T02:30:12Z"
+    },
+    "spatial": "point",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/944039_0cdce7366b2044bfb991147fea33df60.jsonl",
+  "runtime_seconds": 400.58,
+  "recovered_from_trace": true,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f"
+}

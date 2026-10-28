@@ -1,0 +1,44 @@
+{
+  "dataset_id": "917841",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917841.csv",
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:18:50.075693+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Macapule Lagoon Environmental Measurements",
+    "description": "This dataset contains environmental measurements from Macapule Lagoon, including temperature, salinity, dissolved oxygen, pH, ammonia, nitrate, and phosphate levels, collected at a fixed location over a period from 2013-12-01 to 2015-06-01.",
+    "keywords": [
+      "environmental data",
+      "water quality",
+      "Macapule Lagoon",
+      "temperature",
+      "salinity",
+      "dissolved oxygen",
+      "pH",
+      "ammonia",
+      "nitrate",
+      "phosphate"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-01",
+      "to": "2015-06-01"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917841_06af27de05b5475c880334b99df2ce33.jsonl",
+  "runtime_seconds": 275.62
+}

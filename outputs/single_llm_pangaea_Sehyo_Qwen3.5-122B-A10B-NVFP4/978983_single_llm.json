@@ -1,0 +1,41 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "5c4891e412846ec0df000b65852143ce5eeeac59d3c56cf2dc6259f3b9302605",
+  "prompt_tokens": 2812,
+  "metadata": {
+    "name": "386-M0095B Sediment Mineralogy and Geochemistry",
+    "description": "Dataset containing mineralogical composition (XRD) and geochemical data for sediment samples from IODP Site 386-M0095B, including depth, sample labels, and coordinates.",
+    "keywords": [
+      "sediment",
+      "mineralogy",
+      "XRD",
+      "geochemistry",
+      "IODP",
+      "Site 386",
+      "M0095B"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.019,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "euonymus_latifolius.csv",
+  "dataset_id": "euonymus_latifolius",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "4605294cd787b9674aa9d7c779a1d6e4f13aef24067a753e664f536ff515c639",
+  "contract_sha256": "4cf6bafc6e27e786be9d78882e3a4e8247e62ed6e573e476b783f96ef8423459",
+  "prompt_tokens": 324557,
+  "status": "skipped",
+  "reason": "context_window"
+}

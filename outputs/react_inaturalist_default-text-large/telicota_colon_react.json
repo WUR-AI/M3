@@ -1,0 +1,71 @@
+{
+  "csv": "telicota_colon.csv",
+  "dataset_id": "telicota_colon",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ba587820d0cf514ed0fc43ee044af233c19801ed232a29235d7d1c5a97467c2d",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3268,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -36.959345,
+      "min_lon": 72.679331,
+      "max_lat": 30.469555,
+      "max_lon": 153.631952
+    },
+    "temporalCoverage": {
+      "from": "2002-11-03T09:23:00+00:00",
+      "to": "2026-05-31T10:51:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "telicota_colon"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "telicota_colon",
+        "resource": "telicota_colon"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "telicota_colon"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "telicota_colon"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "telicota_colon",
+        "resource": "telicota_colon",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "telicota_colon",
+        "resource": "telicota_colon",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.773,
+  "status": "ok"
+}

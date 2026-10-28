@@ -1,0 +1,52 @@
+{
+  "csv": "formica_cunicularia.csv",
+  "dataset_id": "formica_cunicularia",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0101be02e4c3b07b529d7b6c88e4d515436183b7b29989b9c0649cbcdfd83866",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 1675,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 35.317627,
+      "min_lon": -8.832608,
+      "max_lat": 59.254922,
+      "max_lon": 116.836866
+    },
+    "temporalCoverage": {
+      "from": "2009-04-05",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "formica_cunicularia"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "formica_cunicularia",
+        "resource": "formica_cunicularia",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "formica_cunicularia",
+        "resource": "formica_cunicularia",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.126,
+  "status": "ok"
+}

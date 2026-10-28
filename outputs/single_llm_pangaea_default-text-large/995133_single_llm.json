@@ -1,0 +1,43 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "contract_sha256": "2e8f2c85e70607cd13f61562363595ac6eb5e103409cae57958f201003b93663",
+  "prompt_tokens": 1622,
+  "metadata": {
+    "name": "Macoma balthica shell length and frequency - Rönnebank June 2023",
+    "description": "Dataset of Macoma balthica shell length (mm) and frequency counts collected during expedition EMB320 at Rönnebank in the Baltic Sea in June 2023, covering both a Marine Protected Area and a Reference area.",
+    "keywords": [
+      "Macoma balthica",
+      "shell length",
+      "frequency",
+      "Baltic Sea",
+      "Rönnebank",
+      "marine protected area",
+      "reference area",
+      "expedition EMB320",
+      "June 2023"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2023-06-01",
+      "to": "2023-06-30"
+    },
+    "spatial": null,
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 10.723,
+  "status": "ok"
+}

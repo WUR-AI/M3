@@ -1,0 +1,39 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "3e5baceaddf1b9be415b544ca1b2c55b0ba2bbbfc1e7583a0cdb14caa99c4d6b",
+  "prompt_tokens": 3759,
+  "metadata": {
+    "name": "944039",
+    "description": "This dataset contains geochemical data from sediment cores collected during the Belgian collector trial pre-impact. The data includes various chemical elements and their relative enrichments at different depths.",
+    "keywords": [
+      "geochemistry",
+      "sediment cores",
+      "chemical elements",
+      "Belgian collector trial",
+      "pre-impact"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20",
+      "to": "2019-03-20"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 8.786,
+  "status": "ok"
+}

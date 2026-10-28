@@ -1,0 +1,42 @@
+{
+  "csv": "972178.csv",
+  "dataset_id": "972178",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "contract_sha256": "7b445a2de3baf1e36eed40847a6075d565f1fb9d0b3a3805e252fb4db6a21336",
+  "prompt_tokens": 22432,
+  "metadata": {
+    "name": "Aalen, Germany Remote Sensing Dataset",
+    "description": "A dataset containing remote sensing data for Aalen, Germany, including 6 band color composits, vegetation index (NDVI), metabolism index (NirV), and shape files for various years from 1984 to 2023.",
+    "keywords": [
+      "remote sensing",
+      "Aalen",
+      "Germany",
+      "NDVI",
+      "vegetation index",
+      "metabolism index",
+      "shape files",
+      "satellite imagery"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.79899472,
+      "min_lon": 9.998824433,
+      "max_lat": 48.79899472,
+      "max_lon": 9.998824433
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "bimonthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 9.227,
+  "status": "ok"
+}

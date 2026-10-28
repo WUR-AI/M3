@@ -1,0 +1,89 @@
+{
+  "csv": "927062.csv",
+  "dataset_id": "927062",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 2884,
+  "metadata": {
+    "name": "Balloon_20180818_1109_1139",
+    "description": "The dataset contains meteorological measurements collected during a balloon flight on August 18, 2018. The measurements include date/time, longitude, latitude, height, pressure (PPPP), temperature (TTT), relative humidity (RH), wind direction (dd), wind speed (ff), and event information.",
+    "keywords": [
+      "meteorological",
+      "balloon",
+      "measurements",
+      "pressure",
+      "temperature",
+      "humidity",
+      "wind",
+      "latitude",
+      "longitude",
+      "height"
+    ],
+    "spatialCoverage": {
+      "min_lat": 89.5537,
+      "min_lon": 36.54034,
+      "max_lat": 89.5601,
+      "max_lon": 37.14087
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00+00:00",
+      "to": "2018-08-18T11:39:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "per second"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "927062"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 16.641,
+  "status": "ok"
+}

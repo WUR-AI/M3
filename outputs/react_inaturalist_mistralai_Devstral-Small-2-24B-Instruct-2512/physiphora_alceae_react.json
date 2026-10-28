@@ -1,0 +1,66 @@
+{
+  "csv": "physiphora_alceae.csv",
+  "dataset_id": "physiphora_alceae",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "df273451b92741ef3fe6862a02f626fe1512ce17f503138b29fecd0c7b3125be",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 3276,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.005597,
+      "min_lon": -157.830457,
+      "max_lat": 61.609092,
+      "max_lon": 142.163501
+    },
+    "temporalCoverage": {
+      "from": "2002-06-01",
+      "to": "2026-06-15"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "physiphora_alceae"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "physiphora_alceae",
+        "resource": "physiphora_alceae",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.635,
+  "status": "ok"
+}

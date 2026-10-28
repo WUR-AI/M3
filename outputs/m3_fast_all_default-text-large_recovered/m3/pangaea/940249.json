@@ -1,0 +1,45 @@
+{
+  "dataset_id": "940249",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/940249.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:57:58.162344+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Ice Core WDC06A Isotopic & Gas‑Age Profile (single site, 2006‑12‑09)",
+    "description": "Dataset of 32 rows collected on 2006‑12‑09 from the Antarctic ice core WDC06A at a single location (latitude -79.46763°, longitude -112.08648°, elevation 1766 m). Includes depth (2 450.54 – 2 555.24 m), gas age (17.93 – 21.33 ka), and isotopic ratios δ¹⁸O, δ¹⁸O₂, δ³⁶Ar, δ³⁶Ar₂ for each depth interval.",
+    "keywords": [
+      "ice core",
+      "WDC06A",
+      "Antarctica",
+      "paleoclimate",
+      "δ¹⁸O",
+      "δ³⁶Ar",
+      "gas age",
+      "isotopes",
+      "depth",
+      "2006"
+    ],
+    "spatialCoverage": {
+      "min_lat": -79.46763,
+      "min_lon": -112.08648,
+      "max_lat": -79.46763,
+      "max_lon": -112.08648
+    },
+    "temporalCoverage": {
+      "from": "2006-12-09T00:00:00Z",
+      "to": "2006-12-09T00:00:00Z"
+    },
+    "spatial": "point – coordinates given to 5 decimal places (≈ 1 m precision)",
+    "temporal": "date (day) – all records share the same day"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/940249_8f344ad4addd4273a8d951321e620f33.jsonl",
+  "runtime_seconds": 160.05,
+  "recovered_from_trace": true,
+  "source_sha256": "ffa4a37e09f9eea211d093f3922c021eba2066b56fa4d80fea1d68ec7cf9c123"
+}

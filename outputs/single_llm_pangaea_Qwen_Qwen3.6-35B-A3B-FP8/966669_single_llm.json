@@ -1,0 +1,42 @@
+{
+  "csv": "966669.csv",
+  "dataset_id": "966669",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "38d45ebddb5ad7c83655f2d23207ed3d800aa60a12fe7468bb6274122192cd99",
+  "contract_sha256": "e9b40add573b88562a6a482733d66b7fafbc9448cd055588d87a84b5b0ccec0b",
+  "prompt_tokens": 8836,
+  "metadata": {
+    "name": "Cryoconite and sediment radionuclide concentrations from Flade Isblink ice cap",
+    "description": "Dataset containing radionuclide activity concentrations (e.g., 137Cs, 210Pb, 241Am, 238Pu, 239+240Pu) and isotopic ratios for cryoconite and river sediment samples collected from the Flade Isblink ice cap in Greenland.",
+    "keywords": [
+      "cryoconite",
+      "radionuclides",
+      "Flade Isblink",
+      "Greenland",
+      "ice cap",
+      "210Pb",
+      "137Cs",
+      "plutonium"
+    ],
+    "spatialCoverage": {
+      "min_lat": 81.5169,
+      "min_lon": -16.1222,
+      "max_lat": 81.5441,
+      "max_lon": -15.8786
+    },
+    "temporalCoverage": {
+      "from": "2022-08-02",
+      "to": "2022-08-04"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.117,
+  "status": "ok"
+}

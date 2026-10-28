@@ -1,0 +1,16 @@
+{
+  "csv": "lomandra_obliqua.csv",
+  "dataset_id": "lomandra_obliqua",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1000,
+  "n_columns": 50,
+  "description": "Lomandra obliqua species occurrence data from 1991 to 2026, 1000 records.",
+  "dataset_description": "Species occurrence data of Lomandra obliqua from 1991 to 2026.",
+  "runtime_seconds": 38.953,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/lomandra_obliqua/dictionary.json"
+}

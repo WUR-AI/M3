@@ -1,0 +1,28 @@
+{
+  "dataset_id": "lychnosea_intermicata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/lychnosea_intermicata.csv",
+  "source_sha256": "d7734a076515ca9e69d2c38405113b3a1ada316b63946169fa410c90ec0895ee",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T05:26:48.431107+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.395899,
+      "min_lon": -104.11761,
+      "max_lat": 39.807383,
+      "max_lon": -80.419794
+    },
+    "temporalCoverage": {
+      "from": "2006-10-04T17:49:00+00:00",
+      "to": "2026-06-12T07:00:47+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/lychnosea_intermicata_0a1d628edd6042ceb65a4ca32bd010ff.jsonl",
+  "runtime_seconds": 203.67
+}

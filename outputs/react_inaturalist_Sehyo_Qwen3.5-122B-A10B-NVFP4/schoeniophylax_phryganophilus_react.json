@@ -1,0 +1,73 @@
+{
+  "csv": "schoeniophylax_phryganophilus.csv",
+  "dataset_id": "schoeniophylax_phryganophilus",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c7ab1c441fa634a8944a30fa7d0c28bef722501080c796d28690ace4c2b7abf7",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 9647,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.661467,
+      "min_lon": -66.840437,
+      "max_lat": -4.823831,
+      "max_lon": -42.166767
+    },
+    "temporalCoverage": {
+      "from": "2005-06-12T09:06:00+00:00",
+      "to": "2026-06-11T13:16:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus"
+      }
+    }
+  ],
+  "runtime_seconds": 17.072,
+  "status": "ok"
+}

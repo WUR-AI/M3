@@ -1,0 +1,97 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ecb7b5ed9a1a17db139f60404906a6597234581b11225c226aeee09add86bffa",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2964,
+  "metadata": {
+    "name": "975181",
+    "description": "The dataset contains sediment depth, age, isotopic composition (Uvigerina spp. δ13C and δ18O), event information, geographic coordinates (latitude and longitude), elevation, and date/time data.",
+    "keywords": [
+      "sediment",
+      "age",
+      "isotopic composition",
+      "Uvigerina spp.",
+      "δ13C",
+      "δ18O",
+      "event",
+      "latitude",
+      "longitude",
+      "elevation",
+      "date/time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 29.0,
+      "min_lon": -88.33333333,
+      "max_lat": 29.0,
+      "max_lon": -88.33333333
+    },
+    "temporalCoverage": {
+      "from": "2009-03-04T11:58:00+00:00",
+      "to": "2009-03-04T11:58:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "975181"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "975181",
+        "resource": "975181",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 28.243,
+  "status": "ok"
+}

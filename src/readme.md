@@ -57,3 +57,20 @@ metadata-agent --tui
 ```
 
 For a full walkthrough, see [`docs/tutorial.md`](../docs/tutorial.md). For architecture details, see [`docs/architecture.md`](../docs/architecture.md).
+
+## Inspecting a run
+
+Every orchestration writes an append-only JSONL trace under `outputs/traces/`.
+The returned `ExecutionResult.trace_path` gives the exact file. Each record
+identifies the phase and agent and keeps the complete model input, model output,
+tool arguments and result, critique, revision, synthesis, or error. A trace is
+also kept when planning or a step fails. The file is created with owner-only
+permissions because it can contain sampled source data.
+If planning fails before an `ExecutionResult` exists, use
+`Orchestrator.last_trace_path` to locate the trace.
+
+Within a step, agents work concurrently and each keeps its own tool conversation
+through the configured debate rounds. The final generator receives verified
+tool observations from preceding steps. For iNaturalist coverage, full-data
+extent results take precedence over conflicting generated values; corrections
+are recorded in the trace.

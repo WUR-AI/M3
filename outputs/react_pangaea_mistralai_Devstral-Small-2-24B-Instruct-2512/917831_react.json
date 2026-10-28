@@ -1,0 +1,84 @@
+{
+  "csv": "917831.csv",
+  "dataset_id": "917831",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3599,
+  "metadata": {
+    "name": "917831",
+    "description": "Dataset containing biological measurements and metadata of fish samples collected from Macapule Lagoon. The data includes temporal information, spatial coordinates, and various physiological metrics such as mass, liver mass, and cholesterol levels.",
+    "keywords": [
+      "fish",
+      "biological measurements",
+      "Macapule Lagoon",
+      "physiological metrics",
+      "ecology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12",
+      "to": "2015-08-31"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "917831"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 14.247,
+  "status": "ok"
+}

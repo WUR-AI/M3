@@ -1,0 +1,42 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "contract_sha256": "9b274d46de46bb474e6931748fe3a296b6493970e4c1f59c9462f10056bd5b07",
+  "prompt_tokens": 6850,
+  "metadata": {
+    "name": "Elwha_River_Delta",
+    "description": "Dataset containing geospatial and temporal data related to the Elwha River Delta, including latitude, longitude, elevation, date/time, HRMS, VRMS, status, description, and event information.",
+    "keywords": [
+      "Elwha River Delta",
+      "geospatial data",
+      "elevation",
+      "HRMS",
+      "VRMS",
+      "status",
+      "description",
+      "event"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9383262
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03",
+      "to": "2012-02-03"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 10.014,
+  "status": "ok"
+}

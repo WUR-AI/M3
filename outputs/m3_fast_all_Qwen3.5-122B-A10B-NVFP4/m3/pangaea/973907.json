@@ -1,0 +1,44 @@
+{
+  "dataset_id": "973907",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973907.csv",
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:42:57.679434+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Marine Geophysical Core Profile MSM44_362-1",
+    "description": "High-resolution vertical profile of geophysical properties including sediment depth, P-wave travel time, velocity (Vp-a), and acoustic grain size ratio (AGR) from a single core sample collected at a fixed location in the Arctic Ocean on July 12, 2015.",
+    "keywords": [
+      "geophysical",
+      "core sample",
+      "P-wave",
+      "sediment",
+      "Arctic",
+      "marine geology",
+      "velocity",
+      "MSM44",
+      "Vp-a",
+      "travel time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12T15:22:00+00:00",
+      "to": "2015-07-12T15:22:00+00:00"
+    },
+    "spatial": "Point location (single core sample)",
+    "temporal": "Single timestamp (snapshot)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973907_c807a6f56c9248e7bf107a8b9722015d.jsonl",
+  "runtime_seconds": 138.33
+}

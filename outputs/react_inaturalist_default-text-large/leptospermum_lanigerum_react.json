@@ -1,0 +1,73 @@
+{
+  "csv": "leptospermum_lanigerum.csv",
+  "dataset_id": "leptospermum_lanigerum",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "309aa0ea36911ec27f5c96ee735a3ff037195af42efc700b6952a046c2f4f4fc",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3500,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -43.600966,
+      "min_lon": 136.735527,
+      "max_lat": -33.634054,
+      "max_lon": 150.85492
+    },
+    "temporalCoverage": {
+      "from": "1997-01-03T13:47:00+00:00",
+      "to": "2026-06-14T16:38:16+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "leptospermum_lanigerum"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "leptospermum_lanigerum",
+        "resource": "leptospermum_lanigerum"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "leptospermum_lanigerum",
+        "resource": ""
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "leptospermum_lanigerum",
+        "resource": ""
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "leptospermum_lanigerum",
+        "resource": "leptospermum_lanigerum",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "leptospermum_lanigerum",
+        "resource": "leptospermum_lanigerum",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.935,
+  "status": "ok"
+}

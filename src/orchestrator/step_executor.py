@@ -12,15 +12,26 @@ Uses the unified ExecutionContext abstraction for all data access.
 The execution flow is:
     execute_parallel → critique → revise → [loop or synthesize]
 """
+import json
 import logging
+from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, Any, List, Optional, Type
 
 from pydantic import BaseModel
 from langgraph.graph import StateGraph, END
 
 from src.core.state import StepExecutionState, PlayerResult, DebateEntry
+from src.core.tool_trace import tool_result_is_error
 from ..players import Player, create_player_from_config, PLAYER_CONFIGS
 from ..tools.context_tools import filter_tools_by_context_type
+
+
+def _parallel_map(players: List[Player], run):
+    """Run blocking, independent model calls concurrently in player order."""
+    if len(players) == 1:
+        return [run(players[0])]
+    with ThreadPoolExecutor(max_workers=len(players)) as pool:
+        return list(pool.map(run, players))
 
 
 # ===================================================================
@@ -58,12 +69,10 @@ def execute_parallel_node(state: StepExecutionState) -> Dict[str, Any]:
         if target_resources:
             logging.info(f"  Target resources: {target_resources}")
     
-    player_results: List[PlayerResult] = []
-    initial_debate_entries: List[DebateEntry] = []
-    
-    for player in players:
+    recorder = state.get("recorder")
+
+    def run_player(player: Player):
         try:
-            # Execute the task with ExecutionContext context
             result = player.execute_task(
                 task=task,
                 context_key=context_key,
@@ -72,47 +81,58 @@ def execute_parallel_node(state: StepExecutionState) -> Dict[str, Any]:
                 inputs=input_mappings,
                 target_resources=target_resources,
                 tool_tracer=tool_tracer,
+                recorder=recorder,
+                step_index=state["step_index"],
             )
-            
-            player_results.append({
+            player_result: PlayerResult = {
                 "player_name": player.name,
                 "task": task,
                 "tool_results": result.get("tool_results", {}),
+                "tool_trace": result.get("tool_trace", []),
                 "analysis": result.get("analysis", ""),
                 "success": result.get("success", True)
-            })
-            
-            # Add to debate log as initial work
-            initial_debate_entries.append({
-                "round": 1,
-                "player_name": player.name,
-                "entry_type": "initial_work",
-                "content": result.get("analysis", "")
-            })
-            
+            }
             logging.info(f"  Player '{player.name}' completed execution")
-            # Log a preview of the output
             analysis_preview = result.get("analysis", "")[:200].replace('\n', ' ')
             if len(result.get("analysis", "")) > 200:
                 analysis_preview += "..."
             logging.info(f"    Output: {analysis_preview}")
-            
+            return player_result, result.get("messages", [])
         except Exception as e:
             logging.error(f"  Player '{player.name}' failed: {str(e)}")
             import traceback
             logging.error(traceback.format_exc())
-            player_results.append({
+            if recorder is not None:
+                recorder.record(
+                    "agent_error", step_index=state["step_index"],
+                    agent=player.name, phase="initial", error=str(e),
+                )
+            return {
                 "player_name": player.name,
                 "task": task,
                 "tool_results": {},
+                "tool_trace": [],
                 "analysis": f"Error: {str(e)}",
                 "success": False
-            })
+            }, []
+
+    outcomes = _parallel_map(players, run_player)
+    player_results = [result for result, _ in outcomes]
+    agent_messages = {
+        player.name: messages for player, (_, messages) in zip(players, outcomes)
+    }
+    initial_debate_entries: List[DebateEntry] = [
+        {"round": 0, "player_name": result["player_name"],
+         "entry_type": "initial_work", "content": result["analysis"]}
+        for result in player_results if result["success"]
+    ]
     
     return {
         "player_results": player_results,
+        "agent_messages": agent_messages,
         "debate_log": state.get("debate_log", []) + initial_debate_entries,
-        "current_debate_round": 1
+        "current_debate_round": 0,
+        "error": None if any(r["success"] for r in player_results) else "All players failed",
     }
 
 
@@ -130,35 +150,59 @@ def critique_node(state: StepExecutionState) -> Dict[str, Any]:
     task = state["task"]
     debate_log = state["debate_log"]
     
-    # Get work from the current round
-    current_round_work = {
-        entry["player_name"]: entry["content"]
-        for entry in debate_log
-        if entry["round"] == current_round and "work" in entry["entry_type"]
+    current_results = {
+        result["player_name"]: result for result in state["player_results"]
+        if result["success"]
     }
-    
-    new_entries: List[DebateEntry] = []
-    
-    for player in players:
-        # Don't critique own work
-        other_work = {k: v for k, v in current_round_work.items() if k != player.name}
-        
+    active_players = [p for p in players if p.name in current_results]
+    recorder = state.get("recorder")
+
+    def critique_player(player: Player):
+        other_work = {}
+        for name, result in current_results.items():
+            if name == player.name:
+                continue
+            evidence = {
+                key: value for key, value in result["tool_results"].items()
+                if not tool_result_is_error(value)
+            }
+            other_work[name] = (
+                result["analysis"]
+                + "\nVerified tool results: " + json.dumps(evidence, default=str)
+            )
         if not other_work:
-            continue
-            
+            return None
         try:
-            critique = player.critique_work(task=task, other_players_work=other_work)
-            new_entries.append({
+            critique = player.critique_work(
+                task=task, other_players_work=other_work,
+                recorder=recorder, step_index=state["step_index"],
+                round_index=current_round,
+                messages=state["agent_messages"][player.name],
+            )
+            entry: DebateEntry = {
                 "round": current_round,
                 "player_name": player.name,
                 "entry_type": "critique",
-                "content": critique
-            })
-            logging.info(f"  Player '{player.name}' provided critique")
+                "content": critique["analysis"],
+            }
+            return entry, critique["messages"]
         except Exception as e:
             logging.error(f"  Player '{player.name}' critique failed: {str(e)}")
-    
-    return {"debate_log": debate_log + new_entries}
+            if recorder is not None:
+                recorder.record(
+                    "agent_error", step_index=state["step_index"],
+                    agent=player.name, phase=f"critique_{current_round + 1}",
+                    error=str(e),
+                )
+            return None
+
+    outcomes = _parallel_map(active_players, critique_player) if active_players else []
+    new_entries: List[DebateEntry] = [outcome[0] for outcome in outcomes if outcome]
+    agent_messages = dict(state["agent_messages"])
+    for player, outcome in zip(active_players, outcomes):
+        if outcome:
+            agent_messages[player.name] = outcome[1]
+    return {"debate_log": debate_log + new_entries, "agent_messages": agent_messages}
 
 
 def revise_node(state: StepExecutionState) -> Dict[str, Any]:
@@ -175,56 +219,71 @@ def revise_node(state: StepExecutionState) -> Dict[str, Any]:
     task = state["task"]
     debate_log = state["debate_log"]
     
-    # Get this round's critiques
-    critiques = [
-        entry["content"]
-        for entry in debate_log
-        if entry["round"] == current_round and entry["entry_type"] == "critique"
-    ]
-    
-    new_entries: List[DebateEntry] = []
-    updated_results: List[PlayerResult] = []
-    
-    for player in players:
-        # Find player's original work
-        original_work = next(
-            (entry["content"] for entry in debate_log
-             if entry["player_name"] == player.name 
-             and "work" in entry["entry_type"]
-             and entry["round"] == current_round),
-            ""
-        )
-        
+    prior_results = {r["player_name"]: r for r in state["player_results"]}
+    active_players = [p for p in players if prior_results[p.name]["success"]]
+    recorder = state.get("recorder")
+
+    def revise_player(player: Player):
+        previous = prior_results[player.name]
+        critiques = [
+            entry["content"] for entry in debate_log
+            if entry["round"] == current_round
+            and entry["entry_type"] == "critique"
+            and entry["player_name"] != player.name
+        ]
         try:
             revised = player.revise_work(
                 task=task,
-                my_original_work=original_work,
-                critiques=critiques
+                messages=state["agent_messages"][player.name],
+                critiques=critiques,
+                context_key=state["context_key"],
+                tool_results=previous["tool_results"],
+                tool_trace=previous["tool_trace"],
+                tool_tracer=state.get("tool_tracer"),
+                recorder=recorder,
+                step_index=state["step_index"],
+                round_index=next_round,
+                required_resources=(
+                    state["target_resources"] or state["context_info"].get("resources", [])
+                ) if state["context_info"].get("is_multi_csv") else None,
             )
-            new_entries.append({
-                "round": next_round,
-                "player_name": player.name,
-                "entry_type": "revised_work",
-                "content": revised
-            })
-            
-            # Update player results with revised work
-            updated_results.append({
+            result: PlayerResult = {
                 "player_name": player.name,
                 "task": task,
-                "tool_results": {},  # Tools already ran in initial execution
-                "analysis": revised,
+                "tool_results": revised["tool_results"],
+                "tool_trace": revised["tool_trace"],
+                "analysis": revised["analysis"],
                 "success": True
-            })
-            
+            }
             logging.info(f"  Player '{player.name}' revised their work")
+            return result, revised["messages"]
         except Exception as e:
             logging.error(f"  Player '{player.name}' revision failed: {str(e)}")
-    
+            if recorder is not None:
+                recorder.record(
+                    "agent_error", step_index=state["step_index"],
+                    agent=player.name, phase=f"revision_{next_round}",
+                    error=str(e),
+                )
+            return {**previous, "success": False, "analysis": f"Error: {e}"}, state["agent_messages"][player.name]
+
+    outcomes = _parallel_map(active_players, revise_player) if active_players else []
+    changed = {p.name: result for p, (result, _) in zip(active_players, outcomes)}
+    updated_results = [changed.get(p.name, prior_results[p.name]) for p in players]
+    agent_messages = dict(state["agent_messages"])
+    for player, (_, messages) in zip(active_players, outcomes):
+        agent_messages[player.name] = messages
+    new_entries: List[DebateEntry] = [
+        {"round": next_round, "player_name": r["player_name"],
+         "entry_type": "revised_work", "content": r["analysis"]}
+        for r in updated_results if r["success"]
+    ]
     return {
         "debate_log": debate_log + new_entries,
         "current_debate_round": next_round,
-        "player_results": updated_results if updated_results else state["player_results"]
+        "player_results": updated_results,
+        "agent_messages": agent_messages,
+        "error": None if any(r["success"] for r in updated_results) else "All players failed during revision",
     }
 
 
@@ -240,37 +299,66 @@ def synthesize_node(state: StepExecutionState) -> Dict[str, Any]:
     """
     logging.info(f"--- STEP {state['step_index']}: SYNTHESIS ---")
     
-    synthesizer: Player = state["synthesizer"]
     task = state["task"]
-    player_results = state["player_results"]
+    player_results = [r for r in state["player_results"] if r["success"]]
     expected_outputs = state["expected_outputs"]
     output_schema: Optional[Type[BaseModel]] = state.get("output_schema")
     
     if output_schema:
         logging.info(f"  Using structured output with schema: {output_schema.__name__}")
     
+    if not player_results:
+        return {
+            "error": "No successful player result to synthesize",
+            "consolidated_result": None,
+            "produced_artifacts": {},
+        }
+
+    successful_names = {result["player_name"] for result in player_results}
+    synthesizer = next(
+        player for player in state["players"] if player.name in successful_names
+    )
+
     try:
         # Prepare results for synthesis
         results_for_synthesis = [
             {
                 "player": r["player_name"],
                 "analysis": r["analysis"],
-                "tool_results": r["tool_results"]
+                "tool_results": {
+                    key: value for key, value in r["tool_results"].items()
+                    if not tool_result_is_error(value)
+                },
             }
             for r in player_results
         ]
         
         # Synthesize with optional structured output
-        consolidated = synthesizer.synthesize_results(
-            task=task,
-            all_results=results_for_synthesis,
-            output_schema=output_schema
-        )
+        recorder = state.get("recorder")
+        if len(player_results) == 1 and output_schema is None:
+            consolidated = player_results[0]["analysis"]
+        else:
+            consolidated = synthesizer.synthesize_results(
+                task=task,
+                all_results=results_for_synthesis,
+                output_schema=output_schema,
+                recorder=recorder,
+                step_index=state["step_index"],
+                conversation=state["agent_messages"][synthesizer.name],
+            )
+        if not consolidated or (isinstance(consolidated, str) and not consolidated.strip()):
+            raise ValueError("Synthesis returned no result")
+        if recorder is not None:
+            recorder.record(
+                "step_synthesis", step_index=state["step_index"],
+                candidates=results_for_synthesis,
+                output=consolidated.model_dump(mode="json") if isinstance(consolidated, BaseModel) else consolidated,
+            )
         
         # Convert Pydantic model to dict for artifact storage if needed
         if output_schema and isinstance(consolidated, BaseModel):
             artifact_value = consolidated.model_dump(by_alias=True)
-            logging.info(f"  Structured output validated successfully")
+            logging.info("  Structured output validated successfully")
         else:
             artifact_value = consolidated
         
@@ -321,9 +409,9 @@ def debate_router(state: StepExecutionState) -> str:
     
     current_round = state["current_debate_round"]
     max_rounds = state["max_debate_rounds"]
-    num_players = len(state["players"])
+    num_players = sum(1 for result in state["player_results"] if result["success"])
     
-    # No debate needed for single player
+    # No debate is possible with fewer than two successful players.
     if num_players <= 1:
         logging.info("Single player, skipping debate")
         return "synthesize_node"
@@ -410,6 +498,9 @@ def create_step_state(
     player_pool: List[str],
     output_schema: Optional[Type[BaseModel]] = None,
     tool_tracer: Optional[Any] = None,
+    recorder: Optional[Any] = None,
+    model_name: Optional[str] = None,
+    provider: Optional[str] = None,
 ) -> StepExecutionState:
     """
     Create the initial state for executing a step.
@@ -445,12 +536,15 @@ def create_step_state(
     
     # Create multiple instances of the same player type
     config = PLAYER_CONFIGS.get(role_to_use, {}).copy()
+    if model_name is not None:
+        config["model_name"] = model_name
     config["tools"] = filter_tools_by_context_type(
         config.get("tools", []), context.context_type
     )
     for i in range(players_per_step):
         player = create_player_from_config(
-            config, name=f"{role_to_use}_{i+1}", role_key=role_to_use
+            config, name=f"{role_to_use}_{i+1}", role_key=role_to_use,
+            provider=provider,
         )
         players.append(player)
     
@@ -474,11 +568,13 @@ def create_step_state(
         workspace=workspace,
         metadata_standard=metadata_standard,
         tool_tracer=tool_tracer,
+        recorder=recorder,
         players=players,
         synthesizer=synthesizer,
         max_debate_rounds=debate_rounds,
         current_debate_round=0,
         player_results=[],
+        agent_messages={},
         debate_log=[],
         output_schema=output_schema,
         consolidated_result=None,

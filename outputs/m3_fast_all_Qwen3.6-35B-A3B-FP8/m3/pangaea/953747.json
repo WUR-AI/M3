@@ -1,0 +1,42 @@
+{
+  "dataset_id": "953747",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/953747.csv",
+  "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:19:15.296477+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "PS122 Arctic Ocean ADCP Backscatter File Manifest",
+    "description": "Metadata index for 22 ADCP backscatter binary files collected during the PS122 RV Polarstern expedition in the Central Arctic Ocean on 2020-09-08. All records correspond to a single survey event (PS122/5_61-35) at a fixed location (88.676°N, 112.325°E) at a depth of approximately 4,291 meters.",
+    "keywords": [
+      "Arctic Ocean",
+      "PS122",
+      "RV Polarstern",
+      "ADCP",
+      "Backscatter",
+      "Oceanography",
+      "Bathymetry",
+      "File Manifest"
+    ],
+    "spatialCoverage": {
+      "min_lat": 88.675993,
+      "min_lon": 112.324519,
+      "max_lat": 88.675993,
+      "max_lon": 112.324519
+    },
+    "temporalCoverage": {
+      "from": "2020-09-08T00:00:00+00:00",
+      "to": "2020-09-08T00:00:00+00:00"
+    },
+    "spatial": "Point location (88.675993°N, 112.324519°E)",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/953747_f3612e68f7234a10ac6ecbaf82573291.jsonl",
+  "runtime_seconds": 84.78
+}

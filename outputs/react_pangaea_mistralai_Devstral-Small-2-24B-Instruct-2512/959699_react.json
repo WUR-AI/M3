@@ -1,0 +1,85 @@
+{
+  "csv": "959699.csv",
+  "dataset_id": "959699",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d87404ae4cb54d2c047cc4dfa914442133bcd62fd72d51157bfe09e65bddd118",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4297,
+  "metadata": {
+    "name": "Manganese Nodule Composition Data",
+    "description": "This dataset contains geochemical composition data for manganese nodules collected from a specific location in the Pacific Ocean. The data includes latitude, longitude, elevation, and various elemental concentrations such as Al, Si, Ca, Mn, Fe, Co, Ni, Cu, Zn, Ba, Sc, Sb, La, Ce, Nd, Sm, Eu, Tb, Ho, Yb, Lu, Hf, Th, and U. The dataset also includes metadata such as event ID, deposit type, sampling type, and date/time of collection.",
+    "keywords": [
+      "manganese nodules",
+      "geochemical composition",
+      "Pacific Ocean",
+      "elemental analysis",
+      "marine minerals",
+      "deep-sea mining"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.072,
+      "min_lon": -140.047,
+      "max_lat": 11.072,
+      "max_lon": -140.047
+    },
+    "temporalCoverage": {
+      "from": "1976-08-27",
+      "to": "1976-08-27"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "959699"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "959699",
+        "resource": "959699"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "959699",
+        "resource": "959699"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "959699",
+        "resource": "959699",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "959699",
+        "resource": "959699"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "959699",
+        "resource": "959699",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 17.915,
+  "status": "ok"
+}

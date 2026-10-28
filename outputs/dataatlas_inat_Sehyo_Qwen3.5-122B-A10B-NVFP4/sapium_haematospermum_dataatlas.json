@@ -1,0 +1,16 @@
+{
+  "csv": "sapium_haematospermum.csv",
+  "dataset_id": "sapium_haematospermum",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 996,
+  "n_columns": 50,
+  "description": "Records 996 occurrences of Sapium haematospermum with taxonomic, geographic, and temporal data.",
+  "dataset_description": "Records 996 occurrences of Sapium haematospermum from 2006 to 2026.",
+  "runtime_seconds": 28.676,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_Sehyo_Qwen3.5-122B-A10B-NVFP4/raw/sapium_haematospermum/dictionary.json"
+}

@@ -1,0 +1,50 @@
+{
+  "csv": "974800.csv",
+  "dataset_id": "974800",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1214,
+  "metadata": {
+    "name": "Laboratory Experiment on Zooplankton and X. umbellata Pulsation",
+    "description": "This dataset contains information about a laboratory experiment involving zooplankton and X. umbellata pulsation. The data is collected from different tanks, with each tank having specific treatments and measurements.",
+    "keywords": [
+      "Laboratory experiment",
+      "Zooplankton",
+      "X. umbellata",
+      "Pulsation",
+      "Tank experiment",
+      "Aquatic ecology",
+      "Marine biology",
+      "Experimental design",
+      "DOE (Design of Experiments)",
+      "Environmental science"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "Point locations in laboratory tanks",
+    "temporal": "Single measurement per tank"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    }
+  ],
+  "runtime_seconds": 13.439,
+  "status": "ok"
+}

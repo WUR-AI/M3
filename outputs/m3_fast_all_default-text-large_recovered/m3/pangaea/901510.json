@@ -1,0 +1,45 @@
+{
+  "dataset_id": "901510",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901510.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T15:56:21.178821+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Elwha River Delta Monitoring Data (2012-02-03)",
+    "description": "Dataset of 106 sensor records collected at a single monitoring site in the Elwha River Delta on 3 February 2012. Each record includes latitude, longitude, elevation, timestamp, horizontal and vertical RMS voltage (HRMS, VRMS), a fixed status flag, description code, and the event identifier.",
+    "keywords": [
+      "Elwha River Delta",
+      "hydrology",
+      "environmental monitoring",
+      "HRMS",
+      "VRMS",
+      "elevation",
+      "sensor data",
+      "2012",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00+00:00",
+      "to": "2012-02-03T13:11:00+00:00"
+    },
+    "spatial": "point locations (single monitoring site)",
+    "temporal": "minutes (records span a 26‑minute interval on 2012‑02‑03)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901510_e5c5465120cd4f1bafe597c265522566.jsonl",
+  "runtime_seconds": 152.24,
+  "recovered_from_trace": true,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7"
+}

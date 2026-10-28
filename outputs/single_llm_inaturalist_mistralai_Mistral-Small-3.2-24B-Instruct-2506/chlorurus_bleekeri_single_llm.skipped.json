@@ -1,0 +1,15 @@
+{
+  "csv": "chlorurus_bleekeri.csv",
+  "dataset_id": "chlorurus_bleekeri",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f6eff0930d2c82a613e823ce4e05eb28fcd765ace3184b0299c02ffd44a3a1d5",
+  "contract_sha256": "84a102ad7ffca67b99df7e2ed8b88bf009e3694ad21c022f140030b125666c69",
+  "prompt_tokens": 312866,
+  "status": "skipped",
+  "reason": "context_window"
+}

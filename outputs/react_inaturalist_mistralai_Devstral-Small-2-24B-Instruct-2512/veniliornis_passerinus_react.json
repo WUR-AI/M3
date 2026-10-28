@@ -1,0 +1,60 @@
+{
+  "csv": "veniliornis_passerinus.csv",
+  "dataset_id": "veniliornis_passerinus",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ae351f023b67a0c064c01e5273eef9b1a262b3d97fc64dcc575e0b3e777b8d4d",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2558,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -29.27865,
+      "min_lon": -78.888391,
+      "max_lat": 6.024162,
+      "max_lon": -34.841307
+    },
+    "temporalCoverage": {
+      "from": "2002-07-18",
+      "to": "2026-06-13"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.453,
+  "status": "ok"
+}

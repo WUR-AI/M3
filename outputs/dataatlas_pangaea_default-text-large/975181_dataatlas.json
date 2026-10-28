@@ -1,0 +1,16 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 219,
+  "n_columns": 9,
+  "description": "219 sediment samples from 2009‑03‑04, with depth, age, isotopic δ13C/δ18O, location, elevation, and event.",
+  "dataset_description": "Contains 219 Earth‑environment observations recorded on 2009‑03‑04 for scientific analysis.",
+  "runtime_seconds": 31.046,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/975181/dictionary.json"
+}

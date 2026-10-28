@@ -1,0 +1,32 @@
+{
+  "dataset_id": "972993",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972993.csv",
+  "source_sha256": "e025ea37fdfb8676c93e7a6316bc0e2b338a8f54454d19976b10958278c38745",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T17:54:25.867429+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Core Data",
+    "description": "Dataset containing marine sediment core data with various geochemical and physical properties, including sulfur isotope ratios, age, lithology, and carbon content. The data spans multiple sites and events, with temporal coverage from 1974 to 2016 and spatial coverage across global coordinates.",
+    "keywords": [
+      "marine sediment",
+      "sediment core",
+      "geochemistry",
+      "sulfur isotopes",
+      "carbon content",
+      "lithology",
+      "marine geology",
+      "oceanography",
+      "1974-2016",
+      "global coordinates"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972993_34a478719d0844cf94b1510939feb990.jsonl",
+  "runtime_seconds": 434.84
+}

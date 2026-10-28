@@ -1,0 +1,36 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "cf3e7c856fbfa4ba3fbc6d0e0057d016bf04ea7a438bc2f507d4aedffa0a8783",
+  "prompt_tokens": 5991,
+  "metadata": {
+    "name": "ANT 1997/98 EMR Radar Profiles",
+    "description": "Dataset containing metadata for EMR radar profiles collected during the ANT 1997/98 season. The data includes profile IDs, instrument settings (600 ns and 60 ns pulses), and links to associated netCDF data files, KML files, and images.",
+    "keywords": [
+      "ANT 1997/98",
+      "EMR",
+      "Radar",
+      "Profile",
+      "netCDF",
+      "KML",
+      "Image"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "1997-01-01",
+      "to": "1998-12-31"
+    },
+    "spatial": null,
+    "temporal": "profile"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.126,
+  "status": "ok"
+}

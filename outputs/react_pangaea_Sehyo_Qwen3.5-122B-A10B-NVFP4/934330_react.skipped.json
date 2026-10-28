@@ -1,0 +1,16 @@
+{
+  "status": "skipped",
+  "reason": "failed",
+  "csv": "934330.csv",
+  "dataset_id": "934330",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "runtime_seconds": 41.593,
+  "error_type": "RuntimeError",
+  "message": "RuntimeError: ReAct structured output failed: ValueError: temporalCoverage needs ordered ISO dates; ValueError: temporalCoverage needs ordered ISO dates; ValueError: temporalCoverage needs ordered ISO dates",
+  "timestamp": "2026-10-01T19:50:19",
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8"
+}

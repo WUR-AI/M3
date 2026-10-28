@@ -1,0 +1,57 @@
+{
+  "csv": "995327.csv",
+  "dataset_id": "995327",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3854,
+  "metadata": {
+    "name": "Lanaittu core sediment composition",
+    "description": "Mineralogical and physical measurements of sediment core samples (Sample label, depth, mineral percentages, transparency, opacity, etc.) collected at the Lanaittu site (latitude 40.2592, longitude 9.5014) on 1994‑01‑01.",
+    "keywords": [
+      "sediment",
+      "core",
+      "mineralogy",
+      "Lanaittu",
+      "geochemistry",
+      "depth",
+      "latitude",
+      "longitude",
+      "1994"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01",
+      "to": "1994-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "995327"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    }
+  ],
+  "runtime_seconds": 8.023,
+  "status": "ok"
+}

@@ -1,0 +1,40 @@
+{
+  "dataset_id": "967852",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/967852.csv",
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T00:29:34.180484+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Santiurde Section Mineral Composition Data",
+    "description": "This dataset contains mineral composition data for 19 samples collected from the Santiurde section. It includes measurements of thickness, stratigraphic height, and proportions of various minerals such as quartz, clay, calcite, gypsum, dolomite, and pyrite. All samples were collected at a single geographic location with consistent latitude, longitude, and elevation.",
+    "keywords": [
+      "mineral composition",
+      "Santiurde section",
+      "quartz",
+      "clay",
+      "calcite",
+      "gypsum",
+      "dolomite",
+      "pyrite",
+      "stratigraphy"
+    ],
+    "spatialCoverage": {
+      "min_lat": 43.0685608,
+      "min_lon": -4.0878295,
+      "max_lat": 43.0685608,
+      "max_lon": -4.0878295
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/967852_e6a0e0db0c5142f997625b475ea06fbc.jsonl",
+  "runtime_seconds": 628.39
+}

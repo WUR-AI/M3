@@ -1,0 +1,130 @@
+{
+  "csv": "971851.csv",
+  "dataset_id": "971851",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 11472,
+  "metadata": {
+    "name": "Paleomagnetic data from sediment cores with VGP coordinates and age model",
+    "description": "Dataset containing 343 paleomagnetic measurements from sediment cores, including declination, inclination, their uncertainties, directional statistics (α95, kappa), relative paleointensity (RPI) with uncertainties, and Virtual Geomagnetic Pole (VGP) latitude/longitude with uncertainties. Data spans sediment depths from 0.28 to 3.7 and ages from 0.234 to 6.362.",
+    "keywords": [
+      "paleomagnetism",
+      "declination",
+      "inclination",
+      "VGP",
+      "virtual geomagnetic pole",
+      "RPI",
+      "relative paleointensity",
+      "sediment cores",
+      "kappa",
+      "α95"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.84240779,
+      "min_lon": -178.9145776,
+      "max_lat": 83.74256561,
+      "max_lon": 179.7489502
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "971851"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851",
+        "lat_column": "VGP latitude",
+        "lon_column": "VGP longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851",
+        "time_column": "Age"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "971851",
+        "field": "Cores",
+        "limit": 10,
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "971851"
+      }
+    }
+  ],
+  "runtime_seconds": 24.866,
+  "status": "ok"
+}

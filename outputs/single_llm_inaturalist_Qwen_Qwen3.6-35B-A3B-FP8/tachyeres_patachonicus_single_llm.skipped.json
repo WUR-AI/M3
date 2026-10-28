@@ -1,0 +1,15 @@
+{
+  "csv": "tachyeres_patachonicus.csv",
+  "dataset_id": "tachyeres_patachonicus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "adb66855c6df2864af4f59f851c55bc1e9d18246fa9bfd5165ba5d0b9df142ad",
+  "contract_sha256": "a9ba18695116c40ea95cf144842c371328dc5133790c846b3f49412aaed1a4f9",
+  "prompt_tokens": 330608,
+  "status": "skipped",
+  "reason": "context_window"
+}

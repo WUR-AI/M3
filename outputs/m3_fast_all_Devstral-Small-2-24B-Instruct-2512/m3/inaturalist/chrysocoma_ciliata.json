@@ -1,0 +1,28 @@
+{
+  "dataset_id": "chrysocoma_ciliata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/chrysocoma_ciliata.csv",
+  "source_sha256": "50bd5ec29dd47018ec8508a0d48c609e5a502d65d117018a7eb88d491f264872",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T04:06:56.020201+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.751868,
+      "min_lon": 16.291602,
+      "max_lat": -20.504514,
+      "max_lon": 31.483037
+    },
+    "temporalCoverage": {
+      "from": "1995-02-04T00:00:00+00:00",
+      "to": "2026-06-07T12:42:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/chrysocoma_ciliata_b726fd0400ab4a34ad2c88fd43f2843e.jsonl",
+  "runtime_seconds": 119.97
+}

@@ -1,0 +1,36 @@
+{
+  "dataset_id": "978983",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/978983.csv",
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T19:15:48.415358+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Mineral Composition and Sediment Depth Data",
+    "description": "This dataset contains mineral composition and sediment depth data from a single location in the Pacific Ocean. It includes measurements of various minerals such as quartz, plagioclase, illite, chlorite, and others, along with sediment depth, latitude, longitude, elevation, and date/time information. The data is collected from 14 samples taken on May 30, 2021.",
+    "keywords": [
+      "mineral composition",
+      "sediment depth",
+      "quartz",
+      "plagioclase",
+      "illite",
+      "chlorite",
+      "Pacific Ocean",
+      "geological survey",
+      "sediment analysis",
+      "mineralogy",
+      "2021-05-30",
+      "latitude",
+      "longitude",
+      "elevation"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/978983_c0e84ef8956642f88f79d6f219e21bf8.jsonl",
+  "runtime_seconds": 777.1
+}

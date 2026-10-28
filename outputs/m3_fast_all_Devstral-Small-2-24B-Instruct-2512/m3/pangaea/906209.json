@@ -1,0 +1,32 @@
+{
+  "dataset_id": "906209",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/906209.csv",
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T20:40:05.105968+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Pregnancy Diagnoses and Hunting Records Dataset",
+    "description": "A dataset containing metadata for files related to pregnancy diagnoses, hunting records, and catch-per-unit-effort records. The files are in XLSX format and include interviews, hunting registers, and CPUE records.",
+    "keywords": [
+      "Interviews",
+      "Pregnancy Diagnoses",
+      "Hunting Records",
+      "CPUE",
+      "XLSX",
+      "Metadata"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/906209_be58c2a25c9540638fa728d8ab14da56.jsonl",
+  "runtime_seconds": 186.98
+}

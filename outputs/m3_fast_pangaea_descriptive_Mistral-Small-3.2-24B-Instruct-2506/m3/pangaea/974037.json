@@ -1,0 +1,31 @@
+{
+  "dataset_id": "974037",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974037.csv",
+  "source_sha256": "674b5362b09af672f9d2f6e1d054926fbaafd85b28bc7eddef1bbdaad4d0ec74",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T18:51:34.796683+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Boulder Diameter Measurements from Sucha Woda Flood Event",
+    "description": "This dataset contains measurements of boulder diameters and other related data from various sites affected by the Sucha Woda Flood event on July 24, 2018. It includes site information, geographic coordinates, elevation, number of trunks, and multiple boulder diameter measurements.",
+    "keywords": [
+      "boulder diameter",
+      "Sucha Woda Flood",
+      "geographic measurements",
+      "flood event",
+      "geographic coordinates",
+      "elevation",
+      "trunk count",
+      "2018-07-24",
+      "Poland"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974037_73955f0b629941678f87a569352812c7.jsonl",
+  "runtime_seconds": 426.92
+}

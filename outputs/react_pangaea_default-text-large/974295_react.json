@@ -1,0 +1,75 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1873,
+  "metadata": {
+    "name": "ANT 1997/98 Radar Profiles",
+    "description": "A catalog of Antarctic radar profile files for the 1997/98 season, including netCDF data, KML GIS files, and associated JPEG images. All profiles were collected with the EMR 600 ns pulse instrument.",
+    "keywords": [
+      "ANT",
+      "1997/98",
+      "radar",
+      "EMR",
+      "netCDF",
+      "KML",
+      "image",
+      "profile"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "974295"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295",
+        "n": 5
+      }
+    },
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "974295"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974295"
+      }
+    }
+  ],
+  "runtime_seconds": 15.961,
+  "status": "ok"
+}

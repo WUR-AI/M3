@@ -1,0 +1,47 @@
+{
+  "csv": "986963.csv",
+  "dataset_id": "986963",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "contract_sha256": "0ede468b1d032aa6701e14763e1fa90eae8e7c335580ea39e7678fb243f87e21",
+  "prompt_tokens": 14577,
+  "metadata": {
+    "name": "986963",
+    "description": "Dataset containing sediment core data with various geochemical and physical measurements.",
+    "keywords": [
+      "sediment core",
+      "geochemical measurements",
+      "physical measurements",
+      "depth",
+      "age",
+      "TOC",
+      "TIC",
+      "TN",
+      "δ13C",
+      "δ15N",
+      "grain size",
+      "elevation",
+      "date/time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "1849-01-01",
+      "to": "2021-03-06"
+    },
+    "spatial": "point locations",
+    "temporal": "variable"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 12.196,
+  "status": "ok"
+}

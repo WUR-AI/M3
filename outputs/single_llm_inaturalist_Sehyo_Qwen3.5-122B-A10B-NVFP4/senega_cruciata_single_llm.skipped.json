@@ -1,0 +1,15 @@
+{
+  "csv": "senega_cruciata.csv",
+  "dataset_id": "senega_cruciata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "839b7f36dc19d38652bd8ea18d66a3666d5191a83740009ef90667b4dae7dff7",
+  "contract_sha256": "8f31979c9411df321969945834b3c11d11a315731a4fd703c2d038b947704065",
+  "prompt_tokens": 321029,
+  "status": "skipped",
+  "reason": "context_window"
+}

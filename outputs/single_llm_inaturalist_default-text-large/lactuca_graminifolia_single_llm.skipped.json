@@ -1,0 +1,15 @@
+{
+  "csv": "lactuca_graminifolia.csv",
+  "dataset_id": "lactuca_graminifolia",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "be2194ec06d81abca373d5f54da1795912a343fbed2bcfb5b28c67ac441a9f99",
+  "contract_sha256": "ba83de61b9eb55eda0390864449ac5065d0e7a5e578b6f72fc4981657ce28a16",
+  "prompt_tokens": 319500,
+  "status": "skipped",
+  "reason": "context_window"
+}

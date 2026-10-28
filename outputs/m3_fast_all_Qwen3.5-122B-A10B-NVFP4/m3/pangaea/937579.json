@@ -1,0 +1,43 @@
+{
+  "dataset_id": "937579",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/937579.csv",
+  "source_sha256": "156fa955ff4d43d3d0a0f15b5f40e346e65b3ba52e0f21a776a715bde33d718e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:59:58.788773+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "NunaWP4 Mackenzie 2019 Water Isotope Sampling",
+    "description": "Dataset containing water sampling data from the Mackenzie River delta region in the Canadian Arctic, collected during the 2019 field season. Includes geographic coordinates, timestamps, water depth, and stable isotope measurements (δ18O, δD, d xs) for 146 sampling events across 4 expeditions.",
+    "keywords": [
+      "water isotopes",
+      "Mackenzie Delta",
+      "Canadian Arctic",
+      "δ18O",
+      "δD",
+      "stable isotopes",
+      "hydrology",
+      "NunaWP4",
+      "2019 field season"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20T15:34:00+00:00",
+      "to": "2019-09-08T12:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular sampling events"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/937579_25533f2e8ad1432b911f22216b9451c0.jsonl",
+  "runtime_seconds": 131.81
+}

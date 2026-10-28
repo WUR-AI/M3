@@ -1,0 +1,28 @@
+{
+  "dataset_id": "cingilia_catenaria",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/cingilia_catenaria.csv",
+  "source_sha256": "17a2a9cb99bf42306bf8693a8209ea5a32f31cb1d703c5f62815aaa17e0dfe3f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:19:26.497510+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 39.284652,
+      "min_lon": -116.600968,
+      "max_lat": 56.676758,
+      "max_lon": -59.834268
+    },
+    "temporalCoverage": {
+      "from": "1939-09-02T00:00:00+00:00",
+      "to": "2025-11-09T02:22:20+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/cingilia_catenaria_df5b9b9ab9ed4f13b199c2a933417fdb.jsonl",
+  "runtime_seconds": 51.4
+}

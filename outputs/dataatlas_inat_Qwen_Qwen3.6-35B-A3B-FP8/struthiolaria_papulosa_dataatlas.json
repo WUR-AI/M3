@@ -1,0 +1,16 @@
+{
+  "csv": "struthiolaria_papulosa.csv",
+  "dataset_id": "struthiolaria_papulosa",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 998,
+  "n_columns": 50,
+  "description": "998 Struthiolaria papulosa occurrence records from New Zealand, spanning 2013 to 2026.",
+  "dataset_description": "998 records of Struthiolaria papulosa occurrences spanning 2013 to 2026.",
+  "runtime_seconds": 19.466,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_Qwen_Qwen3.6-35B-A3B-FP8/raw/struthiolaria_papulosa/dictionary.json"
+}

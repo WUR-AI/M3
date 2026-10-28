@@ -1,0 +1,60 @@
+{
+  "csv": "chrysocoma_ciliata.csv",
+  "dataset_id": "chrysocoma_ciliata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "50bd5ec29dd47018ec8508a0d48c609e5a502d65d117018a7eb88d491f264872",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2525,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.751868,
+      "min_lon": 16.291602,
+      "max_lat": -20.504514,
+      "max_lon": 31.483037
+    },
+    "temporalCoverage": {
+      "from": "1995-02-04",
+      "to": "2026-06-07"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "chrysocoma_ciliata",
+        "resource": "chrysocoma_ciliata.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "chrysocoma_ciliata",
+        "resource": "chrysocoma_ciliata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "chrysocoma_ciliata",
+        "resource": "chrysocoma_ciliata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "chrysocoma_ciliata",
+        "resource": "chrysocoma_ciliata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.652,
+  "status": "ok"
+}

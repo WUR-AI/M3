@@ -1,0 +1,16 @@
+{
+  "csv": "sesamum_indicum.csv",
+  "dataset_id": "sesamum_indicum",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1002,
+  "n_columns": 50,
+  "description": "1002 Sesamum indicum observations (2003‑2026) with taxonomy, location, date, and metadata.",
+  "dataset_description": "Records 1002 sesamum indicum occurrences from 2003 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 79.184,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/sesamum_indicum/dictionary.json"
+}

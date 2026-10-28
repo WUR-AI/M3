@@ -1,0 +1,85 @@
+{
+  "csv": "939047.csv",
+  "dataset_id": "939047",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5b90ade135286bbd4e3faecda84f9f5bedba033ad13f9eb079cc10bf010109b3",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3917,
+  "metadata": {
+    "name": "939047",
+    "description": "Dataset containing water vapor isotope measurements, including mixing ratios, isotope ratios (δ18O H2O, δD H2O vapour), and related statistics. The data is collected at a fixed location with latitude -70.65 and longitude -8.25, at an elevation of 42.0 meters. Measurements are recorded at various heights and include event classifications.",
+    "keywords": [
+      "water vapor",
+      "isotope ratios",
+      "δ18O H2O",
+      "δD H2O vapour",
+      "mixing ratios",
+      "atmospheric measurements"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2017-02-17",
+      "to": "2019-01-31"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "939047"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "939047",
+        "resource": "939047"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "939047",
+        "resource": "939047"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "939047",
+        "resource": "939047",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "939047",
+        "resource": "939047"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "939047",
+        "resource": "939047",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 16.45,
+  "status": "ok"
+}

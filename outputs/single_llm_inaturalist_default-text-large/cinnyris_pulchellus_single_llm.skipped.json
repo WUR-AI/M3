@@ -1,0 +1,15 @@
+{
+  "csv": "cinnyris_pulchellus.csv",
+  "dataset_id": "cinnyris_pulchellus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ddc15a0c8a3ff9a94bae2d95048c53b18ef8a6c7f295156ee77642bc51cb4d93",
+  "contract_sha256": "61c3fe97a8593cc58515d8f760471068d088b11aa0356c87bb6be73839d95072",
+  "prompt_tokens": 321237,
+  "status": "skipped",
+  "reason": "context_window"
+}

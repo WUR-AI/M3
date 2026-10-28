@@ -1,0 +1,42 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "c92a4482a0d5f4b050f0f21aea05c4b3c602a571c470829b9f1416a78df5a91c",
+  "prompt_tokens": 17690,
+  "metadata": {
+    "name": "Geophysical borehole measurements from MSM44_362-1 site",
+    "description": "A collection of borehole measurements including depth, core diameter deviation, P‑wave travel time, P‑wave velocity (Vp‑a), and related geophysical parameters recorded at a single location (75.97917 °N, ‑66.04717 °W) on 12 July 2015. The dataset contains multiple depth sections for different core sections and event identifiers.",
+    "keywords": [
+      "borehole",
+      "seismic",
+      "P‑wave travel time",
+      "P‑wave velocity",
+      "core diameter deviation",
+      "Greenland",
+      "ice core",
+      "geophysics"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12",
+      "to": "2015-07-12"
+    },
+    "spatial": "point location",
+    "temporal": "single timestamp"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.985,
+  "status": "ok"
+}

@@ -1,0 +1,39 @@
+{
+  "csv": "973035.csv",
+  "dataset_id": "973035",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "contract_sha256": "b8e6cc00aebdc955f66ed0d22e0356ee98d3a8807f914ea71b9974a33be1a0f3",
+  "prompt_tokens": 1405,
+  "metadata": {
+    "name": "Soil sample U-Th-K dating data from NEP sites",
+    "description": "Dataset containing radiometric dating results (U, Th, K concentrations, equivalent dose, and calculated ages) for soil samples collected at two locations (NEP_1 and NEP_3) in April 2023.",
+    "keywords": [
+      "soil",
+      "U-Th-K dating",
+      "luminescence",
+      "NEP",
+      "geochronology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03",
+      "to": "2023-04-03"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 1.848,
+  "status": "ok"
+}

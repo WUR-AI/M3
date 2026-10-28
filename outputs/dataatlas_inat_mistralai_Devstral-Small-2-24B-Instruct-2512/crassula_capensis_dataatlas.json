@@ -1,0 +1,16 @@
+{
+  "csv": "crassula_capensis.csv",
+  "dataset_id": "crassula_capensis",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 998,
+  "n_columns": 50,
+  "description": "Species occurrence records for Crassula capensis from 2011 to 2026.",
+  "dataset_description": "Species occurrence records for Crassula capensis from 2011 to 2026.",
+  "runtime_seconds": 30.859,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/crassula_capensis/dictionary.json"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "alopecurus_myosuroides.csv",
+  "dataset_id": "alopecurus_myosuroides",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a46c382b70da5d2ff45bb51559d0e5dd8f720d6e4d08ad5e097e3952b6fc26a3",
+  "contract_sha256": "adc86b7512bc005a2fe810376029d362dbe97b8cc04f87c7ef20ef1186b394bc",
+  "prompt_tokens": 322098,
+  "status": "skipped",
+  "reason": "context_window"
+}

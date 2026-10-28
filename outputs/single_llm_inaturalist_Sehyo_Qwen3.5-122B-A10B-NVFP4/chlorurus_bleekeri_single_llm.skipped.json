@@ -1,0 +1,15 @@
+{
+  "csv": "chlorurus_bleekeri.csv",
+  "dataset_id": "chlorurus_bleekeri",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f6eff0930d2c82a613e823ce4e05eb28fcd765ace3184b0299c02ffd44a3a1d5",
+  "contract_sha256": "558a0bfe2bed927a484e38a423aea4331223875df23f35f167dcfb4ab68b0591",
+  "prompt_tokens": 312866,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_id": "972993",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972993.csv",
+  "source_sha256": "e025ea37fdfb8676c93e7a6316bc0e2b338a8f54454d19976b10958278c38745",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:21:18.122994+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Global Sediment Core Dataset",
+    "description": "A dataset containing sediment core samples with geochemical, spatial, and temporal data from various sites worldwide.",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "paleoenvironment",
+      "methane",
+      "carbonate",
+      "organic carbon",
+      "sulfur isotopes"
+    ],
+    "spatialCoverage": {
+      "min_lat": -46.5797,
+      "min_lon": -178.1665,
+      "max_lat": 87.89,
+      "max_lon": 174.3141
+    },
+    "temporalCoverage": {
+      "from": "1974-07-18",
+      "to": "2016-07-04"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972993_2553e885000645cb8244a6612e9eea2b.jsonl",
+  "runtime_seconds": 349.01
+}

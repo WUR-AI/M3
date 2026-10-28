@@ -1,0 +1,39 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "contract_sha256": "a225ed0bf169fdf669d9450de013528050bbceb364b70f4a415bb6d3a7f4eb77",
+  "prompt_tokens": 25573,
+  "metadata": {
+    "name": "Mytilus galloprovincialis embryonic development under high CO2 conditions",
+    "description": "Laboratory dataset containing developmental stage percentages and physiological parameters (pH, temperature, salinity, carbonate chemistry) for the mussel Mytilus galloprovincialis exposed to Control and High CO2 treatments over time (2 to 144 hours). Data includes observations of embryonic stages (1-cell to D-larva) and abnormality types.",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "embryonic development",
+      "high CO2",
+      "ocean acidification",
+      "pH",
+      "carbonate chemistry",
+      "laboratory experiment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.785,
+  "status": "ok"
+}

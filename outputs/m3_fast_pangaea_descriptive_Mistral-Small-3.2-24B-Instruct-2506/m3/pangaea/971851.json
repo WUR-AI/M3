@@ -1,0 +1,31 @@
+{
+  "dataset_id": "971851",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971851.csv",
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T17:17:00.195175+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Paleomagnetic Sediment Data",
+    "description": "Dataset containing paleomagnetic measurements from sediment cores, including declination, inclination, and virtual geomagnetic pole (VGP) coordinates with associated uncertainties.",
+    "keywords": [
+      "paleomagnetism",
+      "sediment cores",
+      "declination",
+      "inclination",
+      "VGP coordinates",
+      "geomagnetic field",
+      "geophysical data",
+      "latitude",
+      "longitude"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971851_7c351acaedbd4461b544f35706337b12.jsonl",
+  "runtime_seconds": 828.92
+}

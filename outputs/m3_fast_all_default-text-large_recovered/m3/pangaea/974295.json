@@ -1,0 +1,37 @@
+{
+  "dataset_id": "974295",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974295.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:27:28.863478+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic 1997/98 EMR Radar Profiles (97)",
+    "description": "The CSV contains 97 radar profile records collected during the Antarctic season 1997/98. Each record has a constant season identifier, a unique Profile ID, the instrument used (EMR), a radar product pulse length (either 60 ns or 600 ns), and references to associated files: a netCDF data file, its size, a GIS KML file, and a JPEG image. All fields are fully populated with no missing values.",
+    "keywords": [
+      "Antarctic",
+      "1997-1998",
+      "EMR",
+      "radar",
+      "pulse",
+      "netCDF",
+      "KML",
+      "profile",
+      "GIS",
+      "image"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974295_56dad1eb479d41fdb69a71b5c719b4e6.jsonl",
+  "runtime_seconds": 111.19,
+  "recovered_from_trace": true,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "hibbertia_hypericoides.csv",
+  "dataset_id": "hibbertia_hypericoides",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c1e6262795108323b0a9de588aab51e92795f715dbfa830aca09d2ebe8253b55",
+  "contract_sha256": "541cc5238eebb8cc90c131ecafde34d6b32910bccc2d7be82735e2a648b6f24b",
+  "prompt_tokens": 327024,
+  "status": "skipped",
+  "reason": "context_window"
+}

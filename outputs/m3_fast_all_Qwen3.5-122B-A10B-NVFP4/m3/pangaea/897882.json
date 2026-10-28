@@ -1,0 +1,45 @@
+{
+  "dataset_id": "897882",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/897882.csv",
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T19:57:39.086551+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "E. fimbriata oocyte and biochemical measurements from coastal West Africa",
+    "description": "Dataset containing environmental conditions (temperature, salinity) and biological measurements (oocyte dry mass, volume, lipid, protein, calorific content, and elemental ratios) for the species E. fimbriata collected from coastal locations in West Africa.",
+    "keywords": [
+      "E. fimbriata",
+      "oocyte",
+      "biological measurements",
+      "environmental data",
+      "West Africa",
+      "coastal",
+      "lipid",
+      "protein",
+      "elemental ratios",
+      "salinity",
+      "temperature"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-01-01T00:00:00+00:00",
+      "to": "2014-01-01T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "snapshot"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/897882_ef4aafde28a84081a54a34028d74e3e8.jsonl",
+  "runtime_seconds": 157.87
+}

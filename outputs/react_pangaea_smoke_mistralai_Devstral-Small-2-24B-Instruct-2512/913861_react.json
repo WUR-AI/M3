@@ -1,0 +1,78 @@
+{
+  "csv": "913861.csv",
+  "dataset_id": "913861",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "4f12a0e5810b32b5ec78c9788b9f5e7c7f24d917d0544d283992885714b59cc2",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 6304,
+  "metadata": {
+    "name": "913861",
+    "description": "The dataset contains atmospheric measurements, including particle size distributions and environmental parameters such as height, date/time, latitude, longitude, and elevation. It appears to be collected over a fixed geographic location with temporal coverage spanning from January 1, 2018, to December 31, 2018.",
+    "keywords": [
+      "atmospheric measurements",
+      "particle size distribution",
+      "environmental parameters",
+      "latitude",
+      "longitude",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01",
+      "to": "2018-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "913861"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 14.862,
+  "status": "ok"
+}

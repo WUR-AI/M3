@@ -1,0 +1,33 @@
+{
+  "csv": "906209.csv",
+  "dataset_id": "906209",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "contract_sha256": "f28e2f1d44d633c25b1b27cce899541a8142b3a80072d5d3da84a170c75570e2",
+  "prompt_tokens": 735,
+  "metadata": {
+    "name": "Pacas hunting record and pregnancy diagnoses in the context of the El Bizri et al. 2019 study",
+    "description": "A dataset containing three Excel files: interviews regarding pregnancy diagnoses, hunting registers for pacas including pregnancy and immatures, and catch-per-unit-effort records.",
+    "keywords": [
+      "Pacas",
+      "Hunting",
+      "Pregnancy",
+      "Interviews",
+      "Catch-per-unit-effort",
+      "CPUE",
+      "El Bizri"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.252,
+  "status": "ok"
+}

@@ -1,0 +1,39 @@
+{
+  "dataset_id": "924708",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924708.csv",
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:39:11.368416+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Whale Sightings during PS87-track Event",
+    "description": "Dataset containing observations of whale sightings during the PS87-track event, including timestamps, geographic coordinates, species identification, certainty of sightings, and associated indices.",
+    "keywords": [
+      "whale",
+      "sightings",
+      "Arctic",
+      "marine mammals",
+      "PS87-track"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06T10:34:00+00:00",
+      "to": "2014-10-01T11:50:00+00:00"
+    },
+    "spatial": "Point locations with coordinates in WGS84",
+    "temporal": "Hourly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924708_2fb60d0f0f844f398b3aebeac3807642.jsonl",
+  "runtime_seconds": 252.84
+}

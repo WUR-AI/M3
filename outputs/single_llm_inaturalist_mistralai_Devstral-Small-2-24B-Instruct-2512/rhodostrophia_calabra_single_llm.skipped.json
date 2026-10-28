@@ -1,0 +1,15 @@
+{
+  "csv": "rhodostrophia_calabra.csv",
+  "dataset_id": "rhodostrophia_calabra",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "91a846da3a46d2cf8af6b391ce5a65f69bc85e5557c3d922c03569ba1e858a7f",
+  "contract_sha256": "4a2e76efbf3473451af1bfb65e22284eb03f3594e0ca23ccdb8885150a651163",
+  "prompt_tokens": 325309,
+  "status": "skipped",
+  "reason": "context_window"
+}

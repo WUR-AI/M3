@@ -1,0 +1,87 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2813,
+  "metadata": {
+    "name": "M. balthica shell length and frequency data from Rønnebank (Baltic Sea)",
+    "description": "This dataset contains information about the shell lengths and frequencies of M. balthica collected during the EM320 expedition in June 2023 at Rønnebank in the Baltic Sea. The data was gathered from a Marine Protected Area.",
+    "keywords": [
+      "M. balthica",
+      "shell length",
+      "frequency",
+      "Baltic Sea",
+      "Rønnebank",
+      "Marine Protected Area",
+      "EM320 expedition",
+      "June 2023"
+    ],
+    "spatialCoverage": {
+      "min_lat": 1.0,
+      "min_lon": 0.0,
+      "max_lat": 18.0,
+      "max_lon": 167.0
+    },
+    "temporalCoverage": {
+      "from": "2023-06-01T00:00:00+00:00",
+      "to": "2023-06-01T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "995133"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "time_column": "Sampling date"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "lat_column": "M. balthica shell l",
+        "lon_column": "M. balthica l-freq"
+      }
+    }
+  ],
+  "runtime_seconds": 28.882,
+  "status": "ok"
+}

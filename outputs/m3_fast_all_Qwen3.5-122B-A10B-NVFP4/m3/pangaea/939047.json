@@ -1,0 +1,44 @@
+{
+  "dataset_id": "939047",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/939047.csv",
+  "source_sha256": "5b90ade135286bbd4e3faecda84f9f5bedba033ad13f9eb079cc10bf010109b3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:04:50.046657+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic Atmospheric Water Vapor and Isotopic Time Series (GVN)",
+    "description": "High-frequency time series dataset containing atmospheric water vapor mixing ratios, isotopic ratios (δ18O, δD), and deuterium excess measurements collected at a single monitoring station in the Antarctic region. Data includes associated uncertainties, observation counts, and precise geospatial metadata (latitude, longitude, elevation) recorded at hourly intervals.",
+    "keywords": [
+      "atmospheric water vapor",
+      "isotopic ratios",
+      "δ18O",
+      "δD",
+      "deuterium excess",
+      "Antarctic",
+      "GVN",
+      "time series",
+      "meteorology",
+      "water vapor mixing ratio"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2017-02-17T02:00:00+00:00",
+      "to": "2019-01-31T22:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "hourly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/939047_3041d6824fde42e9a768373d24b7c201.jsonl",
+  "runtime_seconds": 136.69
+}

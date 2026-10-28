@@ -1,0 +1,46 @@
+{
+  "dataset_id": "932569",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/932569.csv",
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:55:27.780330+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Marine Aerosol Chemical Composition from PS106 Expedition",
+    "description": "Dataset containing chemical concentration measurements of aerosol particles collected during the PS106 polar research expedition in the Arctic Ocean and North Atlantic region (May–July 2017). The data includes 75 samples across 5 aerosol size stages and 15 events, measuring major ions (Cl-, NO3-, SO4 2-, Na+, NH4+, K+, Mg2+), organic compounds (MSA, oxalate), and trace elements. Samples were collected at a fixed height of 25 meters above sea level along a vessel track spanning latitudes 54.9°N to 83.7°N and longitudes 3.2°E to 33.0°E.",
+    "keywords": [
+      "aerosol",
+      "marine",
+      "Arctic",
+      "chemical composition",
+      "ions",
+      "PS106",
+      "Polarstern",
+      "atmospheric chemistry",
+      "sea spray",
+      "methanesulfonic acid",
+      "sulfate",
+      "chloride"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.229915,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24T20:50:00+00:00",
+      "to": "2017-07-16T10:35:00+00:00"
+    },
+    "spatial": "Discrete sampling points along a vessel track with approximately 10 meter precision (6 decimal places in coordinates)",
+    "temporal": "Second-level precision (Date/Time column with HH:MM:SS format); samples collected over 52 days from May to July 2017"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/932569_7091d153df3c4e79a140d4a58b3e759b.jsonl",
+  "runtime_seconds": 125.49
+}

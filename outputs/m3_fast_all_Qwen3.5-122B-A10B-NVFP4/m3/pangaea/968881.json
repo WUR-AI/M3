@@ -1,0 +1,42 @@
+{
+  "dataset_id": "968881",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/968881.csv",
+  "source_sha256": "a5f4883152b119b5e65cbc0e9ef4eecb1cdd0ad4f95d8a3cf836b7d7c1f68b95",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:11:10.275090+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "West Antarctic Snow and Ice Depth Measurements from DML21/22 Campaign",
+    "description": "A dataset containing 578 high-frequency measurements of snow and ice depth (total, top, and bottom) and snow density collected at a localized transect in West Antarctica (approx. 73°S, 13°W) between December 10, 2021, and January 8, 2022. The data includes geospatial coordinates, timestamps, and physical properties of the snowpack, ranging from fresh powder to dense firn.",
+    "keywords": [
+      "Antarctica",
+      "snow depth",
+      "ice depth",
+      "snow density",
+      "glaciology",
+      "DML21/22",
+      "field measurements",
+      "West Antarctica"
+    ],
+    "spatialCoverage": {
+      "min_lat": -73.4254031,
+      "min_lon": -14.5274876,
+      "max_lat": -72.8567119,
+      "max_lon": -12.014326
+    },
+    "temporalCoverage": {
+      "from": "2021-12-10T13:50:00+00:00",
+      "to": "2022-01-08T14:49:00+00:00"
+    },
+    "spatial": "Point locations along a transect spanning approximately 63 km north-south and 30-40 km east-west",
+    "temporal": "High-frequency sampling with approximately 20 measurements per day over a 29-day period"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/968881_28a1f4db324b4de2a2dd7aca04647fe5.jsonl",
+  "runtime_seconds": 128.8
+}

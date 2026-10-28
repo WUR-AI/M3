@@ -1,0 +1,11 @@
+{
+  "status": "skipped",
+  "reason": "timeout",
+  "csv": "acontia_cretata.csv",
+  "dataset_id": "acontia_cretata",
+  "provider": "surf",
+  "model": "default-text-large",
+  "timeout_seconds": 600,
+  "runtime_seconds": 600,
+  "message": "AutoDDG exceeded 600s on acontia_cretata.csv"
+}

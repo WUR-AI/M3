@@ -1,0 +1,15 @@
+{
+  "csv": "formica_cunicularia.csv",
+  "dataset_id": "formica_cunicularia",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0101be02e4c3b07b529d7b6c88e4d515436183b7b29989b9c0649cbcdfd83866",
+  "contract_sha256": "4d09ce049329f74f1d29708fe497173d00c274d7debeed0de1294d0f042e0998",
+  "prompt_tokens": 329011,
+  "status": "skipped",
+  "reason": "context_window"
+}

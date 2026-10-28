@@ -1,0 +1,15 @@
+{
+  "csv": "luridiblatta_trivittata.csv",
+  "dataset_id": "luridiblatta_trivittata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e7e05ed62f883f5d399eec7e0640ff26ed43608e869a227bfc075accc91ec6bb",
+  "contract_sha256": "9f7c1004d119bcbf06c629d4da3737a066368fd961f406b599d125567dda1f43",
+  "prompt_tokens": 332022,
+  "status": "skipped",
+  "reason": "context_window"
+}

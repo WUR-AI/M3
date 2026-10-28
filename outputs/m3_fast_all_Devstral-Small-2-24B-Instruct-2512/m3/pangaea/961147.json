@@ -1,0 +1,39 @@
+{
+  "dataset_id": "961147",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961147.csv",
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T23:55:49.515427+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Biological and Chemical Sample Data",
+    "description": "Dataset containing marine biological samples with chemical composition, spatial, and temporal data from various expeditions.",
+    "keywords": [
+      "marine biology",
+      "chemical composition",
+      "expedition data",
+      "species samples",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12T23:45:00",
+      "to": "2021-05-27T19:26:00"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961147_178142399d674d098ef44e1d776a392a.jsonl",
+  "runtime_seconds": 369.26
+}

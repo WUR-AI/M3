@@ -1,0 +1,41 @@
+{
+  "csv": "927062.csv",
+  "dataset_id": "927062",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "contract_sha256": "6c904fed1e6130ffd6f01feb848a37c90f777e6ad4ba36d21695d1f6530aca14",
+  "prompt_tokens": 120502,
+  "metadata": {
+    "name": "Balloon ascent measurements 2018-08-18",
+    "description": "Time‑series of atmospheric observations collected during a balloon flight on 2018‑08‑18. Each record includes UTC date/time, geographic position (longitude, latitude), altitude, pressure, temperature, relative humidity, wind direction (dd) and wind speed (ff).",
+    "keywords": [
+      "balloon",
+      "atmospheric",
+      "pressure",
+      "temperature",
+      "humidity",
+      "wind",
+      "vertical profile"
+    ],
+    "spatialCoverage": {
+      "min_lat": 89.5537,
+      "min_lon": 36.54061,
+      "max_lat": 89.5601,
+      "max_lon": 36.84752
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00",
+      "to": "2018-08-18T11:39:00"
+    },
+    "spatial": "point locations",
+    "temporal": "1 second"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 133.321,
+  "status": "ok"
+}

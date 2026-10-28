@@ -1,0 +1,44 @@
+{
+  "dataset_id": "982395",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/982395.csv",
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:37:24.272555+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Lake Sediment Core Geochemical Record from Central Germany",
+    "description": "Geochemical and physical analysis of lake sediment core samples collected from a single location in central Germany (near Leipzig). The dataset contains 21 samples with measurements of organic and inorganic geochemistry (TOC, BC, CaCO3, TP, S, trace metals Pb/Zn/Cu), stable isotope ratios (δ13C, δ15N), grain size distribution, magnetic properties, and derived elemental ratios (S/V, C/V). Samples were collected during two field campaigns in 2018 and 2019.",
+    "keywords": [
+      "lake sediment",
+      "geochemistry",
+      "organic carbon",
+      "black carbon",
+      "stable isotopes",
+      "grain size",
+      "trace metals",
+      "magnetic susceptibility",
+      "sediment core",
+      "central Germany"
+    ],
+    "spatialCoverage": {
+      "min_lat": 51.410785,
+      "min_lon": 12.079572,
+      "max_lat": 51.41327778,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22T00:00:00+00:00",
+      "to": "2019-08-12T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/982395_5e77b5d58a8c4946a629d09638345e19.jsonl",
+  "runtime_seconds": 125.07
+}

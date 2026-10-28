@@ -1,0 +1,74 @@
+{
+  "csv": "dioctria_linearis.csv",
+  "dataset_id": "dioctria_linearis",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1a233647f2b04f9f2da42159a0a851fcd3d6d3fb98445e7d62efacf06a668423",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3893,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 37.959187,
+      "min_lon": -4.139842,
+      "max_lat": 56.946173,
+      "max_lon": 43.007263
+    },
+    "temporalCoverage": {
+      "from": "2005-06-05T00:00:00+00:00",
+      "to": "2026-06-15T17:29:39+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "dioctria_linearis"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "dioctria_linearis",
+        "resource": "dioctria_linearis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "dioctria_linearis",
+        "resource": "dioctria_linearis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "dioctria_linearis",
+        "resource": "dioctria_linearis"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "dioctria_linearis",
+        "resource": "dioctria_linearis",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "dioctria_linearis",
+        "resource": "dioctria_linearis",
+        "time_column": "dateIdentified"
+      }
+    }
+  ],
+  "runtime_seconds": 8.223,
+  "status": "ok"
+}

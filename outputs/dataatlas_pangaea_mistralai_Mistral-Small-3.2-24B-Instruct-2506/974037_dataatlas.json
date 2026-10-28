@@ -1,0 +1,16 @@
+{
+  "csv": "974037.csv",
+  "dataset_id": "974037",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 11,
+  "n_columns": 33,
+  "description": "Environmental data from 11 sites, including location, elevation, trunks, boulder diameters, event, and date.",
+  "dataset_description": "Environmental data collected on July 24, 2018, in Earth and environmental science domain.",
+  "runtime_seconds": 21.642,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/974037/dictionary.json"
+}

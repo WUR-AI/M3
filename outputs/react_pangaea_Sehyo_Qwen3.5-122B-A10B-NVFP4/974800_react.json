@@ -1,0 +1,99 @@
+{
+  "csv": "974800.csv",
+  "dataset_id": "974800",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4514,
+  "metadata": {
+    "name": "X. umbellata pulsation laboratory experiment",
+    "description": "Laboratory experiment measuring X. umbellata pulsation under different treatment conditions (Zooplankton, Control, DOC, Phytoplankton) across 12 tanks over 28 days of experiment.",
+    "keywords": [
+      "laboratory experiment",
+      "X. umbellata",
+      "pulsation",
+      "zooplankton",
+      "phytoplankton",
+      "DOC",
+      "treatment",
+      "tank experiment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2000-01-01",
+      "to": "2000-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "daily measurements over 28 days of experiment"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "974800",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "974800"
+      }
+    }
+  ],
+  "runtime_seconds": 18.832,
+  "status": "ok"
+}

@@ -1,0 +1,39 @@
+{
+  "dataset_id": "924558",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924558.csv",
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T11:18:06.329176+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory and Field Observations of Mytilus galloprovincialis",
+    "description": "This dataset contains laboratory and field observations of the mollusk species Mytilus galloprovincialis, including measurements of various chemical parameters such as pH, alkalinity, DIC, CO2, bicarbonate, carbonate, calcium, and omega values. The data also includes spatial coordinates and temporal information, with observations recorded at specific time intervals and locations.",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "laboratory observations",
+      "field observations",
+      "chemical parameters",
+      "pH",
+      "alkalinity",
+      "DIC",
+      "CO2",
+      "bicarbonate",
+      "carbonate",
+      "calcium",
+      "omega values",
+      "spatial coordinates",
+      "temporal information",
+      "Nagasaki University",
+      "32.8095 N, 129.7708 E"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924558_5af62f38f8e54b94a8aa83e9ef3d85b4.jsonl",
+  "runtime_seconds": 987.87
+}

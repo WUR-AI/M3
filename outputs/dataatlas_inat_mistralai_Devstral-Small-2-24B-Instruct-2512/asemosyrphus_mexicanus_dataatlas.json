@@ -1,0 +1,16 @@
+{
+  "csv": "asemosyrphus_mexicanus.csv",
+  "dataset_id": "asemosyrphus_mexicanus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 996,
+  "n_columns": 50,
+  "description": "Species occurrence records of Asemosyrphus mexicanus from 2013 to 2026.",
+  "dataset_description": "Species occurrence records of Asemosyrphus mexicanus from 2013 to 2026.",
+  "runtime_seconds": 303.146,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/asemosyrphus_mexicanus/dictionary.json"
+}

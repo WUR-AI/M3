@@ -1,0 +1,95 @@
+{
+  "csv": "973035.csv",
+  "dataset_id": "973035",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4651,
+  "metadata": {
+    "name": "973035",
+    "description": "The dataset contains geospatial and temporal data related to soil samples. It includes information on various soil properties such as uranium (U), thorium (Th), and potassium (K) levels, along with their respective error measurements. The dataset also provides depth of soil samples, sample labels, and elevation data. Temporal data includes age dated information with error margins and a date/time column.",
+    "keywords": [
+      "soil",
+      "geospatial",
+      "temporal",
+      "uranium",
+      "thorium",
+      "potassium",
+      "age dated",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03T09:00:00+00:00",
+      "to": "2023-04-03T09:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973035"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "973035",
+        "resource": "973035"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973035",
+        "resource": "973035"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973035",
+        "resource": "973035"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973035",
+        "resource": "973035",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "973035",
+        "resource": "973035",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "973035",
+        "resource": "973035",
+        "n": 1
+      }
+    }
+  ],
+  "runtime_seconds": 31.239,
+  "status": "ok"
+}

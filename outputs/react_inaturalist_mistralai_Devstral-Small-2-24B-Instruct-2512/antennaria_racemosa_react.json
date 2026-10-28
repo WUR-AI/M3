@@ -1,0 +1,66 @@
+{
+  "csv": "antennaria_racemosa.csv",
+  "dataset_id": "antennaria_racemosa",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a0082804826202276c78998302de267b81bf2c22269f656fb7c895c309920012",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 3281,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 41.495411,
+      "min_lon": -127.186775,
+      "max_lat": 56.589731,
+      "max_lon": -107.212837
+    },
+    "temporalCoverage": {
+      "from": "2004-06-21",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "antennaria_racemosa"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "antennaria_racemosa",
+        "resource": "antennaria_racemosa"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "antennaria_racemosa",
+        "resource": "antennaria_racemosa"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "antennaria_racemosa",
+        "resource": "antennaria_racemosa",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "antennaria_racemosa",
+        "resource": "antennaria_racemosa",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 10.134,
+  "status": "ok"
+}

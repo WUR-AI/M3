@@ -1,0 +1,66 @@
+{
+  "csv": "pityrogramma_calomelanos.csv",
+  "dataset_id": "pityrogramma_calomelanos",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "395172507b944ef3498aff3af0ef7237200991999c1607465bb68df0941ccebb",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3403,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -28.041467,
+      "min_lon": -171.443024,
+      "max_lat": 37.867024,
+      "max_lon": 168.311117
+    },
+    "temporalCoverage": {
+      "from": "1996-07-20T17:23:00+00:00",
+      "to": "2026-06-08T09:18:11+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "pityrogramma_calomelanos"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "pityrogramma_calomelanos",
+        "resource": "pityrogramma_calomelanos"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "pityrogramma_calomelanos",
+        "resource": "pityrogramma_calomelanos"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "pityrogramma_calomelanos",
+        "resource": "pityrogramma_calomelanos",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "pityrogramma_calomelanos",
+        "resource": "pityrogramma_calomelanos",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 5.716,
+  "status": "ok"
+}

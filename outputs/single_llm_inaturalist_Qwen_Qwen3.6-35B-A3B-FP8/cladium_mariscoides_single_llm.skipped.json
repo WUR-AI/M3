@@ -1,0 +1,15 @@
+{
+  "csv": "cladium_mariscoides.csv",
+  "dataset_id": "cladium_mariscoides",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5c0f70d131d5fd23375e81ac243223f88e04804fb74bd34960fbc70e47f371e7",
+  "contract_sha256": "f3efc6b71b093e491c2c81889e35fedcbadec9438a832c02d9df9e5229a47f43",
+  "prompt_tokens": 308324,
+  "status": "skipped",
+  "reason": "context_window"
+}

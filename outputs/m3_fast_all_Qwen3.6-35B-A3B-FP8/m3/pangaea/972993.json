@@ -1,0 +1,45 @@
+{
+  "dataset_id": "972993",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972993.csv",
+  "source_sha256": "e025ea37fdfb8676c93e7a6316bc0e2b338a8f54454d19976b10958278c38745",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:16:32.823590+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Global Ocean Drilling Program Sediment Geochemistry and Isotope Dataset",
+    "description": "A compilation of geochemical and sedimentological data from Ocean Drilling Program (ODP) sites worldwide. The dataset contains 3,754 records of sediment core samples, including geographic coordinates, lithology, and geochemical measurements such as pyrite sulfur isotopes (δ³⁴S Py), calcium carbonate (CaCO3), total organic carbon (TOC), and methane levels. It covers sampling dates from 1974 to 2016.",
+    "keywords": [
+      "ODP",
+      "Ocean Drilling Program",
+      "sediment core",
+      "geochemistry",
+      "sulfur isotopes",
+      "δ³⁴S Py",
+      "CaCO3",
+      "TOC",
+      "methane",
+      "lithology",
+      "marine geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": -46.5797,
+      "min_lon": -178.1665,
+      "max_lat": 87.89,
+      "max_lon": 174.3141
+    },
+    "temporalCoverage": {
+      "from": "1974-07-18T00:00:00+00:00",
+      "to": "2016-07-04T00:00:00+00:00"
+    },
+    "spatial": "Point locations (Latitude, Longitude) in WGS84 decimal degrees",
+    "temporal": "Sampling date (YYYY-MM-DD HH:MM:SS)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972993_ebb55fd9fb3f44ada898da8da46f5c5d.jsonl",
+  "runtime_seconds": 128.0
+}

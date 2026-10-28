@@ -1,0 +1,42 @@
+{
+  "dataset_id": "966669",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/966669.csv",
+  "source_sha256": "38d45ebddb5ad7c83655f2d23207ed3d800aa60a12fe7468bb6274122192cd99",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T15:54:20.592007+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Flade Isblink Ice Cap Environmental Sampling Data",
+    "description": "This dataset contains detailed environmental sampling data collected from the Flade Isblink Ice Cap. It includes measurements of various radiological parameters such as LOI, Carb, 137Cs, 210Pb, 241Am, 207Bi, 228Ac, 7Be, 40K, 238Pu, 239+240Pu, and 240Pu/239Pu atom ratios. The data was collected over a short period of 1 day in August 2022, with samples taken at 5-minute intervals. Each sample is georeferenced with latitude and longitude coordinates, and includes additional metadata such as sample ID, depth, sample type, and elevation.",
+    "keywords": [
+      "environmental sampling",
+      "radiological measurements",
+      "Flade Isblink Ice Cap",
+      "cryoconite",
+      "LOI",
+      "Carb",
+      "137Cs",
+      "210Pb",
+      "241Am",
+      "207Bi",
+      "228Ac",
+      "7Be",
+      "40K",
+      "238Pu",
+      "239+240Pu",
+      "240Pu/239Pu atom ratios",
+      "Greenland",
+      "August 2022",
+      "ice cap",
+      "environmental research"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/966669_4d4d47a971c4448a85bbccb5264ec91d.jsonl",
+  "runtime_seconds": 714.32
+}

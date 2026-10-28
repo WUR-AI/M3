@@ -1,0 +1,42 @@
+{
+  "csv": "969067.csv",
+  "dataset_id": "969067",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "7f0009de0409d11e20040ec51d5d017676533d678668d8751deb28f03b0fd453",
+  "contract_sha256": "31b22dac0604abefe1e192b3f62604f1915e62e441ba9cc44837a11abb4cd827",
+  "prompt_tokens": 180587,
+  "metadata": {
+    "name": "Puchalski_AWS Daily Meteorological Data",
+    "description": "Daily meteorological observations from the Puchalski Automatic Weather Station (AWS), including temperature, humidity, wind, and solar radiation data.",
+    "keywords": [
+      "meteorology",
+      "weather",
+      "AWS",
+      "temperature",
+      "humidity",
+      "wind",
+      "solar radiation",
+      "Puchalski"
+    ],
+    "spatialCoverage": {
+      "min_lat": -62.1641,
+      "min_lon": -58.4701,
+      "max_lat": -62.1641,
+      "max_lon": -58.4701
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01",
+      "to": "2023-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 24.213,
+  "status": "ok"
+}

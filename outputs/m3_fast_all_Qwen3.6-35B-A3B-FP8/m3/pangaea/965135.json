@@ -1,0 +1,47 @@
+{
+  "dataset_id": "965135",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/965135.csv",
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:50:38.775315+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Porites coral geochemical and isotopic proxy data from French Polynesia",
+    "description": "High-resolution geochemical (Sr/Ca, Mg/Ca) and isotopic (δ18O, δ13C) measurements from a single Porites coral core (TIAREI-A1) collected in French Polynesia. The dataset contains 96 samples spanning approximately 8 years (1999.7–2007.6) of paleoclimate proxy data, sampled at a fixed location at 15m depth. The core was collected on 2008-07-01.",
+    "keywords": [
+      "Porites",
+      "coral",
+      "paleoclimate",
+      "geochemistry",
+      "isotopes",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "French Polynesia",
+      "Tahiti",
+      "sea surface temperature",
+      "proxy data"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "1999.708",
+      "to": "2007.625"
+    },
+    "spatial": "Point location at -17.506944°, -149.4225° (French Polynesia)",
+    "temporal": "Approximately 8 years (1999.7–2007.6), with sub-daily to daily resolution (~1.3 days per sample interval)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/965135_d482853f00c144808873df67e5d70216.jsonl",
+  "runtime_seconds": 112.75
+}

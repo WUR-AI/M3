@@ -1,0 +1,33 @@
+{
+  "dataset_id": "899705",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/899705.csv",
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T12:49:02.464586+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MITAPI NetCDF file inventory (2015‑2010)",
+    "description": "A CSV index of 12 NetCDF files from the Dasadhikari et al. 2019 Pangaea collection. Each row lists the file name (encoding the 2015‑2010 period), file format, size in bytes, and a download URL. No spatial or temporal attributes are present in the CSV itself; such information resides in the referenced NetCDF files.",
+    "keywords": [
+      "MITAPI",
+      "NetCDF",
+      "file inventory",
+      "agricultural",
+      "Pangaea",
+      "file size",
+      "download URL"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/899705_06943760509e447e8130c1c403ef9939.jsonl",
+  "runtime_seconds": 134.62
+}

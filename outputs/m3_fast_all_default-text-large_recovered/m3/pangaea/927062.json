@@ -1,0 +1,47 @@
+{
+  "dataset_id": "927062",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/927062.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:29:28.039462+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Balloon Atmospheric Profile (2018-08-18)",
+    "description": "Time‑series measurements from a research balloon launched on 18 August 2018 in the high Arctic (≈ 89.56° N, 36.84° E). The dataset records pressure, temperature, relative humidity, wind direction, wind speed and height from ~8 m to ~707 m above ground at 30‑second intervals.",
+    "keywords": [
+      "balloon",
+      "atmospheric profile",
+      "Arctic",
+      "temperature",
+      "humidity",
+      "pressure",
+      "wind direction",
+      "wind speed",
+      "height",
+      "latitude",
+      "longitude",
+      "2018"
+    ],
+    "spatialCoverage": {
+      "min_lat": 89.5537,
+      "min_lon": 36.54034,
+      "max_lat": 89.5601,
+      "max_lon": 37.14087
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00+00:00",
+      "to": "2018-08-18T11:39:00+00:00"
+    },
+    "spatial": "point locations; horizontal extent ≈0.6 km × 0.7 km",
+    "temporal": "30 seconds"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/927062_8e8bed7841974a2daee1977de093c3f8.jsonl",
+  "runtime_seconds": 159.53,
+  "recovered_from_trace": true,
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595"
+}

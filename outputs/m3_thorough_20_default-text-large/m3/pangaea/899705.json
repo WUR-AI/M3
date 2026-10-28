@@ -1,0 +1,33 @@
+{
+  "dataset_id": "899705",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/899705.csv",
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "method": "M3_thorough",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "thorough",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T12:01:32.095125+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MITAPI agricultural difference NetCDF files (2010‑2015)",
+    "description": "CSV inventory of 12 NetCDF files from the MITAPI project. Columns are File name, File format (nc), File size (bytes), and URL file (Pangaea download link). File sizes range 287–30 650 bytes (mean ≈ 12 kB). The file‑name pattern (e.g., MITAPI_20152010DIFF_AGR_01x01) suggests agricultural difference data for the 2010‑2015 period, a 1 × 1 degree grid, and annual temporal resolution (all inferred). No spatial or temporal columns were detected by `detect_spatial_columns` and `detect_temporal_columns` (both returned a column count of 0).",
+    "keywords": [
+      "MITAPI",
+      "NetCDF",
+      "agricultural",
+      "difference",
+      "metadata catalogue",
+      "file size",
+      "Pangaea"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "1×1 degree",
+    "temporal": "annual"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/899705_9b87530edcd347189e23f80496335776.jsonl",
+  "runtime_seconds": 685.53
+}

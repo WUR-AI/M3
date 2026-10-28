@@ -1,0 +1,45 @@
+{
+  "dataset_id": "965137",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/965137.csv",
+  "source_sha256": "040ea113a6459c88179610e781f09b1e537c72d84cbcae2faf2a0ceb52eca11c",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:59:00.494317+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Porites sp. Geochemical Time Series from TIAREI-3B, French Polynesia (2000-2007)",
+    "description": "Monthly resolved geochemical measurements (Sr/Ca, Mg/Ca, δ18O, δ13C) from a single Porites coral core (TIAREI-3B) collected in French Polynesia. The data covers the period from early 2000 to mid-2007 and is intended for paleoclimate reconstruction, specifically sea surface temperature and salinity variability.",
+    "keywords": [
+      "Porites",
+      "coral",
+      "geochemistry",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "paleoclimate",
+      "French Polynesia",
+      "TIAREI",
+      "sea surface temperature"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2000-02-01",
+      "to": "2007-08-01"
+    },
+    "spatial": "point",
+    "temporal": "monthly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/965137_50a12e52a71f4485af9002f5de028367.jsonl",
+  "runtime_seconds": 138.14
+}

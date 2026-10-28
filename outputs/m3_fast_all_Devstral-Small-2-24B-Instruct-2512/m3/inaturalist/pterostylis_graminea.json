@@ -1,0 +1,28 @@
+{
+  "dataset_id": "pterostylis_graminea",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/pterostylis_graminea.csv",
+  "source_sha256": "c38db7e2e5492e9a87b32b09af09428289606518e806aab8a4b80ca5e5a9c8f1",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-19T11:31:40.766813+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -46.926745,
+      "min_lon": 167.803422,
+      "max_lat": -35.717289,
+      "max_lon": 176.905064
+    },
+    "temporalCoverage": {
+      "from": "1966-10-15T00:00:00+00:00",
+      "to": "2026-01-06T11:33:49+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/pterostylis_graminea_e0e43ca96bca41478d6fa95185d39764.jsonl",
+  "runtime_seconds": 129.74
+}

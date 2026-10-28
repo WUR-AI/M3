@@ -1,0 +1,74 @@
+{
+  "csv": "acrothamnus_colensoi.csv",
+  "dataset_id": "acrothamnus_colensoi",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "32e3d47a690bf1d7da9ae1b3daff2f97a295d385c2d114e9f59a4b6588d877a1",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 4199,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -45.848455,
+      "min_lon": 167.669761,
+      "max_lat": -39.145751,
+      "max_lon": 176.213639
+    },
+    "temporalCoverage": {
+      "from": "1977-12-11",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "acrothamnus_colensoi",
+        "resource": "acrothamnus_colensoi",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 12.508,
+  "status": "ok"
+}

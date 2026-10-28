@@ -1,0 +1,67 @@
+{
+  "csv": "nannophya_pygmaea.csv",
+  "dataset_id": "nannophya_pygmaea",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a6cfd2ab9d732bd13948840b94ef5bb36dc4bf688bf33e3caf0a6ff92f9a3ef0",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 7079,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -5.098442,
+      "min_lon": 98.280703,
+      "max_lat": 31.288761,
+      "max_lon": 140.722134
+    },
+    "temporalCoverage": {
+      "from": "2001-07-07",
+      "to": "2026-06-12"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "nannophya_pygmaea",
+        "resource": "nannophya_pygmaea.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "nannophya_pygmaea",
+        "resource": "nannophya_pygmaea"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "nannophya_pygmaea",
+        "resource": "nannophya_pygmaea"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "nannophya_pygmaea",
+        "resource": "nannophya_pygmaea",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nannophya_pygmaea",
+        "resource": "nannophya_pygmaea",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 11.478,
+  "status": "ok"
+}

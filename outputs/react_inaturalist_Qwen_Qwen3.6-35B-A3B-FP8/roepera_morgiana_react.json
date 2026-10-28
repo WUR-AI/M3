@@ -1,0 +1,66 @@
+{
+  "csv": "roepera_morgiana.csv",
+  "dataset_id": "roepera_morgiana",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c177205416504cecbc00e4e36c39ad00cd9ff912b9b8e98b9177377e8faf166b",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3411,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.83307,
+      "min_lon": 16.81458,
+      "max_lat": -28.97451,
+      "max_lon": 26.081906
+    },
+    "temporalCoverage": {
+      "from": "1995-09-03T17:29:00+00:00",
+      "to": "2026-06-11T11:49:51+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "roepera_morgiana"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "roepera_morgiana",
+        "resource": "roepera_morgiana"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "roepera_morgiana",
+        "resource": "roepera_morgiana",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "roepera_morgiana",
+        "resource": "roepera_morgiana"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "roepera_morgiana",
+        "resource": "roepera_morgiana",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 7.686,
+  "status": "ok"
+}

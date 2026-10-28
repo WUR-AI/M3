@@ -1,0 +1,32 @@
+{
+  "dataset_id": "961119",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961119.csv",
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:20:27.607287+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Baltic Sea pCO2 climatology",
+    "description": "The dataset references the CSV file Baltic_Sea_pCO2_climato.csv, which contains climatological measurements of partial pressure of CO₂ (pCO₂) for the Baltic Sea.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "climatology",
+      "carbon dioxide",
+      "marine",
+      "oceanography"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961119_5ccfebe73331418f9112ac8a8abddb41.jsonl",
+  "runtime_seconds": 78.64
+}

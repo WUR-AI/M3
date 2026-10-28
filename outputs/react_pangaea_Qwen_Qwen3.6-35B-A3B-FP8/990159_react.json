@@ -1,0 +1,116 @@
+{
+  "csv": "990159.csv",
+  "dataset_id": "990159",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5007b7d93b30afc7d7831d726516842ce7d797b656068ef61a8267a80e9e4aeb",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 6274,
+  "metadata": {
+    "name": "210Pb sediment core measurements from LTp22-1",
+    "description": "Lead-210 (210Pb) radiometric measurements from sediment core samples, including supported and unsupported 210Pb activity values with standard deviations. The dataset contains 25 depth-resolved samples from a single location with depth measurements ranging from 0.0025 to 0.235 meters.",
+    "keywords": [
+      "210Pb",
+      "Lead-210",
+      "sediment core",
+      "radiometric dating",
+      "geochronology",
+      "LTp22-1"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "990159"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "990159",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude",
+        "resource": "990159"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159",
+        "field": "Event",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "990159",
+        "resource": "990159"
+      }
+    }
+  ],
+  "runtime_seconds": 12.797,
+  "status": "ok"
+}

@@ -1,0 +1,101 @@
+{
+  "csv": "erica_canariensis.csv",
+  "dataset_id": "erica_canariensis",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "392218ab3a231973f9b6cb028d95d0c84d68be1bc54109f712aa74aaeed9201c",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4822,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 27.731097,
+      "min_lon": -18.125358,
+      "max_lat": 32.831942,
+      "max_lon": -15.508269
+    },
+    "temporalCoverage": {
+      "from": "1982-04-10",
+      "to": "2026-06-07"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis",
+        "field": "countryCode",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "erica_canariensis",
+        "resource": "erica_canariensis",
+        "field": "stateProvince",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 23.441,
+  "status": "ok"
+}

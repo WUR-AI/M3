@@ -1,0 +1,46 @@
+{
+  "dataset_id": "965135",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/965135.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:29:59.695626+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Porites coral core geochemical dataset from TIAREI-A1 (2008-07-01)",
+    "description": "A single coral core (event TIAREI-A1) collected at latitude -17.506944°, longitude -149.4225° on 2008-07-01. The dataset includes 96 sequential measurements of age (years before present and calendar year) and four geochemical proxies (Sr/Ca, Mg/Ca, δ¹⁸O, δ¹³C) together with constant metadata fields (elevation, event ID).",
+    "keywords": [
+      "Porites",
+      "coral core",
+      "geochemistry",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "paleoceanography",
+      "marine proxy",
+      "TIAREI-A1",
+      "Pacific"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2008-07-01T00:00:00+00:00",
+      "to": "2008-07-01T00:00:00+00:00"
+    },
+    "spatial": "point (no spatial variation across records)",
+    "temporal": "single‑day (no temporal variation across records)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/965135_69d1b4aec56148539ae87b38e9c4af55.jsonl",
+  "runtime_seconds": 149.48,
+  "recovered_from_trace": true,
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d"
+}

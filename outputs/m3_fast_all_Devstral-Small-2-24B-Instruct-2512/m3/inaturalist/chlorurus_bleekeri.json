@@ -1,0 +1,28 @@
+{
+  "dataset_id": "chlorurus_bleekeri",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/chlorurus_bleekeri.csv",
+  "source_sha256": "f6eff0930d2c82a613e823ce4e05eb28fcd765ace3184b0299c02ffd44a3a1d5",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T04:01:49.147503+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -23.303405,
+      "min_lon": -174.742082,
+      "max_lat": 13.728148,
+      "max_lon": 179.995321
+    },
+    "temporalCoverage": {
+      "from": "2004-08-05T00:00:00+00:00",
+      "to": "2026-06-08T18:04:05+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/chlorurus_bleekeri_476c0827d13c4531987c8c410c9a7d45.jsonl",
+  "runtime_seconds": 164.08
+}

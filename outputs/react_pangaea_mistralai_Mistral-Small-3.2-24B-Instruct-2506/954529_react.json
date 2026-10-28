@@ -1,0 +1,57 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1437,
+  "metadata": {
+    "name": "Big Skidder",
+    "description": "A catalog or index of files related to Big Skidder.",
+    "keywords": [
+      "Big Skidder",
+      "GIS",
+      "file catalog"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "954529"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    }
+  ],
+  "runtime_seconds": 15.107,
+  "status": "ok"
+}

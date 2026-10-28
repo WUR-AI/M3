@@ -1,0 +1,30 @@
+{
+  "dataset_id": "995327",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995327.csv",
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T21:05:48.113352+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Mineral Composition of Sediment Samples from Lanaittu Core",
+    "description": "This dataset contains detailed mineralogical composition data for sediment samples collected from the Lanaittu core. Each sample is characterized by various mineral types and their respective percentages, along with metadata such as sample label, depth, geographical coordinates, and collection date. The data provides insights into the mineralogical variations at specific depths and locations within the core.",
+    "keywords": [
+      "sediment samples",
+      "mineral composition",
+      "Lanaittu core",
+      "geographical coordinates",
+      "depth analysis",
+      "mineral types",
+      "geological data",
+      "1994"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995327_ff81eb4cd1bb4aef90ceb59f00be9563.jsonl",
+  "runtime_seconds": 418.95
+}

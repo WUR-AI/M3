@@ -1,0 +1,16 @@
+{
+  "csv": "lactuca_viminea.csv",
+  "dataset_id": "lactuca_viminea",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1003,
+  "n_columns": 50,
+  "description": "Species occurrence records for Lactuca viminea, 2002-2026, with 1003 rows and 42 columns.",
+  "dataset_description": "Species occurrence records for Lactuca viminea, 2002-2026, biodiversity domain.",
+  "runtime_seconds": 30.808,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/lactuca_viminea/dictionary.json"
+}

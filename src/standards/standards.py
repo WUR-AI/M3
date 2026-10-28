@@ -18,6 +18,7 @@ from src.standards.croissant import (
     croissant_inaturalist_standard,
     croissant_pangaea_standard,
     croissant_standard_subset,
+    pangaea_descriptive_technical_standard,
 )
 from src.standards.schema_builder import build_prompt_template, build_schema_for_standard
 
@@ -122,12 +123,17 @@ STANDARD_DEFINITIONS: Dict[str, Dict[str, Dict[str, Any]]] = {
     "croissant_standard_subset": croissant_standard_subset,
     "croissant_pangaea_standard": croissant_pangaea_standard,
     "croissant_inaturalist_standard": croissant_inaturalist_standard,
+    "pangaea_descriptive_technical_standard": pangaea_descriptive_technical_standard,
 }
 
 CUSTOM_METADATA_SCHEMAS: Dict[str, type[BaseModel]] = {
     "croissant_standard_subset": CroissantStandardSubsetMetadata,
     "croissant_pangaea_standard": CroissantPangaeaMetadata,
     "croissant_inaturalist_standard": CroissantINaturalistMetadata,
+    "pangaea_descriptive_technical_standard": build_schema_for_standard(
+        "pangaea_descriptive_technical_standard",
+        pangaea_descriptive_technical_standard,
+    ),
 }
 
 CROISSANT_STANDARD_NAMES = frozenset(CUSTOM_METADATA_SCHEMAS.keys())
@@ -141,6 +147,17 @@ def planning_metadata_standard(
     metadata_standard: str, metadata_standard_name: Optional[str] = None
 ) -> str:
     """Add a short planner directive when the active standard needs special routing."""
+    if metadata_standard_name == "pangaea_descriptive_technical_standard":
+        return (
+            "ACTIVE STANDARD: pangaea_descriptive_technical_standard.\n"
+            "Extract exactly seven fields: name, description, keywords, "
+            "spatialCoverage, temporalCoverage, spatial, temporal.\n"
+            "Use dataset_schema_preview first, spatial_temporal_specialist "
+            "before the final step, and metadata_generator last. The final "
+            "step must read their artifacts and metadata_standard, then produce "
+            "only metadata_output. Do not create filesets or recordsets.\n\n"
+            f"{metadata_standard}"
+        )
     if metadata_standard_name == "croissant_inaturalist_standard":
         return (
             "ACTIVE STANDARD: croissant_inaturalist_standard.\n"

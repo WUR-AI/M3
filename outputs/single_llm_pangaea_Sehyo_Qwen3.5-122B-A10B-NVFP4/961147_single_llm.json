@@ -1,0 +1,50 @@
+{
+  "csv": "961147.csv",
+  "dataset_id": "961147",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "contract_sha256": "272c712ca3545d8adcbadb3f365eaf23b086cde022dc311257a8eeaec9e2076a",
+  "prompt_tokens": 24039,
+  "metadata": {
+    "name": "Salp and Pyrosome Elemental Composition and Morphometrics from IOS20210060, MIE_1, ANT-XXI/4, ANT-XXIII/2, ANT-XXIII/6, and TAN0806",
+    "description": "Dataset containing elemental composition (C, N, H, ash, dry mass) and morphometric measurements (size, mass) of salp and pyrosome species (Salpa aspera, Salpa thompsoni, Ihlea racovitzai, Pyrosoma atlanticum, Salpa fusiformis, Soestia zonaria, Thetys vagina) collected during expeditions IOS20210060, MIE_1, ANT-XXI/4, ANT-XXIII/2, ANT-XXIII/6, and TAN0806. Data includes sample IDs, collection dates, vessel names, station locations, gear types, water depths, and tissue descriptors.",
+    "keywords": [
+      "Salpida",
+      "Pyrosomida",
+      "Salpa aspera",
+      "Salpa thompsoni",
+      "Ihlea racovitzai",
+      "Pyrosoma atlanticum",
+      "Salpa fusiformis",
+      "Soestia zonaria",
+      "Thetys vagina",
+      "Elemental composition",
+      "C/N ratio",
+      "Dry mass",
+      "Ash",
+      "Morphometrics",
+      "Plankton",
+      "Tunicates"
+    ],
+    "spatialCoverage": {
+      "min_lat": -68.9683,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12",
+      "to": "2021-05-27"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.413,
+  "status": "ok"
+}

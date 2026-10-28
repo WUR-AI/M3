@@ -1,0 +1,28 @@
+{
+  "dataset_id": "tiedemannia_filiformis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/tiedemannia_filiformis.csv",
+  "source_sha256": "5d43915b0622ccd09a463fd227d792e5711599effdd9a7e78223922f4efaf9f0",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-19T12:18:00.100575+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.232935,
+      "min_lon": -94.410942,
+      "max_lat": 34.139065,
+      "max_lon": -78.206144
+    },
+    "temporalCoverage": {
+      "from": "2002-04-12T00:00:00+00:00",
+      "to": "2026-05-23T14:43:37+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/tiedemannia_filiformis_67017ffb34e54957b0fc345b8d5c8b40.jsonl",
+  "runtime_seconds": 133.87
+}

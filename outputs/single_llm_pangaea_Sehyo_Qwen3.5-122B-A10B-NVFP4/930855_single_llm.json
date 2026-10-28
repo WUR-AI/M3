@@ -1,0 +1,41 @@
+{
+  "csv": "930855.csv",
+  "dataset_id": "930855",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "bcee77d90d8e37094fb072e5927cc686599551e7b9d3c90e7983f5faf32f1892",
+  "contract_sha256": "b69fe5d6402de6616845711e6e1876fc13cc684a05aefe6472ed333f273c4059",
+  "prompt_tokens": 2679,
+  "metadata": {
+    "name": "C0023A Core Samples Alk and Diols Peak Area Data",
+    "description": "Dataset containing chemical analysis results (Alk peak area, Diols peak area) for sediment core samples from site C0023A, including sample depths, coordinates, elevation, and collection date.",
+    "keywords": [
+      "sediment",
+      "core",
+      "alk",
+      "diols",
+      "peak area",
+      "C0023A",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.366667,
+      "min_lon": 134.966333,
+      "max_lat": 32.366667,
+      "max_lon": 134.966333
+    },
+    "temporalCoverage": {
+      "from": "2016-09-17",
+      "to": "2016-09-17"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.994,
+  "status": "ok"
+}

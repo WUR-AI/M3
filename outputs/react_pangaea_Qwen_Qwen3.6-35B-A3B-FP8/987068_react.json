@@ -1,0 +1,98 @@
+{
+  "csv": "987068.csv",
+  "dataset_id": "987068",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "225d2b6118cc78019e8cb527c92e4dc38026b4b37a5e53272fcf4db99e96b37b",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3997,
+  "metadata": {
+    "name": "GeoB16310-3 sediment core TOC and TIC measurements",
+    "description": "Sediment core GeoB16310-3 containing 23 depth-resolved measurements of Total Organic Carbon (TOC) and Total Inorganic Carbon (TIC) from the Gulf of Mexico. Samples were collected at a single station (23.824167°N, 87.170333°W) at a water depth of 573 m on March 23, 2012. Core depths range from 0.10 to 10.38 meters.",
+    "keywords": [
+      "sediment core",
+      "TOC",
+      "TIC",
+      "Total Organic Carbon",
+      "Total Inorganic Carbon",
+      "Gulf of Mexico",
+      "GeoB16310-3",
+      "carbon content",
+      "marine sediment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.824166666667,
+      "min_lon": -87.170333333333,
+      "max_lat": 23.824166666667,
+      "max_lon": -87.170333333333
+    },
+    "temporalCoverage": {
+      "from": "2012-03-23",
+      "to": "2012-03-23"
+    },
+    "spatial": "point locations",
+    "temporal": "point measurement"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "987068"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "987068",
+        "resource": "987068",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "987068",
+        "resource": "987068"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "987068",
+        "resource": "987068",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "987068",
+        "resource": "987068",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "987068",
+        "resource": "987068"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "987068",
+        "resource": "987068",
+        "field": "Event",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 11.86,
+  "status": "ok"
+}

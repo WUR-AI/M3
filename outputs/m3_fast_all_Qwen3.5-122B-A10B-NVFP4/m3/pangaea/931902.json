@@ -1,0 +1,41 @@
+{
+  "dataset_id": "931902",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931902.csv",
+  "source_sha256": "db1a2eb73ef4f30d6bd56b579eac3100f881d914d9eff214542eda53b0500dc3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:47:38.865274+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Observation Video Manifest - Birkeland Cruise 1",
+    "description": "A manifest dataset linking marine observation events to video files, containing metadata such as file size, cryptographic hash, and precise geospatial and temporal context for recordings captured during the Birkeland Cruise.",
+    "keywords": [
+      "marine observation",
+      "video manifest",
+      "Birkeland Cruise",
+      "siphonophores",
+      "fish",
+      "North Atlantic",
+      "2016"
+    ],
+    "spatialCoverage": {
+      "min_lat": 46.15,
+      "min_lon": -26.26667,
+      "max_lat": 46.55,
+      "max_lon": -26.01667
+    },
+    "temporalCoverage": {
+      "from": "2016-07-07T00:00:00+00:00",
+      "to": "2016-07-07T00:00:00+00:00"
+    },
+    "spatial": "Point locations",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931902_69d21aae64db4f3f83bdafaedee917ab.jsonl",
+  "runtime_seconds": 108.08
+}

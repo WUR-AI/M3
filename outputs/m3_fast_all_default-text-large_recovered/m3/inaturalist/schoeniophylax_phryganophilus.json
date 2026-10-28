@@ -1,0 +1,29 @@
+{
+  "dataset_id": "schoeniophylax_phryganophilus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/schoeniophylax_phryganophilus.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:48:39.866908+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.661467,
+      "min_lon": -66.840437,
+      "max_lat": -4.823831,
+      "max_lon": -42.166767
+    },
+    "temporalCoverage": {
+      "from": "2005-06-12T09:06:00Z",
+      "to": "2026-06-11T13:16:00Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/schoeniophylax_phryganophilus_a1481c71db984119981ebb172ba55e3b.jsonl",
+  "runtime_seconds": 81.41,
+  "recovered_from_trace": true,
+  "source_sha256": "c7ab1c441fa634a8944a30fa7d0c28bef722501080c796d28690ace4c2b7abf7"
+}

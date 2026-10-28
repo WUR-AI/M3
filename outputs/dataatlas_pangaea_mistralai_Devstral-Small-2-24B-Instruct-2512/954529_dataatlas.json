@@ -1,0 +1,16 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 10,
+  "n_columns": 2,
+  "description": "This table contains GIS file names and corresponding XLSX data for 10 Earth science locations.",
+  "dataset_description": "Earth and environmental science dataset with 954529 tables, each containing 10 rows.",
+  "runtime_seconds": 3.269,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/954529/dictionary.json"
+}

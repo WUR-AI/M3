@@ -1,0 +1,43 @@
+{
+  "dataset_id": "934330",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/934330.csv",
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:57:33.270147+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Stordalen Permafrost Sediment Core Geochronology Data",
+    "description": "Geochronological dataset of sediment core samples from the Stordalen permafrost site in northern Sweden (68.35°N, 19.05°E). Contains 27 records with sediment depth, sample thickness, calibrated calendar ages (1898–2003 CE), age uncertainties, and radiocarbon dating metadata (material, lab label) for a subset of samples.",
+    "keywords": [
+      "Stordalen",
+      "permafrost",
+      "sediment core",
+      "geochronology",
+      "radiocarbon dating",
+      "Northern Sweden",
+      "paleoenvironment",
+      "moss",
+      "calendar age"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": {
+      "from": "1898",
+      "to": "2003"
+    },
+    "spatial": "Point location (68.35°N, 19.05°E)",
+    "temporal": "N/A"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/934330_be7559b0ed214e9cb1b064f6e3373789.jsonl",
+  "runtime_seconds": 345.01
+}

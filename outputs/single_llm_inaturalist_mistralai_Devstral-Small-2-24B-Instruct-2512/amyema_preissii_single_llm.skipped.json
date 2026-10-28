@@ -1,0 +1,15 @@
+{
+  "csv": "amyema_preissii.csv",
+  "dataset_id": "amyema_preissii",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ff548a023a4fb1a050cbdd2c377da489e8c69c6e70b947268175d50adc7c88c7",
+  "contract_sha256": "104d2857071041ae1ad0594eaa2ff7146cc72307f65e6538eb3c7cc69bac661b",
+  "prompt_tokens": 314322,
+  "status": "skipped",
+  "reason": "context_window"
+}

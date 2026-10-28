@@ -1,0 +1,56 @@
+{
+  "csv": "959885.csv",
+  "dataset_id": "959885",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "contract_sha256": "17233a6edf8bc545fff0b675cda27e9f3988deeb7acc9a9c92c827b4c6a79f78",
+  "prompt_tokens": 3306,
+  "metadata": {
+    "name": "Sediment chemistry profile for station M186_54-1 (2022‑12‑16)",
+    "description": "Measurements of sediment chemical composition (NO3, NO2, NH4, PO4, Cl, SO4, Br, B, Mn, Ca, Fe, Na, Mg, Sr, Si, Ba, Li, K) at multiple depths for station M186_54-1, recorded at a single location (38.74553 °N, 28.56587 °W) on 16 December 2022.",
+    "keywords": [
+      "sediment",
+      "chemical composition",
+      "NO3",
+      "NO2",
+      "NH4",
+      "PO4",
+      "chloride",
+      "sulfate",
+      "bromide",
+      "boron",
+      "manganese",
+      "calcium",
+      "iron",
+      "sodium",
+      "magnesium",
+      "strontium",
+      "silicon",
+      "barium",
+      "lithium",
+      "potassium",
+      "depth profile",
+      "marine station"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16",
+      "to": "2022-12-16"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.144,
+  "status": "ok"
+}

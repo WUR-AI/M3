@@ -1,0 +1,29 @@
+{
+  "dataset_id": "wisteriopsis_reticulata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/wisteriopsis_reticulata.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T21:19:14.103028+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 21.909958,
+      "min_lon": -97.797128,
+      "max_lat": 34.7332,
+      "max_lon": 122.077416
+    },
+    "temporalCoverage": {
+      "from": "2004-07-17T13:46:00+00:00",
+      "to": "2026-06-10T13:12:40+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/wisteriopsis_reticulata_8d4fcaeb28b6490c86e70223e9ead375.jsonl",
+  "runtime_seconds": 70.36,
+  "recovered_from_trace": true,
+  "source_sha256": "7abeb8e2499bdb8b04c240f0f39e9a8da4f95c340f3701405ef6635e4048ff40"
+}

@@ -1,0 +1,60 @@
+{
+  "csv": "mycena_renati.csv",
+  "dataset_id": "mycena_renati",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "731d459ea4b538a9c644e9ca713b1aeaa054c40091788ed9a31b0e6727d13fb7",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3081,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.106943,
+      "min_lon": -17.845984,
+      "max_lat": 60.527631,
+      "max_lon": 57.838315
+    },
+    "temporalCoverage": {
+      "from": "2004-06-15",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 17.281,
+  "status": "ok"
+}

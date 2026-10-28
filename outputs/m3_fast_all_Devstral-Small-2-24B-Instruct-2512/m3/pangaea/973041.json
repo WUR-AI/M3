@@ -1,0 +1,39 @@
+{
+  "dataset_id": "973041",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973041.csv",
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:32:48.939819+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Archaeological Radiocarbon Dating Dataset",
+    "description": "A dataset containing archaeological radiocarbon dating information from various sites in Malaysia, including details such as site names, countries, provinces, lab labels, dating methods, age measurements, and references.",
+    "keywords": [
+      "archaeology",
+      "radiocarbon dating",
+      "Malaysia",
+      "archaeological sites",
+      "age measurements"
+    ],
+    "spatialCoverage": {
+      "min_lat": 1.2,
+      "min_lon": 100.0,
+      "max_lat": 7.4,
+      "max_lon": 120.0
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00+00:00",
+      "to": "1970-01-01T00:00:00.000000046+00:00"
+    },
+    "spatial": "point locations in Malaysia",
+    "temporal": "radiocarbon age measurements"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973041_59dc4e7018864a9b9f41c890935dcc05.jsonl",
+  "runtime_seconds": 286.94
+}

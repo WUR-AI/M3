@@ -1,0 +1,41 @@
+{
+  "dataset_id": "931282",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931282.csv",
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:53:10.375038+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sensor Binary File Metadata for Barcelona, Spain",
+    "description": "A dataset containing metadata for binary sensor output files (ZIP archives) collected at a single location in Barcelona, Spain. Each record includes the filename, file type, file size, event type, geographic coordinates (latitude, longitude, elevation), and the date of collection.",
+    "keywords": [
+      "sensors",
+      "binary files",
+      "metadata",
+      "Barcelona",
+      "Spain",
+      "UPC",
+      "ZIP"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11T00:00:00+00:00",
+      "to": "2020-03-11T00:00:00+00:00"
+    },
+    "spatial": "Point location (41.393°N, 2.12°E) with ~100 m precision",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931282_38b4ea3190e645378ce1a7977c739370.jsonl",
+  "runtime_seconds": 64.89
+}

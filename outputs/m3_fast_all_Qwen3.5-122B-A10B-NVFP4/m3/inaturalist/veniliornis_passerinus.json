@@ -1,0 +1,28 @@
+{
+  "dataset_id": "veniliornis_passerinus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/veniliornis_passerinus.csv",
+  "source_sha256": "ae351f023b67a0c064c01e5273eef9b1a262b3d97fc64dcc575e0b3e777b8d4d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T02:11:13.399240+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -29.27865,
+      "min_lon": -78.888391,
+      "max_lat": 6.024162,
+      "max_lon": -34.841307
+    },
+    "temporalCoverage": {
+      "from": "2002-07-18T13:04:00+00:00",
+      "to": "2026-06-13T06:57:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/veniliornis_passerinus_511a298d538c43569cfa2623e665f9c5.jsonl",
+  "runtime_seconds": 56.65
+}

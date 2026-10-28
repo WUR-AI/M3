@@ -1,0 +1,61 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 1404,
+  "metadata": {
+    "name": "954529",
+    "description": "A dataset containing file names, where one column lists file names and the other is mostly empty except for one Excel file.",
+    "keywords": [],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "unknown"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "954529"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529",
+        "n": 10
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    }
+  ],
+  "runtime_seconds": 8.075,
+  "status": "ok"
+}

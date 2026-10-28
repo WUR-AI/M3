@@ -1,0 +1,16 @@
+{
+  "csv": "paeonia_caucasica.csv",
+  "dataset_id": "paeonia_caucasica",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "Occurrence records of Paeonia caucasica (2005‑2026) with taxonomic, geographic, temporal, and observer metadata.",
+  "dataset_description": "Contains 1001 occurrence records of a plant species across 2005‑2026 for biodiversity monitoring.",
+  "runtime_seconds": 76.887,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/paeonia_caucasica/dictionary.json"
+}

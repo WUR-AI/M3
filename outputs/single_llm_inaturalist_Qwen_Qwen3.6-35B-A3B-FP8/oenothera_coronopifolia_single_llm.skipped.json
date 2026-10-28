@@ -1,0 +1,15 @@
+{
+  "csv": "oenothera_coronopifolia.csv",
+  "dataset_id": "oenothera_coronopifolia",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3c51cd431c685d78b7b289cc32393f3085c5a273eefcd13b937e3b167fb2a310",
+  "contract_sha256": "a64c51f94092351fa5ce7259c92bfe612a70317052f9df4172de0cf3d2424200",
+  "prompt_tokens": 319856,
+  "status": "skipped",
+  "reason": "context_window"
+}

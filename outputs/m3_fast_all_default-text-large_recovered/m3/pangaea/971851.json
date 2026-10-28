@@ -1,0 +1,46 @@
+{
+  "dataset_id": "971851",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971851.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:35:49.092491+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Miocene Paleomagnetic Directions and VGPs with Age and Depth",
+    "description": "Dataset of 343 paleomagnetic measurements from a Miocene sedimentary sequence, including magnetic declination, inclination, Fisher statistics (Kappa, α95), paleointensity (RPI), depth, two age estimates (Age, Age_2 in Ma), and virtual geomagnetic pole (VGP) latitude and longitude with uncertainties.",
+    "keywords": [
+      "paleomagnetism",
+      "magnetic declination",
+      "inclination",
+      "virtual geomagnetic pole",
+      "VGP",
+      "Miocene",
+      "sedimentary core",
+      "paleointensity",
+      "RPI",
+      "Kappa",
+      "α95",
+      "geochronology",
+      "Earth magnetic field",
+      "geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.84240779,
+      "min_lon": -178.9145776,
+      "max_lat": 83.74256561,
+      "max_lon": 179.7489502
+    },
+    "temporalCoverage": null,
+    "spatial": "Irregular point sampling; no uniform spatial resolution.",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971851_45f6359d3df54314a5082b05cbf57a4c.jsonl",
+  "runtime_seconds": 193.84,
+  "recovered_from_trace": true,
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13"
+}

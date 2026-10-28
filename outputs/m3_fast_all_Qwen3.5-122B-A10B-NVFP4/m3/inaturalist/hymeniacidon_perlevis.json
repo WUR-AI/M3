@@ -1,0 +1,28 @@
+{
+  "dataset_id": "hymeniacidon_perlevis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/hymeniacidon_perlevis.csv",
+  "source_sha256": "dbdcf480e98bfaa4b7b7c22c8772bac31bae189d826906062a6a22871a2e44c9",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:38:00.343357+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -42.732837,
+      "min_lon": -124.164397,
+      "max_lat": 57.362572,
+      "max_lon": 153.606811
+    },
+    "temporalCoverage": {
+      "from": "2010-07-10T14:19:00+00:00",
+      "to": "2026-06-13T14:15:28+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/hymeniacidon_perlevis_56389225f76940c8b7da77eb9672bb24.jsonl",
+  "runtime_seconds": 60.27
+}

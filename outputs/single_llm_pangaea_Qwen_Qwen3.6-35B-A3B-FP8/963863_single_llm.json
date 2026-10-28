@@ -1,0 +1,34 @@
+{
+  "csv": "963863.csv",
+  "dataset_id": "963863",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e",
+  "contract_sha256": "c625b22a2ec8c31c04c36c4b8e3cec8867ebe8ece7e22abec782ddeb3eade6d9",
+  "prompt_tokens": 1032,
+  "metadata": {
+    "name": "Physico-chemical, Particulate Matter, Temperature, and Hydrological Data",
+    "description": "Dataset containing physico-chemical data (in situ parameters, nutrients, trace elements, contaminants), particulate matter data (cations, trace elements, mineralogy), continuous temperature data, and hydrological data (modeled and measured mean daily discharge) from 14 sampling sites.",
+    "keywords": [
+      "physico-chemical",
+      "particulate matter",
+      "temperature",
+      "hydrological",
+      "water quality",
+      "trace elements",
+      "nutrients",
+      "discharge"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "14 sampling sites",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.106,
+  "status": "ok"
+}

@@ -1,0 +1,26 @@
+{
+  "dataset_id": "954529",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/954529.csv",
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T13:51:51.242263+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "GIS Data File References",
+    "description": "Dataset listing unique GIS data files and a single Excel file reference, with most Excel entries being null.",
+    "keywords": [
+      "GIS data",
+      "file references",
+      "metadata",
+      "geographic information systems"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/954529_2ed22cf0a82b4ae1ad86ee916fb80020.jsonl",
+  "runtime_seconds": 249.18
+}

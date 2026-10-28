@@ -1,0 +1,16 @@
+{
+  "csv": "pityrogramma_calomelanos.csv",
+  "dataset_id": "pityrogramma_calomelanos",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 996,
+  "n_columns": 50,
+  "description": "Species occurrence records of Pityrogramma calomelanos from 2003 to 2026, with 996 rows.",
+  "dataset_description": "Species occurrence records of Pityrogramma calomelanos from 2003 to 2026.",
+  "runtime_seconds": 31.869,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/pityrogramma_calomelanos/dictionary.json"
+}

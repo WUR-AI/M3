@@ -1,0 +1,43 @@
+{
+  "csv": "984573.csv",
+  "dataset_id": "984573",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "091ca8fc4435bce03f857f31f55d706c49a7bb2568db46eb23333b3fc886c50a",
+  "contract_sha256": "7eafccf4e72fbe9416ff57c40a3cb68ecd02f37d0a93383df7289167d9f269a7",
+  "prompt_tokens": 14125,
+  "metadata": {
+    "name": "383-U1539 sediment core measurements",
+    "description": "Dataset of sediment core samples from site 383-U1539, containing depth, age, sea surface temperature (SST) and its standard deviation, latitude, longitude, elevation and the date/time of each measurement. The data represent multiple horizons within the cores and are intended for paleoceanographic and geological analyses.",
+    "keywords": [
+      "sediment",
+      "core",
+      "paleoceanography",
+      "SST",
+      "sea surface temperature",
+      "Antarctica",
+      "depth",
+      "age",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": -56.1512,
+      "min_lon": -115.1341,
+      "max_lat": -56.151,
+      "max_lon": -115.1338
+    },
+    "temporalCoverage": {
+      "from": "2019-05-31",
+      "to": "2019-06-05"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.129,
+  "status": "ok"
+}

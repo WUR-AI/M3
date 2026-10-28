@@ -1,0 +1,42 @@
+{
+  "dataset_id": "973907",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973907.csv",
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:27:04.005016+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Geophysical Survey MSM44_362-1 Sediment Core Measurements",
+    "description": "Vertical profile and sediment core measurements from marine survey MSM44_362-1 collected at a single station in the Greenland Sea/Arctic region. Contains 249 records of sediment depth, core diameter deviation, P-wave travel time, P-wave velocity amplitude, and acoustic/gravity response (AGR) parameters measured on 2015-07-12.",
+    "keywords": [
+      "marine geophysics",
+      "sediment core",
+      "P-wave velocity",
+      "acoustic response",
+      "Greenland Sea",
+      "Arctic",
+      "MSM44",
+      "subsurface properties"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12T15:22:00+00:00",
+      "to": "2015-07-12T15:22:00+00:00"
+    },
+    "spatial": "point location",
+    "temporal": "single observation"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973907_b5332612c7044eabaebb6307bc7e91f5.jsonl",
+  "runtime_seconds": 104.49
+}

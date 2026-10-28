@@ -1,0 +1,66 @@
+{
+  "csv": "902576.csv",
+  "dataset_id": "902576",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b06c3394469ddd9b33f1f543a33543a85632b83506b0cb72086d0f8e099211ea",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1730,
+  "metadata": {
+    "name": "Mean Annual Ground Temperature (MAGTM) dataset (2000‑2017)",
+    "description": "A collection of files from the UiO PEX (University of Oslo Permafrost Experiment) providing mean annual ground temperature (MAGTM), its standard deviation (MAGTSTD), and permafrost probability fraction (PERPROB) for the period 2000‑2017. The dataset is distributed as ZIP archives and includes a thumbnail image.",
+    "keywords": [
+      "ground temperature",
+      "permafrost",
+      "MAGTM",
+      "MAGTSTD",
+      "PERPROB",
+      "UiO PEX",
+      "Arctic",
+      "climate",
+      "temperature",
+      "permafrost probability"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2000-01-01",
+      "to": "2017-12-31"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "902576"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576",
+        "n": 5
+      }
+    }
+  ],
+  "runtime_seconds": 8.536,
+  "status": "ok"
+}

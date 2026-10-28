@@ -1,0 +1,37 @@
+{
+  "dataset_id": "971414",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971414.csv",
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:05:11.343047+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geological sampling records from Chiba, Japan (Kazusa area)",
+    "description": "Dataset containing 19 geological sampling records from a localized area in Chiba, Japan, dating to approximately 1,200–1,300 years ago. Includes stratigraphic section markers, age estimates, and sample identifiers.",
+    "keywords": [
+      "geology",
+      "Chiba",
+      "Japan",
+      "stratigraphy",
+      "sediment",
+      "Kazusa"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971414_de9c749976e549578151c7ccd8ddbe02.jsonl",
+  "runtime_seconds": 186.37
+}

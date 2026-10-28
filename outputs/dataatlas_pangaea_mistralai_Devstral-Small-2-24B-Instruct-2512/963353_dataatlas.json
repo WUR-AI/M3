@@ -1,0 +1,16 @@
+{
+  "csv": "963353.csv",
+  "dataset_id": "963353",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 53,
+  "n_columns": 9,
+  "description": "Single-day environmental science data with 53 rows of ice/snow measurements and sample details.",
+  "dataset_description": "Single-day environmental science data from 2004-12-29, 963,353 tables, 53 rows each.",
+  "runtime_seconds": 6.391,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/963353/dictionary.json"
+}

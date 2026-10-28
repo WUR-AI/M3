@@ -1,0 +1,41 @@
+{
+  "dataset_id": "990164",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990164.csv",
+  "source_sha256": "1d710fa4e7e67deb32c461c72ea2cec1a2a5054abd977ba644575d06fdf628bd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:58:34.108270+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical analysis of sediment core samples from Lake Chapala, Mexico",
+    "description": "This dataset contains geochemical measurements from 41 sediment core samples collected at a single location in Lake Chapala, Jalisco, Mexico (21.28°N, 104.69°W) on April 8, 2022. The data includes 17 Centered Log-Ratio (CLR) transformed elemental concentrations (Si, K, Ca, Ti, V, Cr, Mn, Fe, Ni, Cu, Zn, Ge, Sr, Zr, Cd, Ce, Ta), sediment depth, age estimates, and an incoherent/coherent scattering ratio. The samples span a depth range of 0.0 to 0.2 meters and cover an age range from approximately 1867 to 2022 AD.",
+    "keywords": [
+      "geochemistry",
+      "sediment core",
+      "Lake Chapala",
+      "CLR transformation",
+      "elemental concentrations",
+      "Mexico",
+      "environmental science"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08T00:00:00+00:00",
+      "to": "2022-04-08T00:00:00+00:00"
+    },
+    "spatial": "Point location (21.277661°N, 104.690167°W)",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990164_879bf1b70e0544e897a997e396890a40.jsonl",
+  "runtime_seconds": 115.13
+}

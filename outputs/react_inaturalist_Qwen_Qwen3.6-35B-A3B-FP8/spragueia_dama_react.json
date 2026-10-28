@@ -1,0 +1,66 @@
+{
+  "csv": "spragueia_dama.csv",
+  "dataset_id": "spragueia_dama",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "238cb9edd9ff01d1237053899a4967cc95be90e399a997f96cc54490decda37f",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3329,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -27.19914,
+      "min_lon": -111.234205,
+      "max_lat": 41.034134,
+      "max_lon": -38.490333
+    },
+    "temporalCoverage": {
+      "from": "2006-06-21T00:03:00+00:00",
+      "to": "2026-06-12T22:21:29+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "spragueia_dama"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "spragueia_dama",
+        "resource": "spragueia_dama"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "spragueia_dama",
+        "resource": "spragueia_dama",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "spragueia_dama",
+        "resource": "spragueia_dama"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "spragueia_dama",
+        "resource": "spragueia_dama",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 11.727,
+  "status": "ok"
+}

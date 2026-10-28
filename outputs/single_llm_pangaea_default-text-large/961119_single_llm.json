@@ -1,0 +1,33 @@
+{
+  "csv": "961119.csv",
+  "dataset_id": "961119",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "contract_sha256": "564d0808401b9874a48e004afc414b95f286f8671adedd7b0d29dc29725936c2",
+  "prompt_tokens": 638,
+  "metadata": {
+    "name": "Baltic Sea pCO2 climatology and trend",
+    "description": "Dataset containing climatological averages and long‑term trends of surface water partial pressure of CO₂ (pCO₂) in the Baltic Sea.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "carbon dioxide",
+      "climatology",
+      "trend",
+      "oceanography",
+      "marine chemistry"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.698,
+  "status": "ok"
+}

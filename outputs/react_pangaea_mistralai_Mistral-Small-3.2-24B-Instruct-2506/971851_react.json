@@ -1,0 +1,79 @@
+{
+  "csv": "971851.csv",
+  "dataset_id": "971851",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3273,
+  "metadata": {
+    "name": "971851",
+    "description": "The dataset contains paleomagnetic data including various measurements such as declination, inclination, and their uncertainties, as well as VGP (Virtual Geomagnetic Pole) latitudes and longitudes with their uncertainties. It also includes parameters like depth, kappa values, and age information.",
+    "keywords": [
+      "paleomagnetic data",
+      "declination",
+      "inclination",
+      "VGP latitudes",
+      "VGP longitudes",
+      "depth",
+      "kappa values",
+      "age information"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.84240779,
+      "min_lon": -178.9145776,
+      "max_lat": 83.74256561,
+      "max_lon": 179.7489502
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01",
+      "to": "2023-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "971851"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851",
+        "lat_column": "VGP latitude",
+        "lon_column": "VGP longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "971851",
+        "resource": "971851"
+      }
+    }
+  ],
+  "runtime_seconds": 25.927,
+  "status": "ok"
+}

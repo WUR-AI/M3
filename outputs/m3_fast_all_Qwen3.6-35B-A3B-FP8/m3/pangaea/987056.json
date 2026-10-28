@@ -1,0 +1,44 @@
+{
+  "dataset_id": "987056",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987056.csv",
+  "source_sha256": "c679b64af9656205fbe4f33f6f7a71f57f9f0abe1933a8d0c5b51b6657b297a9",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:43:18.745886+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Geochemical Profile (TOC, TIC) from Gulf of Mexico Core GeoB16310-2",
+    "description": "Vertical sediment core profile containing Total Organic Carbon (TOC) and Total Inorganic Carbon (TIC) measurements at 15 depth intervals from a single coring event (GeoB16310-2) in the Gulf of Mexico (Campeche Basin). The dataset includes sediment depth, geochemical concentrations, and bathymetric coordinates for stratigraphic analysis.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "organic carbon",
+      "inorganic carbon",
+      "Gulf of Mexico",
+      "sediment core",
+      "Campeche Basin",
+      "stratigraphy"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.82405,
+      "min_lon": -87.170283333333,
+      "max_lat": 23.82405,
+      "max_lon": -87.170283333333
+    },
+    "temporalCoverage": {
+      "from": "2012-03-22T23:07:00+00:00",
+      "to": "2012-03-22T23:07:00+00:00"
+    },
+    "spatial": "point location (23.82405°N, 87.17028°W)",
+    "temporal": "single sampling event (2012-03-22)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987056_535d416ca9904661864ee787af8cecff.jsonl",
+  "runtime_seconds": 86.94
+}

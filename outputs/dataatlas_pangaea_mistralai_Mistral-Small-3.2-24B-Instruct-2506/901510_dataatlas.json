@@ -1,0 +1,16 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 106,
+  "n_columns": 9,
+  "description": "Environmental data with location, time, measurements, and event details from 2012.",
+  "dataset_description": "Environmental data collected over 26 minutes in 2012.",
+  "runtime_seconds": 8.669,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/901510/dictionary.json"
+}

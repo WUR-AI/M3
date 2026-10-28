@@ -1,0 +1,39 @@
+{
+  "csv": "987071.csv",
+  "dataset_id": "987071",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843",
+  "contract_sha256": "ca325d5ed211837a284b03b315f030d98eda6a60d3fcad107a99c4b649ef7007",
+  "prompt_tokens": 2416,
+  "metadata": {
+    "name": "GeoB16320-2 Sediment TOC and TIC Data",
+    "description": "Dataset containing sediment core measurements including depth, Total Organic Carbon (TOC), and Total Inorganic Carbon (TIC) from a single location collected on 2012-03-24.",
+    "keywords": [
+      "sediment",
+      "TOC",
+      "TIC",
+      "GeoB16320-2",
+      "carbon"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24T21:28:00",
+      "to": "2012-03-24T21:28:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.103,
+  "status": "ok"
+}

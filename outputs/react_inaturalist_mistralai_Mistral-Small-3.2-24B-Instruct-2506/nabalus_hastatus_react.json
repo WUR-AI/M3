@@ -1,0 +1,114 @@
+{
+  "csv": "nabalus_hastatus.csv",
+  "dataset_id": "nabalus_hastatus",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "912b7dacd971a10b021861742974bb340282cefc174001edd7dc643ce7e225c1",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5790,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 45.37497,
+      "min_lon": -166.471986,
+      "max_lat": 61.262243,
+      "max_lon": -115.825813
+    },
+    "temporalCoverage": {
+      "from": "2002-07-29",
+      "to": "2026-06-13"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus",
+        "column": "eventDate"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus",
+        "column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "nabalus_hastatus",
+        "resource": "nabalus_hastatus",
+        "column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 29.683,
+  "status": "ok"
+}

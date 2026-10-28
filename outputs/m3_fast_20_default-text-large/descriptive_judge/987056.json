@@ -1,0 +1,9 @@
+{
+  "dataset_id": "987056",
+  "status": "ok",
+  "source_sha256": "c679b64af9656205fbe4f33f6f7a71f57f9f0abe1933a8d0c5b51b6657b297a9",
+  "metadata_sha256": "9eaa9bebad1a9b4c7e0681100d4e4f3de452285cf72f52685245d8cfec7448df",
+  "judge_model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "faithfulness": 1.0,
+  "similarity": 0.17
+}

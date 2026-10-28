@@ -1,0 +1,16 @@
+{
+  "csv": "veniliornis_passerinus.csv",
+  "dataset_id": "veniliornis_passerinus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "This table contains 1,001 human-observed occurrences of Veniliornis passerinus from 2002 to 2026.",
+  "dataset_description": "Records 1,001 occurrences of the species Veniliornis passerinus from 2002 to 2026.",
+  "runtime_seconds": 28.132,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_Sehyo_Qwen3.5-122B-A10B-NVFP4/raw/veniliornis_passerinus/dictionary.json"
+}

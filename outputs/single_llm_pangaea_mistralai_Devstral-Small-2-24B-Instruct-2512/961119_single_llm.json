@@ -1,0 +1,30 @@
+{
+  "csv": "961119.csv",
+  "dataset_id": "961119",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "contract_sha256": "b08f0f1fd6971367ef5d3b9a6ad5c48cd818888ba021e2863f3b7ff3b221ff5d",
+  "prompt_tokens": 638,
+  "metadata": {
+    "name": "Baltic Sea pCO2",
+    "description": "Dataset containing Baltic Sea pCO2 climatology and long-term trend data.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "climatology",
+      "trend"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.995,
+  "status": "ok"
+}

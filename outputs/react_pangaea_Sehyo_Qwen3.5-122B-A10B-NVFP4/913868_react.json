@@ -1,0 +1,134 @@
+{
+  "csv": "913868.csv",
+  "dataset_id": "913868",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c0511e76b8edf563e4cac8c8b2d4c1f3fc73731ceba37608306521e4ec2d8afa",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 30632,
+  "metadata": {
+    "name": "Aerosol particle size distribution measurements at Neumayer station, Antarctica, 2019",
+    "description": "Dataset containing aerosol particle size distribution measurements (dN/dlogDp) across 72 particle diameter bins ranging from 92.87 nm to 4845.51 nm, collected at Neumayer station in Antarctica during 2019. The measurements include temporal information, spatial coordinates (Latitude: -70.65, Longitude: -8.25), measurement height (7 m), and elevation (42 m).",
+    "keywords": [
+      "aerosol",
+      "particle size distribution",
+      "atmospheric science",
+      "Neumayer",
+      "Antarctica",
+      "dN/dlogDp"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2019-01-01T00:30:00+00:00",
+      "to": "2019-12-31T23:05:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "913868"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "n": 3
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "field": "Height",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "n": 1
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "913868",
+        "resource": "913868",
+        "n": 1
+      }
+    }
+  ],
+  "runtime_seconds": 55.703,
+  "status": "ok"
+}

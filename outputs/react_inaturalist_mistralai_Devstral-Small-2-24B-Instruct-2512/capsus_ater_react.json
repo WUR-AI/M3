@@ -1,0 +1,73 @@
+{
+  "csv": "capsus_ater.csv",
+  "dataset_id": "capsus_ater",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b5ae8c8b23df0476c417aa444aaae4e37a5ab5a3782472e6cd6d830a7bb9d711",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 4250,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 37.179198,
+      "min_lon": -125.045178,
+      "max_lat": 63.839065,
+      "max_lon": 60.294843
+    },
+    "temporalCoverage": {
+      "from": "1996-07-06",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "capsus_ater"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "capsus_ater",
+        "resource": "capsus_ater"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "capsus_ater",
+        "resource": "capsus_ater"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "capsus_ater",
+        "resource": "capsus_ater",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "capsus_ater",
+        "resource": "capsus_ater"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "capsus_ater",
+        "resource": "capsus_ater",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 11.178,
+  "status": "ok"
+}

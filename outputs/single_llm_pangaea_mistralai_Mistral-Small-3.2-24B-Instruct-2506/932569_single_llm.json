@@ -1,0 +1,39 @@
+{
+  "csv": "932569.csv",
+  "dataset_id": "932569",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "contract_sha256": "c5750c5728f2428eba93394cdc3a2a7076f22b553959ea6d51ee7386bad7aace",
+  "prompt_tokens": 10844,
+  "metadata": {
+    "name": "Aerosol composition data",
+    "description": "This dataset contains measurements of aerosol composition, including various chemical components, collected at different stages and locations over a specific time period.",
+    "keywords": [
+      "Aerosol",
+      "Composition",
+      "Chemical analysis",
+      "Environmental science",
+      "Atmospheric chemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.229915,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24",
+      "to": "2017-07-16"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 9.691,
+  "status": "ok"
+}

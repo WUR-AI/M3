@@ -1,0 +1,16 @@
+{
+  "csv": "antennaria_racemosa.csv",
+  "dataset_id": "antennaria_racemosa",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 997,
+  "n_columns": 50,
+  "description": "Biodiversity dataset documenting Antennaria racemosa species occurrences from 2013 to 2026.",
+  "dataset_description": "Biodiversity dataset documenting Antennaira racemosa species occurrences from 2013 to 2026.",
+  "runtime_seconds": 31.768,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/antennaria_racemosa/dictionary.json"
+}

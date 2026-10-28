@@ -1,0 +1,88 @@
+{
+  "csv": "pterostylis_graminea.csv",
+  "dataset_id": "pterostylis_graminea",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c38db7e2e5492e9a87b32b09af09428289606518e806aab8a4b80ca5e5a9c8f1",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4299,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -46.926745,
+      "min_lon": 167.803422,
+      "max_lat": -35.717289,
+      "max_lon": 176.905064
+    },
+    "temporalCoverage": {
+      "from": "1966-10-15",
+      "to": "2026-01-06"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "pterostylis_graminea",
+        "resource": "pterostylis_graminea",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 21.056,
+  "status": "ok"
+}

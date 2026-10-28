@@ -1,0 +1,16 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 9,
+  "n_columns": 70,
+  "description": "Sediment core elemental concentrations and errors from one station on 2019‑03‑20, including depth and location.",
+  "dataset_description": "Records nine Earth and environmental observations captured on 2019-03-20 for scientific analysis.",
+  "runtime_seconds": 493.092,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/944039/dictionary.json"
+}

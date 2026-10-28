@@ -1,0 +1,39 @@
+{
+  "csv": "934330.csv",
+  "dataset_id": "934330",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "contract_sha256": "594ed17ea47c9e19e2b58e88f535979a377ff00b61ee6791713c6dedc5f55498",
+  "prompt_tokens": 1794,
+  "metadata": {
+    "name": "Stordalen_2 Sediment Core Dating",
+    "description": "Dataset containing sediment core depth, age dating information, and associated metadata from Stordalen, Sweden.",
+    "keywords": [
+      "sediment core",
+      "age dating",
+      "paleoenvironment",
+      "Stordalen",
+      "Sweden"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": {
+      "from": "1898-01-01",
+      "to": "2003-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "variable (ranging from yearly to multi-year intervals)"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.365,
+  "status": "ok"
+}

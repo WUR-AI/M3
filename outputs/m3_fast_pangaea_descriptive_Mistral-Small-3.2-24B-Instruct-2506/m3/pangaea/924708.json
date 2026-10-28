@@ -1,0 +1,29 @@
+{
+  "dataset_id": "924708",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924708.csv",
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T11:34:34.199204+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Whale Sightings in the Arctic 2014",
+    "description": "Dataset containing records of whale sightings in the Arctic region during 2014, including timestamps, geographical coordinates, species identification, certainty of identification, and event information.",
+    "keywords": [
+      "whale sightings",
+      "Arctic",
+      "marine mammals",
+      "biodiversity",
+      "2014",
+      "geographical coordinates",
+      "species identification"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924708_a4792a55b6ea48e383f0021c8d783e7e.jsonl",
+  "runtime_seconds": 392.61
+}

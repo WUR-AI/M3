@@ -1,0 +1,30 @@
+{
+  "dataset_id": "931902",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931902.csv",
+  "source_sha256": "db1a2eb73ef4f30d6bd56b579eac3100f881d914d9eff214542eda53b0500dc3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T12:02:56.010990+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Birkeland Cruise Marine Observations",
+    "description": "Dataset containing marine observation events with associated video files, their sizes, hashes, geographic coordinates, and timestamps from the Birkeland Cruise. The data covers a single day on July 7, 2016, in the North Atlantic Ocean.",
+    "keywords": [
+      "marine observations",
+      "Birkeland Cruise",
+      "video files",
+      "geographic coordinates",
+      "North Atlantic Ocean",
+      "2016-07-07",
+      "fish",
+      "siphonophores"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931902_5906d0dccb9c4d2a832f1bbc45e3d523.jsonl",
+  "runtime_seconds": 332.73
+}

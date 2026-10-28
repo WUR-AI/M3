@@ -1,0 +1,42 @@
+{
+  "dataset_id": "974037",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974037.csv",
+  "source_sha256": "674b5362b09af672f9d2f6e1d054926fbaafd85b28bc7eddef1bbdaad4d0ec74",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:45:16.005705+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sucha Woda Flood Boulder and Trunk Debris Measurements",
+    "description": "Dataset containing measurements of boulder diameters and trunk counts collected at 11 sites during the Sucha Woda Flood event on July 24, 2018. Includes site metadata (latitude, longitude, elevation) and 25 distinct boulder diameter measurements per site.",
+    "keywords": [
+      "flood",
+      "debris",
+      "boulder",
+      "trunk",
+      "Sucha Woda",
+      "2018",
+      "measurements",
+      "geological"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.2725,
+      "min_lon": 20.0336,
+      "max_lat": 49.2855,
+      "max_lon": 20.0466
+    },
+    "temporalCoverage": {
+      "from": "2018-07-24",
+      "to": "2018-07-24"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974037_8063746fbe274b66bcc9af04199b9605.jsonl",
+  "runtime_seconds": 137.62
+}

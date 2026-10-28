@@ -1,0 +1,110 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 10475,
+  "metadata": {
+    "name": "B. saida measurements from PS80 expedition",
+    "description": "Dataset containing 86 preserved B. saida (chaetognath) specimens collected during the PS80 expedition. Includes morphological measurements (total length, standard length, wet mass), sex, condition index, degree of digestion, stomach mass, and stomach content mass. Sampling locations span Arctic regions with coordinates from 79.5°N to 89.1°N and -16.2°E to 130.9°E.",
+    "keywords": [
+      "B. saida",
+      "chaetognath",
+      "PS80",
+      "expedition",
+      "stomach content",
+      "digestion",
+      "condition index",
+      "Arctic",
+      "morphology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 89.143898,
+      "max_lon": 130.863
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2020-09-19"
+    },
+    "spatial": "point locations",
+    "temporal": "sampling events"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "956208"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "956208",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208",
+        "time_column": "Date"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    }
+  ],
+  "runtime_seconds": 21.538,
+  "status": "ok"
+}

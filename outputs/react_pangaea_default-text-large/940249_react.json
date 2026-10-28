@@ -1,0 +1,85 @@
+{
+  "csv": "940249.csv",
+  "dataset_id": "940249",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ffa4a37e09f9eea211d093f3922c021eba2066b56fa4d80fea1d68ec7cf9c123",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2014,
+  "metadata": {
+    "name": "Ice Core Isotope and Gas Age Measurements (Antarctica, 2006‑12‑09)",
+    "description": "A collection of ice‑core measurements taken at a single site in Antarctica on 9 December 2006. The dataset includes depth of ice/snow, gas age, isotopic ratios (δ¹⁸O, δ¹⁸O₂, δ³⁶Cl, δ³⁶Cl₂), event identifiers, latitude, longitude, elevation, and the exact date/time of each measurement.",
+    "keywords": [
+      "ice core",
+      "isotopes",
+      "δ18O",
+      "δ36Cl",
+      "paleoclimate",
+      "Antarctica",
+      "latitude",
+      "longitude",
+      "elevation",
+      "gas age",
+      "2006"
+    ],
+    "spatialCoverage": {
+      "min_lat": -79.46763,
+      "min_lon": -112.08648,
+      "max_lat": -79.46763,
+      "max_lon": -112.08648
+    },
+    "temporalCoverage": {
+      "from": "2006-12-09T00:00:00+00:00",
+      "to": "2006-12-09T00:00:00+00:00"
+    },
+    "spatial": "point location",
+    "temporal": "single observation"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "940249"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "940249",
+        "resource": "940949",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "940249",
+        "resource": "940249",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 10.278,
+  "status": "ok"
+}

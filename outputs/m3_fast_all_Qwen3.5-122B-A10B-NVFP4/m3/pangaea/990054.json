@@ -1,0 +1,42 @@
+{
+  "dataset_id": "990054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990054.csv",
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:18:00.761983+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MOSAiC Ice Core Biological and Physical Measurements",
+    "description": "Dataset containing environmental measurements from the MOSAiC expedition, including chlorophyll-a and phaeophytin concentrations, ice/snow depth, and geographic coordinates collected using an Ice Corer Kovacs Mark II.",
+    "keywords": [
+      "MOSAiC",
+      "Arctic",
+      "Ice Core",
+      "Chlorophyll-a",
+      "Phaeophytin",
+      "Ice Corer",
+      "Biological Measurements",
+      "Physical Measurements"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28T00:00:00+00:00",
+      "to": "2020-07-20T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990054_34fc9b7d8d6f44a3bd1b6fd289f21a0e.jsonl",
+  "runtime_seconds": 142.77
+}

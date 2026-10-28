@@ -1,0 +1,43 @@
+{
+  "dataset_id": "965135",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/965135.csv",
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T00:13:14.411617+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Porites sp. Geochemical Data from TIAREI-A1",
+    "description": "This dataset contains geochemical measurements from Porites sp. coral samples collected at a single location and time. It includes measurements of Sr/Ca, Mg/Ca, δ18O, and δ13C, along with age-related fields and spatial-temporal information.",
+    "keywords": [
+      "Porites sp.",
+      "geochemistry",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "coral",
+      "paleoclimate",
+      "TIAREI-A1"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2008-07-01T00:00:00+00:00",
+      "to": "2008-07-01T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/965135_9a6569e5204a47e0b8197ce0cd8111bf.jsonl",
+  "runtime_seconds": 297.67
+}

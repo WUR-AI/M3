@@ -1,0 +1,48 @@
+{
+  "dataset_id": "972993",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972993.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:11:51.640710+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Global Marine Sediment‑Core Geochemistry Dataset",
+    "description": "A worldwide collection of 3,754 marine sediment‑core observations with latitude −46.5797° to +87.89° and longitude −178.1665° to +174.3141°. Each record includes geochemical and isotopic measurements such as δ34S, age (Ma), CaCO₃, TOC, CH₄, sediment rate, lithology, elevation and distance to shore. Sampling dates are available for 1,035 rows, spanning 1974‑07‑18 to 2016‑07‑04.",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "δ34S",
+      "methane",
+      "age",
+      "carbonate",
+      "toc",
+      "sediment rate",
+      "elevation",
+      "distance to shore",
+      "paleoceanography",
+      "isotope",
+      "marine"
+    ],
+    "spatialCoverage": {
+      "min_lat": -46.5797,
+      "min_lon": -178.1665,
+      "max_lat": 87.89,
+      "max_lon": 174.3141
+    },
+    "temporalCoverage": {
+      "from": "1974-07-18T00:00:00+00:00",
+      "to": "2016-07-04T00:00:00+00:00"
+    },
+    "spatial": "point locations (latitude/longitude in WGS‑84/EPSG:4326)",
+    "temporal": "irregular timestamps (sub‑second granularity where present; 1,035 of 3,754 rows have valid dates)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972993_0876ea6fc8f74b819a379a0aaf5596c6.jsonl",
+  "runtime_seconds": 199.2,
+  "recovered_from_trace": true,
+  "source_sha256": "e025ea37fdfb8676c93e7a6316bc0e2b338a8f54454d19976b10958278c38745"
+}

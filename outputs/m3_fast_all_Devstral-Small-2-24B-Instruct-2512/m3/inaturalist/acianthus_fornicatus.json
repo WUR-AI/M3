@@ -1,0 +1,28 @@
+{
+  "dataset_id": "acianthus_fornicatus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/acianthus_fornicatus.csv",
+  "source_sha256": "6237171c3f3b863dce2c40040e6ab2f500a886a241851de3dbed2e96e4268374",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T03:24:10.335470+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -37.349986,
+      "min_lon": 145.459858,
+      "max_lat": -17.177542,
+      "max_lon": 153.748307
+    },
+    "temporalCoverage": {
+      "from": "1994-07-03T15:36:00+00:00",
+      "to": "2026-06-15T14:39:53+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/acianthus_fornicatus_307a1894be264eb2b6b840450b390fc0.jsonl",
+  "runtime_seconds": 136.89
+}

@@ -1,0 +1,52 @@
+{
+  "csv": "idea_leuconoe.csv",
+  "dataset_id": "idea_leuconoe",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d842e3d2f74c9f7a37e90c376a8cd45b3195e171648746b82b5cebc268c19649",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 1729,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -3.965004,
+      "min_lon": 97.436133,
+      "max_lat": 34.857409,
+      "max_lon": 138.139091
+    },
+    "temporalCoverage": {
+      "from": "1970-01-21",
+      "to": "2026-06-15"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "idea_leuconoe"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.972,
+  "status": "ok"
+}

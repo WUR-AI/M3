@@ -1,0 +1,39 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "3e5baceaddf1b9be415b544ca1b2c55b0ba2bbbfc1e7583a0cdb14caa99c4d6b",
+  "prompt_tokens": 3759,
+  "metadata": {
+    "name": "Sediment core geochemical profile SO268_074MUC",
+    "description": "A CSV file containing geochemical measurements (trace element concentrations and their relative errors) from a sediment core (Core 18) collected at station SO268_074MUC in the Belgian collector trial pre‑impact. Each row corresponds to a different depth interval with associated latitude, longitude, elevation and timestamp.",
+    "keywords": [
+      "geochemistry",
+      "sediment core",
+      "trace elements",
+      "marine drilling",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20T02:30:12",
+      "to": "2019-03-20T02:30:12"
+    },
+    "spatial": "point location",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.372,
+  "status": "ok"
+}

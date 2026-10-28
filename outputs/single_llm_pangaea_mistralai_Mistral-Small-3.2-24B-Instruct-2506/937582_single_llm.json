@@ -1,0 +1,42 @@
+{
+  "csv": "937582.csv",
+  "dataset_id": "937582",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1b4437a62c7a6600b478b9acf419a05aebf9f4af6fd8023b6d8e709a67082012",
+  "contract_sha256": "56b784adb3e5e5a08db6b61e574d9a397853aff23d9990beb769c796e3f7156c",
+  "prompt_tokens": 17932,
+  "metadata": {
+    "name": "NunaWP4Mackenzie19",
+    "description": "This dataset contains measurements of various parameters related to water quality and fluorescence at different stations in the Mackenzie River region during the NunaWP4Mackenzie19 expedition. The parameters include IFDOM (Inherent Fluorescent Dissolved Organic Matter) and FDOM (Fluorescent Dissolved Organic Matter) at different peaks, as well as fDOM (fluorescence of dissolved organic matter) indices.",
+    "keywords": [
+      "Mackenzie River",
+      "Water Quality",
+      "Fluorescence",
+      "IFDOM",
+      "FDOM",
+      "fDOM",
+      "Expedition",
+      "NunaWP4Mackenzie19"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20",
+      "to": "2019-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 14.742,
+  "status": "ok"
+}

@@ -1,0 +1,106 @@
+{
+  "csv": "959885.csv",
+  "dataset_id": "959885",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 7199,
+  "metadata": {
+    "name": "Porewater chemistry from sediment core M186_54-1GC",
+    "description": "Porewater chemistry data from sediment core M186_54-1GC collected at a single station (38.74553°N, 28.56587°W) at a depth of -1234 m. The dataset contains concentrations of major and trace ions and elements (alkalinity, nitrate, nitrite, ammonium, phosphate, chloride, sulfate, bromide, boron, manganese, calcium, iron, sodium, magnesium, strontium, silicon, barium, lithium, potassium) measured at 19 sediment depth intervals ranging from 0.28 to 3.81 m below seafloor.",
+    "keywords": [
+      "porewater",
+      "sediment",
+      "chemistry",
+      "ions",
+      "trace elements",
+      "marine",
+      "core sample",
+      "M186"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16",
+      "to": "2022-12-16"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "959885"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "959885",
+        "resource": "959885",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "959885",
+        "resource": "959885"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "959885",
+        "resource": "959885",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "959885",
+        "resource": "959885",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "959885",
+        "resource": "959885",
+        "field": "Station",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "959885",
+        "resource": "959885",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "959885",
+        "resource": "959885"
+      }
+    }
+  ],
+  "runtime_seconds": 14.762,
+  "status": "ok"
+}

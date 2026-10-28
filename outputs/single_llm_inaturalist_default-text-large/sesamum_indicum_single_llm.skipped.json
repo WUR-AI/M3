@@ -1,0 +1,15 @@
+{
+  "csv": "sesamum_indicum.csv",
+  "dataset_id": "sesamum_indicum",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c8f4c84876bf4a93d7fc94ae7cdf7114f028269b8b8d40b4d86b1b5f5e571703",
+  "contract_sha256": "da2ac00cc4f671db8752718b152f5db12d5a21c98e4f82bc2a2ea1f9b242bddf",
+  "prompt_tokens": 318076,
+  "status": "skipped",
+  "reason": "context_window"
+}

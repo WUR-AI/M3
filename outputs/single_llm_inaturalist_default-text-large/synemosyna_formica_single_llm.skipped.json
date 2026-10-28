@@ -1,0 +1,15 @@
+{
+  "csv": "synemosyna_formica.csv",
+  "dataset_id": "synemosyna_formica",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5766fa71053e80ca8cfece110da946527981c7670e404803159daf6cc5787f70",
+  "contract_sha256": "a16513132094feef9ff5e00d70260b12f7f753932a9e8f5649481cd6cb8d5709",
+  "prompt_tokens": 314563,
+  "status": "skipped",
+  "reason": "context_window"
+}

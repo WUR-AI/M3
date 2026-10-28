@@ -1,0 +1,82 @@
+{
+  "csv": "963863.csv",
+  "dataset_id": "963863",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2470,
+  "metadata": {
+    "name": "Physico-chemical Data",
+    "description": "The dataset contains physico-chemical data, including in situ parameters, basic physicochemistry, nutrients, trace elements, and contaminants.",
+    "keywords": [
+      "Physico-chemical",
+      "in situ parameters",
+      "basic physicochemistry",
+      "nutrients",
+      "trace elements",
+      "contaminants"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "963863"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863",
+        "n": 1
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863"
+      }
+    },
+    {
+      "tool": "get_missing_values",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863"
+      }
+    }
+  ],
+  "runtime_seconds": 31.918,
+  "status": "ok"
+}

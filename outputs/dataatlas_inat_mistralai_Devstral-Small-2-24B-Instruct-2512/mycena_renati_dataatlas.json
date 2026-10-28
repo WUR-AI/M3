@@ -1,0 +1,16 @@
+{
+  "csv": "mycena_renati.csv",
+  "dataset_id": "mycena_renati",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1002,
+  "n_columns": 50,
+  "description": "Mycena renati species occurrence records (2004-2026) with taxonomic, geographic, and observation metadata.",
+  "dataset_description": "Species occurrence records of Mycena renati from 2004 to 2026.",
+  "runtime_seconds": 33.597,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/mycena_renati/dictionary.json"
+}

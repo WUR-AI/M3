@@ -1,0 +1,43 @@
+{
+  "dataset_id": "987068",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987068.csv",
+  "source_sha256": "225d2b6118cc78019e8cb527c92e4dc38026b4b37a5e53272fcf4db99e96b37b",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:05:15.929309+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Core Geochemical Data from Gulf of Mexico (GeoB16310-3)",
+    "description": "Geochemical measurements of Total Organic Carbon (TOC) and Total Inorganic Carbon (TIC) from a single sediment core profile collected at a fixed location in the Gulf of Mexico. The dataset contains 23 depth-interval samples ranging from 0.1 to 10.38 units depth, all associated with the sampling event GeoB16310-3 on March 23, 2012.",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "Total Organic Carbon",
+      "TOC",
+      "Total Inorganic Carbon",
+      "TIC",
+      "Gulf of Mexico",
+      "depth profile",
+      "marine geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.824166666667,
+      "min_lon": -87.170333333333,
+      "max_lat": 23.824166666667,
+      "max_lon": -87.170333333333
+    },
+    "temporalCoverage": {
+      "from": "2012-03-23T01:04:00+00:00",
+      "to": "2012-03-23T01:04:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "instantaneous"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987068_b57e7b0b2e4b44a0a88d8e0b02d95b5d.jsonl",
+  "runtime_seconds": 131.1
+}

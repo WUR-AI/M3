@@ -1,0 +1,91 @@
+{
+  "csv": "931902.csv",
+  "dataset_id": "931902",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "db1a2eb73ef4f30d6bd56b579eac3100f881d914d9eff214542eda53b0500dc3",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 2679,
+  "metadata": {
+    "name": "Birkeland Cruise 1",
+    "description": "Dataset containing video recordings of siphonophores collected during the Birkeland Cruise 1, including metadata such as event details, file information, and geographic coordinates.",
+    "keywords": [
+      "siphonophores",
+      "marine biology",
+      "video recordings",
+      "Birkeland Cruise 1",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": 46.15,
+      "min_lon": -26.26667,
+      "max_lat": 46.55,
+      "max_lon": -26.01667
+    },
+    "temporalCoverage": {
+      "from": "2016-07-07",
+      "to": "2016-07-07"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "931902"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 15.028,
+  "status": "ok"
+}

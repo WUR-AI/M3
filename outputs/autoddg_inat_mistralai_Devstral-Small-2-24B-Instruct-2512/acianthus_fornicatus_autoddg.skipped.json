@@ -1,0 +1,11 @@
+{
+  "status": "skipped",
+  "reason": "timeout",
+  "csv": "acianthus_fornicatus.csv",
+  "dataset_id": "acianthus_fornicatus",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "timeout_seconds": 600,
+  "runtime_seconds": 600,
+  "message": "AutoDDG exceeded 600s on acianthus_fornicatus.csv"
+}

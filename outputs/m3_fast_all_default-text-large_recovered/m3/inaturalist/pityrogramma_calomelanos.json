@@ -1,0 +1,29 @@
+{
+  "dataset_id": "pityrogramma_calomelanos",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/pityrogramma_calomelanos.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:34:25.766162+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -28.041467,
+      "min_lon": -171.443024,
+      "max_lat": 37.867024,
+      "max_lon": 168.311117
+    },
+    "temporalCoverage": {
+      "from": "1996-07-20T17:23:00+00:00",
+      "to": "2026-06-08T09:18:11+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/pityrogramma_calomelanos_c2e4b9da6d194ed2ba7fa254189cf892.jsonl",
+  "runtime_seconds": 89.1,
+  "recovered_from_trace": true,
+  "source_sha256": "395172507b944ef3498aff3af0ef7237200991999c1607465bb68df0941ccebb"
+}

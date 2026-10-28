@@ -1,0 +1,40 @@
+{
+  "csv": "973035.csv",
+  "dataset_id": "973035",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "contract_sha256": "79c2551810e1c0b379d01ad3c3346480567dcbb628dd200eef226662d63338c3",
+  "prompt_tokens": 1405,
+  "metadata": {
+    "name": "973035",
+    "description": "Dataset containing soil sample measurements including uranium (U), thorium (Th), potassium (K), and other elements, along with their respective error values, depth, and age dating information.",
+    "keywords": [
+      "soil",
+      "uranium",
+      "thorium",
+      "potassium",
+      "age dating",
+      "geochemical analysis"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03",
+      "to": "2023-04-03"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.806,
+  "status": "ok"
+}

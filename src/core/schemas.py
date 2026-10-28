@@ -7,10 +7,9 @@ This module defines the fundamental data structures:
 3. StepResult / ExecutionResult: Standard execution outputs for orchestrations.
 """
 
-import logging
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field
 
 
 class Task(BaseModel):
@@ -34,7 +33,7 @@ class Task(BaseModel):
         description="Maps a task's parameter names to the names of artifacts in the workspace that should be used as input.",
     )
     outputs: List[str] = Field(
-        default_factory=list,
+        min_length=1,
         description="A list of new artifact names that this step will produce and save to the workspace.",
     )
 
@@ -42,44 +41,14 @@ class Task(BaseModel):
 class Plan(BaseModel):
     """
     The complete, multi-step plan for the agent to execute.
-    Includes validation to ensure logical consistency of task dependencies.
+
+    Runtime dataflow and final-step checks live in orchestrator.utils.
     """
 
     steps: List[Task] = Field(
+        min_length=1,
         description="The list of sequential tasks the agent should follow."
     )
-
-    @validator("steps")
-    def validate_task_dependencies(cls, steps: List[Task]) -> List[Task]:
-        """
-        Best-effort validation that the inputs for each task are produced by a previous task.
-
-        IMPORTANT:
-        - This validator is **non-fatal**: it logs a warning on unmet dependencies
-          but does NOT raise, to avoid hard failures on imperfect LLM plans.
-        """
-        produced_artifacts: Set[str] = set()
-
-        for i, step in enumerate(steps):
-            # Get the names of the artifacts required by the current step
-            required_artifacts = set(step.inputs.values())
-
-            # Check if all required artifacts have been produced by previous steps
-            if not required_artifacts.issubset(produced_artifacts):
-                missing = required_artifacts - produced_artifacts
-                logging.warning(
-                    "Plan validation warning: Step %d ('%s') has unmet dependencies. "
-                    "Missing artifacts: %s",
-                    i,
-                    step.task,
-                    missing,
-                )
-
-            # Add the artifacts produced by the current step to the set of available artifacts
-            for output_artifact in step.outputs:
-                produced_artifacts.add(output_artifact)
-
-        return steps
 
     def to_dict_list(self) -> List[Dict[str, Any]]:
         """Convert plan steps to a list of dictionaries for state management."""
@@ -161,4 +130,7 @@ class ExecutionResult(BaseModel):
     )
     error: Optional[str] = Field(
         default=None, description="Error message if execution failed."
+    )
+    trace_path: Optional[str] = Field(
+        default=None, description="JSONL file with model, tool, and debate inputs and outputs."
     )

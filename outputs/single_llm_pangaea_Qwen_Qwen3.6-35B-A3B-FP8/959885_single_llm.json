@@ -1,0 +1,40 @@
+{
+  "csv": "959885.csv",
+  "dataset_id": "959885",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "contract_sha256": "65ddd783bb34b26eb5e107cbf3587f1b4597aa3962b8b6ca3b06c25cc7c17888",
+  "prompt_tokens": 3306,
+  "metadata": {
+    "name": "Geochemical analysis of sediment core M186_54-1GC",
+    "description": "Dataset containing geochemical concentrations (nutrients, major ions, trace elements) and physical properties for sediment samples from core M186_54-1GC, including depth, temperature, and elemental abundances.",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "nutrients",
+      "major ions",
+      "trace elements",
+      "M186_54-1GC"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16",
+      "to": "2022-12-16"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.181,
+  "status": "ok"
+}

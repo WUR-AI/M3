@@ -1,0 +1,42 @@
+{
+  "csv": "931282.csv",
+  "dataset_id": "931282",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "contract_sha256": "2a627f983e4f10e51e986e8db8279ecbf13e512c94f551b1c86c76d43c52d15b",
+  "prompt_tokens": 642,
+  "metadata": {
+    "name": "UPC Sensor Files Metadata",
+    "description": "A table of binary sensor output files (ZIP archives) with their MIME type, size, associated event, geographic location (latitude, longitude, elevation) and acquisition date.",
+    "keywords": [
+      "sensor",
+      "binary",
+      "zip",
+      "UPC",
+      "latitude",
+      "longitude",
+      "elevation",
+      "date"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11",
+      "to": "2020-03-11"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.422,
+  "status": "ok"
+}

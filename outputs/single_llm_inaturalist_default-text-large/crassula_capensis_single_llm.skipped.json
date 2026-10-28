@@ -1,0 +1,15 @@
+{
+  "csv": "crassula_capensis.csv",
+  "dataset_id": "crassula_capensis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f69634b14a50a09408a68360ad373913a5ee9b35cf0b6370c157769ee256b45b",
+  "contract_sha256": "f0d8048b48ba4ba8fed94e63f5ba2e24645621a71301209166e4a76ebaf5ecc3",
+  "prompt_tokens": 316977,
+  "status": "skipped",
+  "reason": "context_window"
+}

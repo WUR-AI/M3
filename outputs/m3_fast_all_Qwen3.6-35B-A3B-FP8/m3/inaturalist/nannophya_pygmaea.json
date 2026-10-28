@@ -1,0 +1,28 @@
+{
+  "dataset_id": "nannophya_pygmaea",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/nannophya_pygmaea.csv",
+  "source_sha256": "a6cfd2ab9d732bd13948840b94ef5bb36dc4bf688bf33e3caf0a6ff92f9a3ef0",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:54:33.983880+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -5.098442,
+      "min_lon": 98.280703,
+      "max_lat": 31.288761,
+      "max_lon": 140.722134
+    },
+    "temporalCoverage": {
+      "from": "2001-07-07T10:02:00+00:00",
+      "to": "2026-06-12T12:39:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/nannophya_pygmaea_10a64c8f3cad4a27a5ba4f6c691531f8.jsonl",
+  "runtime_seconds": 52.13
+}

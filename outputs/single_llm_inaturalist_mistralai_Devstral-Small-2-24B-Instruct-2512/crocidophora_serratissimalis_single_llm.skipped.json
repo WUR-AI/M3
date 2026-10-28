@@ -1,0 +1,15 @@
+{
+  "csv": "crocidophora_serratissimalis.csv",
+  "dataset_id": "crocidophora_serratissimalis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ac42d91a9c815f7f4ab7c337bdafd6f0e6893b45fc8d2c503d22d8e39858c38f",
+  "contract_sha256": "33403038064db93e0562fe7d314e66fe719670e70fb9f49d0b9605e3f1ae6f48",
+  "prompt_tokens": 322470,
+  "status": "skipped",
+  "reason": "context_window"
+}

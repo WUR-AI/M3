@@ -1,0 +1,44 @@
+{
+  "csv": "917841.csv",
+  "dataset_id": "917841",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "contract_sha256": "92b984f2099f4cf29dd1972f3c4547b37812e32dec9f8d4ecc2b739bfa53fa47",
+  "prompt_tokens": 1233,
+  "metadata": {
+    "name": "Macapule Lagoon Water Quality Data",
+    "description": "Measurements of temperature, salinity, dissolved oxygen, pH, ammonia, nitrate, and phosphate collected at Macapule Lagoon (latitude 25.35, longitude -108.5) across multiple zones and dates between December 2013 and June 2015.",
+    "keywords": [
+      "Macapule Lagoon",
+      "water quality",
+      "temperature",
+      "salinity",
+      "dissolved oxygen",
+      "pH",
+      "ammonia",
+      "nitrate",
+      "phosphate",
+      "environmental monitoring"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-01",
+      "to": "2015-06-01"
+    },
+    "spatial": "point locations",
+    "temporal": "semi-annual"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.553,
+  "status": "ok"
+}

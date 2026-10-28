@@ -1,0 +1,28 @@
+{
+  "dataset_id": "euplectes_progne",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/euplectes_progne.csv",
+  "source_sha256": "cbd2979bba5b8ef91369550ea4c153241bdbe260ea7e0930163c4b5f21a3a243",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:28:35.474635+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -33.757769,
+      "min_lon": 19.31326,
+      "max_lat": 0.610585,
+      "max_lon": 37.090836
+    },
+    "temporalCoverage": {
+      "from": "1986-12-24T00:00:00+00:00",
+      "to": "2026-05-28T12:16:37+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/euplectes_progne_93111afd98684d81931b0d7b3174eaba.jsonl",
+  "runtime_seconds": 59.37
+}

@@ -1,0 +1,66 @@
+{
+  "csv": "schoeniophylax_phryganophilus.csv",
+  "dataset_id": "schoeniophylax_phryganophilus",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c7ab1c441fa634a8944a30fa7d0c28bef722501080c796d28690ace4c2b7abf7",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3447,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.661467,
+      "min_lon": -66.840437,
+      "max_lat": -4.823831,
+      "max_lon": -42.166767
+    },
+    "temporalCoverage": {
+      "from": "2005-06-12T09:06:00+00:00",
+      "to": "2026-06-11T13:16:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "schoeniophylax_phryganophilus",
+        "resource": "schoeniophylax_phryganophilus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.439,
+  "status": "ok"
+}

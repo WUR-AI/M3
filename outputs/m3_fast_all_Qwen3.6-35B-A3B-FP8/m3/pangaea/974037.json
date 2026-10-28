@@ -1,0 +1,41 @@
+{
+  "dataset_id": "974037",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974037.csv",
+  "source_sha256": "674b5362b09af672f9d2f6e1d054926fbaafd85b28bc7eddef1bbdaad4d0ec74",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:28:48.493424+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sucha Woda Flood Boulder and Tree Trunk Measurements",
+    "description": "Cross-sectional dataset of 11 sites in the Polish Tatra Mountains documenting boulder diameters (25 measurements per site) and tree trunk counts (two measurement events) deposited by the Sucha Woda Flood on July 24, 2018.",
+    "keywords": [
+      "flood",
+      "boulder",
+      "Tatra Mountains",
+      "Sucha Woda",
+      "geomorphology",
+      "sediment transport",
+      "Poland"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.2725,
+      "min_lon": 20.0336,
+      "max_lat": 49.2855,
+      "max_lon": 20.0466
+    },
+    "temporalCoverage": {
+      "from": "2018-07-24",
+      "to": "2018-07-24"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974037_149392c3b56d4d1c8d8b0013201c9efb.jsonl",
+  "runtime_seconds": 135.61
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": "roepera_morgiana",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/roepera_morgiana.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:44:41.859428+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.83307,
+      "min_lon": 16.81458,
+      "max_lat": -28.97451,
+      "max_lon": 26.081906
+    },
+    "temporalCoverage": {
+      "from": "1995-09-03T17:29:00+00:00",
+      "to": "2026-06-11T11:49:51+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/roepera_morgiana_c1edf33852554109b6ab68e867a068c8.jsonl",
+  "runtime_seconds": 75.89,
+  "recovered_from_trace": true,
+  "source_sha256": "c177205416504cecbc00e4e36c39ad00cd9ff912b9b8e98b9177377e8faf166b"
+}

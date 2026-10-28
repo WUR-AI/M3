@@ -1,0 +1,39 @@
+{
+  "csv": "960522.csv",
+  "dataset_id": "960522",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3bb28cd5e16d4d59f094461b12276b04514b16f4838bc2b41b39519704550e84",
+  "contract_sha256": "4b27391359cb8c50630eae25dce0de420edaeb3c8a7108c8096492c70c234f0e",
+  "prompt_tokens": 7316,
+  "metadata": {
+    "name": "Limacina helicina laboratory measurements",
+    "description": "Dataset containing laboratory measurements of Limacina helicina, including various chemical and physical parameters such as temperature, salinity, dissolved oxygen, and carbonate system variables. The data includes both control and incubation experiments with different conditions.",
+    "keywords": [
+      "Limacina helicina",
+      "laboratory measurements",
+      "carbonate system",
+      "ocean chemistry",
+      "incubation experiments"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.43,
+      "min_lon": -126.23,
+      "max_lat": 48.43,
+      "max_lon": -126.23
+    },
+    "temporalCoverage": {
+      "from": "2019-09-01",
+      "to": "2019-09-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.526,
+  "status": "ok"
+}

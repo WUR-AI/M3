@@ -1,0 +1,39 @@
+{
+  "dataset_id": "960522",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/960522.csv",
+  "source_sha256": "3bb28cd5e16d4d59f094461b12276b04514b16f4838bc2b41b39519704550e84",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T23:46:52.850068+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Limacina helicina laboratory experiment data",
+    "description": "Dataset containing laboratory experiment data for Limacina helicina, including environmental parameters, chemical measurements, and biological responses.",
+    "keywords": [
+      "Limacina helicina",
+      "laboratory experiment",
+      "oceanography",
+      "carbonate chemistry",
+      "respiration rates"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.43,
+      "min_lon": -126.23,
+      "max_lat": 48.43,
+      "max_lon": -126.23
+    },
+    "temporalCoverage": {
+      "from": "2019",
+      "to": "2019"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/960522_0da217df4a7f41d184cdc11c41183ca0.jsonl",
+  "runtime_seconds": 378.46
+}

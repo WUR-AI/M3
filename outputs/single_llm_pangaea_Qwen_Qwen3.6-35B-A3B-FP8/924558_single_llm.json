@@ -1,0 +1,40 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "contract_sha256": "a225ed0bf169fdf669d9450de013528050bbceb364b70f4a415bb6d3a7f4eb77",
+  "prompt_tokens": 25573,
+  "metadata": {
+    "name": "Developmental stages and physiological parameters of Mytilus galloprovincialis under control and high CO2 conditions",
+    "description": "Laboratory experiment data tracking the developmental stages (1-cell to D-larva, Morula, Gastrula, Trochophore) and survival percentages of the mussel Mytilus galloprovincialis exposed to Control and High CO2 conditions over time intervals of 2, 4, 24, 54, 120, and 144 hours. The dataset includes measurements of temperature, pH, salinity, DIC, CO2, bicarbonate, carbonate, calcium, and saturation states for aragonite and calcite.",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "ocean acidification",
+      "high CO2",
+      "development",
+      "embryology",
+      "laboratory experiment",
+      "physiology",
+      "carbonate chemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "hourly intervals (2, 4, 24, 54, 120, 144 hours)"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.137,
+  "status": "ok"
+}

@@ -1,0 +1,86 @@
+{
+  "csv": "995327.csv",
+  "dataset_id": "995327",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4428,
+  "metadata": {
+    "name": "995327",
+    "description": "The dataset contains mineralogical composition data of sediment samples, including various minerals and heavy minerals. Each sample is labeled and includes information on depth, sample comments, and the percentage of different minerals present. The data also includes spatial coordinates (latitude and longitude) and the date/time of sampling.",
+    "keywords": [
+      "mineralogical composition",
+      "sediment samples",
+      "heavy minerals",
+      "geological data",
+      "mineral percentages",
+      "spatial coordinates",
+      "sampling date"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01",
+      "to": "1994-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "995327"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 26.464,
+  "status": "ok"
+}

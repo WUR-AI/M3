@@ -1,0 +1,43 @@
+{
+  "dataset_id": "937579",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/937579.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:49:19.705525+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Mackenzie River 2019 Water‑Isotope Measurements",
+    "description": "Dataset of 146 sampling events from the 2019 Mackenzie River (Nuna WP4) expedition. Each record includes event and station identifiers, expedition number, latitude, longitude, UTC timestamp, water depth, δ¹⁸O, δD, and the d xs (deuterium‑excess) column.",
+    "keywords": [
+      "δ¹⁸O",
+      "δD",
+      "deuterium excess",
+      "water isotopes",
+      "Mackenzie River",
+      "Arctic",
+      "expedition",
+      "water depth"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20T15:34:00+00:00",
+      "to": "2019-09-08T12:00:00+00:00"
+    },
+    "spatial": "point data with ~10 m positional accuracy (6 decimal places)",
+    "temporal": "minute‑level resolution (UTC)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/937579_6c6cc19def66402a847b3d9ec1cdffa0.jsonl",
+  "runtime_seconds": 172.86,
+  "recovered_from_trace": true,
+  "source_sha256": "156fa955ff4d43d3d0a0f15b5f40e346e65b3ba52e0f21a776a715bde33d718e"
+}

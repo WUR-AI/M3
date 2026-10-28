@@ -1,0 +1,34 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "718278d739412e705994d1c4c4b5ec2861be8c8cb8cb0ca775d1f2e139bf8863",
+  "prompt_tokens": 5991,
+  "metadata": {
+    "name": "ANT 1997/98 EMR Radar Profile Dataset",
+    "description": "Collection of EMR radar profile files from the Antarctic 1997/98 season, including netCDF data, GIS KML files, and associated images for each profile ID.",
+    "keywords": [
+      "Antarctica",
+      "1997-1998",
+      "EMR",
+      "radar",
+      "profile",
+      "netCDF",
+      "KML",
+      "image"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.506,
+  "status": "ok"
+}

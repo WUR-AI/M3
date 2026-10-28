@@ -1,0 +1,29 @@
+{
+  "dataset_id": "spiranthes_ochroleuca",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/spiranthes_ochroleuca.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T21:09:58.026127+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 35.001456,
+      "min_lon": -89.351334,
+      "max_lat": 46.711733,
+      "max_lon": -59.945866
+    },
+    "temporalCoverage": {
+      "from": "1984-09-29T00:00:00+00:00",
+      "to": "2025-11-04T15:36:57+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/spiranthes_ochroleuca_1e7bf76e487f49c087be2944435c71d9.jsonl",
+  "runtime_seconds": 102.91,
+  "recovered_from_trace": true,
+  "source_sha256": "a9bddfa54fd9dd2d5ec0ce3259667796a658dcff4379d127566c46474efed0c4"
+}

@@ -17,11 +17,12 @@ import json
 import logging
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, Union, Type
 
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
 from langchain_core.tools import BaseTool
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from src.core.tool_trace import tool_result_is_error
 
 from ..config import (
     PLAYER_TEMPERATURE,
@@ -32,6 +33,7 @@ from ..config import (
 
 if TYPE_CHECKING:
     from src.core import ToolTrace
+    from src.core.run_trace import RunTraceRecorder
 
 
 def _stringify_message_content(content: Any) -> str:
@@ -151,16 +153,65 @@ class Player:
         self.require_tool_calls = require_tool_calls
         self.required_tools = list(required_tools or [])
 
-    def _missing_required_tools(self, tool_trace: List[Dict[str, Any]]) -> List[str]:
+    def _invoke_recorded(
+        self,
+        model: Any,
+        messages: List[Any],
+        *,
+        recorder: Optional["RunTraceRecorder"],
+        step_index: Optional[int],
+        phase: str,
+    ) -> Any:
+        if recorder is not None:
+            from src.core.run_trace import message_record
+
+            recorder.record(
+                "model_input", step_index=step_index, agent=self.name,
+                phase=phase, messages=[message_record(msg) for msg in messages],
+            )
+        try:
+            response = model.invoke(messages)
+        except Exception as exc:
+            if recorder is not None:
+                recorder.record(
+                    "model_error", step_index=step_index, agent=self.name,
+                    phase=phase, error=str(exc),
+                )
+            raise
+        if recorder is not None:
+            from src.core.run_trace import message_record
+
+            recorder.record(
+                "model_output", step_index=step_index, agent=self.name,
+                phase=phase, message=message_record(response),
+            )
+        return response
+
+    def _missing_required_tools(
+        self, tool_trace: List[Dict[str, Any]],
+        required_resources: Optional[List[str]] = None,
+    ) -> List[str]:
         if not self.require_tool_calls:
             return []
         called = {
             entry["tool"]
             for entry in tool_trace
-            if entry.get("source") == "llm" and "tool" in entry and "error" not in entry
+            if self._successful_tool_entry(entry)
         }
         if not self.required_tools:
             return [] if called else ["at least one assigned tool"]
+        if required_resources:
+            return [
+                f"{tool}(resource={resource!r})"
+                for resource in required_resources
+                for tool in self.required_tools
+                if not any(
+                    self._successful_tool_entry(entry)
+                    and entry.get("tool") == tool
+                    and (entry.get("args") or {}).get("resource") == resource
+                    for entry in tool_trace
+                )
+            ]
         return [tool for tool in self.required_tools if tool not in called]
 
     def _tool_call_matches(
@@ -173,6 +224,15 @@ class Player:
         actual_args = actual.get("args") or {}
         recommended_args = recommended.get("args") or {}
         return all(actual_args.get(key) == value for key, value in recommended_args.items())
+
+    @staticmethod
+    def _successful_tool_entry(entry: Dict[str, Any]) -> bool:
+        return (
+            entry.get("source") == "llm" and "tool" in entry
+            and "error" not in entry
+            and entry.get("result") is not None
+            and not tool_result_is_error(entry.get("result"))
+        )
 
     def _format_recommended_call(self, call: Dict[str, Any]) -> str:
         args = call.get("args") or {}
@@ -193,7 +253,7 @@ class Player:
         called = [
             entry
             for entry in tool_trace
-            if entry.get("source") == "llm" and "tool" in entry and "error" not in entry
+            if self._successful_tool_entry(entry)
         ]
         missing: List[str] = []
 
@@ -254,7 +314,7 @@ class Player:
         manifest = f"Player: {self.name}\n"
         manifest += f"  Description: {self.role_prompt}\n"
         tasks = [f"{tool.name}: {tool.description}" for tool in self.tools]
-        manifest += f"  Tools:\n" + "\n".join([f"    - {task}" for task in tasks])
+        manifest += "  Tools:\n" + "\n".join([f"    - {task}" for task in tasks])
         return manifest
 
     def _build_task_context_block(
@@ -291,7 +351,14 @@ class Player:
         ctx_info: str,
         tool_descriptions: str,
         tool_tracer: Optional["ToolTrace"] = None,
-    ) -> Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str]]:
+        messages: Optional[List[Any]] = None,
+        tool_results: Optional[Dict[str, Any]] = None,
+        tool_trace: Optional[List[Dict[str, Any]]] = None,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        phase: str = "initial",
+        required_resources: Optional[List[str]] = None,
+    ) -> Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str, List[Any]]]:
         """
         Optional model-driven tool calling. Returns None if bind_tools is unavailable.
         """
@@ -300,7 +367,7 @@ class Player:
                 "Player '%s': LLM tool loop skipped (no tools configured)",
                 self.name,
             )
-            return {}, [], ""
+            return {}, [], "", list(messages or [])
 
         tools_by_name = {t.name: t for t in self.tools}
         tool_names = [t.name for t in self.tools]
@@ -344,20 +411,21 @@ Input context from previous steps:
 
 {human_guidance}"""
 
-        messages: List[Union[SystemMessage, HumanMessage, AIMessage, ToolMessage]] = [
-            SystemMessage(content=system),
-            HumanMessage(content=human),
-        ]
-        tool_results: Dict[str, Any] = {}
-        tool_trace: List[Dict[str, Any]] = []
+        if messages is None:
+            messages = [SystemMessage(content=system), HumanMessage(content=human)]
+        tool_results = dict(tool_results or {})
+        tool_trace = list(tool_trace or [])
 
         for iteration in range(self.max_tool_iterations):
-            ai_msg: AIMessage = llm_tools.invoke(messages)
+            ai_msg: AIMessage = self._invoke_recorded(
+                llm_tools, messages, recorder=recorder,
+                step_index=step_index, phase=phase,
+            )
             messages.append(ai_msg)
             tcalls = list(getattr(ai_msg, "tool_calls", None) or [])
             if not tcalls:
                 text = _stringify_message_content(ai_msg.content)
-                missing = self._missing_required_tools(tool_trace)
+                missing = self._missing_required_tools(tool_trace, required_resources)
                 if missing:
                     logging.info(
                         "Player '%s': blocking finish — still need: %s",
@@ -400,7 +468,7 @@ Input context from previous steps:
                     iteration + 1,
                     len(tool_trace),
                 )
-                return tool_results, tool_trace, text
+                return tool_results, tool_trace, text, messages
 
             called_names = []
             for idx, tc in enumerate(tcalls):
@@ -412,7 +480,7 @@ Input context from previous steps:
                 if raw_args is None and isinstance(tc.get("function"), dict):
                     raw_args = tc["function"].get("arguments")
                 args = _normalize_tool_call_args(raw_args)
-                tid = tc.get("id") or f"iter{iteration}_tc{idx}"
+                tid = tc.get("id") or f"{phase}_iter{iteration}_tc{idx}"
 
                 tool = tools_by_name.get(name or "")
                 if tool is None:
@@ -428,6 +496,11 @@ Input context from previous steps:
                             tool_input=args,
                             output=out,
                         )
+                    if recorder is not None:
+                        recorder.record(
+                            "tool_output", step_index=step_index, agent=self.name,
+                            phase=phase, tool=name, arguments=args, output=out,
+                        )
                     messages.append(
                         ToolMessage(
                             content=_serialize_tool_result(out),
@@ -442,7 +515,7 @@ Input context from previous steps:
                     if tool.args_schema is not None:
                         merged = tool.args_schema.model_validate(merged).model_dump()
                     out = tool.invoke(merged)
-                except (ValidationError, Exception) as ex:
+                except Exception as ex:
                     out = {"error": str(ex)}
                     tool_trace.append(
                         {
@@ -468,8 +541,13 @@ Input context from previous steps:
                         tool_input=merged,
                         output=out,
                     )
+                if recorder is not None:
+                    recorder.record(
+                        "tool_output", step_index=step_index, agent=self.name,
+                        phase=phase, tool=name, arguments=merged, output=out,
+                    )
 
-                trace_key = f"llm:{iteration}:{tool.name}:{tid}"
+                trace_key = f"{phase}:{iteration}:{tool.name}:{tid}"
                 tool_results[trace_key] = out
                 messages.append(
                     ToolMessage(
@@ -486,10 +564,29 @@ Input context from previous steps:
                 ", ".join(called_names),
             )
 
-        final_nudge = HumanMessage(
-            content="Provide your final analysis for the task. Do not request more tools."
+        missing = self._missing_required_tools(tool_trace, required_resources)
+        missing_followups = self._missing_recommended_followups(tool_trace)
+        unmet = missing + missing_followups
+        nudge = "Provide your final analysis for the task. Do not request more tools."
+        if unmet:
+            logging.warning(
+                "Player '%s': tool iteration limit reached with unmet calls: %s. "
+                "Continuing with a final summary so the plan can proceed.",
+                self.name,
+                "; ".join(unmet),
+            )
+            nudge += (
+                " These calls were still unmet when the tool limit was reached: "
+                + "; ".join(unmet)
+                + ". State that they could not be completed and summarize the tool results you do have."
+            )
+        final_nudge = HumanMessage(content=nudge)
+        messages.append(final_nudge)
+        final_ai = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase=phase,
         )
-        final_ai = self.llm.invoke(messages + [final_nudge])
+        messages.append(final_ai)
         text = _stringify_message_content(final_ai.content)
         tool_trace.append(
             {"note": "max_tool_iterations reached; final summary without bind_tools", "source": "llm"}
@@ -501,7 +598,7 @@ Input context from previous steps:
             self.max_tool_iterations,
             len(tool_trace),
         )
-        return tool_results, tool_trace, text
+        return tool_results, tool_trace, text, messages
 
     def execute_task(
         self,
@@ -512,6 +609,8 @@ Input context from previous steps:
         inputs: Dict[str, str],
         target_resources: List[str] = None,
         tool_tracer: Optional["ToolTrace"] = None,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
     ) -> Dict[str, Any]:
         """
         Execute a specific task using available tools via LLM-driven tool calling.
@@ -580,8 +679,16 @@ Execute this task and provide a comprehensive response. Include:
             if resolved_inputs
             else "No inputs from previous steps."
         )
-
-        chain = prompt | self.llm | self._output_parser
+        if self.role_key in {
+            "metadata_generator", "croissant_metadata_generator",
+            "croissant_pangaea_metadata_generator",
+            "croissant_inaturalist_metadata_generator",
+        } and workspace.get("_verified_evidence"):
+            input_context += (
+                "\n\nVerified tool observations from previous steps "
+                "(prefer these to summaries when they conflict):\n"
+                + json.dumps(workspace["_verified_evidence"], ensure_ascii=False, default=str)
+            )
 
         target_info = (
             ", ".join(target_resources)
@@ -590,7 +697,7 @@ Execute this task and provide a comprehensive response. Include:
         )
 
         tool_trace: List[Dict[str, Any]] = []
-        llm_result: Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str]] = None
+        llm_result: Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str, List[Any]]] = None
 
         logging.info(
             "Player '%s' (role=%s): %d tool(s) available",
@@ -611,13 +718,15 @@ Execute this task and provide a comprehensive response. Include:
                 ctx_info=ctx_info,
                 tool_descriptions=tool_descriptions,
                 tool_tracer=tool_tracer,
+                recorder=recorder,
+                step_index=step_index,
+                required_resources=(target_resources or resources) if is_multi_csv else None,
             )
 
         if llm_result is not None:
-            tool_results, trace_llm, analysis_text = llm_result
-            tool_trace.extend(trace_llm)
+            tool_results, tool_trace, analysis_text, messages = llm_result
             llm_tool_calls = sum(
-                1 for e in trace_llm if e.get("source") == "llm" and "tool" in e
+                1 for e in tool_trace if e.get("source") == "llm" and "tool" in e
             )
             logging.info(
                 "Player '%s': using LLM tool path — %d tool result(s), "
@@ -627,46 +736,48 @@ Execute this task and provide a comprehensive response. Include:
                 llm_tool_calls,
             )
             if not analysis_text.strip():
-                analysis_text = chain.invoke(
-                    {
-                        "task": task,
-                        "target_resources": target_info,
-                        "input_context": input_context
-                        + "\n\nTool Results:\n"
-                        + str(tool_results),
-                    }
+                messages.append(HumanMessage(content="Summarize the verified tool results for this task."))
+                final_message = self._invoke_recorded(
+                    self.llm, messages, recorder=recorder,
+                    step_index=step_index, phase="initial",
                 )
+                messages.append(final_message)
+                analysis_text = _stringify_message_content(final_message.content)
+            if not analysis_text.strip():
+                raise RuntimeError("Player returned empty analysis")
             return {
                 "player": self.name,
                 "task": task,
                 "tool_results": tool_results,
                 "tool_trace": tool_trace,
                 "analysis": analysis_text,
+                "messages": messages,
                 "success": True,
                 "is_multi_csv": is_multi_csv,
             }
 
-        tool_results: Dict[str, Any] = {}
         if self.tools:
-            logging.warning(
-                "Player '%s': LLM tool calling unavailable — continuing with analysis only",
-                self.name,
-            )
+            raise RuntimeError(f"Tool calling is unavailable for player {self.name}")
 
-        llm_response = chain.invoke(
-            {
-                "task": task,
-                "target_resources": target_info,
-                "input_context": input_context,
-            }
+        messages = prompt.format_messages(
+            task=task, target_resources=target_info, input_context=input_context,
         )
+        llm_response = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase="initial",
+        )
+        messages.append(llm_response)
+        analysis = _stringify_message_content(llm_response.content)
+        if not analysis.strip():
+            raise RuntimeError("Player returned empty analysis")
 
         return {
             "player": self.name,
             "task": task,
-            "tool_results": tool_results,
+            "tool_results": {},
             "tool_trace": tool_trace,
-            "analysis": llm_response,
+            "analysis": analysis,
+            "messages": messages,
             "success": True,
             "is_multi_csv": is_multi_csv,
         }
@@ -724,7 +835,13 @@ Focus on what you can contribute based on your role.""",
             }
         )
 
-    def critique_work(self, task: str, other_players_work: Dict[str, str]) -> str:
+    def critique_work(
+        self, task: str, other_players_work: Dict[str, str],
+        *, recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        round_index: int = 0,
+        messages: Optional[List[Any]] = None,
+    ) -> Dict[str, Any]:
         """
         Critique the work of other players.
 
@@ -733,7 +850,7 @@ Focus on what you can contribute based on your role.""",
             other_players_work: Dictionary mapping player names to their work
 
         Returns:
-            Critique as a string
+            Critique and the continued conversation
         """
         prompt = ChatPromptTemplate.from_messages(
             [
@@ -760,74 +877,86 @@ Provide your critique. Focus on:
             ]
         )
 
-        chain = prompt | self.llm | self._output_parser
-
         other_work_str = "\n\n".join(
             f"=== {name} ===\n{work}" for name, work in other_players_work.items()
         )
-
-        return chain.invoke({"task": task, "other_work": other_work_str})
+        if messages is None:
+            messages = prompt.format_messages(task=task, other_work=other_work_str)
+        else:
+            messages = list(messages)
+            messages.append(HumanMessage(content=(
+                f"Task: {task}\nPeer work to critique:\n{other_work_str}\n\n"
+                "Check accuracy, completeness, and the cited tool evidence. "
+                "Give concrete feedback for the next revision."
+            )))
+        response = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase=f"critique_{round_index + 1}",
+        )
+        messages.append(response)
+        return {"analysis": _stringify_message_content(response.content), "messages": messages}
 
     def revise_work(
         self,
         task: str,
-        my_original_work: str,
+        messages: List[Any],
         critiques: List[str],
-    ) -> str:
-        """
-        Revise work based on critiques received.
-
-        Args:
-            task: The task being worked on
-            my_original_work: This player's original work
-            critiques: List of critiques from other players
-
-        Returns:
-            Revised work as a string
-        """
-        prompt = ChatPromptTemplate.from_messages(
-            [
-                SystemMessage(
-                    content=f"""You are {self.name}. {self.role_prompt}
-
-You are revising your work based on feedback from other analysts.
-Incorporate valid criticisms while maintaining your unique perspective."""
-                ),
-                (
-                    "human",
-                    """Task: {task}
-
-Your original work:
-{original_work}
-
-Critiques received:
-{critiques}
-
-Provide your revised analysis. Address the valid points raised in the critiques
-while maintaining accuracy and your analytical perspective.""",
-                ),
-            ]
-        )
-
-        chain = prompt | self.llm | self._output_parser
-
-        critiques_str = "\n\n".join(
-            f"Critique {i + 1}:\n{c}" for i, c in enumerate(critiques)
-        )
-
-        return chain.invoke(
-            {
-                "task": task,
-                "original_work": my_original_work,
-                "critiques": critiques_str,
-            }
-        )
+        *, context_key: str,
+        tool_results: Dict[str, Any],
+        tool_trace: List[Dict[str, Any]],
+        tool_tracer: Optional["ToolTrace"] = None,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        round_index: int = 1,
+        required_resources: Optional[List[str]] = None,
+    ) -> Dict[str, Any]:
+        """Continue this agent's own conversation, including its tool evidence."""
+        messages = list(messages)
+        feedback = "\n\n".join(critiques) if critiques else "No peer critique was available."
+        messages.append(HumanMessage(content=(
+            f"Task: {task}\nPeer feedback:\n{feedback}\n\n"
+            "Recheck your own tool evidence. Call tools again if the feedback reveals a "
+            "gap or a conflict. Give a revised answer grounded in successful tool results."
+        )))
+        phase = f"revision_{round_index}"
+        if self.tools:
+            result = self._run_llm_tool_loop(
+                context_key=context_key, task=task, target_resources="",
+                input_context="", ctx_info="", tool_descriptions="",
+                tool_tracer=tool_tracer, messages=messages,
+                tool_results=tool_results, tool_trace=tool_trace,
+                recorder=recorder, step_index=step_index, phase=phase,
+                required_resources=required_resources,
+            )
+            if result is None:
+                raise RuntimeError(f"Tool calling is unavailable for player {self.name}")
+            tool_results, tool_trace, analysis, messages = result
+        else:
+            response = self._invoke_recorded(
+                self.llm, messages, recorder=recorder,
+                step_index=step_index, phase=phase,
+            )
+            messages.append(response)
+            analysis = _stringify_message_content(response.content)
+        if not analysis.strip():
+            raise RuntimeError("Player returned empty revised analysis")
+        return {
+            "analysis": analysis,
+            "messages": messages,
+            "tool_results": tool_results,
+            "tool_trace": tool_trace,
+            "success": True,
+        }
 
     def synthesize_results(
         self,
         task: str,
         all_results: List[Dict[str, Any]],
         output_schema: Optional[Type[BaseModel]] = None,
+        *,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        conversation: Optional[List[Any]] = None,
     ) -> Union[str, BaseModel]:
         """
         Synthesize multiple results into a consolidated output.
@@ -846,10 +975,22 @@ while maintaining accuracy and your analytical perspective.""",
         results_str = _format_results_for_synthesis(all_results)
 
         if output_schema is not None:
-            return self._synthesize_structured(task, results_str, output_schema)
-        return self._synthesize_string(task, results_str)
+            return self._synthesize_structured(
+                task, results_str, output_schema,
+                recorder=recorder, step_index=step_index,
+                conversation=conversation,
+            )
+        return self._synthesize_string(
+            task, results_str, recorder=recorder, step_index=step_index,
+            conversation=conversation,
+        )
 
-    def _synthesize_string(self, task: str, results_str: str) -> str:
+    def _synthesize_string(
+        self, task: str, results_str: str,
+        *, recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        conversation: Optional[List[Any]] = None,
+    ) -> str:
         """Synthesize results as a string (legacy behavior)."""
         system_content = f"""You are {self.name}. {self.role_prompt}
 
@@ -885,15 +1026,28 @@ Provide the consolidated result for this task. Output only the result, no commen
             ]
         )
 
-        chain = prompt | self.llm | self._output_parser
-
-        return chain.invoke({"task": task, "all_results": results_str})
+        if conversation is not None:
+            messages = list(conversation) + [HumanMessage(content=(
+                f"Task: {task}\n\nAgent findings and conversations:\n{results_str}\n\n"
+                "Synthesize the final result. Preserve verified tool values and "
+                "resolve conflicts using the tool outputs. Output only the result."
+            ))]
+        else:
+            messages = prompt.format_messages(task=task, all_results=results_str)
+        response = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase="synthesis",
+        )
+        return _stringify_message_content(response.content)
 
     def _synthesize_structured(
         self,
         task: str,
         results_str: str,
         output_schema: Type[BaseModel],
+        *, recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        conversation: Optional[List[Any]] = None,
     ) -> BaseModel:
         """
         Synthesize results into a structured Pydantic model.
@@ -936,15 +1090,28 @@ Consolidate the above into the required structured output.""",
             ]
         )
 
-        inputs = {"task": task, "all_results": results_str}
+        if conversation is not None:
+            messages = list(conversation) + [HumanMessage(content=(
+                f"Task: {task}\n\nAgent findings and conversations:\n{results_str}\n\n"
+                "Return final metadata from the verified tool results and prior "
+                "analysis. Use the required structured schema."
+            ))]
+        else:
+            messages = prompt.format_messages(task=task, all_results=results_str)
         try:
-            chain = prompt | self.llm.with_structured_output(output_schema)
-            return chain.invoke(inputs)
+            model = self.llm.with_structured_output(output_schema)
+            return self._invoke_recorded(
+                model, messages, recorder=recorder,
+                step_index=step_index, phase="synthesis",
+            )
         except ValueError:
-            chain = prompt | self.llm.with_structured_output(
+            model = self.llm.with_structured_output(
                 output_schema, method="function_calling"
             )
-            return chain.invoke(inputs)
+            return self._invoke_recorded(
+                model, messages, recorder=recorder,
+                step_index=step_index, phase="synthesis_retry",
+            )
 
     def __repr__(self):
         return f"Player(name={self.name}, tools={len(self.tools)})"

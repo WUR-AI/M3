@@ -1,0 +1,133 @@
+{
+  "csv": "963353.csv",
+  "dataset_id": "963353",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d3518df69c24bf623efa16940fd790900b0a2d9177bc8d03033bd76598a0b5dd",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 7702,
+  "metadata": {
+    "name": "Ice/snow depth and density measurements from NM01_04_S01",
+    "description": "Dataset containing 53 ice/snow samples with depth and density measurements collected on 2004-12-29 at a single location in Antarctica (latitude -70.65491, longitude -8.25491). Includes Depth ice/snow, Density ice, Depth desc, and associated image references.",
+    "keywords": [
+      "ice",
+      "snow",
+      "depth",
+      "density",
+      "measurements",
+      "Antarctica",
+      "NM01_04_S01"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65491,
+      "min_lon": -8.25491,
+      "max_lat": -70.65491,
+      "max_lon": -8.25491
+    },
+    "temporalCoverage": {
+      "from": "2004-12-29",
+      "to": "2004-12-29"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "963353"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "n": 10
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "column": "Date/Time"
+      }
+    },
+    {
+      "tool": "analyze_spatial_column",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "column": "Latitude"
+      }
+    },
+    {
+      "tool": "analyze_spatial_column",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "field": "Sample no",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "963353"
+      }
+    },
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "963353"
+      }
+    }
+  ],
+  "runtime_seconds": 33.251,
+  "status": "ok"
+}

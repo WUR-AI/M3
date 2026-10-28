@@ -1,0 +1,41 @@
+{
+  "dataset_id": "971414",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971414.csv",
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:16:04.737797+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Kiwada Kazusa Chiba River Section Sediment Samples",
+    "description": "Dataset containing 19 geological or environmental sediment samples from the Kiwada Kazusa Chiba region, specifically from the Yuki River and Ono River sections. The data includes sample IDs, section locations, age estimates (ranging from 1198 to 1310 years), sedimentation rates (SR), and geographic coordinates (latitude and longitude). The samples are from a narrow temporal range around 1200 years ago.",
+    "keywords": [
+      "sediment",
+      "geology",
+      "Chiba",
+      "Kiwada",
+      "Kazusa",
+      "river section",
+      "sample",
+      "SR",
+      "sedimentation rate",
+      "age"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": null,
+    "spatial": "Point locations with latitude and longitude precision to 0.01 degrees",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971414_19cb2aaf08a0418cb87bc0a0ae070996.jsonl",
+  "runtime_seconds": 430.88
+}

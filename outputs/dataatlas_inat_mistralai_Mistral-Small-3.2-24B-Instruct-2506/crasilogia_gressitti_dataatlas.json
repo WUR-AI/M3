@@ -1,0 +1,16 @@
+{
+  "csv": "crasilogia_gressitti.csv",
+  "dataset_id": "crasilogia_gressitti",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 997,
+  "n_columns": 50,
+  "description": "Species occurrence data of Crasilogia gressitti, 997 records, 2014-2026.",
+  "dataset_description": "Species occurrence data in Biodiversity domain, 997 records, 2014-2026.",
+  "runtime_seconds": 39.272,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/crasilogia_gressitti/dictionary.json"
+}

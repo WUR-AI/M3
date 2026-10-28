@@ -1,0 +1,41 @@
+{
+  "csv": "984573.csv",
+  "dataset_id": "984573",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "091ca8fc4435bce03f857f31f55d706c49a7bb2568db46eb23333b3fc886c50a",
+  "contract_sha256": "a430b0a2c26b4d3f0f6cbb1fdb6eeed1af428024af04c2d1399621c070509364",
+  "prompt_tokens": 14125,
+  "metadata": {
+    "name": "IODP Expedition 383 Sediment Core SST and Age Data",
+    "description": "Dataset containing sediment core samples from IODP Expedition 383 (sites U1539A, U1539C, U1539D), including sample labels, sediment depth, age estimates, cluster assignments, Sea Surface Temperature (SST) reconstructions with standard deviation, geographic coordinates, and elevation.",
+    "keywords": [
+      "IODP",
+      "Expedition 383",
+      "SST",
+      "Sea Surface Temperature",
+      "Sediment Core",
+      "Paleoclimate",
+      "Age Model"
+    ],
+    "spatialCoverage": {
+      "min_lat": -56.1512,
+      "min_lon": -115.1341,
+      "max_lat": -56.151,
+      "max_lon": -115.1338
+    },
+    "temporalCoverage": {
+      "from": "2019-05-31",
+      "to": "2019-06-05"
+    },
+    "spatial": "point locations",
+    "temporal": "point samples"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.696,
+  "status": "ok"
+}

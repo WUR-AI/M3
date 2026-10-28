@@ -1,0 +1,134 @@
+{
+  "csv": "948933.csv",
+  "dataset_id": "948933",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 9198,
+  "metadata": {
+    "name": "Sylt trawl survey data",
+    "description": "Benthic trawl survey dataset containing 6 records collected in 2021. The data includes location coordinates (latitude/longitude), bathymetry depth, habitat type, Scomber scombrus (mackerel) total length and count measurements, salinity, and temperature data from trawl operations in the Sylt region.",
+    "keywords": [
+      "trawl",
+      "survey",
+      "Sylt",
+      "Scomber scombrus",
+      "mackerel",
+      "benthic",
+      "salinity",
+      "temperature",
+      "bathymetry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.996367,
+      "min_lon": 8.432083,
+      "max_lat": 55.056917,
+      "max_lon": 8.492533
+    },
+    "temporalCoverage": {
+      "from": "2021-06-29",
+      "to": "2021-09-07"
+    },
+    "spatial": "point locations",
+    "temporal": "discrete sampling events"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "948933"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "n": 6
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "field": "Sample label"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "field": "Event"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "field": "Habitat"
+      }
+    }
+  ],
+  "runtime_seconds": 31.57,
+  "status": "ok"
+}

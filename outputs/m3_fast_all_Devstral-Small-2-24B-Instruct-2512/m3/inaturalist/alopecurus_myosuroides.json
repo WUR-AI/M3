@@ -1,0 +1,28 @@
+{
+  "dataset_id": "alopecurus_myosuroides",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/alopecurus_myosuroides.csv",
+  "source_sha256": "a46c382b70da5d2ff45bb51559d0e5dd8f720d6e4d08ad5e097e3952b6fc26a3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T03:33:29.364674+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.955042,
+      "min_lon": -96.935464,
+      "max_lat": 56.466942,
+      "max_lon": 67.005317
+    },
+    "temporalCoverage": {
+      "from": "2003-05-23T15:18:00+00:00",
+      "to": "2026-06-13T13:12:17+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/alopecurus_myosuroides_a8d0c7a8b3e44e04bdceb8a925390e6f.jsonl",
+  "runtime_seconds": 151.99
+}

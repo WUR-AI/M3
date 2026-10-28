@@ -1,0 +1,15 @@
+{
+  "csv": "asemosyrphus_mexicanus.csv",
+  "dataset_id": "asemosyrphus_mexicanus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "fafc0b8a3151e28ebb764d5fc3f05e63c9c61d84297bd5602d32f68d165e231b",
+  "contract_sha256": "140e9c51646fbf0beda82e082d1d8973c212a5f48d9d0b3b0d88791c7e95e3be",
+  "prompt_tokens": 334817,
+  "status": "skipped",
+  "reason": "context_window"
+}

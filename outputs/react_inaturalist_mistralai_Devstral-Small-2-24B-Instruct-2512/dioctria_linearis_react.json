@@ -1,0 +1,52 @@
+{
+  "csv": "dioctria_linearis.csv",
+  "dataset_id": "dioctria_linearis",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1a233647f2b04f9f2da42159a0a851fcd3d6d3fb98445e7d62efacf06a668423",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 1628,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 37.959187,
+      "min_lon": -4.139842,
+      "max_lat": 56.946173,
+      "max_lon": 43.007263
+    },
+    "temporalCoverage": {
+      "from": "2005-06-05",
+      "to": "2026-06-15"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "dioctria_linearis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "dioctria_linearis",
+        "resource": "dioctria_linearis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "dioctria_linearis",
+        "resource": "dioctria_linearis",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.758,
+  "status": "ok"
+}

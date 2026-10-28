@@ -1,0 +1,50 @@
+{
+  "dataset_id": "967852",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/967852.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:48:51.271589+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Sample Measurements from Santiurde Section",
+    "description": "The dataset contains 19 sediment sample records from the Santiurde_section site. Each record includes identifiers (Sample ID, Sample label), thickness, ratio (partially missing), stratigraphic height, and mineral composition percentages (Qz, Clay, Cal, Gp, Dol, Py) together with constant geographic metadata (Latitude, Longitude, Elevation). The Date/Time field is entirely missing, so no temporal information is available.",
+    "keywords": [
+      "sediment",
+      "geology",
+      "sample",
+      "thickness",
+      "mineral composition",
+      "Qz",
+      "clay",
+      "calcite",
+      "gypsum",
+      "dolomite",
+      "pyrite",
+      "Santiurde",
+      "latitude",
+      "longitude",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 43.0685608,
+      "min_lon": -4.0878295,
+      "max_lat": 43.0685608,
+      "max_lon": -4.0878295
+    },
+    "temporalCoverage": {
+      "from": "",
+      "to": ""
+    },
+    "spatial": "point location (single coordinate pair)",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/967852_c907d066f9c94ab4874eba5bc4dfba6c.jsonl",
+  "runtime_seconds": 384.0,
+  "recovered_from_trace": true,
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8"
+}

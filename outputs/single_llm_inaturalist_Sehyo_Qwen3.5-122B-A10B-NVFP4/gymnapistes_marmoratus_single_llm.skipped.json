@@ -1,0 +1,15 @@
+{
+  "csv": "gymnapistes_marmoratus.csv",
+  "dataset_id": "gymnapistes_marmoratus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a04a55a9c464fd653fd1e20e1c01776721fcf58a9819ae2c1a659a45a9445a93",
+  "contract_sha256": "879e446ec70b923e699c493b0cc75db9d638a3ebccc282221f8b9daf8fe76786",
+  "prompt_tokens": 320254,
+  "status": "skipped",
+  "reason": "context_window"
+}

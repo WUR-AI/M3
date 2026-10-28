@@ -1,0 +1,16 @@
+{
+  "csv": "955790.csv",
+  "dataset_id": "955790",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 7,
+  "n_columns": 15,
+  "description": "Seven 1970 measurements of manganese nodules, including location, depth, and elemental concentrations.",
+  "dataset_description": "Seven records of Earth environmental measurements from September 2–25, 1970.",
+  "runtime_seconds": 65.77,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/955790/dictionary.json"
+}

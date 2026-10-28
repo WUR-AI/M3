@@ -1,0 +1,28 @@
+{
+  "dataset_id": "tachyeres_patachonicus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/tachyeres_patachonicus.csv",
+  "source_sha256": "adb66855c6df2864af4f59f851c55bc1e9d18246fa9bfd5165ba5d0b9df142ad",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T03:19:22.025472+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -54.999658,
+      "min_lon": -74.437159,
+      "max_lat": -35.675147,
+      "max_lon": -61.29013
+    },
+    "temporalCoverage": {
+      "from": "2002-11-30T00:00:00+00:00",
+      "to": "2026-05-31T15:25:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/tachyeres_patachonicus_bc4e4f49f23d4ff78077709efb741368.jsonl",
+  "runtime_seconds": 41.27
+}

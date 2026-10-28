@@ -1,0 +1,38 @@
+{
+  "dataset_id": "934330",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/934330.csv",
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:52:19.695958+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Stordalen_2 Sediment Core Data",
+    "description": "Sediment sampling data from a single core at the Stordalen_2 site (68.35°N, 19.05°E). The dataset contains 27 records with depth, sample thickness, and selective dating information (calendar age and uncertainty) for surface and deep layers. The 'Age' column represents the calendar age of the sediment layers, ranging from 1898 to 2003.",
+    "keywords": [
+      "sediment",
+      "core",
+      "dating",
+      "Stordalen",
+      "surface sample",
+      "depth",
+      "age uncertainty"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": null,
+    "spatial": "point",
+    "temporal": "single event"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/934330_9a0bccd048d94df9896e100177854895.jsonl",
+  "runtime_seconds": 459.09
+}

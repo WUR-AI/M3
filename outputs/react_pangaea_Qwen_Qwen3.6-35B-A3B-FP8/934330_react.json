@@ -1,0 +1,186 @@
+{
+  "csv": "934330.csv",
+  "dataset_id": "934330",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 9071,
+  "metadata": {
+    "name": "Stordalen permafrost peatland sediment core age-depth data",
+    "description": "Sediment core data from the Stordalen_2 permafrost peatland site in Sweden, containing 27 samples with depth measurements, sediment thickness, and radiocarbon ages ranging from 1898 to 2003. Includes 11 radiocarbon dated samples with dating material information (moss, Carex, Betula, sphagnum Lindbergii, beetle/bark) and laboratory labels from LuS and Poz laboratories.",
+    "keywords": [
+      "permafrost",
+      "peatland",
+      "sediment core",
+      "radiocarbon dating",
+      "Stordalen",
+      "age-depth model",
+      "Sweden",
+      "C14",
+      "Svalbard"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": {
+      "from": "1898-01-01",
+      "to": "2003-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular (1898-2003)"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "934330"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "time_column": "Age"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "time_column": "Age dated"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "field": "Age",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "field": "Dated material",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "field": "Comment",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "n": 27
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "934330",
+        "resource": "934330",
+        "field": "Lab label",
+        "limit": 20
+      }
+    }
+  ],
+  "runtime_seconds": 19.878,
+  "status": "ok"
+}

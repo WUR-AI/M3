@@ -1,0 +1,721 @@
+corpus,dataset_id,method,field,reference_present,prediction_present,correct,reference,prediction
+pangaea,899705,M3_thorough,min_lon,False,False,False,,
+pangaea,899705,M3_thorough,max_lon,False,False,False,,
+pangaea,899705,M3_thorough,min_lat,False,False,False,,
+pangaea,899705,M3_thorough,max_lat,False,False,False,,
+pangaea,899705,M3_thorough,min_time,False,False,False,,
+pangaea,899705,M3_thorough,max_time,False,False,False,,
+pangaea,899705,ReAct,min_lon,False,False,False,,
+pangaea,899705,ReAct,max_lon,False,False,False,,
+pangaea,899705,ReAct,min_lat,False,False,False,,
+pangaea,899705,ReAct,max_lat,False,False,False,,
+pangaea,899705,ReAct,min_time,False,False,False,,
+pangaea,899705,ReAct,max_time,False,False,False,,
+pangaea,899705,SingleLLM,min_lon,False,False,False,,
+pangaea,899705,SingleLLM,max_lon,False,False,False,,
+pangaea,899705,SingleLLM,min_lat,False,False,False,,
+pangaea,899705,SingleLLM,max_lat,False,False,False,,
+pangaea,899705,SingleLLM,min_time,False,True,False,,2010-01-01 00:00:00
+pangaea,899705,SingleLLM,max_time,False,True,False,,2015-12-31 00:00:00
+pangaea,913868,M3_thorough,min_lon,True,False,False,-8.25,
+pangaea,913868,M3_thorough,max_lon,True,False,False,-8.25,
+pangaea,913868,M3_thorough,min_lat,True,False,False,-70.65,
+pangaea,913868,M3_thorough,max_lat,True,False,False,-70.65,
+pangaea,913868,M3_thorough,min_time,True,False,False,2019-01-01 00:30:00,
+pangaea,913868,M3_thorough,max_time,True,False,False,2019-12-31 23:05:00,
+pangaea,913868,ReAct,min_lon,True,True,True,-8.25,-8.25
+pangaea,913868,ReAct,max_lon,True,True,True,-8.25,-8.25
+pangaea,913868,ReAct,min_lat,True,True,True,-70.65,-70.65
+pangaea,913868,ReAct,max_lat,True,True,True,-70.65,-70.65
+pangaea,913868,ReAct,min_time,True,True,True,2019-01-01 00:30:00,2019-01-01 00:30:00
+pangaea,913868,ReAct,max_time,True,True,True,2019-12-31 23:05:00,2019-12-31 23:05:00
+pangaea,913868,SingleLLM,min_lon,True,False,False,-8.25,
+pangaea,913868,SingleLLM,max_lon,True,False,False,-8.25,
+pangaea,913868,SingleLLM,min_lat,True,False,False,-70.65,
+pangaea,913868,SingleLLM,max_lat,True,False,False,-70.65,
+pangaea,913868,SingleLLM,min_time,True,False,False,2019-01-01 00:30:00,
+pangaea,913868,SingleLLM,max_time,True,False,False,2019-12-31 23:05:00,
+pangaea,917831,M3_thorough,min_lon,True,False,False,-108.75,
+pangaea,917831,M3_thorough,max_lon,True,False,False,-108.5,
+pangaea,917831,M3_thorough,min_lat,True,False,False,25.35,
+pangaea,917831,M3_thorough,max_lat,True,False,False,25.4,
+pangaea,917831,M3_thorough,min_time,True,False,False,2013-12-12 00:00:00,
+pangaea,917831,M3_thorough,max_time,True,False,False,2015-08-31 00:00:00,
+pangaea,917831,ReAct,min_lon,True,True,False,-108.75,-108.5
+pangaea,917831,ReAct,max_lon,True,True,True,-108.5,-108.5
+pangaea,917831,ReAct,min_lat,True,True,True,25.35,25.35
+pangaea,917831,ReAct,max_lat,True,True,False,25.4,25.35
+pangaea,917831,ReAct,min_time,True,True,True,2013-12-12 00:00:00,2013-12-12 00:00:00
+pangaea,917831,ReAct,max_time,True,True,True,2015-08-31 00:00:00,2015-08-31 00:00:00
+pangaea,917831,SingleLLM,min_lon,True,True,False,-108.75,-108.5
+pangaea,917831,SingleLLM,max_lon,True,True,True,-108.5,-108.5
+pangaea,917831,SingleLLM,min_lat,True,True,True,25.35,25.35
+pangaea,917831,SingleLLM,max_lat,True,True,False,25.4,25.35
+pangaea,917831,SingleLLM,min_time,True,True,True,2013-12-12 00:00:00,2013-12-12 00:00:00
+pangaea,917831,SingleLLM,max_time,True,True,True,2015-08-31 00:00:00,2015-08-31 00:00:00
+pangaea,917841,M3_thorough,min_lon,True,False,False,-108.75,
+pangaea,917841,M3_thorough,max_lon,True,False,False,-108.5,
+pangaea,917841,M3_thorough,min_lat,True,False,False,25.35,
+pangaea,917841,M3_thorough,max_lat,True,False,False,25.4,
+pangaea,917841,M3_thorough,min_time,True,False,False,2013-12-01 00:00:00,
+pangaea,917841,M3_thorough,max_time,True,False,False,2015-06-01 00:00:00,
+pangaea,917841,ReAct,min_lon,True,True,False,-108.75,-108.5
+pangaea,917841,ReAct,max_lon,True,True,True,-108.5,-108.5
+pangaea,917841,ReAct,min_lat,True,True,True,25.35,25.35
+pangaea,917841,ReAct,max_lat,True,True,False,25.4,25.35
+pangaea,917841,ReAct,min_time,True,True,True,2013-12-01 00:00:00,2013-12-01 00:00:00
+pangaea,917841,ReAct,max_time,True,True,True,2015-06-01 00:00:00,2015-06-01 00:00:00
+pangaea,917841,SingleLLM,min_lon,True,True,False,-108.75,-108.5
+pangaea,917841,SingleLLM,max_lon,True,True,True,-108.5,-108.5
+pangaea,917841,SingleLLM,min_lat,True,True,True,25.35,25.35
+pangaea,917841,SingleLLM,max_lat,True,True,False,25.4,25.35
+pangaea,917841,SingleLLM,min_time,True,True,True,2013-12-01 00:00:00,2013-12-01 00:00:00
+pangaea,917841,SingleLLM,max_time,True,True,True,2015-06-01 00:00:00,2015-06-01 00:00:00
+pangaea,944025,M3_thorough,min_lon,True,False,False,-117.0224333,
+pangaea,944025,M3_thorough,max_lon,True,False,False,-117.0224333,
+pangaea,944025,M3_thorough,min_lat,True,False,False,11.93056667,
+pangaea,944025,M3_thorough,max_lat,True,False,False,11.93056667,
+pangaea,944025,M3_thorough,min_time,True,False,False,2019-03-10 10:48:26,
+pangaea,944025,M3_thorough,max_time,True,False,False,2019-03-10 10:48:26,
+pangaea,944025,ReAct,min_lon,True,True,True,-117.0224333,-117.0224333
+pangaea,944025,ReAct,max_lon,True,True,True,-117.0224333,-117.0224333
+pangaea,944025,ReAct,min_lat,True,True,True,11.93056667,11.93056667
+pangaea,944025,ReAct,max_lat,True,True,True,11.93056667,11.93056667
+pangaea,944025,ReAct,min_time,True,True,True,2019-03-10 10:48:26,2019-03-10 10:48:26
+pangaea,944025,ReAct,max_time,True,True,True,2019-03-10 10:48:26,2019-03-10 10:48:26
+pangaea,944025,SingleLLM,min_lon,True,True,True,-117.0224333,-117.0224333
+pangaea,944025,SingleLLM,max_lon,True,True,True,-117.0224333,-117.0224333
+pangaea,944025,SingleLLM,min_lat,True,True,True,11.93056667,11.93056667
+pangaea,944025,SingleLLM,max_lat,True,True,True,11.93056667,11.93056667
+pangaea,944025,SingleLLM,min_time,True,True,True,2019-03-10 10:48:26,2019-03-10 00:00:00
+pangaea,944025,SingleLLM,max_time,True,True,True,2019-03-10 10:48:26,2019-03-10 00:00:00
+pangaea,953747,M3_thorough,min_lon,True,False,False,112.324519,
+pangaea,953747,M3_thorough,max_lon,True,False,False,112.324519,
+pangaea,953747,M3_thorough,min_lat,True,False,False,88.675993,
+pangaea,953747,M3_thorough,max_lat,True,False,False,88.675993,
+pangaea,953747,M3_thorough,min_time,True,False,False,2020-09-08 00:00:00,
+pangaea,953747,M3_thorough,max_time,True,False,False,2020-09-08 00:00:00,
+pangaea,953747,ReAct,min_lon,True,True,True,112.324519,112.324519
+pangaea,953747,ReAct,max_lon,True,True,True,112.324519,112.324519
+pangaea,953747,ReAct,min_lat,True,True,True,88.675993,88.675993
+pangaea,953747,ReAct,max_lat,True,True,True,88.675993,88.675993
+pangaea,953747,ReAct,min_time,True,True,True,2020-09-08 00:00:00,2020-09-08 00:00:00
+pangaea,953747,ReAct,max_time,True,True,True,2020-09-08 00:00:00,2020-09-08 00:00:00
+pangaea,953747,SingleLLM,min_lon,True,True,True,112.324519,112.324519
+pangaea,953747,SingleLLM,max_lon,True,True,True,112.324519,112.324519
+pangaea,953747,SingleLLM,min_lat,True,True,True,88.675993,88.675993
+pangaea,953747,SingleLLM,max_lat,True,True,True,88.675993,88.675993
+pangaea,953747,SingleLLM,min_time,True,True,True,2020-09-08 00:00:00,2020-09-08 00:00:00
+pangaea,953747,SingleLLM,max_time,True,True,True,2020-09-08 00:00:00,2020-09-08 00:00:00
+pangaea,958774,M3_thorough,min_lon,True,False,False,9.3754994815,
+pangaea,958774,M3_thorough,max_lon,True,False,False,9.3754994815,
+pangaea,958774,M3_thorough,min_lat,True,False,False,47.6240037651,
+pangaea,958774,M3_thorough,max_lat,True,False,False,47.6240037651,
+pangaea,958774,M3_thorough,min_time,False,False,False,,
+pangaea,958774,M3_thorough,max_time,False,False,False,,
+pangaea,958774,ReAct,min_lon,True,True,True,9.3754994815,9.3754994815
+pangaea,958774,ReAct,max_lon,True,True,True,9.3754994815,9.3754994815
+pangaea,958774,ReAct,min_lat,True,True,True,47.6240037651,47.6240037651
+pangaea,958774,ReAct,max_lat,True,True,True,47.6240037651,47.6240037651
+pangaea,958774,ReAct,min_time,False,True,False,,1951-01-01 00:00:00
+pangaea,958774,ReAct,max_time,False,True,False,,2010-12-31 00:00:00
+pangaea,958774,SingleLLM,min_lon,True,True,True,9.3754994815,9.3754994815
+pangaea,958774,SingleLLM,max_lon,True,True,True,9.3754994815,9.3754994815
+pangaea,958774,SingleLLM,min_lat,True,True,True,47.6240037651,47.6240037651
+pangaea,958774,SingleLLM,max_lat,True,True,True,47.6240037651,47.6240037651
+pangaea,958774,SingleLLM,min_time,False,True,False,,1951-01-01 00:00:00
+pangaea,958774,SingleLLM,max_time,False,True,False,,2010-12-31 00:00:00
+pangaea,959885,M3_thorough,min_lon,True,False,False,-28.56587,
+pangaea,959885,M3_thorough,max_lon,True,False,False,-28.56587,
+pangaea,959885,M3_thorough,min_lat,True,False,False,38.74553,
+pangaea,959885,M3_thorough,max_lat,True,False,False,38.74553,
+pangaea,959885,M3_thorough,min_time,True,False,False,2022-12-16 07:56:17,
+pangaea,959885,M3_thorough,max_time,True,False,False,2022-12-16 07:56:17,
+pangaea,959885,ReAct,min_lon,True,True,True,-28.56587,-28.56587
+pangaea,959885,ReAct,max_lon,True,True,True,-28.56587,-28.56587
+pangaea,959885,ReAct,min_lat,True,True,True,38.74553,38.74553
+pangaea,959885,ReAct,max_lat,True,True,True,38.74553,38.74553
+pangaea,959885,ReAct,min_time,True,True,True,2022-12-16 07:56:17,2022-12-16 07:56:17
+pangaea,959885,ReAct,max_time,True,True,True,2022-12-16 07:56:17,2022-12-16 07:56:17
+pangaea,959885,SingleLLM,min_lon,True,True,True,-28.56587,-28.56587
+pangaea,959885,SingleLLM,max_lon,True,True,True,-28.56587,-28.56587
+pangaea,959885,SingleLLM,min_lat,True,True,True,38.74553,38.74553
+pangaea,959885,SingleLLM,max_lat,True,True,True,38.74553,38.74553
+pangaea,959885,SingleLLM,min_time,True,True,True,2022-12-16 07:56:17,2022-12-16 00:00:00
+pangaea,959885,SingleLLM,max_time,True,True,True,2022-12-16 07:56:17,2022-12-16 00:00:00
+pangaea,961119,M3_thorough,min_lon,False,False,False,,
+pangaea,961119,M3_thorough,max_lon,False,False,False,,
+pangaea,961119,M3_thorough,min_lat,False,False,False,,
+pangaea,961119,M3_thorough,max_lat,False,False,False,,
+pangaea,961119,M3_thorough,min_time,False,False,False,,
+pangaea,961119,M3_thorough,max_time,False,False,False,,
+pangaea,961119,ReAct,min_lon,False,False,False,,
+pangaea,961119,ReAct,max_lon,False,False,False,,
+pangaea,961119,ReAct,min_lat,False,False,False,,
+pangaea,961119,ReAct,max_lat,False,False,False,,
+pangaea,961119,ReAct,min_time,False,False,False,,
+pangaea,961119,ReAct,max_time,False,False,False,,
+pangaea,961119,SingleLLM,min_lon,False,False,False,,
+pangaea,961119,SingleLLM,max_lon,False,False,False,,
+pangaea,961119,SingleLLM,min_lat,False,False,False,,
+pangaea,961119,SingleLLM,max_lat,False,False,False,,
+pangaea,961119,SingleLLM,min_time,False,False,False,,
+pangaea,961119,SingleLLM,max_time,False,False,False,,
+pangaea,961147,M3_thorough,min_lon,True,False,False,-158.259,
+pangaea,961147,M3_thorough,max_lon,True,False,False,179.03683333333333,
+pangaea,961147,M3_thorough,min_lat,True,False,False,-69.0392,
+pangaea,961147,M3_thorough,max_lat,True,False,False,50.941,
+pangaea,961147,M3_thorough,min_time,True,False,False,2004-04-12 23:45:00,
+pangaea,961147,M3_thorough,max_time,True,False,False,2021-05-27 19:26:00,
+pangaea,961147,ReAct,min_lon,True,True,True,-158.259,-158.259
+pangaea,961147,ReAct,max_lon,True,True,True,179.03683333333333,179.03683
+pangaea,961147,ReAct,min_lat,True,True,True,-69.0392,-69.0392
+pangaea,961147,ReAct,max_lat,True,True,True,50.941,50.941
+pangaea,961147,ReAct,min_time,True,True,True,2004-04-12 23:45:00,2004-04-12 23:45:00
+pangaea,961147,ReAct,max_time,True,True,True,2021-05-27 19:26:00,2021-05-27 19:26:00
+pangaea,961147,SingleLLM,min_lon,True,True,False,-158.259,-145.0
+pangaea,961147,SingleLLM,max_lon,True,True,False,179.03683333333333,-42.7475
+pangaea,961147,SingleLLM,min_lat,True,True,False,-69.0392,-44.338
+pangaea,961147,SingleLLM,max_lat,True,True,True,50.941,50.941
+pangaea,961147,SingleLLM,min_time,True,True,True,2004-04-12 23:45:00,2004-04-12 23:45:00
+pangaea,961147,SingleLLM,max_time,True,True,False,2021-05-27 19:26:00,2008-06-10 01:54:00
+pangaea,963863,M3_thorough,min_lon,True,False,False,-118.100658,
+pangaea,963863,M3_thorough,max_lon,True,False,False,-115.9835,
+pangaea,963863,M3_thorough,min_lat,True,False,False,51.28495,
+pangaea,963863,M3_thorough,max_lat,True,False,False,52.916146,
+pangaea,963863,M3_thorough,min_time,True,False,False,2019-05-14 00:00:00,
+pangaea,963863,M3_thorough,max_time,True,False,False,2023-06-14 00:00:00,
+pangaea,963863,ReAct,min_lon,True,False,False,-118.100658,
+pangaea,963863,ReAct,max_lon,True,False,False,-115.9835,
+pangaea,963863,ReAct,min_lat,True,False,False,51.28495,
+pangaea,963863,ReAct,max_lat,True,False,False,52.916146,
+pangaea,963863,ReAct,min_time,True,False,False,2019-05-14 00:00:00,
+pangaea,963863,ReAct,max_time,True,False,False,2023-06-14 00:00:00,
+pangaea,963863,SingleLLM,min_lon,True,False,False,-118.100658,
+pangaea,963863,SingleLLM,max_lon,True,False,False,-115.9835,
+pangaea,963863,SingleLLM,min_lat,True,False,False,51.28495,
+pangaea,963863,SingleLLM,max_lat,True,False,False,52.916146,
+pangaea,963863,SingleLLM,min_time,True,False,False,2019-05-14 00:00:00,
+pangaea,963863,SingleLLM,max_time,True,False,False,2023-06-14 00:00:00,
+pangaea,965135,M3_thorough,min_lon,True,False,False,-149.4225,
+pangaea,965135,M3_thorough,max_lon,True,False,False,-149.4225,
+pangaea,965135,M3_thorough,min_lat,True,False,False,-17.506944,
+pangaea,965135,M3_thorough,max_lat,True,False,False,-17.506944,
+pangaea,965135,M3_thorough,min_time,True,False,False,2008-07-01 00:00:00,
+pangaea,965135,M3_thorough,max_time,True,False,False,2008-07-01 00:00:00,
+pangaea,965135,ReAct,min_lon,True,True,True,-149.4225,-149.4225
+pangaea,965135,ReAct,max_lon,True,True,True,-149.4225,-149.4225
+pangaea,965135,ReAct,min_lat,True,True,True,-17.506944,-17.506944
+pangaea,965135,ReAct,max_lat,True,True,True,-17.506944,-17.506944
+pangaea,965135,ReAct,min_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,965135,ReAct,max_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,965135,SingleLLM,min_lon,True,True,True,-149.4225,-149.4225
+pangaea,965135,SingleLLM,max_lon,True,True,True,-149.4225,-149.4225
+pangaea,965135,SingleLLM,min_lat,True,True,True,-17.506944,-17.506944
+pangaea,965135,SingleLLM,max_lat,True,True,True,-17.506944,-17.506944
+pangaea,965135,SingleLLM,min_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,965135,SingleLLM,max_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,965137,M3_thorough,min_lon,True,False,False,-149.4225,
+pangaea,965137,M3_thorough,max_lon,True,False,False,-149.4225,
+pangaea,965137,M3_thorough,min_lat,True,False,False,-17.506944,
+pangaea,965137,M3_thorough,max_lat,True,False,False,-17.506944,
+pangaea,965137,M3_thorough,min_time,True,False,False,2008-07-01 00:00:00,
+pangaea,965137,M3_thorough,max_time,True,False,False,2008-07-01 00:00:00,
+pangaea,965137,ReAct,min_lon,True,True,True,-149.4225,-149.4225
+pangaea,965137,ReAct,max_lon,True,True,True,-149.4225,-149.4225
+pangaea,965137,ReAct,min_lat,True,True,True,-17.506944,-17.506944
+pangaea,965137,ReAct,max_lat,True,True,True,-17.506944,-17.506944
+pangaea,965137,ReAct,min_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,965137,ReAct,max_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,965137,SingleLLM,min_lon,True,True,True,-149.4225,-149.4225
+pangaea,965137,SingleLLM,max_lon,True,True,True,-149.4225,-149.4225
+pangaea,965137,SingleLLM,min_lat,True,True,True,-17.506944,-17.506944
+pangaea,965137,SingleLLM,max_lat,True,True,True,-17.506944,-17.506944
+pangaea,965137,SingleLLM,min_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,965137,SingleLLM,max_time,True,True,True,2008-07-01 00:00:00,2008-07-01 00:00:00
+pangaea,971851,M3_thorough,min_lon,True,False,False,-61.976999999999975,
+pangaea,971851,M3_thorough,max_lon,True,False,False,-61.252999999999986,
+pangaea,971851,M3_thorough,min_lat,True,False,False,80.97,
+pangaea,971851,M3_thorough,max_lat,True,False,False,81.194,
+pangaea,971851,M3_thorough,min_time,True,False,False,2015-08-25 00:00:00,
+pangaea,971851,M3_thorough,max_time,True,False,False,2019-08-03 12:35:00,
+pangaea,971851,ReAct,min_lon,True,True,False,-61.976999999999975,-178.9145776
+pangaea,971851,ReAct,max_lon,True,True,False,-61.252999999999986,179.7489502
+pangaea,971851,ReAct,min_lat,True,True,False,80.97,49.84240779
+pangaea,971851,ReAct,max_lat,True,True,False,81.194,83.74256561
+pangaea,971851,ReAct,min_time,True,False,False,2015-08-25 00:00:00,
+pangaea,971851,ReAct,max_time,True,False,False,2019-08-03 12:35:00,
+pangaea,971851,SingleLLM,min_lon,True,True,False,-61.976999999999975,-178.9145776
+pangaea,971851,SingleLLM,max_lon,True,True,False,-61.252999999999986,179.675696
+pangaea,971851,SingleLLM,min_lat,True,True,False,80.97,50.62362773
+pangaea,971851,SingleLLM,max_lat,True,True,False,81.194,85.98467611
+pangaea,971851,SingleLLM,min_time,True,False,False,2015-08-25 00:00:00,
+pangaea,971851,SingleLLM,max_time,True,False,False,2019-08-03 12:35:00,
+pangaea,972178,M3_thorough,min_lon,True,False,False,9.998824433,
+pangaea,972178,M3_thorough,max_lon,True,False,False,10.665403447,
+pangaea,972178,M3_thorough,min_lat,True,False,False,48.79899472,
+pangaea,972178,M3_thorough,max_lat,True,False,False,49.198954373,
+pangaea,972178,M3_thorough,min_time,True,False,False,1985-05-01 00:00:00,
+pangaea,972178,M3_thorough,max_time,True,False,False,2023-10-31 00:00:00,
+pangaea,972178,ReAct,min_lon,True,True,True,9.998824433,9.998824
+pangaea,972178,ReAct,max_lon,True,True,False,10.665403447,9.998824
+pangaea,972178,ReAct,min_lat,True,True,True,48.79899472,48.798995
+pangaea,972178,ReAct,max_lat,True,True,False,49.198954373,48.798995
+pangaea,972178,ReAct,min_time,True,True,False,1985-05-01 00:00:00,1984-08-01 00:00:00
+pangaea,972178,ReAct,max_time,True,True,False,2023-10-31 00:00:00,1986-10-31 00:00:00
+pangaea,972178,SingleLLM,min_lon,True,True,True,9.998824433,9.998824433
+pangaea,972178,SingleLLM,max_lon,True,True,False,10.665403447,9.998824433
+pangaea,972178,SingleLLM,min_lat,True,True,True,48.79899472,48.79899472
+pangaea,972178,SingleLLM,max_lat,True,True,False,49.198954373,48.79899472
+pangaea,972178,SingleLLM,min_time,True,True,False,1985-05-01 00:00:00,1984-08-01 00:00:00
+pangaea,972178,SingleLLM,max_time,True,True,True,2023-10-31 00:00:00,2023-10-31 00:00:00
+pangaea,973035,M3_thorough,min_lon,True,False,False,10.511505,
+pangaea,973035,M3_thorough,max_lon,True,False,False,10.512653,
+pangaea,973035,M3_thorough,min_lat,True,False,False,48.867173,
+pangaea,973035,M3_thorough,max_lat,True,False,False,48.868228,
+pangaea,973035,M3_thorough,min_time,True,False,False,2023-04-03 09:00:00,
+pangaea,973035,M3_thorough,max_time,True,False,False,2023-04-03 16:00:00,
+pangaea,973035,ReAct,min_lon,True,True,True,10.511505,10.5115
+pangaea,973035,ReAct,max_lon,True,True,True,10.512653,10.5127
+pangaea,973035,ReAct,min_lat,True,True,True,48.867173,48.8672
+pangaea,973035,ReAct,max_lat,True,True,True,48.868228,48.8682
+pangaea,973035,ReAct,min_time,True,True,True,2023-04-03 09:00:00,2023-04-03 09:00:00
+pangaea,973035,ReAct,max_time,True,True,True,2023-04-03 16:00:00,2023-04-03 09:00:00
+pangaea,973035,SingleLLM,min_lon,True,True,True,10.511505,10.5115
+pangaea,973035,SingleLLM,max_lon,True,True,True,10.512653,10.5127
+pangaea,973035,SingleLLM,min_lat,True,True,True,48.867173,48.8672
+pangaea,973035,SingleLLM,max_lat,True,True,True,48.868228,48.8682
+pangaea,973035,SingleLLM,min_time,True,True,True,2023-04-03 09:00:00,2023-04-03 00:00:00
+pangaea,973035,SingleLLM,max_time,True,True,True,2023-04-03 16:00:00,2023-04-03 00:00:00
+pangaea,973041,M3_thorough,min_lon,False,False,False,,
+pangaea,973041,M3_thorough,max_lon,False,False,False,,
+pangaea,973041,M3_thorough,min_lat,False,False,False,,
+pangaea,973041,M3_thorough,max_lat,False,False,False,,
+pangaea,973041,M3_thorough,min_time,False,False,False,,
+pangaea,973041,M3_thorough,max_time,False,False,False,,
+pangaea,973041,ReAct,min_lon,False,False,False,,
+pangaea,973041,ReAct,max_lon,False,False,False,,
+pangaea,973041,ReAct,min_lat,False,False,False,,
+pangaea,973041,ReAct,max_lat,False,False,False,,
+pangaea,973041,ReAct,min_time,False,False,False,,
+pangaea,973041,ReAct,max_time,False,False,False,,
+pangaea,973041,SingleLLM,min_lon,False,False,False,,
+pangaea,973041,SingleLLM,max_lon,False,False,False,,
+pangaea,973041,SingleLLM,min_lat,False,False,False,,
+pangaea,973041,SingleLLM,max_lat,False,False,False,,
+pangaea,973041,SingleLLM,min_time,False,False,False,,
+pangaea,973041,SingleLLM,max_time,False,False,False,,
+pangaea,982395,M3_thorough,min_lon,True,False,False,12.079572,
+pangaea,982395,M3_thorough,max_lon,True,False,False,12.08452778,
+pangaea,982395,M3_thorough,min_lat,True,False,False,51.410785,
+pangaea,982395,M3_thorough,max_lat,True,False,False,51.41327778,
+pangaea,982395,M3_thorough,min_time,True,False,False,2018-07-22 00:00:00,
+pangaea,982395,M3_thorough,max_time,True,False,False,2019-08-12 00:00:00,
+pangaea,982395,ReAct,min_lon,True,True,False,12.079572,12.08452778
+pangaea,982395,ReAct,max_lon,True,True,True,12.08452778,12.08452778
+pangaea,982395,ReAct,min_lat,True,True,False,51.410785,51.41327778
+pangaea,982395,ReAct,max_lat,True,True,True,51.41327778,51.41327778
+pangaea,982395,ReAct,min_time,True,True,True,2018-07-22 00:00:00,2018-07-22 00:00:00
+pangaea,982395,ReAct,max_time,True,True,False,2019-08-12 00:00:00,2018-07-22 00:00:00
+pangaea,982395,SingleLLM,min_lon,True,True,True,12.079572,12.079572
+pangaea,982395,SingleLLM,max_lon,True,True,True,12.08452778,12.08452778
+pangaea,982395,SingleLLM,min_lat,True,True,True,51.410785,51.410785
+pangaea,982395,SingleLLM,max_lat,True,True,True,51.41327778,51.41327778
+pangaea,982395,SingleLLM,min_time,True,True,True,2018-07-22 00:00:00,2018-07-22 00:00:00
+pangaea,982395,SingleLLM,max_time,True,True,True,2019-08-12 00:00:00,2019-08-12 00:00:00
+pangaea,987056,M3_thorough,min_lon,True,False,False,-87.170283333333,
+pangaea,987056,M3_thorough,max_lon,True,False,False,-87.170283333333,
+pangaea,987056,M3_thorough,min_lat,True,False,False,23.82405,
+pangaea,987056,M3_thorough,max_lat,True,False,False,23.82405,
+pangaea,987056,M3_thorough,min_time,True,False,False,2012-03-22 23:07:00,
+pangaea,987056,M3_thorough,max_time,True,False,False,2012-03-22 23:07:00,
+pangaea,987056,ReAct,min_lon,True,True,True,-87.170283333333,-87.170283333333
+pangaea,987056,ReAct,max_lon,True,True,True,-87.170283333333,-87.170283333333
+pangaea,987056,ReAct,min_lat,True,True,True,23.82405,23.82405
+pangaea,987056,ReAct,max_lat,True,True,True,23.82405,23.82405
+pangaea,987056,ReAct,min_time,True,True,True,2012-03-22 23:07:00,2012-03-22 23:07:00
+pangaea,987056,ReAct,max_time,True,True,True,2012-03-22 23:07:00,2012-03-22 23:07:00
+pangaea,987056,SingleLLM,min_lon,True,True,True,-87.170283333333,-87.170283333333
+pangaea,987056,SingleLLM,max_lon,True,True,True,-87.170283333333,-87.170283333333
+pangaea,987056,SingleLLM,min_lat,True,True,True,23.82405,23.82405
+pangaea,987056,SingleLLM,max_lat,True,True,True,23.82405,23.82405
+pangaea,987056,SingleLLM,min_time,True,True,True,2012-03-22 23:07:00,2012-03-22 00:00:00
+pangaea,987056,SingleLLM,max_time,True,True,True,2012-03-22 23:07:00,2012-03-22 00:00:00
+pangaea,990054,M3_thorough,min_lon,True,False,False,-0.485,
+pangaea,990054,M3_thorough,max_lon,True,False,False,126.3299,
+pangaea,990054,M3_thorough,min_lat,True,False,False,80.7709,
+pangaea,990054,M3_thorough,max_lat,True,False,False,88.0708,
+pangaea,990054,M3_thorough,min_time,True,False,False,2019-10-28 00:00:00,
+pangaea,990054,M3_thorough,max_time,True,False,False,2020-07-20 00:00:00,
+pangaea,990054,ReAct,min_lon,True,True,True,-0.485,-0.485
+pangaea,990054,ReAct,max_lon,True,True,True,126.3299,126.3299
+pangaea,990054,ReAct,min_lat,True,True,True,80.7709,80.7709
+pangaea,990054,ReAct,max_lat,True,True,True,88.0708,88.0708
+pangaea,990054,ReAct,min_time,True,True,True,2019-10-28 00:00:00,2019-10-28 00:00:00
+pangaea,990054,ReAct,max_time,True,True,True,2020-07-20 00:00:00,2020-07-20 00:00:00
+pangaea,990054,SingleLLM,min_lon,True,True,True,-0.485,-0.485
+pangaea,990054,SingleLLM,max_lon,True,True,True,126.3299,126.3299
+pangaea,990054,SingleLLM,min_lat,True,True,True,80.7709,80.7709
+pangaea,990054,SingleLLM,max_lat,True,True,True,88.0708,88.0708
+pangaea,990054,SingleLLM,min_time,True,True,True,2019-10-28 00:00:00,2019-10-28 00:00:00
+pangaea,990054,SingleLLM,max_time,True,True,True,2020-07-20 00:00:00,2020-07-20 00:00:00
+inaturalist,acianthus_fornicatus,M3_thorough,min_lon,True,False,False,145.459858,
+inaturalist,acianthus_fornicatus,M3_thorough,max_lon,True,False,False,153.748307,
+inaturalist,acianthus_fornicatus,M3_thorough,min_lat,True,False,False,-37.349986,
+inaturalist,acianthus_fornicatus,M3_thorough,max_lat,True,False,False,-17.177542,
+inaturalist,acianthus_fornicatus,M3_thorough,min_time,True,False,False,1994-07-03 15:36:00,
+inaturalist,acianthus_fornicatus,M3_thorough,max_time,True,False,False,2026-06-15 14:39:53,
+inaturalist,acianthus_fornicatus,ReAct,min_lon,True,True,True,145.459858,145.459858
+inaturalist,acianthus_fornicatus,ReAct,max_lon,True,True,True,153.748307,153.748307
+inaturalist,acianthus_fornicatus,ReAct,min_lat,True,True,True,-37.349986,-37.349986
+inaturalist,acianthus_fornicatus,ReAct,max_lat,True,True,True,-17.177542,-17.177542
+inaturalist,acianthus_fornicatus,ReAct,min_time,True,True,True,1994-07-03 15:36:00,1994-07-03 15:36:00
+inaturalist,acianthus_fornicatus,ReAct,max_time,True,True,True,2026-06-15 14:39:53,2026-06-15 14:39:53
+inaturalist,acianthus_fornicatus,SingleLLM,min_lon,True,False,False,145.459858,
+inaturalist,acianthus_fornicatus,SingleLLM,max_lon,True,False,False,153.748307,
+inaturalist,acianthus_fornicatus,SingleLLM,min_lat,True,False,False,-37.349986,
+inaturalist,acianthus_fornicatus,SingleLLM,max_lat,True,False,False,-17.177542,
+inaturalist,acianthus_fornicatus,SingleLLM,min_time,True,False,False,1994-07-03 15:36:00,
+inaturalist,acianthus_fornicatus,SingleLLM,max_time,True,False,False,2026-06-15 14:39:53,
+inaturalist,amyema_preissii,M3_thorough,min_lon,True,False,False,113.553928,
+inaturalist,amyema_preissii,M3_thorough,max_lon,True,False,False,147.263089,
+inaturalist,amyema_preissii,M3_thorough,min_lat,True,False,False,-38.599571,
+inaturalist,amyema_preissii,M3_thorough,max_lat,True,False,False,-20.854222,
+inaturalist,amyema_preissii,M3_thorough,min_time,True,False,False,1990-01-23 12:15:00,
+inaturalist,amyema_preissii,M3_thorough,max_time,True,False,False,2026-06-14 11:26:03,
+inaturalist,amyema_preissii,ReAct,min_lon,True,True,True,113.553928,113.553928
+inaturalist,amyema_preissii,ReAct,max_lon,True,True,True,147.263089,147.263089
+inaturalist,amyema_preissii,ReAct,min_lat,True,True,True,-38.599571,-38.599571
+inaturalist,amyema_preissii,ReAct,max_lat,True,True,True,-20.854222,-20.854222
+inaturalist,amyema_preissii,ReAct,min_time,True,True,False,1990-01-23 12:15:00,1990-01-23 00:00:00
+inaturalist,amyema_preissii,ReAct,max_time,True,True,False,2026-06-14 11:26:03,2026-06-14 00:00:00
+inaturalist,amyema_preissii,SingleLLM,min_lon,True,False,False,113.553928,
+inaturalist,amyema_preissii,SingleLLM,max_lon,True,False,False,147.263089,
+inaturalist,amyema_preissii,SingleLLM,min_lat,True,False,False,-38.599571,
+inaturalist,amyema_preissii,SingleLLM,max_lat,True,False,False,-20.854222,
+inaturalist,amyema_preissii,SingleLLM,min_time,True,False,False,1990-01-23 12:15:00,
+inaturalist,amyema_preissii,SingleLLM,max_time,True,False,False,2026-06-14 11:26:03,
+inaturalist,asemosyrphus_mexicanus,M3_thorough,min_lon,True,False,False,-105.80497,
+inaturalist,asemosyrphus_mexicanus,M3_thorough,max_lon,True,False,False,-71.151672,
+inaturalist,asemosyrphus_mexicanus,M3_thorough,min_lat,True,False,False,-7.201442,
+inaturalist,asemosyrphus_mexicanus,M3_thorough,max_lat,True,False,False,28.295121,
+inaturalist,asemosyrphus_mexicanus,M3_thorough,min_time,True,False,False,1994-07-03 00:00:00,
+inaturalist,asemosyrphus_mexicanus,M3_thorough,max_time,True,False,False,2026-06-07 10:49:00,
+inaturalist,asemosyrphus_mexicanus,ReAct,min_lon,True,True,True,-105.80497,-105.80497
+inaturalist,asemosyrphus_mexicanus,ReAct,max_lon,True,True,True,-71.151672,-71.151672
+inaturalist,asemosyrphus_mexicanus,ReAct,min_lat,True,True,True,-7.201442,-7.201442
+inaturalist,asemosyrphus_mexicanus,ReAct,max_lat,True,True,True,28.295121,28.295121
+inaturalist,asemosyrphus_mexicanus,ReAct,min_time,True,True,True,1994-07-03 00:00:00,1994-07-03 00:00:00
+inaturalist,asemosyrphus_mexicanus,ReAct,max_time,True,True,False,2026-06-07 10:49:00,2026-06-07 00:00:00
+inaturalist,asemosyrphus_mexicanus,SingleLLM,min_lon,True,False,False,-105.80497,
+inaturalist,asemosyrphus_mexicanus,SingleLLM,max_lon,True,False,False,-71.151672,
+inaturalist,asemosyrphus_mexicanus,SingleLLM,min_lat,True,False,False,-7.201442,
+inaturalist,asemosyrphus_mexicanus,SingleLLM,max_lat,True,False,False,28.295121,
+inaturalist,asemosyrphus_mexicanus,SingleLLM,min_time,True,False,False,1994-07-03 00:00:00,
+inaturalist,asemosyrphus_mexicanus,SingleLLM,max_time,True,False,False,2026-06-07 10:49:00,
+inaturalist,chlorurus_bleekeri,M3_thorough,min_lon,True,False,False,-174.742082,
+inaturalist,chlorurus_bleekeri,M3_thorough,max_lon,True,False,False,179.995321,
+inaturalist,chlorurus_bleekeri,M3_thorough,min_lat,True,False,False,-23.303405,
+inaturalist,chlorurus_bleekeri,M3_thorough,max_lat,True,False,False,13.728148,
+inaturalist,chlorurus_bleekeri,M3_thorough,min_time,True,False,False,2004-08-05 00:00:00,
+inaturalist,chlorurus_bleekeri,M3_thorough,max_time,True,False,False,2026-06-08 18:04:05,
+inaturalist,chlorurus_bleekeri,ReAct,min_lon,True,True,True,-174.742082,-174.742082
+inaturalist,chlorurus_bleekeri,ReAct,max_lon,True,True,True,179.995321,179.995321
+inaturalist,chlorurus_bleekeri,ReAct,min_lat,True,True,True,-23.303405,-23.303405
+inaturalist,chlorurus_bleekeri,ReAct,max_lat,True,True,True,13.728148,13.728148
+inaturalist,chlorurus_bleekeri,ReAct,min_time,True,True,True,2004-08-05 00:00:00,2004-08-05 00:00:00
+inaturalist,chlorurus_bleekeri,ReAct,max_time,True,True,True,2026-06-08 18:04:05,2026-06-08 18:04:05
+inaturalist,chlorurus_bleekeri,SingleLLM,min_lon,True,False,False,-174.742082,
+inaturalist,chlorurus_bleekeri,SingleLLM,max_lon,True,False,False,179.995321,
+inaturalist,chlorurus_bleekeri,SingleLLM,min_lat,True,False,False,-23.303405,
+inaturalist,chlorurus_bleekeri,SingleLLM,max_lat,True,False,False,13.728148,
+inaturalist,chlorurus_bleekeri,SingleLLM,min_time,True,False,False,2004-08-05 00:00:00,
+inaturalist,chlorurus_bleekeri,SingleLLM,max_time,True,False,False,2026-06-08 18:04:05,
+inaturalist,cinnyris_pulchellus,M3_thorough,min_lon,True,False,False,-17.492088,
+inaturalist,cinnyris_pulchellus,M3_thorough,max_lon,True,False,False,40.107593,
+inaturalist,cinnyris_pulchellus,M3_thorough,min_lat,True,False,False,-7.760696,
+inaturalist,cinnyris_pulchellus,M3_thorough,max_lat,True,False,False,16.46969,
+inaturalist,cinnyris_pulchellus,M3_thorough,min_time,True,False,False,1986-02-15 00:00:00,
+inaturalist,cinnyris_pulchellus,M3_thorough,max_time,True,False,False,2026-06-03 17:23:46,
+inaturalist,cinnyris_pulchellus,ReAct,min_lon,True,True,True,-17.492088,-17.492088
+inaturalist,cinnyris_pulchellus,ReAct,max_lon,True,True,True,40.107593,40.107593
+inaturalist,cinnyris_pulchellus,ReAct,min_lat,True,True,True,-7.760696,-7.760696
+inaturalist,cinnyris_pulchellus,ReAct,max_lat,True,True,True,16.46969,16.46969
+inaturalist,cinnyris_pulchellus,ReAct,min_time,True,True,True,1986-02-15 00:00:00,1986-02-15 00:00:00
+inaturalist,cinnyris_pulchellus,ReAct,max_time,True,True,False,2026-06-03 17:23:46,2026-06-03 00:00:00
+inaturalist,cinnyris_pulchellus,SingleLLM,min_lon,True,False,False,-17.492088,
+inaturalist,cinnyris_pulchellus,SingleLLM,max_lon,True,False,False,40.107593,
+inaturalist,cinnyris_pulchellus,SingleLLM,min_lat,True,False,False,-7.760696,
+inaturalist,cinnyris_pulchellus,SingleLLM,max_lat,True,False,False,16.46969,
+inaturalist,cinnyris_pulchellus,SingleLLM,min_time,True,False,False,1986-02-15 00:00:00,
+inaturalist,cinnyris_pulchellus,SingleLLM,max_time,True,False,False,2026-06-03 17:23:46,
+inaturalist,clarias_gariepinus,M3_thorough,min_lon,True,False,False,-83.745918,
+inaturalist,clarias_gariepinus,M3_thorough,max_lon,True,False,False,144.756285,
+inaturalist,clarias_gariepinus,M3_thorough,min_lat,True,False,False,-34.345058,
+inaturalist,clarias_gariepinus,M3_thorough,max_lat,True,False,False,55.485209,
+inaturalist,clarias_gariepinus,M3_thorough,min_time,True,False,False,1965-09-10 08:58:50,
+inaturalist,clarias_gariepinus,M3_thorough,max_time,True,False,False,2026-06-09 20:40:43,
+inaturalist,clarias_gariepinus,ReAct,min_lon,True,True,True,-83.745918,-83.745918
+inaturalist,clarias_gariepinus,ReAct,max_lon,True,True,True,144.756285,144.756285
+inaturalist,clarias_gariepinus,ReAct,min_lat,True,True,True,-34.345058,-34.345058
+inaturalist,clarias_gariepinus,ReAct,max_lat,True,True,True,55.485209,55.485209
+inaturalist,clarias_gariepinus,ReAct,min_time,True,True,True,1965-09-10 08:58:50,1965-09-10 08:58:50
+inaturalist,clarias_gariepinus,ReAct,max_time,True,True,True,2026-06-09 20:40:43,2026-06-09 20:40:43
+inaturalist,clarias_gariepinus,SingleLLM,min_lon,True,False,False,-83.745918,
+inaturalist,clarias_gariepinus,SingleLLM,max_lon,True,False,False,144.756285,
+inaturalist,clarias_gariepinus,SingleLLM,min_lat,True,False,False,-34.345058,
+inaturalist,clarias_gariepinus,SingleLLM,max_lat,True,False,False,55.485209,
+inaturalist,clarias_gariepinus,SingleLLM,min_time,True,False,False,1965-09-10 08:58:50,
+inaturalist,clarias_gariepinus,SingleLLM,max_time,True,False,False,2026-06-09 20:40:43,
+inaturalist,eucalyptus_regnans,M3_thorough,min_lon,True,False,False,143.3705,
+inaturalist,eucalyptus_regnans,M3_thorough,max_lon,True,False,False,175.056697,
+inaturalist,eucalyptus_regnans,M3_thorough,min_lat,True,False,False,-45.860728,
+inaturalist,eucalyptus_regnans,M3_thorough,max_lat,True,False,False,-37.328952,
+inaturalist,eucalyptus_regnans,M3_thorough,min_time,True,False,False,1992-04-19 08:15:00,
+inaturalist,eucalyptus_regnans,M3_thorough,max_time,True,False,False,2026-05-06 13:14:20,
+inaturalist,eucalyptus_regnans,ReAct,min_lon,True,True,True,143.3705,143.3705
+inaturalist,eucalyptus_regnans,ReAct,max_lon,True,True,True,175.056697,175.056697
+inaturalist,eucalyptus_regnans,ReAct,min_lat,True,True,True,-45.860728,-45.860728
+inaturalist,eucalyptus_regnans,ReAct,max_lat,True,True,True,-37.328952,-37.328952
+inaturalist,eucalyptus_regnans,ReAct,min_time,True,True,False,1992-04-19 08:15:00,1992-04-19 00:00:00
+inaturalist,eucalyptus_regnans,ReAct,max_time,True,True,False,2026-05-06 13:14:20,2026-05-06 00:00:00
+inaturalist,eucalyptus_regnans,SingleLLM,min_lon,True,False,False,143.3705,
+inaturalist,eucalyptus_regnans,SingleLLM,max_lon,True,False,False,175.056697,
+inaturalist,eucalyptus_regnans,SingleLLM,min_lat,True,False,False,-45.860728,
+inaturalist,eucalyptus_regnans,SingleLLM,max_lat,True,False,False,-37.328952,
+inaturalist,eucalyptus_regnans,SingleLLM,min_time,True,False,False,1992-04-19 08:15:00,
+inaturalist,eucalyptus_regnans,SingleLLM,max_time,True,False,False,2026-05-06 13:14:20,
+inaturalist,hibbertia_hypericoides,M3_thorough,min_lon,True,False,False,114.407,
+inaturalist,hibbertia_hypericoides,M3_thorough,max_lon,True,False,False,149.97288,
+inaturalist,hibbertia_hypericoides,M3_thorough,min_lat,True,False,False,-34.880861,
+inaturalist,hibbertia_hypericoides,M3_thorough,max_lat,True,False,False,-25.188547,
+inaturalist,hibbertia_hypericoides,M3_thorough,min_time,True,False,False,1993-09-01 12:22:00,
+inaturalist,hibbertia_hypericoides,M3_thorough,max_time,True,False,False,2026-06-13 15:52:08,
+inaturalist,hibbertia_hypericoides,ReAct,min_lon,True,True,True,114.407,114.407
+inaturalist,hibbertia_hypericoides,ReAct,max_lon,True,True,True,149.97288,149.97288
+inaturalist,hibbertia_hypericoides,ReAct,min_lat,True,True,True,-34.880861,-34.880861
+inaturalist,hibbertia_hypericoides,ReAct,max_lat,True,True,True,-25.188547,-25.188547
+inaturalist,hibbertia_hypericoides,ReAct,min_time,True,True,True,1993-09-01 12:22:00,1993-09-01 12:22:00
+inaturalist,hibbertia_hypericoides,ReAct,max_time,True,True,True,2026-06-13 15:52:08,2026-06-13 15:52:08
+inaturalist,hibbertia_hypericoides,SingleLLM,min_lon,True,False,False,114.407,
+inaturalist,hibbertia_hypericoides,SingleLLM,max_lon,True,False,False,149.97288,
+inaturalist,hibbertia_hypericoides,SingleLLM,min_lat,True,False,False,-34.880861,
+inaturalist,hibbertia_hypericoides,SingleLLM,max_lat,True,False,False,-25.188547,
+inaturalist,hibbertia_hypericoides,SingleLLM,min_time,True,False,False,1993-09-01 12:22:00,
+inaturalist,hibbertia_hypericoides,SingleLLM,max_time,True,False,False,2026-06-13 15:52:08,
+inaturalist,hymeniacidon_perlevis,M3_thorough,min_lon,True,False,False,-124.164397,
+inaturalist,hymeniacidon_perlevis,M3_thorough,max_lon,True,False,False,153.606811,
+inaturalist,hymeniacidon_perlevis,M3_thorough,min_lat,True,False,False,-42.732837,
+inaturalist,hymeniacidon_perlevis,M3_thorough,max_lat,True,False,False,57.362572,
+inaturalist,hymeniacidon_perlevis,M3_thorough,min_time,True,False,False,2010-07-10 14:19:00,
+inaturalist,hymeniacidon_perlevis,M3_thorough,max_time,True,False,False,2026-06-13 14:15:28,
+inaturalist,hymeniacidon_perlevis,ReAct,min_lon,True,True,True,-124.164397,-124.164397
+inaturalist,hymeniacidon_perlevis,ReAct,max_lon,True,True,True,153.606811,153.606811
+inaturalist,hymeniacidon_perlevis,ReAct,min_lat,True,True,True,-42.732837,-42.732837
+inaturalist,hymeniacidon_perlevis,ReAct,max_lat,True,True,True,57.362572,57.362572
+inaturalist,hymeniacidon_perlevis,ReAct,min_time,True,True,True,2010-07-10 14:19:00,2010-07-10 14:19:00
+inaturalist,hymeniacidon_perlevis,ReAct,max_time,True,True,True,2026-06-13 14:15:28,2026-06-13 14:15:28
+inaturalist,hymeniacidon_perlevis,SingleLLM,min_lon,True,False,False,-124.164397,
+inaturalist,hymeniacidon_perlevis,SingleLLM,max_lon,True,False,False,153.606811,
+inaturalist,hymeniacidon_perlevis,SingleLLM,min_lat,True,False,False,-42.732837,
+inaturalist,hymeniacidon_perlevis,SingleLLM,max_lat,True,False,False,57.362572,
+inaturalist,hymeniacidon_perlevis,SingleLLM,min_time,True,False,False,2010-07-10 14:19:00,
+inaturalist,hymeniacidon_perlevis,SingleLLM,max_time,True,False,False,2026-06-13 14:15:28,
+inaturalist,lachnagrostis_billardierei,M3_thorough,min_lon,True,False,False,-176.41822,
+inaturalist,lachnagrostis_billardierei,M3_thorough,max_lon,True,False,False,178.462403,
+inaturalist,lachnagrostis_billardierei,M3_thorough,min_lat,True,False,False,-47.032868,
+inaturalist,lachnagrostis_billardierei,M3_thorough,max_lat,True,False,False,-30.067336,
+inaturalist,lachnagrostis_billardierei,M3_thorough,min_time,True,False,False,1997-12-22 00:00:00,
+inaturalist,lachnagrostis_billardierei,M3_thorough,max_time,True,False,False,2026-06-13 10:25:00,
+inaturalist,lachnagrostis_billardierei,ReAct,min_lon,True,True,True,-176.41822,-176.41822
+inaturalist,lachnagrostis_billardierei,ReAct,max_lon,True,True,True,178.462403,178.462403
+inaturalist,lachnagrostis_billardierei,ReAct,min_lat,True,True,True,-47.032868,-47.032868
+inaturalist,lachnagrostis_billardierei,ReAct,max_lat,True,True,True,-30.067336,-30.067336
+inaturalist,lachnagrostis_billardierei,ReAct,min_time,True,True,True,1997-12-22 00:00:00,1997-12-22 00:00:00
+inaturalist,lachnagrostis_billardierei,ReAct,max_time,True,True,True,2026-06-13 10:25:00,2026-06-13 10:25:00
+inaturalist,lachnagrostis_billardierei,SingleLLM,min_lon,True,False,False,-176.41822,
+inaturalist,lachnagrostis_billardierei,SingleLLM,max_lon,True,False,False,178.462403,
+inaturalist,lachnagrostis_billardierei,SingleLLM,min_lat,True,False,False,-47.032868,
+inaturalist,lachnagrostis_billardierei,SingleLLM,max_lat,True,False,False,-30.067336,
+inaturalist,lachnagrostis_billardierei,SingleLLM,min_time,True,False,False,1997-12-22 00:00:00,
+inaturalist,lachnagrostis_billardierei,SingleLLM,max_time,True,False,False,2026-06-13 10:25:00,
+inaturalist,lactuca_graminifolia,M3_thorough,min_lon,True,False,False,-112.428317,
+inaturalist,lactuca_graminifolia,M3_thorough,max_lon,True,False,False,-75.525672,
+inaturalist,lactuca_graminifolia,M3_thorough,min_lat,True,False,False,16.704152,
+inaturalist,lactuca_graminifolia,M3_thorough,max_lat,True,False,False,36.39279,
+inaturalist,lactuca_graminifolia,M3_thorough,min_time,True,False,False,1993-04-18 00:00:00,
+inaturalist,lactuca_graminifolia,M3_thorough,max_time,True,False,False,2026-06-14 12:25:03,
+inaturalist,lactuca_graminifolia,ReAct,min_lon,True,True,True,-112.428317,-112.428317
+inaturalist,lactuca_graminifolia,ReAct,max_lon,True,True,True,-75.525672,-75.525672
+inaturalist,lactuca_graminifolia,ReAct,min_lat,True,True,True,16.704152,16.704152
+inaturalist,lactuca_graminifolia,ReAct,max_lat,True,True,True,36.39279,36.39279
+inaturalist,lactuca_graminifolia,ReAct,min_time,True,True,True,1993-04-18 00:00:00,1993-04-18 00:00:00
+inaturalist,lactuca_graminifolia,ReAct,max_time,True,True,True,2026-06-14 12:25:03,2026-06-14 12:25:03
+inaturalist,lactuca_graminifolia,SingleLLM,min_lon,True,False,False,-112.428317,
+inaturalist,lactuca_graminifolia,SingleLLM,max_lon,True,False,False,-75.525672,
+inaturalist,lactuca_graminifolia,SingleLLM,min_lat,True,False,False,16.704152,
+inaturalist,lactuca_graminifolia,SingleLLM,max_lat,True,False,False,36.39279,
+inaturalist,lactuca_graminifolia,SingleLLM,min_time,True,False,False,1993-04-18 00:00:00,
+inaturalist,lactuca_graminifolia,SingleLLM,max_time,True,False,False,2026-06-14 12:25:03,
+inaturalist,muhlenbergia_lindheimeri,M3_thorough,min_lon,True,False,False,-117.756805,
+inaturalist,muhlenbergia_lindheimeri,M3_thorough,max_lon,True,False,False,-97.19223,
+inaturalist,muhlenbergia_lindheimeri,M3_thorough,min_lat,True,False,False,29.303842,
+inaturalist,muhlenbergia_lindheimeri,M3_thorough,max_lat,True,False,False,33.712517,
+inaturalist,muhlenbergia_lindheimeri,M3_thorough,min_time,True,False,False,2010-10-24 14:08:00,
+inaturalist,muhlenbergia_lindheimeri,M3_thorough,max_time,True,False,False,2026-05-21 19:21:39,
+inaturalist,muhlenbergia_lindheimeri,ReAct,min_lon,True,True,True,-117.756805,-117.756805
+inaturalist,muhlenbergia_lindheimeri,ReAct,max_lon,True,True,True,-97.19223,-97.19223
+inaturalist,muhlenbergia_lindheimeri,ReAct,min_lat,True,True,True,29.303842,29.303842
+inaturalist,muhlenbergia_lindheimeri,ReAct,max_lat,True,True,True,33.712517,33.712517
+inaturalist,muhlenbergia_lindheimeri,ReAct,min_time,True,True,True,2010-10-24 14:08:00,2010-10-24 14:08:00
+inaturalist,muhlenbergia_lindheimeri,ReAct,max_time,True,True,True,2026-05-21 19:21:39,2026-05-21 19:21:39
+inaturalist,muhlenbergia_lindheimeri,SingleLLM,min_lon,True,False,False,-117.756805,
+inaturalist,muhlenbergia_lindheimeri,SingleLLM,max_lon,True,False,False,-97.19223,
+inaturalist,muhlenbergia_lindheimeri,SingleLLM,min_lat,True,False,False,29.303842,
+inaturalist,muhlenbergia_lindheimeri,SingleLLM,max_lat,True,False,False,33.712517,
+inaturalist,muhlenbergia_lindheimeri,SingleLLM,min_time,True,False,False,2010-10-24 14:08:00,
+inaturalist,muhlenbergia_lindheimeri,SingleLLM,max_time,True,False,False,2026-05-21 19:21:39,
+inaturalist,nannophya_pygmaea,M3_thorough,min_lon,True,False,False,98.280703,
+inaturalist,nannophya_pygmaea,M3_thorough,max_lon,True,False,False,140.722134,
+inaturalist,nannophya_pygmaea,M3_thorough,min_lat,True,False,False,-5.098442,
+inaturalist,nannophya_pygmaea,M3_thorough,max_lat,True,False,False,31.288761,
+inaturalist,nannophya_pygmaea,M3_thorough,min_time,True,False,False,2001-07-07 10:02:00,
+inaturalist,nannophya_pygmaea,M3_thorough,max_time,True,False,False,2026-06-12 12:39:00,
+inaturalist,nannophya_pygmaea,ReAct,min_lon,True,True,True,98.280703,98.280703
+inaturalist,nannophya_pygmaea,ReAct,max_lon,True,True,True,140.722134,140.722134
+inaturalist,nannophya_pygmaea,ReAct,min_lat,True,True,True,-5.098442,-5.098442
+inaturalist,nannophya_pygmaea,ReAct,max_lat,True,True,True,31.288761,31.288761
+inaturalist,nannophya_pygmaea,ReAct,min_time,True,True,True,2001-07-07 10:02:00,2001-07-07 10:02:00
+inaturalist,nannophya_pygmaea,ReAct,max_time,True,True,True,2026-06-12 12:39:00,2026-06-12 12:39:00
+inaturalist,nannophya_pygmaea,SingleLLM,min_lon,True,False,False,98.280703,
+inaturalist,nannophya_pygmaea,SingleLLM,max_lon,True,False,False,140.722134,
+inaturalist,nannophya_pygmaea,SingleLLM,min_lat,True,False,False,-5.098442,
+inaturalist,nannophya_pygmaea,SingleLLM,max_lat,True,False,False,31.288761,
+inaturalist,nannophya_pygmaea,SingleLLM,min_time,True,False,False,2001-07-07 10:02:00,
+inaturalist,nannophya_pygmaea,SingleLLM,max_time,True,False,False,2026-06-12 12:39:00,
+inaturalist,pectocarya_recurvata,M3_thorough,min_lon,True,False,False,-118.363963,
+inaturalist,pectocarya_recurvata,M3_thorough,max_lon,True,False,False,-107.647989,
+inaturalist,pectocarya_recurvata,M3_thorough,min_lat,True,False,False,29.725293,
+inaturalist,pectocarya_recurvata,M3_thorough,max_lat,True,False,False,37.339383,
+inaturalist,pectocarya_recurvata,M3_thorough,min_time,True,False,False,2008-03-01 02:44:00,
+inaturalist,pectocarya_recurvata,M3_thorough,max_time,True,False,False,2026-05-03 09:09:00,
+inaturalist,pectocarya_recurvata,ReAct,min_lon,True,True,True,-118.363963,-118.363963
+inaturalist,pectocarya_recurvata,ReAct,max_lon,True,True,True,-107.647989,-107.647989
+inaturalist,pectocarya_recurvata,ReAct,min_lat,True,True,True,29.725293,29.725293
+inaturalist,pectocarya_recurvata,ReAct,max_lat,True,True,True,37.339383,37.339383
+inaturalist,pectocarya_recurvata,ReAct,min_time,True,True,True,2008-03-01 02:44:00,2008-03-01 02:44:00
+inaturalist,pectocarya_recurvata,ReAct,max_time,True,True,True,2026-05-03 09:09:00,2026-05-03 09:09:00
+inaturalist,pectocarya_recurvata,SingleLLM,min_lon,True,False,False,-118.363963,
+inaturalist,pectocarya_recurvata,SingleLLM,max_lon,True,False,False,-107.647989,
+inaturalist,pectocarya_recurvata,SingleLLM,min_lat,True,False,False,29.725293,
+inaturalist,pectocarya_recurvata,SingleLLM,max_lat,True,False,False,37.339383,
+inaturalist,pectocarya_recurvata,SingleLLM,min_time,True,False,False,2008-03-01 02:44:00,
+inaturalist,pectocarya_recurvata,SingleLLM,max_time,True,False,False,2026-05-03 09:09:00,
+inaturalist,pterostylis_graminea,M3_thorough,min_lon,True,False,False,167.803422,
+inaturalist,pterostylis_graminea,M3_thorough,max_lon,True,False,False,176.905064,
+inaturalist,pterostylis_graminea,M3_thorough,min_lat,True,False,False,-46.926745,
+inaturalist,pterostylis_graminea,M3_thorough,max_lat,True,False,False,-35.717289,
+inaturalist,pterostylis_graminea,M3_thorough,min_time,True,False,False,1966-10-15 00:00:00,
+inaturalist,pterostylis_graminea,M3_thorough,max_time,True,False,False,2026-01-06 11:33:49,
+inaturalist,pterostylis_graminea,ReAct,min_lon,True,True,True,167.803422,167.803422
+inaturalist,pterostylis_graminea,ReAct,max_lon,True,True,True,176.905064,176.905064
+inaturalist,pterostylis_graminea,ReAct,min_lat,True,True,True,-46.926745,-46.926745
+inaturalist,pterostylis_graminea,ReAct,max_lat,True,True,True,-35.717289,-35.717289
+inaturalist,pterostylis_graminea,ReAct,min_time,True,True,True,1966-10-15 00:00:00,1966-10-15 00:00:00
+inaturalist,pterostylis_graminea,ReAct,max_time,True,True,True,2026-01-06 11:33:49,2026-01-06 11:33:49
+inaturalist,pterostylis_graminea,SingleLLM,min_lon,True,False,False,167.803422,
+inaturalist,pterostylis_graminea,SingleLLM,max_lon,True,False,False,176.905064,
+inaturalist,pterostylis_graminea,SingleLLM,min_lat,True,False,False,-46.926745,
+inaturalist,pterostylis_graminea,SingleLLM,max_lat,True,False,False,-35.717289,
+inaturalist,pterostylis_graminea,SingleLLM,min_time,True,False,False,1966-10-15 00:00:00,
+inaturalist,pterostylis_graminea,SingleLLM,max_time,True,False,False,2026-01-06 11:33:49,
+inaturalist,ptychoramphus_aleuticus,M3_thorough,min_lon,True,False,False,-179.579871,
+inaturalist,ptychoramphus_aleuticus,M3_thorough,max_lon,True,False,False,175.888891,
+inaturalist,ptychoramphus_aleuticus,M3_thorough,min_lat,True,False,False,27.82253,
+inaturalist,ptychoramphus_aleuticus,M3_thorough,max_lat,True,False,False,59.854992,
+inaturalist,ptychoramphus_aleuticus,M3_thorough,min_time,True,False,False,1984-05-25 00:00:00,
+inaturalist,ptychoramphus_aleuticus,M3_thorough,max_time,True,False,False,2026-06-14 14:25:00,
+inaturalist,ptychoramphus_aleuticus,ReAct,min_lon,True,True,True,-179.579871,-179.579871
+inaturalist,ptychoramphus_aleuticus,ReAct,max_lon,True,True,True,175.888891,175.888891
+inaturalist,ptychoramphus_aleuticus,ReAct,min_lat,True,True,True,27.82253,27.82253
+inaturalist,ptychoramphus_aleuticus,ReAct,max_lat,True,True,True,59.854992,59.854992
+inaturalist,ptychoramphus_aleuticus,ReAct,min_time,True,True,True,1984-05-25 00:00:00,1984-05-25 00:00:00
+inaturalist,ptychoramphus_aleuticus,ReAct,max_time,True,True,True,2026-06-14 14:25:00,2026-06-14 14:25:00
+inaturalist,ptychoramphus_aleuticus,SingleLLM,min_lon,True,False,False,-179.579871,
+inaturalist,ptychoramphus_aleuticus,SingleLLM,max_lon,True,False,False,175.888891,
+inaturalist,ptychoramphus_aleuticus,SingleLLM,min_lat,True,False,False,27.82253,
+inaturalist,ptychoramphus_aleuticus,SingleLLM,max_lat,True,False,False,59.854992,
+inaturalist,ptychoramphus_aleuticus,SingleLLM,min_time,True,False,False,1984-05-25 00:00:00,
+inaturalist,ptychoramphus_aleuticus,SingleLLM,max_time,True,False,False,2026-06-14 14:25:00,
+inaturalist,sapium_haematospermum,M3_thorough,min_lon,True,False,False,-66.88899,
+inaturalist,sapium_haematospermum,M3_thorough,max_lon,True,False,False,-53.700504,
+inaturalist,sapium_haematospermum,M3_thorough,min_lat,True,False,False,-37.095011,
+inaturalist,sapium_haematospermum,M3_thorough,max_lat,True,False,False,-17.785292,
+inaturalist,sapium_haematospermum,M3_thorough,min_time,True,False,False,2006-07-24 14:01:00,
+inaturalist,sapium_haematospermum,M3_thorough,max_time,True,False,False,2026-06-13 16:10:27,
+inaturalist,sapium_haematospermum,ReAct,min_lon,True,True,True,-66.88899,-66.88899
+inaturalist,sapium_haematospermum,ReAct,max_lon,True,True,True,-53.700504,-53.700504
+inaturalist,sapium_haematospermum,ReAct,min_lat,True,True,True,-37.095011,-37.095011
+inaturalist,sapium_haematospermum,ReAct,max_lat,True,True,True,-17.785292,-17.785292
+inaturalist,sapium_haematospermum,ReAct,min_time,True,True,True,2006-07-24 14:01:00,2006-07-24 14:01:00
+inaturalist,sapium_haematospermum,ReAct,max_time,True,True,True,2026-06-13 16:10:27,2026-06-13 16:10:27
+inaturalist,sapium_haematospermum,SingleLLM,min_lon,True,False,False,-66.88899,
+inaturalist,sapium_haematospermum,SingleLLM,max_lon,True,False,False,-53.700504,
+inaturalist,sapium_haematospermum,SingleLLM,min_lat,True,False,False,-37.095011,
+inaturalist,sapium_haematospermum,SingleLLM,max_lat,True,False,False,-17.785292,
+inaturalist,sapium_haematospermum,SingleLLM,min_time,True,False,False,2006-07-24 14:01:00,
+inaturalist,sapium_haematospermum,SingleLLM,max_time,True,False,False,2026-06-13 16:10:27,
+inaturalist,sesamum_indicum,M3_thorough,min_lon,True,False,False,-118.287597,
+inaturalist,sesamum_indicum,M3_thorough,max_lon,True,False,False,145.328675,
+inaturalist,sesamum_indicum,M3_thorough,min_lat,True,False,False,-35.875253,
+inaturalist,sesamum_indicum,M3_thorough,max_lat,True,False,False,53.213368,
+inaturalist,sesamum_indicum,M3_thorough,min_time,True,False,False,2002-11-29 19:03:44,
+inaturalist,sesamum_indicum,M3_thorough,max_time,True,False,False,2026-06-14 16:13:02,
+inaturalist,sesamum_indicum,ReAct,min_lon,True,True,True,-118.287597,-118.287597
+inaturalist,sesamum_indicum,ReAct,max_lon,True,True,True,145.328675,145.328675
+inaturalist,sesamum_indicum,ReAct,min_lat,True,True,True,-35.875253,-35.875253
+inaturalist,sesamum_indicum,ReAct,max_lat,True,True,True,53.213368,53.213368
+inaturalist,sesamum_indicum,ReAct,min_time,True,True,True,2002-11-29 19:03:44,2002-11-29 19:03:44
+inaturalist,sesamum_indicum,ReAct,max_time,True,True,True,2026-06-14 16:13:02,2026-06-14 16:13:02
+inaturalist,sesamum_indicum,SingleLLM,min_lon,True,False,False,-118.287597,
+inaturalist,sesamum_indicum,SingleLLM,max_lon,True,False,False,145.328675,
+inaturalist,sesamum_indicum,SingleLLM,min_lat,True,False,False,-35.875253,
+inaturalist,sesamum_indicum,SingleLLM,max_lat,True,False,False,53.213368,
+inaturalist,sesamum_indicum,SingleLLM,min_time,True,False,False,2002-11-29 19:03:44,
+inaturalist,sesamum_indicum,SingleLLM,max_time,True,False,False,2026-06-14 16:13:02,
+inaturalist,sphenophorus_interstitialis,M3_thorough,min_lon,True,False,False,-123.890835,
+inaturalist,sphenophorus_interstitialis,M3_thorough,max_lon,True,False,False,-63.586463,
+inaturalist,sphenophorus_interstitialis,M3_thorough,min_lat,True,False,False,28.768189,
+inaturalist,sphenophorus_interstitialis,M3_thorough,max_lat,True,False,False,50.733805,
+inaturalist,sphenophorus_interstitialis,M3_thorough,min_time,True,False,False,1987-08-04 00:00:00,
+inaturalist,sphenophorus_interstitialis,M3_thorough,max_time,True,False,False,2026-06-13 19:01:03,
+inaturalist,sphenophorus_interstitialis,ReAct,min_lon,True,True,True,-123.890835,-123.890835
+inaturalist,sphenophorus_interstitialis,ReAct,max_lon,True,True,True,-63.586463,-63.586463
+inaturalist,sphenophorus_interstitialis,ReAct,min_lat,True,True,True,28.768189,28.768189
+inaturalist,sphenophorus_interstitialis,ReAct,max_lat,True,True,True,50.733805,50.733805
+inaturalist,sphenophorus_interstitialis,ReAct,min_time,True,True,True,1987-08-04 00:00:00,1987-08-04 00:00:00
+inaturalist,sphenophorus_interstitialis,ReAct,max_time,True,True,True,2026-06-13 19:01:03,2026-06-13 19:01:03
+inaturalist,sphenophorus_interstitialis,SingleLLM,min_lon,True,False,False,-123.890835,
+inaturalist,sphenophorus_interstitialis,SingleLLM,max_lon,True,False,False,-63.586463,
+inaturalist,sphenophorus_interstitialis,SingleLLM,min_lat,True,False,False,28.768189,
+inaturalist,sphenophorus_interstitialis,SingleLLM,max_lat,True,False,False,50.733805,
+inaturalist,sphenophorus_interstitialis,SingleLLM,min_time,True,False,False,1987-08-04 00:00:00,
+inaturalist,sphenophorus_interstitialis,SingleLLM,max_time,True,False,False,2026-06-13 19:01:03,
+inaturalist,struthiolaria_papulosa,M3_thorough,min_lon,True,False,False,166.55639,
+inaturalist,struthiolaria_papulosa,M3_thorough,max_lon,True,False,False,177.902708,
+inaturalist,struthiolaria_papulosa,M3_thorough,min_lat,True,False,False,-47.000031,
+inaturalist,struthiolaria_papulosa,M3_thorough,max_lat,True,False,False,-34.420495,
+inaturalist,struthiolaria_papulosa,M3_thorough,min_time,True,False,False,2000-01-20 00:00:00,
+inaturalist,struthiolaria_papulosa,M3_thorough,max_time,True,False,False,2026-06-14 10:26:52,
+inaturalist,struthiolaria_papulosa,ReAct,min_lon,True,True,True,166.55639,166.55639
+inaturalist,struthiolaria_papulosa,ReAct,max_lon,True,True,True,177.902708,177.902708
+inaturalist,struthiolaria_papulosa,ReAct,min_lat,True,True,True,-47.000031,-47.000031
+inaturalist,struthiolaria_papulosa,ReAct,max_lat,True,True,True,-34.420495,-34.420495
+inaturalist,struthiolaria_papulosa,ReAct,min_time,True,True,True,2000-01-20 00:00:00,2000-01-20 00:00:00
+inaturalist,struthiolaria_papulosa,ReAct,max_time,True,True,True,2026-06-14 10:26:52,2026-06-14 10:26:52
+inaturalist,struthiolaria_papulosa,SingleLLM,min_lon,True,False,False,166.55639,
+inaturalist,struthiolaria_papulosa,SingleLLM,max_lon,True,False,False,177.902708,
+inaturalist,struthiolaria_papulosa,SingleLLM,min_lat,True,False,False,-47.000031,
+inaturalist,struthiolaria_papulosa,SingleLLM,max_lat,True,False,False,-34.420495,
+inaturalist,struthiolaria_papulosa,SingleLLM,min_time,True,False,False,2000-01-20 00:00:00,
+inaturalist,struthiolaria_papulosa,SingleLLM,max_time,True,False,False,2026-06-14 10:26:52,

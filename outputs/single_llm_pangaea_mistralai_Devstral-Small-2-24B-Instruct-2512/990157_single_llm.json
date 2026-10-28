@@ -1,0 +1,40 @@
+{
+  "csv": "990157.csv",
+  "dataset_id": "990157",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1783f619857ad835a2a0ca14fccc4da08e4c0ffcf008dccad424fd57de27c4e8",
+  "contract_sha256": "73b3ad3bbeb8ea8ec352eef05b70960505c2f4066cf067ffb9f545ca140857e1",
+  "prompt_tokens": 2693,
+  "metadata": {
+    "name": "LSMo22-1 Sediment Core Radiometric Data",
+    "description": "Dataset containing radiometric measurements (210Pb, 137Cs) from sediment core LSMo22-1, including depth intervals, supported/unsupported 210Pb, and 137Cs activity with standard deviations. Collected at a single location with consistent coordinates and elevation.",
+    "keywords": [
+      "sediment core",
+      "radiometric dating",
+      "210Pb",
+      "137Cs",
+      "paleoenvironment",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.365278,
+      "min_lon": -104.568333,
+      "max_lat": 21.365278,
+      "max_lon": -104.568333
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.773,
+  "status": "ok"
+}

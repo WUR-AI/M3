@@ -1,0 +1,16 @@
+{
+  "csv": "chrysocoma_ciliata.csv",
+  "dataset_id": "chrysocoma_ciliata",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 997,
+  "n_columns": 50,
+  "description": "Chrysocoma ciliata species occurrence records with 997 observations from 1995 to 2026.",
+  "dataset_description": "Species occurrence records from 1995 to 2026, documenting Chrysocoma ciliata biodiversity.",
+  "runtime_seconds": 38.759,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/chrysocoma_ciliata/dictionary.json"
+}

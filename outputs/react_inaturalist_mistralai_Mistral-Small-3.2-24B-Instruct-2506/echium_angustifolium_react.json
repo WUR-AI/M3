@@ -1,0 +1,104 @@
+{
+  "csv": "echium_angustifolium.csv",
+  "dataset_id": "echium_angustifolium",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5fbf4d4f1c580eb9dc5fbdfc9673d4e20e3fedacbc84036d0d4df6fd842ec92f",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5035,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.593615,
+      "min_lon": 10.512658,
+      "max_lat": 40.000793,
+      "max_lon": 36.048932
+    },
+    "temporalCoverage": {
+      "from": "2000-04-09",
+      "to": "2026-06-15"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "echium_angustifolium",
+        "resource": "echium_angustifolium",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 24.101,
+  "status": "ok"
+}

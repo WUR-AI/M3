@@ -1,0 +1,29 @@
+{
+  "dataset_id": "telicota_colon",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/telicota_colon.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T21:15:29.769084+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -36.959345,
+      "min_lon": 72.679331,
+      "max_lat": 30.469555,
+      "max_lon": 153.631952
+    },
+    "temporalCoverage": {
+      "from": "2002-11-03T09:23:00Z",
+      "to": "2026-05-31T10:51:00Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/telicota_colon_e02bd0637b534cadaad1a24feae2c5c3.jsonl",
+  "runtime_seconds": 82.9,
+  "recovered_from_trace": true,
+  "source_sha256": "ba587820d0cf514ed0fc43ee044af233c19801ed232a29235d7d1c5a97467c2d"
+}

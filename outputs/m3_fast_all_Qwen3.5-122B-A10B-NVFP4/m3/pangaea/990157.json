@@ -1,0 +1,44 @@
+{
+  "dataset_id": "990157",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990157.csv",
+  "source_sha256": "1783f619857ad835a2a0ca14fccc4da08e4c0ffcf008dccad424fd57de27c4e8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:20:23.537719+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment core radiometric dating data from LSMo22-1",
+    "description": "High-resolution sediment core profile containing Lead-210 (210Pb) and Cesium-137 (137Cs) radiometric measurements for geochronological analysis. The dataset includes total, supported, and unsupported 210Pb activities with standard deviations, collected from a single site at 21.365278° N, -104.568333° W on April 8, 2022. Data covers depth intervals from 0.0 to 0.29 meters with a constant 5mm sampling resolution.",
+    "keywords": [
+      "sediment core",
+      "radiometric dating",
+      "Lead-210",
+      "210Pb",
+      "Cesium-137",
+      "137Cs",
+      "geochronology",
+      "LSMo22-1",
+      "sedimentation rate",
+      "excess lead"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.365278,
+      "min_lon": -104.568333,
+      "max_lat": 21.365278,
+      "max_lon": -104.568333
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08T00:00:00+00:00",
+      "to": "2022-04-08T00:00:00+00:00"
+    },
+    "spatial": "point location",
+    "temporal": "single-day sampling event"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990157_b60143535c424986bfe85889f053392f.jsonl",
+  "runtime_seconds": 147.12
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "pityrogramma_calomelanos.csv",
+  "dataset_id": "pityrogramma_calomelanos",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "395172507b944ef3498aff3af0ef7237200991999c1607465bb68df0941ccebb",
+  "contract_sha256": "6eb7612305e71f50ef20580339b6e55e528f7d2ea0cdc7dda4b3617e52e53c3a",
+  "prompt_tokens": 325261,
+  "status": "skipped",
+  "reason": "context_window"
+}

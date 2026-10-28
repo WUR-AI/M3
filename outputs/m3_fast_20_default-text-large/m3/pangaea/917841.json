@@ -1,0 +1,46 @@
+{
+  "dataset_id": "917841",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917841.csv",
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:03:47.611333+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Water quality at Macapule Lagoon (2013-2015)",
+    "description": "Dataset of 12 water quality observations collected at a single fixed site in Macapule Lagoon. Each record includes the sampling date, zone identifier, temperature (°C), salinity (PSU), dissolved oxygen (mg L⁻¹), pH, ammonia (µg L⁻¹), nitrate (mg L⁻¹), phosphate (mg L⁻¹), and geographic coordinates (latitude 25.35 N, longitude -108.5 W).",
+    "keywords": [
+      "water quality",
+      "Macapule Lagoon",
+      "temperature",
+      "salinity",
+      "dissolved oxygen",
+      "pH",
+      "ammonia",
+      "nitrate",
+      "phosphate",
+      "marine",
+      "environmental monitoring",
+      "2013-2015"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-01T00:00:00+00:00",
+      "to": "2015-06-01T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917841_2976c3ce5a014d99ac31fa0da4e46883.jsonl",
+  "runtime_seconds": 189.7
+}

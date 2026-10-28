@@ -1,0 +1,16 @@
+{
+  "csv": "lachnagrostis_billardierei.csv",
+  "dataset_id": "lachnagrostis_billardierei",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "Species occurrence records for Lachnagrostis billardierei in New Zealand, 1997-2026.",
+  "dataset_description": "Species occurrence records for Lachnagrostis billardierei from 1997 to 2026.",
+  "runtime_seconds": 29.966,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/lachnagrostis_billardierei/dictionary.json"
+}

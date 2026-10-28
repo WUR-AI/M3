@@ -1,0 +1,38 @@
+{
+  "csv": "973602.csv",
+  "dataset_id": "973602",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "fbdd17a1da291bff3da59cc7371ccf8e55bfb0b47ba5f0e376f7264ea887d8be",
+  "contract_sha256": "7cd4a9691d567e7897a3841e98e847a67f5879086e2eb0f77e00ea0fd8f827ea",
+  "prompt_tokens": 774,
+  "metadata": {
+    "name": "973602.csv",
+    "description": "A dataset containing geochemical data of rock samples, including major oxide compositions (SiO2, TiO2, Al2O3, etc.), sample metadata (Event, Latitude, Longitude, Elevation), and collection dates.",
+    "keywords": [
+      "geochemistry",
+      "rock samples",
+      "major oxides",
+      "marine geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 55.68667,
+      "min_lon": 86.961,
+      "max_lat": 55.68667,
+      "max_lon": 86.961
+    },
+    "temporalCoverage": {
+      "from": "2016-10-04",
+      "to": "2016-10-04"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.554,
+  "status": "ok"
+}

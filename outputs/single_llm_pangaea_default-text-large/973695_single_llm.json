@@ -1,0 +1,42 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "contract_sha256": "2c3100ca2a5a6b1a603be708054cc2b62b85189c908d6ac7f0d4713a78689b18",
+  "prompt_tokens": 10311,
+  "metadata": {
+    "name": "Pleistocene and Pliocene sediment core geochemistry dataset",
+    "description": "Geochemical and isotopic measurements (e.g., Al, Ca, Fe, K, Mn, Na, P, Mo, U, TOC, δ15N, δ13C, δ98Mo) from sediment cores collected at site 112‑680A (latitude -11.065, longitude -78.07783) during a single sampling event on 5 November 1986. The dataset includes depth, core identifiers, and a range of elemental ratios for both Pleistocene and Pliocene intervals.",
+    "keywords": [
+      "sediment",
+      "core",
+      "geochemistry",
+      "Pleistocene",
+      "Pliocene",
+      "isotope",
+      "Chile",
+      "elemental analysis"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05T07:15:00",
+      "to": "1986-11-05T07:15:00"
+    },
+    "spatial": "point",
+    "temporal": "single"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.665,
+  "status": "ok"
+}

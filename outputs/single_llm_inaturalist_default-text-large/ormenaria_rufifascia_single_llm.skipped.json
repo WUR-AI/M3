@@ -1,0 +1,15 @@
+{
+  "csv": "ormenaria_rufifascia.csv",
+  "dataset_id": "ormenaria_rufifascia",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "28216655b47d8828af7db2a751bfeb0a61fa8445afffe35e272338dd40388339",
+  "contract_sha256": "d4e1e2ae915daae509e3af3f723454fc4f308b664f37d583c41c739b39a38f2e",
+  "prompt_tokens": 318914,
+  "status": "skipped",
+  "reason": "context_window"
+}

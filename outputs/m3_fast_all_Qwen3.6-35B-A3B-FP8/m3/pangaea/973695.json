@@ -1,0 +1,50 @@
+{
+  "dataset_id": "973695",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973695.csv",
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:24:33.032908+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "ODP Leg 112 Site 680 Sediment Geochemistry Dataset",
+    "description": "Geochemical analysis of sediment cores from Ocean Drilling Program Leg 112, Site 680 (Makalu Basin, eastern Pacific). Contains 45 samples spanning 0.72 to 78.14 meters sediment depth, covering Pleistocene epochs. Measures major elements (Al, Ca, Fe, K, Mn, Na, P, Mo, U, N, S), carbon metrics (TOC, TC), element ratios, iron speciation, and stable isotopes (δ15N, δ13C, δ98Mo). Samples collected on 1986-11-05 at 11.065°S, 78.078°W.",
+    "keywords": [
+      "ODP",
+      "Ocean Drilling Program",
+      "Leg 112",
+      "Site 680",
+      "geochemistry",
+      "sediment",
+      "paleoceanography",
+      "biogeochemistry",
+      "redox",
+      "isotopes",
+      "Makalu Basin",
+      "eastern Pacific",
+      "Pleistocene",
+      "TOC",
+      "iron speciation",
+      "enrichment factors"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05T07:15:00+00:00",
+      "to": "1986-11-05T07:15:00+00:00"
+    },
+    "spatial": "Point location (single borehole at 11.065°S, 78.078°W); vertical resolution at cm-scale intervals within sediment core",
+    "temporal": "Stratigraphic (sediment depth proxy for geological age); sampling event on 1986-11-05"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973695_86c966ed7ec843048d55553ec6f766b8.jsonl",
+  "runtime_seconds": 150.97
+}

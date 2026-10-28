@@ -1,0 +1,15 @@
+{
+  "csv": "erica_canariensis.csv",
+  "dataset_id": "erica_canariensis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "392218ab3a231973f9b6cb028d95d0c84d68be1bc54109f712aa74aaeed9201c",
+  "contract_sha256": "6465ada80cd5c571cc42eac2e52b2fbadd2ab6031781e8488958e248f3f67ed8",
+  "prompt_tokens": 317687,
+  "status": "skipped",
+  "reason": "context_window"
+}

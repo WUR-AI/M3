@@ -1,0 +1,40 @@
+{
+  "csv": "968881.csv",
+  "dataset_id": "968881",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a5f4883152b119b5e65cbc0e9ef4eecb1cdd0ad4f95d8a3cf836b7d7c1f68b95",
+  "contract_sha256": "fe0e363e89a08ef2082a45eaad557e14359e95b0d9d9953cf57a8f01f39f531c",
+  "prompt_tokens": 32922,
+  "metadata": {
+    "name": "DML21/22 Snow Density and Depth Profiles",
+    "description": "Dataset containing snow depth, snow density, and depth intervals (top and bottom) measured at various locations in Antarctica during the DML21/22 campaign. Data includes measurements from multiple events (e.g., DML21/22_Refl01LG, DML21/22_QR3, DML21/22_R02LG) recorded between December 2021 and January 2022.",
+    "keywords": [
+      "snow density",
+      "snow depth",
+      "Antarctica",
+      "DML21/22",
+      "ice/snow",
+      "field measurements"
+    ],
+    "spatialCoverage": {
+      "min_lat": -73.4254031,
+      "min_lon": -14.5274876,
+      "max_lat": -72.8567119,
+      "max_lon": -12.014326
+    },
+    "temporalCoverage": {
+      "from": "2021-12-10",
+      "to": "2022-01-08"
+    },
+    "spatial": "point locations",
+    "temporal": "instantaneous"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.959,
+  "status": "ok"
+}

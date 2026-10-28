@@ -1,0 +1,40 @@
+{
+  "dataset_id": "990157",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990157.csv",
+  "source_sha256": "1783f619857ad835a2a0ca14fccc4da08e4c0ffcf008dccad424fd57de27c4e8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T03:00:27.868958+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Core Isotope Data from LSMo22-1",
+    "description": "This dataset contains sediment core measurements including depth, 210Pb and 137Cs isotope concentrations, and related statistical data from a single sampling event (LSMo22-1) conducted on 2022-04-08 at a fixed location (21.365278, -104.568333). The data includes supported and unsupported 210Pb measurements, their standard deviations, and 137Cs measurements with some missing values.",
+    "keywords": [
+      "sediment core",
+      "210Pb",
+      "137Cs",
+      "isotope dating",
+      "radiometric analysis",
+      "LSMo22-1"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.365278,
+      "min_lon": -104.568333,
+      "max_lat": 21.365278,
+      "max_lon": -104.568333
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990157_8a4ce2375c3446f08a765d801e9c94d7.jsonl",
+  "runtime_seconds": 336.28
+}

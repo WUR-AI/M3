@@ -1,0 +1,15 @@
+{
+  "dataset_id": "ormenaria_rufifascia",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/ormenaria_rufifascia.csv",
+  "source_sha256": "28216655b47d8828af7db2a751bfeb0a61fa8445afffe35e272338dd40388339",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-19T10:52:09.176574+00:00",
+  "status": "failed",
+  "error": "RuntimeError: Planning failed",
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/ormenaria_rufifascia_27c551e4e30f408daa0234afa4474add.jsonl",
+  "runtime_seconds": 542.18
+}

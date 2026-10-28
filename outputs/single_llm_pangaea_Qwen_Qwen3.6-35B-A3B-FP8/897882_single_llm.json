@@ -1,0 +1,46 @@
+{
+  "csv": "897882.csv",
+  "dataset_id": "897882",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d",
+  "contract_sha256": "7ec73a32e5e65111cb75000dffc8cbe463e6de26448aa8a30d88afdccd7caadc",
+  "prompt_tokens": 7434,
+  "metadata": {
+    "name": "E. fimbriata oocyte and elemental composition data from Senegalese coastal sites",
+    "description": "Dataset containing measurements of E. fimbriata oocyte diameter, volume, lipid, protein, and calorific content, along with Ba/Ca, Sr/Ca, and Zn/Ca ratios, collected from Foundiougne, Djifer, and Joal between February and October 2014.",
+    "keywords": [
+      "E. fimbriata",
+      "oocyte",
+      "lipids",
+      "protein",
+      "calorific",
+      "Ba/Ca",
+      "Sr/Ca",
+      "Zn/Ca",
+      "Senegal",
+      "Foundiougne",
+      "Djifer",
+      "Joal"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "min_lon": -16.85028,
+      "max_lat": 14.18116,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-02-01",
+      "to": "2014-10-01"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.464,
+  "status": "ok"
+}

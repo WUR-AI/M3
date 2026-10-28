@@ -1,0 +1,39 @@
+{
+  "csv": "916167.csv",
+  "dataset_id": "916167",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "contract_sha256": "0131e07c8afd0ca3097de0a5e1c521d6a6607fa85e8b70b6a7acadb42ab62701",
+  "prompt_tokens": 1390,
+  "metadata": {
+    "name": "Bohm et al. 2020 EC and Noah-MP model datasets for Katharinentalerhof, Pforzheim",
+    "description": "A collection of metadata entries for various data files (EC measurements, plant performance data, weather data, and Noah-MP model outputs) associated with the Katharinentalerhof site in Pforzheim, Germany. Includes file names, formats, sizes, URLs, event location, and geographic coordinates.",
+    "keywords": [
+      "EC data",
+      "Noah-MP",
+      "plant performance",
+      "weather data",
+      "Katharinentalerhof",
+      "Pforzheim",
+      "Bohm 2020",
+      "Germany"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "point location",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.481,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "genista_germanica.csv",
+  "dataset_id": "genista_germanica",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "35e546b1513c22ab969f75667e4dd26db15ed9453e4e5a8295bb087dd6eaa834",
+  "contract_sha256": "5749f62cbd31890e2802b1398588273831caaa00412b50116fdcff99d5545dd7",
+  "prompt_tokens": 308679,
+  "status": "skipped",
+  "reason": "context_window"
+}

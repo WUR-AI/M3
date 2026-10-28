@@ -1,0 +1,28 @@
+{
+  "dataset_id": "banksia_robur",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/banksia_robur.csv",
+  "source_sha256": "2c267af00f6198b54f51707d343cb79b367007646e19bf38fd3e6c9342eacb53",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:13:09.764427+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.685454,
+      "min_lon": 18.849273,
+      "max_lat": -15.306899,
+      "max_lon": 153.611312
+    },
+    "temporalCoverage": {
+      "from": "1989-09-15T00:00:00+00:00",
+      "to": "2026-06-12T12:43:37+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/banksia_robur_fe832c05ac124ac58feb023f6fa24479.jsonl",
+  "runtime_seconds": 46.69
+}

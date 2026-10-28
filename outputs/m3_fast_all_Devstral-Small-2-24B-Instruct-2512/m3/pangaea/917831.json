@@ -1,0 +1,40 @@
+{
+  "dataset_id": "917831",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917831.csv",
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:13:22.113207+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Macapule Lagoon Biological Data",
+    "description": "Dataset containing biological measurements and survey data from Macapule Lagoon, including fish morphology, organ weights, and biochemical parameters collected between December 2013 and August 2015.",
+    "keywords": [
+      "biological data",
+      "fish morphology",
+      "organ weights",
+      "biochemical parameters",
+      "Macapule Lagoon",
+      "ecology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 19.5,
+      "min_lon": 17.5,
+      "max_lat": 25.6,
+      "max_lon": 23.6
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12",
+      "to": "2015-08-31"
+    },
+    "spatial": "Survey data with coordinates ranging from 17.5 to 23.6 longitude and 19.5 to 25.6 latitude",
+    "temporal": "Daily measurements over a period of 627 days"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917831_2d2650e887ec4f47a0be72c0db909a00.jsonl",
+  "runtime_seconds": 327.96
+}

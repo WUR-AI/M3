@@ -1,0 +1,41 @@
+{
+  "dataset_id": "956208",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/956208.csv",
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T23:08:43.123574+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Boreogadus saida measurements from polar expeditions",
+    "description": "Dataset containing measurements of Boreogadus saida (polar cod) including total length, standard length, weight, sex, condition index, stomach content measurements, and associated expedition metadata from various polar regions.",
+    "keywords": [
+      "Boreogadus saida",
+      "polar cod",
+      "Arctic",
+      "Antarctic",
+      "marine biology",
+      "fish measurements",
+      "expedition data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 89.143898,
+      "max_lon": 130.863
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2020-09-19"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/956208_747e418573b94883b184e8c461f792e1.jsonl",
+  "runtime_seconds": 376.14
+}

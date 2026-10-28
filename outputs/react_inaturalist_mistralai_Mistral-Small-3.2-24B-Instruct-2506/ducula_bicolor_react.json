@@ -1,0 +1,128 @@
+{
+  "csv": "ducula_bicolor.csv",
+  "dataset_id": "ducula_bicolor",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "23dcf8a1d83bbab379303ba57f1ee7e16ad19a879aa4ce91d0240c1dc35a6096",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 6093,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -8.604754,
+      "min_lon": -77.39628,
+      "max_lat": 25.066556,
+      "max_lon": 132.759873
+    },
+    "temporalCoverage": {
+      "from": "1995-09-01",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "time_column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 25.737,
+  "status": "ok"
+}

@@ -1,0 +1,42 @@
+{
+  "csv": "965135.csv",
+  "dataset_id": "965135",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "contract_sha256": "b7c7a9588bc52784da892bfc8c8de593242aa562d0e4284fb625487c390ad24b",
+  "prompt_tokens": 6535,
+  "metadata": {
+    "name": "Porites sp. Geochemical Data from TIAREI-A1",
+    "description": "Dataset containing geochemical measurements (Sr/Ca, Mg/Ca, δ18O, δ13C) from Porites sp. coral cores, including age models, event markers, and location data (Latitude, Longitude, Elevation) for the TIAREI-A1 site.",
+    "keywords": [
+      "Porites",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "coral",
+      "paleoclimate",
+      "TIAREI-A1"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "1999-07-01",
+      "to": "2008-07-01"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-annual"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.393,
+  "status": "ok"
+}

@@ -1,0 +1,30 @@
+{
+  "dataset_id": "956208",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/956208.csv",
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T14:03:45.049635+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "B. saida Specimen Measurements and Locations",
+    "description": "Dataset containing measurements and location data for B. saida specimens collected during various expeditions, including total length, standard length, weight, sex, condition index, stomach content measurements, and geographic coordinates.",
+    "keywords": [
+      "B. saida",
+      "specimen measurements",
+      "expeditions",
+      "marine biology",
+      "Arctic",
+      "latitude",
+      "longitude",
+      "2012-2021"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/956208_85ec9cbe8b124ca8bfe2658abc316016.jsonl",
+  "runtime_seconds": 501.26
+}

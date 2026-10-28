@@ -1,0 +1,16 @@
+{
+  "csv": "987056.csv",
+  "dataset_id": "987056",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 15,
+  "n_columns": 8,
+  "description": "Fifteen sediment observations on 2012‑03‑22 with depth, TOC, TIC, event, location, elevation, timestamp.",
+  "dataset_description": "Contains 15 Earth‑environment observations recorded on 2012‑03‑22 for scientific analysis.",
+  "runtime_seconds": 15.622,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/987056/dictionary.json"
+}

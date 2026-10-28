@@ -1,0 +1,28 @@
+{
+  "dataset_id": "macolor_niger",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/macolor_niger.csv",
+  "source_sha256": "b678f76bb6f3c43b2dc6f453dbd9a1d40580ab0b18af05911bf5c1869498a943",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:49:24.631573+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -27.550575,
+      "min_lon": -179.883238,
+      "max_lat": 29.557669,
+      "max_lon": 179.958801
+    },
+    "temporalCoverage": {
+      "from": "1981-01-10T00:00:00+00:00",
+      "to": "2026-06-11T13:34:45+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/macolor_niger_1f92860d867d463da74fd0d5e4e170dd.jsonl",
+  "runtime_seconds": 43.04
+}

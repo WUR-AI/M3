@@ -1,0 +1,41 @@
+{
+  "csv": "974037.csv",
+  "dataset_id": "974037",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "674b5362b09af672f9d2f6e1d054926fbaafd85b28bc7eddef1bbdaad4d0ec74",
+  "contract_sha256": "9393c302d843453738ac23721c0490be46c5bca74b9b35dc0ad97d21fc81fedf",
+  "prompt_tokens": 1748,
+  "metadata": {
+    "name": "Sucha Woda Flood Boulder and Trunk Measurements",
+    "description": "Dataset containing measurements of boulder diameters and trunk counts at 11 sites following the Sucha Woda flood event on July 24, 2018. Includes site location coordinates, elevation, and detailed boulder diameter data across 25 columns per site.",
+    "keywords": [
+      "flood",
+      "boulder",
+      "trunk",
+      "Sucha Woda",
+      "geomorphology",
+      "debris flow",
+      "Poland"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.2725,
+      "min_lon": 20.0336,
+      "max_lat": 49.2855,
+      "max_lon": 20.0466
+    },
+    "temporalCoverage": {
+      "from": "2018-07-24",
+      "to": "2018-07-24"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.969,
+  "status": "ok"
+}

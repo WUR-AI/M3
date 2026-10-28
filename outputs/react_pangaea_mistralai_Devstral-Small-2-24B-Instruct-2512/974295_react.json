@@ -1,0 +1,71 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 1652,
+  "metadata": {
+    "name": "974295",
+    "description": "Dataset containing radar profile data collected during the ANT 1997/98 season. The data includes profile IDs, instrument details, radar products, and associated files such as netCDF, GIS, and images.",
+    "keywords": [
+      "radar",
+      "profile",
+      "ANT 1997/98",
+      "EMR",
+      "netCDF",
+      "GIS",
+      "IMAGE"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "1997-11-01",
+      "to": "1998-03-31"
+    },
+    "spatial": "point locations",
+    "temporal": "seasonal"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974295"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    }
+  ],
+  "runtime_seconds": 10.414,
+  "status": "ok"
+}

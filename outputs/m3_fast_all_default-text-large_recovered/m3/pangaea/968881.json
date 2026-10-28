@@ -1,0 +1,44 @@
+{
+  "dataset_id": "968881",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/968881.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:52:18.919259+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic Snow Depth and Density Observations (Dec 2021 – Jan 2022)",
+    "description": "Point measurements of snow depth (total, top, bottom) and snow density collected at 578 locations in Antarctica. Each record includes an event identifier, latitude, longitude, a UTC timestamp, and the measured variables.",
+    "keywords": [
+      "Antarctica",
+      "snow depth",
+      "ice depth",
+      "snow density",
+      "environmental monitoring",
+      "latitude",
+      "longitude",
+      "2021",
+      "2022"
+    ],
+    "spatialCoverage": {
+      "min_lat": -73.4254031,
+      "min_lon": -14.5274876,
+      "max_lat": -72.8567119,
+      "max_lon": -12.014326
+    },
+    "temporalCoverage": {
+      "from": "2021-12-10T13:50:00+00:00",
+      "to": "2022-01-08T14:49:00+00:00"
+    },
+    "spatial": "point locations with ~0.1 m precision (≈7 decimal places in latitude/longitude)",
+    "temporal": "sub‑second timestamps recorded over a 29‑day period"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/968881_26f0238d698942bf99cf253589ebb64b.jsonl",
+  "runtime_seconds": 207.64,
+  "recovered_from_trace": true,
+  "source_sha256": "a5f4883152b119b5e65cbc0e9ef4eecb1cdd0ad4f95d8a3cf836b7d7c1f68b95"
+}

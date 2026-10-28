@@ -1,0 +1,15 @@
+{
+  "csv": "hypericum_crux-andreae.csv",
+  "dataset_id": "hypericum_crux-andreae",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "df65c7d977a649ec4f147c4fd9c380bea381f08e3133104e30fb277578e74cfb",
+  "contract_sha256": "7c9afdcc04d40b0f15f13f3c8b8031063d6c4399017e48994dc798a357439567",
+  "prompt_tokens": 322144,
+  "status": "skipped",
+  "reason": "context_window"
+}

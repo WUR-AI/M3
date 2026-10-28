@@ -1,0 +1,15 @@
+{
+  "csv": "hellula_rogatalis.csv",
+  "dataset_id": "hellula_rogatalis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "095adc5831b9a4bc58e4116789902cee37cd1285cecdd2ddfd7037b7adf8fdf6",
+  "contract_sha256": "6dfed49954e2423466305861310c9391f709f9745a2fbc8b07b5eb2ddf515dd6",
+  "prompt_tokens": 310881,
+  "status": "skipped",
+  "reason": "context_window"
+}

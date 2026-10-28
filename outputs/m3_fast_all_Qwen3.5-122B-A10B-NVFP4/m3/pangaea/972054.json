@@ -1,0 +1,43 @@
+{
+  "dataset_id": "972054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972054.csv",
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:25:25.911666+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Uelzen Remote Sensing Time-Series Archive (1984-2023)",
+    "description": "A long-term remote sensing dataset for a single monitoring site in Uelzen, Germany (Site ID: c3126), containing 285 records spanning 1984 to 2023. The data includes 6-band color composites and associated metadata, with 153 records having defined temporal observation periods (primarily May-July and August-October) and corresponding GeoTIFF imagery.",
+    "keywords": [
+      "remote sensing",
+      "time-series",
+      "Uelzen",
+      "Germany",
+      "GeoTIFF",
+      "6-band color composite",
+      "ESIS",
+      "land monitoring",
+      "c3126"
+    ],
+    "spatialCoverage": {
+      "min_lat": 52.798539332,
+      "min_lon": 9.998781436,
+      "max_lat": 52.798539332,
+      "max_lon": 9.998781436
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "Point location (52.798539332, 9.998781436)",
+    "temporal": "Bi-annual seasonal observations (May-July and August-October)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972054_426d24297634424b882d66d9ac1980b3.jsonl",
+  "runtime_seconds": 140.39
+}

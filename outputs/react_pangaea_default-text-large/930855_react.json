@@ -1,0 +1,47 @@
+{
+  "csv": "930855.csv",
+  "dataset_id": "930855",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bcee77d90d8e37094fb072e5927cc686599551e7b9d3c90e7983f5faf32f1892",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2657,
+  "metadata": {
+    "name": "Geochemical measurements of sediment cores (alkane and diol peak areas) from site 370‑C0023A",
+    "description": "Dataset of sediment core samples with identifiers, depth intervals, alkane and diol peak area measurements, and associated metadata such as latitude, longitude, elevation and sampling date.",
+    "keywords": [],
+    "spatialCoverage": {
+      "min_lat": 32.366667,
+      "min_lon": 134.966333,
+      "max_lat": 32.366667,
+      "max_lon": 134.966333
+    },
+    "temporalCoverage": {
+      "from": "2016-09-17",
+      "to": "2016-09-17"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "930855"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "930855",
+        "resource": "930855"
+      }
+    }
+  ],
+  "runtime_seconds": 7.385,
+  "status": "ok"
+}

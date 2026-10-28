@@ -1,0 +1,16 @@
+{
+  "csv": "960522.csv",
+  "dataset_id": "960522",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 20,
+  "n_columns": 64,
+  "description": "Earth science measurements, 20 entries, 50+ environmental variables.",
+  "dataset_description": "Environmental data tables documenting Earth science measurements, 960522 rows, 20 entries each.",
+  "runtime_seconds": 45.898,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/960522/dictionary.json"
+}

@@ -1,0 +1,35 @@
+{
+  "csv": "916167.csv",
+  "dataset_id": "916167",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "contract_sha256": "0131e07c8afd0ca3097de0a5e1c521d6a6607fa85e8b70b6a7acadb42ab62701",
+  "prompt_tokens": 1390,
+  "metadata": {
+    "name": "Katharinentalerhof_Pforzheim",
+    "description": "Dataset containing various files related to the Katharinentalerhof_Pforzheim event, including weather data and plant performance data.",
+    "keywords": [
+      "Katharinentalerhof_Pforzheim",
+      "weather data",
+      "plant performance",
+      "EC data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.411,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "skipped",
+  "reason": "timeout",
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "timeout_seconds": 600,
+  "runtime_seconds": 600.157,
+  "message": "react exceeded 600s on 899705.csv",
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8"
+}

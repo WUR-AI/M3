@@ -1,0 +1,28 @@
+{
+  "dataset_id": "crassula_capensis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/crassula_capensis.csv",
+  "source_sha256": "f69634b14a50a09408a68360ad373913a5ee9b35cf0b6370c157769ee256b45b",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:18:34.304636+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.716519,
+      "min_lon": 18.330982,
+      "max_lat": -32.104007,
+      "max_lon": 21.394575
+    },
+    "temporalCoverage": {
+      "from": "2005-06-25T10:01:00+00:00",
+      "to": "2026-06-15T10:27:50+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/crassula_capensis_c72e7413cd1442f3b94251593dca2556.jsonl",
+  "runtime_seconds": 56.62
+}

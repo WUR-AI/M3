@@ -1,0 +1,109 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4997,
+  "metadata": {
+    "name": "956208",
+    "description": "The dataset contains information about marine biological samples, specifically focusing on the species B. saida. The samples were collected during various expeditions, with key details including event information, specimen identification, location data (latitude and longitude), and various measurements related to the species (such as total length, standard length, weight, sex, condition index, and stomach content measurements). The data also includes comments on the samples and elevation information.",
+    "keywords": [
+      "marine",
+      "biological",
+      "B. saida",
+      "expeditions",
+      "specimen identification",
+      "location data",
+      "measurements",
+      "Arctic region"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 89.143898,
+      "max_lon": 130.863
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2020-09-19"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "956208"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208",
+        "time_column": "Date"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "956208",
+        "resource": "956208",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 38.23,
+  "status": "ok"
+}

@@ -1,0 +1,60 @@
+{
+  "csv": "hibbertia_hypericoides.csv",
+  "dataset_id": "hibbertia_hypericoides",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c1e6262795108323b0a9de588aab51e92795f715dbfa830aca09d2ebe8253b55",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 4034,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.880861,
+      "min_lon": 114.407,
+      "max_lat": -25.188547,
+      "max_lon": 149.97288
+    },
+    "temporalCoverage": {
+      "from": "1993-09-01T12:22:00+00:00",
+      "to": "2026-06-13T15:52:08+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "hibbertia_hypericoides"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "hibbertia_hypericoides",
+        "resource": "hibbertia_hypericoides",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "hibbertia_hypericoides",
+        "resource": "hibbertia_hypericoides",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "hibbertia_hypericoides",
+        "resource": "hibbertia_hypericoides",
+        "n": 3
+      }
+    }
+  ],
+  "runtime_seconds": 13.55,
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": "asaphodes_beata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/asaphodes_beata.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:19:14.787327+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -46.90579,
+      "min_lon": 167.36141,
+      "max_lat": -35.256996,
+      "max_lon": 177.524484
+    },
+    "temporalCoverage": {
+      "from": "2005-03-20T16:09:00+00:00",
+      "to": "2026-06-13T09:21:45+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/asaphodes_beata_16c192fb4ef5453c9ec04b6c7b0d2700.jsonl",
+  "runtime_seconds": 71.44,
+  "recovered_from_trace": true,
+  "source_sha256": "b47f407db4d9c70ffa77a008a03c7b989a3385dcba2541f3fc99c7ed3a2eecc8"
+}

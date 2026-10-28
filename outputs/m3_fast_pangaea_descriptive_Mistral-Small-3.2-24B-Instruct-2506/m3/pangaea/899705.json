@@ -1,0 +1,29 @@
+{
+  "dataset_id": "899705",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/899705.csv",
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T09:06:33.579485+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MITAPI File Metadata",
+    "description": "Dataset containing metadata for MITAPI files, including file names, formats, sizes, and URLs.",
+    "keywords": [
+      "MITAPI",
+      "file metadata",
+      "file names",
+      "file formats",
+      "file sizes",
+      "URLs",
+      "netCDF"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/899705_90e4c03b8f874d1bbc164e4c6a7d7416.jsonl",
+  "runtime_seconds": 295.92
+}

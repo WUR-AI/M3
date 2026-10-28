@@ -1,0 +1,31 @@
+{
+  "csv": "963863.csv",
+  "dataset_id": "963863",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e",
+  "contract_sha256": "c625b22a2ec8c31c04c36c4b8e3cec8867ebe8ece7e22abec782ddeb3eade6d9",
+  "prompt_tokens": 1032,
+  "metadata": {
+    "name": "Physico-chemical, Particulate matter, Temperature, Hydrological datasets",
+    "description": "A collection of datasets including physico-chemical data, particulate matter data, temperature data, and hydrological data from various sampling sites.",
+    "keywords": [
+      "physico-chemical",
+      "particulate matter",
+      "temperature",
+      "hydrological",
+      "environmental data"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.657,
+  "status": "ok"
+}

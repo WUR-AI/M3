@@ -1,0 +1,39 @@
+{
+  "dataset_id": "973035",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973035.csv",
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T18:01:40.711573+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Soil Sample Measurements and Age Dating Data",
+    "description": "This dataset contains measurements of soil samples, including uranium (U), thorium (Th), and potassium (K) concentrations, dose rates, De measurements, and age dating results. The data is associated with specific events, geographic coordinates, sample and lab labels, soil depth, elevation, and date/time information.",
+    "keywords": [
+      "soil samples",
+      "uranium",
+      "thorium",
+      "potassium",
+      "dose rates",
+      "De measurements",
+      "age dating",
+      "geographic coordinates",
+      "sample labels",
+      "lab labels",
+      "soil depth",
+      "elevation",
+      "date/time",
+      "NEP_1",
+      "NEP_2",
+      "NEP_3",
+      "Germany"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973035_bcc64747c47c46fa8139825a5aa9178c.jsonl",
+  "runtime_seconds": 421.09
+}

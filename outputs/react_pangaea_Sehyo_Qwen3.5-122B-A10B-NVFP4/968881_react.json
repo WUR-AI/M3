@@ -1,0 +1,137 @@
+{
+  "csv": "968881.csv",
+  "dataset_id": "968881",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a5f4883152b119b5e65cbc0e9ef4eecb1cdd0ad4f95d8a3cf836b7d7c1f68b95",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 8695,
+  "metadata": {
+    "name": "Snow density measurements from DML21/22 expedition, Dronning Maud Land, Antarctica",
+    "description": "Dataset containing snow density measurements taken at various depths in ice/snow during the DML21/22 expedition in Dronning Maud Land, Antarctica. The data includes geographic coordinates, depth intervals, timestamps, and corresponding snow density values.",
+    "keywords": [
+      "snow density",
+      "ice",
+      "Antarctica",
+      "DML",
+      "snow measurements",
+      "Dronning Maud Land"
+    ],
+    "spatialCoverage": {
+      "min_lat": -73.4254031,
+      "min_lon": -14.5274876,
+      "max_lat": -72.8567119,
+      "max_lon": -12.014326
+    },
+    "temporalCoverage": {
+      "from": "2021-12-10",
+      "to": "2022-01-08"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "968881"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "field": "Event",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "field": "Date/Time",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "field": "Latitude",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "field": "Longitude",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "968881"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "968881",
+        "resource": "968881",
+        "field": "Density snow",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 38.641,
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": "acrothamnus_colensoi",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/acrothamnus_colensoi.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:11:26.229043+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -45.848455,
+      "min_lon": 167.669761,
+      "max_lat": -39.145751,
+      "max_lon": 176.213639
+    },
+    "temporalCoverage": {
+      "from": "1977-12-11T00:00:00Z",
+      "to": "2026-06-14T14:02:14Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/acrothamnus_colensoi_fb4009849d5343d8bcd8e6231f509f6b.jsonl",
+  "runtime_seconds": 80.21,
+  "recovered_from_trace": true,
+  "source_sha256": "32e3d47a690bf1d7da9ae1b3daff2f97a295d385c2d114e9f59a4b6588d877a1"
+}

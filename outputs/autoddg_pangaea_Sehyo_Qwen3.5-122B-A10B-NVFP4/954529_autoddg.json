@@ -1,0 +1,18 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "title": "954529",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "n_rows": 10,
+  "n_columns": 2,
+  "sample_size": 10,
+  "topic": "Topographic GIS Data",
+  "dataset_profile": "The key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. ",
+  "datamart_semantic_notes": "",
+  "semantic_profile": "The key semantic information for this dataset includes:\n**GIS**: Represents location. Contains spatial data (resolution: Zip Code). Domain-specific type: geographic information system. Function/Usage context: aggregation key. \n**XLSX**: Represents file format. Domain-specific type: general. Function/Usage context: data storage. ",
+  "prompt": "Answer the question using the following information.\n\nFirst, consider the dataset sample:\n\nGIS,XLSX\nBig_Skidder.zip,\nBlack_Hills.zip,\nBlue_Hills.zip,\nCougar_Mountain.zip,\nDevils_Mountain.zip,\nDow_Mountain.zip,\nFidalgo_Island.zip,\nLopez_Island.zip,\nSan_Juan.zip,\n,TopographicHigh_RawData.xlsx\n\n\nAdditionally, the dataset profile is as follows:\n\nThe key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. \n\nBased on this profile, please add sentence(s) to enrich the dataset description.\n\nFurthermore, the semantic profile of the dataset columns is as follows:\nThe key semantic information for this dataset includes:\n**GIS**: Represents location. Contains spatial data (resolution: Zip Code). Domain-specific type: geographic information system. Function/Usage context: aggregation key. \n**XLSX**: Represents file format. Domain-specific type: general. Function/Usage context: data storage. \n\nBased on this information, please add sentence(s) discussing the semantic profile in the description.\n\nMoreover, the dataset topic is: Topographic GIS Data. Based on this topic, please add sentence(s) describing what this dataset can be used for.\n\nQuestion: Based on the information above and the requirements, provide a dataset description in sentences. Use only natural, readable sentences without special formatting.\n\nAnswer:\n\nTarget length: approximately 100 words.",
+  "description": "This dataset contains topographic GIS data organized by specific geographic locations, including areas such as Big Skidder, Black Hills, and various islands like Fidalgo and Lopez. The collection features nine unique location entries, each associated with a corresponding compressed file, alongside a single raw data spreadsheet. The location column serves as a geographic information system key, representing spatial data at the zip code resolution to facilitate effective data aggregation. The file format column indicates that the data is stored in Excel format for general data storage purposes. Researchers and analysts can utilize this dataset to perform spatial analysis, visualize terrain features, and integrate topographic information into broader geographic information system projects.",
+  "runtime_seconds": 23.962,
+  "status": "ok"
+}

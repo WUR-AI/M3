@@ -1,0 +1,43 @@
+{
+  "csv": "965135.csv",
+  "dataset_id": "965135",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "contract_sha256": "6e9e52e3ada7ba16c54b70228d7a679b5030cdce573ea1d932c1b76accd56f27",
+  "prompt_tokens": 6535,
+  "metadata": {
+    "name": "Porites coral geochemical measurements from TIAREI-A1 (2008)",
+    "description": "Dataset of Sr/Ca, Mg/Ca, δ18O and δ13C measurements from a Porites sp. coral core (event TIAREI-A1) collected at latitude -17.506944 and longitude -149.4225 (elevation -15 m) on 2008-07-01. Each row includes an age estimate (both decimal year and calendar year) and the corresponding geochemical values.",
+    "keywords": [
+      "Porites",
+      "coral",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "geochemistry",
+      "Tiareia",
+      "Tahiti"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2008-07-01",
+      "to": "2008-07-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.105,
+  "status": "ok"
+}

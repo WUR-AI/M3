@@ -1,0 +1,32 @@
+{
+  "dataset_id": "984573",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/984573.csv",
+  "source_sha256": "091ca8fc4435bce03f857f31f55d706c49a7bb2568db46eb23333b3fc886c50a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T19:37:56.163604+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Core Analysis Data",
+    "description": "Dataset containing marine sediment core analysis with sample labels, depth, age, sea surface temperature (SST), and spatial coordinates. The data includes measurements from various events and clusters, recorded over a period of 5 days in June 2019 at a specific location in the Southern Ocean.",
+    "keywords": [
+      "marine sediment",
+      "core analysis",
+      "sea surface temperature",
+      "SST",
+      "Southern Ocean",
+      "paleoclimate",
+      "sediment depth",
+      "age dating",
+      "spatial coordinates",
+      "2019"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/984573_1612662803854206858de13efb56552e.jsonl",
+  "runtime_seconds": 381.2
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_id": "932569",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/932569.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:39:47.761447+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Atmospheric Aerosol Chemical Composition Dataset (May–July 2017)",
+    "description": "The dataset contains 75 observations of atmospheric aerosol chemical composition measured during May–July 2017. Each record includes event identifier, sample ID, stage, aerosol size range, two datetime stamps, latitude/longitude coordinates, a constant observation height of 25 m, and concentrations (µg m⁻³) of ions such as Cl⁻, NO₃⁻, SO₄²⁻, C₂O₄²⁻, NO₂⁻, Br⁻, F⁻, MSA, PO₄³⁻, Na⁺, NH₄⁺, K⁺, and Mg²⁺.",
+    "keywords": [
+      "aerosol",
+      "chemical composition",
+      "atmospheric chemistry",
+      "ion concentrations",
+      "Arctic",
+      "2017"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.420486,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24T20:50:00+00:00",
+      "to": "2017-07-16T10:35:00+00:00"
+    },
+    "spatial": "≈0.1 m (six decimal‑place coordinate precision)",
+    "temporal": "minute‑level timestamps (sub‑second granularity) in UTC"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/932569_272f2e8e976e47fe8793012a5d8ad1a1.jsonl",
+  "runtime_seconds": 212.41,
+  "recovered_from_trace": true,
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563"
+}

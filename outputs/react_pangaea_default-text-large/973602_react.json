@@ -1,0 +1,57 @@
+{
+  "csv": "973602.csv",
+  "dataset_id": "973602",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "fbdd17a1da291bff3da59cc7371ccf8e55bfb0b47ba5f0e376f7264ea887d8be",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2598,
+  "metadata": {
+    "name": "Geochemical composition of rock samples (PS101/186)",
+    "description": "Chemical oxide analysis of rock samples identified by Sample ID, including SiO₂, TiO₂, Al₂O₃, Fe₂O₃, MnO, MgO, CaO, Na₂O, K₂O, P₂O₅ and total, together with the sampling event, geographic coordinates (latitude, longitude, elevation) and the date/time of collection.",
+    "keywords": [
+      "geochemistry",
+      "rock composition",
+      "oxide analysis",
+      "latitude",
+      "longitude",
+      "elevation",
+      "sample ID",
+      "Pangaea",
+      "PS101/186"
+    ],
+    "spatialCoverage": {
+      "min_lat": 86.961,
+      "min_lon": 55.68667,
+      "max_lat": 86.961,
+      "max_lon": 55.68667
+    },
+    "temporalCoverage": {
+      "from": "2016-10-04T17:21:00",
+      "to": "2016-10-04T17:21:00"
+    },
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "973602"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "973602",
+        "resource": "973602"
+      }
+    }
+  ],
+  "runtime_seconds": 8.244,
+  "status": "ok"
+}

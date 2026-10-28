@@ -1,0 +1,61 @@
+{
+  "csv": "916167.csv",
+  "dataset_id": "916167",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2571,
+  "metadata": {
+    "name": "Bohm et al. 2020 Pangaea dataset file inventory",
+    "description": "A table listing the files associated with the Bohm et al. (2020) publication on Pangaea, including file names, formats, sizes, URLs, the associated event, and geographic coordinates of the measurement site.",
+    "keywords": [
+      "Bohm",
+      "2020",
+      "Pangaea",
+      "ECdata",
+      "Kraichgau",
+      "Noah-MP",
+      "plant performance",
+      "weather data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "916167"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167",
+        "n": 5
+      }
+    }
+  ],
+  "runtime_seconds": 12.285,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "lomatium_orientale.csv",
+  "dataset_id": "lomatium_orientale",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "981e31e0610cdeda7420d35952429df5e0de0b3bf794c05f8370dc1ecb6984cf",
+  "contract_sha256": "f9e9165688a20f6a69b4521bd4c5dfcffbec5695b7afef7e1abf90b72e077528",
+  "prompt_tokens": 312055,
+  "status": "skipped",
+  "reason": "context_window"
+}

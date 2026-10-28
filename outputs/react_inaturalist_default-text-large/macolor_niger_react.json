@@ -1,0 +1,71 @@
+{
+  "csv": "macolor_niger.csv",
+  "dataset_id": "macolor_niger",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b678f76bb6f3c43b2dc6f453dbd9a1d40580ab0b18af05911bf5c1869498a943",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3264,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -27.550575,
+      "min_lon": -179.883238,
+      "max_lat": 29.557669,
+      "max_lon": 179.958801
+    },
+    "temporalCoverage": {
+      "from": "1981-01-10T00:00:00+00:00",
+      "to": "2026-06-11T13:34:45+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "macolor_niger"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "macolor_niger",
+        "resource": "macolor_niger"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "macolor_niger"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "macolor_niger"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "macolor_niger",
+        "resource": "macolor_niger",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "macolor_niger",
+        "resource": "macolor_niger",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.333,
+  "status": "ok"
+}

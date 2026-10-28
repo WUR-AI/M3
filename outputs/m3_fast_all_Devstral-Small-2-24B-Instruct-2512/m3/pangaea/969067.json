@@ -1,0 +1,41 @@
+{
+  "dataset_id": "969067",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/969067.csv",
+  "source_sha256": "7f0009de0409d11e20040ec51d5d017676533d678668d8751deb28f03b0fd453",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T00:45:01.924060+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Puchalski AWS Weather Station Data",
+    "description": "This dataset contains daily weather observations from the Puchalski AWS weather station in Antarctica, including temperature, relative humidity, wind speed, and solar radiation measurements from 2018 to 2023.",
+    "keywords": [
+      "Antarctica",
+      "weather",
+      "temperature",
+      "humidity",
+      "wind speed",
+      "solar radiation",
+      "climate"
+    ],
+    "spatialCoverage": {
+      "min_lat": -62.1641,
+      "min_lon": -58.4701,
+      "max_lat": -62.1641,
+      "max_lon": -58.4701
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01",
+      "to": "2023-12-31"
+    },
+    "spatial": "point location",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/969067_07162fcf0b3d48cf87466e44f9e1adda.jsonl",
+  "runtime_seconds": 402.03
+}

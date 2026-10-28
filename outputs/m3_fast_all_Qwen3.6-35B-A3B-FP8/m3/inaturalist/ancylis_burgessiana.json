@@ -1,0 +1,28 @@
+{
+  "dataset_id": "ancylis_burgessiana",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/ancylis_burgessiana.csv",
+  "source_sha256": "dd8c769148d1b6aa70f519fbd5fe0f04d0a18f747e977874d016f31477c1a410",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:09:34.451762+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.801885,
+      "min_lon": -97.271913,
+      "max_lat": 49.85558,
+      "max_lon": -60.050659
+    },
+    "temporalCoverage": {
+      "from": "2004-06-06T10:43:00+00:00",
+      "to": "2026-06-12T22:40:49+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/ancylis_burgessiana_83ce588698fe472babe9ff731d140fa2.jsonl",
+  "runtime_seconds": 40.41
+}

@@ -1,0 +1,39 @@
+{
+  "csv": "931282.csv",
+  "dataset_id": "931282",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "contract_sha256": "5632230ab6c59df66c4e4ab45ab91ce8a4c21889a9574e91ff88c1542188dc69",
+  "prompt_tokens": 642,
+  "metadata": {
+    "name": "UPC Sensor Data 2020",
+    "description": "Dataset containing metadata for sensor output and input files associated with the UPC event, including file names, types, sizes, location coordinates, elevation, and timestamps.",
+    "keywords": [
+      "UPC",
+      "sensors",
+      "input files",
+      "output files",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11",
+      "to": "2020-03-11"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.283,
+  "status": "ok"
+}

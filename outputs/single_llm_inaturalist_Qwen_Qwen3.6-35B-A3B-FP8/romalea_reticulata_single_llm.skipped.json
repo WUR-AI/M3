@@ -1,0 +1,15 @@
+{
+  "csv": "romalea_reticulata.csv",
+  "dataset_id": "romalea_reticulata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "45739faacb79e10e4e304f82fe1d6207a18745899930124e90c96de7b495effc",
+  "contract_sha256": "7f78a66f721616256a82b94a0bd35edc37bcd8840075e74431b37c8805dfcf84",
+  "prompt_tokens": 317886,
+  "status": "skipped",
+  "reason": "context_window"
+}

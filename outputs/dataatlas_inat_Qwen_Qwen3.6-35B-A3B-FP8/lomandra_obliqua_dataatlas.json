@@ -1,0 +1,16 @@
+{
+  "csv": "lomandra_obliqua.csv",
+  "dataset_id": "lomandra_obliqua",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1000,
+  "n_columns": 50,
+  "description": "1,000 Lomandra obliqua occurrences from Australia, spanning 1991 to 2026, with taxonomic and geospatial data.",
+  "dataset_description": "Contains 1,000 occurrences of Lomandra obliqua spanning 1991 to 2026.",
+  "runtime_seconds": 19.303,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_Qwen_Qwen3.6-35B-A3B-FP8/raw/lomandra_obliqua/dictionary.json"
+}

@@ -1,0 +1,72 @@
+{
+  "csv": "ducula_bicolor.csv",
+  "dataset_id": "ducula_bicolor",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "23dcf8a1d83bbab379303ba57f1ee7e16ad19a879aa4ce91d0240c1dc35a6096",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 8949,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -8.604754,
+      "min_lon": -77.39628,
+      "max_lat": 25.066556,
+      "max_lon": 132.759873
+    },
+    "temporalCoverage": {
+      "from": "1995-09-01T00:00:00+00:00",
+      "to": "2026-06-14T14:26:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "ducula_bicolor"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ducula_bicolor",
+        "resource": "ducula_bicolor",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "ducula_bicolor"
+      }
+    }
+  ],
+  "runtime_seconds": 14.015,
+  "status": "ok"
+}

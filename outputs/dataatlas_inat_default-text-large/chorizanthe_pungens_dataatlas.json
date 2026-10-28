@@ -1,0 +1,16 @@
+{
+  "csv": "chorizanthe_pungens.csv",
+  "dataset_id": "chorizanthe_pungens",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "Occurrence records of Chorizanthe pungens in the US (2011‑2026) with taxonomy, coordinates, dates, and observers.",
+  "dataset_description": "Records of Chorizanthe pungens occurrences from 2011 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 68.526,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/chorizanthe_pungens/dictionary.json"
+}

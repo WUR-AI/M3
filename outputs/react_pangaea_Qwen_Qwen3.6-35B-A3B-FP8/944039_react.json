@@ -1,0 +1,110 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 18720,
+  "metadata": {
+    "name": "Belgian collector trial pre-impact core sample geochemistry",
+    "description": "Geochemical analysis of sediment core samples from the Belgian collector trial pre-impact experiment. The dataset contains elemental concentrations (Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) and their relative abundances from core SO268/1_74-1, collected at a single deep-ocean station (elevation -4518.1 m).",
+    "keywords": [
+      "geochemistry",
+      "core samples",
+      "sediment",
+      "elemental analysis",
+      "Belgian collector trial",
+      "pre-impact",
+      "deep ocean"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20",
+      "to": "2019-03-20"
+    },
+    "spatial": "point location",
+    "temporal": "single timestamp"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "944039"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "n": 9
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "944039",
+        "field": "Event",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "944039",
+        "field": "Area",
+        "resource": "944039"
+      }
+    }
+  ],
+  "runtime_seconds": 14.371,
+  "status": "ok"
+}

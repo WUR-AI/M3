@@ -1,0 +1,30 @@
+{
+  "dataset_id": "969067",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/969067.csv",
+  "source_sha256": "7f0009de0409d11e20040ec51d5d017676533d678668d8751deb28f03b0fd453",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T16:50:12.214183+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Meteorological Measurements at Puchalski AWS",
+    "description": "This dataset contains daily meteorological measurements from the Puchalski AWS station, including solar radiation, temperature, relative humidity, and wind speed, recorded from January 1, 2018, to December 31, 2023, at a single geographical location with coordinates Latitude: -62.1641 and Longitude: -58.4701.",
+    "keywords": [
+      "meteorological measurements",
+      "solar radiation",
+      "temperature",
+      "relative humidity",
+      "wind speed",
+      "Puchalski AWS",
+      "Antarctica",
+      "2018-2023"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/969067_e1d749f409264eb5bcb5b640629bcd30.jsonl",
+  "runtime_seconds": 1077.4
+}

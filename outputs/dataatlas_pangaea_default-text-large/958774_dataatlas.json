@@ -1,0 +1,16 @@
+{
+  "csv": "958774.csv",
+  "dataset_id": "958774",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 104,
+  "n_columns": 11,
+  "description": "Observational lake water column phosphorus concentrations by depth, year, and location for Lake Constance.",
+  "dataset_description": "Contains 104 Earth and environmental science records for analytical research.",
+  "runtime_seconds": 63.269,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/958774/dictionary.json"
+}

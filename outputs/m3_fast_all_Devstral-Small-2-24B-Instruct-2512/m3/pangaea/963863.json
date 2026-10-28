@@ -1,0 +1,36 @@
+{
+  "dataset_id": "963863",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/963863.csv",
+  "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T00:10:34.159699+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Physico-chemical and environmental data",
+    "description": "Dataset containing physico-chemical data, particulate matter data, and temperature data, including in situ parameters, basic physicochemistry, nutrients, trace elements, contaminants, cations, mineralogy, and continuous temperature measurements.",
+    "keywords": [
+      "physico-chemical",
+      "particulate matter",
+      "temperature",
+      "in situ parameters",
+      "basic physicochemistry",
+      "nutrients",
+      "trace elements",
+      "contaminants",
+      "cations",
+      "mineralogy"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/963863_73217cf3e3154a60915d7b41389eb217.jsonl",
+  "runtime_seconds": 160.25
+}

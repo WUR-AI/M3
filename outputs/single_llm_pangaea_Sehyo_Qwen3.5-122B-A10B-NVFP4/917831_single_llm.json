@@ -1,0 +1,41 @@
+{
+  "csv": "917831.csv",
+  "dataset_id": "917831",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "contract_sha256": "e0deb648ced2ed0b6f2f785b8f7528f43fca78d58b08ef4517f75d761b042742",
+  "prompt_tokens": 13549,
+  "metadata": {
+    "name": "Physiological and biochemical data of fish from Macapule Lagoon",
+    "description": "Dataset containing physiological measurements (mass, organ weights, hepatosomatic index, gonadosomatic index, total protein, triglycerides, cholesterol, glucose) and individual codes for fish sampled at Macapule Lagoon across different seasons and size intervals between 2013 and 2015.",
+    "keywords": [
+      "fish",
+      "physiology",
+      "biomass",
+      "organ weight",
+      "biochemistry",
+      "Macapule Lagoon",
+      "seasonal variation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12",
+      "to": "2015-08-31"
+    },
+    "spatial": "point locations",
+    "temporal": "seasonal"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.622,
+  "status": "ok"
+}

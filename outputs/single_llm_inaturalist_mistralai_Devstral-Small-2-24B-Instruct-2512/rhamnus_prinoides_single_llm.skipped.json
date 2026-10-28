@@ -1,0 +1,15 @@
+{
+  "csv": "rhamnus_prinoides.csv",
+  "dataset_id": "rhamnus_prinoides",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "8ee8278168643beaf4fc2fec06e84f6d772962f5a3a0c26a145bb2126b9204b9",
+  "contract_sha256": "e82da499873af74ef0660bf40663482c15ac3d5803050f7d2006ddf98da52aaf",
+  "prompt_tokens": 318672,
+  "status": "skipped",
+  "reason": "context_window"
+}

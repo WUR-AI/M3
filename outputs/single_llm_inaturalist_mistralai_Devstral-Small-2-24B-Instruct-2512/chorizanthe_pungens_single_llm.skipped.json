@@ -1,0 +1,15 @@
+{
+  "csv": "chorizanthe_pungens.csv",
+  "dataset_id": "chorizanthe_pungens",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5a7172072bf1547a22cc104c0ab85db3e45a36d4498c3e80a1d6f23b2719694f",
+  "contract_sha256": "912bcf387c6ddb161cd5f36b21545efaf75b17bb872a0bbb2c8ae82b9ac8b13a",
+  "prompt_tokens": 335545,
+  "status": "skipped",
+  "reason": "context_window"
+}

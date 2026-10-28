@@ -1,0 +1,15 @@
+{
+  "csv": "ducula_bicolor.csv",
+  "dataset_id": "ducula_bicolor",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "23dcf8a1d83bbab379303ba57f1ee7e16ad19a879aa4ce91d0240c1dc35a6096",
+  "contract_sha256": "44b873daed18398e961945704e8e936d9ba0ab0878bf8f3a91faa6f2f1f0d782",
+  "prompt_tokens": 310350,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 122,
+  "n_columns": 49,
+  "description": "Laboratory data on Mytilus galloprovincialis development under controlled CO₂ conditions.",
+  "dataset_description": "Earth and environmental science dataset with 924,558 tables, each containing 122 rows.",
+  "runtime_seconds": 30.745,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/924558/dictionary.json"
+}

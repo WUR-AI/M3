@@ -1,0 +1,41 @@
+{
+  "csv": "927062.csv",
+  "dataset_id": "927062",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "contract_sha256": "a0e9f6f6f223b67cc3023fb010a544c4ece4e96e1f80319246446a089c157aa4",
+  "prompt_tokens": 120502,
+  "metadata": {
+    "name": "Radiosonde Balloon Sounding Data from 2018-08-18",
+    "description": "Vertical profile atmospheric measurements including pressure, temperature, humidity, wind speed, and wind direction collected during a radiosonde ascent on August 18, 2018.",
+    "keywords": [
+      "radiosonde",
+      "atmospheric sounding",
+      "weather balloon",
+      "wind profile",
+      "temperature profile",
+      "humidity",
+      "pressure"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.54034,
+      "min_lon": 89.5537,
+      "max_lat": 37.14087,
+      "max_lon": 89.5601
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00",
+      "to": "2018-08-18T11:39:00"
+    },
+    "spatial": "point locations",
+    "temporal": "1 second"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 15.545,
+  "status": "ok"
+}

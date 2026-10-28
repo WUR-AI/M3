@@ -1,0 +1,41 @@
+{
+  "csv": "959883.csv",
+  "dataset_id": "959883",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "de3317d8fc807ed86c4722f03ef6a7bf025cc4bf9ffc0fd8a0c71f52b6b45ce0",
+  "contract_sha256": "1c064d8e00fa1833964fb92a324b361559787d70a13133c93b2cabfb5da3664f",
+  "prompt_tokens": 3146,
+  "metadata": {
+    "name": "M186_50-1GC Pore Water Geochemistry",
+    "description": "Geochemical analysis of pore water samples from sediment core M186_50-1GC, including concentrations of nutrients (nitrate, nitrite, ammonium, phosphate), major ions (chloride, sulfate, bromide, boron, manganese, calcium, iron, sodium, magnesium, strontium, silicon, barium, lithium, potassium), temperature, and depth. Data collected at a single station on 2022-12-15.",
+    "keywords": [
+      "pore water",
+      "sediment core",
+      "geochemistry",
+      "nutrients",
+      "major ions",
+      "M186_50-1GC",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74047,
+      "min_lon": -28.58108,
+      "max_lat": 38.74047,
+      "max_lon": -28.58108
+    },
+    "temporalCoverage": {
+      "from": "2022-12-15",
+      "to": "2022-12-15"
+    },
+    "spatial": "point locations",
+    "temporal": "instantaneous"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.417,
+  "status": "ok"
+}

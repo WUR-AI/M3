@@ -1,0 +1,108 @@
+{
+  "csv": "973907.csv",
+  "dataset_id": "973907",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 5362,
+  "metadata": {
+    "name": "MSM44_362-1 P-wave velocity and sediment core measurements",
+    "description": "Sediment core measurements from cruise MSM44, event 362-1, including P-wave travel time, acoustic velocity (Vp-a), acoustic grain density (AGR), core diameter deviation, and depth measurements. All samples were taken at a single location in the Arctic (75.98°N, 66.05°W) at a water depth of 705 m on 2015-07-12.",
+    "keywords": [
+      "P-wave velocity",
+      "sediment core",
+      "acoustic grain density",
+      "MSM44",
+      "Arctic",
+      "geophysical survey"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12",
+      "to": "2015-07-12"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973907"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "field": "Sect"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973907",
+        "resource": "973907",
+        "field": "Event"
+      }
+    }
+  ],
+  "runtime_seconds": 10.501,
+  "status": "ok"
+}

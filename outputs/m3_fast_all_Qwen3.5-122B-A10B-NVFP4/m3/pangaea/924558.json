@@ -1,0 +1,46 @@
+{
+  "dataset_id": "924558",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924558.csv",
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:30:51.045797+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory experiment on Mytilus galloprovincialis under varying carbonate chemistry conditions",
+    "description": "A high-resolution laboratory dataset containing 122 records of the mollusk Mytilus galloprovincialis exposed to controlled experimental conditions. The data includes detailed carbonate chemistry parameters (pH, DIC, CO2, alkalinity, saturation states), environmental variables (temperature, salinity), and developmental stage information. The study features a balanced design with control and treatment groups, tracking experimental duration in hours and including both primary and alternative calculation methods for chemical parameters.",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "carbonate chemistry",
+      "ocean acidification",
+      "aragonite saturation",
+      "calcite saturation",
+      "laboratory experiment",
+      "DIC",
+      "pH",
+      "salinity",
+      "temperature",
+      "Nagasaki_University"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": {
+      "from": "null",
+      "to": "null"
+    },
+    "spatial": "point",
+    "temporal": "experimental hours"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924558_057932167bde4202ad7dd39ce280656c.jsonl",
+  "runtime_seconds": 504.51
+}
