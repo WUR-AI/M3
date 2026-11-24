@@ -1,0 +1,37 @@
+{
+  "dataset_id": "916167",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/916167.csv",
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:35:20.513138+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "File Metadata Manifest for Katharinentalerhof Pforzheim Event",
+    "description": "A metadata manifest listing 12 files associated with the Katharinentalerhof_Pforzheim event. The dataset contains file names, formats, sizes, and URLs pointing to a Pangaea repository. All records correspond to a single geographic location (48.92°N, 8.70°E) in Pforzheim, Germany. The temporal data (Date/Time) is entirely missing from this resource.",
+    "keywords": [
+      "Pforzheim",
+      "Katharinentalerhof",
+      "file metadata",
+      "Pangaea",
+      "Germany",
+      "environmental data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "Point location (48.92°N, 8.70°E)",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/916167_44b49d981bd24e6db182fd0de7ef9e31.jsonl",
+  "runtime_seconds": 230.82
+}

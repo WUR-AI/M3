@@ -1,0 +1,42 @@
+{
+  "dataset_id": "901510",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901510.csv",
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:22:38.833404+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "GNSS Positioning Data from Elwha River Delta Campaign",
+    "description": "High-precision GNSS fixed-solution observations collected during the Elwha River Delta campaign on February 3, 2012. The dataset contains 106 records with coordinates, elevation, and positioning quality metrics (HRMS, VRMS) from a stationary reference station or small baseline network.",
+    "keywords": [
+      "GNSS",
+      "GPS",
+      "geodetic",
+      "Elwha River Delta",
+      "positioning",
+      "HRMS",
+      "VRMS",
+      "fixed solution"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00+00:00",
+      "to": "2012-02-03T13:11:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "26 minutes"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901510_ca388cfe27c041659479566ec8debf51.jsonl",
+  "runtime_seconds": 93.7
+}

@@ -1,0 +1,41 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "3363c2ef1534450a532c77f5c50e8a61cff72a5151667484fab7bbcacf86a415",
+  "prompt_tokens": 2812,
+  "metadata": {
+    "name": "Geochemical Sample Profiles for Event 386-M0095B",
+    "description": "Dataset of sediment sample measurements collected during event 386-M0095B on 2021-05-30. Each row provides depth, mineral composition (e.g., quartz, calcite, etc.), sample label, IGSN, and associated metadata such as latitude (36.89168333), longitude (143.4078833), elevation (-7697.0 m), and the collection date.",
+    "keywords": [
+      "geochemistry",
+      "sediment",
+      "mineral composition",
+      "depth profile",
+      "sample",
+      "IGSN",
+      "Japan"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.637,
+  "status": "ok"
+}

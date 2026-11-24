@@ -1,0 +1,45 @@
+{
+  "dataset_id": "995327",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995327.csv",
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T02:01:57.359192+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Detrital mineral composition data from Lanaittu core sediment samples",
+    "description": "Geological dataset containing quantitative detrital mineral abundance percentages for 5 sediment samples collected from the Lanaittu core in Sardinia, Italy. The dataset includes sample identifiers, sediment depth, summary mineralogical metrics (Heavy Minerals, Transparent, Opaque, Turbid fractions), and detailed abundances for 24 specific minerals (e.g., Zircon, Tourmaline, Rutile, Garnet, Kyanite). All samples were collected at a single location (40.2592°N, 9.5014°E) on 1994-01-01, representing different depths within the core (12.43–27.5 m).",
+    "keywords": [
+      "detrital minerals",
+      "sediment core",
+      "mineralogy",
+      "provenance",
+      "metamorphic minerals",
+      "Sardinia",
+      "Lanaittu",
+      "heavy minerals",
+      "Garnet",
+      "Zircon",
+      "Kyanite"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01T00:00:00+00:00",
+      "to": "1994-01-01T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995327_7c2bc3fae758486f831d819722283613.jsonl",
+  "runtime_seconds": 125.99
+}

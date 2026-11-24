@@ -1,0 +1,32 @@
+{
+  "dataset_id": "959885",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959885.csv",
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T14:37:51.944789+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Geochemical Analysis",
+    "description": "This dataset contains geochemical measurements of marine sediment samples, including concentrations of various ions and elements, collected at a single location in the Atlantic Ocean. The data includes measurements of nitrate, nitrite, ammonium, phosphate, chloride, sulfate, bromide, and various metals such as boron, manganese, calcium, iron, sodium, magnesium, strontium, silicon, barium, lithium, and potassium. The samples were collected on December 16, 2022, at a depth of 1234 meters below sea level.",
+    "keywords": [
+      "marine sediment",
+      "geochemical analysis",
+      "ion concentrations",
+      "elemental analysis",
+      "Atlantic Ocean",
+      "sediment chemistry",
+      "environmental monitoring",
+      "December 2022",
+      "deep-sea sediment",
+      "nutrient analysis"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959885_8a1d154bc5d04e108aea8762f60c3d00.jsonl",
+  "runtime_seconds": 485.99
+}

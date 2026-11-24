@@ -1,0 +1,42 @@
+{
+  "dataset_id": "969067",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/969067.csv",
+  "source_sha256": "7f0009de0409d11e20040ec51d5d017676533d678668d8751deb28f03b0fd453",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:02:51.672995+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Puchalski AWS Daily Meteorological Observations (2018-2023)",
+    "description": "Daily meteorological time series from the Puchalski Automatic Weather Station in Antarctica, containing temperature (min, mean, max), relative humidity (min, mean, max), wind speed (min, mean, max), and Snow/Soil Water Deficit (SWD) daily sums.",
+    "keywords": [
+      "meteorology",
+      "Antarctica",
+      "temperature",
+      "humidity",
+      "wind speed",
+      "AWS",
+      "Puchalski",
+      "daily observations"
+    ],
+    "spatialCoverage": {
+      "min_lat": -62.1641,
+      "min_lon": -58.4701,
+      "max_lat": -62.1641,
+      "max_lon": -58.4701
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01T00:00:00+00:00",
+      "to": "2023-12-31T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/969067_a58cfa4295964b05b2b05f1a83b09a10.jsonl",
+  "runtime_seconds": 139.67
+}

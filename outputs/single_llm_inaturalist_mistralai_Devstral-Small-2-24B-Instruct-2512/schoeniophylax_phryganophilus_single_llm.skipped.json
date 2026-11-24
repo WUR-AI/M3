@@ -1,0 +1,15 @@
+{
+  "csv": "schoeniophylax_phryganophilus.csv",
+  "dataset_id": "schoeniophylax_phryganophilus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c7ab1c441fa634a8944a30fa7d0c28bef722501080c796d28690ace4c2b7abf7",
+  "contract_sha256": "8f8921e848b066c56179d409c3d51c3f023dc03da4846d5669c2501cc8021d4f",
+  "prompt_tokens": 340636,
+  "status": "skipped",
+  "reason": "context_window"
+}

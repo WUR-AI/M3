@@ -1,0 +1,121 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3965,
+  "metadata": {
+    "name": "Topographic and Geographic Location Files",
+    "description": "Collection of geographic location files (ZIP archives) referencing various mountains, hills, and islands, along with a topographic high raw data Excel file. The dataset contains file references rather than actual coordinate or measurement data.",
+    "keywords": [
+      "topographic",
+      "geographic",
+      "mountains",
+      "hills",
+      "islands",
+      "spatial data",
+      "Pacific Northwest"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations (file references)",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "954529"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529",
+        "field": "GIS",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529",
+        "field": "XLSX",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "get_missing_values",
+      "args": {
+        "context_key": "954529",
+        "resource": "954529"
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "954529"
+      }
+    }
+  ],
+  "runtime_seconds": 15.195,
+  "status": "ok"
+}

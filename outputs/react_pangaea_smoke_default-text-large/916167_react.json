@@ -1,0 +1,74 @@
+{
+  "csv": "916167.csv",
+  "dataset_id": "916167",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3018,
+  "metadata": {
+    "name": "Pangaea file inventory for Bohm et al. 2020",
+    "description": "A table describing the files that belong to the Bohm et al. 2020 Pangaea publication. For each file it lists the file name, format, size, download URL, associated event, and the geographic location (latitude = 48.92 N, longitude = 8.7 E). The table itself contains no temporal measurements.",
+    "keywords": [
+      "Pangaea",
+      "metadata",
+      "file inventory",
+      "Bohm 2020",
+      "ecological data",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "916167"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "916167"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 17.869,
+  "status": "ok"
+}

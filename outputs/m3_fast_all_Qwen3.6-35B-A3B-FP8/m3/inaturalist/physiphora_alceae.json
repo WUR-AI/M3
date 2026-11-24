@@ -1,0 +1,28 @@
+{
+  "dataset_id": "physiphora_alceae",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/physiphora_alceae.csv",
+  "source_sha256": "df273451b92741ef3fe6862a02f626fe1512ce17f503138b29fecd0c7b3125be",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T03:00:42.296455+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.005597,
+      "min_lon": -157.830457,
+      "max_lat": 61.609092,
+      "max_lon": 142.163501
+    },
+    "temporalCoverage": {
+      "from": "2002-06-01T15:00:00+00:00",
+      "to": "2026-06-15T08:06:50+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/physiphora_alceae_6ada562726004a108a767fa45ba98404.jsonl",
+  "runtime_seconds": 50.5
+}

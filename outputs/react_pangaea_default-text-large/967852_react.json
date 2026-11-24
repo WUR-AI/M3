@@ -1,0 +1,81 @@
+{
+  "csv": "967852.csv",
+  "dataset_id": "967852",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4813,
+  "metadata": {
+    "name": "Geochemical measurements from Santiurde_section",
+    "description": "A table of geochemical and stratigraphic measurements for sediment samples collected at the Santiurde_section site. The dataset does not contain valid date/time information.",
+    "keywords": [
+      "geochemistry",
+      "sediment",
+      "Santiurde",
+      "stratigraphy",
+      "sample"
+    ],
+    "spatialCoverage": {
+      "min_lat": 43.0685608,
+      "min_lon": -4.0878295,
+      "max_lat": 43.0685608,
+      "max_lon": -4.0878295
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "967852"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "967852",
+        "resource": "967852"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "967852",
+        "resource": "967852",
+        "n": 20
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "967852"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "967852",
+        "resource": "967852",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "967852",
+        "resource": "967852",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 22.646,
+  "status": "ok"
+}

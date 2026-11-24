@@ -1,0 +1,40 @@
+{
+  "dataset_id": "913868",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/913868.csv",
+  "source_sha256": "c0511e76b8edf563e4cac8c8b2d4c1f3fc73731ceba37608306521e4ec2d8afa",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T20:56:04.268756+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Aerosol Particle Size Distribution Measurements at Neumayer Station",
+    "description": "This dataset contains aerosol particle size distribution measurements taken at Neumayer Station, Antarctica. The measurements include particle concentrations across various diameters, timestamps, and geographic coordinates. The data spans a full year with measurements taken at regular intervals.",
+    "keywords": [
+      "aerosol",
+      "particle size distribution",
+      "Antarctica",
+      "Neumayer Station",
+      "atmospheric measurements",
+      "dN/dlogDp"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2019-01-01T00:30:00+00:00",
+      "to": "2019-12-31T23:05:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "5-minute intervals"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/913868_935fa811ff114f06a8552d164b92b188.jsonl",
+  "runtime_seconds": 405.02
+}

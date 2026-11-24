@@ -1,0 +1,42 @@
+{
+  "dataset_id": "973035",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973035.csv",
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:27:07.137664+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Radiometric and Dose Rate Measurements from Soil Samples",
+    "description": "This dataset contains radiometric measurements (Uranium, Thorium, Potassium), dose rate measurements, and age dating data from soil samples collected at a specific geographic location. The data includes measurements of radioactive elements, their errors, soil depth, and elevation. The temporal coverage is limited to a single date, and the spatial coverage is confined to a small geographic area.",
+    "keywords": [
+      "radiometric measurements",
+      "soil samples",
+      "Uranium",
+      "Thorium",
+      "Potassium",
+      "dose rate",
+      "age dating",
+      "geospatial data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03T09:00:00+00:00",
+      "to": "2023-04-03T09:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973035_343a31fb56054884930d9571e1f01264.jsonl",
+  "runtime_seconds": 341.8
+}

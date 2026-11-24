@@ -1,0 +1,42 @@
+{
+  "csv": "908459.csv",
+  "dataset_id": "908459",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b08ef1a0c309b4a4def9f5e67e45bd39c8e3237b14d0e69bd9b469b86c4cda96",
+  "contract_sha256": "415386ec1a0775041c7440d95ff0f578a1335696fa175397dab4e0d31fa04506",
+  "prompt_tokens": 6449,
+  "metadata": {
+    "name": "Laboratory measurements of Magallana hongkongensis (mollusk) in Zhanjiang",
+    "description": "A dataset of laboratory measurements for the oyster species Magallana hongkongensis, including various treatment groups and physicochemical parameters (e.g., stiffness, hardness, density, pH, temperature, salinity, carbonate chemistry) collected at a single site in Zhanjiang (latitude 21.33333, longitude 110.66667) on 2016-06-01.",
+    "keywords": [
+      "Magallana hongkongensis",
+      "oyster",
+      "laboratory",
+      "treatment",
+      "Zhanjiang",
+      "marine",
+      "physicochemical",
+      "2016-06-01"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.33333,
+      "min_lon": 110.66667,
+      "max_lat": 21.33333,
+      "max_lon": 110.66667
+    },
+    "temporalCoverage": {
+      "from": "2016-06-01",
+      "to": "2016-06-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.315,
+  "status": "ok"
+}

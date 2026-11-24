@@ -1,0 +1,15 @@
+{
+  "csv": "asota_plana.csv",
+  "dataset_id": "asota_plana",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "52f4e3c2299dfa0840da2d6641c81c907d3d770def638f66afb4e6cb05950cc5",
+  "contract_sha256": "aa3310d075f410962da19cc21dd1db4008e1ff44205681b019e1844d287fac38",
+  "prompt_tokens": 307126,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "961119",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961119.csv",
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T14:56:12.584286+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Baltic Sea pCO2 Data Inventory",
+    "description": "A catalog of CSV files related to Baltic Sea pCO2 measurements, including file descriptions, names, sizes, and unique hash values.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "climatology",
+      "trend",
+      "inventory",
+      "metadata"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961119_a0305addc3774d13802d7068b1e08e86.jsonl",
+  "runtime_seconds": 226.82
+}

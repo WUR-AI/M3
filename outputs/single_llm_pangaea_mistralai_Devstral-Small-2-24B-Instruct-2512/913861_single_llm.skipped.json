@@ -1,0 +1,15 @@
+{
+  "csv": "913861.csv",
+  "dataset_id": "913861",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "4f12a0e5810b32b5ec78c9788b9f5e7c7f24d917d0544d283992885714b59cc2",
+  "contract_sha256": "f299c565fb91c4b890d4d2c0bf772a366b536b105042777fc53fbdc9e189b349",
+  "prompt_tokens": 2969831,
+  "status": "skipped",
+  "reason": "context_window"
+}

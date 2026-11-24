@@ -1,0 +1,28 @@
+{
+  "dataset_id": "genista_germanica",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/genista_germanica.csv",
+  "source_sha256": "35e546b1513c22ab969f75667e4dd26db15ed9453e4e5a8295bb087dd6eaa834",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-05T04:48:23.316135+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 42.739556,
+      "min_lon": -3.93686,
+      "max_lat": 56.990576,
+      "max_lon": 47.319546
+    },
+    "temporalCoverage": {
+      "from": "1990-05-12T09:57:00+00:00",
+      "to": "2026-06-14T12:35:03+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/genista_germanica_76e9cb3a601a4f73810f0b3127778766.jsonl",
+  "runtime_seconds": 132.5
+}

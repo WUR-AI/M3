@@ -1,0 +1,42 @@
+{
+  "dataset_id": "990054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990054.csv",
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:52:36.244523+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MOSAiC Arctic Ice Core Chlorophyll and Pheophytin Measurements",
+    "description": "This dataset contains ice core sampling data from the MOSAiC (Multidisciplinary drifting Observatory for the Study of Arctic Climate) expedition. It includes geospatial coordinates, sampling metadata (event, section labels, depth), and biological measurements of chlorophyll a (Chl a) and pheophytin (Phae) concentrations from Arctic sea ice cores collected between October 2019 and July 2020.",
+    "keywords": [
+      "MOSAiC",
+      "Arctic",
+      "ice core",
+      "chlorophyll a",
+      "pheophytin",
+      "sea ice",
+      "biological measurements",
+      "expedition"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28T00:00:00+00:00",
+      "to": "2020-07-20T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990054_b2a816446f75422dac2b49227950b462.jsonl",
+  "runtime_seconds": 107.22
+}

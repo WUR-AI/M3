@@ -1,0 +1,42 @@
+{
+  "dataset_id": "927062",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/927062.csv",
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:43:24.207972+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Balloon Atmospheric Data 2018-08-18",
+    "description": "This dataset contains atmospheric measurements collected during a balloon flight on August 18, 2018. It includes temporal, spatial, and meteorological data such as pressure, temperature, relative humidity, wind direction, and wind speed. The data is highly localized in the Arctic region near the North Pole.",
+    "keywords": [
+      "atmospheric data",
+      "balloon flight",
+      "Arctic",
+      "meteorological measurements",
+      "pressure",
+      "temperature",
+      "humidity",
+      "wind"
+    ],
+    "spatialCoverage": {
+      "min_lat": 89.5537,
+      "min_lon": 36.54034,
+      "max_lat": 89.5601,
+      "max_lon": 37.14087
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00+00:00",
+      "to": "2018-08-18T11:39:00+00:00"
+    },
+    "spatial": "High precision point locations",
+    "temporal": "1-second intervals"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/927062_ad8ef49602404b789bb1fbd27c877e80.jsonl",
+  "runtime_seconds": 317.72
+}

@@ -1,0 +1,35 @@
+{
+  "dataset_id": "906209",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/906209.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T15:59:28.552226+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Interview Files – Pregnancy Diagnoses",
+    "description": "The CSV lists three XLSX interview files related to pregnancy diagnoses, providing for each file the content type, file name, file size (24.848 – 254.888 as provided), and a download URL.",
+    "keywords": [
+      "interviews",
+      "pregnancy diagnoses",
+      "file metadata",
+      "XLSX",
+      "Pangaea",
+      "El Bizri et al 2019",
+      "file size",
+      "download URL"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/906209_f246148d9ba14d968cf2f040509475db.jsonl",
+  "runtime_seconds": 91.32,
+  "recovered_from_trace": true,
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c"
+}

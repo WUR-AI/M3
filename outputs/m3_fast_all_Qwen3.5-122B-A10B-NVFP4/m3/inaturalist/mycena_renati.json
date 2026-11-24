@@ -1,0 +1,28 @@
+{
+  "dataset_id": "mycena_renati",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/mycena_renati.csv",
+  "source_sha256": "731d459ea4b538a9c644e9ca713b1aeaa054c40091788ed9a31b0e6727d13fb7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:08:26.825830+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.106943,
+      "min_lon": -17.845984,
+      "max_lat": 60.527631,
+      "max_lon": 57.838315
+    },
+    "temporalCoverage": {
+      "from": "2004-06-15T19:57:14+00:00",
+      "to": "2026-06-14T10:05:40+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/mycena_renati_c53c870da7814c5ea9208e890fb12f91.jsonl",
+  "runtime_seconds": 62.05
+}

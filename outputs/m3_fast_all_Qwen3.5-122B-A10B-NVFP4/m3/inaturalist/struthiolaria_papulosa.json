@@ -1,0 +1,28 @@
+{
+  "dataset_id": "struthiolaria_papulosa",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/struthiolaria_papulosa.csv",
+  "source_sha256": "9f17658d337b2df68728fbc6f5605ff7ad6c0aae51b18485c48b0d7d9cef3a8f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T02:01:04.545544+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -47.000031,
+      "min_lon": 166.55639,
+      "max_lat": -34.420495,
+      "max_lon": 177.902708
+    },
+    "temporalCoverage": {
+      "from": "2000-01-20T00:00:00+00:00",
+      "to": "2026-06-14T10:26:52+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/struthiolaria_papulosa_78fdc96b027b4743b645fb9e964d5ea4.jsonl",
+  "runtime_seconds": 60.42
+}

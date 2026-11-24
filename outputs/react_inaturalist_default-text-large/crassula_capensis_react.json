@@ -1,0 +1,71 @@
+{
+  "csv": "crassula_capensis.csv",
+  "dataset_id": "crassula_capensis",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f69634b14a50a09408a68360ad373913a5ee9b35cf0b6370c157769ee256b45b",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3256,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.716519,
+      "min_lon": 18.330982,
+      "max_lat": -32.104007,
+      "max_lon": 21.394575
+    },
+    "temporalCoverage": {
+      "from": "2005-06-25T10:01:00+00:00",
+      "to": "2026-06-15T10:27:50+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "crassula_capensis"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "crassula_capensis",
+        "resource": "crassula_capensis"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "crassula_capensis"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "crassula_capensis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "crassula_capensis",
+        "resource": "crassula_capensis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "crassula_capensis",
+        "resource": "crassula_capensis",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.262,
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": "990159",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990159.csv",
+  "source_sha256": "5007b7d93b30afc7d7831d726516842ce7d797b656068ef61a8267a80e9e4aeb",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T20:43:09.653957+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Core 210Pb Measurements",
+    "description": "Dataset containing sediment core measurements of 210Pb activity, including supported and unsupported fractions, with associated depth intervals, location, and date information.",
+    "keywords": [
+      "sediment core",
+      "210Pb measurements",
+      "radioisotope dating",
+      "depth intervals",
+      "geochemistry",
+      "Mexico",
+      "2022-04-08"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990159_73370b78106445d6b06fed8adcba2d78.jsonl",
+  "runtime_seconds": 400.85
+}

@@ -1,0 +1,38 @@
+{
+  "dataset_id": "931282",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931282.csv",
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:53:33.773689+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sensor Data from UPC Event",
+    "description": "Dataset containing sensor data from a UPC event, including binary files, their types and sizes, geographic coordinates, elevation, and timestamp.",
+    "keywords": [
+      "sensor data",
+      "UPC event",
+      "geographic coordinates",
+      "binary files"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11T00:00:00+00:00",
+      "to": "2020-03-11T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931282_8ed57374a70944769654b51739f67691.jsonl",
+  "runtime_seconds": 260.13
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "luridiblatta_trivittata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/luridiblatta_trivittata.csv",
+  "source_sha256": "e7e05ed62f883f5d399eec7e0640ff26ed43608e869a227bfc075accc91ec6bb",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:47:50.009310+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.935157,
+      "max_lat": 43.710541,
+      "min_lon": -124.151688,
+      "max_lon": 34.814256
+    },
+    "temporalCoverage": {
+      "from": "2013-06-27T17:23:23+00:00",
+      "to": "2026-06-07T10:58:15+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/luridiblatta_trivittata_b39207b7a9c740efa52148c0ab27f91d.jsonl",
+  "runtime_seconds": 49.25
+}

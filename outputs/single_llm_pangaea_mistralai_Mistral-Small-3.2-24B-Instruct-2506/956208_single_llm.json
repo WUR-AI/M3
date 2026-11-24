@@ -1,0 +1,43 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "contract_sha256": "826ff9c6fe1963740b5d4bfd9de3215a02e54846bb7c0536453aeb13eab8e541",
+  "prompt_tokens": 9503,
+  "metadata": {
+    "name": "956208",
+    "description": "This dataset contains information about preserved specimens collected during various expeditions. It includes details such as event, expedition, specimen ID, subsample ID, sample comments, location ID, date/time, gear used, water depth, latitude, longitude, and various measurements related to B. saida (a type of zooplankton).",
+    "keywords": [
+      "preserved specimens",
+      "expeditions",
+      "B. saida",
+      "zooplankton",
+      "marine biology",
+      "specimen measurements",
+      "latitude",
+      "longitude",
+      "water depth"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 88.736473,
+      "max_lon": 122.30146
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2021-08-12"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 11.67,
+  "status": "ok"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "987071.csv",
+  "dataset_id": "987071",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 34,
+  "n_columns": 8,
+  "description": "34 Earth‑environment observations captured 2012‑03‑24, including depth, TOC, TIC, location, elevation, and event.",
+  "dataset_description": "34 Earth‑environment observations captured on 2012‑03‑24 for scientific analysis.",
+  "runtime_seconds": 17.296,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/987071/dictionary.json"
+}

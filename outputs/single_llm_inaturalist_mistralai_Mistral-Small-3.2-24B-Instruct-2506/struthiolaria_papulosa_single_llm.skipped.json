@@ -1,0 +1,15 @@
+{
+  "csv": "struthiolaria_papulosa.csv",
+  "dataset_id": "struthiolaria_papulosa",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "9f17658d337b2df68728fbc6f5605ff7ad6c0aae51b18485c48b0d7d9cef3a8f",
+  "contract_sha256": "9e4ebe90d4636f55fa19b660e0e640081a98a3f1c6cd136029ba20df4932316e",
+  "prompt_tokens": 330722,
+  "status": "skipped",
+  "reason": "context_window"
+}

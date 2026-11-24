@@ -1,0 +1,29 @@
+{
+  "dataset_id": "myripristis_jacobus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/myripristis_jacobus.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:21:37.633035+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -13.013937,
+      "min_lon": -97.282286,
+      "max_lat": 34.0253,
+      "max_lon": 8.786316
+    },
+    "temporalCoverage": {
+      "from": "1987-09-22T03:33:00Z",
+      "to": "2026-06-07T16:07:00Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/myripristis_jacobus_4ce0c2ebbf5740da81c0fd2a066f2144.jsonl",
+  "runtime_seconds": 81.53,
+  "recovered_from_trace": true,
+  "source_sha256": "250b641ea5b52d323b215a4a995d691c02abe17d968b24c2d19418b638e70ffb"
+}

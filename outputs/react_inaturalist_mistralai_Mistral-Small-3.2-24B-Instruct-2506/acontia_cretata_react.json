@@ -1,0 +1,60 @@
+{
+  "csv": "acontia_cretata.csv",
+  "dataset_id": "acontia_cretata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "8d1e708663983f36a31bfcd509df98e78f63f22bf1a4d0ca1bf43e4d0b5e8477",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 2567,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.578286,
+      "min_lon": -121.837937,
+      "max_lat": 38.771382,
+      "max_lon": -90.327117
+    },
+    "temporalCoverage": {
+      "from": "1978-07-09",
+      "to": "2026-06-12"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "acontia_cretata",
+        "resource": "acontia_cretata.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "acontia_cretata",
+        "resource": "acontia_cretata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "acontia_cretata",
+        "resource": "acontia_cretata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "acontia_cretata",
+        "resource": "acontia_cretata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 17.112,
+  "status": "ok"
+}

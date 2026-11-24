@@ -1,0 +1,40 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "contract_sha256": "0192d5fb2440d6763238e3c91389bc8532d7f826f7d5a09b1f435eeea056be95",
+  "prompt_tokens": 6850,
+  "metadata": {
+    "name": "Elwha River Delta Elevation Survey 2012-02-03",
+    "description": "Dataset containing high-resolution topographic survey data collected at the Elwha River Delta on February 3, 2012. The data includes latitude, longitude, elevation, timestamps, and quality metrics (HRMS, VRMS) for fixed GPS points, primarily associated with profile PROF132.",
+    "keywords": [
+      "Elwha River Delta",
+      "elevation",
+      "topography",
+      "GPS",
+      "survey",
+      "PROF132"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5119382,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9383262
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00",
+      "to": "2012-02-03T13:11:00"
+    },
+    "spatial": "point locations",
+    "temporal": "1 minute"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.569,
+  "status": "ok"
+}

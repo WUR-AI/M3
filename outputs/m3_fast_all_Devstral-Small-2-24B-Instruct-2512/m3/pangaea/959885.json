@@ -1,0 +1,39 @@
+{
+  "dataset_id": "959885",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959885.csv",
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T23:40:29.993980+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Chemical Analysis of Sediment Core M186_54-1GC",
+    "description": "This dataset contains chemical analysis results from a sediment core sample collected at a single location and time. It includes measurements of various chemical elements and compounds at different sediment depths.",
+    "keywords": [
+      "sediment",
+      "chemical analysis",
+      "marine chemistry",
+      "geochemistry",
+      "M186_54-1GC"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16T07:56:17+00:00",
+      "to": "2022-12-16T07:56:17+00:00"
+    },
+    "spatial": "point location",
+    "temporal": "single point in time"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959885_a456e3fd50df40a295e01c3834423a4c.jsonl",
+  "runtime_seconds": 382.85
+}

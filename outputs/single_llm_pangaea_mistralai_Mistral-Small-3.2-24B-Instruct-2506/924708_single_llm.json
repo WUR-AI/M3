@@ -1,0 +1,39 @@
+{
+  "csv": "924708.csv",
+  "dataset_id": "924708",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "contract_sha256": "b063546444d58e6edd6dde27889770c0e1355b92a14b0906d13203240a8f7241",
+  "prompt_tokens": 887,
+  "metadata": {
+    "name": "Whale Sightings",
+    "description": "Dataset containing records of whale sightings, including the date/time, latitude, longitude, species, certainty of identification, and event details.",
+    "keywords": [
+      "whales",
+      "marine mammals",
+      "sightings",
+      "biodiversity",
+      "ocean"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06",
+      "to": "2014-10-01"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.326,
+  "status": "ok"
+}

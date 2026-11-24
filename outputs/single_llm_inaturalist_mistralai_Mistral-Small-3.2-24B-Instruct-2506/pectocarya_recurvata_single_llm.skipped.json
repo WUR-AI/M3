@@ -1,0 +1,15 @@
+{
+  "csv": "pectocarya_recurvata.csv",
+  "dataset_id": "pectocarya_recurvata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "2c1205162ae0eee5a57bfff2983a6e11d44981c1558d464a4c82db5fb0fea28e",
+  "contract_sha256": "7e4bb67c59bd4f8d3910eca25c39790723e2ab0580e8477ff73812af5d57f439",
+  "prompt_tokens": 317066,
+  "status": "skipped",
+  "reason": "context_window"
+}

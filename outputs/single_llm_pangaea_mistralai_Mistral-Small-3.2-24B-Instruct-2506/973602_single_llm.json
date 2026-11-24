@@ -1,0 +1,38 @@
+{
+  "csv": "973602.csv",
+  "dataset_id": "973602",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "fbdd17a1da291bff3da59cc7371ccf8e55bfb0b47ba5f0e376f7264ea887d8be",
+  "contract_sha256": "3d950b19f632a0bd8614ccbe9a0328e5a44edce01cf036ae332225fe13d8578e",
+  "prompt_tokens": 774,
+  "metadata": {
+    "name": "973602",
+    "description": "A dataset containing geochemical analysis of samples, including major oxide compositions and location data.",
+    "keywords": [
+      "geochemistry",
+      "major oxides",
+      "sample analysis",
+      "marine geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 55.68667,
+      "min_lon": 86.961,
+      "max_lat": 55.68667,
+      "max_lon": 86.961
+    },
+    "temporalCoverage": {
+      "from": "2016-10-04",
+      "to": "2016-10-04"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.817,
+  "status": "ok"
+}

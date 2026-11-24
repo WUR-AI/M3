@@ -1,0 +1,37 @@
+{
+  "dataset_id": "986963",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/986963.csv",
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T19:44:17.367955+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Core Analysis Data from Arctic Region",
+    "description": "This dataset contains sediment core analysis data from various events in the Arctic region, including measurements of sediment depth, age, sedimentary rates, organic carbon content, and isotopic compositions. The data spans from September 2018 to March 2021 and covers a spatial extent from 76.0 to 83.2704 degrees latitude and 27.5191 to 33.9857 degrees longitude.",
+    "keywords": [
+      "Sediment core",
+      "Arctic region",
+      "Sediment depth",
+      "Age",
+      "Sedimentary rates",
+      "Organic carbon",
+      "Isotopic compositions",
+      "TOC",
+      "TIC",
+      "TN",
+      "δ13C",
+      "δ15N",
+      "Sediment grain size",
+      "Elevation",
+      "2018-2021"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/986963_c51627ebdbca469aa23fe2b6ddbc00ea.jsonl",
+  "runtime_seconds": 447.78
+}

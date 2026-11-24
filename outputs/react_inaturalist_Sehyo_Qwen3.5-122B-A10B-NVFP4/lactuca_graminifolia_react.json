@@ -1,0 +1,73 @@
+{
+  "csv": "lactuca_graminifolia.csv",
+  "dataset_id": "lactuca_graminifolia",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "be2194ec06d81abca373d5f54da1795912a343fbed2bcfb5b28c67ac441a9f99",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 9221,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 16.704152,
+      "min_lon": -112.428317,
+      "max_lat": 36.39279,
+      "max_lon": -75.525672
+    },
+    "temporalCoverage": {
+      "from": "1993-04-18T00:00:00+00:00",
+      "to": "2026-06-14T12:25:03+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "lactuca_graminifolia"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "lactuca_graminifolia",
+        "resource": "lactuca_graminifolia"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "lactuca_graminifolia",
+        "resource": "lactuca_graminifolia",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "lactuca_graminifolia",
+        "resource": "lactuca_graminifolia"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lactuca_graminifolia",
+        "resource": "lactuca_graminifolia",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "lactuca_graminifolia",
+        "resource": "lactuca_graminifolia"
+      }
+    }
+  ],
+  "runtime_seconds": 15.354,
+  "status": "ok"
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_id": "973602",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973602.csv",
+  "source_sha256": "fbdd17a1da291bff3da59cc7371ccf8e55bfb0b47ba5f0e376f7264ea887d8be",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T18:26:28.844216+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Analysis of Polar Samples",
+    "description": "This dataset contains geochemical analysis of polar samples, including major oxide compositions (SiO2, TiO2, Al2O3, etc.), sample IDs, event references, and geographical coordinates (latitude, longitude, elevation) with timestamps from October 4, 2016.",
+    "keywords": [
+      "geochemistry",
+      "polar samples",
+      "major oxides",
+      "SiO2",
+      "TiO2",
+      "Al2O3",
+      "Fe2O3",
+      "MnO",
+      "MgO",
+      "CaO",
+      "Na2O",
+      "K2O",
+      "P2O5",
+      "latitude",
+      "longitude",
+      "elevation",
+      "2016",
+      "October",
+      "WGS84"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973602_d60743725eab4ba3837abc6ddf7c8f40.jsonl",
+  "runtime_seconds": 380.46
+}

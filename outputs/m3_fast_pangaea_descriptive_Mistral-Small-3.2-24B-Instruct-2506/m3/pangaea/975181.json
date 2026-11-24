@@ -1,0 +1,32 @@
+{
+  "dataset_id": "975181",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/975181.csv",
+  "source_sha256": "ecb7b5ed9a1a17db139f60404906a6597234581b11225c226aeee09add86bffa",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T19:10:46.110408+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Uvigerina spp. Stable Isotope Data from Gulf of Mexico",
+    "description": "This dataset contains stable isotope measurements (δ13C and δ18O) of Uvigerina spp. from sediment samples collected during event M78/1_181-3 in the Gulf of Mexico. The data includes depth, age, geographic coordinates, and a single timestamp for all measurements.",
+    "keywords": [
+      "Uvigerina spp.",
+      "stable isotopes",
+      "δ13C",
+      "δ18O",
+      "Gulf of Mexico",
+      "sediment cores",
+      "paleoceanography",
+      "2009",
+      "marine sediments",
+      "geochemistry"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/975181_c2f63ff103b145f2b7782c838ac3e8ab.jsonl",
+  "runtime_seconds": 302.3
+}

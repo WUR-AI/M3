@@ -1,0 +1,46 @@
+{
+  "csv": "906209.csv",
+  "dataset_id": "906209",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1691,
+  "metadata": {
+    "name": "Archive of Interviews and Hunting Records",
+    "description": "Catalogue of three archive files containing interview data on pregnancy diagnoses and hunting registers (including pregnancy immatures and catch‑per‑unit‑effort records). The table lists the content type, file name, format, size, and URLs to the original XLSX files.",
+    "keywords": [
+      "interviews",
+      "hunting",
+      "records",
+      "pregnancy",
+      "CPUE",
+      "archives"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "906209"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    }
+  ],
+  "runtime_seconds": 10.384,
+  "status": "ok"
+}

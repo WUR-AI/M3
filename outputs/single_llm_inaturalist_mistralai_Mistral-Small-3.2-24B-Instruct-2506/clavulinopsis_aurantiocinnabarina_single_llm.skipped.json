@@ -1,0 +1,15 @@
+{
+  "csv": "clavulinopsis_aurantiocinnabarina.csv",
+  "dataset_id": "clavulinopsis_aurantiocinnabarina",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "dc0948be4539ff05293c804aa97d27394d988b323ed356596cb9c6a18cfd1f51",
+  "contract_sha256": "9105dfd69520b35c0b6c82db6bcfc17d638143534c6db7c78bf8b8deaa2c09c2",
+  "prompt_tokens": 337710,
+  "status": "skipped",
+  "reason": "context_window"
+}

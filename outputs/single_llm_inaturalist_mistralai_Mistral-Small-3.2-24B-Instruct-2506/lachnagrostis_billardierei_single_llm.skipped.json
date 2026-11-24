@@ -1,0 +1,15 @@
+{
+  "csv": "lachnagrostis_billardierei.csv",
+  "dataset_id": "lachnagrostis_billardierei",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6aeaf7ffbf2724abed133cb21f87960abe4833b94bf0bffa8b6489bf55d6caad",
+  "contract_sha256": "f9fc7916185dd98355a7e568e031fec3a0f7c380b4572a42eff58701c367d119",
+  "prompt_tokens": 330367,
+  "status": "skipped",
+  "reason": "context_window"
+}

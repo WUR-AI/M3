@@ -1,0 +1,43 @@
+{
+  "dataset_id": "959883",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959883.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:28:56.054977+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment porewater chemistry profile at station M186_50-1GC (2022-12-15)",
+    "description": "Dataset of 18 observations of marine sediment porewater chemistry collected at a single location (Latitude 38.74047, Longitude -28.58108, Elevation -1227 m) on 2022-12-15. Includes depth, temperature, major ions (Cl‑, Na, K, etc.), trace metals (Fe, Mn, Sr, etc.) and nutrients ([NO3]‑, [NO2]‑, [NH4]+, [PO4]3‑).",
+    "keywords": [
+      "porewater",
+      "marine",
+      "chemistry",
+      "trace",
+      "metals",
+      "nutrients",
+      "M186_50-1GC",
+      "2022"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74047,
+      "max_lat": 38.74047,
+      "min_lon": -28.58108,
+      "max_lon": -28.58108
+    },
+    "temporalCoverage": {
+      "from": "2022-12-15T15:14:36+00:00",
+      "to": "2022-12-15T15:14:36+00:00"
+    },
+    "spatial": "point",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959883_1733278c16bb4617be652ec3d0498efb.jsonl",
+  "runtime_seconds": 183.9,
+  "recovered_from_trace": true,
+  "source_sha256": "de3317d8fc807ed86c4722f03ef6a7bf025cc4bf9ffc0fd8a0c71f52b6b45ce0"
+}

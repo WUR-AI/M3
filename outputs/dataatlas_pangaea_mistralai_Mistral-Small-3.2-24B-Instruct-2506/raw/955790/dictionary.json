@@ -1,0 +1,589 @@
+{
+  "dataset_name": "955790",
+  "list_of_tables": [
+    "955790"
+  ],
+  "tables": {
+    "955790": {
+      "table_name": "955790",
+      "row_count": 7,
+      "number_of_columns": 15,
+      "list_of_columns": [
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "ID",
+        "Deposit type",
+        "Depth sed",
+        "Mn",
+        "Fe",
+        "Ni",
+        "Co",
+        "Cu",
+        "Samp type",
+        "Description",
+        "Date/Time"
+      ],
+      "columns": {
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "OKSH-CM-14-A",
+            "OKSH-CM-15-A",
+            "OKSH-CM-10-A",
+            "OKSH-CM-18-A",
+            "OKSH-CM-15-A",
+            "CHMAII-9",
+            "OKSH-CM-10-A"
+          ],
+          "data_patterns": {
+            "AAAA-AA-99-A": 6,
+            "AAAAAA-9": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "OKSH-CM-15-A",
+                2
+              ],
+              [
+                "OKSH-CM-10-A",
+                2
+              ],
+              [
+                "CHMAII-9",
+                1
+              ],
+              [
+                "OKSH-CM-14-A",
+                1
+              ],
+              [
+                "OKSH-CM-18-A",
+                1
+              ]
+            ],
+            "unique_count": 5
+          },
+          "description": "Event identifiers for environmental observations, including manganese nodule data."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            12.0,
+            -13.8333,
+            -13.9167,
+            -13.5667,
+            -13.9167,
+            -14.05,
+            -14.05
+          ],
+          "data_patterns": {
+            "-99.9999": 4,
+            "-99.99": 2,
+            "99.9": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": -14.05,
+            "max": 12.0,
+            "mean": -10.190485714285716,
+            "median": -13.9167,
+            "std": 9.786450002499812
+          },
+          "description": "Geographical locations angular distance north or south of the equator in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -150.6333,
+            -150.55,
+            -150.55,
+            -149.3,
+            -150.55,
+            -150.6333,
+            -175.7167
+          ],
+          "data_patterns": {
+            "-999.99": 3,
+            "-999.9999": 3,
+            "-999.9": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": -175.7167,
+            "max": -149.3,
+            "mean": -153.99047142857142,
+            "median": -150.55,
+            "std": 9.59236902537885
+          },
+          "description": "Geographical coordinates in decimal degrees east-west of prime meridian."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -3760.0,
+            -3755.0,
+            -4520.0,
+            -3760.0,
+            -5340.0,
+            -3755.0
+          ],
+          "data_patterns": {
+            "-9999.9": 6
+          },
+          "total_rows": 7,
+          "null_count": 1,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": -5340.0,
+            "max": -3755.0,
+            "mean": -4148.333333333333,
+            "median": -3760.0,
+            "std": 658.6703778572911
+          },
+          "description": "Depth measurements in meters below sea level."
+        },
+        "ID": {
+          "column_name": "ID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "OKSH-CM-15-A-1YB7a",
+            "OKSH-CM-10-A-1YB7a",
+            "OKSH-CM-15-A-1YB7a",
+            "OKSH-CM-18-A-1YB7",
+            "OKSH-CM-14-A-1YB7",
+            "OKSH-CM-10-A-1YB7b",
+            "CHMAII-9-1YB7"
+          ],
+          "data_patterns": {
+            "AAAA-AA-99-A-9AA9a": 4,
+            "AAAA-AA-99-A-9AA9": 2,
+            "AAAAAA-9-9AA9": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "OKSH-CM-15-A-1YB7a",
+                2
+              ],
+              [
+                "CHMAII-9-1YB7",
+                1
+              ],
+              [
+                "OKSH-CM-14-A-1YB7",
+                1
+              ],
+              [
+                "OKSH-CM-10-A-1YB7a",
+                1
+              ],
+              [
+                "OKSH-CM-10-A-1YB7b",
+                1
+              ],
+              [
+                "OKSH-CM-18-A-1YB7",
+                1
+              ]
+            ],
+            "unique_count": 6
+          },
+          "description": "Unique identifiers for environmental observation samples."
+        },
+        "Deposit type": {
+          "column_name": "Deposit type",
+          "data_type": "string",
+          "sample_values": [
+            "Mn nodule",
+            "Mn nodule",
+            "Mn nodule",
+            "Mn nodule",
+            "Mn nodule",
+            "Mn nodule",
+            "Mn nodule"
+          ],
+          "data_patterns": {
+            "Aa aaaaaa": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Mn nodule",
+                7
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Deposit type categorizes observed environmental samples as manganese nodules."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.0,
+            0.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "data_patterns": {
+            "9.9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.1,
+            "mean": 0.014285714285714287,
+            "median": 0.0,
+            "std": 0.03779644730092273
+          },
+          "description": "Sediment depth probability scores ranging from 0.0 to 0.1."
+        },
+        "Mn": {
+          "column_name": "Mn",
+          "data_type": "float",
+          "sample_values": [
+            14.8,
+            18.1,
+            16.9,
+            17.7,
+            20.0,
+            18.1,
+            16.3
+          ],
+          "data_patterns": {
+            "99.9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 14.8,
+            "max": 20.0,
+            "mean": 17.414285714285715,
+            "median": 17.7,
+            "std": 1.6354699339217167
+          },
+          "description": "Manganese content measurements in unspecified units."
+        },
+        "Fe": {
+          "column_name": "Fe",
+          "data_type": "float",
+          "sample_values": [
+            15.6,
+            12.3,
+            11.3,
+            13.8,
+            12.1,
+            12.5,
+            14.8
+          ],
+          "data_patterns": {
+            "99.9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 11.3,
+            "max": 15.6,
+            "mean": 13.2,
+            "median": 12.5,
+            "std": 1.5705625319186327
+          },
+          "description": "Iron content percentage in environmental samples."
+        },
+        "Ni": {
+          "column_name": "Ni",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.54,
+            0.46,
+            0.42,
+            0.43,
+            0.42,
+            0.58,
+            0.45
+          ],
+          "data_patterns": {
+            "9.99": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.42,
+            "max": 0.58,
+            "mean": 0.4714285714285715,
+            "median": 0.45,
+            "std": 0.06335839103296195
+          },
+          "description": "Nickel content probability scores ranging from 0.42 to 0.58."
+        },
+        "Co": {
+          "column_name": "Co",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.5,
+            0.54,
+            0.5,
+            0.54,
+            0.57,
+            0.53,
+            0.63
+          ],
+          "data_patterns": {
+            "9.99": 5,
+            "9.9": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 0.63,
+            "mean": 0.5442857142857143,
+            "median": 0.54,
+            "std": 0.04503966505838413
+          },
+          "description": "Cobalt concentration probability scores ranging from 0.5 to 0.63."
+        },
+        "Cu": {
+          "column_name": "Cu",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.19,
+            0.23,
+            0.22,
+            0.2,
+            0.23,
+            0.27,
+            0.25
+          ],
+          "data_patterns": {
+            "9.99": 6,
+            "9.9": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.19,
+            "max": 0.27,
+            "mean": 0.22714285714285715,
+            "median": 0.23,
+            "std": 0.02751622897751175
+          },
+          "description": "Copper content probability scores, ranging from 0.19 to 0.27."
+        },
+        "Samp type": {
+          "column_name": "Samp type",
+          "data_type": "string",
+          "sample_values": [
+            "Whole nodule",
+            "Whole nodule",
+            "Whole nodule",
+            "Nodule without core",
+            "Nodule without core",
+            "Whole nodule",
+            "Whole nodule"
+          ],
+          "data_patterns": {
+            "Aaaaa aaaaaa": 5,
+            "Aaaaaa aaaaaaa aaaa": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Whole nodule",
+                5
+              ],
+              [
+                "Nodule without core",
+                2
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Sample type categorization, either whole nodule or nodule without core."
+        },
+        "Description": {
+          "column_name": "Description",
+          "data_type": "string",
+          "sample_values": [
+            "Mn nodule with core",
+            "Ellipsoidal Mn nodule with core",
+            "Ellipsoidal Mn nodule with core",
+            "Discoidal Mn nodule with smooth surface",
+            "Mn nodule with core"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaaaa Aa aaaaaa aaaa aaaa": 2,
+            "Aa aaaaaa aaaa aaaa": 2,
+            "Aaaaaaaaa Aa aaaaaa aaaa aaaaaa aaaaaaa": 1
+          },
+          "total_rows": 7,
+          "null_count": 2,
+          "unique_count": 4,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Ellipsoidal Mn nodule with core",
+                2
+              ],
+              [
+                "Mn nodule with core",
+                2
+              ],
+              [
+                "Discoidal Mn nodule with smooth surface",
+                1
+              ]
+            ],
+            "unique_count": 3
+          },
+          "description": "Manganese nodule descriptions, including shape and surface characteristics."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "1970-09-13",
+            "1970-09-03",
+            "1970-09-13",
+            "1970-09-02",
+            "1970-09-03",
+            "1970-09-12",
+            "1970-09-25"
+          ],
+          "data_patterns": {
+            "9999-99-99": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "datetime",
+            "min_date": "1970-09-02T00:00:00",
+            "max_date": "1970-09-25T00:00:00"
+          },
+          "description": "Observation dates in September 1970."
+        }
+      },
+      "time_period_covered": {
+        "start": "1970-09-02T00:00:00",
+        "end": "1970-09-25T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Event": "CHMAII-9",
+          "Latitude": -13.8333,
+          "Longitude": -150.55,
+          "Elevation": null,
+          "ID": "CHMAII-9-1YB7",
+          "Deposit type": "Mn nodule",
+          "Depth sed": 0.1,
+          "Mn": 14.8,
+          "Fe": 12.3,
+          "Ni": 0.42,
+          "Co": 0.54,
+          "Cu": 0.27,
+          "Samp type": "Whole nodule",
+          "Description": "Discoidal Mn nodule with smooth surface",
+          "Date/Time": "1970-09-02"
+        },
+        {
+          "Event": "OKSH-CM-14-A",
+          "Latitude": -13.5667,
+          "Longitude": -149.3,
+          "Elevation": -4520.0,
+          "ID": "OKSH-CM-14-A-1YB7",
+          "Deposit type": "Mn nodule",
+          "Depth sed": 0.0,
+          "Mn": 16.3,
+          "Fe": 15.6,
+          "Ni": 0.45,
+          "Co": 0.53,
+          "Cu": 0.19,
+          "Samp type": "Whole nodule",
+          "Description": null,
+          "Date/Time": "1970-09-12"
+        },
+        {
+          "Event": "OKSH-CM-15-A",
+          "Latitude": -14.05,
+          "Longitude": -150.6333,
+          "Elevation": -3760.0,
+          "ID": "OKSH-CM-15-A-1YB7a",
+          "Deposit type": "Mn nodule",
+          "Depth sed": 0.0,
+          "Mn": 16.9,
+          "Fe": 13.8,
+          "Ni": 0.54,
+          "Co": 0.5,
+          "Cu": 0.23,
+          "Samp type": "Nodule without core",
+          "Description": "Mn nodule with core",
+          "Date/Time": "1970-09-13"
+        }
+      ],
+      "description": "Environmental observations from September 1970, including manganese nodule data and locations.",
+      "is_row_capped": false,
+      "rows_processed": 7,
+      "total_rows_in_file": 7
+    }
+  },
+  "time_period_covered": {
+    "start": "1970-09-02T00:00:00",
+    "end": "1970-09-25T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Environmental data tables documenting observations from September 1970."
+}

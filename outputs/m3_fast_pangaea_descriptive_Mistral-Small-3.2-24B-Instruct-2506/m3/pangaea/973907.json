@@ -1,0 +1,30 @@
+{
+  "dataset_id": "973907",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973907.csv",
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T18:43:50.404379+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Core Analysis Data",
+    "description": "Dataset containing measurements from marine sediment cores, including depth, section, core diameter deviation, P-wave travel time, acoustic impedance, event information, and geographic coordinates. The data is from a specific event (MSM44_362-1) recorded on July 12, 2015, at a single location in the Arctic region.",
+    "keywords": [
+      "marine sediment",
+      "core analysis",
+      "P-wave travel time",
+      "acoustic impedance",
+      "Arctic region",
+      "geographic coordinates",
+      "sediment depth",
+      "2015"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973907_7e3ac3fe39ab4f9ea01419c352ba5b64.jsonl",
+  "runtime_seconds": 464.39
+}

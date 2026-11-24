@@ -1,0 +1,16 @@
+{
+  "csv": "971851.csv",
+  "dataset_id": "971851",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 343,
+  "n_columns": 18,
+  "description": "Paleomagnetic data with sediment depth, declination, inclination, age, and uncertainty measurements.",
+  "dataset_description": "Earth and environmental science dataset with 971,851 tables, each containing 343 rows.",
+  "runtime_seconds": 12.313,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/971851/dictionary.json"
+}

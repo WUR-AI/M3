@@ -1,0 +1,15 @@
+{
+  "csv": "eucalyptus_regnans.csv",
+  "dataset_id": "eucalyptus_regnans",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "dde21dc3dedd4567d4dd4dfbcd5b607b2438bdb2df760e94d9c0da3c568e15ea",
+  "contract_sha256": "34c77dff9a5415ff9699c52b2c794fb1584263e1604429ee1d9d7e8225c88cd2",
+  "prompt_tokens": 322748,
+  "status": "skipped",
+  "reason": "context_window"
+}

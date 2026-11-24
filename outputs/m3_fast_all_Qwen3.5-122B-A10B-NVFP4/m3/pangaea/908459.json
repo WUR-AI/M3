@@ -1,0 +1,43 @@
+{
+  "dataset_id": "908459",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/908459.csv",
+  "source_sha256": "b08ef1a0c309b4a4def9f5e67e45bd39c8e3237b14d0e69bd9b469b86c4cda96",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:08:56.642036+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory experiment on Magallana hongkongensis under controlled carbonate chemistry conditions",
+    "description": "Experimental dataset containing 27 records of carbonate chemistry parameters (pH, pCO2, alkalinity, saturation states) and physical shell properties (stiffness, hardness, density, volume) for the mollusk Magallana hongkongensis under controlled laboratory conditions in Zhanjiang, China. Data includes standard deviations for chemical measurements and variant calculation columns.",
+    "keywords": [
+      "ocean acidification",
+      "Magallana hongkongensis",
+      "carbonate chemistry",
+      "pCO2",
+      "saturation state",
+      "shell properties",
+      "laboratory experiment",
+      "Zhanjiang",
+      "mollusk"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.33333,
+      "min_lon": 110.66667,
+      "max_lat": 21.33333,
+      "max_lon": 110.66667
+    },
+    "temporalCoverage": {
+      "from": "2016-06-01",
+      "to": "2016-06-01"
+    },
+    "spatial": "Point location",
+    "temporal": "Single day"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/908459_7d8de50e9192487094562648a21fb357.jsonl",
+  "runtime_seconds": 172.67
+}

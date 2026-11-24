@@ -1,0 +1,101 @@
+{
+  "csv": "974037.csv",
+  "dataset_id": "974037",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "674b5362b09af672f9d2f6e1d054926fbaafd85b28bc7eddef1bbdaad4d0ec74",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 9164,
+  "metadata": {
+    "name": "Sucha Woda Flood Boulder Measurements",
+    "description": "Measurements of boulder diameters and site characteristics from 11 locations surveyed after the Sucha Woda Flood event on July 24, 2018. Data includes site coordinates, elevation, number of tree trunks, and up to 25 boulder diameter measurements per site.",
+    "keywords": [
+      "Sucha Woda",
+      "Flood",
+      "Boulder",
+      "Geomorphology",
+      "Slovakia"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.2725,
+      "min_lon": 20.0336,
+      "max_lat": 49.2855,
+      "max_lon": 20.0466
+    },
+    "temporalCoverage": {
+      "from": "2018-07-24",
+      "to": "2018-07-24"
+    },
+    "spatial": "point locations",
+    "temporal": "single event"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974037"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "974037",
+        "resource": "974037",
+        "n": 11
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "974037",
+        "resource": "974037"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "974037",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude",
+        "resource": "974037"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974037",
+        "resource": "974037"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "974037",
+        "resource": "974037",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "974037",
+        "resource": "974037"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "974037",
+        "resource": "974037",
+        "field": "Event",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 11.961,
+  "status": "ok"
+}

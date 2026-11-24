@@ -1,0 +1,15 @@
+{
+  "csv": "mutinus_caninus.csv",
+  "dataset_id": "mutinus_caninus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ee1335bbdfc81fbb48a888645242e66492a68e565be8d3a67a4a11be906ed568",
+  "contract_sha256": "a567cdfa2a6e188b218d776fb766cffe20087cc121807d711a58d915f3c3f30f",
+  "prompt_tokens": 313111,
+  "status": "skipped",
+  "reason": "context_window"
+}

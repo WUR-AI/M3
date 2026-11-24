@@ -1,0 +1,74 @@
+{
+  "csv": "sesamum_indicum.csv",
+  "dataset_id": "sesamum_indicum",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c8f4c84876bf4a93d7fc94ae7cdf7114f028269b8b8d40b4d86b1b5f5e571703",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 5342,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -35.875253,
+      "min_lon": -118.287597,
+      "max_lat": 53.213368,
+      "max_lon": 145.328675
+    },
+    "temporalCoverage": {
+      "from": "2002-11-29T19:03:44+00:00",
+      "to": "2026-06-14T16:13:02+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "sesamum_indicum"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "sesamum_indicum",
+        "resource": "sesamum_indicum",
+        "n": 3
+      }
+    }
+  ],
+  "runtime_seconds": 13.437,
+  "status": "ok"
+}

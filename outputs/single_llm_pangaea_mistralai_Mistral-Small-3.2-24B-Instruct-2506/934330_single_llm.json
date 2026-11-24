@@ -1,0 +1,40 @@
+{
+  "csv": "934330.csv",
+  "dataset_id": "934330",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "contract_sha256": "8f87a7bd841a6fe3e3ecf43e7a36c2970b0f2a2ecc15c5503581cf0b766f4c3c",
+  "prompt_tokens": 1794,
+  "metadata": {
+    "name": "Stordalen_2 Sediment Core Data",
+    "description": "This dataset contains sediment core data from the Stordalen_2 site, including depth, sample thickness, age dated, age uncertainty, dated material, lab label, age, age uncertainty, comment, event, latitude, longitude, elevation, and date/time.",
+    "keywords": [
+      "sediment",
+      "core",
+      "Stordalen",
+      "age",
+      "dating",
+      "paleoenvironment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": {
+      "from": "1898-01-01",
+      "to": "2003-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 8.17,
+  "status": "ok"
+}

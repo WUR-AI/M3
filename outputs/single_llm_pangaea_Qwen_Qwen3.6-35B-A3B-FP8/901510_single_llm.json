@@ -1,0 +1,38 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "contract_sha256": "0192d5fb2440d6763238e3c91389bc8532d7f826f7d5a09b1f435eeea056be95",
+  "prompt_tokens": 6850,
+  "metadata": {
+    "name": "Elwha River Delta Survey Data",
+    "description": "Geospatial survey data from the Elwha River Delta including latitude, longitude, elevation, and timestamp for fixed stations.",
+    "keywords": [
+      "Elwha River Delta",
+      "survey",
+      "elevation",
+      "geospatial"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03 12:45:00",
+      "to": "2012-02-03 13:11:00"
+    },
+    "spatial": "point locations",
+    "temporal": "point locations"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.436,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "969067.csv",
+  "dataset_id": "969067",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "7f0009de0409d11e20040ec51d5d017676533d678668d8751deb28f03b0fd453",
+  "contract_sha256": "a6e69f67f0c4e82eeb4c8c315b5e1c242306cf627f2daddc933b88c4e5d59a36",
+  "prompt_tokens": 180587,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,31 @@
+{
+  "dataset_id": "990054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990054.csv",
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T20:29:51.159001+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MOSAiC Campaign Biogeochemical Measurements",
+    "description": "Dataset containing biogeochemical measurements from the MOSAiC campaign, including chlorophyll a, phaeopigments, and other environmental parameters collected during various activities and events. The data spans from October 28, 2019, to July 20, 2020, with spatial coverage in the Arctic region.",
+    "keywords": [
+      "MOSAiC",
+      "biogeochemical measurements",
+      "chlorophyll a",
+      "phaeopigments",
+      "Arctic",
+      "environmental data",
+      "ice corer",
+      "depth measurements",
+      "2019-2020"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990054_4f57a2e7fcc9499f919813881ca083be.jsonl",
+  "runtime_seconds": 367.04
+}

@@ -1,0 +1,41 @@
+{
+  "csv": "958774.csv",
+  "dataset_id": "958774",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1",
+  "contract_sha256": "50e219c12785fa48e7e7a141d7853d9529d03830f00b37f6c1083947f1a950ff",
+  "prompt_tokens": 7462,
+  "metadata": {
+    "name": "Lake Constance Fischbach-Uttwil Phosphorus Concentrations",
+    "description": "This dataset contains phosphorus concentration measurements in Lake Constance at Fischbach-Uttwil. The data includes measurements for both the upper 20 meters of the water column during the summer months and the whole water column during the winter mixing period.",
+    "keywords": [
+      "Lake Constance",
+      "Fischbach-Uttwil",
+      "Phosphorus",
+      "Water Quality",
+      "Environmental Monitoring",
+      "TP",
+      "Total Phosphorus"
+    ],
+    "spatialCoverage": {
+      "min_lat": 47.6240037651,
+      "min_lon": 9.3754994815,
+      "max_lat": 47.6240037651,
+      "max_lon": 9.3754994815
+    },
+    "temporalCoverage": {
+      "from": "1951-01-01",
+      "to": "2010-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 11.246,
+  "status": "ok"
+}

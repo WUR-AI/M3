@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "output_dir": "/home/com3dian/Github/metadata_agent/outputs/react_pangaea_smoke_Qwen_Qwen3.6-35B-A3B-FP8",
+  "expected": 10,
+  "successful": 10,
+  "skipped": 0,
+  "processed": 10,
+  "remaining": 0
+}

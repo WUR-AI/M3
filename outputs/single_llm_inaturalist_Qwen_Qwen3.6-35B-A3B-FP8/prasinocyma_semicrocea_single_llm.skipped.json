@@ -1,0 +1,15 @@
+{
+  "csv": "prasinocyma_semicrocea.csv",
+  "dataset_id": "prasinocyma_semicrocea",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "44c1bf7f8d6e847e922a8f123482ba418df3f3764ce6dece8a789090849ff898",
+  "contract_sha256": "3e85cbf0890b7eadfb7cc0f14594e68346ba6a66a4f0cd348051175b7512448d",
+  "prompt_tokens": 325761,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,39 @@
+{
+  "csv": "944025.csv",
+  "dataset_id": "944025",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a530a26bc0e4fe56a3fdc94260921220a39b3ec5b60be156d609cd00803f6e1c",
+  "contract_sha256": "adc294e4fc09901d3bcb599a778604999e18b68aec0dab6ef26c277c5e4a559a",
+  "prompt_tokens": 4165,
+  "metadata": {
+    "name": "944025",
+    "description": "Dataset containing chemical and elemental composition data from sediment cores collected during the SO268/1_43-1 event. The data includes measurements of various elements such as Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, and Ti, along with their relative values. The dataset also includes metadata such as station, area, core, depth, elevation, and date/time of collection.",
+    "keywords": [
+      "sediment",
+      "chemical composition",
+      "elemental analysis",
+      "marine geology",
+      "SO268/1_43-1"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.93056667,
+      "min_lon": -117.0224333,
+      "max_lat": 11.93056667,
+      "max_lon": -117.0224333
+    },
+    "temporalCoverage": {
+      "from": "2019-03-10",
+      "to": "2019-03-10"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.567,
+  "status": "ok"
+}

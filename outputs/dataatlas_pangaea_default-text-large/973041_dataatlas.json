@@ -1,0 +1,16 @@
+{
+  "csv": "973041.csv",
+  "dataset_id": "973041",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 335,
+  "n_columns": 13,
+  "description": "335 records of archaeological sites worldwide, detailing location, radiocarbon/U‑series dates, uncertainties, and references.",
+  "dataset_description": "Contains 335 Earth and environmental science records in table 973041 for scientific analysis.",
+  "runtime_seconds": 43.907,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/973041/dictionary.json"
+}

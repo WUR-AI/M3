@@ -1,0 +1,35 @@
+{
+  "dataset_id": "927062",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/927062.csv",
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T11:41:06.809998+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Balloon Event Data 2018",
+    "description": "Dataset containing high-frequency measurements from a balloon event on August 18, 2018, including temporal and spatial data, atmospheric parameters, and event identifiers.",
+    "keywords": [
+      "balloon event",
+      "atmospheric measurements",
+      "2018",
+      "August",
+      "high-frequency data",
+      "longitude",
+      "latitude",
+      "height",
+      "pressure",
+      "temperature",
+      "humidity",
+      "wind direction",
+      "wind speed"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/927062_0d6f155d9b5d48c9a5a67966229c4ca0.jsonl",
+  "runtime_seconds": 338.1
+}

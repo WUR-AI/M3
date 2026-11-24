@@ -1,0 +1,38 @@
+{
+  "csv": "916167.csv",
+  "dataset_id": "916167",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "contract_sha256": "1874e3473f9115485691bf0c8383e2a71b411969e7507acc054471c86df6390e",
+  "prompt_tokens": 1390,
+  "metadata": {
+    "name": "Katharinentalerhof Pforzheim Plant Performance and Weather Data",
+    "description": "Dataset containing plant performance data, weather data, and Noah-MP model outputs (ECC and LCC scenarios) collected at the Katharinentalerhof site in Pforzheim.",
+    "keywords": [
+      "plant performance",
+      "weather data",
+      "Noah-MP",
+      "ECC",
+      "LCC",
+      "Katharinentalerhof",
+      "Pforzheim"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.498,
+  "status": "ok"
+}

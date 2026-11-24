@@ -1,0 +1,36 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "2c2efcd17868fcebed053cf8ea9e9a663893e48222c2049ced59211f96bce2fe",
+  "prompt_tokens": 1253,
+  "metadata": {
+    "name": "MITAPI 2015-2010 Difference Data",
+    "description": "This dataset contains difference data between 2015 and 2010 for various categories such as agriculture, energy, industry, etc., in netCDF format.",
+    "keywords": [
+      "MITAPI",
+      "2015-2010",
+      "Difference Data",
+      "Agriculture",
+      "Energy",
+      "Industry",
+      "NetCDF"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": "0.1 degree",
+    "temporal": "Yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.68,
+  "status": "ok"
+}

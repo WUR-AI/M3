@@ -1,0 +1,45 @@
+{
+  "csv": "960522.csv",
+  "dataset_id": "960522",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3bb28cd5e16d4d59f094461b12276b04514b16f4838bc2b41b39519704550e84",
+  "contract_sha256": "4b27391359cb8c50630eae25dce0de420edaeb3c8a7108c8096492c70c234f0e",
+  "prompt_tokens": 7316,
+  "metadata": {
+    "name": "Laboratory incubation experiment on Limacina helicina under varying pCO2 conditions",
+    "description": "Dataset containing chemical and biological measurements (including DIC, AT, pCO2, pH, O2, nutrients) for the pteropod species Limacina helicina during laboratory incubation experiments conducted on September 1, 2019. Samples include controls, initial collections, and incubations under supersaturated and undersaturated CO2 conditions.",
+    "keywords": [
+      "Limacina helicina",
+      "pteropod",
+      "ocean acidification",
+      "laboratory experiment",
+      "carbonate chemistry",
+      "pCO2",
+      "DIC",
+      "AT",
+      "pH",
+      "oxygen",
+      "nutrients"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.43,
+      "min_lon": -126.23,
+      "max_lat": 48.43,
+      "max_lon": -126.23
+    },
+    "temporalCoverage": {
+      "from": "2019-09-01",
+      "to": "2019-09-01"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.346,
+  "status": "ok"
+}

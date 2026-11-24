@@ -1,0 +1,30 @@
+{
+  "dataset_id": "990157",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990157.csv",
+  "source_sha256": "1783f619857ad835a2a0ca14fccc4da08e4c0ffcf008dccad424fd57de27c4e8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T20:35:58.202667+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Lead and Cesium Isotope Measurements in Sediment Core LSMo22-1",
+    "description": "This dataset contains measurements of lead (210Pb) and cesium (137Cs) isotopes in sediment core LSMo22-1, collected at a single location (21.365278, -104.568333) on April 8, 2022. The data includes depth measurements, isotope concentrations, and their standard deviations.",
+    "keywords": [
+      "sediment core",
+      "lead isotopes",
+      "cesium isotopes",
+      "environmental monitoring",
+      "radioisotope dating",
+      "geochemistry",
+      "Mexico",
+      "2022"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990157_d5704a9403a14a87a4665b9f988044cf.jsonl",
+  "runtime_seconds": 431.45
+}

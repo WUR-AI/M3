@@ -1,0 +1,15 @@
+{
+  "csv": "keckiella_breviflora.csv",
+  "dataset_id": "keckiella_breviflora",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "db9ff0c96bde78cf0292d5c384542de769b975108ac5bd9fb62e5c67bc84a18d",
+  "contract_sha256": "b358889c29dabd8406825218269cd20de342eb80b1bdbd906c286c0786fde1c7",
+  "prompt_tokens": 327035,
+  "status": "skipped",
+  "reason": "context_window"
+}

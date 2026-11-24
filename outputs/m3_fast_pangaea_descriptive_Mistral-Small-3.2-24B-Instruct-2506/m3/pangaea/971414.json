@@ -1,0 +1,32 @@
+{
+  "dataset_id": "971414",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971414.csv",
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T17:08:09.612284+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Kiwada River Section Samples",
+    "description": "Dataset containing sample information from the Kiwada and Yuki River sections in Chiba, Japan. Includes sample IDs, section measurements, age, SR values, references, and geographic coordinates.",
+    "keywords": [
+      "Kiwada River",
+      "Yuki River",
+      "Chiba",
+      "Japan",
+      "geographic coordinates",
+      "sample measurements",
+      "age",
+      "SR values",
+      "paleontology",
+      "geology"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971414_43586bab92c340bdafa7d84a31805151.jsonl",
+  "runtime_seconds": 530.58
+}

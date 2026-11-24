@@ -1,0 +1,39 @@
+{
+  "dataset_id": "987071",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987071.csv",
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T02:40:00.100066+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Carbon Content Analysis",
+    "description": "This dataset contains measurements of sediment depth, total organic carbon (TOC), and total inorganic carbon (TIC) collected during a single event at a fixed geographic location and time. The data includes 34 samples with consistent spatial and temporal attributes.",
+    "keywords": [
+      "sediment",
+      "carbon content",
+      "TOC",
+      "TIC",
+      "geochemical analysis"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24T21:28:00+00:00",
+      "to": "2012-03-24T21:28:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987071_799924c73086481b823accc4cdcd3fbd.jsonl",
+  "runtime_seconds": 285.8
+}

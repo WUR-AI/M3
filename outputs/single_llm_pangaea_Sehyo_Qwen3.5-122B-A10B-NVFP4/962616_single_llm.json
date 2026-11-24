@@ -1,0 +1,42 @@
+{
+  "csv": "962616.csv",
+  "dataset_id": "962616",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "53878bd4aff9f3cab58fba0c5229d29a9b6de5e5bd93a55093c97e80fb7cd00e",
+  "contract_sha256": "c62ee1de1f7dca96d3389401472d260202d3a615d855224ace636b9889e60965",
+  "prompt_tokens": 1646,
+  "metadata": {
+    "name": "WA_CapeBlossom_20210625_7cm_01",
+    "description": "Dataset containing aerial imagery and derived products including RGB and CIR previews, DSM, Ortho, hillshade, point clouds, and tile footprints for the WA_CapeBlossom site collected on 2021-06-25.",
+    "keywords": [
+      "aerial imagery",
+      "DSM",
+      "Ortho",
+      "hillshade",
+      "point cloud",
+      "tile footprints",
+      "RGB",
+      "CIR"
+    ],
+    "spatialCoverage": {
+      "min_lat": 66.891836,
+      "min_lon": -162.596512,
+      "max_lat": 66.891836,
+      "max_lon": -162.596512
+    },
+    "temporalCoverage": {
+      "from": "2021-06-25",
+      "to": "2021-06-25"
+    },
+    "spatial": "7 cm",
+    "temporal": "point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.092,
+  "status": "ok"
+}

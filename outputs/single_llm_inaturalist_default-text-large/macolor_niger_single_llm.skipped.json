@@ -1,0 +1,15 @@
+{
+  "csv": "macolor_niger.csv",
+  "dataset_id": "macolor_niger",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b678f76bb6f3c43b2dc6f453dbd9a1d40580ab0b18af05911bf5c1869498a943",
+  "contract_sha256": "629f83bf140b7c952c1554309143b14640160587cae72a778bfd1d9e80d7d3e5",
+  "prompt_tokens": 309784,
+  "status": "skipped",
+  "reason": "context_window"
+}

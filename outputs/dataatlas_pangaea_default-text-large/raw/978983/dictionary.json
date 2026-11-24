@@ -1,0 +1,1829 @@
+{
+  "dataset_name": "978983",
+  "list_of_tables": [
+    "978983"
+  ],
+  "tables": {
+    "978983": {
+      "table_name": "978983",
+      "row_count": 14,
+      "number_of_columns": 44,
+      "list_of_columns": [
+        "Event",
+        "Sample label",
+        "Depth sed",
+        "Prop IGSN",
+        "Qz",
+        "Crs",
+        "Trd",
+        "Pl",
+        "Kfs",
+        "Cal",
+        "HMC",
+        "Arg",
+        "Dol",
+        "Ank",
+        "Sd",
+        "Carb",
+        "Gp",
+        "Ap",
+        "NaCl",
+        "Mnt",
+        "Mix layer",
+        "Plg",
+        "Ill",
+        "Ill EI",
+        "Ms",
+        "Bt",
+        "Glt",
+        "Kln",
+        "Chl",
+        "Srp",
+        "Zeo",
+        "Pyrox",
+        "Amp",
+        "Grt",
+        "Ep",
+        "Rt",
+        "Fe3O4",
+        "FeO",
+        "Py",
+        "Comment",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B",
+            "386-M0095B"
+          ],
+          "data_patterns": {
+            "999-A9999A": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "386-M0095B",
+                14
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event identifier for the sampling campaign, constant across all records."
+        },
+        "Sample label": {
+          "column_name": "Sample label",
+          "data_type": "string",
+          "sample_values": [
+            "386-M0095B-1H-25_90-92",
+            "386-M0095B-1H-9_90-92",
+            "386-M0095B-1H-3_90-92",
+            "386-M0095B-1H-17_90-92",
+            "386-M0095B-1H-7_90-92",
+            "386-M0095B-1H-19_90-92",
+            "386-M0095B-1H-13_90-92",
+            "386-M0095B-1H-1_21-23",
+            "386-M0095B-1H-27_90-92",
+            "386-M0095B-1H-15_90-92",
+            "386-M0095B-1H-5_90-92",
+            "386-M0095B-1H-23_90-92",
+            "386-M0095B-1H-11_90-92",
+            "386-M0095B-1H-21_90-92"
+          ],
+          "data_patterns": {
+            "999-A9999A-9A-99_99-99": 9,
+            "999-A9999A-9A-9_99-99": 5
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 14,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "386-M0095B-1H-19_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-23_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-1_21-23",
+                1
+              ],
+              [
+                "386-M0095B-1H-25_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-11_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-17_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-5_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-3_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-27_90-92",
+                1
+              ],
+              [
+                "386-M0095B-1H-9_90-92",
+                1
+              ]
+            ],
+            "unique_count": 14
+          },
+          "description": "Sample label uniquely identifies each sediment sample in the dataset."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "sample_values": [
+            26.81,
+            8.19,
+            2.17,
+            20.51,
+            6.19,
+            14.24,
+            24.76,
+            12.23,
+            10.21,
+            22.61,
+            18.4,
+            16.3,
+            4.18,
+            0.21
+          ],
+          "data_patterns": {
+            "99.99": 7,
+            "9.99": 5,
+            "99.9": 2
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 0.21,
+            "max": 26.81,
+            "mean": 13.357857142857142,
+            "median": 13.235,
+            "std": 8.566999455487883
+          },
+          "description": "Continuous sediment depth measurements ranging from 0.21 to 26.81 units."
+        },
+        "Prop IGSN": {
+          "column_name": "Prop IGSN",
+          "data_type": "string",
+          "sample_values": [
+            "IBCR0386EXC5I01",
+            "IBCR0386EXH5I01",
+            "IBCR0386EX66I01",
+            "IBCR0386EX75I01",
+            "IBCR0386EXG6I01",
+            "IBCR0386EXL6I01",
+            "IBCR0386EXV6I01",
+            "IBCR0386EXQ6I01",
+            "IBCR0386EX25I01",
+            "IBCR0386EX16I01",
+            "IBCR0386EXB6I01",
+            "IBCR0386EXM5I01",
+            "IBCR0386EXR5I01",
+            "IBCR0386EXW5I01"
+          ],
+          "data_patterns": {
+            "AAAA9999AAA9A99": 10,
+            "AAAA9999AA99A99": 4
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 14,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "IBCR0386EXB6I01",
+                1
+              ],
+              [
+                "IBCR0386EXL6I01",
+                1
+              ],
+              [
+                "IBCR0386EXM5I01",
+                1
+              ],
+              [
+                "IBCR0386EXQ6I01",
+                1
+              ],
+              [
+                "IBCR0386EXR5I01",
+                1
+              ],
+              [
+                "IBCR0386EX66I01",
+                1
+              ],
+              [
+                "IBCR0386EX75I01",
+                1
+              ],
+              [
+                "IBCR0386EX25I01",
+                1
+              ],
+              [
+                "IBCR0386EXV6I01",
+                1
+              ],
+              [
+                "IBCR0386EXH5I01",
+                1
+              ]
+            ],
+            "unique_count": 14
+          },
+          "description": "Unique International Generic Sample Number assigned to each sediment sample."
+        },
+        "Qz": {
+          "column_name": "Qz",
+          "data_type": "integer",
+          "sample_values": [
+            46,
+            30,
+            43,
+            29,
+            36,
+            40,
+            38,
+            22,
+            38,
+            41,
+            30,
+            39,
+            33,
+            26
+          ],
+          "data_patterns": {
+            "99": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "numeric",
+            "min": 22.0,
+            "max": 46.0,
+            "mean": 35.07142857142857,
+            "median": 37.0,
+            "std": 6.911131330233586
+          },
+          "description": "Quartz content expressed as weight percent of each sediment sample."
+        },
+        "Crs": {
+          "column_name": "Crs",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 6.0,
+            "mean": 0.5,
+            "median": 0.0,
+            "std": 1.6052797503622467
+          },
+          "description": "Count of observed occurrences per sample."
+        },
+        "Trd": {
+          "column_name": "Trd",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Trd is a constant integer value of zero across all records."
+        },
+        "Pl": {
+          "column_name": "Pl",
+          "data_type": "integer",
+          "sample_values": [
+            20,
+            14,
+            26,
+            21,
+            25,
+            16,
+            25,
+            18,
+            14,
+            24,
+            14,
+            16,
+            25,
+            23
+          ],
+          "data_patterns": {
+            "99": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 14.0,
+            "max": 26.0,
+            "mean": 20.071428571428573,
+            "median": 20.5,
+            "std": 4.648643900094963
+          },
+          "description": "Sample measurement ranging from 14 to 26."
+        },
+        "Kfs": {
+          "column_name": "Kfs",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Kfs is a constant integer field with value zero for all samples."
+        },
+        "Cal": {
+          "column_name": "Cal",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Cal is a constant integer value of zero for all samples."
+        },
+        "HMC": {
+          "column_name": "HMC",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "All entries are zero, indicating a uniform integer attribute across samples."
+        },
+        "Arg": {
+          "column_name": "Arg",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Arg is a constant integer field with value zero for all samples."
+        },
+        "Dol": {
+          "column_name": "Dol",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 4.0,
+            "mean": 0.2857142857142857,
+            "median": 0.0,
+            "std": 1.0690449676496974
+          },
+          "description": "Dol is a discrete count ranging from zero to four across the fourteen sediment samples."
+        },
+        "Ank": {
+          "column_name": "Ank",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Constant integer field equal to zero across"
+        },
+        "Sd": {
+          "column_name": "Sd",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Uniform integer value of zero for all samples."
+        },
+        "Carb": {
+          "column_name": "Carb",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Carbon concentration recorded as zero across all sediment samples."
+        },
+        "Gp": {
+          "column_name": "Gp",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Uniform group identifier with value zero for all samples."
+        },
+        "Ap": {
+          "column_name": "Ap",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Ap is a constant integer value of zero across all samples."
+        },
+        "NaCl": {
+          "column_name": "NaCl",
+          "data_type": "integer",
+          "sample_values": [
+            9,
+            11,
+            5,
+            7,
+            6,
+            15,
+            5,
+            6,
+            3,
+            10,
+            5,
+            11,
+            6,
+            7
+          ],
+          "data_patterns": {
+            "9": 10,
+            "99": 4
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 3.0,
+            "max": 15.0,
+            "mean": 7.571428571428571,
+            "median": 6.5,
+            "std": 3.227627986243523
+          },
+          "description": "Sodium chloride content measured as integer values across the sediment samples."
+        },
+        "Mnt": {
+          "column_name": "Mnt",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 2.0,
+            "mean": 0.5,
+            "median": 0.0,
+            "std": 0.7595545253127499
+          },
+          "description": "Number of minutes recorded for each sample."
+        },
+        "Mix layer": {
+          "column_name": "Mix layer",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 6.0,
+            "mean": 0.42857142857142855,
+            "median": 0.0,
+            "std": 1.6035674514745464
+          },
+          "description": "Number of mixing layers present in each sediment sample."
+        },
+        "Plg": {
+          "column_name": "Plg",
+          "data_type": "integer",
+          "sample_values": [
+            4,
+            0,
+            3,
+            3,
+            0,
+            2,
+            0,
+            3,
+            2,
+            0,
+            2,
+            0,
+            4,
+            3
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 4.0,
+            "mean": 1.8571428571428572,
+            "median": 2.0,
+            "std": 1.561909228976012
+          },
+          "description": "Values range from zero to four, indicating discrete categories."
+        },
+        "Ill": {
+          "column_name": "Ill",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 2.0,
+            "mean": 0.14285714285714285,
+            "median": 0.0,
+            "std": 0.5345224838248487
+          },
+          "description": "Ill denotes a binary flag, with 0 indicating absence and 2 indicating presence."
+        },
+        "Ill EI": {
+          "column_name": "Ill EI",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.25,
+            0.16,
+            0.18,
+            0.08,
+            0.18,
+            0.17,
+            0.34,
+            0.12,
+            0.15,
+            0.09,
+            0.2,
+            0.16,
+            0.03,
+            0.14
+          ],
+          "data_patterns": {
+            "9.99": 13,
+            "9.9": 1
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "numeric",
+            "min": 0.03,
+            "max": 0.34,
+            "mean": 0.16071428571428573,
+            "median": 0.16,
+            "std": 0.07508603124358144
+          },
+          "description": "Probability score between 0 and 1 for each sediment sample."
+        },
+        "Ms": {
+          "column_name": "Ms",
+          "data_type": "integer",
+          "sample_values": [
+            37,
+            11,
+            16,
+            13,
+            12,
+            24,
+            11,
+            23,
+            31,
+            24,
+            20,
+            19,
+            11,
+            41
+          ],
+          "data_patterns": {
+            "99": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 11.0,
+            "max": 41.0,
+            "mean": 20.928571428571427,
+            "median": 19.5,
+            "std": 9.817286838995837
+          },
+          "description": "Measured integer values ranging from 11 to 41 across the samples."
+        },
+        "Bt": {
+          "column_name": "Bt",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Measured value is zero for every sample."
+        },
+        "Glt": {
+          "column_name": "Glt",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "data_patterns": {
+            "9.9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Probability score ranging from 0 to 1, all entries currently zero."
+        },
+        "Kln": {
+          "column_name": "Kln",
+          "data_type": "float",
+          "sample_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "data_patterns": {
+            "9.9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 2.0,
+            "mean": 0.21428571428571427,
+            "median": 0.0,
+            "std": 0.5789342235218394
+          },
+          "description": "Discrete count values ranging from 0 to 2."
+        },
+        "Chl": {
+          "column_name": "Chl",
+          "data_type": "integer",
+          "sample_values": [
+            7,
+            10,
+            5,
+            12,
+            9,
+            10,
+            7,
+            14,
+            10,
+            9,
+            7,
+            11,
+            9,
+            8
+          ],
+          "data_patterns": {
+            "9": 8,
+            "99": 6
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 5.0,
+            "max": 14.0,
+            "mean": 9.142857142857142,
+            "median": 9.0,
+            "std": 2.3157368940873577
+          },
+          "description": "Sediment chlorophyll concentration measured as integer values."
+        },
+        "Srp": {
+          "column_name": "Srp",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 4.0,
+            "mean": 0.2857142857142857,
+            "median": 0.0,
+            "std": 1.0690449676496974
+          },
+          "description": "Srp values are integer counts ranging from zero to four."
+        },
+        "Zeo": {
+          "column_name": "Zeo",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "All records have a Zeo value of zero."
+        },
+        "Pyrox": {
+          "column_name": "Pyrox",
+          "data_type": "integer",
+          "sample_values": [
+            4,
+            0,
+            3,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 4.0,
+            "mean": 0.7142857142857143,
+            "median": 0.0,
+            "std": 1.4373357526806554
+          },
+          "description": "Number of pyroxene grains observed in each sediment sample."
+        },
+        "Amp": {
+          "column_name": "Amp",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            3,
+            5,
+            0,
+            8,
+            0,
+            3,
+            2,
+            2,
+            6,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 8.0,
+            "mean": 2.0714285714285716,
+            "median": 1.0,
+            "std": 2.64471274328716
+          },
+          "description": "Measured electric current in amperes."
+        },
+        "Grt": {
+          "column_name": "Grt",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Grt is a constant integer value of zero across all samples."
+        },
+        "Ep": {
+          "column_name": "Ep",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Ep is a constant zero value across all samples."
+        },
+        "Rt": {
+          "column_name": "Rt",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Rt is a constant zero value across all samples."
+        },
+        "Fe3O4": {
+          "column_name": "Fe3O4",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Fe3O4 content measured in integer units, with no detected presence across samples."
+        },
+        "FeO": {
+          "column_name": "FeO",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Iron oxide concentration, measured in weight percent."
+        },
+        "Py": {
+          "column_name": "Py",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Py is a constant integer value of zero across all samples."
+        },
+        "Comment": {
+          "column_name": "Comment",
+          "data_type": "string",
+          "sample_values": [
+            "sodalite"
+          ],
+          "data_patterns": {
+            "aaaaaaaa": 1
+          },
+          "total_rows": 14,
+          "null_count": 13,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "sodalite",
+                1
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Mineral identification comment, typically noting sodalite presence."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333,
+            36.89168333
+          ],
+          "data_patterns": {
+            "99.99999999": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 36.89168333,
+            "max": 36.89168333,
+            "mean": 36.89168332999999,
+            "median": 36.89168333,
+            "std": 7.373650442769571e-15
+          },
+          "description": "Geographic latitude of sampling site in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833,
+            143.4078833
+          ],
+          "data_patterns": {
+            "999.9999999": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 143.4078833,
+            "max": 143.4078833,
+            "mean": 143.40788330000004,
+            "median": 143.4078833,
+            "std": 2.9494601771078283e-14
+          },
+          "description": "Geographic longitude of each sample location in decimal degrees."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0,
+            -7697.0
+          ],
+          "data_patterns": {
+            "-9999.9": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -7697.0,
+            "max": -7697.0,
+            "mean": -7697.0,
+            "median": -7697.0,
+            "std": 0.0
+          },
+          "description": "Elevation of each sample, measured at -7697 meters below sea level."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30",
+            "2021-05-30"
+          ],
+          "data_patterns": {
+            "9999-99-99": 14
+          },
+          "total_rows": 14,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2021-05-30T00:00:00",
+            "max_date": "2021-05-30T00:00:00"
+          },
+          "description": "Sampling date and time for all measurements, recorded as 2021-05-30."
+        }
+      },
+      "time_period_covered": {
+        "start": "2021-05-30T00:00:00",
+        "end": "2021-05-30T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Event": "386-M0095B",
+          "Sample label": "386-M0095B-1H-19_90-92",
+          "Depth sed": 18.4,
+          "Prop IGSN": "IBCR0386EXB6I01",
+          "Qz": 41,
+          "Crs": 1,
+          "Trd": 0,
+          "Pl": 23,
+          "Kfs": 0,
+          "Cal": 0,
+          "HMC": 0,
+          "Arg": 0,
+          "Dol": 0,
+          "Ank": 0,
+          "Sd": 0,
+          "Carb": 0,
+          "Gp": 0,
+          "Ap": 0,
+          "NaCl": 6,
+          "Mnt": 1,
+          "Mix layer": 0,
+          "Plg": 0,
+          "Ill": 0,
+          "Ill EI": 0.12,
+          "Ms": 16,
+          "Bt": 0,
+          "Glt": 0.0,
+          "Kln": 0.0,
+          "Chl": 9,
+          "Srp": 0,
+          "Zeo": 0,
+          "Pyrox": 0,
+          "Amp": 2,
+          "Grt": 0,
+          "Ep": 0,
+          "Rt": 0,
+          "Fe3O4": 0,
+          "FeO": 0,
+          "Py": 0,
+          "Comment": null,
+          "Latitude": 36.89168333,
+          "Longitude": 143.4078833,
+          "Elevation": -7697.0,
+          "Date/Time": "2021-05-30"
+        },
+        {
+          "Event": "386-M0095B",
+          "Sample label": "386-M0095B-1H-23_90-92",
+          "Depth sed": 22.61,
+          "Prop IGSN": "IBCR0386EXL6I01",
+          "Qz": 43,
+          "Crs": 0,
+          "Trd": 0,
+          "Pl": 24,
+          "Kfs": 0,
+          "Cal": 0,
+          "HMC": 0,
+          "Arg": 0,
+          "Dol": 0,
+          "Ank": 0,
+          "Sd": 0,
+          "Carb": 0,
+          "Gp": 0,
+          "Ap": 0,
+          "NaCl": 6,
+          "Mnt": 1,
+          "Mix layer": 6,
+          "Plg": 0,
+          "Ill": 0,
+          "Ill EI": 0.14,
+          "Ms": 11,
+          "Bt": 0,
+          "Glt": 0.0,
+          "Kln": 0.0,
+          "Chl": 9,
+          "Srp": 0,
+          "Zeo": 0,
+          "Pyrox": 3,
+          "Amp": 0,
+          "Grt": 0,
+          "Ep": 0,
+          "Rt": 0,
+          "Fe3O4": 0,
+          "FeO": 0,
+          "Py": 0,
+          "Comment": null,
+          "Latitude": 36.89168333,
+          "Longitude": 143.4078833,
+          "Elevation": -7697.0,
+          "Date/Time": "2021-05-30"
+        },
+        {
+          "Event": "386-M0095B",
+          "Sample label": "386-M0095B-1H-1_21-23",
+          "Depth sed": 0.21,
+          "Prop IGSN": "IBCR0386EXM5I01",
+          "Qz": 38,
+          "Crs": 0,
+          "Trd": 0,
+          "Pl": 20,
+          "Kfs": 0,
+          "Cal": 0,
+          "HMC": 0,
+          "Arg": 0,
+          "Dol": 0,
+          "Ank": 0,
+          "Sd": 0,
+          "Carb": 0,
+          "Gp": 0,
+          "Ap": 0,
+          "NaCl": 15,
+          "Mnt": 0,
+          "Mix layer": 0,
+          "Plg": 0,
+          "Ill": 0,
+          "Ill EI": 0.18,
+          "Ms": 11,
+          "Bt": 0,
+          "Glt": 0.0,
+          "Kln": 0.0,
+          "Chl": 10,
+          "Srp": 4,
+          "Zeo": 0,
+          "Pyrox": 0,
+          "Amp": 3,
+          "Grt": 0,
+          "Ep": 0,
+          "Rt": 0,
+          "Fe3O4": 0,
+          "FeO": 0,
+          "Py": 0,
+          "Comment": null,
+          "Latitude": 36.89168333,
+          "Longitude": 143.4078833,
+          "Elevation": -7697.0,
+          "Date/Time": "2021-05-30"
+        }
+      ],
+      "description": "Sediment mineral and geochemical data for 14 samples",
+      "is_row_capped": false,
+      "rows_processed": 14,
+      "total_rows_in_file": 14
+    }
+  },
+  "time_period_covered": {
+    "start": "2021-05-30T00:00:00",
+    "end": "2021-05-30T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental measurements recorded on 2021-05-30 across 14 entries in a single table."
+}

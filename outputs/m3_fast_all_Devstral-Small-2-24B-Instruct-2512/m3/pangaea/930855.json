@@ -1,0 +1,40 @@
+{
+  "dataset_id": "930855",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/930855.csv",
+  "source_sha256": "bcee77d90d8e37094fb072e5927cc686599551e7b9d3c90e7983f5faf32f1892",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:48:41.929737+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine sediment core sample data from Event 370-C0023A",
+    "description": "Dataset containing marine sediment core sample data collected during Event 370-C0023A on 2016-09-17. Includes sample identifiers, depth measurements, peak area measurements for Alk and Diols, and geospatial coordinates.",
+    "keywords": [
+      "marine sediment",
+      "core sample",
+      "depth measurement",
+      "peak area",
+      "geospatial data",
+      "Event 370-C0023A"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.366667,
+      "min_lon": 134.966333,
+      "max_lat": 32.366667,
+      "max_lon": 134.966333
+    },
+    "temporalCoverage": {
+      "from": "2016-09-17",
+      "to": "2016-09-17"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/930855_108db2ed6c444e489d15f015dd404688.jsonl",
+  "runtime_seconds": 291.84
+}

@@ -1,0 +1,66 @@
+{
+  "csv": "961119.csv",
+  "dataset_id": "961119",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 1550,
+  "metadata": {
+    "name": "Baltic Sea pCO2 climatology and trend",
+    "description": "The dataset contains Baltic Sea pCO2 climatology and long-term trend data.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "climatology",
+      "trend"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "long-term"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "961119"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119",
+        "n": 2
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    }
+  ],
+  "runtime_seconds": 8.526,
+  "status": "ok"
+}

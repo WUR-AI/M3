@@ -1,0 +1,40 @@
+{
+  "csv": "961147.csv",
+  "dataset_id": "961147",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "contract_sha256": "272c712ca3545d8adcbadb3f365eaf23b086cde022dc311257a8eeaec9e2076a",
+  "prompt_tokens": 24039,
+  "metadata": {
+    "name": "Marine zooplankton biogeochemical data",
+    "description": "Dataset containing biogeochemical measurements of marine zooplankton species collected from various expeditions, including species identification, sampling metadata, and elemental composition data.",
+    "keywords": [
+      "zooplankton",
+      "biogeochemistry",
+      "marine",
+      "elemental composition",
+      "Salpida",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12",
+      "to": "2021-05-27"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular sampling"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.889,
+  "status": "ok"
+}

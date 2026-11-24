@@ -1,0 +1,15 @@
+{
+  "csv": "acontia_cretata.csv",
+  "dataset_id": "acontia_cretata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "8d1e708663983f36a31bfcd509df98e78f63f22bf1a4d0ca1bf43e4d0b5e8477",
+  "contract_sha256": "6a8b6625ebd69c001b8f9b56b7528bd66bbc2cb6b2c10407f2bd09966b90b633",
+  "prompt_tokens": 312101,
+  "status": "skipped",
+  "reason": "context_window"
+}

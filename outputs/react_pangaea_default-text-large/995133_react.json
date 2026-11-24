@@ -1,0 +1,56 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1923,
+  "metadata": {
+    "name": "M. balthica shell length and frequency data from the EMB320 expedition at Rönnebank (Baltic Sea) – June 2023",
+    "description": "Measurements of the marine bivalve *Macoma balthica* (shell length and length‑frequency distribution) collected during the EMB320 expedition at the Rönnebank site in the Baltic Sea. The dataset includes the expedition identifier, sampling location, sampling month, site type (Marine Protected Area), individual shell lengths and corresponding frequency counts for each sampled length class.",
+    "keywords": [
+      "Macoma balthica",
+      "shell length",
+      "length frequency",
+      "Baltic Sea",
+      "Rönnebank",
+      "Marine Protected Area",
+      "expedition EMB320",
+      "June 2023"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2023-06-01",
+      "to": "2023-06-30"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "995133"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    }
+  ],
+  "runtime_seconds": 8.227,
+  "status": "ok"
+}

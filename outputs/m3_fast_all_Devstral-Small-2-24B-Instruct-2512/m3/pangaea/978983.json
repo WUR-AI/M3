@@ -1,0 +1,40 @@
+{
+  "dataset_id": "978983",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/978983.csv",
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T02:10:18.313147+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Mineral Composition Analysis of Sediment Core 386-M0095B",
+    "description": "This dataset contains mineral composition data from sediment core samples collected during event 386-M0095B on May 30, 2021. The samples were taken at a single location in the Pacific Ocean with a constant elevation of -7697 meters. The dataset includes 14 unique samples with detailed mineralogical analysis, such as quartz, plagioclase, muscovite, and chlorite content, along with other mineral percentages and properties like the illite expansion index.",
+    "keywords": [
+      "mineral composition",
+      "sediment core",
+      "marine geology",
+      "paleoceanography",
+      "386-M0095B",
+      "Pacific Ocean"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point location",
+    "temporal": "single day"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/978983_8fd6989a7d0d4c5fbca57f5188168aad.jsonl",
+  "runtime_seconds": 315.39
+}

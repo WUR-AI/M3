@@ -1,0 +1,35 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "cf3e7c856fbfa4ba3fbc6d0e0057d016bf04ea7a438bc2f507d4aedffa0a8783",
+  "prompt_tokens": 5991,
+  "metadata": {
+    "name": "EMR Radar Profiling Data from Antarctic Expedition 1997/98",
+    "description": "Dataset containing metadata for electromagnetic radar (EMR) profiling data collected during the Antarctic expedition ANT 1997/98. It lists profile IDs, instrument settings (600 ns or 60 ns pulse), and links to associated netCDF, KML, and image files.",
+    "keywords": [
+      "Antarctica",
+      "EMR",
+      "Radar Profiling",
+      "Ice Sheet",
+      "ANT 1997/98",
+      "Geophysics"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "1998-01-01",
+      "to": "1998-12-31"
+    },
+    "spatial": null,
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 1.855,
+  "status": "ok"
+}

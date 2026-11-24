@@ -1,0 +1,86 @@
+{
+  "csv": "990054.csv",
+  "dataset_id": "990054",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3030,
+  "metadata": {
+    "name": "MOSAiC Ice Core Chlorophyll and Phaeopigment Data",
+    "description": "This dataset contains measurements of chlorophyll a and phaeopigments from ice cores collected during the MOSAiC expedition. The data includes spatial and temporal information, such as latitude, longitude, and date/time of sampling, as well as environmental parameters like depth and elevation.",
+    "keywords": [
+      "MOSAiC",
+      "ice core",
+      "chlorophyll a",
+      "phaeopigments",
+      "Arctic",
+      "biogeochemistry",
+      "sea ice"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28",
+      "to": "2020-07-20"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "990054"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 15.709,
+  "status": "ok"
+}

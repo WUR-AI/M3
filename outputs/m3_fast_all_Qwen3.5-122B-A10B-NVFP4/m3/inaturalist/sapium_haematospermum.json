@@ -1,0 +1,28 @@
+{
+  "dataset_id": "sapium_haematospermum",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/sapium_haematospermum.csv",
+  "source_sha256": "bdc0443ab65fba07247a201c7d786d8159da4c7ac747301b6c7c89539d50223a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:48:25.144364+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -37.095011,
+      "min_lon": -66.88899,
+      "max_lat": -17.785292,
+      "max_lon": -53.700504
+    },
+    "temporalCoverage": {
+      "from": "2006-07-24T14:01:00+00:00",
+      "to": "2026-06-13T16:10:27+00:00"
+    }
+  },
+  "plan_steps_count": 5,
+  "steps_completed": 5,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/sapium_haematospermum_dc203967307c49e28a87dd1e5e91f902.jsonl",
+  "runtime_seconds": 232.75
+}

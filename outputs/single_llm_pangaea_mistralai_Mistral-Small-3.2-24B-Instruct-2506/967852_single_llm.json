@@ -1,0 +1,36 @@
+{
+  "csv": "967852.csv",
+  "dataset_id": "967852",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8",
+  "contract_sha256": "7b73ffc839a02afbdf4b50acc62adbce2a7ed71d84c41f9360753dc26c79445b",
+  "prompt_tokens": 1804,
+  "metadata": {
+    "name": "Santiurde Section Dataset",
+    "description": "This dataset contains geological and stratigraphic information from the Santiurde section, including sample IDs, labels, thickness, ratio, stratigraphic height, mineral composition, event information, geographic coordinates, elevation, and date/time.",
+    "keywords": [
+      "geology",
+      "stratigraphy",
+      "Santiurde",
+      "mineral composition",
+      "geographic coordinates"
+    ],
+    "spatialCoverage": {
+      "min_lat": 43.0685608,
+      "min_lon": -4.0878295,
+      "max_lat": 43.0685608,
+      "max_lon": -4.0878295
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.763,
+  "status": "ok"
+}

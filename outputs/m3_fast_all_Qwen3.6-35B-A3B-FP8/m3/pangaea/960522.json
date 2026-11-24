@@ -1,0 +1,46 @@
+{
+  "dataset_id": "960522",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/960522.csv",
+  "source_sha256": "3bb28cd5e16d4d59f094461b12276b04514b16f4838bc2b41b39519704550e84",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:39:59.793621+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Ocean acidification effects on Limacina helicina: carbonate chemistry and respiration data",
+    "description": "Laboratory experiment dataset measuring carbonate chemistry parameters (pHT, pCO2, Omega aragonite/calcite, DIC, AT) and respiration rates in the sea snail Limacina helicina under supersaturated and undersaturated CO2 treatments. Samples collected from Station 9 in the NE Pacific (48.43°N, 126.23°W) on September 1, 2019. Dataset includes 20 samples with balanced treatment allocation (10 supersaturated, 10 undersaturated), comprising both incubation and non-incubation controls.",
+    "keywords": [
+      "ocean acidification",
+      "carbonate chemistry",
+      "Limacina helicina",
+      "respiration",
+      "pHT",
+      "pCO2",
+      "omega aragonite",
+      "omega calcite",
+      "DIC",
+      "AT",
+      "laboratory experiment",
+      "NE Pacific"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.43,
+      "min_lon": -126.23,
+      "max_lat": 48.43,
+      "max_lon": -126.23
+    },
+    "temporalCoverage": {
+      "from": "2019-09-01",
+      "to": "2019-09-01"
+    },
+    "spatial": "point location",
+    "temporal": "single date"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/960522_34cee1238563463b922fd79da7e37adb.jsonl",
+  "runtime_seconds": 173.21
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "969067.csv",
+  "dataset_id": "969067",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "domain": "Earth and environmental science",
+  "n_rows": 2191,
+  "n_columns": 17,
+  "description": "Daily meteorological observations from Puchalski AWS station between 2018 and 2023.",
+  "dataset_description": "Earth and environmental science data covering 2018 to 2023.",
+  "runtime_seconds": 8.235,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Sehyo_Qwen3.5-122B-A10B-NVFP4/raw/969067/dictionary.json"
+}

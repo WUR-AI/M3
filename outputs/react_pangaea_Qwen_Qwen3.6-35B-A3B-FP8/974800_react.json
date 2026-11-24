@@ -1,0 +1,127 @@
+{
+  "csv": "974800.csv",
+  "dataset_id": "974800",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4380,
+  "metadata": {
+    "name": "Laboratory experiment on Xenia umbellata pulsation rates across different treatments",
+    "description": "Laboratory experiment measuring pulsation rates of Xenia umbellata (a species of soft coral) under different treatment conditions including Zooplankton, Control, DOC (Dissolved Organic Carbon), and Phytoplankton treatments across 12 tanks over 28 days.",
+    "keywords": [
+      "Xenia umbellata",
+      "pulsation",
+      "coral",
+      "laboratory experiment",
+      "zooplankton",
+      "phytoplankton",
+      "DOC",
+      "dissolved organic carbon"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "laboratory tanks",
+    "temporal": "7-day intervals"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "field": "Treat",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "field": "Tank No",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "field": "Study type",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "field": "DOE",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    }
+  ],
+  "runtime_seconds": 13.075,
+  "status": "ok"
+}

@@ -1,0 +1,97 @@
+{
+  "csv": "988976.csv",
+  "dataset_id": "988976",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 19423,
+  "metadata": {
+    "name": "Diatom assemblage data from sediment core AMK75-6150",
+    "description": "Dataset containing diatom abundance measurements from a sediment core, including total diatom counts, warm/cold/ice-neritic/sea ice/sublittoral/freshwater/fossil diatom categories, and individual species abundances. Data collected from a single location at depth -3013m.",
+    "keywords": [
+      "diatoms",
+      "sediment core",
+      "paleoceanography",
+      "marine diatoms",
+      "AMK75-6150"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "988976"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "field": "Event"
+      }
+    }
+  ],
+  "runtime_seconds": 51.896,
+  "status": "ok"
+}

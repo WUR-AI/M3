@@ -1,0 +1,16 @@
+{
+  "csv": "sphenophorus_interstitialis.csv",
+  "dataset_id": "sphenophorus_interstitialis",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1000,
+  "n_columns": 50,
+  "description": "One thousand Sphenophorus interstitialis observations (2015‑2026) with taxonomic, spatial, temporal, and attribution data.",
+  "dataset_description": "Contains 1,000 Sphenophorus interstitialis occurrence records from 2015‑2026 for biodiversity monitoring.",
+  "runtime_seconds": 75.572,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/sphenophorus_interstitialis/dictionary.json"
+}

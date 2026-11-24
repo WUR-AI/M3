@@ -1,0 +1,31 @@
+{
+  "dataset_id": "988976",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/988976.csv",
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T20:14:59.565153+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Diatom Composition and Environmental Data from AMK75-6150",
+    "description": "This dataset contains diatom composition and environmental data from a single event (AMK75-6150) at a specific location (74.78 N, 8.44 E) with a depth of -3013 meters. The data includes counts of various diatom species, categorized by temperature preference and habitat, along with sediment depth, age, and elevation measurements.",
+    "keywords": [
+      "Diatoms",
+      "Paleoceanography",
+      "Marine Sediments",
+      "Microfossils",
+      "Arctic Ocean",
+      "Paleoclimate",
+      "Sediment Core",
+      "Biogeography",
+      "74.78 N, 8.44 E"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/988976_f3c47adf53884ed6812b38d36ddd1bca.jsonl",
+  "runtime_seconds": 891.59
+}

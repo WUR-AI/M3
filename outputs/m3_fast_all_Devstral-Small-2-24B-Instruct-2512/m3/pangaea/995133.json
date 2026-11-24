@@ -1,0 +1,37 @@
+{
+  "dataset_id": "995133",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995133.csv",
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T03:16:29.963501+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "EMB320 Expedition Data - Rönnebank (Baltic Sea) June 2023",
+    "description": "Dataset containing biological measurements of M. balthica shell length and frequency collected during the EMB320 expedition in June 2023 at Rönnebank (Baltic Sea). The data includes shell length and frequency measurements across two sites, with no missing values.",
+    "keywords": [
+      "EMB320",
+      "Rönnebank",
+      "Baltic Sea",
+      "M. balthica",
+      "shell length",
+      "frequency",
+      "Marine Protected Area",
+      "biological data"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2023-06-01T00:00:00+00:00",
+      "to": "2023-06-01T00:00:00+00:00"
+    },
+    "spatial": "point locations in Rönnebank (Baltic Sea)",
+    "temporal": "monthly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995133_29eb39bef045461da132b74b720cbab6.jsonl",
+  "runtime_seconds": 200.57
+}

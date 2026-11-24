@@ -1,0 +1,72 @@
+{
+  "csv": "asaphodes_beata.csv",
+  "dataset_id": "asaphodes_beata",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b47f407db4d9c70ffa77a008a03c7b989a3385dcba2541f3fc99c7ed3a2eecc8",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 4712,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -46.90579,
+      "min_lon": 167.36141,
+      "max_lat": -35.256996,
+      "max_lon": 177.524484
+    },
+    "temporalCoverage": {
+      "from": "2005-03-20T16:09:00+00:00",
+      "to": "2026-06-13T09:21:45+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "asaphodes_beata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "asaphodes_beata",
+        "resource": "asaphodes_beata",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "asaphodes_beata"
+      }
+    }
+  ],
+  "runtime_seconds": 15.843,
+  "status": "ok"
+}

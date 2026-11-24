@@ -1,0 +1,15 @@
+{
+  "csv": "physiphora_alceae.csv",
+  "dataset_id": "physiphora_alceae",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "df273451b92741ef3fe6862a02f626fe1512ce17f503138b29fecd0c7b3125be",
+  "contract_sha256": "45a5215a601999be2e02ecdbc4bc0e33025dbd07c452a29550ed81d22b7dc119",
+  "prompt_tokens": 324896,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "formica_cunicularia.csv",
+  "dataset_id": "formica_cunicularia",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0101be02e4c3b07b529d7b6c88e4d515436183b7b29989b9c0649cbcdfd83866",
+  "contract_sha256": "255942b49bf091d3265b318a2f8d0682655e532e169692d220015cc7ec823624",
+  "prompt_tokens": 329011,
+  "status": "skipped",
+  "reason": "context_window"
+}

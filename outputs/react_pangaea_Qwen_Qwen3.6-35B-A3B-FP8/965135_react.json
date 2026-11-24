@@ -1,0 +1,125 @@
+{
+  "csv": "965135.csv",
+  "dataset_id": "965135",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 6696,
+  "metadata": {
+    "name": "Porites coral geochemical records (Sr/Ca, Mg/Ca, δ18O, δ13C) from TIAREI-A1",
+    "description": "Dataset containing 96 geochemical measurements from Porites sp. coral samples, including strontium/calcium (Sr/Ca), magnesium/calcium (Mg/Ca), oxygen isotope (δ18O), and carbon isotope (δ13C) ratios. All samples originate from a single location (latitude -17.506944, longitude -149.4225, elevation -15.0 m) collected on 2008-07-01 under event TIAREI-A1.",
+    "keywords": [
+      "coral",
+      "geochemistry",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "Porites",
+      "isotope",
+      "paleoclimate"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2008-07-01",
+      "to": "2008-07-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "965135"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135",
+        "field": "Event",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "965135",
+        "resource": "965135"
+      }
+    },
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "965135"
+      }
+    }
+  ],
+  "runtime_seconds": 18.388,
+  "status": "ok"
+}

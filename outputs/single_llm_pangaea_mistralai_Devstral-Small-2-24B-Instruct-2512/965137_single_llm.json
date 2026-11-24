@@ -1,0 +1,43 @@
+{
+  "csv": "965137.csv",
+  "dataset_id": "965137",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "040ea113a6459c88179610e781f09b1e537c72d84cbcae2faf2a0ceb52eca11c",
+  "contract_sha256": "e04d57e973f6ecd2bb4489112bbdcd0d8d854132ba9b05b7fe6fb9ea7ffb1fbf",
+  "prompt_tokens": 6329,
+  "metadata": {
+    "name": "TIAREI-3B Porites sp. Isotope Data",
+    "description": "Dataset containing geochemical measurements (Sr/Ca, Mg/Ca, δ18O, δ13C) from Porites sp. coral samples collected at TIAREI-3B site, including age, location, and elevation data.",
+    "keywords": [
+      "coral",
+      "geochemistry",
+      "isotopes",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "paleoclimate",
+      "TIAREI-3B"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2000-07-01",
+      "to": "2008-07-01"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-annual (monthly to weekly)"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.443,
+  "status": "ok"
+}

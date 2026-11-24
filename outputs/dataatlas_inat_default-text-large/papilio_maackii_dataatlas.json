@@ -1,0 +1,16 @@
+{
+  "csv": "papilio_maackii.csv",
+  "dataset_id": "papilio_maackii",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "Papilio maackii occurrence records (2004‑2026) with taxonomy, location, date, observer, and media details.",
+  "dataset_description": "Records of Papilio maackii sightings from 2004 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 85.251,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/papilio_maackii/dictionary.json"
+}

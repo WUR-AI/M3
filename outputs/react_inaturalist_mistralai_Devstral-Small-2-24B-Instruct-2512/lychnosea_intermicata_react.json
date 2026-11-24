@@ -1,0 +1,60 @@
+{
+  "csv": "lychnosea_intermicata.csv",
+  "dataset_id": "lychnosea_intermicata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d7734a076515ca9e69d2c38405113b3a1ada316b63946169fa410c90ec0895ee",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2525,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.395899,
+      "min_lon": -104.11761,
+      "max_lat": 39.807383,
+      "max_lon": -80.419794
+    },
+    "temporalCoverage": {
+      "from": "2006-10-04",
+      "to": "2026-06-12"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "lychnosea_intermicata",
+        "resource": "lychnosea_intermicata.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "lychnosea_intermicata",
+        "resource": "lychnosea_intermicata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "lychnosea_intermicata",
+        "resource": "lychnosea_intermicata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lychnosea_intermicata",
+        "resource": "lychnosea_intermicata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.785,
+  "status": "ok"
+}

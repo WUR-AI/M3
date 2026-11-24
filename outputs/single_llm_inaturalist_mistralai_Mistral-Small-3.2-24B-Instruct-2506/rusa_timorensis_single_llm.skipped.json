@@ -1,0 +1,15 @@
+{
+  "csv": "rusa_timorensis.csv",
+  "dataset_id": "rusa_timorensis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6fa0258ffadc6d9cb8c40e67b641c0301b57168b900a8c4f085faeb57ef692b7",
+  "contract_sha256": "4203968f12e3df4931af33266051f63bed6eb4b74e2c8eb30e8b4e064daa34e3",
+  "prompt_tokens": 317323,
+  "status": "skipped",
+  "reason": "context_window"
+}

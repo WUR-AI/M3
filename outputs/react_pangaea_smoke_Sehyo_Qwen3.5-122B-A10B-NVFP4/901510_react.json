@@ -1,0 +1,95 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4164,
+  "metadata": {
+    "name": "Elwha River Delta GPS Survey Data",
+    "description": "GPS survey measurements from the Elwha River Delta area containing latitude, longitude, elevation, timestamps, and quality metrics (HRMS, VRMS) collected during a field survey on February 3, 2012.",
+    "keywords": [
+      "Elwha River",
+      "GPS",
+      "survey",
+      "elevation",
+      "delta",
+      "geospatial"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00+00:00",
+      "to": "2012-02-03T13:11:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "point measurements"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "901510"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510",
+        "field": "Date/Time",
+        "limit": 20
+      }
+    }
+  ],
+  "runtime_seconds": 16.921,
+  "status": "ok"
+}

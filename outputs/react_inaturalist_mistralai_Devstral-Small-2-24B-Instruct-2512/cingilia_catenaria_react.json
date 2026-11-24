@@ -1,0 +1,60 @@
+{
+  "csv": "cingilia_catenaria.csv",
+  "dataset_id": "cingilia_catenaria",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "17a2a9cb99bf42306bf8693a8209ea5a32f31cb1d703c5f62815aaa17e0dfe3f",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2508,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 39.284652,
+      "min_lon": -116.600968,
+      "max_lat": 56.676758,
+      "max_lon": -59.834268
+    },
+    "temporalCoverage": {
+      "from": "1939-09-02",
+      "to": "2025-11-09"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "cingilia_catenaria",
+        "resource": "cingilia_catenaria.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "cingilia_catenaria",
+        "resource": "cingilia_catenaria"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "cingilia_catenaria",
+        "resource": "cingilia_catenaria",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "cingilia_catenaria",
+        "resource": "cingilia_catenaria",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.256,
+  "status": "ok"
+}

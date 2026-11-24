@@ -1,0 +1,15 @@
+{
+  "dataset_id": "idea_leuconoe",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/idea_leuconoe.csv",
+  "source_sha256": "d842e3d2f74c9f7a37e90c376a8cd45b3195e171648746b82b5cebc268c19649",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:40:04.554744+00:00",
+  "status": "failed",
+  "error": "RuntimeError: Planning failed",
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/idea_leuconoe_b583c23fc302400b9a3c711fa3028254.jsonl",
+  "runtime_seconds": 4.62
+}

@@ -1,0 +1,59 @@
+{
+  "csv": "crasilogia_gressitti.csv",
+  "dataset_id": "crasilogia_gressitti",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "8de58cc367040c3d345434be5bf241e8967189aa510281099e44194b2ba491fa",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 1878,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -36.858303,
+      "min_lon": 145.34185,
+      "max_lat": -16.60548,
+      "max_lon": 153.498243
+    },
+    "temporalCoverage": {
+      "from": "2012-02-06T14:58:42+00:00",
+      "to": "2026-05-18T22:40:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "crasilogia_gressitti"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "crasilogia_gressitti",
+        "resource": "crasilogia_gressitti"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "crasilogia_gressitti",
+        "resource": "crasilogia_gressitti",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "crasilogia_gressitti",
+        "resource": "crasilogia_gressitti",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.493,
+  "status": "ok"
+}

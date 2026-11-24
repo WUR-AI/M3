@@ -1,0 +1,35 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "cf3e7c856fbfa4ba3fbc6d0e0057d016bf04ea7a438bc2f507d4aedffa0a8783",
+  "prompt_tokens": 5991,
+  "metadata": {
+    "name": "ANT 1997/98 Radar Profiles",
+    "description": "Dataset containing radar profile data collected during the Antarctic 1997/98 season. Includes profile IDs, instrument details, radar product information, and associated file sizes for netCDF, GIS, and image formats.",
+    "keywords": [
+      "Antarctica",
+      "radar",
+      "EMR",
+      "1997/98",
+      "glaciology",
+      "ice sheets"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "1997-11-01",
+      "to": "1998-03-31"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.508,
+  "status": "ok"
+}

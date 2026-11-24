@@ -1,0 +1,38 @@
+{
+  "dataset_id": "973041",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973041.csv",
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:42:58.888705+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Radiocarbon dating results (raw & calibrated) for 335 archaeological samples from Sabah, Malaysia",
+    "description": "A compilation of 335 radiocarbon dating records from archaeological sites in Sabah, Malaysia. Each record includes site name, country, province, laboratory label, calibration comment, dating method, raw radiocarbon ages (years BP) with standard deviations, calibrated age ranges (Cal age min/max) when available, and the bibliographic reference. No latitude/longitude coordinates or ISO‑8601 calendar dates are present, so spatial and temporal extents cannot be computed.",
+    "keywords": [
+      "radiocarbon",
+      "archaeology",
+      "Malaysia",
+      "Sabah",
+      "calibrated",
+      "uncalibrated",
+      "site",
+      "province",
+      "lab label",
+      "age dating",
+      "BP",
+      "archaeological chronology"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": "0.001 year (≈0.365 days) resolution (inferred from three‑decimal precision of age columns, e.g., max = 40.88 ka)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973041_445ab8b0e0004b4b8e16f2033caa2b54.jsonl",
+  "runtime_seconds": 227.3
+}

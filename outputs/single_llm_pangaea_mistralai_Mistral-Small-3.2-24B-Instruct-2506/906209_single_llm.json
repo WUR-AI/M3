@@ -1,0 +1,31 @@
+{
+  "csv": "906209.csv",
+  "dataset_id": "906209",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "contract_sha256": "5ccdae42ef8a333b73c33974fe14f94d94acb477d3a8b3966ad53900753e1870",
+  "prompt_tokens": 735,
+  "metadata": {
+    "name": "Hunting and Pregnancy Records",
+    "description": "This dataset contains records of interviews, pacas hunting, and catch-per-unit-effort related to pregnancy diagnoses and immatures.",
+    "keywords": [
+      "hunting",
+      "pregnancy",
+      "pacas",
+      "interviews",
+      "CPUE"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.494,
+  "status": "ok"
+}

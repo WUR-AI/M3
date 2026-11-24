@@ -1,0 +1,9 @@
+{
+  "model": "default-text-large",
+  "output_dir": "/home/com3dian/Github/metadata_agent/outputs/react_pangaea_default-text-large",
+  "expected": 75,
+  "successful": 75,
+  "skipped": 0,
+  "processed": 75,
+  "remaining": 0
+}

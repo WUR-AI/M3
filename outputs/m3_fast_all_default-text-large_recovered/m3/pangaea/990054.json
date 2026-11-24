@@ -1,0 +1,47 @@
+{
+  "dataset_id": "990054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990054.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:56:32.353427+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "MOSAiC Ice Core Pigment and Depth Measurements (2019‑2020)",
+    "description": "Dataset of 271 ice‑core samples collected during the MOSAiC expedition between 28 Oct 2019 and 20 Jul 2020. Each record includes campaign, activity, event ID, date, latitude, longitude, device, section label/comment, depth description, measured ice/snow depth, chlorophyll‑a, phaeophytin, and site elevation.",
+    "keywords": [
+      "MOSAiC",
+      "ice core",
+      "Arctic",
+      "chlorophyll a",
+      "phaeophytin",
+      "pigments",
+      "depth",
+      "elevation",
+      "latitude",
+      "longitude",
+      "cryosphere",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28T00:00:00Z",
+      "to": "2020-07-20T00:00:00Z"
+    },
+    "spatial": "point observations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990054_002eeaddd54e4d5580c70c4421631891.jsonl",
+  "runtime_seconds": 176.07,
+  "recovered_from_trace": true,
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660"
+}

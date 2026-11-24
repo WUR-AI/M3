@@ -1,0 +1,43 @@
+{
+  "csv": "962616.csv",
+  "dataset_id": "962616",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "53878bd4aff9f3cab58fba0c5229d29a9b6de5e5bd93a55093c97e80fb7cd00e",
+  "contract_sha256": "7d7016f2325f401c829a246e682dc1b134640441072b044684344d434f9a34c0",
+  "prompt_tokens": 1646,
+  "metadata": {
+    "name": "Cape Blossom 2021-06-25 7 cm aerial imagery",
+    "description": "A collection of aerial remote‑sensing products captured over Cape Blossom, Alaska on 25 June 2021 at a 7 cm ground‑sample distance. Includes RGB and CIR preview PNGs, orthophoto GeoTIFF, DSM GeoTIFF, hillshade, point‑cloud tiles, tile footprint GeoJSON and processing information.",
+    "keywords": [
+      "Cape Blossom",
+      "Alaska",
+      "aerial imagery",
+      "orthophoto",
+      "DSM",
+      "point cloud",
+      "7 cm",
+      "2021",
+      "remote sensing"
+    ],
+    "spatialCoverage": {
+      "min_lat": 66.891836,
+      "min_lon": -162.596512,
+      "max_lat": 66.891836,
+      "max_lon": -162.596512
+    },
+    "temporalCoverage": {
+      "from": "2021-06-25",
+      "to": "2021-06-25"
+    },
+    "spatial": "7 cm",
+    "temporal": "single"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.9,
+  "status": "ok"
+}

@@ -1,0 +1,40 @@
+{
+  "csv": "971414.csv",
+  "dataset_id": "971414",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "contract_sha256": "a6cb7f9c8d27633fe275696cea9b41b5566e69a8a459eda3509161fb7827856a",
+  "prompt_tokens": 1536,
+  "metadata": {
+    "name": "Kiwada Kazusa Chiba River Sediment Samples",
+    "description": "A collection of sediment sample measurements from the Ono and Yuki River sections in the Kazusa region of Chiba, Japan. Includes sample identifiers, stratigraphic section, age (years BP), SR values, reference source, and geographic coordinates for each sample.",
+    "keywords": [
+      "Kiwada",
+      "Kazusa",
+      "Chiba",
+      "river",
+      "sediment",
+      "age",
+      "SR",
+      "geology",
+      "Japan"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.747,
+  "status": "ok"
+}

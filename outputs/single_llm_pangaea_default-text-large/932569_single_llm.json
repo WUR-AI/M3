@@ -1,0 +1,43 @@
+{
+  "csv": "932569.csv",
+  "dataset_id": "932569",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "contract_sha256": "c5750c5728f2428eba93394cdc3a2a7076f22b553959ea6d51ee7386bad7aace",
+  "prompt_tokens": 10844,
+  "metadata": {
+    "name": "Aerosol size distribution and chemical composition measurements (PS106 track)",
+    "description": "The dataset contains aerosol sampling data collected along the PS106 flight track. Each record includes the sampling stage, aerosol size range, sampling date and time, geographic coordinates (two locations per sample), measurement height, and concentrations of various chemical species (Cl‑, NO₃⁻, SO₄²⁻, C₂O₄²⁻, NO₂⁻, Br⁻, F⁻, MSA, PO₄³⁻, Na⁺, NH₄⁺, K⁺, Mg²⁺). Measurements span multiple dates in May–July 2017 across a latitudinal range from ~55° N to ~84° N and longitudinal range from ~3° E to ~33° E.",
+    "keywords": [
+      "aerosol",
+      "size distribution",
+      "chemical composition",
+      "atmospheric chemistry",
+      "PS106",
+      "flight track",
+      "latitude",
+      "longitude",
+      "time series"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.229915,
+      "max_lat": 83.709847,
+      "max_lon": 32.979462
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24T20:50:00",
+      "to": "2017-07-16T10:35:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 17.414,
+  "status": "ok"
+}

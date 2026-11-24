@@ -1,0 +1,39 @@
+{
+  "dataset_id": "958774",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/958774.csv",
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T23:14:59.261139+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Lake Constance Fischbach-Uttwil Total Phosphorus Measurements",
+    "description": "Dataset containing total phosphorus (TP) concentration measurements from Lake Constance at Fischbach-Uttwil, covering depths and seasonal periods from 1951 to 2010.",
+    "keywords": [
+      "Lake Constance",
+      "Total Phosphorus",
+      "Water Quality",
+      "Environmental Monitoring",
+      "Fischbach-Uttwil"
+    ],
+    "spatialCoverage": {
+      "min_lat": 47.6240037651,
+      "min_lon": 9.3754994815,
+      "max_lat": 47.6240037651,
+      "max_lon": 9.3754994815
+    },
+    "temporalCoverage": {
+      "from": "1951-01-01",
+      "to": "2010-12-31"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/958774_a6d0956ee01940cc82b2d0714752435e.jsonl",
+  "runtime_seconds": 820.01
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "sphenophorus_interstitialis.csv",
+  "dataset_id": "sphenophorus_interstitialis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b35571d10cb4f25590bc23334f33933035f0f39638fea17da6c79da6af16c63f",
+  "contract_sha256": "253d733f38a83d58c98d050f047dc61579954501e1ecd46408a325189f742e8f",
+  "prompt_tokens": 321170,
+  "status": "skipped",
+  "reason": "context_window"
+}

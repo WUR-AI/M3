@@ -1,0 +1,42 @@
+{
+  "dataset_id": "930855",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/930855.csv",
+  "source_sha256": "bcee77d90d8e37094fb072e5927cc686599551e7b9d3c90e7983f5faf32f1892",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:51:19.695112+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Deep-ocean sediment core geochemical biomarker data from Station 370-C0023A",
+    "description": "Dataset containing geochemical biomarker measurements (alkene and diol peak areas) from 20 subsamples of a single deep-ocean sediment core collected at a fixed location in the western Pacific Ocean. The core spans a depth interval of approximately 256 to 1069 meters, with samples analyzed for alkene and diol concentrations.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "biomarkers",
+      "alkenes",
+      "diols",
+      "deep-ocean",
+      "sediment core",
+      "western Pacific"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.366667,
+      "min_lon": 134.966333,
+      "max_lat": 32.366667,
+      "max_lon": 134.966333
+    },
+    "temporalCoverage": {
+      "from": "2016-09-17T00:00:00+00:00",
+      "to": "2016-09-17T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/930855_d73ba247bbc247fdb4be3da143ac0d48.jsonl",
+  "runtime_seconds": 110.68
+}

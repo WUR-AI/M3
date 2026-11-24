@@ -1,0 +1,62 @@
+{
+  "csv": "ormenaria_rufifascia.csv",
+  "dataset_id": "ormenaria_rufifascia",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "28216655b47d8828af7db2a751bfeb0a61fa8445afffe35e272338dd40388339",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 2716,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.322807,
+      "min_lon": -87.824481,
+      "max_lat": 33.514562,
+      "max_lon": -79.060929
+    },
+    "temporalCoverage": {
+      "from": "2006-06-11",
+      "to": "2026-06-12"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "ormenaria_rufifascia",
+        "resource": "ormenaria_rufifascia"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "ormenaria_rufifascia",
+        "resource": "ormenaria_rufifascia",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ormenaria_rufifascia",
+        "resource": "ormenaria_rufifascia",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "ormenaria_rufifascia",
+        "resource": "ormenaria_rufifascia",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 19.032,
+  "status": "ok"
+}

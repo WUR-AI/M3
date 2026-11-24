@@ -1,0 +1,15 @@
+{
+  "csv": "roepera_morgiana.csv",
+  "dataset_id": "roepera_morgiana",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c177205416504cecbc00e4e36c39ad00cd9ff912b9b8e98b9177377e8faf166b",
+  "contract_sha256": "ef4236d659d85847bf127b66fd1900eb00bf687d6e14f7ba24c8faba6bc206f3",
+  "prompt_tokens": 325733,
+  "status": "skipped",
+  "reason": "context_window"
+}

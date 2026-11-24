@@ -1,0 +1,39 @@
+{
+  "csv": "995327.csv",
+  "dataset_id": "995327",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "contract_sha256": "fe178f1f52484021450d44c73c2c644020a8e7083d24120c50abc20e8ed29424",
+  "prompt_tokens": 1201,
+  "metadata": {
+    "name": "Lanaittu core sediment sample mineralogy and geochemistry",
+    "description": "Dataset containing mineralogical composition percentages (e.g., HM, Transparent, Opaque, Turbid, Zrn, Grt, Ttn, Ep, St, Ky, And, Ol, Brk, Mnz, Crn) and sample metadata (Depth sed, Sample comment, Event) for sediment cores from the Lanaittu site.",
+    "keywords": [
+      "sediment",
+      "mineralogy",
+      "Lanaittu",
+      "core",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01",
+      "to": "1994-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.129,
+  "status": "ok"
+}

@@ -1,0 +1,39 @@
+{
+  "csv": "902576.csv",
+  "dataset_id": "902576",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b06c3394469ddd9b33f1f543a33543a85632b83506b0cb72086d0f8e099211ea",
+  "contract_sha256": "ad43305002d09ba4706d53e4f029e46244351883adb4f756d583fce2f8e43fe4",
+  "prompt_tokens": 885,
+  "metadata": {
+    "name": "Permafrost properties in Antarctica (2000-2017)",
+    "description": "Dataset containing Mean Annual Ground Temperature (MAGT), MAGT Standard Deviation, and Permafrost Probability Fraction for Antarctica, covering the period from 2000 to 2017.",
+    "keywords": [
+      "permafrost",
+      "ground temperature",
+      "Antarctica",
+      "MAGT",
+      "permafrost probability"
+    ],
+    "spatialCoverage": {
+      "min_lat": -90.0,
+      "min_lon": -180.0,
+      "max_lat": -60.0,
+      "max_lon": 180.0
+    },
+    "temporalCoverage": {
+      "from": "2000-01-01",
+      "to": "2017-12-31"
+    },
+    "spatial": "5.0 arc-minutes",
+    "temporal": "annual"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 1.732,
+  "status": "ok"
+}

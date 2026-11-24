@@ -1,0 +1,16 @@
+{
+  "csv": "963863.csv",
+  "dataset_id": "963863",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 8,
+  "n_columns": 6,
+  "description": "Eight Earth science records linking metadata files and dataset content with file attributes and descriptions.",
+  "dataset_description": "Eight records of Earth and environmental science measurements in table 963863.",
+  "runtime_seconds": 17.927,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/963863/dictionary.json"
+}

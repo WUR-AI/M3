@@ -1,0 +1,16 @@
+{
+  "csv": "antennaria_racemosa.csv",
+  "dataset_id": "antennaria_racemosa",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 997,
+  "n_columns": 50,
+  "description": "GBIF occurrence records of Antennaria racemosa with taxonomic, geographic, temporal, and observer metadata.",
+  "dataset_description": "Biodiversity records of Antennaria racemos",
+  "runtime_seconds": 72.634,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/antennaria_racemosa/dictionary.json"
+}

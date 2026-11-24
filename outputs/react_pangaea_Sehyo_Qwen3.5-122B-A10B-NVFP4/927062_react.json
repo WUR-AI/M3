@@ -1,0 +1,120 @@
+{
+  "csv": "927062.csv",
+  "dataset_id": "927062",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 7243,
+  "metadata": {
+    "name": "Balloon-borne meteorological measurements 2018-08-18",
+    "description": "Meteorological data collected from a balloon flight including pressure, temperature, relative humidity, wind direction, wind speed, and height measurements with geographic coordinates.",
+    "keywords": [
+      "balloon",
+      "meteorology",
+      "atmospheric",
+      "weather",
+      "pressure",
+      "temperature",
+      "humidity",
+      "wind"
+    ],
+    "spatialCoverage": {
+      "min_lat": 89.5537,
+      "min_lon": 36.54034,
+      "max_lat": 89.5601,
+      "max_lon": 37.14087
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00",
+      "to": "2018-08-18T11:39:00"
+    },
+    "spatial": "point locations",
+    "temporal": "second"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "927062"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "n": 10
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "column": "Date/Time"
+      }
+    },
+    {
+      "tool": "analyze_spatial_column",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "column": "Latitude"
+      }
+    },
+    {
+      "tool": "analyze_spatial_column",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "927062",
+        "resource": "927062",
+        "n": 3
+      }
+    }
+  ],
+  "runtime_seconds": 25.544,
+  "status": "ok"
+}

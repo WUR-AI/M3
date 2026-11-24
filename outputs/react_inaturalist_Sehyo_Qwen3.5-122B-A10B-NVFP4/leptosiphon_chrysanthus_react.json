@@ -1,0 +1,66 @@
+{
+  "csv": "leptosiphon_chrysanthus.csv",
+  "dataset_id": "leptosiphon_chrysanthus",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "7d754e08467544214f5d4e66e56dce7053b21a9cbc2071de9d4c1aedb97c1386",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 3958,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.377441,
+      "min_lon": -119.300555,
+      "max_lat": 37.419597,
+      "max_lon": -108.167052
+    },
+    "temporalCoverage": {
+      "from": "1995-06-12T00:00:00+00:00",
+      "to": "2026-05-15T12:21:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "leptosiphon_chrysanthus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "leptosiphon_chrysanthus",
+        "resource": "leptosiphon_chrysanthus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "leptosiphon_chrysanthus",
+        "resource": "leptosiphon_chrysanthus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "leptosiphon_chrysanthus",
+        "resource": "leptosiphon_chrysanthus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "leptosiphon_chrysanthus",
+        "resource": "leptosiphon_chrysanthus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 11.153,
+  "status": "ok"
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "953747",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/953747.csv",
+  "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T13:45:54.962042+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "PS122/5_61-35 Survey Data",
+    "description": "Dataset containing survey data with timestamps, survey IDs, binary file references, event identifiers, and geographic coordinates (latitude, longitude, elevation) for a specific event PS122/5_61-35 recorded on 2020-09-08.",
+    "keywords": [
+      "survey data",
+      "PS122/5_61-35",
+      "geographic coordinates",
+      "elevation",
+      "2020-09-08",
+      "Antarctica"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/953747_cda7f74e074c410297bdc911be76713f.jsonl",
+  "runtime_seconds": 356.28
+}

@@ -1,0 +1,44 @@
+{
+  "dataset_id": "961147",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961147.csv",
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:21:46.249440+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Salp Biochemical Measurements – IOS20210060",
+    "description": "Dataset of 107 Salpa aspera samples collected during the IOS20210060 expedition. Each record provides event identifiers, date/time, vessel, station, gear, depth, location, latitude, longitude, taxonomic details, and measured biochemical properties (carbon, nitrogen, hydrogen, ash and dry mass, elemental ratios such as C/N, C/H, H/C, and summary values). The data span from 2004‑04‑12 to 2021‑05‑27 and cover a latitudinal range of –69° to +51° and a longitudinal range of –158° to +179°.",
+    "keywords": [
+      "salp",
+      "marine biology",
+      "biochemical composition",
+      "C/N ratio",
+      "expedition IOS20210060",
+      "Bongo net",
+      "CCGS John P. Tully",
+      "Northeast Pacific",
+      "elemental analysis",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12T23:45:00+00:00",
+      "to": "2021-05-27T19:26:00+00:00"
+    },
+    "spatial": "point locations (decimal degrees)",
+    "temporal": "sub-second granularity (UTC)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961147_9a0145be248b4b20afc0e1b967f4c0ba.jsonl",
+  "runtime_seconds": 245.07
+}

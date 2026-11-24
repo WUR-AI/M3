@@ -1,0 +1,59 @@
+{
+  "csv": "agromyza_aristata.csv",
+  "dataset_id": "agromyza_aristata",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "acad9f06afe3ce830e33e010e61b3b73887d10bf3e764c290fbc650c292feda0",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 1903,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.080883,
+      "min_lon": -116.290338,
+      "max_lat": 53.558752,
+      "max_lon": -60.18718
+    },
+    "temporalCoverage": {
+      "from": "2011-05-10T08:51:00+00:00",
+      "to": "2026-06-08T17:53:56+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "agromyza_aristata"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "agromyza_aristata",
+        "resource": "agromyza_aristata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "agromyza_aristata",
+        "resource": "agromyza_aristata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "agromyza_aristata",
+        "resource": "agromyza_aristata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.768,
+  "status": "ok"
+}

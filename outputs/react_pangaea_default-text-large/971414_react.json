@@ -1,0 +1,70 @@
+{
+  "csv": "971414.csv",
+  "dataset_id": "971414",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2981,
+  "metadata": {
+    "name": "Kiwada Kazusa Chiba River Section Sample Data",
+    "description": "A collection of sediment sample measurements from the Kiwada Kazusa river sections in Chiba, Japan. Each record includes a sample identifier, section position, age (years), sediment resistance (SR), reference source, and geographic coordinates (latitude and longitude).",
+    "keywords": [
+      "river",
+      "sediment",
+      "sample",
+      "Kiwada",
+      "Kazusa",
+      "Chiba",
+      "age",
+      "SR"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "971414"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414",
+        "n": 10
+      }
+    }
+  ],
+  "runtime_seconds": 13.926,
+  "status": "ok"
+}

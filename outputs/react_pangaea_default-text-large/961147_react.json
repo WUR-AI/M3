@@ -1,0 +1,86 @@
+{
+  "csv": "961147.csv",
+  "dataset_id": "961147",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3754,
+  "metadata": {
+    "name": "Expedition Sample Dataset",
+    "description": "A collection of marine sampling records from various expeditions, including event identifiers, sample IDs, expedition names, timestamps, vessel and station information, gear used, water depth, geographic location (latitude/longitude), and taxonomic identifiers for sampled species along with associated measurements.",
+    "keywords": [
+      "marine",
+      "expedition",
+      "sampling",
+      "species",
+      "latitude",
+      "longitude",
+      "depth",
+      "vessel",
+      "gear"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12T23:45:00+00:00",
+      "to": "2021-05-27T19:26:00+00:00"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "961147"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "961147"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "961147"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 10.988,
+  "status": "ok"
+}

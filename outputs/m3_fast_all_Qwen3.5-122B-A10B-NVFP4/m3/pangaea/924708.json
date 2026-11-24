@@ -1,0 +1,42 @@
+{
+  "dataset_id": "924708",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924708.csv",
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:39:15.560235+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "PS87-track Arctic Marine Wildlife Observations",
+    "description": "A dataset containing 8 marine wildlife sightings recorded during the PS87-track expedition in the Arctic Ocean between August and October 2014. The data includes observation timestamps, geographic coordinates, species identification (primarily dolphins and whales), certainty levels, and individual counts.",
+    "keywords": [
+      "marine wildlife",
+      "Arctic",
+      "PS87",
+      "dolphins",
+      "whales",
+      "observations",
+      "Svalbard",
+      "Barents Sea"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06T10:34:00+00:00",
+      "to": "2014-10-01T11:50:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular intervals"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924708_3dc4e6d61b8b4071a0ccf48ff400dbc8.jsonl",
+  "runtime_seconds": 117.32
+}

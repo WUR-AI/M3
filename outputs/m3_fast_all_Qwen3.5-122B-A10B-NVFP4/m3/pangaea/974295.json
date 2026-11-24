@@ -1,0 +1,35 @@
+{
+  "dataset_id": "974295",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974295.csv",
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:47:33.630748+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic 1997/98 Season EMR Radar Profile Index",
+    "description": "Metadata index linking 97 unique Profile IDs to associated netCDF, GIS (KML), and IMAGE (JPG) files for scientific profiles collected during the 1997/98 Antarctic season using the EMR instrument.",
+    "keywords": [
+      "Antarctic",
+      "1997/98",
+      "EMR",
+      "Radar",
+      "Profile Index",
+      "netCDF",
+      "KML",
+      "JPG",
+      "Scientific Data"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974295_3404c304d185414fbe600d173d00ffc9.jsonl",
+  "runtime_seconds": 107.12
+}

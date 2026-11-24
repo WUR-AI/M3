@@ -1,0 +1,16 @@
+{
+  "csv": "cladium_mariscoides.csv",
+  "dataset_id": "cladium_mariscoides",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 996,
+  "n_columns": 50,
+  "description": "Occurrence records of Cladium mariscoides (2014‑2026) with taxonomy, coordinates, dates, observers, and licensing.",
+  "dataset_description": "Records of Cladium mariscoides occurrences from 2014 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 76.538,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/cladium_mariscoides/dictionary.json"
+}

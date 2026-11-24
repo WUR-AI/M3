@@ -1,0 +1,1033 @@
+{
+  "dataset_name": "959699",
+  "list_of_tables": [
+    "959699"
+  ],
+  "tables": {
+    "959699": {
+      "table_name": "959699",
+      "row_count": 3,
+      "number_of_columns": 34,
+      "list_of_columns": [
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "ID",
+        "Deposit type",
+        "Depth sed",
+        "Distance",
+        "Samp type",
+        "Al",
+        "Si",
+        "Ca",
+        "Mn",
+        "Fe",
+        "Co",
+        "Ni",
+        "Cu",
+        "Zn",
+        "Ba",
+        "Sc",
+        "Sb",
+        "La",
+        "Ce",
+        "Nd",
+        "Sm",
+        "Eu",
+        "Tb",
+        "Ho",
+        "Yb",
+        "Lu",
+        "Hf",
+        "Th",
+        "U",
+        "Date/Time"
+      ],
+      "columns": {
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "PLDS04MV-109BX",
+            "PLDS04MV-109BX",
+            "PLDS04MV-109BX"
+          ],
+          "data_patterns": {
+            "AAAA99AA-999AA": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "PLDS04MV-109BX",
+                3
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Unique identifier for the sampling event."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            11.072,
+            11.072,
+            11.072
+          ],
+          "data_patterns": {
+            "99.999": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 11.072,
+            "max": 11.072,
+            "mean": 11.071999999999997,
+            "median": 11.072,
+            "std": 2.175583928816829e-15
+          },
+          "description": "Geographic latitude in decimal degrees for the sampling location."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -140.047,
+            -140.047,
+            -140.047
+          ],
+          "data_patterns": {
+            "-999.999": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -140.047,
+            "max": -140.047,
+            "mean": -140.047,
+            "median": -140.047,
+            "std": 0.0
+          },
+          "description": "Geographic longitude coordinate in decimal degrees."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "integer",
+          "sample_values": [
+            -4722,
+            -4722,
+            -4722
+          ],
+          "data_patterns": {
+            "-9999": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -4722.0,
+            "max": -4722.0,
+            "mean": -4722.0,
+            "median": -4722.0,
+            "std": 0.0
+          },
+          "description": "Elevation is the constant depth of -4722 meters for all sampled manganese nodules."
+        },
+        "ID": {
+          "column_name": "ID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "PLDS04MV-109BX-1MOR33",
+            "PLDS04MV-109BX-1MOR35",
+            "PLDS04MV-109BX-1MOR34"
+          ],
+          "data_patterns": {
+            "AAAA99AA-999AA-9AAA99": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "PLDS04MV-109BX-1MOR33",
+                1
+              ],
+              [
+                "PLDS04MV-109BX-1MOR34",
+                1
+              ],
+              [
+                "PLDS04MV-109BX-1MOR35",
+                1
+              ]
+            ],
+            "unique_count": 3
+          },
+          "description": "Unique alphanumeric identifier for each manganese nodule sample record."
+        },
+        "Deposit type": {
+          "column_name": "Deposit type",
+          "data_type": "string",
+          "sample_values": [
+            "Mn nodule",
+            "Mn nodule",
+            "Mn nodule"
+          ],
+          "data_patterns": {
+            "Aa aaaaaa": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Mn nodule",
+                3
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "The deposit type is consistently identified as manganese nodules."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Depth sediment is an integer value of zero."
+        },
+        "Distance": {
+          "column_name": "Distance",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.15,
+            0.15
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 3,
+          "null_count": 1,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.15,
+            "max": 0.15,
+            "mean": 0.15,
+            "median": 0.15,
+            "std": 0.0
+          },
+          "description": "Probability scores of 0.15 for manganese nodule sampling locations."
+        },
+        "Samp type": {
+          "column_name": "Samp type",
+          "data_type": "string",
+          "sample_values": [
+            "Underside of nodule (rough)",
+            "Bulk composition",
+            "Topside of nodule (smooth)"
+          ],
+          "data_patterns": {
+            "Aaaaaaa aa aaaaaa (aaaaaa)": 1,
+            "Aaaaaaaaa aa aaaaaa (aaaaa)": 1,
+            "Aaaa aaaaaaaaaaa": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Topside of nodule (smooth)",
+                1
+              ],
+              [
+                "Underside of nodule (rough)",
+                1
+              ],
+              [
+                "Bulk composition",
+                1
+              ]
+            ],
+            "unique_count": 3
+          },
+          "description": "Sampling location on the manganese nodule, including top, bottom, or bulk composition."
+        },
+        "Al": {
+          "column_name": "Al",
+          "data_type": "float",
+          "sample_values": [
+            1.4,
+            2.3,
+            2.24
+          ],
+          "data_patterns": {
+            "9.9": 2,
+            "9.99": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 1.4,
+            "max": 2.3,
+            "mean": 1.9799999999999998,
+            "median": 2.24,
+            "std": 0.503189825016365
+          },
+          "description": "Aluminum concentration in manganese nodules, measured in weight percent."
+        },
+        "Si": {
+          "column_name": "Si",
+          "data_type": "float",
+          "sample_values": [
+            6.66,
+            6.12,
+            4.29
+          ],
+          "data_patterns": {
+            "9.99": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 4.29,
+            "max": 6.66,
+            "mean": 5.69,
+            "median": 6.12,
+            "std": 1.24213525833542
+          },
+          "description": "Silicon concentration in manganese nodules, measured in weight percent."
+        },
+        "Ca": {
+          "column_name": "Ca",
+          "data_type": "float",
+          "sample_values": [
+            1.54,
+            1.75,
+            1.49
+          ],
+          "data_patterns": {
+            "9.99": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 1.49,
+            "max": 1.75,
+            "mean": 1.5933333333333335,
+            "median": 1.54,
+            "std": 0.13796134724383252
+          },
+          "description": "Calcium concentrations in manganese nodules, measured in unspecified units."
+        },
+        "Mn": {
+          "column_name": "Mn",
+          "data_type": "float",
+          "sample_values": [
+            27.96,
+            22.12,
+            30.48
+          ],
+          "data_patterns": {
+            "99.99": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 22.12,
+            "max": 30.48,
+            "mean": 26.853333333333335,
+            "median": 27.96,
+            "std": 4.2884651489004
+          },
+          "description": "Manganese concentration in manganese nodules, measured in percent."
+        },
+        "Fe": {
+          "column_name": "Fe",
+          "data_type": "float",
+          "sample_values": [
+            9.25,
+            4.14,
+            5.31
+          ],
+          "data_patterns": {
+            "9.99": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 4.14,
+            "max": 9.25,
+            "mean": 6.233333333333333,
+            "median": 5.31,
+            "std": 2.6772062552842906
+          },
+          "description": "Iron concentration in manganese nodules, measured in weight percent."
+        },
+        "Co": {
+          "column_name": "Co",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.211,
+            0.284,
+            0.42
+          ],
+          "data_patterns": {
+            "9.999": 2,
+            "9.99": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.211,
+            "max": 0.42,
+            "mean": 0.305,
+            "median": 0.284,
+            "std": 0.10607073111843814
+          },
+          "description": "Cobalt concentration values ranging from 0.211 to 0.42."
+        },
+        "Ni": {
+          "column_name": "Ni",
+          "data_type": "float",
+          "sample_values": [
+            0.87,
+            1.62,
+            1.7
+          ],
+          "data_patterns": {
+            "9.99": 2,
+            "9.9": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.87,
+            "max": 1.7,
+            "mean": 1.3966666666666665,
+            "median": 1.62,
+            "std": 0.4578573285788198
+          },
+          "description": "Nickel concentration in manganese nodules, measured in parts per million."
+        },
+        "Cu": {
+          "column_name": "Cu",
+          "data_type": "float",
+          "sample_values": [
+            1.7,
+            0.413,
+            1.23
+          ],
+          "data_patterns": {
+            "9.999": 1,
+            "9.9": 1,
+            "9.99": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.413,
+            "max": 1.7,
+            "mean": 1.1143333333333334,
+            "median": 1.23,
+            "std": 0.6512498240562782
+          },
+          "description": "Copper concentration in manganese nodules, measured in unspecified units."
+        },
+        "Zn": {
+          "column_name": "Zn",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.164,
+            0.195,
+            0.88
+          ],
+          "data_patterns": {
+            "9.999": 2,
+            "9.99": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.164,
+            "max": 0.88,
+            "mean": 0.41300000000000003,
+            "median": 0.195,
+            "std": 0.4047307747132654
+          },
+          "description": "Zinc concentration values ranging from 0.164 to 0.88."
+        },
+        "Ba": {
+          "column_name": "Ba",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.16,
+            0.159,
+            0.222
+          ],
+          "data_patterns": {
+            "9.999": 2,
+            "9.99": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.159,
+            "max": 0.222,
+            "mean": 0.18033333333333335,
+            "median": 0.16,
+            "std": 0.03608785575970583
+          },
+          "description": "Barium concentration values ranging from 0.159 to 0.222."
+        },
+        "Sc": {
+          "column_name": "Sc",
+          "data_type": "float",
+          "sample_values": [
+            8.97,
+            10.43,
+            9.57
+          ],
+          "data_patterns": {
+            "9.99": 2,
+            "99.99": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 8.97,
+            "max": 10.43,
+            "mean": 9.656666666666666,
+            "median": 9.57,
+            "std": 0.7338483040338327
+          },
+          "description": "Scandium concentration in manganese nodules, measured in parts per million."
+        },
+        "Sb": {
+          "column_name": "Sb",
+          "data_type": "float",
+          "sample_values": [
+            44.6,
+            41.1,
+            19.8
+          ],
+          "data_patterns": {
+            "99.9": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 19.8,
+            "max": 44.6,
+            "mean": 35.166666666666664,
+            "median": 41.1,
+            "std": 13.42249355869964
+          },
+          "description": "Antimony concentrations in manganese nodules, measured in unspecified units."
+        },
+        "La": {
+          "column_name": "La",
+          "data_type": "float",
+          "sample_values": [
+            117.0,
+            11.3,
+            101.0
+          ],
+          "data_patterns": {
+            "999.9": 2,
+            "99.9": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 11.3,
+            "max": 117.0,
+            "mean": 76.43333333333334,
+            "median": 101.0,
+            "std": 56.97160111260112
+          },
+          "description": "Lanthanum concentration in manganese nodules, measured in parts per million."
+        },
+        "Ce": {
+          "column_name": "Ce",
+          "data_type": "integer",
+          "sample_values": [
+            226,
+            625,
+            297
+          ],
+          "data_patterns": {
+            "999": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 226.0,
+            "max": 625.0,
+            "mean": 382.6666666666667,
+            "median": 297.0,
+            "std": 212.84814618251514
+          },
+          "description": "Cerium concentration in manganese nodules, measured in parts per million."
+        },
+        "Nd": {
+          "column_name": "Nd",
+          "data_type": "integer",
+          "sample_values": [
+            210,
+            160,
+            134
+          ],
+          "data_patterns": {
+            "999": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 134.0,
+            "max": 210.0,
+            "mean": 168.0,
+            "median": 160.0,
+            "std": 38.62641583165593
+          },
+          "description": "Neodymium concentration in manganese nodules, measured in parts per million."
+        },
+        "Sm": {
+          "column_name": "Sm",
+          "data_type": "float",
+          "sample_values": [
+            36.3,
+            32.7,
+            54.7
+          ],
+          "data_patterns": {
+            "99.9": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 32.7,
+            "max": 54.7,
+            "mean": 41.233333333333334,
+            "median": 36.3,
+            "std": 11.80056495822693
+          },
+          "description": "Sm concentration in manganese nodules, measured in parts per million."
+        },
+        "Eu": {
+          "column_name": "Eu",
+          "data_type": "float",
+          "sample_values": [
+            6.67,
+            8.0,
+            10.63
+          ],
+          "data_patterns": {
+            "99.99": 1,
+            "9.99": 1,
+            "9.9": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 6.67,
+            "max": 10.63,
+            "mean": 8.433333333333334,
+            "median": 8.0,
+            "std": 2.0152501912500433
+          },
+          "description": "Europium concentration in manganese nodules, measured in parts per million."
+        },
+        "Tb": {
+          "column_name": "Tb",
+          "data_type": "float",
+          "sample_values": [
+            6.33,
+            5.4,
+            4.47
+          ],
+          "data_patterns": {
+            "9.99": 2,
+            "9.9": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 4.47,
+            "max": 6.33,
+            "mean": 5.400000000000001,
+            "median": 5.4,
+            "std": 0.9300000000000002
+          },
+          "description": "Tb concentration in parts per million."
+        },
+        "Ho": {
+          "column_name": "Ho",
+          "data_type": "float",
+          "sample_values": [
+            2.76,
+            4.6,
+            4.7
+          ],
+          "data_patterns": {
+            "9.9": 2,
+            "9.99": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 2.76,
+            "max": 4.7,
+            "mean": 4.02,
+            "median": 4.6,
+            "std": 1.09233694435371
+          },
+          "description": "Holmium concentration in manganese nodules, measured in parts per million."
+        },
+        "Yb": {
+          "column_name": "Yb",
+          "data_type": "float",
+          "sample_values": [
+            11.1,
+            17.4,
+            14.6
+          ],
+          "data_patterns": {
+            "99.9": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 11.1,
+            "max": 17.4,
+            "mean": 14.366666666666667,
+            "median": 14.6,
+            "std": 3.156474826976025
+          },
+          "description": "Ytterbium concentrations in manganese nodules, measured in parts per million."
+        },
+        "Lu": {
+          "column_name": "Lu",
+          "data_type": "float",
+          "sample_values": [
+            2.7,
+            2.71,
+            1.67
+          ],
+          "data_patterns": {
+            "9.99": 2,
+            "9.9": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 1.67,
+            "max": 2.71,
+            "mean": 2.36,
+            "median": 2.7,
+            "std": 0.5975784467331465
+          },
+          "description": "Lutetium concentrations in manganese nodules, measured in unspecified units."
+        },
+        "Hf": {
+          "column_name": "Hf",
+          "data_type": "float",
+          "sample_values": [
+            4.8,
+            9.6,
+            3.3
+          ],
+          "data_patterns": {
+            "9.9": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 3.3,
+            "max": 9.6,
+            "mean": 5.8999999999999995,
+            "median": 4.8,
+            "std": 3.2908965343808667
+          },
+          "description": "Hafnium concentrations in manganese nodules, measured in parts per million."
+        },
+        "Th": {
+          "column_name": "Th",
+          "data_type": "float",
+          "sample_values": [
+            39.5,
+            17.0,
+            24.7
+          ],
+          "data_patterns": {
+            "99.9": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 17.0,
+            "max": 39.5,
+            "mean": 27.066666666666666,
+            "median": 24.7,
+            "std": 11.435179637125659
+          },
+          "description": "Th denotes the concentration of thorium in the manganese nodules."
+        },
+        "U": {
+          "column_name": "U",
+          "data_type": "float",
+          "sample_values": [
+            3.9,
+            4.6,
+            7.1
+          ],
+          "data_patterns": {
+            "9.9": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 3.9,
+            "max": 7.1,
+            "mean": 5.2,
+            "median": 4.6,
+            "std": 1.6822603841260722
+          },
+          "description": "Uranium concentration in manganese nodules, measured in parts per million."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "1976-08-27",
+            "1976-08-27",
+            "1976-08-27"
+          ],
+          "data_patterns": {
+            "9999-99-99": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "1976-08-27T00:00:00",
+            "max_date": "1976-08-27T00:00:00"
+          },
+          "description": "Date and time of manganese nodule sampling in 1976."
+        }
+      },
+      "time_period_covered": {
+        "start": "1976-08-27T00:00:00",
+        "end": "1976-08-27T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Event": "PLDS04MV-109BX",
+          "Latitude": 11.072,
+          "Longitude": -140.047,
+          "Elevation": -4722,
+          "ID": "PLDS04MV-109BX-1MOR33",
+          "Deposit type": "Mn nodule",
+          "Depth sed": 0,
+          "Distance": 0.15,
+          "Samp type": "Topside of nodule (smooth)",
+          "Al": 1.4,
+          "Si": 4.29,
+          "Ca": 1.54,
+          "Mn": 22.12,
+          "Fe": 9.25,
+          "Co": 0.42,
+          "Ni": 0.87,
+          "Cu": 0.413,
+          "Zn": 0.88,
+          "Ba": 0.16,
+          "Sc": 8.97,
+          "Sb": 19.8,
+          "La": 117.0,
+          "Ce": 625,
+          "Nd": 210,
+          "Sm": 54.7,
+          "Eu": 10.63,
+          "Tb": 6.33,
+          "Ho": 4.7,
+          "Yb": 17.4,
+          "Lu": 2.71,
+          "Hf": 9.6,
+          "Th": 39.5,
+          "U": 7.1,
+          "Date/Time": "1976-08-27"
+        },
+        {
+          "Event": "PLDS04MV-109BX",
+          "Latitude": 11.072,
+          "Longitude": -140.047,
+          "Elevation": -4722,
+          "ID": "PLDS04MV-109BX-1MOR34",
+          "Deposit type": "Mn nodule",
+          "Depth sed": 0,
+          "Distance": 0.15,
+          "Samp type": "Underside of nodule (rough)",
+          "Al": 2.3,
+          "Si": 6.66,
+          "Ca": 1.49,
+          "Mn": 27.96,
+          "Fe": 5.31,
+          "Co": 0.284,
+          "Ni": 1.7,
+          "Cu": 1.7,
+          "Zn": 0.164,
+          "Ba": 0.159,
+          "Sc": 9.57,
+          "Sb": 41.1,
+          "La": 101.0,
+          "Ce": 297,
+          "Nd": 134,
+          "Sm": 32.7,
+          "Eu": 6.67,
+          "Tb": 4.47,
+          "Ho": 2.76,
+          "Yb": 11.1,
+          "Lu": 1.67,
+          "Hf": 4.8,
+          "Th": 24.7,
+          "U": 4.6,
+          "Date/Time": "1976-08-27"
+        },
+        {
+          "Event": "PLDS04MV-109BX",
+          "Latitude": 11.072,
+          "Longitude": -140.047,
+          "Elevation": -4722,
+          "ID": "PLDS04MV-109BX-1MOR35",
+          "Deposit type": "Mn nodule",
+          "Depth sed": 0,
+          "Distance": null,
+          "Samp type": "Bulk composition",
+          "Al": 2.24,
+          "Si": 6.12,
+          "Ca": 1.75,
+          "Mn": 30.48,
+          "Fe": 4.14,
+          "Co": 0.211,
+          "Ni": 1.62,
+          "Cu": 1.23,
+          "Zn": 0.195,
+          "Ba": 0.222,
+          "Sc": 10.43,
+          "Sb": 44.6,
+          "La": 11.3,
+          "Ce": 226,
+          "Nd": 160,
+          "Sm": 36.3,
+          "Eu": 8.0,
+          "Tb": 5.4,
+          "Ho": 4.6,
+          "Yb": 14.6,
+          "Lu": 2.7,
+          "Hf": 3.3,
+          "Th": 17.0,
+          "U": 3.9,
+          "Date/Time": "1976-08-27"
+        }
+      ],
+      "description": "Manganese nodule geochemical data including elemental concentrations, location, and sampling details from 1976.",
+      "is_row_capped": false,
+      "rows_processed": 3,
+      "total_rows_in_file": 3
+    }
+  },
+  "time_period_covered": {
+    "start": "1976-08-27T00:00:00",
+    "end": "1976-08-27T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Single-day 1976 Earth science dataset comprising 959,699 tables with three rows each."
+}

@@ -1,0 +1,15 @@
+{
+  "dataset_id": "958774",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/958774.csv",
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:14:16.988881+00:00",
+  "status": "failed",
+  "error": "RuntimeError: No nonempty final metadata was produced",
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/958774_a8454376b8d24c169789a48ca6d183bc.jsonl",
+  "runtime_seconds": 175.17
+}

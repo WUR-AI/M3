@@ -1,0 +1,15 @@
+{
+  "csv": "papilio_maackii.csv",
+  "dataset_id": "papilio_maackii",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "913ce2acd52a01ad7be320c3e06714cadb9f7fe6d4f18198063deab5af02be86",
+  "contract_sha256": "48721e16fce88152fbc005dae0faca7224e31078f8f94de260e77ca1039ac414",
+  "prompt_tokens": 322401,
+  "status": "skipped",
+  "reason": "context_window"
+}

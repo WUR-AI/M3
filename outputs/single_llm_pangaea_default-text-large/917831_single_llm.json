@@ -1,0 +1,42 @@
+{
+  "csv": "917831.csv",
+  "dataset_id": "917831",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "contract_sha256": "78ee58295adafbf120e8ebfafbf287009337287e2a700cdd23c4f460eacf04d3",
+  "prompt_tokens": 13549,
+  "metadata": {
+    "name": "Macapule Lagoon fish biometric data",
+    "description": "A collection of fish biometric measurements (length, mass, organ weights, condition indices, and biochemical parameters) collected from the Macapule Lagoon site in Baja California Sur, Mexico. The dataset includes records from multiple seasons and years (2013‑2015) with associated date, season, and geographic coordinates.",
+    "keywords": [
+      "fish",
+      "biometrics",
+      "Macapule Lagoon",
+      "length",
+      "mass",
+      "organ weight",
+      "seasonal",
+      "Mexico"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12",
+      "to": "2015-08-31"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.999,
+  "status": "ok"
+}

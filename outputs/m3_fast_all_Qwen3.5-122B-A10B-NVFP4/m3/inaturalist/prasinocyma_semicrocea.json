@@ -1,0 +1,28 @@
+{
+  "dataset_id": "prasinocyma_semicrocea",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/prasinocyma_semicrocea.csv",
+  "source_sha256": "44c1bf7f8d6e847e922a8f123482ba418df3f3764ce6dece8a789090849ff898",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:27:21.456455+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -43.390418,
+      "min_lon": 115.027269,
+      "max_lat": -17.207478,
+      "max_lon": 153.377214
+    },
+    "temporalCoverage": {
+      "from": "2007-04-24T10:28:47+00:00",
+      "to": "2026-06-14T22:01:50+00:00"
+    }
+  },
+  "plan_steps_count": 7,
+  "steps_completed": 7,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/prasinocyma_semicrocea_e98c476b204746a287dae928e2bbe3be.jsonl",
+  "runtime_seconds": 347.09
+}

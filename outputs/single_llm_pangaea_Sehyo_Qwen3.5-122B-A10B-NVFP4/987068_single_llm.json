@@ -1,0 +1,39 @@
+{
+  "csv": "987068.csv",
+  "dataset_id": "987068",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "225d2b6118cc78019e8cb527c92e4dc38026b4b37a5e53272fcf4db99e96b37b",
+  "contract_sha256": "e5a5ea14e7ab245013330d647c374b25af9ca69c1e24ed2f6528e26a554c2a38",
+  "prompt_tokens": 1861,
+  "metadata": {
+    "name": "GeoB16310-3 Sediment Core TOC and TIC Data",
+    "description": "Dataset containing sediment core measurements including depth, Total Organic Carbon (TOC), and Total Inorganic Carbon (TIC) from core GeoB16310-3 collected at a single location in the Gulf of Mexico on 2012-03-23.",
+    "keywords": [
+      "sediment",
+      "TOC",
+      "TIC",
+      "GeoB16310-3",
+      "Gulf of Mexico"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.824166666667,
+      "min_lon": -87.170333333333,
+      "max_lat": 23.824166666667,
+      "max_lon": -87.170333333333
+    },
+    "temporalCoverage": {
+      "from": "2012-03-23T01:04:00",
+      "to": "2012-03-23T01:04:00"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.33,
+  "status": "ok"
+}

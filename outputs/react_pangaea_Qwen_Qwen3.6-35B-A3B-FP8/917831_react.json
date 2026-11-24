@@ -1,0 +1,155 @@
+{
+  "csv": "917831.csv",
+  "dataset_id": "917831",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 9091,
+  "metadata": {
+    "name": "Biological and biochemical measurements of fish from Macapule Lagoon",
+    "description": "Dataset containing biological and biochemical measurements of fish collected from Macapule Lagoon between December 2013 and August 2015. The data includes morphometric measurements (length, mass, eviscerated mass), organ weights (gut wet mass, liver mass, stomach wet mass, heart mass), hepatosomatic index (HSI), and biochemical parameters (potassium, glycogen reserve index, total protein, triglycerides, cholesterol, glucose) for individual fish. Samples were collected across different seasons (Winter and Summer) and size categories (Cat: 18, 20, 22). All samples were taken from a single location at latitude 25.35, longitude -108.5.",
+    "keywords": [
+      "fish",
+      "biochemistry",
+      "morphometrics",
+      "organ weights",
+      "Macapule Lagoon",
+      "triglycerides",
+      "cholesterol",
+      "glucose",
+      "hepatosomatic index",
+      "Mexico",
+      "Gulf of California"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12",
+      "to": "2015-08-31"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular (4 sampling dates across 2013-2015)"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "917831"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "917831",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "field": "Season",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "field": "Event",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "field": "Cat",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831",
+        "field": "Interval comm",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    },
+    {
+      "tool": "get_missing_values",
+      "args": {
+        "context_key": "917831",
+        "resource": "917831"
+      }
+    }
+  ],
+  "runtime_seconds": 18.056,
+  "status": "ok"
+}

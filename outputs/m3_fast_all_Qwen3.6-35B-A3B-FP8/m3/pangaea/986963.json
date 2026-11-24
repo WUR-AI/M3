@@ -1,0 +1,48 @@
+{
+  "dataset_id": "986963",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/986963.csv",
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:41:15.040656+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Marine Sediment Geochemistry and Isotope Data from Laptev Sea Shelf",
+    "description": "Marine sediment geochemistry dataset containing 140 samples from the Arctic Laptev Sea shelf region. Measurements include Total Organic Carbon (TOC), Total Inorganic Carbon (TIC), Total Nitrogen (TN), stable carbon (δ13C) and nitrogen (δ15N) isotope ratios, grain size distribution (>63 µm, 63-2 µm, <2 µm), sediment depth, and elevation. Chronological data (Age, Sedimentation Rate, Accumulation Rate) is available for a subset of samples. Samples were collected during expeditions in 2018 and 2021.",
+    "keywords": [
+      "Arctic",
+      "Laptev Sea",
+      "marine sediment",
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "TN",
+      "stable isotopes",
+      "delta-13C",
+      "delta-15N",
+      "grain size",
+      "sedimentation rate",
+      "organic carbon",
+      "inorganic carbon"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "2018-09-28T19:07:00+00:00",
+      "to": "2021-03-06T02:53:02+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/986963_a81a620e238a4c1188b5d184ab252763.jsonl",
+  "runtime_seconds": 123.7
+}

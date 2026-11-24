@@ -1,0 +1,41 @@
+{
+  "csv": "995327.csv",
+  "dataset_id": "995327",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "contract_sha256": "bdbc77ff80820f050833ad35ba6005d59b0ea6592be898be39d61fabebb6b272",
+  "prompt_tokens": 1201,
+  "metadata": {
+    "name": "Lanaittu core sample dataset",
+    "description": "A dataset of mineralogical and petrological measurements from core samples collected at the Lanaittu site, including depth, mineral abundances, visual observations, and geographic coordinates for each sample recorded on 1994-01-01.",
+    "keywords": [
+      "core sample",
+      "mineralogy",
+      "Lanaittu",
+      "geology",
+      "depth",
+      "mineral percentages",
+      "geographic coordinates"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01",
+      "to": "1994-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.615,
+  "status": "ok"
+}

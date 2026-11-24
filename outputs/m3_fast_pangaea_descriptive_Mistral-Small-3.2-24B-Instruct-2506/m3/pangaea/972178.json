@@ -1,0 +1,30 @@
+{
+  "dataset_id": "972178",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972178.csv",
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T17:39:19.172579+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Aalen, Germany GeoTIFF Observations",
+    "description": "Dataset containing observations of 6 band color composits in Aalen, Germany from 1984 to 2023, including GeoTIFF file references, spatial coordinates, and event information.",
+    "keywords": [
+      "Aalen",
+      "Germany",
+      "GeoTIFF",
+      "satellite imagery",
+      "geospatial data",
+      "remote sensing",
+      "ESIS_Aalen",
+      "1984-2023"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972178_3eeaab00ad714bb0b2fae673197593a7.jsonl",
+  "runtime_seconds": 906.69
+}

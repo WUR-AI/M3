@@ -1,0 +1,16 @@
+{
+  "csv": "968881.csv",
+  "dataset_id": "968881",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Earth and environmental science",
+  "n_rows": 578,
+  "n_columns": 8,
+  "description": "578 Antarctic ice and snow depth and density measurements from December 2021 to January 2022.",
+  "dataset_description": "968,881 tables of Earth science data recorded between December 2021 and January 2022.",
+  "runtime_seconds": 4.18,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Qwen_Qwen3.6-35B-A3B-FP8/raw/968881/dictionary.json"
+}

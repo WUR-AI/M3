@@ -1,0 +1,43 @@
+{
+  "dataset_id": "990157",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990157.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:56:23.904346+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment‑core 210Pb & 137Cs depth profile – LSMo22‑1 (2022‑04‑08)",
+    "description": "Depth‑resolved measurements of total, supported, and unsupported 210Pb and 137Cs activities (Bq kg⁻¹) from a single sediment core (event LSMo22‑1) collected at latitude 21.365278 N, longitude -104.568333 W, elevation 750 m on 2022‑04‑08. The dataset contains 29 depth intervals ranging from 0.0 m to 0.285 m with a uniform spacing of 0.005 m, and includes analytical uncertainties for each radionuclide measurement.",
+    "keywords": [
+      "210Pb",
+      "137Cs",
+      "sediment core",
+      "radionuclide",
+      "depth profile",
+      "LSMo22-1",
+      "Mexico",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.365278,
+      "min_lon": -104.568333,
+      "max_lat": 21.365278,
+      "max_lon": -104.568333
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08T00:00:00+00:00",
+      "to": "2022-04-08T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990157_763d1b4dde8544cbacb77be79b667451.jsonl",
+  "runtime_seconds": 181.77,
+  "recovered_from_trace": true,
+  "source_sha256": "1783f619857ad835a2a0ca14fccc4da08e4c0ffcf008dccad424fd57de27c4e8"
+}

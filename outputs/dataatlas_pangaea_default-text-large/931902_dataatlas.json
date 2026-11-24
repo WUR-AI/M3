@@ -1,0 +1,16 @@
+{
+  "csv": "931902.csv",
+  "dataset_id": "931902",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 2,
+  "n_columns": 7,
+  "description": "Two July 7 2016 Earth observations with event IDs, video files (size, hash), and coordinates.",
+  "dataset_description": "Two Earth environmental measurement records captured on July 7, 2016 for analysis.",
+  "runtime_seconds": 20.302,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/931902/dictionary.json"
+}

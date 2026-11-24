@@ -34,9 +34,10 @@ Create a player from a role configuration and execute a task::
 """
 
 from .player import Player, create_player_from_config
-from .configs import PLAYER_CONFIGS
+from .configs import METADATA_OUTPUT_PLAYER_NAMES, PLAYER_CONFIGS
 
 __all__ = [
+    "METADATA_OUTPUT_PLAYER_NAMES",
     "Player",
     "create_player_from_config",
     "PLAYER_CONFIGS",

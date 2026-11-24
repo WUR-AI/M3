@@ -1,0 +1,33 @@
+{
+  "dataset_id": "968881",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/968881.csv",
+  "source_sha256": "a5f4883152b119b5e65cbc0e9ef4eecb1cdd0ad4f95d8a3cf836b7d7c1f68b95",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T16:39:30.704285+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Snow Density and Depth Measurements in Antarctica",
+    "description": "Dataset containing snow density and depth measurements from various events in Antarctica, including latitude, longitude, and timestamps.",
+    "keywords": [
+      "Antarctica",
+      "Snow density",
+      "Snow depth",
+      "DML21/22",
+      "Glaciology",
+      "Polar research",
+      "2021-2022",
+      "Latitude",
+      "Longitude",
+      "Temporal data",
+      "Spatial data"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/968881_618306ff50d74ca08198c6a55a8e2b9e.jsonl",
+  "runtime_seconds": 641.51
+}

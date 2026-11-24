@@ -1,0 +1,15 @@
+{
+  "csv": "leptosiphon_chrysanthus.csv",
+  "dataset_id": "leptosiphon_chrysanthus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "7d754e08467544214f5d4e66e56dce7053b21a9cbc2071de9d4c1aedb97c1386",
+  "contract_sha256": "53eaceffde55fc0fd33004867ff2f86a30d3f851ef00f335bb1f56ab007d1f5e",
+  "prompt_tokens": 335826,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,52 @@
+{
+  "csv": "tiedemannia_filiformis.csv",
+  "dataset_id": "tiedemannia_filiformis",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5d43915b0622ccd09a463fd227d792e5711599effdd9a7e78223922f4efaf9f0",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2315,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.232935,
+      "min_lon": -94.410942,
+      "max_lat": 34.139065,
+      "max_lon": -78.206144
+    },
+    "temporalCoverage": {
+      "from": "2002-04-12T00:00:00+00:00",
+      "to": "2026-05-23T14:43:37+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "tiedemannia_filiformis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "tiedemannia_filiformis",
+        "resource": "tiedemannia_filiformis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "tiedemannia_filiformis",
+        "resource": "tiedemannia_filiformis",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.285,
+  "status": "ok"
+}

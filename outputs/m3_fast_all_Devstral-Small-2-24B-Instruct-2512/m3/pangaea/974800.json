@@ -1,0 +1,32 @@
+{
+  "dataset_id": "974800",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974800.csv",
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T02:01:20.979006+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory experiment on X. umbellata pulsation",
+    "description": "Dataset from a laboratory experiment measuring X. umbellata pulsation under different treatments and tank conditions.",
+    "keywords": [
+      "laboratory experiment",
+      "X. umbellata",
+      "pulsation",
+      "zooplankton",
+      "treatment",
+      "tank"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974800_c9afaddd825641778ee4492e7063d662.jsonl",
+  "runtime_seconds": 214.06
+}

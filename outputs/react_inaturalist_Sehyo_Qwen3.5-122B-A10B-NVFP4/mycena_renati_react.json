@@ -1,0 +1,72 @@
+{
+  "csv": "mycena_renati.csv",
+  "dataset_id": "mycena_renati",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "731d459ea4b538a9c644e9ca713b1aeaa054c40091788ed9a31b0e6727d13fb7",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 9808,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.106943,
+      "min_lon": -17.845984,
+      "max_lat": 60.527631,
+      "max_lon": 57.838315
+    },
+    "temporalCoverage": {
+      "from": "2004-06-15T19:57:14+00:00",
+      "to": "2026-06-14T10:05:40+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "mycena_renati"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "mycena_renati",
+        "resource": "mycena_renati",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "mycena_renati"
+      }
+    }
+  ],
+  "runtime_seconds": 19.327,
+  "status": "ok"
+}

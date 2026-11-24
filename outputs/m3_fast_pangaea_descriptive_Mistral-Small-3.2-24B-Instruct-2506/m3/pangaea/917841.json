@@ -1,0 +1,33 @@
+{
+  "dataset_id": "917841",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917841.csv",
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T11:06:44.855647+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Macapule Lagoon Water Quality Data",
+    "description": "This dataset contains water quality measurements from Macapule Lagoon, including temperature, salinity, dissolved oxygen, pH, ammonia, nitrate, and phosphate levels, collected between December 2013 and June 2015.",
+    "keywords": [
+      "water quality",
+      "Macapule Lagoon",
+      "temperature",
+      "salinity",
+      "dissolved oxygen",
+      "pH",
+      "ammonia",
+      "nitrate",
+      "phosphate",
+      "environmental monitoring",
+      "2013-2015"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917841_5e4c2777ddf14fff99dc288ff320cf8b.jsonl",
+  "runtime_seconds": 681.47
+}

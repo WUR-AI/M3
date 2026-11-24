@@ -1,0 +1,16 @@
+{
+  "csv": "lactuca_viminea.csv",
+  "dataset_id": "lactuca_viminea",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1003,
+  "n_columns": 50,
+  "description": "Occurrence records of Lactuca viminea (2002‑2026) with taxonomy, coordinates, dates, observers, and media metadata.",
+  "dataset_description": "Occurrence records of Lactuca viminea from 2002 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 74.183,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/lactuca_viminea/dictionary.json"
+}

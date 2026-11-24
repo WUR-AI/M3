@@ -1,0 +1,44 @@
+{
+  "dataset_id": "913868",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/913868.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T12:57:56.155995+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Neumayer SPUSO aerosol size distribution hourly observations 2019",
+    "description": "Hourly aerosol particle size distribution measurements collected by the SPUSO instrument at the Neumayer research station in Antarctica during 2019. Each record includes observation height, start and end timestamps, duration in minutes, particle concentrations across size bins from ~93 nm to ~4850 nm, the event identifier, and constant location metadata (latitude -70.65, longitude -8.25, elevation 42 m).",
+    "keywords": [
+      "aerosol",
+      "size distribution",
+      "SPUSO",
+      "Neumayer",
+      "Antarctica",
+      "hourly",
+      "particle concentration",
+      "size bins",
+      "atmospheric observations"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2019-01-01T00:30:00Z",
+      "to": "2019-12-31T23:05:00Z"
+    },
+    "spatial": "point location",
+    "temporal": "hourly (30‑minute interval)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/913868_94b7df3682f44a8e8cdd6354a11c5c05.jsonl",
+  "runtime_seconds": 399.05,
+  "recovered_from_trace": true,
+  "source_sha256": "c0511e76b8edf563e4cac8c8b2d4c1f3fc73731ceba37608306521e4ec2d8afa"
+}

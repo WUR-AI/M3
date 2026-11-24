@@ -1,0 +1,36 @@
+{
+  "dataset_id": "974295",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974295.csv",
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:31:04.106223+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic 1997/98 EMR Radar Survey Metadata Catalog",
+    "description": "Index of 97 radar survey profiles collected during the Antarctic 1997/98 cruise season using the EMR instrument. The dataset catalogs associated netCDF data files, GIS KML files, and image files for each profile, along with radar product specifications.",
+    "keywords": [
+      "Antarctica",
+      "radar",
+      "EMR",
+      "ice shelf",
+      "geophysics",
+      "metadata",
+      "1997/98"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "1998-07-29",
+      "to": "1998-12-11"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974295_9b146c7dfb184e5c98954973630623f4.jsonl",
+  "runtime_seconds": 75.58
+}

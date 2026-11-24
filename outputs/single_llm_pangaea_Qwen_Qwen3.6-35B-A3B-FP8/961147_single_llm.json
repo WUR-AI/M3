@@ -1,0 +1,42 @@
+{
+  "csv": "961147.csv",
+  "dataset_id": "961147",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "contract_sha256": "272c712ca3545d8adcbadb3f365eaf23b086cde022dc311257a8eeaec9e2076a",
+  "prompt_tokens": 24039,
+  "metadata": {
+    "name": "Salp and Pyrosome Biogeochemical Composition Data",
+    "description": "Dataset containing biogeochemical composition (Carbon, Nitrogen, Hydrogen, Ash-free dry mass) and physical characteristics of salps (Salpa aspera, Salpa thompsoni, Salpa fusiformis, Soestia zonaria, Thetys vagina) and pyrosomes (Pyrosoma atlanticum, Ihlea racovitzai) collected from the Northeast Pacific, Southern Ocean, Hawaii, and Chatham Rise.",
+    "keywords": [
+      "salp",
+      "pyrosome",
+      "biogeochemistry",
+      "carbon",
+      "nitrogen",
+      "hydrogen",
+      "marine biology",
+      "plankton"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12",
+      "to": "2021-05-27"
+    },
+    "spatial": "point locations",
+    "temporal": "event-based"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.57,
+  "status": "ok"
+}

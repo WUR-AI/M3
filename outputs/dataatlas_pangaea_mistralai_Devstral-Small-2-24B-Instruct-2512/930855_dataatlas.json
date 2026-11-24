@@ -1,0 +1,16 @@
+{
+  "csv": "930855.csv",
+  "dataset_id": "930855",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 20,
+  "n_columns": 15,
+  "description": "Earth and environmental science data with 20 samples, including depth, peak areas, and location.",
+  "dataset_description": "Earth and environmental science data, 930855 tables, 20 rows each, single timestamp 2016-09-17.",
+  "runtime_seconds": 10.884,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/930855/dictionary.json"
+}

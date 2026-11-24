@@ -1,0 +1,44 @@
+{
+  "dataset_id": "960522",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/960522.csv",
+  "source_sha256": "3bb28cd5e16d4d59f094461b12276b04514b16f4838bc2b41b39519704550e84",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:42:49.468643+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory study of carbonate chemistry in Limacina helicina",
+    "description": "High-resolution laboratory dataset containing 20 records of carbonate chemistry parameters (DIC, AT, pHT, pCO2, saturation states), nutrients, temperature, salinity, and oxygen for the marine species Limacina helicina. Data was collected on September 1, 2019, at a fixed location (48.43°N, -126.23°W) under varying experimental conditions including supersaturated and undersaturated states.",
+    "keywords": [
+      "Limacina helicina",
+      "carbonate chemistry",
+      "ocean acidification",
+      "laboratory study",
+      "nutrients",
+      "saturation state",
+      "pCO2",
+      "DIC",
+      "AT",
+      "marine species"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.43,
+      "min_lon": -126.23,
+      "max_lat": 48.43,
+      "max_lon": -126.23
+    },
+    "temporalCoverage": {
+      "from": "2019-09-01",
+      "to": "2019-09-01"
+    },
+    "spatial": "point",
+    "temporal": "single event"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/960522_4c00572e11fc4b089c10d420939499b9.jsonl",
+  "runtime_seconds": 235.54
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "acianthus_fornicatus.csv",
+  "dataset_id": "acianthus_fornicatus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6237171c3f3b863dce2c40040e6ab2f500a886a241851de3dbed2e96e4268374",
+  "contract_sha256": "9a354defe2355fcac46d3d45882e27da08d40e8b5e599944af1b6fd5b70355e0",
+  "prompt_tokens": 317160,
+  "status": "skipped",
+  "reason": "context_window"
+}

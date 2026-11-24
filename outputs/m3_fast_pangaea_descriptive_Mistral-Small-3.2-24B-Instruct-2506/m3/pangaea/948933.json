@@ -1,0 +1,32 @@
+{
+  "dataset_id": "948933",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/948933.csv",
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T13:37:33.243105+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sampling Data from Sylt Trawl Events",
+    "description": "Dataset containing marine sampling data from Sylt trawl events, including geographical coordinates, bathymetric depth measurements, environmental parameters (salinity and temperature), and species counts (S. scombrus) collected between June and September 2021.",
+    "keywords": [
+      "Marine sampling",
+      "Sylt trawl",
+      "Benthic habitat",
+      "Geographical coordinates",
+      "Bathymetric depth",
+      "Salinity",
+      "Temperature",
+      "S. scombrus",
+      "North Sea",
+      "2021"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/948933_bc7157a8104a452d9be66a86508d602b.jsonl",
+  "runtime_seconds": 501.72
+}

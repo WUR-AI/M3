@@ -1,0 +1,29 @@
+{
+  "dataset_id": "cinnyris_pulchellus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/cinnyris_pulchellus.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T14:02:56.307622+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -7.760696,
+      "min_lon": -17.492088,
+      "max_lat": 16.46969,
+      "max_lon": 40.107593
+    },
+    "temporalCoverage": {
+      "from": "1986-02-15T00:00:00+00:00",
+      "to": "2026-06-03T17:23:46+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/cinnyris_pulchellus_9f2808686431417a9883dd15ada83da5.jsonl",
+  "runtime_seconds": 73.0,
+  "recovered_from_trace": true,
+  "source_sha256": "ddc15a0c8a3ff9a94bae2d95048c53b18ef8a6c7f295156ee77642bc51cb4d93"
+}

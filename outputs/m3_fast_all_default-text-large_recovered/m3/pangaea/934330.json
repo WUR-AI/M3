@@ -1,0 +1,43 @@
+{
+  "dataset_id": "934330",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/934330.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:46:26.831550+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Stordalen_2 sediment core age dataset",
+    "description": "Dataset of a single sediment core (Event: Stordalen_2) collected at latitude 68.35° N, longitude 19.05° E, elevation 350 m. It includes sediment depth (m), sample thickness (m), radiometric ages in millions of years (Ma) with uncertainties, calendar‑year ages with uncertainties, dated material type, and lab labels. The Date/Time column is empty and many age‑related fields have missing values, so no ISO‑8601 temporal coverage can be defined.",
+    "keywords": [
+      "sediment core",
+      "age dating",
+      "Stordalen",
+      "paleoenvironment",
+      "depth",
+      "radiocarbon",
+      "Ma",
+      "calendar year",
+      "elevation",
+      "latitude 68.35",
+      "longitude 19.05"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": null,
+    "spatial": "single‑site point location (no spatial variation)",
+    "temporal": "irregular age intervals (depth‑dependent)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/934330_0f41f08c313545f6b9d68117a91481c8.jsonl",
+  "runtime_seconds": 399.06,
+  "recovered_from_trace": true,
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3"
+}

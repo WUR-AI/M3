@@ -1,0 +1,16 @@
+{
+  "csv": "pterostylis_graminea.csv",
+  "dataset_id": "pterostylis_graminea",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 999,
+  "n_columns": 50,
+  "description": "Species occurrence records for Pterostylis graminea in New Zealand, 2002-2026.",
+  "dataset_description": "Species occurrence records for Pterostylis graminea from 2002 to 2026.",
+  "runtime_seconds": 33.274,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/pterostylis_graminea/dictionary.json"
+}

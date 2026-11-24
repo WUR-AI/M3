@@ -1,0 +1,29 @@
+{
+  "dataset_id": "913868",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/913868.csv",
+  "source_sha256": "c0511e76b8edf563e4cac8c8b2d4c1f3fc73731ceba37608306521e4ec2d8afa",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T10:08:25.967443+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Particle Size Distribution Measurements at Neumayer Station",
+    "description": "This dataset contains particle size distribution measurements taken at Neumayer Station, Antarctica, from January 1, 2019, to December 31, 2019. The measurements include various particle size bins (dN/dlogDp) recorded at different heights and times, along with geographic coordinates and elevation.",
+    "keywords": [
+      "particle size distribution",
+      "aerosol measurements",
+      "Antarctica",
+      "Neumayer Station",
+      "atmospheric science",
+      "environmental monitoring",
+      "2019"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/913868_97c2ef816b7a4ecaa2fb168d9ce8a7e1.jsonl",
+  "runtime_seconds": 1667.57
+}

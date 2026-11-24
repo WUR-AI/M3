@@ -1,0 +1,16 @@
+{
+  "csv": "930855.csv",
+  "dataset_id": "930855",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 20,
+  "n_columns": 15,
+  "description": "Earth environmental measurements from 20 samples on 2016‑09‑17, including depths, peak areas, and coordinates.",
+  "dataset_description": "Earth environmental measurements captured on 2016-09-17, 20 records for condition analysis.",
+  "runtime_seconds": 55.575,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/930855/dictionary.json"
+}

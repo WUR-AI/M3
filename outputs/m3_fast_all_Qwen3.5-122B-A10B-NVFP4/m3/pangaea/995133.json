@@ -1,0 +1,38 @@
+{
+  "dataset_id": "995133",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995133.csv",
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:27:50.823276+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "M. balthica Shell Length and Frequency Data from Rönnebank, Baltic Sea",
+    "description": "Biological sampling data for the species M. balthica (Baltic tellin) collected during expedition EMB320 at Rönnebank in the Baltic Sea in June 2023. The dataset includes measurements of shell length and length frequency, recorded at Marine Protected Areas and other sites.",
+    "keywords": [
+      "M. balthica",
+      "Baltic tellin",
+      "shell length",
+      "length frequency",
+      "Rönnebank",
+      "Baltic Sea",
+      "EMB320",
+      "biological sampling",
+      "Marine Protected Area"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2023-06-01T00:00:00+00:00",
+      "to": "2023-06-01T00:00:00+00:00"
+    },
+    "spatial": null,
+    "temporal": "monthly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995133_1b7b38148a6240448d48206657da624f.jsonl",
+  "runtime_seconds": 127.8
+}

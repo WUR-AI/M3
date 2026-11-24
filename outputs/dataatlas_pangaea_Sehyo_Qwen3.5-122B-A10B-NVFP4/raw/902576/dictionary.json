@@ -1,0 +1,233 @@
+{
+  "dataset_name": "902576",
+  "list_of_tables": [
+    "902576"
+  ],
+  "tables": {
+    "902576": {
+      "table_name": "902576",
+      "row_count": 4,
+      "number_of_columns": 5,
+      "list_of_columns": [
+        "Content",
+        "File name",
+        "File format",
+        "File size",
+        "URL file"
+      ],
+      "columns": {
+        "Content": {
+          "column_name": "Content",
+          "data_type": "string",
+          "sample_values": [
+            "Mean Annual Ground Temperature (MAGTM) [C°]",
+            "MAGT Standard Deviation (MAGTSTD) [C°]",
+            "Thumbnail MAGT",
+            "Permafrost Probability Fraction (PERPROB) [Fraction, 0-1]"
+          ],
+          "data_patterns": {
+            "AAAA Aaaaaaaa Aaaaaaaaa (AAAAAAA) [A°]": 1,
+            "Aaaaaaaaa AAAA": 1,
+            "Aaaa Aaaaaa Aaaaaa Aaaaaaaaaaa (AAAAA) [A°]": 1,
+            "Aaaaaaaaaa Aaaaaaaaaaa Aaaaaaaa (AAAAAAA) [Aaaaaaaa, 9-9]": 1
+          },
+          "total_rows": 4,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "MAGT Standard Deviation (MAGTSTD) [C°]",
+                1
+              ],
+              [
+                "Thumbnail MAGT",
+                1
+              ],
+              [
+                "Mean Annual Ground Temperature (MAGTM) [C°]",
+                1
+              ],
+              [
+                "Permafrost Probability Fraction (PERPROB) [Fraction, 0-1]",
+                1
+              ]
+            ],
+            "unique_count": 4
+          },
+          "description": "Lists environmental data file names, including MAGT and permafrost probability metrics."
+        },
+        "File name": {
+          "column_name": "File name",
+          "data_type": "string",
+          "sample_values": [
+            "UiO_PEX_PERPROB_5.0_20181205_2000_2017_ANT.zip",
+            "Thumbnail_MAGT.jpg",
+            "UiO_PEX_MAGTSTD_5.0_20181205_2000_2017_ANT.zip",
+            "UiO_PEX_MAGTM_5.0_20181205_2000_2017_ANT.zip"
+          ],
+          "data_patterns": {
+            "AaA_AAA_AAAAAAA_9.9_99999999_9999_9999_AAA.aaa": 2,
+            "Aaaaaaaaa_AAAA.aaa": 1,
+            "AaA_AAA_AAAAA_9.9_99999999_9999_9999_AAA.aaa": 1
+          },
+          "total_rows": 4,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "UiO_PEX_MAGTSTD_5.0_20181205_2000_2017_ANT.zip",
+                1
+              ],
+              [
+                "Thumbnail_MAGT.jpg",
+                1
+              ],
+              [
+                "UiO_PEX_MAGTM_5.0_20181205_2000_2017_ANT.zip",
+                1
+              ],
+              [
+                "UiO_PEX_PERPROB_5.0_20181205_2000_2017_ANT.zip",
+                1
+              ]
+            ],
+            "unique_count": 4
+          },
+          "description": "Names of four environmental data files in various formats."
+        },
+        "File format": {
+          "column_name": "File format",
+          "data_type": "string",
+          "sample_values": [
+            "ZIP",
+            "ZIP",
+            "JPG",
+            "ZIP"
+          ],
+          "data_patterns": {
+            "AAA": 4
+          },
+          "total_rows": 4,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "ZIP",
+                3
+              ],
+              [
+                "JPG",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "File format specifies the archive or image type of each environmental data file."
+        },
+        "File size": {
+          "column_name": "File size",
+          "data_type": "float",
+          "sample_values": [
+            1908.86,
+            1801.783,
+            716.7,
+            1754.978
+          ],
+          "data_patterns": {
+            "9999.999": 2,
+            "9999.99": 1,
+            "999.9": 1
+          },
+          "total_rows": 4,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 716.7,
+            "max": 1908.86,
+            "mean": 1545.58025,
+            "median": 1778.3805,
+            "std": 556.3278147557577
+          },
+          "description": "File size in kilobytes for each environmental data file."
+        },
+        "URL file": {
+          "column_name": "URL file",
+          "data_type": "string",
+          "sample_values": [
+            "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_MAGTM_5.0_20181205_2000_2017_ANT.zip",
+            "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_PERPROB_5.0_20181205_2000_2017_ANT.zip",
+            "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_MAGTSTD_5.0_20181205_2000_2017_ANT.zip",
+            "https://store.pangaea.de/Publications/ObuJ-etal_2019/Thumbnail_MAGT.jpg"
+          ],
+          "data_patterns": {
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/AaaA-aaaa_9999/AaA_AAA_AAAAAAA_9.9_99999999_9999_9999_AAA.aaa": 2,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/AaaA-aaaa_9999/Aaaaaaaaa_AAAA.aaa": 1,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/AaaA-aaaa_9999/AaA_AAA_AAAAA_9.9_99999999_9999_9999_AAA.aaa": 1
+          },
+          "total_rows": 4,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_MAGTSTD_5.0_20181205_2000_2017_ANT.zip",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/ObuJ-etal_2019/Thumbnail_MAGT.jpg",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_MAGTM_5.0_20181205_2000_2017_ANT.zip",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_PERPROB_5.0_20181205_2000_2017_ANT.zip",
+                1
+              ]
+            ],
+            "unique_count": 4
+          },
+          "description": "Direct download links for environmental data files and thumbnails."
+        }
+      },
+      "sample_rows": [
+        {
+          "Content": "MAGT Standard Deviation (MAGTSTD) [C°]",
+          "File name": "UiO_PEX_MAGTSTD_5.0_20181205_2000_2017_ANT.zip",
+          "File format": "ZIP",
+          "File size": 1801.783,
+          "URL file": "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_MAGTSTD_5.0_20181205_2000_2017_ANT.zip"
+        },
+        {
+          "Content": "Thumbnail MAGT",
+          "File name": "Thumbnail_MAGT.jpg",
+          "File format": "JPG",
+          "File size": 1908.86,
+          "URL file": "https://store.pangaea.de/Publications/ObuJ-etal_2019/Thumbnail_MAGT.jpg"
+        },
+        {
+          "Content": "Mean Annual Ground Temperature (MAGTM) [C°]",
+          "File name": "UiO_PEX_MAGTM_5.0_20181205_2000_2017_ANT.zip",
+          "File format": "ZIP",
+          "File size": 1754.978,
+          "URL file": "https://store.pangaea.de/Publications/ObuJ-etal_2019/UiO_PEX_MAGTM_5.0_20181205_2000_2017_ANT.zip"
+        }
+      ],
+      "description": "Table lists four environmental data files with names, formats, sizes, and download URLs.",
+      "is_row_capped": false,
+      "rows_processed": 4,
+      "total_rows_in_file": 4
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset containing 902576 tables with four rows each."
+}

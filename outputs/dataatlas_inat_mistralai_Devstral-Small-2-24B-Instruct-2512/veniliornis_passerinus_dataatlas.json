@@ -1,0 +1,16 @@
+{
+  "csv": "veniliornis_passerinus.csv",
+  "dataset_id": "veniliornis_passerinus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "Species occurrence records for Veniliornis passerinus (2002-2026), including taxonomic, geographic, and observational data.",
+  "dataset_description": "Species occurrence records for Veniliornis passerinus from 2002 to 2026.",
+  "runtime_seconds": 30.169,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/veniliornis_passerinus/dictionary.json"
+}

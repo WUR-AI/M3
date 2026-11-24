@@ -1,0 +1,66 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "3034befe7176d7ac4567b285d3a9791fcdb074dd86886d56603ab9a94ea31b0a",
+  "prompt_tokens": 1315,
+  "metadata": {
+    "name": "MITAPI 2015‑2010 Difference Dataset",
+    "description": "A catalogue of NetCDF files that contain MITAPI difference data for the period 2010‑2015 across several sectors (agriculture, energy, industry, protected areas, production). Each entry lists the file name, format, size and a download URL.",
+    "keywords": [
+      "MITAPI",
+      "difference",
+      "netcdf",
+      "agriculture",
+      "energy",
+      "industry",
+      "protected areas",
+      "production",
+      "01x01",
+      "2010‑2015"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": "1° x 1° grid",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "899705"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "899705",
+        "resource": "899705",
+        "n": 5
+      }
+    }
+  ],
+  "runtime_seconds": 21.203,
+  "status": "ok"
+}

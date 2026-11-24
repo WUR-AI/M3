@@ -1,0 +1,302 @@
+{
+  "dataset_name": "924708",
+  "list_of_tables": [
+    "924708"
+  ],
+  "tables": {
+    "924708": {
+      "table_name": "924708",
+      "row_count": 8,
+      "number_of_columns": 7,
+      "list_of_columns": [
+        "Date/Time",
+        "Latitude",
+        "Longitude",
+        "Whale",
+        "Certainty",
+        "Ind",
+        "Event"
+      ],
+      "columns": {
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2014-08-07T05:02:00",
+            "2014-08-06T22:25:00",
+            "2014-08-07T11:29:00",
+            "2014-08-07T14:39:00",
+            "2014-08-07T16:18:00",
+            "2014-10-01T11:50:00",
+            "2014-08-06T10:34:00",
+            "2014-09-30T08:23:00"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 8
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2014-08-06T10:34:00",
+            "max_date": "2014-10-01T11:50:00"
+          },
+          "description": "Timestamps of whale and dolphin sightings recorded between August and October 2014."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            77.19402,
+            73.71687,
+            78.66195,
+            77.57578,
+            77.86243,
+            75.28732,
+            76.3849,
+            75.57958
+          ],
+          "data_patterns": {
+            "99.99999": 7,
+            "99.9999": 1
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 73.71687,
+            "max": 78.66195,
+            "mean": 76.53285625,
+            "median": 76.78945999999999,
+            "std": 1.6141074391832742
+          },
+          "description": "Geographic latitude coordinates ranging from 73.7 to 78.7 degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            3.63923,
+            6.98023,
+            41.94702,
+            2.7874,
+            9.81663,
+            4.7599,
+            13.61215,
+            61.78372
+          ],
+          "data_patterns": {
+            "9.99999": 3,
+            "99.99999": 3,
+            "9.9999": 2
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 2.7874,
+            "max": 61.78372,
+            "mean": 18.165785,
+            "median": 8.39843,
+            "std": 21.74812074437763
+          },
+          "description": "Decimal degrees of geographic longitude for whale and dolphin sighting locations."
+        },
+        "Whale": {
+          "column_name": "Whale",
+          "data_type": "string",
+          "sample_values": [
+            "Large whale, unidentified",
+            "Balaenoptera physalus",
+            "Balaenoptera physalus",
+            "Dolphins, unidentified",
+            "Orcinus orca",
+            "Megaptera novaeangliae",
+            "Dolphins, unidentified",
+            "Large whale, unidentified"
+          ],
+          "data_patterns": {
+            "Aaaaa aaaaa, aaaaaaaaaaaa": 2,
+            "Aaaaaaaa, aaaaaaaaaaaa": 2,
+            "Aaaaaaaaaaaa aaaaaaaa": 2,
+            "Aaaaaaaaa aaaaaaaaaaaa": 1,
+            "Aaaaaaa aaaa": 1
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Large whale, unidentified",
+                2
+              ],
+              [
+                "Dolphins, unidentified",
+                2
+              ],
+              [
+                "Balaenoptera physalus",
+                2
+              ],
+              [
+                "Megaptera novaeangliae",
+                1
+              ],
+              [
+                "Orcinus orca",
+                1
+              ]
+            ],
+            "unique_count": 5
+          },
+          "description": "Taxonomic classification of observed cetaceans, including species names and general groupings."
+        },
+        "Certainty": {
+          "column_name": "Certainty",
+          "data_type": "string",
+          "sample_values": [
+            "probable",
+            "definite",
+            "definite",
+            "probable",
+            "definite",
+            "definite",
+            "definite",
+            "definite"
+          ],
+          "data_patterns": {
+            "aaaaaaaa": 8
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "definite",
+                6
+              ],
+              [
+                "probable",
+                2
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "The certainty of the sighting is classified as either definite or probable."
+        },
+        "Ind": {
+          "column_name": "Ind",
+          "data_type": "integer",
+          "sample_values": [
+            5,
+            1,
+            1,
+            1,
+            1,
+            1,
+            10,
+            2
+          ],
+          "data_patterns": {
+            "9": 7,
+            "99": 1
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 10.0,
+            "mean": 2.75,
+            "median": 1.0,
+            "std": 3.24037034920393
+          },
+          "description": "Integer identifier for whale and dolphin sighting records."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "PS87-track",
+            "PS87-track",
+            "PS87-track",
+            "PS87-track",
+            "PS87-track",
+            "PS87-track",
+            "PS87-track",
+            "PS87-track"
+          ],
+          "data_patterns": {
+            "AA99-aaaaa": 8
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "PS87-track",
+                8
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "The event identifier for the PS87-track survey."
+        }
+      },
+      "time_period_covered": {
+        "start": "2014-08-06T10:34:00",
+        "end": "2014-10-01T11:50:00"
+      },
+      "sample_rows": [
+        {
+          "Date/Time": "2014-08-06T22:25:00",
+          "Latitude": 75.28732,
+          "Longitude": 9.81663,
+          "Whale": "Large whale, unidentified",
+          "Certainty": "definite",
+          "Ind": 1,
+          "Event": "PS87-track"
+        },
+        {
+          "Date/Time": "2014-08-07T16:18:00",
+          "Latitude": 77.86243,
+          "Longitude": 2.7874,
+          "Whale": "Megaptera novaeangliae",
+          "Certainty": "definite",
+          "Ind": 1,
+          "Event": "PS87-track"
+        },
+        {
+          "Date/Time": "2014-08-06T10:34:00",
+          "Latitude": 73.71687,
+          "Longitude": 13.61215,
+          "Whale": "Dolphins, unidentified",
+          "Certainty": "definite",
+          "Ind": 5,
+          "Event": "PS87-track"
+        }
+      ],
+      "description": "Eight records of whale and dolphin sightings with location, certainty, and event details from August",
+      "is_row_capped": false,
+      "rows_processed": 8,
+      "total_rows_in_file": 8
+    }
+  },
+  "time_period_covered": {
+    "start": "2014-08-06T10:34:00",
+    "end": "2014-10-01T11:50:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "924,708 tables of Earth science data from August to October 2014."
+}

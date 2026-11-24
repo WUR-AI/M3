@@ -1,0 +1,41 @@
+{
+  "dataset_id": "955790",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/955790.csv",
+  "source_sha256": "32ff85ba761f2a60c1fca4b652694970cb3bcf7223b0d2f265d2c0637be78677",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:22:14.813232+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Pacific Manganese Nodule Geochemical Survey 1970",
+    "description": "A dataset containing geochemical and physical property measurements of manganese nodules collected from the deep-sea floor in the Pacific Ocean during September 1970. The data includes concentrations of Mn, Fe, Ni, Co, and Cu, along with sample location, depth, and descriptive characteristics.",
+    "keywords": [
+      "manganese nodules",
+      "geochemistry",
+      "deep-sea",
+      "Pacific Ocean",
+      "ferromanganese",
+      "seafloor sampling",
+      "1970"
+    ],
+    "spatialCoverage": {
+      "min_lat": -14.05,
+      "min_lon": -175.7167,
+      "max_lat": 12.0,
+      "max_lon": -149.3
+    },
+    "temporalCoverage": {
+      "from": "1970-09-02T00:00:00+00:00",
+      "to": "1970-09-25T00:00:00+00:00"
+    },
+    "spatial": "Point locations (discrete sampling sites)",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/955790_b457271ded9841ddaa2383182b053e5c.jsonl",
+  "runtime_seconds": 133.59
+}

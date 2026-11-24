@@ -1,0 +1,41 @@
+{
+  "dataset_id": "934330",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/934330.csv",
+  "source_sha256": "b0908909c1bbc4b7fb6fd31a2fd1ffdcb874d525dcb8d5acbd6099dde2ebbca3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T22:07:23.650965+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Stordalen_2 Sediment Core Data",
+    "description": "Dataset containing sediment core data from the Stordalen_2 event, including depth measurements, age dating information, and geographic coordinates. The data focuses on shallow sediment layers with age measurements concentrated around the late 20th century.",
+    "keywords": [
+      "sediment core",
+      "age dating",
+      "paleoenvironment",
+      "Stordalen",
+      "Arctic",
+      "moss",
+      "radiocarbon"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.35,
+      "min_lon": 19.05,
+      "max_lat": 68.35,
+      "max_lon": 19.05
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00+00:00",
+      "to": "1970-01-01T00:00:00.000000004+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/934330_c119e7ec5e7e4939922d4216509be544.jsonl",
+  "runtime_seconds": 711.07
+}

@@ -1,0 +1,44 @@
+{
+  "dataset_id": "927062",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/927062.csv",
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:49:37.266493+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "High Arctic Radiosonde Vertical Profile Ascent - August 18, 2018",
+    "description": "Single low-altitude radiosonde ascent profile conducted in the high Arctic (near 89.56°N, 36.84°E) on August 18, 2018. The dataset contains 1,801 vertical atmospheric measurements captured over a 30-minute window (11:09–11:39 UTC), covering altitudes from ~6.6 m to ~706.8 m. Variables include atmospheric pressure (PPPP), temperature (TTT), relative humidity (RH), wind direction (dd), and wind speed (ff). Data quality is high with minimal missing values (2–3 rows per field).",
+    "keywords": [
+      "radiosonde",
+      "atmospheric sounding",
+      "Arctic",
+      "vertical profile",
+      "boundary layer",
+      "wind",
+      "temperature",
+      "humidity",
+      "pressure",
+      "balloon ascent"
+    ],
+    "spatialCoverage": {
+      "min_lat": 89.5537,
+      "min_lon": 36.54034,
+      "max_lat": 89.5601,
+      "max_lon": 37.14087
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00+00:00",
+      "to": "2018-08-18T11:39:00+00:00"
+    },
+    "spatial": "point locations (WGS84 decimal degrees)",
+    "temporal": "1 second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/927062_20f4497642e74197abf02462d83ddfcf.jsonl",
+  "runtime_seconds": 102.43
+}

@@ -1,0 +1,72 @@
+{
+  "csv": "veniliornis_passerinus.csv",
+  "dataset_id": "veniliornis_passerinus",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ae351f023b67a0c064c01e5273eef9b1a262b3d97fc64dcc575e0b3e777b8d4d",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 9240,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -29.27865,
+      "min_lon": -78.888391,
+      "max_lat": 6.024162,
+      "max_lon": -34.841307
+    },
+    "temporalCoverage": {
+      "from": "2002-07-18T13:04:00+00:00",
+      "to": "2026-06-13T06:57:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "veniliornis_passerinus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "veniliornis_passerinus"
+      }
+    }
+  ],
+  "runtime_seconds": 15.284,
+  "status": "ok"
+}

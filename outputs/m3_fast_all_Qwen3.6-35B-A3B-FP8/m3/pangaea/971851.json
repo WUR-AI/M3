@@ -1,0 +1,43 @@
+{
+  "dataset_id": "971851",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971851.csv",
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:08:17.714576+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Paleomagnetic sediment core data with directional measurements, VGP coordinates, and relative paleointensity",
+    "description": "Dataset containing 343 records of paleomagnetic measurements from sediment cores (IDs 2, 3, 4). Includes declination, inclination, precision parameters (Kappa, alpha95), relative paleointensity (RPI), and Virtual Geomagnetic Pole (VGP) coordinates with associated uncertainties. Age estimates are provided in millions of years (Ma) spanning approximately 0.23 to 6.36 Ma. The data reflects predominantly normal polarity with steep positive inclinations (~81°) and high VGP latitudes.",
+    "keywords": [
+      "paleomagnetism",
+      "sediment core",
+      "declination",
+      "inclination",
+      "VGP",
+      "relative paleointensity",
+      "RPI",
+      "polarity",
+      "geological age"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.84240779,
+      "min_lon": -178.9145776,
+      "max_lat": 83.74256561,
+      "max_lon": 179.7489502
+    },
+    "temporalCoverage": {
+      "from": "0.177 Ma",
+      "to": "6.362 Ma"
+    },
+    "spatial": "Point locations (VGP coordinates) with uncertainty of ~1-20 degrees",
+    "temporal": "Variable resolution based on age model; ages reported to 3 decimal places (~1,000 years)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971851_abf8faf6fea64cd78bdb71df322b1894.jsonl",
+  "runtime_seconds": 134.82
+}

@@ -1,0 +1,113 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 6345,
+  "metadata": {
+    "name": "924558",
+    "description": "The dataset contains various measurements and observations related to marine species, specifically Mytilus galloprovincialis (mollusk). It includes data on different treatments, time intervals, stages of development, and various chemical and physical parameters such as temperature, pH, alkalinity, salinity, DIC, CO2, bicarbonate, carbonate, calcium, Omega Cal, Omega Arg, and CSC flag. The dataset also includes spatial information with latitude and longitude coordinates.",
+    "keywords": [
+      "marine species",
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "laboratory",
+      "temperature",
+      "pH",
+      "alkalinity",
+      "salinity",
+      "DIC",
+      "CO2",
+      "bicarbonate",
+      "carbonate",
+      "calcium",
+      "Omega Cal",
+      "Omega Arg",
+      "CSC flag",
+      "spatial data",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00.000000002+00:00",
+      "to": "1970-01-01T00:00:00.000000144+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "hours"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "924558"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "time_column": "Time h"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    }
+  ],
+  "runtime_seconds": 40.249,
+  "status": "ok"
+}

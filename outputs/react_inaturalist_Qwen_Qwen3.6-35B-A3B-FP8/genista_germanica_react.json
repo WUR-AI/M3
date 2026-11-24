@@ -1,0 +1,66 @@
+{
+  "csv": "genista_germanica.csv",
+  "dataset_id": "genista_germanica",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "35e546b1513c22ab969f75667e4dd26db15ed9453e4e5a8295bb087dd6eaa834",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3441,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 42.739556,
+      "min_lon": -3.93686,
+      "max_lat": 56.990576,
+      "max_lon": 47.319546
+    },
+    "temporalCoverage": {
+      "from": "1990-05-12T09:57:00+00:00",
+      "to": "2026-06-14T12:35:03+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "genista_germanica"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "genista_germanica",
+        "resource": "genista_germanica"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "genista_germanica",
+        "resource": "genista_germanica",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "genista_germanica",
+        "resource": "genista_germanica"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "genista_germanica",
+        "resource": "genista_germanica",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.526,
+  "status": "ok"
+}

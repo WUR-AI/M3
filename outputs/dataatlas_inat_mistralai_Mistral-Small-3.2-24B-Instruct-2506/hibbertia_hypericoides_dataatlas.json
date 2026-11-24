@@ -1,0 +1,16 @@
+{
+  "csv": "hibbertia_hypericoides.csv",
+  "dataset_id": "hibbertia_hypericoides",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 998,
+  "n_columns": 50,
+  "description": "Species occurrence records of Hibbertia hypericoides from 1993 to 2026.",
+  "dataset_description": "Species occurrence records from 1993 to 2026 in biodiversity domain.",
+  "runtime_seconds": 38.546,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/hibbertia_hypericoides/dictionary.json"
+}

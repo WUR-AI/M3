@@ -1,0 +1,16 @@
+{
+  "csv": "rusa_timorensis.csv",
+  "dataset_id": "rusa_timorensis",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1000,
+  "n_columns": 50,
+  "description": "Occurrence records of Rusa timorensis (1989‑2026) with taxonomy, location, date, observer, and media details.",
+  "dataset_description": "Species occurrence records of Rusa timorensis from 1989 to 2026 for biodiversity analysis.",
+  "runtime_seconds": 78.476,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/rusa_timorensis/dictionary.json"
+}

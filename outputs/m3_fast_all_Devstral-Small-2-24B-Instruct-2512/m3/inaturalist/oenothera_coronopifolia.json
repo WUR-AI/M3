@@ -1,0 +1,15 @@
+{
+  "dataset_id": "oenothera_coronopifolia",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/oenothera_coronopifolia.csv",
+  "source_sha256": "3c51cd431c685d78b7b289cc32393f3085c5a273eefcd13b937e3b167fb2a310",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-19T10:43:07.265175+00:00",
+  "status": "failed",
+  "error": "RuntimeError: Planning failed",
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/oenothera_coronopifolia_8f15bf739317465eb05ce5a22b8b5a75.jsonl",
+  "runtime_seconds": 541.91
+}

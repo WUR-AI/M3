@@ -1,0 +1,16 @@
+{
+  "csv": "ptychoramphus_aleuticus.csv",
+  "dataset_id": "ptychoramphus_aleuticus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1004,
+  "n_columns": 50,
+  "description": "Species occurrence data for Ptychoramphus aleuticus, 2006-2026, 1004 records.",
+  "dataset_description": "Species occurrence data for Ptychoramphus aleuticus, 2006-2026, biodiversity domain.",
+  "runtime_seconds": 39.744,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/ptychoramphus_aleuticus/dictionary.json"
+}

@@ -1,0 +1,128 @@
+{
+  "csv": "995327.csv",
+  "dataset_id": "995327",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 9772,
+  "metadata": {
+    "name": "Lanaittu sediment core mineralogical analysis",
+    "description": "Sediment core samples from the Lanaittu core containing mineralogical composition data including heavy mineral counts, transparent/opaque/turbid fractions, and percentages of various minerals (zircon, tourmaline, rutile, garnet, titanite, epidote, zoisite+clinozoisite, chlorite, staurolite, glaucophane-crossite, kyanite, andalusite, lawsonite, vesuvianite, olivine, antimony, bromite, monazite, xenotime, corundum, and unidentified minerals). Five samples from depths 12.43-27.50 m with 2-4 phi grain size fraction.",
+    "keywords": [
+      "sediment core",
+      "mineralogy",
+      "heavy minerals",
+      "Lanaittu",
+      "geochemistry",
+      "core samples",
+      "mineral composition"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01",
+      "to": "1994-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "995327"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "995327",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327",
+        "field": "Sample comment",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995327",
+        "resource": "995327",
+        "field": "Sample label",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 16.334,
+  "status": "ok"
+}

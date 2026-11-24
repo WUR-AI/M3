@@ -1,0 +1,42 @@
+{
+  "csv": "931902.csv",
+  "dataset_id": "931902",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "db1a2eb73ef4f30d6bd56b579eac3100f881d914d9eff214542eda53b0500dc3",
+  "contract_sha256": "544a36aa188d1bb767c8178a036b80b73c5c002f96b8e928da62f9ad9a4d1ab6",
+  "prompt_tokens": 684,
+  "metadata": {
+    "name": "Birkeland Cruise Video Dataset",
+    "description": "A collection of video event records from the Birkeland cruise, including file names, sizes, hashes, geographic coordinates (latitude and longitude), and timestamps for each recorded event.",
+    "keywords": [
+      "Birkeland",
+      "cruise",
+      "siphonophores",
+      "video",
+      "marine",
+      "latitude",
+      "longitude",
+      "date"
+    ],
+    "spatialCoverage": {
+      "min_lat": 46.15,
+      "min_lon": -26.26667,
+      "max_lat": 46.55,
+      "max_lon": -26.01667
+    },
+    "temporalCoverage": {
+      "from": "2016-07-07",
+      "to": "2016-07-07"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.059,
+  "status": "ok"
+}

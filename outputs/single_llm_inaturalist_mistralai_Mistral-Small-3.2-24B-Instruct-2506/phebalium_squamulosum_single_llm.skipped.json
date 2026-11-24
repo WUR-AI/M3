@@ -1,0 +1,15 @@
+{
+  "csv": "phebalium_squamulosum.csv",
+  "dataset_id": "phebalium_squamulosum",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e0710fb9cd8e05bde812f41412f515d98bc73618bfdcca901507617a975c61f1",
+  "contract_sha256": "18789e7a72e1bc3d79d7aab9c1f3934504e481da32600a0d752011960581a7cd",
+  "prompt_tokens": 322964,
+  "status": "skipped",
+  "reason": "context_window"
+}

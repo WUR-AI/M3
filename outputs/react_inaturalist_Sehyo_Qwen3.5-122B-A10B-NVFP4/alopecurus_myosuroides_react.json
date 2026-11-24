@@ -1,0 +1,74 @@
+{
+  "csv": "alopecurus_myosuroides.csv",
+  "dataset_id": "alopecurus_myosuroides",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a46c382b70da5d2ff45bb51559d0e5dd8f720d6e4d08ad5e097e3952b6fc26a3",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 5882,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.955042,
+      "min_lon": -96.935464,
+      "max_lat": 56.466942,
+      "max_lon": 67.005317
+    },
+    "temporalCoverage": {
+      "from": "2003-05-23T15:18:00+00:00",
+      "to": "2026-06-13T13:12:17+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "alopecurus_myosuroides"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "alopecurus_myosuroides",
+        "resource": "alopecurus_myosuroides"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "alopecurus_myosuroides",
+        "resource": "alopecurus_myosuroides",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "alopecurus_myosuroides",
+        "resource": "alopecurus_myosuroides"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "alopecurus_myosuroides",
+        "resource": "alopecurus_myosuroides",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "alopecurus_myosuroides",
+        "resource": "alopecurus_myosuroides",
+        "n": 3
+      }
+    }
+  ],
+  "runtime_seconds": 16.815,
+  "status": "ok"
+}

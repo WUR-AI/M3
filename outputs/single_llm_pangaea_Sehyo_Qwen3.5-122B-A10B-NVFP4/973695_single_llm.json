@@ -1,0 +1,44 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "contract_sha256": "af9f8751639a5707dcd66dcc4681e9305fd698fbbcc1e59b965603e7bbab3afb",
+  "prompt_tokens": 10311,
+  "metadata": {
+    "name": "Geochemical and Isotopic Data from ODP Site 680A",
+    "description": "Dataset containing geochemical and isotopic measurements from sediment core 112-680A, including elemental concentrations (Al, Ca, Fe, K, Mn, Na, P, Mo, U, N, S), TOC, TC, Fe fractions, isotope ratios (δ15N, δ13C, δ98Mo), and sample metadata such as depth, epoch, and location.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "isotopes",
+      "ODP",
+      "Leg 112",
+      "Site 680A",
+      "Pleistocene",
+      "Pliocene",
+      "trace elements",
+      "stable isotopes"
+    ],
+    "spatialCoverage": {
+      "min_lat": -24.8,
+      "min_lon": -78.07783,
+      "max_lat": -20.45,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05",
+      "to": "1986-11-05"
+    },
+    "spatial": "point locations",
+    "temporal": "point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.004,
+  "status": "ok"
+}

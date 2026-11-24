@@ -1,0 +1,97 @@
+{
+  "csv": "958774.csv",
+  "dataset_id": "958774",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3119,
+  "metadata": {
+    "name": "958774",
+    "description": "Concentration averaged for the months July, August, September for the upper 20 m of the water column",
+    "keywords": [
+      "Lake_Constance_Fischbach-Uttwil",
+      "Concentration",
+      "Water column"
+    ],
+    "spatialCoverage": {
+      "min_lat": 47.6240037651,
+      "min_lon": 9.3754994815,
+      "max_lat": 47.6240037651,
+      "max_lon": 9.3754994815
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00.000001951+00:00",
+      "to": "1970-01-01T00:00:00.000002010+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "958774"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "time_column": "Year obs"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 28.753,
+  "status": "ok"
+}

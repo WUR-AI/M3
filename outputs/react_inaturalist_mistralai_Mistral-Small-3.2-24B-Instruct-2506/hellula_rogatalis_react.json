@@ -1,0 +1,114 @@
+{
+  "csv": "hellula_rogatalis.csv",
+  "dataset_id": "hellula_rogatalis",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "095adc5831b9a4bc58e4116789902cee37cd1285cecdd2ddfd7037b7adf8fdf6",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5934,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 18.903435,
+      "min_lon": -123.681117,
+      "max_lat": 42.633347,
+      "max_lon": -9.662854
+    },
+    "temporalCoverage": {
+      "from": "2002-09-02",
+      "to": "2026-06-11"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "column": "eventDate"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 30.737,
+  "status": "ok"
+}

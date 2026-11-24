@@ -1,0 +1,42 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "contract_sha256": "9b274d46de46bb474e6931748fe3a296b6493970e4c1f59c9462f10056bd5b07",
+  "prompt_tokens": 6850,
+  "metadata": {
+    "name": "Elwha River Delta Sensor Measurements",
+    "description": "Time‑series sensor data collected along the Elwha River Delta, including geographic coordinates (latitude, longitude, elevation), timestamps, horizontal and vertical RMS values, status, and descriptive identifiers for each measurement.",
+    "keywords": [
+      "Elwha River",
+      "Delta",
+      "sensor",
+      "HRMS",
+      "VRMS",
+      "elevation",
+      "time series",
+      "hydrology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00",
+      "to": "2012-02-03T13:11:00"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 11.004,
+  "status": "ok"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "973035.csv",
+  "dataset_id": "973035",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 7,
+  "n_columns": 22,
+  "description": "Seven soil samples from 2023‑04‑03 with coordinates, depth, U/Th/K, dose rates, ages, elevation.",
+  "dataset_description": "Seven records of Earth environmental observations captured on 2023-04-03 for scientific analysis.",
+  "runtime_seconds": 117.277,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/973035/dictionary.json"
+}

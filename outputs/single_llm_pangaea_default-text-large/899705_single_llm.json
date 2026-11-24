@@ -1,0 +1,43 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "2c2efcd17868fcebed053cf8ea9e9a663893e48222c2049ced59211f96bce2fe",
+  "prompt_tokens": 1253,
+  "metadata": {
+    "name": "MITAPI 2015‑2010 Difference NetCDF Dataset",
+    "description": "A collection of NetCDF files containing the spatial differences of various MITAPI variables (agriculture, energy, industry, precipitation, production, etc.) between the years 2010 and 2015. Each file is provided at a 1°×1° grid resolution and covers the same temporal period.",
+    "keywords": [
+      "MITAPI",
+      "difference",
+      "netCDF",
+      "agriculture",
+      "energy",
+      "industry",
+      "precipitation",
+      "production",
+      "reference",
+      "ship",
+      "shortwave",
+      "tangential",
+      "transfer",
+      "tropics"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": "1° × 1° grid",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.837,
+  "status": "ok"
+}

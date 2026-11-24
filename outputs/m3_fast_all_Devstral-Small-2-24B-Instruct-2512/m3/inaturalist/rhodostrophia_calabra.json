@@ -1,0 +1,28 @@
+{
+  "dataset_id": "rhodostrophia_calabra",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/rhodostrophia_calabra.csv",
+  "source_sha256": "91a846da3a46d2cf8af6b391ce5a65f69bc85e5557c3d922c03569ba1e858a7f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-19T11:43:35.916040+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.936147,
+      "min_lon": -9.089605,
+      "max_lat": 50.16351,
+      "max_lon": 48.135948
+    },
+    "temporalCoverage": {
+      "from": "1980-01-01T00:03:28+00:00",
+      "to": "2026-06-14T23:29:31+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/rhodostrophia_calabra_3984cc886c5843e1b2fc56bf5c24698a.jsonl",
+  "runtime_seconds": 150.59
+}

@@ -1,0 +1,31 @@
+{
+  "dataset_id": "906209",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/906209.csv",
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:07:23.436666+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Archive of Interviews and Pregnancy Diagnoses Data",
+    "description": "A metadata index cataloging three external Excel files containing interviews and pregnancy diagnoses data, hosted on the PANGAEA data store.",
+    "keywords": [
+      "Interviews",
+      "Pregnancy Diagnoses",
+      "Metadata Index",
+      "PANGAEA",
+      "Archival Data"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/906209_00707601758d4c38b88e7c9d719c5877.jsonl",
+  "runtime_seconds": 93.2
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "struthiolaria_papulosa.csv",
+  "dataset_id": "struthiolaria_papulosa",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "9f17658d337b2df68728fbc6f5605ff7ad6c0aae51b18485c48b0d7d9cef3a8f",
+  "contract_sha256": "70bb2b4231c841c1f1b4d4d558e379d30a29197a8dace7a95ec2078ab5c722ef",
+  "prompt_tokens": 330722,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Earth and environmental science",
+  "n_rows": 122,
+  "n_columns": 49,
+  "description": "Laboratory experiment data on Mytilus galloprovincialis development under varying CO2 conditions and environmental parameters.",
+  "dataset_description": "924,558 tables of Earth and environmental science data, each containing 122 rows.",
+  "runtime_seconds": 19.415,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Qwen_Qwen3.6-35B-A3B-FP8/raw/924558/dictionary.json"
+}

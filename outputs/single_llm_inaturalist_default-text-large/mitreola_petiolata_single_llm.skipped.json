@@ -1,0 +1,15 @@
+{
+  "csv": "mitreola_petiolata.csv",
+  "dataset_id": "mitreola_petiolata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "650ba50dbea08c7c2bab48943a65b250d27c498059d68b7e63b2f0c3c0a945d4",
+  "contract_sha256": "cab46f846668c88f7847f9f5c09ccd105256628017e92345da75717479ad5486",
+  "prompt_tokens": 321483,
+  "status": "skipped",
+  "reason": "context_window"
+}

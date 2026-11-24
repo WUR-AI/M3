@@ -1,0 +1,42 @@
+{
+  "dataset_id": "988976",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/988976.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:53:22.117590+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic sediment‑core diatom assemblage dataset",
+    "description": "31 observations from a single sediment core (latitude 74.779983 N, longitude 8.435083 E, elevation -3013 m). Each row records depth (m), age (Ma), total diatom count, aggregated diatom type abundances, and counts for 29 diatom species. Two rows have missing diatom‑type/species values and the Date/Time column is completely empty.",
+    "keywords": [
+      "diatoms",
+      "sediment core",
+      "paleoecology",
+      "Arctic",
+      "microfossils",
+      "depth",
+      "age",
+      "elevation",
+      "ice-neritic",
+      "species counts"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": null,
+    "spatial": "point (single unique coordinate)",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/988976_d42e7fe623724f999aa5f959330a76b4.jsonl",
+  "runtime_seconds": 449.12,
+  "recovered_from_trace": true,
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031"
+}

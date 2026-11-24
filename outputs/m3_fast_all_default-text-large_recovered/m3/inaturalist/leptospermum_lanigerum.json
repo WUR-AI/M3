@@ -1,0 +1,29 @@
+{
+  "dataset_id": "leptospermum_lanigerum",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/leptospermum_lanigerum.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:06:58.788756+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -43.600966,
+      "min_lon": 136.735527,
+      "max_lat": -33.634054,
+      "max_lon": 150.85492
+    },
+    "temporalCoverage": {
+      "from": "1997-01-03T13:47:00Z",
+      "to": "2026-06-14T16:38:16Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/leptospermum_lanigerum_41b853838b584195a9fed13ae2c67d03.jsonl",
+  "runtime_seconds": 97.13,
+  "recovered_from_trace": true,
+  "source_sha256": "309aa0ea36911ec27f5c96ee735a3ff037195af42efc700b6952a046c2f4f4fc"
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_id": "984573",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/984573.csv",
+  "source_sha256": "091ca8fc4435bce03f857f31f55d706c49a7bb2568db46eb23333b3fc886c50a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T02:20:49.690632+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Paleoceanographic Data from Event 383-U1539C",
+    "description": "This dataset contains paleoceanographic measurements including sea surface temperature (SST), sediment depth, age, and cluster assignments from samples collected during Event 383-U1539C. The data includes spatial and temporal information, with most samples collected at a single location in the Southern Ocean.",
+    "keywords": [
+      "paleoceanography",
+      "sea surface temperature",
+      "sediment depth",
+      "age",
+      "cluster analysis",
+      "Southern Ocean",
+      "Event 383-U1539C"
+    ],
+    "spatialCoverage": {
+      "min_lat": -56.1512,
+      "min_lon": -115.1341,
+      "max_lat": -56.151,
+      "max_lon": -115.1338
+    },
+    "temporalCoverage": {
+      "from": "2019-05-31T15:15:00+00:00",
+      "to": "2019-06-05T15:30:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/984573_eb060e4d6a224e058b7fc1dedf6671bc.jsonl",
+  "runtime_seconds": 322.18
+}

@@ -1,0 +1,66 @@
+{
+  "csv": "mutinus_caninus.csv",
+  "dataset_id": "mutinus_caninus",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ee1335bbdfc81fbb48a888645242e66492a68e565be8d3a67a4a11be906ed568",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3339,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 27.58013,
+      "min_lon": -9.443932,
+      "max_lat": 61.782501,
+      "max_lon": 158.613717
+    },
+    "temporalCoverage": {
+      "from": "1988-08-29T00:00:00+00:00",
+      "to": "2026-06-13T13:11:40+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "mutinus_caninus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "mutinus_caninus",
+        "resource": "mutinus_caninus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "mutinus_caninus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude",
+        "resource": "mutinus_caninus"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "mutinus_caninus",
+        "resource": "mutinus_caninus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "mutinus_caninus",
+        "resource": "mutinus_caninus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.052,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "hellula_rogatalis.csv",
+  "dataset_id": "hellula_rogatalis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "095adc5831b9a4bc58e4116789902cee37cd1285cecdd2ddfd7037b7adf8fdf6",
+  "contract_sha256": "224674c1f86cc17bdba134b53918be3b2ee6822e0b48e790d942f6bfb2ec9f67",
+  "prompt_tokens": 310881,
+  "status": "skipped",
+  "reason": "context_window"
+}

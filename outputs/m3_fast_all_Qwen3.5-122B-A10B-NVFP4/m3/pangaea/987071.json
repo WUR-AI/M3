@@ -1,0 +1,41 @@
+{
+  "dataset_id": "987071",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987071.csv",
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:07:27.025706+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine Sediment Core Geochemical Profile from Gulf of Mexico",
+    "description": "Dataset containing 34 sediment core samples collected from a single point in the Gulf of Mexico, providing vertical profiles of Total Organic Carbon (TOC) and Total Inorganic Carbon (TIC) at varying sediment depths, based on the data in the dataset.",
+    "keywords": [
+      "sediment core",
+      "TOC",
+      "TIC",
+      "geochemistry",
+      "Gulf of Mexico",
+      "marine sediment",
+      "depth profile"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24T21:28:00+00:00",
+      "to": "2012-03-24T21:28:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "instantaneous"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987071_3fff5ca6855c4750a23f7e614b87bf0c.jsonl",
+  "runtime_seconds": 127.48
+}

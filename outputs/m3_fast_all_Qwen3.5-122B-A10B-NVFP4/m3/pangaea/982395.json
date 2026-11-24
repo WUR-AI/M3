@@ -1,0 +1,44 @@
+{
+  "dataset_id": "982395",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/982395.csv",
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:55:20.799117+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Core Environmental Data from BH-II and BH-rec Campaigns",
+    "description": "Comprehensive environmental dataset containing physical, chemical, and isotopic measurements from sediment cores collected at a single site in central Germany. Includes grain size distribution, total organic carbon, black carbon, carbonate content, pH, trace metals, and stable isotope ratios (δ13C, δ15N) from two sampling campaigns (BH-II and BH-rec) in 2018 and 2019.",
+    "keywords": [
+      "sediment",
+      "environmental",
+      "grain size",
+      "TOC",
+      "black carbon",
+      "trace metals",
+      "isotopes",
+      "δ13C",
+      "δ15N",
+      "Germany"
+    ],
+    "spatialCoverage": {
+      "min_lat": 51.410785,
+      "min_lon": 12.079572,
+      "max_lat": 51.41327778,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22",
+      "to": "2019-08-12"
+    },
+    "spatial": "point locations",
+    "temporal": "discrete sampling events"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/982395_360e14df1ed04c3bb2ab5d2429eff6cb.jsonl",
+  "runtime_seconds": 153.7
+}

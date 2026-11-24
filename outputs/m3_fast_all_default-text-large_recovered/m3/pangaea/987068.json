@@ -1,0 +1,46 @@
+{
+  "dataset_id": "987068",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987068.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:43:40.381036+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment carbon depth profile – 23.8242°N, -87.1703°W (2012-03-23)",
+    "description": "Dataset of 23 sediment samples collected at a single site (23.8241667 N, ‑87.1703333 W) on 23 March 2012 01:04 UTC (event GeoB16310-3). Each record provides depth (m), total organic carbon (TOC, %), total inorganic carbon (TIC, %), and elevation. All other columns (Event, Latitude, Longitude, Elevation, Date/Time) are constant. (Based on CSV values and tool‑derived statistics: get_field_statistics, get_spatial_extent, get_temporal_extent).",
+    "keywords": [
+      "sediment",
+      "carbon",
+      "toc",
+      "tic",
+      "depth",
+      "profile",
+      "geochemical",
+      "marine",
+      "lat",
+      "lon",
+      "2012"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.824166666667,
+      "max_lat": 23.824166666667,
+      "min_lon": -87.170333333333,
+      "max_lon": -87.170333333333
+    },
+    "temporalCoverage": {
+      "from": "2012-03-23T01:04:00+00:00",
+      "to": "2012-03-23T01:04:00+00:00"
+    },
+    "spatial": "Point location – no measurable spread (bounding box collapses to a single point)",
+    "temporal": "Single instant (sub-second granularity)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987068_dd7227437f654517a52c36f0c5b11808.jsonl",
+  "runtime_seconds": 138.57,
+  "recovered_from_trace": true,
+  "source_sha256": "225d2b6118cc78019e8cb527c92e4dc38026b4b37a5e53272fcf4db99e96b37b"
+}

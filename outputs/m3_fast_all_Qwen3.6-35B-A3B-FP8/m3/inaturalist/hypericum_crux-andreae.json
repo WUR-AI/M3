@@ -1,0 +1,28 @@
+{
+  "dataset_id": "hypericum_crux-andreae",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/hypericum_crux-andreae.csv",
+  "source_sha256": "df65c7d977a649ec4f147c4fd9c380bea381f08e3133104e30fb277578e74cfb",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:38:59.237938+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 26.179852,
+      "min_lon": -95.888703,
+      "max_lat": 39.959616,
+      "max_lon": -74.217163
+    },
+    "temporalCoverage": {
+      "from": "2001-08-04T00:15:00+00:00",
+      "to": "2026-06-14T12:11:45+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/hypericum_crux-andreae_1fa00062645f4cadb0907febaadad697.jsonl",
+  "runtime_seconds": 38.26
+}

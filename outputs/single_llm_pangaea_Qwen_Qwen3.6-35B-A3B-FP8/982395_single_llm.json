@@ -1,0 +1,42 @@
+{
+  "csv": "982395.csv",
+  "dataset_id": "982395",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "contract_sha256": "2d84ec1f8f0c752b90cd7b3ab46204df207054ecfe0980e06caeeb8b3ce4b529",
+  "prompt_tokens": 3038,
+  "metadata": {
+    "name": "Sediment geochemistry and grain size data from Lake Titicaca cores BH-II and BH-rec",
+    "description": "Dataset containing geochemical properties (TOC, BC, CaCO3, pH, metals), grain size fractions, isotopic ratios (δ13C, δ15N), and magnetic susceptibility for sediment cores BH-II and BH-rec collected from Lake Titicaca.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "grain size",
+      "isotopes",
+      "Lake Titicaca",
+      "paleoclimate",
+      "metals",
+      "organic carbon"
+    ],
+    "spatialCoverage": {
+      "min_lat": -26.58,
+      "min_lon": 12.079572,
+      "max_lat": -25.59,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22",
+      "to": "2019-08-12"
+    },
+    "spatial": "point locations",
+    "temporal": "point samples"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.065,
+  "status": "ok"
+}

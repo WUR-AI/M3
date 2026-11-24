@@ -1,0 +1,15 @@
+{
+  "csv": "ptychoramphus_aleuticus.csv",
+  "dataset_id": "ptychoramphus_aleuticus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "80bfff6219ff696f223ae202c2d3cba494e22facb5b9b9c22706699c63f449c1",
+  "contract_sha256": "1bc591aa455ef1bfa3823dba49f5358e59a6c7322c5c3bcc87b8fb6e710f3966",
+  "prompt_tokens": 323033,
+  "status": "skipped",
+  "reason": "context_window"
+}

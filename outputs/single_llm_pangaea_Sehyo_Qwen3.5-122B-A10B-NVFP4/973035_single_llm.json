@@ -1,0 +1,42 @@
+{
+  "csv": "973035.csv",
+  "dataset_id": "973035",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "contract_sha256": "b8e6cc00aebdc955f66ed0d22e0356ee98d3a8807f914ea71b9974a33be1a0f3",
+  "prompt_tokens": 1405,
+  "metadata": {
+    "name": "NEP Soil Geochemistry and Dating Data",
+    "description": "Dataset containing soil geochemical measurements (U, Th, K, De) and dating results (Age dated) from samples collected at two locations (NEP_1 and NEP_3) in 2023. Includes sample labels, lab labels, soil depth, elevation, and collection timestamps.",
+    "keywords": [
+      "soil",
+      "geochemistry",
+      "Uranium",
+      "Thorium",
+      "Potassium",
+      "Dating",
+      "NEP",
+      "Germany"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03",
+      "to": "2023-04-03"
+    },
+    "spatial": "point locations",
+    "temporal": "instant"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.806,
+  "status": "ok"
+}

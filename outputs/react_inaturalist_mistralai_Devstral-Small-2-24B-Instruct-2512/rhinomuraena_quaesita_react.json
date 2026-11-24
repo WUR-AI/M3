@@ -1,0 +1,60 @@
+{
+  "csv": "rhinomuraena_quaesita.csv",
+  "dataset_id": "rhinomuraena_quaesita",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "9e0ea7a96a83b2ff1e4eb43581d60fd160933a5151b5911d32e62d8050124796",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2626,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -30.205409,
+      "min_lon": -179.993328,
+      "max_lat": 33.150943,
+      "max_lon": 179.968328
+    },
+    "temporalCoverage": {
+      "from": "1989-07-13",
+      "to": "2026-06-10"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "rhinomuraena_quaesita",
+        "resource": "rhinomuraena_quaesita.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "rhinomuraena_quaesita",
+        "resource": "rhinomuraena_quaesita"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "rhinomuraena_quaesita",
+        "resource": "rhinomuraena_quaesita",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "rhinomuraena_quaesita",
+        "resource": "rhinomuraena_quaesita",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.551,
+  "status": "ok"
+}

@@ -1,0 +1,826 @@
+{
+  "dataset_name": "930855",
+  "list_of_tables": [
+    "930855"
+  ],
+  "tables": {
+    "930855": {
+      "table_name": "930855",
+      "row_count": 20,
+      "number_of_columns": 15,
+      "list_of_columns": [
+        "Sample ID",
+        "Sample label",
+        "Sample label_2",
+        "Depth top",
+        "Depth bot",
+        "Depth top_2",
+        "Depth bot_2",
+        "Depth sed",
+        "Alk peak area",
+        "Diols peak area",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Sample ID": {
+          "column_name": "Sample ID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "CKY000000000007338600",
+            "CKY000000000006959000",
+            "CKY000000000007179700",
+            "CKY000000000007374400",
+            "CKY000000000007114800",
+            "CKY000000000006859200",
+            "CKY000000000006930700",
+            "CKY000000000007499700",
+            "CKY000000000006786600",
+            "CKY000000000007885500",
+            "CKY000000000006742800",
+            "CKY000000000007031900",
+            "CKY000000000006771100",
+            "CKY000000000007968800",
+            "CKY000000000007823600",
+            "CKY000000000006998100",
+            "CKY000000000007067700",
+            "CKY000000000007547500",
+            "CKY000000000007598600",
+            "CKY000000000007434400"
+          ],
+          "data_patterns": {
+            "AAA999999999999999999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "CKY000000000006742800",
+                1
+              ],
+              [
+                "CKY000000000007823600",
+                1
+              ],
+              [
+                "CKY000000000007547500",
+                1
+              ],
+              [
+                "CKY000000000006771100",
+                1
+              ],
+              [
+                "CKY000000000007067700",
+                1
+              ],
+              [
+                "CKY000000000006959000",
+                1
+              ],
+              [
+                "CKY000000000007338600",
+                1
+              ],
+              [
+                "CKY000000000006859200",
+                1
+              ],
+              [
+                "CKY000000000007885500",
+                1
+              ],
+              [
+                "CKY000000000007598600",
+                1
+              ]
+            ],
+            "unique_count": 20
+          },
+          "description": "Unique alphanumeric identifiers for the 20 sediment samples."
+        },
+        "Sample label": {
+          "column_name": "Sample label",
+          "data_type": "string",
+          "sample_values": [
+            "C0023A-65R-2 WR, 37.0-47.0",
+            "C0023A-32R-3 WR, 80.0-90.0",
+            "C0023A-41R-3 WR, 9.0-19.0",
+            "C0023A-55R-2 WR, 42.0-56.0",
+            "C0023A-92R-2 WR, 34.0-49.0",
+            "C0023A-46R-4 WR, 18.0-27.0",
+            "C0023A-12F-1 WR, 51.0-62.0",
+            "C0023A-97R-8 WR, 85.0-100.0",
+            "C0023A-83R-1 WR, 83.0-93.0",
+            "C0023A-59R-4 WR, 115.0-130.0",
+            "C0023A-78R-4 WR, 40.0-55.0",
+            "C0023A-35R-4 WR, 42.0-52.0",
+            "C0023A-24R-4 WR, 40.0-50.0",
+            "C0023A-38R-3 WR, 100.0-117.5",
+            "C0023A-27R-2 WR, 94.0-105.0",
+            "C0023A-9F-3 WR, 0.0-10.0",
+            "C0023A-5F-2 WR, 60.0-70.0",
+            "C0023A-72R-2 WR, 41.0-50.0",
+            "C0023A-18R-6 WR, 20.0-30.0",
+            "C0023A-103R-7 WR, 105.0-117.0"
+          ],
+          "data_patterns": {
+            "A9999A-99A-9 AA, 99.9-99.9": 12,
+            "A9999A-99A-9 AA, 99.9-999.9": 2,
+            "A9999A-99A-9 AA, 999.9-999.9": 2,
+            "A9999A-9A-9 AA, 9.9-99.9": 1,
+            "A9999A-9A-9 AA, 99.9-99.9": 1,
+            "A9999A-99A-9 AA, 9.9-99.9": 1,
+            "A9999A-999A-9 AA, 999.9-999.9": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "C0023A-5F-2 WR, 60.0-70.0",
+                1
+              ],
+              [
+                "C0023A-92R-2 WR, 34.0-49.0",
+                1
+              ],
+              [
+                "C0023A-78R-4 WR, 40.0-55.0",
+                1
+              ],
+              [
+                "C0023A-9F-3 WR, 0.0-10.0",
+                1
+              ],
+              [
+                "C0023A-38R-3 WR, 100.0-117.5",
+                1
+              ],
+              [
+                "C0023A-27R-2 WR, 94.0-105.0",
+                1
+              ],
+              [
+                "C0023A-55R-2 WR, 42.0-56.0",
+                1
+              ],
+              [
+                "C0023A-18R-6 WR, 20.0-30.0",
+                1
+              ],
+              [
+                "C0023A-97R-8 WR, 85.0-100.0",
+                1
+              ],
+              [
+                "C0023A-83R-1 WR, 83.0-93.0",
+                1
+              ]
+            ],
+            "unique_count": 20
+          },
+          "description": "Unique identifiers for sediment samples, including core section and depth interval ranges."
+        },
+        "Sample label_2": {
+          "column_name": "Sample label_2",
+          "data_type": "string",
+          "sample_values": [
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2",
+            "370BVWR2"
+          ],
+          "data_patterns": {
+            "999AAAA9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "370BVWR2",
+                20
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Sample label2 is a categorical string identifier for sediment samples."
+        },
+        "Depth top": {
+          "column_name": "Depth top",
+          "data_type": "float",
+          "sample_values": [
+            719.23,
+            434.39,
+            604.8,
+            1068.6,
+            632.845,
+            256.725,
+            677.06,
+            948.77,
+            576.9,
+            357.51,
+            318.465,
+            552.9,
+            862.33,
+            799.125,
+            488.215,
+            741.13,
+            1008.955,
+            826.96,
+            767.705,
+            514.92
+          ],
+          "data_patterns": {
+            "999.99": 9,
+            "999.999": 6,
+            "999.9": 3,
+            "9999.999": 1,
+            "9999.9": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 256.725,
+            "max": 1068.6,
+            "mean": 657.8767499999999,
+            "median": 654.9525,
+            "std": 226.71193388640387
+          },
+          "description": "Top sediment depth in meters for each sample."
+        },
+        "Depth bot": {
+          "column_name": "Depth bot",
+          "data_type": "float",
+          "sample_values": [
+            948.92,
+            799.215,
+            488.315,
+            515.03,
+            1009.105,
+            1068.72,
+            767.805,
+            827.11,
+            577.0,
+            357.62,
+            256.825,
+            862.43,
+            719.37,
+            553.0,
+            741.28,
+            318.565,
+            434.49,
+            604.975,
+            677.15,
+            632.945
+          ],
+          "data_patterns": {
+            "999.99": 9,
+            "999.999": 7,
+            "999.9": 2,
+            "9999.999": 1,
+            "9999.99": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 256.825,
+            "max": 1068.72,
+            "mean": 657.9934999999999,
+            "median": 655.0475,
+            "std": 226.72246680804776
+          },
+          "description": "Depth in meters at the bottom of the sediment sample."
+        },
+        "Depth top_2": {
+          "column_name": "Depth top_2",
+          "data_type": "float",
+          "sample_values": [
+            826.96,
+            317.574,
+            1008.955,
+            576.9,
+            719.23,
+            434.39,
+            799.125,
+            255.979,
+            740.961,
+            632.646,
+            862.33,
+            604.8,
+            948.77,
+            1068.277,
+            514.92,
+            676.834,
+            552.9,
+            767.705,
+            357.51,
+            487.935
+          ],
+          "data_patterns": {
+            "999.999": 8,
+            "999.99": 7,
+            "999.9": 3,
+            "9999.999": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 255.979,
+            "max": 1068.277,
+            "mean": 657.73505,
+            "median": 654.74,
+            "std": 226.82884283192703
+          },
+          "description": "Top sediment depth measurements in meters for the upper layer of each sample."
+        },
+        "Depth bot_2": {
+          "column_name": "Depth bot_2",
+          "data_type": "float",
+          "sample_values": [
+            632.738,
+            515.03,
+            862.43,
+            317.628,
+            357.62,
+            256.035,
+            1068.393,
+            676.919,
+            1009.105,
+            799.215,
+            553.0,
+            604.975,
+            577.0,
+            827.11,
+            434.49,
+            948.92,
+            741.104,
+            719.37,
+            488.027,
+            767.805
+          ],
+          "data_patterns": {
+            "999.999": 9,
+            "999.99": 7,
+            "9999.999": 2,
+            "999.9": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 256.035,
+            "max": 1068.393,
+            "mean": 657.8457000000001,
+            "median": 654.8285000000001,
+            "std": 226.84693451035957
+          },
+          "description": "Depth measurements in meters for the second sediment core sample."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "sample_values": [
+            604.888,
+            576.95,
+            767.755,
+            256.007,
+            1009.03,
+            357.565,
+            317.601,
+            552.95,
+            1068.335,
+            719.3,
+            514.975,
+            948.845,
+            827.035,
+            434.44,
+            799.17,
+            741.033,
+            676.877,
+            487.981,
+            632.692,
+            862.38
+          ],
+          "data_patterns": {
+            "999.999": 12,
+            "999.99": 5,
+            "999.9": 1,
+            "9999.99": 1,
+            "9999.999": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 256.007,
+            "max": 1068.335,
+            "mean": 657.7904500000002,
+            "median": 654.7845,
+            "std": 226.83789402670587
+          },
+          "description": "Sediment depth measurements in meters, ranging from 256.007 to 1068.335."
+        },
+        "Alk peak area": {
+          "column_name": "Alk peak area",
+          "data_type": "float",
+          "sample_values": [
+            28.1,
+            70261.33,
+            3041.58,
+            311274.05,
+            210777.35,
+            221854.82,
+            56143.54,
+            220.18,
+            9903.91,
+            10662.24,
+            207556.62,
+            1843.75,
+            25788.63,
+            0.0,
+            0.0,
+            275.97,
+            76.93,
+            205.47,
+            0.0,
+            20916.98
+          ],
+          "data_patterns": {
+            "99999.99": 5,
+            "999999.99": 4,
+            "9.9": 3,
+            "999.99": 3,
+            "9999.99": 3,
+            "99.99": 1,
+            "99.9": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 311274.05,
+            "mean": 57541.57250000001,
+            "median": 6472.745,
+            "std": 96467.39451158402
+          },
+          "description": "Alkene peak area measurements ranging from 0.0 to 311,274.05."
+        },
+        "Diols peak area": {
+          "column_name": "Diols peak area",
+          "data_type": "float",
+          "sample_values": [
+            3131.34,
+            14244.53,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            11964.24,
+            987.02,
+            2923.37,
+            1219.66,
+            32016.73,
+            221.19,
+            0.0,
+            0.0,
+            0.0,
+            7653.76,
+            0.0
+          ],
+          "data_patterns": {
+            "9.9": 11,
+            "9999.99": 4,
+            "99999.99": 3,
+            "999.99": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 32016.73,
+            "mean": 3718.0919999999996,
+            "median": 0.0,
+            "std": 7860.891337180804
+          },
+          "description": "Diols peak area values ranging from 0.0 to 32016.73."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A",
+            "370-C0023A"
+          ],
+          "data_patterns": {
+            "999-A9999A": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "370-C0023A",
+                20
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Sample identifier code for the sediment collection event."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667,
+            32.366667
+          ],
+          "data_patterns": {
+            "99.999999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 32.366667,
+            "max": 32.366667,
+            "mean": 32.366667,
+            "median": 32.366667,
+            "std": 0.0
+          },
+          "description": "Latitude values in decimal degrees for the sampled sediment locations."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333,
+            134.966333
+          ],
+          "data_patterns": {
+            "999.999999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 134.966333,
+            "max": 134.966333,
+            "mean": 134.96633299999996,
+            "median": 134.966333,
+            "std": 2.9160058604848984e-14
+          },
+          "description": "Geographic longitude coordinates for sediment samples, measured in decimal degrees."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0,
+            -4776.0
+          ],
+          "data_patterns": {
+            "-9999.9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -4776.0,
+            "max": -4776.0,
+            "mean": -4776.0,
+            "median": -4776.0,
+            "std": 0.0
+          },
+          "description": "Elevation values are constant at -4776.0 meters."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17",
+            "2016-09-17"
+          ],
+          "data_patterns": {
+            "9999-99-99": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2016-09-17T00:00:00",
+            "max_date": "2016-09-17T00:00:00"
+          },
+          "description": "The date and time of sediment sample collection."
+        }
+      },
+      "time_period_covered": {
+        "start": "2016-09-17T00:00:00",
+        "end": "2016-09-17T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Sample ID": "CKY000000000006742800",
+          "Sample label": "C0023A-5F-2 WR, 60.0-70.0",
+          "Sample label_2": "370BVWR2",
+          "Depth top": 256.725,
+          "Depth bot": 256.825,
+          "Depth top_2": 255.979,
+          "Depth bot_2": 256.035,
+          "Depth sed": 256.007,
+          "Alk peak area": 56143.54,
+          "Diols peak area": 2923.37,
+          "Event": "370-C0023A",
+          "Latitude": 32.366667,
+          "Longitude": 134.966333,
+          "Elevation": -4776.0,
+          "Date/Time": "2016-09-17"
+        },
+        {
+          "Sample ID": "CKY000000000007823600",
+          "Sample label": "C0023A-92R-2 WR, 34.0-49.0",
+          "Sample label_2": "370BVWR2",
+          "Depth top": 948.77,
+          "Depth bot": 948.92,
+          "Depth top_2": 948.77,
+          "Depth bot_2": 948.92,
+          "Depth sed": 948.845,
+          "Alk peak area": 0.0,
+          "Diols peak area": 0.0,
+          "Event": "370-C0023A",
+          "Latitude": 32.366667,
+          "Longitude": 134.966333,
+          "Elevation": -4776.0,
+          "Date/Time": "2016-09-17"
+        },
+        {
+          "Sample ID": "CKY000000000007547500",
+          "Sample label": "C0023A-78R-4 WR, 40.0-55.0",
+          "Sample label_2": "370BVWR2",
+          "Depth top": 826.96,
+          "Depth bot": 827.11,
+          "Depth top_2": 826.96,
+          "Depth bot_2": 827.11,
+          "Depth sed": 827.035,
+          "Alk peak area": 76.93,
+          "Diols peak area": 0.0,
+          "Event": "370-C0023A",
+          "Latitude": 32.366667,
+          "Longitude": 134.966333,
+          "Elevation": -4776.0,
+          "Date/Time": "2016-09-17"
+        }
+      ],
+      "description": "20 sediment samples with depth, geographic coordinates, and alkene/diol peak areas from September 17, 2016.",
+      "is_row_capped": false,
+      "rows_processed": 20,
+      "total_rows_in_file": 20
+    }
+  },
+  "time_period_covered": {
+    "start": "2016-09-17T00:00:00",
+    "end": "2016-09-17T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Contains 930,855 tables of Earth and environmental science data recorded on September 17, 2016."
+}

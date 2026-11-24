@@ -1,0 +1,1224 @@
+{
+  "dataset_name": "959883",
+  "list_of_tables": [
+    "959883"
+  ],
+  "tables": {
+    "959883": {
+      "table_name": "959883",
+      "row_count": 18,
+      "number_of_columns": 27,
+      "list_of_columns": [
+        "Station",
+        "Sample no",
+        "Depth sed",
+        "AT",
+        "[NO3]-",
+        "[NO2]-",
+        "[NH4]+",
+        "[PO4]3-",
+        "Cl-",
+        "[SO4]2-",
+        "Br-",
+        "B",
+        "Mn",
+        "Ca",
+        "Fe",
+        "Na",
+        "Mg",
+        "Sr",
+        "Si",
+        "Ba",
+        "Li",
+        "K",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Station": {
+          "column_name": "Station",
+          "data_type": "string",
+          "sample_values": [
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC",
+            "M186_50-1GC"
+          ],
+          "data_patterns": {
+            "A999_99-9AA": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "M186_50-1GC",
+                18
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Station identifier for sediment geochemistry sampling location M18650-1GC."
+        },
+        "Sample no": {
+          "column_name": "Sample no",
+          "data_type": "integer",
+          "sample_values": [
+            5,
+            14,
+            4,
+            10,
+            15,
+            11,
+            16,
+            6,
+            12,
+            13,
+            7,
+            9,
+            1,
+            18,
+            17,
+            2,
+            8,
+            3
+          ],
+          "data_patterns": {
+            "99": 9,
+            "9": 9
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 18.0,
+            "mean": 9.5,
+            "median": 9.5,
+            "std": 5.338539126015656
+          },
+          "description": "Sample identifiers ranging from 1 to 18 for sediment geochemistry measurements."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "sample_values": [
+            2.09,
+            1.29,
+            0.29,
+            1.69,
+            1.89,
+            3.29,
+            2.69,
+            0.69,
+            2.29,
+            1.09,
+            3.09,
+            2.49,
+            3.49,
+            2.89,
+            3.64,
+            1.49,
+            0.49,
+            0.89
+          ],
+          "data_patterns": {
+            "9.99": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 0.29,
+            "max": 3.64,
+            "mean": 1.9872222222222224,
+            "median": 1.9899999999999998,
+            "std": 1.063079907104301
+          },
+          "description": "Sediment depth measurements in centimeters at station M18650-1GC."
+        },
+        "AT": {
+          "column_name": "AT",
+          "data_type": "float",
+          "sample_values": [
+            1.92,
+            2.38,
+            1.77,
+            2.88,
+            2.06,
+            2.55,
+            2.61,
+            1.94,
+            2.88,
+            1.85,
+            2.88,
+            2.97,
+            1.75,
+            2.8,
+            2.53,
+            1.64,
+            2.44,
+            2.57
+          ],
+          "data_patterns": {
+            "9.99": 17,
+            "9.9": 1
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 16,
+          "stats": {
+            "type": "numeric",
+            "min": 1.64,
+            "max": 2.97,
+            "mean": 2.356666666666667,
+            "median": 2.485,
+            "std": 0.45463624761677196
+          },
+          "description": "AT denotes the concentration of aluminum in the sediment samples."
+        },
+        "[NO3]-": {
+          "column_name": "[NO3]-",
+          "data_type": "float",
+          "sample_values": [
+            0.01,
+            0.14,
+            2.23,
+            0.1,
+            0.38,
+            0.1,
+            0.73,
+            0.14,
+            0.08,
+            3.7,
+            0.28,
+            0.32,
+            11.15,
+            0.58,
+            0.12,
+            0.26,
+            0.14
+          ],
+          "data_patterns": {
+            "9.99": 13,
+            "9.9": 3,
+            "99.99": 1
+          },
+          "total_rows": 18,
+          "null_count": 1,
+          "unique_count": 15,
+          "stats": {
+            "type": "numeric",
+            "min": 0.01,
+            "max": 11.15,
+            "mean": 1.203529411764706,
+            "median": 0.26,
+            "std": 2.73545001137032
+          },
+          "description": "Nitrate concentrations in sediment samples, measured in micromolar units."
+        },
+        "[NO2]-": {
+          "column_name": "[NO2]-",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.04,
+            0.04,
+            0.05,
+            0.25,
+            0.05,
+            0.04,
+            0.04,
+            0.15,
+            0.05,
+            0.05,
+            0.06,
+            0.04,
+            0.04,
+            0.04,
+            0.05,
+            0.1,
+            0.04
+          ],
+          "data_patterns": {
+            "9.99": 16,
+            "9.9": 1
+          },
+          "total_rows": 18,
+          "null_count": 1,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.04,
+            "max": 0.25,
+            "mean": 0.06647058823529413,
+            "median": 0.05,
+            "std": 0.05522014764451788
+          },
+          "description": "Nitrite concentrations in sediment samples, measured in unspecified units."
+        },
+        "[NH4]+": {
+          "column_name": "[NH4]+",
+          "data_type": "float",
+          "sample_values": [
+            168.7,
+            147.2,
+            169.0,
+            27.73,
+            137.5,
+            109.4,
+            52.19,
+            108.4,
+            130.3,
+            156.5,
+            172.3,
+            169.4,
+            71.16,
+            155.5,
+            172.1,
+            66.27,
+            96.96
+          ],
+          "data_patterns": {
+            "999.9": 12,
+            "99.99": 5
+          },
+          "total_rows": 18,
+          "null_count": 1,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 27.73,
+            "max": 172.3,
+            "mean": 124.15352941176471,
+            "median": 137.5,
+            "std": 46.954844257698326
+          },
+          "description": "Ammonium concentrations in sediment samples, measured in unspecified units."
+        },
+        "[PO4]3-": {
+          "column_name": "[PO4]3-",
+          "data_type": "float",
+          "sample_values": [
+            0.0,
+            0.25,
+            0.58,
+            0.0,
+            0.25,
+            0.47,
+            0.73,
+            0.76,
+            0.62,
+            0.25,
+            0.33,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            1.56
+          ],
+          "data_patterns": {
+            "9.99": 11,
+            "9.9": 6
+          },
+          "total_rows": 18,
+          "null_count": 1,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 1.56,
+            "mean": 0.35588235294117654,
+            "median": 0.25,
+            "std": 0.4101533070622711
+          },
+          "description": "Phosphate ion concentration in sediment samples, measured in micromolar units."
+        },
+        "Cl-": {
+          "column_name": "Cl-",
+          "data_type": "float",
+          "sample_values": [
+            567.8,
+            568.13,
+            567.11,
+            567.22,
+            571.25,
+            566.45,
+            572.42,
+            571.62,
+            568.69,
+            572.1,
+            571.94,
+            569.96,
+            567.92,
+            570.25,
+            573.8,
+            565.85,
+            567.03,
+            569.19
+          ],
+          "data_patterns": {
+            "999.99": 15,
+            "999.9": 3
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 565.85,
+            "max": 573.8,
+            "mean": 569.3738888888889,
+            "median": 568.94,
+            "std": 2.3692469364233872
+          },
+          "description": "Chloride concentration in sediment samples, measured in milligrams per kilogram."
+        },
+        "[SO4]2-": {
+          "column_name": "[SO4]2-",
+          "data_type": "float",
+          "sample_values": [
+            24.78,
+            27.29,
+            25.24,
+            26.27,
+            26.78,
+            24.93,
+            26.52,
+            24.72,
+            28.37,
+            26.97,
+            25.39,
+            26.85,
+            25.07,
+            25.04,
+            27.56,
+            27.66,
+            27.18,
+            27.96
+          ],
+          "data_patterns": {
+            "99.99": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 24.72,
+            "max": 28.37,
+            "mean": 26.36555555555556,
+            "median": 26.65,
+            "std": 1.2107810907316001
+          },
+          "description": "Sulfate ion concentration in sediment samples, measured in millimolar units."
+        },
+        "Br-": {
+          "column_name": "Br-",
+          "data_type": "float",
+          "sample_values": [
+            908.42,
+            897.15,
+            895.55,
+            900.57,
+            911.14,
+            898.74,
+            908.28,
+            896.85,
+            902.25,
+            907.65,
+            908.69,
+            885.92,
+            900.12,
+            891.66,
+            897.37,
+            896.25,
+            896.95,
+            898.1
+          ],
+          "data_patterns": {
+            "999.99": 17,
+            "999.9": 1
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 885.92,
+            "max": 911.14,
+            "mean": 900.0922222222223,
+            "median": 898.4200000000001,
+            "std": 6.615359627906558
+          },
+          "description": "Bromide concentrations in sediment samples, measured in milligrams per kilogram."
+        },
+        "B": {
+          "column_name": "B",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.45,
+            0.39,
+            0.4,
+            0.38,
+            0.45,
+            0.44,
+            0.4,
+            0.43,
+            0.43,
+            0.44,
+            0.39,
+            0.39,
+            0.38,
+            0.43,
+            0.44,
+            0.41,
+            0.42,
+            0.43
+          ],
+          "data_patterns": {
+            "9.99": 16,
+            "9.9": 2
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.38,
+            "max": 0.45,
+            "mean": 0.4166666666666667,
+            "median": 0.425,
+            "std": 0.02425356250363329
+          },
+          "description": "Probability scores ranging from 0.38 to 0.45."
+        },
+        "Mn": {
+          "column_name": "Mn",
+          "data_type": "float",
+          "sample_values": [
+            18.78,
+            8.52,
+            18.87,
+            8.21,
+            5.95,
+            16.74,
+            11.26,
+            24.5,
+            9.55,
+            9.04,
+            7.86,
+            22.83,
+            25.9,
+            27.35,
+            10.24,
+            18.55,
+            28.44,
+            26.84
+          ],
+          "data_patterns": {
+            "99.99": 10,
+            "9.99": 6,
+            "99.9": 2
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 5.95,
+            "max": 28.44,
+            "mean": 16.634999999999998,
+            "median": 17.645,
+            "std": 7.908795736393753
+          },
+          "description": "Manganese concentrations in sediment samples, measured in milligrams per kilogram."
+        },
+        "Ca": {
+          "column_name": "Ca",
+          "data_type": "float",
+          "sample_values": [
+            11.95,
+            20.21,
+            18.62,
+            12.92,
+            16.1,
+            11.14,
+            15.46,
+            19.67,
+            21.31,
+            17.97,
+            13.22,
+            13.73,
+            13.31,
+            14.11,
+            11.6,
+            11.25,
+            19.18,
+            20.63
+          ],
+          "data_patterns": {
+            "99.99": 16,
+            "99.9": 2
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 11.14,
+            "max": 21.31,
+            "mean": 15.687777777777777,
+            "median": 14.785,
+            "std": 3.5591729963996768
+          },
+          "description": "Calcium concentrations in sediment samples, measured in unspecified units."
+        },
+        "Fe": {
+          "column_name": "Fe",
+          "data_type": "float",
+          "sample_values": [
+            83.4,
+            16.62,
+            79.04,
+            88.25,
+            92.76,
+            53.41,
+            103.62,
+            104.13,
+            79.73,
+            93.23,
+            80.63,
+            29.9,
+            87.89,
+            84.8,
+            100.15,
+            89.06,
+            74.17,
+            91.21
+          ],
+          "data_patterns": {
+            "99.99": 12,
+            "999.99": 3,
+            "99.9": 3
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 16.62,
+            "max": 104.13,
+            "mean": 79.55555555555557,
+            "median": 86.345,
+            "std": 23.667530307357236
+          },
+          "description": "Iron concentration in sediment samples, measured in unspecified units."
+        },
+        "Na": {
+          "column_name": "Na",
+          "data_type": "float",
+          "sample_values": [
+            479.26,
+            484.36,
+            480.47,
+            482.02,
+            479.51,
+            484.65,
+            480.2,
+            480.09,
+            482.74,
+            482.48,
+            482.95,
+            482.32,
+            482.12,
+            481.54,
+            483.99,
+            479.11,
+            481.83,
+            481.3
+          ],
+          "data_patterns": {
+            "999.99": 16,
+            "999.9": 2
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 479.11,
+            "max": 484.65,
+            "mean": 481.7188888888889,
+            "median": 481.92499999999995,
+            "std": 1.6968271043987435
+          },
+          "description": "Sodium concentration in sediment samples, measured in milligrams per kilogram."
+        },
+        "Mg": {
+          "column_name": "Mg",
+          "data_type": "float",
+          "sample_values": [
+            53.34,
+            44.5,
+            41.9,
+            50.24,
+            52.08,
+            53.32,
+            42.76,
+            48.27,
+            52.16,
+            51.09,
+            49.4,
+            43.3,
+            50.44,
+            42.32,
+            43.85,
+            51.0,
+            47.64,
+            45.13
+          ],
+          "data_patterns": {
+            "99.99": 13,
+            "99.9": 5
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 41.9,
+            "max": 53.34,
+            "mean": 47.93,
+            "median": 48.835,
+            "std": 4.051818763730388
+          },
+          "description": "Magnesium concentration in sediment samples, measured in milligrams per kilogram."
+        },
+        "Sr": {
+          "column_name": "Sr",
+          "data_type": "float",
+          "sample_values": [
+            104.3,
+            199.29,
+            125.32,
+            173.3,
+            144.05,
+            94.14,
+            184.03,
+            119.86,
+            151.56,
+            99.85,
+            189.43,
+            205.77,
+            115.81,
+            179.11,
+            95.11,
+            194.53,
+            115.42,
+            130.51
+          ],
+          "data_patterns": {
+            "999.99": 13,
+            "99.99": 3,
+            "999.9": 2
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 94.14,
+            "max": 205.77,
+            "mean": 145.6327777777778,
+            "median": 137.28,
+            "std": 39.347003295049724
+          },
+          "description": "Strontium concentrations in sediment samples, measured in parts per million."
+        },
+        "Si": {
+          "column_name": "Si",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.41,
+            0.41,
+            0.41,
+            0.41,
+            0.21,
+            0.4,
+            0.21,
+            0.24,
+            0.21,
+            0.41,
+            0.36,
+            0.28,
+            0.41,
+            0.36,
+            0.33,
+            0.25,
+            0.31,
+            0.29
+          ],
+          "data_patterns": {
+            "9.99": 17,
+            "9.9": 1
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "numeric",
+            "min": 0.21,
+            "max": 0.41,
+            "mean": 0.32833333333333337,
+            "median": 0.345,
+            "std": 0.07942810289445269
+          },
+          "description": "Silicon concentration values ranging from 0.21 to 0.41."
+        },
+        "Ba": {
+          "column_name": "Ba",
+          "data_type": "float",
+          "sample_values": [
+            209.85,
+            237.27,
+            237.21,
+            303.28,
+            231.63,
+            283.72,
+            215.72,
+            216.19,
+            208.57,
+            209.72,
+            234.24,
+            302.44,
+            215.42,
+            243.18,
+            208.37,
+            220.45,
+            259.42,
+            263.76
+          ],
+          "data_patterns": {
+            "999.99": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 208.37,
+            "max": 303.28,
+            "mean": 238.9133333333333,
+            "median": 232.935,
+            "std": 31.4554486068602
+          },
+          "description": "Barium concentration in sediment samples, measured in parts per million."
+        },
+        "Li": {
+          "column_name": "Li",
+          "data_type": "float",
+          "sample_values": [
+            27.2,
+            25.54,
+            25.5,
+            25.54,
+            26.64,
+            26.78,
+            25.23,
+            26.02,
+            26.39,
+            25.55,
+            26.71,
+            26.08,
+            27.61,
+            27.5,
+            25.94,
+            25.2,
+            26.42,
+            25.27
+          ],
+          "data_patterns": {
+            "99.99": 14,
+            "99.9": 4
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 17,
+          "stats": {
+            "type": "numeric",
+            "min": 25.2,
+            "max": 27.61,
+            "mean": 26.173333333333332,
+            "median": 26.049999999999997,
+            "std": 0.7762579922862214
+          },
+          "description": "Lithium concentrations in sediment samples at station M18650-1GC."
+        },
+        "K": {
+          "column_name": "K",
+          "data_type": "float",
+          "sample_values": [
+            10.06,
+            10.19,
+            10.71,
+            10.08,
+            10.08,
+            10.16,
+            10.54,
+            10.68,
+            10.73,
+            10.72,
+            10.62,
+            9.92,
+            10.23,
+            10.5,
+            9.97,
+            10.93,
+            10.9,
+            10.64
+          ],
+          "data_patterns": {
+            "99.99": 14,
+            "99.9": 2,
+            "9.99": 2
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 17,
+          "stats": {
+            "type": "numeric",
+            "min": 9.92,
+            "max": 10.93,
+            "mean": 10.425555555555555,
+            "median": 10.52,
+            "std": 0.33491389977341623
+          },
+          "description": "Potassium concentration in sediment samples, measured in weight percent."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1",
+            "M186_50-1"
+          ],
+          "data_patterns": {
+            "A999_99-9": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "M186_50-1",
+                18
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event identifier for sediment geochemistry sampling station M18650-1GC."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047,
+            38.74047
+          ],
+          "data_patterns": {
+            "99.99999": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 38.74047,
+            "max": 38.74047,
+            "mean": 38.740469999999995,
+            "median": 38.74047,
+            "std": 7.311424431968683e-15
+          },
+          "description": "Latitude is a continuous geographic coordinate measured in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108,
+            -28.58108
+          ],
+          "data_patterns": {
+            "-99.99999": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -28.58108,
+            "max": -28.58108,
+            "mean": -28.58108,
+            "median": -28.58108,
+            "std": 0.0
+          },
+          "description": "Geographic longitude coordinate for the sampling station, measured in decimal degrees."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0,
+            -1227.0
+          ],
+          "data_patterns": {
+            "-9999.9": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -1227.0,
+            "max": -1227.0,
+            "mean": -1227.0,
+            "median": -1227.0,
+            "std": 0.0
+          },
+          "description": "Elevation is a continuous float variable measured in meters."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36",
+            "2022-12-15T15:14:36"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 18
+          },
+          "total_rows": 18,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2022-12-15T15:14:36",
+            "max_date": "2022-12-15T15:14:36"
+          },
+          "description": "Timestamp of sediment geochemistry measurements at station M18650-1GC."
+        }
+      },
+      "time_period_covered": {
+        "start": "2022-12-15T15:14:36",
+        "end": "2022-12-15T15:14:36"
+      },
+      "sample_rows": [
+        {
+          "Station": "M186_50-1GC",
+          "Sample no": 18,
+          "Depth sed": 0.29,
+          "AT": 2.88,
+          "[NO3]-": null,
+          "[NO2]-": null,
+          "[NH4]+": null,
+          "[PO4]3-": null,
+          "Cl-": 567.03,
+          "[SO4]2-": 27.96,
+          "Br-": 891.66,
+          "B": 0.45,
+          "Mn": 18.55,
+          "Ca": 11.25,
+          "Fe": 74.17,
+          "Na": 483.99,
+          "Mg": 53.32,
+          "Sr": 95.11,
+          "Si": 0.24,
+          "Ba": 237.27,
+          "Li": 27.2,
+          "K": 10.93,
+          "Event": "M186_50-1",
+          "Latitude": 38.74047,
+          "Longitude": -28.58108,
+          "Elevation": -1227.0,
+          "Date/Time": "2022-12-15T15:14:36"
+        },
+        {
+          "Station": "M186_50-1GC",
+          "Sample no": 17,
+          "Depth sed": 0.49,
+          "AT": 2.88,
+          "[NO3]-": 0.32,
+          "[NO2]-": 0.04,
+          "[NH4]+": 66.27,
+          "[PO4]3-": 0.73,
+          "Cl-": 567.22,
+          "[SO4]2-": 27.56,
+          "Br-": 896.85,
+          "B": 0.45,
+          "Mn": 26.84,
+          "Ca": 11.6,
+          "Fe": 88.25,
+          "Na": 482.48,
+          "Mg": 52.08,
+          "Sr": 99.85,
+          "Si": 0.25,
+          "Ba": 303.28,
+          "Li": 26.78,
+          "K": 10.9,
+          "Event": "M186_50-1",
+          "Latitude": 38.74047,
+          "Longitude": -28.58108,
+          "Elevation": -1227.0,
+          "Date/Time": "2022-12-15T15:14:36"
+        },
+        {
+          "Station": "M186_50-1GC",
+          "Sample no": 10,
+          "Depth sed": 1.89,
+          "AT": 2.38,
+          "[NO3]-": 0.26,
+          "[NO2]-": 0.05,
+          "[NH4]+": 147.2,
+          "[PO4]3-": 0.25,
+          "Cl-": 572.1,
+          "[SO4]2-": 26.27,
+          "Br-": 897.37,
+          "B": 0.41,
+          "Mn": 16.74,
+          "Ca": 16.1,
+          "Fe": 79.73,
+          "Na": 482.95,
+          "Mg": 47.64,
+          "Sr": 151.56,
+          "Si": 0.36,
+          "Ba": 231.63,
+          "Li": 25.94,
+          "K": 10.23,
+          "Event": "M186_50-1",
+          "Latitude": 38.74047,
+          "Longitude": -28.58108,
+          "Elevation": -1227.0,
+          "Date/Time": "2022-12-15T15:14:36"
+        }
+      ],
+      "description": "Sediment geochemistry and elemental concentrations at station M18650-1GC on December 15, 2022.",
+      "is_row_capped": false,
+      "rows_processed": 18,
+      "total_rows_in_file": 18
+    }
+  },
+  "time_period_covered": {
+    "start": "2022-12-15T15:14:36",
+    "end": "2022-12-15T15:14:36"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "959,883 tables of Earth science data recorded on December 15, 2022."
+}

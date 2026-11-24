@@ -1,0 +1,73 @@
+{
+  "csv": "amyema_preissii.csv",
+  "dataset_id": "amyema_preissii",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ff548a023a4fb1a050cbdd2c377da489e8c69c6e70b947268175d50adc7c88c7",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3271,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -38.599571,
+      "min_lon": 113.553928,
+      "max_lat": -20.854222,
+      "max_lon": 147.263089
+    },
+    "temporalCoverage": {
+      "from": "1990-01-23",
+      "to": "2026-06-14"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "amyema_preissii"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "amyema_preissii",
+        "resource": "amyema_preissii"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "amyema_preissii",
+        "resource": "amyema_preissii"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "amyema_preissii",
+        "resource": "amyema_preissii"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "amyema_preissii",
+        "resource": "amyema_preissii",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "amyema_preissii",
+        "resource": "amyema_preissii",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.835,
+  "status": "ok"
+}

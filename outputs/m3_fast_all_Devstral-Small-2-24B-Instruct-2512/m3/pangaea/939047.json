@@ -1,0 +1,40 @@
+{
+  "dataset_id": "939047",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/939047.csv",
+  "source_sha256": "5b90ade135286bbd4e3faecda84f9f5bedba033ad13f9eb079cc10bf010109b3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T22:28:50.527197+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Water Vapor and Isotope Measurements at GVN Station",
+    "description": "This dataset contains hourly measurements of water vapor mix ratio, isotope ratios (δ18O H2O and δD H2O vapour), and related meteorological data collected at a fixed location (Latitude: -70.65, Longitude: -8.25, Elevation: 42.0 meters) from February 17, 2017, to January 31, 2019. The data includes measurements of water vapor concentration, isotope ratios, and their standard deviations, along with the number of observations for each measurement.",
+    "keywords": [
+      "water vapor",
+      "isotope ratios",
+      "δ18O H2O",
+      "δD H2O vapour",
+      "meteorological data",
+      "GVN Station"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2017-02-17T02:00:00+00:00",
+      "to": "2019-01-31T22:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "hourly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/939047_d6ad89dfda844f5cb7eb2a1ef45bd808.jsonl",
+  "runtime_seconds": 333.1
+}

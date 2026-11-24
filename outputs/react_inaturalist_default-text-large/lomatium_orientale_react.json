@@ -1,0 +1,52 @@
+{
+  "csv": "lomatium_orientale.csv",
+  "dataset_id": "lomatium_orientale",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "981e31e0610cdeda7420d35952429df5e0de0b3bf794c05f8370dc1ecb6984cf",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 1724,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 38.270662,
+      "min_lon": -109.533447,
+      "max_lat": 49.127095,
+      "max_lon": -94.833821
+    },
+    "temporalCoverage": {
+      "from": "2003-04-13T14:46:00+00:00",
+      "to": "2026-05-17T13:41:16+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "lomatium_orientale"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "lomatium_orientale",
+        "resource": "lomatium_orientale",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lomatium_orientale",
+        "resource": "lomatium_orientale",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 5.514,
+  "status": "ok"
+}

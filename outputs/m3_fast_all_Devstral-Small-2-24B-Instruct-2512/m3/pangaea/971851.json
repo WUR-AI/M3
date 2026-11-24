@@ -1,0 +1,38 @@
+{
+  "dataset_id": "971851",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971851.csv",
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:03:35.228436+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Paleomagnetic Data Analysis",
+    "description": "This dataset contains paleomagnetic measurements including declination, inclination, and virtual geomagnetic pole (VGP) coordinates, along with associated uncertainties and other derived parameters.",
+    "keywords": [
+      "paleomagnetism",
+      "VGP",
+      "declination",
+      "inclination",
+      "Kappa",
+      "RPI",
+      "geomagnetic field"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.84240779,
+      "min_lon": -178.9145776,
+      "max_lat": 83.74256561,
+      "max_lon": 179.7489502
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971851_f44c17b281384fc5b485d50ca30c76b2.jsonl",
+  "runtime_seconds": 383.58
+}

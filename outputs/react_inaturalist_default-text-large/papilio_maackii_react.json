@@ -1,0 +1,71 @@
+{
+  "csv": "papilio_maackii.csv",
+  "dataset_id": "papilio_maackii",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "913ce2acd52a01ad7be320c3e06714cadb9f7fe6d4f18198063deab5af02be86",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3357,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.006447,
+      "min_lon": 99.271253,
+      "max_lat": 53.271949,
+      "max_lon": 147.770332
+    },
+    "temporalCoverage": {
+      "from": "1989-06-11T00:00:00+00:00",
+      "to": "2026-06-15T13:04:57+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "papilio_maackii"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "papilio_maackii",
+        "resource": "papilio_maackii"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "papilio_maackii"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "papilio_maackii"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "papilio_maackii",
+        "resource": "papilio_maackii",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "papilio_maackii",
+        "resource": "papilio_maackii",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.749,
+  "status": "ok"
+}

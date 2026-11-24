@@ -1,0 +1,45 @@
+{
+  "dataset_id": "978983",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/978983.csv",
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:35:08.927637+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Mineralogical Composition of Deep-Sea Sediment Cores from IODP Expedition 386",
+    "description": "Dataset containing mineralogical composition percentages (framework minerals, clays, evaporites, accessory minerals) for 14 sediment core samples collected from a single borehole location in the western Pacific Ocean (Japan Trench region). Samples represent a vertical profile from 0.21 to 26.81 meters sediment depth, collected on May 30, 2021. The dataset includes sample identifiers, geographic coordinates, and detailed mineralogical data for quartz, feldspars, micas, clay minerals, and trace components.",
+    "keywords": [
+      "mineralogy",
+      "sediment core",
+      "IODP Expedition 386",
+      "Japan Trench",
+      "deep-sea",
+      "clay minerals",
+      "quartz",
+      "muscovite",
+      "plagioclase",
+      "halite",
+      "Pacific Ocean"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30T00:00:00+00:00",
+      "to": "2021-05-30T00:00:00+00:00"
+    },
+    "spatial": "Point location (single station at 36.89168333°N, 143.4078833°E)",
+    "temporal": "Daily (single date: 2021-05-30)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/978983_c6e9dcd120fe489ca026c304b01eef33.jsonl",
+  "runtime_seconds": 135.34
+}

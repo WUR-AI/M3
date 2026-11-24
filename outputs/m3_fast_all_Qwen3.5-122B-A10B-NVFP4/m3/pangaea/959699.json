@@ -1,0 +1,42 @@
+{
+  "dataset_id": "959699",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959699.csv",
+  "source_sha256": "d87404ae4cb54d2c047cc4dfa914442133bcd62fd72d51157bfe09e65bddd118",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:35:15.538057+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Analysis of Deep-Sea Manganese Nodules from Eastern Pacific",
+    "description": "Dataset containing geochemical composition data for three distinct manganese nodule samples collected from a single location in the Eastern Pacific Ocean. The data includes major elements (Mn, Fe, Si, Al, Ca) and trace elements including Rare Earth Elements (REEs) such as Ce, La, Nd, and others, along with sample metadata including location coordinates, depth, and collection date.",
+    "keywords": [
+      "manganese nodules",
+      "geochemistry",
+      "rare earth elements",
+      "REE",
+      "deep-sea",
+      "Eastern Pacific",
+      "trace elements",
+      "marine geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.072,
+      "min_lon": -140.047,
+      "max_lat": 11.072,
+      "max_lon": -140.047
+    },
+    "temporalCoverage": {
+      "from": "1976-08-27T00:00:00+00:00",
+      "to": "1976-08-27T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "instantaneous"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959699_6bc5f8ef9e5e41cfb4064e9ea7d3a83e.jsonl",
+  "runtime_seconds": 153.55
+}

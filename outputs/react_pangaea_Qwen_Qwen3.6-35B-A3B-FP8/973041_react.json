@@ -1,0 +1,166 @@
+{
+  "csv": "973041.csv",
+  "dataset_id": "973041",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 12286,
+  "metadata": {
+    "name": "Radiocarbon and U-series dating records from Borneo archaeological sites",
+    "description": "Collection of 335 radiocarbon and U-series dating measurements from 42 archaeological sites across Borneo (Malaysia and Indonesia), including both calibrated and uncalibrated ages with associated uncertainties and references.",
+    "keywords": [
+      "radiocarbon dating",
+      "U-series dating",
+      "Borneo",
+      "archaeology",
+      "Southeast Asia",
+      "Neolithic",
+      "Holocene",
+      "Malaysia",
+      "Indonesia",
+      "Sabah",
+      "Sarawak",
+      "Kalimantan"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973041"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Country",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Province",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Site",
+        "limit": 50
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Age dated"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Cal age max"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "time_column": "Cal age min"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Dating meth",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Reference",
+        "limit": 50
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Comm",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 22.939,
+  "status": "ok"
+}

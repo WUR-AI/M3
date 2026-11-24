@@ -1,0 +1,40 @@
+{
+  "dataset_id": "961147",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/961147.csv",
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:43:51.325384+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Marine biological sampling dataset",
+    "description": "Dataset documenting the collection and chemical analysis of marine organisms, primarily Salpida (tunicates), across multiple expeditions. Contains event metadata, spatial coordinates, taxonomic identification, specimen characteristics, and mass/elemental composition measurements.",
+    "keywords": [
+      "marine biology",
+      "plankton",
+      "Salpida",
+      "chemical analysis",
+      "elemental composition",
+      "biomass"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12T23:45:00+00:00",
+      "to": "2021-05-27T19:26:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/961147_b06c545658bf430086bf2e143bf70c71.jsonl",
+  "runtime_seconds": 175.11
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "acontia_cretata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/acontia_cretata.csv",
+  "source_sha256": "8d1e708663983f36a31bfcd509df98e78f63f22bf1a4d0ca1bf43e4d0b5e8477",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-16T23:33:41.512430+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.578286,
+      "min_lon": -121.837937,
+      "max_lat": 38.771382,
+      "max_lon": -90.327117
+    },
+    "temporalCoverage": {
+      "from": "1978-07-09T00:00:00+00:00",
+      "to": "2026-06-12T12:32:56+00:00"
+    }
+  },
+  "plan_steps_count": 5,
+  "steps_completed": 5,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/acontia_cretata_94faae74516d45bdbc9746feebdd7333.jsonl",
+  "runtime_seconds": 257.74
+}

@@ -1,0 +1,38 @@
+{
+  "csv": "959885.csv",
+  "dataset_id": "959885",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "contract_sha256": "65ddd783bb34b26eb5e107cbf3587f1b4597aa3962b8b6ca3b06c25cc7c17888",
+  "prompt_tokens": 3306,
+  "metadata": {
+    "name": "Marine Sediment Geochemistry",
+    "description": "Dataset containing geochemical measurements of marine sediment samples, including concentrations of various ions and elements at different depths.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "ion concentration",
+      "elemental analysis"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16",
+      "to": "2022-12-16"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.487,
+  "status": "ok"
+}

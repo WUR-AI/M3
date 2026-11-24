@@ -1,0 +1,105 @@
+{
+  "csv": "963353.csv",
+  "dataset_id": "963353",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d3518df69c24bf623efa16940fd790900b0a2d9177bc8d03033bd76598a0b5dd",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4335,
+  "metadata": {
+    "name": "Ice and snow core samples from NM01_04_S01 event",
+    "description": "Dataset containing 53 ice and snow core samples collected on 2004-12-29 at a single location in Antarctica (approximately 70.65°S, 8.25°W). Each sample includes depth measurements (ice/snow depth and descriptive depth), ice density values, and associated imagery. Samples are identified by unique sample numbers (e.g., J*-05-NM-60).",
+    "keywords": [
+      "ice core",
+      "snow core",
+      "Antarctica",
+      "density",
+      "depth",
+      "NM01_04_S01",
+      "2004"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65491,
+      "min_lon": -8.25491,
+      "max_lat": -70.65491,
+      "max_lon": -8.25491
+    },
+    "temporalCoverage": {
+      "from": "2004-12-29",
+      "to": "2004-12-29"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "963353"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "963353",
+        "resource": "963353",
+        "field": "Sample no",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 14.229,
+  "status": "ok"
+}

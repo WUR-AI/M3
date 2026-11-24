@@ -1,0 +1,15 @@
+{
+  "csv": "paeonia_caucasica.csv",
+  "dataset_id": "paeonia_caucasica",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "87f39c45fb88b07fd6d3b969bda5d7e5c340e69f7d92cea084b16e2adafe4fee",
+  "contract_sha256": "bde99ec3789b1695501a152a85b8b026c82af44d4baee0f886a55c2b5bcdca7c",
+  "prompt_tokens": 332037,
+  "status": "skipped",
+  "reason": "context_window"
+}

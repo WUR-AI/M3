@@ -1,0 +1,87 @@
+{
+  "csv": "987056.csv",
+  "dataset_id": "987056",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c679b64af9656205fbe4f33f6f7a71f57f9f0abe1933a8d0c5b51b6657b297a9",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2813,
+  "metadata": {
+    "name": "987056",
+    "description": "The dataset contains geochemical measurements from sediment cores, including depth, total organic carbon (TOC), total inorganic carbon (TIC), event identifiers, geographic coordinates (latitude and longitude), elevation, and date/time information.",
+    "keywords": [
+      "sediment cores",
+      "geochemical measurements",
+      "TOC",
+      "TIC",
+      "latitude",
+      "longitude",
+      "elevation",
+      "date/time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.82405,
+      "min_lon": -87.170283333333,
+      "max_lat": 23.82405,
+      "max_lon": -87.170283333333
+    },
+    "temporalCoverage": {
+      "from": "2012-03-22T23:07:00+00:00",
+      "to": "2012-03-22T23:07:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "987056"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "987056",
+        "resource": "987056"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "987056",
+        "resource": "987056"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "987056",
+        "resource": "987056"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "987056",
+        "resource": "987056",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "987056",
+        "resource": "987056",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 27.452,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "dioctria_linearis.csv",
+  "dataset_id": "dioctria_linearis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1a233647f2b04f9f2da42159a0a851fcd3d6d3fb98445e7d62efacf06a668423",
+  "contract_sha256": "d797bedfbff17c7c0db3ae1f63af2bc7d4e739172ca2dda5bf45dfebb031895e",
+  "prompt_tokens": 323682,
+  "status": "skipped",
+  "reason": "context_window"
+}

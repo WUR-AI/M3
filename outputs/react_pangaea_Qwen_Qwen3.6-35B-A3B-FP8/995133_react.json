@@ -1,0 +1,277 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 10552,
+  "metadata": {
+    "name": "Macoma balthica Shell Length and Frequency Data from Rönnebank, Baltic Sea",
+    "description": "Dataset containing shell length measurements and frequency counts for the bivalve species Macoma balthica. The data was collected during expedition EMB320 in June 2023 at Rönnebank in the Baltic Sea. It compares samples from a Marine Protected Area against a Reference area, with 18 samples from each site.",
+    "keywords": [
+      "Macoma balthica",
+      "Baltic Sea",
+      "Rönnebank",
+      "Shell length",
+      "Marine Protected Area",
+      "EMB320",
+      "Bivalves",
+      "June 2023"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2023-06-01",
+      "to": "2023-06-01"
+    },
+    "spatial": "Point locations at Rönnebank, Baltic Sea",
+    "temporal": "Monthly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "995133"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "n": 36
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "time_column": "Sampling date"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "field": "Location",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "field": "Expedition",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "field": "Site",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "field": "M. balthica shell l",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133",
+        "field": "M. balthica l-freq",
+        "limit": 50
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995133"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "995133",
+        "resource": "995133"
+      }
+    }
+  ],
+  "runtime_seconds": 31.235,
+  "status": "ok"
+}

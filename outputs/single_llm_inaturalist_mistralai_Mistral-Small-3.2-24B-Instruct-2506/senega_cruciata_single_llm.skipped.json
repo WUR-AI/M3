@@ -1,0 +1,15 @@
+{
+  "csv": "senega_cruciata.csv",
+  "dataset_id": "senega_cruciata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "839b7f36dc19d38652bd8ea18d66a3666d5191a83740009ef90667b4dae7dff7",
+  "contract_sha256": "5cf97f81baba3ba756afcce71835884c5111eaa8dbb39ff865817c9176552541",
+  "prompt_tokens": 321029,
+  "status": "skipped",
+  "reason": "context_window"
+}

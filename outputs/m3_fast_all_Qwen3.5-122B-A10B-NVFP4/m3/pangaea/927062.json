@@ -1,0 +1,43 @@
+{
+  "dataset_id": "927062",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/927062.csv",
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:41:12.884428+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "High-Resolution Weather Balloon Sounding Near North Pole (August 18, 2018)",
+    "description": "A high-frequency atmospheric sounding dataset capturing a single weather balloon's vertical profile and trajectory over a 30-minute period on August 18, 2018. The data includes measurements of height, pressure, temperature, relative humidity, wind direction, and wind speed recorded at approximately 1-second intervals near the North Pole (89.55°N, 36.84°E).",
+    "keywords": [
+      "weather balloon",
+      "atmospheric sounding",
+      "meteorology",
+      "polar",
+      "North Pole",
+      "vertical profile",
+      "wind shear",
+      "boundary layer",
+      "2018"
+    ],
+    "spatialCoverage": {
+      "min_lat": 89.5537,
+      "min_lon": 36.54034,
+      "max_lat": 89.5601,
+      "max_lon": 37.14087
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00+00:00",
+      "to": "2018-08-18T11:39:00+00:00"
+    },
+    "spatial": "Point locations (weather balloon trajectory), ~1 Hz sampling rate",
+    "temporal": "1 second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/927062_fd378d2ce0444ab18dad603e7b14c7ef.jsonl",
+  "runtime_seconds": 145.79
+}

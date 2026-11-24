@@ -296,7 +296,7 @@ orchestrator = Orchestrator(
 | `single` | 1 | 0 | Quick testing, minimal cost |
 | `fast` | 2 | 1 | Rapid extraction with basic quality |
 | `default` | 3 | 2 | Balanced speed and quality |
-| `thorough` | 4 | 3 | Maximum quality, higher cost |
+| `thorough` | 4 | 3 | Most agents and rounds, higher cost |
 
 ### Step 5: Generate a Plan
 
@@ -498,6 +498,12 @@ orchestrator = Orchestrator(
     provider=LLM_PROVIDER,
 )
 ```
+
+Players assigned to one step use that step's role and run concurrently. Each
+keeps its own tool-call history across critique and revision rounds. Synthesis
+uses each successful agent's conversation and tool evidence. Each run writes
+its full model and tool I/O under `outputs/traces/`; completed executions expose
+the file as `result.trace_path`.
 
 ### Player Types
 

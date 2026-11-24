@@ -1,0 +1,46 @@
+{
+  "dataset_id": "937579",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/937579.csv",
+  "source_sha256": "156fa955ff4d43d3d0a0f15b5f40e346e65b3ba52e0f21a776a715bde33d718e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:03:18.282148+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Surface Water Stable Isotope Measurements (δ18O, δD, d xs) from NunaWP4 Expeditions",
+    "description": "Dataset containing stable water isotope measurements (δ18O, δD, and deuterium excess) from Arctic surface waters sampled during the NunaWP4 expeditions in 2019. The dataset includes 146 observations with associated metadata such as expedition number, station identifier, sampling date/time, and water depth. Isotope values are reported in per mil (‰) relative to VSMOW. Seven records have missing isotope data due to failed laboratory analyses.",
+    "keywords": [
+      "stable isotopes",
+      "delta-18-O",
+      "delta-D",
+      "deuterium excess",
+      "Arctic",
+      "Beaufort Sea",
+      "Northwest Passage",
+      "oceanography",
+      "surface water",
+      "NunaWP4",
+      "isotope hydrology",
+      "water mass tracing"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20T15:34:00+00:00",
+      "to": "2019-09-08T12:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular sampling"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/937579_dfc9de6747bc4da18926cdaeb6673fc8.jsonl",
+  "runtime_seconds": 100.94
+}

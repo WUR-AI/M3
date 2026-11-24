@@ -1,0 +1,66 @@
+{
+  "csv": "idea_leuconoe.csv",
+  "dataset_id": "idea_leuconoe",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d842e3d2f74c9f7a37e90c376a8cd45b3195e171648746b82b5cebc268c19649",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3379,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -3.965004,
+      "min_lon": 97.436133,
+      "max_lat": 34.857409,
+      "max_lon": 138.139091
+    },
+    "temporalCoverage": {
+      "from": "1970-01-21T21:41:12+00:00",
+      "to": "2026-06-15T14:59:45+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "idea_leuconoe"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "idea_leuconoe",
+        "resource": "idea_leuconoe",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 10.698,
+  "status": "ok"
+}

@@ -1,0 +1,38 @@
+{
+  "dataset_id": "971414",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/971414.csv",
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T00:51:43.953942+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Kiwada Kazusa Chiba River Sections Dataset",
+    "description": "A dataset containing sediment sample data from river sections in Kiwada, Kazusa, and Chiba, Japan. It includes sample IDs, section measurements, age estimates, sediment rates, references, and geographic coordinates.",
+    "keywords": [
+      "sediment",
+      "river sections",
+      "geographic coordinates",
+      "age estimates",
+      "Kiwada",
+      "Kazusa",
+      "Chiba"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/971414_2717a39ea36147d4841a5742d20cf80f.jsonl",
+  "runtime_seconds": 711.27
+}

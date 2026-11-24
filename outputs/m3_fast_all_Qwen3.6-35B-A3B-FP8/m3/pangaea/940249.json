@@ -1,0 +1,42 @@
+{
+  "dataset_id": "940249",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/940249.csv",
+  "source_sha256": "ffa4a37e09f9eea211d093f3922c021eba2066b56fa4d80fea1d68ec7cf9c123",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:09:00.686305+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "WDC06A Ice Core Isotopic and Chlorine-36 Measurements",
+    "description": "Dataset containing 32 depth-resolved measurements from the WDC06A ice core collected at the WAIS Divide site in West Antarctica on 2006-12-09. Includes depth, gas age, oxygen isotope ratios (δ18O, δ18O_2), and chlorine-36 anomalies (Δ36, Δ36_2).",
+    "keywords": [
+      "ice core",
+      "WDC06A",
+      "WAIS Divide",
+      "Antarctica",
+      "isotopes",
+      "delta-18O",
+      "chlorine-36",
+      "paleoclimate"
+    ],
+    "spatialCoverage": {
+      "min_lat": -79.46763,
+      "min_lon": -112.08648,
+      "max_lat": -79.46763,
+      "max_lon": -112.08648
+    },
+    "temporalCoverage": {
+      "from": "2006-12-09T00:00:00+00:00",
+      "to": "2006-12-09T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/940249_c7142abe4a0b48f88445495309b7e2e9.jsonl",
+  "runtime_seconds": 96.76
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "lomandra_obliqua",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/lomandra_obliqua.csv",
+  "source_sha256": "e934e71d13affe60a786f193b85311e68d992a2e94d3edb130395103aae9414f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:46:13.140133+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -36.102534,
+      "min_lon": 149.754228,
+      "max_lat": -27.374955,
+      "max_lon": 153.323989
+    },
+    "temporalCoverage": {
+      "from": "1991-10-22T09:57:00+00:00",
+      "to": "2026-06-12T11:39:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/lomandra_obliqua_73cfbcd9d4ee47099904099bc0463786.jsonl",
+  "runtime_seconds": 49.77
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "crocidophora_serratissimalis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/crocidophora_serratissimalis.csv",
+  "source_sha256": "ac42d91a9c815f7f4ab7c337bdafd6f0e6893b45fc8d2c503d22d8e39858c38f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:26:32.277599+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.508248,
+      "min_lon": -100.027428,
+      "max_lat": 47.290284,
+      "max_lon": -64.2582
+    },
+    "temporalCoverage": {
+      "from": "2001-05-22T06:26:00+00:00",
+      "to": "2026-06-13T21:08:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/crocidophora_serratissimalis_43eb5853fe0e42a3b78744de2263f896.jsonl",
+  "runtime_seconds": 53.93
+}

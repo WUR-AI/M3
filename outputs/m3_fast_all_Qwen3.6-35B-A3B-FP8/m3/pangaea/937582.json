@@ -1,0 +1,53 @@
+{
+  "dataset_id": "937582",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/937582.csv",
+  "source_sha256": "1b4437a62c7a6600b478b9acf419a05aebf9f4af6fd8023b6d8e709a67082012",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:04:59.224318+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "NunaWP4 Mackenzie River Delta Dissolved Organic Matter Fluorescence Dataset",
+    "description": "This dataset contains dissolved organic matter (DOM) fluorescence measurements from the NunaWP4 Mackenzie expedition conducted in the Canadian Arctic (Mackenzie River Delta/Beaufort Sea coastal area) in 2019. It includes 146 water sample records with geographic coordinates, water depth, and multiple DOM fluorescence parameters: parallel factor analysis (PARAFAC) components (IFDOM C1-C3), excitation-emission matrix (EEM) peak components (FDOM A, C, M, T-peak), and derived indices (Fluorescence Index, Humification Index, Biological Index). The data characterizes terrestrial humic-dominated DOM sources in shallow Arctic waters.",
+    "keywords": [
+      "dissolved organic matter",
+      "DOM",
+      "fluorescence",
+      "EEM",
+      "PARAFAC",
+      "IFDOM",
+      "FDOM",
+      "Mackenzie River",
+      "Arctic",
+      "Canadian Arctic",
+      "Mackenzie Delta",
+      "Beaufort Sea",
+      "humic substances",
+      "fluorescence index",
+      "humification index",
+      "biological index",
+      "NunaWP4",
+      "water quality",
+      "biogeochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20T15:34:00+00:00",
+      "to": "2019-09-08T12:00:00+00:00"
+    },
+    "spatial": "Point measurements with GPS coordinates (Latitude, Longitude) stored in decimal degrees (WGS84); spatial precision approximately 111 m north-south (3 decimal places) and 3.5 m east-west (5 decimal places)",
+    "temporal": "Irregular sampling intervals ranging from minutes to hours; timestamps recorded to second precision (YYYY-MM-DD HH:MM:SS format) with minute-level effective granularity"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/937582_97736651d4ca46699071087ce3538607.jsonl",
+  "runtime_seconds": 134.15
+}

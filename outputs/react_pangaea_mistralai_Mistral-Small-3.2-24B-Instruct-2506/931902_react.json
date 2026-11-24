@@ -1,0 +1,90 @@
+{
+  "csv": "931902.csv",
+  "dataset_id": "931902",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "db1a2eb73ef4f30d6bd56b579eac3100f881d914d9eff214542eda53b0500dc3",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2419,
+  "metadata": {
+    "name": "Birkeland Cruise 1",
+    "description": "Dataset containing information about events, binaries, their sizes, hashes, locations, and dates/times.",
+    "keywords": [
+      "Birkeland",
+      "Cruise",
+      "Fish",
+      "Siphonophores",
+      "Event",
+      "Binary",
+      "Size",
+      "Hash",
+      "Latitude",
+      "Longitude",
+      "Date/Time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 46.15,
+      "min_lon": -26.26667,
+      "max_lat": 46.55,
+      "max_lon": -26.01667
+    },
+    "temporalCoverage": {
+      "from": "2016-07-07",
+      "to": "2016-07-07"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "931902"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "931902",
+        "resource": "931902",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 23.753,
+  "status": "ok"
+}

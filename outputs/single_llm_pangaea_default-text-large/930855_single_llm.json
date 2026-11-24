@@ -1,0 +1,41 @@
+{
+  "csv": "930855.csv",
+  "dataset_id": "930855",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bcee77d90d8e37094fb072e5927cc686599551e7b9d3c90e7983f5faf32f1892",
+  "contract_sha256": "4448a0daeb752bbbc1328fd5e8d92143d9da2eab06dd9d523633a6aeffc85b93",
+  "prompt_tokens": 2679,
+  "metadata": {
+    "name": "Geochemical core sample measurements (370BVWR2)",
+    "description": "Dataset of alkane (Alk peak area) and diol (Diols peak area) measurements from sediment core samples collected at a single site (latitude 32.366667, longitude 134.966333, elevation -4776 m) on 2016‑09‑17. Each row includes sample identifiers, depth intervals, and associated geochemical peak areas.",
+    "keywords": [
+      "core sample",
+      "alkane",
+      "diol",
+      "sediment",
+      "geochemistry",
+      "depth profile",
+      "Japan"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.366667,
+      "min_lon": 134.966333,
+      "max_lat": 32.366667,
+      "max_lon": 134.966333
+    },
+    "temporalCoverage": {
+      "from": "2016-09-17",
+      "to": "2016-09-17"
+    },
+    "spatial": "point location",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.485,
+  "status": "ok"
+}

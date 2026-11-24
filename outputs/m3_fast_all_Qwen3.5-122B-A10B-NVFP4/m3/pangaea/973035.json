@@ -1,0 +1,44 @@
+{
+  "dataset_id": "973035",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973035.csv",
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:32:50.650202+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Luminescence Dating Soil Samples from NEP_1 and NEP_2 Events in Southern Germany",
+    "description": "A dataset containing radiometric and geochronological measurements from 7 soil samples collected at a single site in southern Germany (Bavaria) on April 3, 2023. The data includes elemental concentrations (Uranium, Thorium, Potassium), dose metrics, and calculated luminescence ages with associated error margins, derived from a controlled sampling campaign.",
+    "keywords": [
+      "luminescence dating",
+      "soil sampling",
+      "radiometric dating",
+      "Uranium",
+      "Thorium",
+      "Potassium",
+      "geochronology",
+      "Bavaria",
+      "sediment dating",
+      "environmental monitoring"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03T09:00:00+00:00",
+      "to": "2023-04-03T09:00:00+00:00"
+    },
+    "spatial": "Point locations (high precision, ~100m x 130m area)",
+    "temporal": "Single point in time (snapshot)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973035_ca70114cac4c4c2f8a0ff99f29e9b2b3.jsonl",
+  "runtime_seconds": 167.39
+}

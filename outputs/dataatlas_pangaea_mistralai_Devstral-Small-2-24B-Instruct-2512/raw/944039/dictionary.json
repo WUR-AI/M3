@@ -1,0 +1,2480 @@
+{
+  "dataset_name": "944039",
+  "list_of_tables": [
+    "944039"
+  ],
+  "tables": {
+    "944039": {
+      "table_name": "944039",
+      "row_count": 9,
+      "number_of_columns": 70,
+      "list_of_columns": [
+        "Station",
+        "Area",
+        "Core",
+        "Depth sed",
+        "Al",
+        "Al e rel",
+        "Ba",
+        "Ba e rel",
+        "Ca2+",
+        "Cr",
+        "Cr e rel",
+        "Cu",
+        "Cu e rel",
+        "Fe",
+        "Fe e rel",
+        "K+",
+        "K e rel",
+        "La",
+        "La e rel",
+        "Li",
+        "Li e rel",
+        "Mg2+",
+        "Mg e rel",
+        "Mn",
+        "Mn e rel",
+        "Na+",
+        "Na e rel",
+        "Ni",
+        "Ni e rel",
+        "P",
+        "P e rel",
+        "Sr",
+        "Sr e rel",
+        "Ti",
+        "Ti e rel",
+        "Al_2",
+        "Al e",
+        "Ba_2",
+        "Ba e",
+        "Cr_2",
+        "Cr e",
+        "Cu_2",
+        "Cu e",
+        "Fe_2",
+        "Fe e",
+        "K",
+        "K e",
+        "La_2",
+        "La e",
+        "Li_2",
+        "Li e",
+        "Mg",
+        "Mg e",
+        "Mn_2",
+        "Mn e",
+        "Na",
+        "Na e",
+        "Ni_2",
+        "Ni e",
+        "P_2",
+        "P e",
+        "Sr_2",
+        "Sr e",
+        "Ti_2",
+        "Ti e",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Station": {
+          "column_name": "Station",
+          "data_type": "string",
+          "sample_values": [
+            "SO268_074MUC",
+            "SO268_074MUC",
+            "SO268_074MUC",
+            "SO268_074MUC",
+            "SO268_074MUC",
+            "SO268_074MUC",
+            "SO268_074MUC",
+            "SO268_074MUC",
+            "SO268_074MUC"
+          ],
+          "data_patterns": {
+            "AA999_999AAA": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "SO268_074MUC",
+                9
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Station identifier for sediment analysis, consistent across all samples."
+        },
+        "Area": {
+          "column_name": "Area",
+          "data_type": "string",
+          "sample_values": [
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact",
+            "Belgian collector trial pre-impact"
+          ],
+          "data_patterns": {
+            "Aaaaaaa aaaaaaaaa aaaaa aaa-aaaaaa": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Belgian collector trial pre-impact",
+                9
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Belgian collector trial pre-impact sediment analysis area identifier."
+        },
+        "Core": {
+          "column_name": "Core",
+          "data_type": "integer",
+          "sample_values": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "data_patterns": {
+            "99": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 18.0,
+            "max": 18.0,
+            "mean": 18.0,
+            "median": 18.0,
+            "std": 0.0
+          },
+          "description": "Core identifier, constant value 18 across all rows."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.0625,
+            0.225,
+            0.165,
+            0.125,
+            0.0925,
+            0.185,
+            0.0725,
+            0.105,
+            0.0825
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.9999": 4
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0625,
+            "max": 0.225,
+            "mean": 0.12388888888888888,
+            "median": 0.105,
+            "std": 0.056028886398991645
+          },
+          "description": "Depth sediment probability scores, ranging 0.0625 to 0.225."
+        },
+        "Al": {
+          "column_name": "Al",
+          "data_type": "float",
+          "sample_values": [
+            254.824,
+            248.842,
+            242.917,
+            246.787,
+            245.708,
+            248.062,
+            237.385,
+            254.521,
+            241.829
+          ],
+          "data_patterns": {
+            "999.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 237.385,
+            "max": 254.824,
+            "mean": 246.76388888888889,
+            "median": 246.787,
+            "std": 5.693993292155439
+          },
+          "description": "Aluminum concentration in sediment samples, measured in parts per million."
+        },
+        "Al e rel": {
+          "column_name": "Al e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.327,
+            0.051,
+            0.093,
+            0.283,
+            0.452,
+            0.463,
+            0.582,
+            0.63,
+            1.098
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.051,
+            "max": 1.098,
+            "mean": 0.44211111111111107,
+            "median": 0.452,
+            "std": 0.3160318197762863
+          },
+          "description": "Aluminum relative elemental concentration in sediment samples."
+        },
+        "Ba": {
+          "column_name": "Ba",
+          "data_type": "float",
+          "sample_values": [
+            16.303,
+            15.996,
+            15.433,
+            15.662,
+            15.301,
+            15.118,
+            17.259,
+            15.404,
+            16.264
+          ],
+          "data_patterns": {
+            "99.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 15.118,
+            "max": 17.259,
+            "mean": 15.860000000000001,
+            "median": 15.662,
+            "std": 0.6733940154174226
+          },
+          "description": "Barium concentration in sediment samples, measured in parts per million."
+        },
+        "Ba e rel": {
+          "column_name": "Ba e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.299,
+            0.508,
+            2.464,
+            1.387,
+            1.397,
+            0.983,
+            0.445,
+            0.977,
+            0.579
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.299,
+            "max": 2.464,
+            "mean": 1.0043333333333333,
+            "median": 0.977,
+            "std": 0.6773158421297999
+          },
+          "description": "Barium element relative concentration in sediment samples, measured in arbitrary units."
+        },
+        "Ca2+": {
+          "column_name": "Ca2+",
+          "data_type": "float",
+          "sample_values": [
+            43.325,
+            43.325,
+            43.325,
+            43.325,
+            43.325,
+            43.325,
+            43.325,
+            43.325,
+            43.325
+          ],
+          "data_patterns": {
+            "99.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 43.325,
+            "max": 43.325,
+            "mean": 43.325,
+            "median": 43.325,
+            "std": 0.0
+          },
+          "description": "Calcium ion concentration in sediment samples, measured in parts per million."
+        },
+        "Cr": {
+          "column_name": "Cr",
+          "data_type": "float",
+          "sample_values": [
+            232.938,
+            236.15,
+            229.054,
+            236.733,
+            247.46,
+            223.827,
+            226.557,
+            236.172,
+            241.503
+          ],
+          "data_patterns": {
+            "999.999": 7,
+            "999.99": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 223.827,
+            "max": 247.46,
+            "mean": 234.4882222222222,
+            "median": 236.15,
+            "std": 7.387571248011383
+          },
+          "description": "Chromium concentration in sediment samples, measured in parts per million."
+        },
+        "Cr e rel": {
+          "column_name": "Cr e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.085,
+            0.623,
+            1.205,
+            4.79,
+            0.865,
+            0.465,
+            0.406,
+            2.267,
+            1.326
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.406,
+            "max": 4.79,
+            "mean": 1.448,
+            "median": 1.085,
+            "std": 1.3746815085684392
+          },
+          "description": "Chromium relative concentration in sediment samples, unitless ratio."
+        },
+        "Cu": {
+          "column_name": "Cu",
+          "data_type": "float",
+          "sample_values": [
+            1036.853,
+            915.239,
+            1040.065,
+            980.623,
+            979.42,
+            926.52,
+            956.391,
+            919.549,
+            939.114
+          ],
+          "data_patterns": {
+            "999.999": 5,
+            "999.99": 2,
+            "9999.999": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 915.239,
+            "max": 1040.065,
+            "mean": 965.9748888888888,
+            "median": 956.391,
+            "std": 47.44461176847285
+          },
+          "description": "Copper concentration in sediment samples, measured in micrograms per gram."
+        },
+        "Cu e rel": {
+          "column_name": "Cu e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.327,
+            0.595,
+            1.26,
+            4.871,
+            0.864,
+            0.538,
+            0.593,
+            1.414,
+            2.725
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.327,
+            "max": 4.871,
+            "mean": 1.4652222222222224,
+            "median": 0.864,
+            "std": 1.469094940582277
+          },
+          "description": "Copper relative elemental concentration in sediment samples, measured in parts per million."
+        },
+        "Fe": {
+          "column_name": "Fe",
+          "data_type": "float",
+          "sample_values": [
+            152.41,
+            156.072,
+            160.401,
+            149.582,
+            159.229,
+            156.426,
+            154.432,
+            160.003,
+            151.927
+          ],
+          "data_patterns": {
+            "999.999": 8,
+            "999.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 149.582,
+            "max": 160.401,
+            "mean": 155.60911111111113,
+            "median": 156.072,
+            "std": 3.836625159057259
+          },
+          "description": "Iron concentration in sediment samples, measured in parts per million."
+        },
+        "Fe e rel": {
+          "column_name": "Fe e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.412,
+            0.313,
+            0.473,
+            0.209,
+            0.15,
+            0.222,
+            0.028,
+            0.151,
+            1.738
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.028,
+            "max": 1.738,
+            "mean": 0.4106666666666666,
+            "median": 0.222,
+            "std": 0.5163951974989698
+          },
+          "description": "Relative iron content in sediment samples, measured as a proportion."
+        },
+        "K+": {
+          "column_name": "K+",
+          "data_type": "float",
+          "sample_values": [
+            88.982,
+            90.42,
+            85.49,
+            89.027,
+            87.467,
+            87.918,
+            83.784,
+            86.365,
+            85.911
+          ],
+          "data_patterns": {
+            "99.999": 7,
+            "99.99": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 83.784,
+            "max": 90.42,
+            "mean": 87.26266666666668,
+            "median": 87.467,
+            "std": 2.07319873625275
+          },
+          "description": "Potassium concentration in sediment samples, measured in parts per million (ppm)."
+        },
+        "K e rel": {
+          "column_name": "K e rel",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.049,
+            0.627,
+            0.179,
+            0.383,
+            0.547,
+            0.329,
+            0.389,
+            0.386,
+            0.673
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.049,
+            "max": 0.673,
+            "mean": 0.3957777777777778,
+            "median": 0.386,
+            "std": 0.20161707379198926
+          },
+          "description": "Relative potassium content probability score, ranging 0.049 to 0.673."
+        },
+        "La": {
+          "column_name": "La",
+          "data_type": "float",
+          "sample_values": [
+            173.359,
+            151.38,
+            160.983,
+            162.789,
+            149.285,
+            161.008,
+            152.141,
+            152.837,
+            150.658
+          ],
+          "data_patterns": {
+            "999.999": 8,
+            "999.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 149.285,
+            "max": 173.359,
+            "mean": 157.16,
+            "median": 152.837,
+            "std": 7.945866802935982
+          },
+          "description": "Lanthanum concentration in sediment samples, measured in parts per million."
+        },
+        "La e rel": {
+          "column_name": "La e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.835,
+            2.704,
+            0.539,
+            4.484,
+            1.368,
+            0.98,
+            0.327,
+            0.778,
+            0.367
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.327,
+            "max": 4.484,
+            "mean": 1.486888888888889,
+            "median": 0.98,
+            "std": 1.3627544206903572
+          },
+          "description": "La e rel: continuous numerical values, unit unspecified, sediment analysis metric."
+        },
+        "Li": {
+          "column_name": "Li",
+          "data_type": "float",
+          "sample_values": [
+            198.48,
+            182.367,
+            188.918,
+            199.018,
+            189.589,
+            186.32,
+            193.919,
+            188.068,
+            192.19
+          ],
+          "data_patterns": {
+            "999.999": 6,
+            "999.99": 3
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 182.367,
+            "max": 199.018,
+            "mean": 190.98544444444445,
+            "median": 189.589,
+            "std": 5.494620508076767
+          },
+          "description": "Lithium concentration in sediment samples, measured in parts per million."
+        },
+        "Li e rel": {
+          "column_name": "Li e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.931,
+            1.193,
+            0.668,
+            0.694,
+            0.22,
+            0.716,
+            1.122,
+            1.424,
+            0.166
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.166,
+            "max": 1.424,
+            "mean": 0.7926666666666667,
+            "median": 0.716,
+            "std": 0.4240073702189621
+          },
+          "description": "Lithium elemental concentration in sediment samples, measured in relative units."
+        },
+        "Mg2+": {
+          "column_name": "Mg2+",
+          "data_type": "float",
+          "sample_values": [
+            64.274,
+            61.718,
+            64.167,
+            62.332,
+            63.984,
+            67.22,
+            61.455,
+            63.865,
+            62.759
+          ],
+          "data_patterns": {
+            "99.999": 8,
+            "99.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 61.455,
+            "max": 67.22,
+            "mean": 63.53044444444444,
+            "median": 63.865,
+            "std": 1.7504413094353597
+          },
+          "description": "Magnesium ion concentration in sediment samples, measured in parts per million."
+        },
+        "Mg e rel": {
+          "column_name": "Mg e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.082,
+            4.915,
+            0.593,
+            1.012,
+            2.236,
+            0.762,
+            0.163,
+            0.781,
+            0.571
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.163,
+            "max": 4.915,
+            "mean": 1.346111111111111,
+            "median": 0.781,
+            "std": 1.4550995193151262
+          },
+          "description": "Magnesium relative elemental concentration in sediment samples, measured in percentage."
+        },
+        "Mn": {
+          "column_name": "Mn",
+          "data_type": "float",
+          "sample_values": [
+            6.847,
+            7.834,
+            12.635,
+            8.152,
+            6.46,
+            10.104,
+            5.958,
+            5.45,
+            8.769
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2,
+            "99.999": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 5.45,
+            "max": 12.635,
+            "mean": 8.023222222222223,
+            "median": 7.834,
+            "std": 2.2616498832587775
+          },
+          "description": "Manganese concentration in sediment samples, measured in parts per million."
+        },
+        "Mn e rel": {
+          "column_name": "Mn e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.267,
+            0.584,
+            1.105,
+            0.31,
+            0.205,
+            0.419,
+            0.444,
+            0.214,
+            0.5
+          ],
+          "data_patterns": {
+            "9.999": 7,
+            "9.9": 1,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.205,
+            "max": 1.105,
+            "mean": 0.4497777777777778,
+            "median": 0.419,
+            "std": 0.27822822366619177
+          },
+          "description": "Manganese relative elemental concentration in sediment samples, measured in percentage."
+        },
+        "Na+": {
+          "column_name": "Na+",
+          "data_type": "float",
+          "sample_values": [
+            108.28,
+            105.861,
+            106.854,
+            103.761,
+            107.13,
+            105.254,
+            109.593,
+            102.497,
+            104.446
+          ],
+          "data_patterns": {
+            "999.999": 7,
+            "999.99": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 102.497,
+            "max": 109.593,
+            "mean": 105.964,
+            "median": 105.861,
+            "std": 2.2465942001171473
+          },
+          "description": "Sodium concentration in sediment samples, measured in mg/L."
+        },
+        "Na e rel": {
+          "column_name": "Na e rel",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.525,
+            0.086,
+            0.567,
+            0.7,
+            0.423,
+            0.361,
+            0.505,
+            0.138,
+            0.61
+          ],
+          "data_patterns": {
+            "9.999": 7,
+            "9.99": 1,
+            "9.9": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.086,
+            "max": 0.7,
+            "mean": 0.43499999999999994,
+            "median": 0.505,
+            "std": 0.208237844783315
+          },
+          "description": "Sodium relative probability score, continuous, range 0.086 to 0.7."
+        },
+        "Ni": {
+          "column_name": "Ni",
+          "data_type": "float",
+          "sample_values": [
+            306.664,
+            390.573,
+            309.429,
+            457.308,
+            403.085,
+            408.519,
+            272.705,
+            346.065,
+            555.118
+          ],
+          "data_patterns": {
+            "999.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 272.705,
+            "max": 555.118,
+            "mean": 383.274,
+            "median": 390.573,
+            "std": 87.340314435832
+          },
+          "description": "Nickel concentration in sediment samples, measured in parts per million."
+        },
+        "Ni e rel": {
+          "column_name": "Ni e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.164,
+            0.674,
+            0.883,
+            0.833,
+            0.572,
+            0.864,
+            2.373,
+            4.533,
+            0.741
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.572,
+            "max": 4.533,
+            "mean": 1.404111111111111,
+            "median": 0.864,
+            "std": 1.2913644377599653
+          },
+          "description": "Nickel relative concentration in sediment samples, measured in parts per million."
+        },
+        "P": {
+          "column_name": "P",
+          "data_type": "float",
+          "sample_values": [
+            3.718,
+            3.701,
+            3.914,
+            3.95,
+            3.622,
+            4.239,
+            3.679,
+            3.937,
+            3.817
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 3.622,
+            "max": 4.239,
+            "mean": 3.8418888888888887,
+            "median": 3.817,
+            "std": 0.19181139463314248
+          },
+          "description": "pH measurement of sediment samples, ranging from 3.622 to 4.239."
+        },
+        "P e rel": {
+          "column_name": "P e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.667,
+            0.552,
+            0.891,
+            0.235,
+            2.412,
+            4.658,
+            1.101,
+            0.501,
+            0.952
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.235,
+            "max": 4.658,
+            "mean": 1.3298888888888891,
+            "median": 0.891,
+            "std": 1.3948778122513497
+          },
+          "description": "Relative percentage of sediment particles by size fraction."
+        },
+        "Sr": {
+          "column_name": "Sr",
+          "data_type": "float",
+          "sample_values": [
+            592.752,
+            575.682,
+            586.995,
+            603.157,
+            586.899,
+            587.639,
+            580.965,
+            606.17,
+            612.072
+          ],
+          "data_patterns": {
+            "999.999": 8,
+            "999.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 575.682,
+            "max": 612.072,
+            "mean": 592.4812222222222,
+            "median": 587.639,
+            "std": 12.169485196360782
+          },
+          "description": "Strontium concentration in parts per million (ppm) from sediment analysis."
+        },
+        "Sr e rel": {
+          "column_name": "Sr e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.061,
+            0.66,
+            0.227,
+            0.321,
+            0.117,
+            0.203,
+            1.588,
+            0.156,
+            0.18
+          ],
+          "data_patterns": {
+            "9.999": 7,
+            "9.99": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.061,
+            "max": 1.588,
+            "mean": 0.3903333333333333,
+            "median": 0.203,
+            "std": 0.4816674163777325
+          },
+          "description": "Strontium relative abundance in sediment samples, unitless ratio."
+        },
+        "Ti": {
+          "column_name": "Ti",
+          "data_type": "float",
+          "sample_values": [
+            12.757,
+            13.183,
+            12.86,
+            12.494,
+            12.871,
+            13.153,
+            13.108,
+            12.915,
+            12.826
+          ],
+          "data_patterns": {
+            "99.999": 8,
+            "99.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 12.494,
+            "max": 13.183,
+            "mean": 12.907444444444444,
+            "median": 12.871,
+            "std": 0.2180281582222302
+          },
+          "description": "Titanium concentration in sediment samples, measured in percentage."
+        },
+        "Ti e rel": {
+          "column_name": "Ti e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.628,
+            0.011,
+            0.222,
+            0.083,
+            1.503,
+            0.258,
+            0.292,
+            0.165,
+            0.344
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.011,
+            "max": 1.503,
+            "mean": 0.38955555555555554,
+            "median": 0.258,
+            "std": 0.452947875343044
+          },
+          "description": "Titanium element relative concentration in sediment samples, measured in percentage."
+        },
+        "Al_2": {
+          "column_name": "Al_2",
+          "data_type": "float",
+          "sample_values": [
+            6.807,
+            7.047,
+            7.011,
+            6.738,
+            6.912,
+            6.936,
+            6.888,
+            7.209,
+            7.267
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 6.738,
+            "max": 7.267,
+            "mean": 6.979444444444444,
+            "median": 6.936,
+            "std": 0.1745616732784655
+          },
+          "description": "Aluminum concentration in sediment samples, measured in percentage."
+        },
+        "Al e": {
+          "column_name": "Al e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.004,
+            0.02,
+            0.048,
+            0.002,
+            0.02,
+            0.028,
+            0.012,
+            0.026,
+            0.014
+          ],
+          "data_patterns": {
+            "9.999": 7,
+            "9.99": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.002,
+            "max": 0.048,
+            "mean": 0.01933333333333333,
+            "median": 0.02,
+            "std": 0.013964240043768941
+          },
+          "description": "Aluminum elemental concentration probability scores, ranging 0.002 to 0.048."
+        },
+        "Ba_2": {
+          "column_name": "Ba_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.439,
+            0.437,
+            0.461,
+            0.431,
+            0.437,
+            0.464,
+            0.488,
+            0.454,
+            0.425
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.425,
+            "max": 0.488,
+            "mean": 0.4484444444444445,
+            "median": 0.439,
+            "std": 0.02000069443238854
+          },
+          "description": "Barium probability scores ranging 0.425 to 0.488."
+        },
+        "Ba e": {
+          "column_name": "Ba e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Barium concentration in sediment samples, measured in parts per million."
+        },
+        "Cr_2": {
+          "column_name": "Cr_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.007,
+            0.007,
+            0.007,
+            0.006,
+            0.007,
+            0.007,
+            0.007,
+            0.007,
+            0.006
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.006,
+            "max": 0.007,
+            "mean": 0.006777777777777778,
+            "median": 0.007,
+            "std": 0.00044095855184409844
+          },
+          "description": "Chromium concentration probability scores, ranging 0.006 to 0.007."
+        },
+        "Cr e": {
+          "column_name": "Cr e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Chromium concentration in sediment samples, measured in parts per million."
+        },
+        "Cu_2": {
+          "column_name": "Cu_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.027,
+            0.026,
+            0.029,
+            0.028,
+            0.026,
+            0.026,
+            0.029,
+            0.027,
+            0.027
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 0.026,
+            "max": 0.029,
+            "mean": 0.02722222222222222,
+            "median": 0.027,
+            "std": 0.0012018504251546643
+          },
+          "description": "Copper concentration probability scores, ranging 0.026 to 0.029."
+        },
+        "Cu e": {
+          "column_name": "Cu e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Copper concentration in sediment samples, measured in parts per million."
+        },
+        "Fe_2": {
+          "column_name": "Fe_2",
+          "data_type": "float",
+          "sample_values": [
+            4.537,
+            4.324,
+            4.351,
+            4.429,
+            4.41,
+            4.276,
+            4.245,
+            4.463,
+            4.567
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 4.245,
+            "max": 4.567,
+            "mean": 4.400222222222222,
+            "median": 4.41,
+            "std": 0.11132472521611926
+          },
+          "description": "Iron concentration in sediment samples, measured in percentage."
+        },
+        "Fe e": {
+          "column_name": "Fe e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.007,
+            0.076,
+            0.021,
+            0.018,
+            0.007,
+            0.014,
+            0.009,
+            0.001,
+            0.01
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.001,
+            "max": 0.076,
+            "mean": 0.018111111111111113,
+            "median": 0.01,
+            "std": 0.02254132008359562
+          },
+          "description": "Iron element probability scores, ranging from 0.001 to 0.076."
+        },
+        "K": {
+          "column_name": "K",
+          "data_type": "float",
+          "sample_values": [
+            2.394,
+            2.431,
+            2.519,
+            2.497,
+            2.433,
+            2.535,
+            2.378,
+            2.54,
+            2.485
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 2.378,
+            "max": 2.54,
+            "mean": 2.4680000000000004,
+            "median": 2.485,
+            "std": 0.060800904598533725
+          },
+          "description": "Potassium concentration in sediment samples, measured in percentage."
+        },
+        "K e": {
+          "column_name": "K e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.002,
+            0.008,
+            0.027,
+            0.029,
+            0.014,
+            0.017,
+            0.017,
+            0.017,
+            0.024
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.002,
+            "max": 0.029,
+            "mean": 0.017222222222222226,
+            "median": 0.017,
+            "std": 0.008714610974934249
+          },
+          "description": "Probability score ranging from 0.002 to 0.029, mean 0.017."
+        },
+        "La_2": {
+          "column_name": "La_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.005,
+            0.005,
+            0.004,
+            0.005,
+            0.004,
+            0.004,
+            0.004,
+            0.005,
+            0.004
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.005,
+            "mean": 0.0044444444444444444,
+            "median": 0.004,
+            "std": 0.0005270462766947299
+          },
+          "description": "Lanthanum concentration probability scores, ranging 0.004 to 0.005."
+        },
+        "La e": {
+          "column_name": "La e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Lanthanum concentration in sediment samples, measured in parts per million."
+        },
+        "Li_2": {
+          "column_name": "Li_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.005,
+            0.006,
+            0.005,
+            0.006,
+            0.005,
+            0.005,
+            0.005,
+            0.005,
+            0.006
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.005,
+            "max": 0.006,
+            "mean": 0.005333333333333332,
+            "median": 0.005,
+            "std": 0.0005
+          },
+          "description": "Lithium probability score, ranging 0.005 to 0.006."
+        },
+        "Li e": {
+          "column_name": "Li e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Lithium concentration in sediment samples, measured in parts per million."
+        },
+        "Mg": {
+          "column_name": "Mg",
+          "data_type": "float",
+          "sample_values": [
+            1.819,
+            1.798,
+            1.754,
+            1.751,
+            1.807,
+            1.753,
+            1.757,
+            1.901,
+            1.822
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 1.751,
+            "max": 1.901,
+            "mean": 1.7957777777777777,
+            "median": 1.798,
+            "std": 0.04938820147003178
+          },
+          "description": "Magnesium concentration in sediment samples, measured in percentage."
+        },
+        "Mg e": {
+          "column_name": "Mg e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.034,
+            0.007,
+            0.215,
+            0.044,
+            0.047,
+            0.033,
+            0.025,
+            0.026,
+            0.098
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.007,
+            "max": 0.215,
+            "mean": 0.05877777777777778,
+            "median": 0.034,
+            "std": 0.06371376966123135
+          },
+          "description": "Magnesium elemental probability score, continuous, range 0.007 to 0.215."
+        },
+        "Mn_2": {
+          "column_name": "Mn_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.283,
+            0.181,
+            0.168,
+            0.156,
+            0.247,
+            0.193,
+            0.231,
+            0.224,
+            0.359
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.156,
+            "max": 0.359,
+            "mean": 0.22688888888888892,
+            "median": 0.224,
+            "std": 0.0640106327973026
+          },
+          "description": "Manganese probability score, continuous, range 0.156 to 0.359."
+        },
+        "Mn e": {
+          "column_name": "Mn e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.022,
+            0.009,
+            0.018,
+            0.019,
+            0.012,
+            0.025,
+            0.013,
+            0.009,
+            0.048
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.009,
+            "max": 0.048,
+            "mean": 0.019444444444444445,
+            "median": 0.018,
+            "std": 0.012094535037684491
+          },
+          "description": "Manganese elemental probability score, ranging 0.009 to 0.048."
+        },
+        "Na": {
+          "column_name": "Na",
+          "data_type": "float",
+          "sample_values": [
+            3.111,
+            3.031,
+            3.036,
+            2.958,
+            2.965,
+            2.963,
+            2.963,
+            2.897
+          ],
+          "data_patterns": {
+            "9.999": 8
+          },
+          "total_rows": 9,
+          "null_count": 1,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 2.897,
+            "max": 3.111,
+            "mean": 2.9905,
+            "median": 2.964,
+            "std": 0.06567452213105833
+          },
+          "description": "Sodium concentration in sediment samples, measured in unspecified units."
+        },
+        "Na e": {
+          "column_name": "Na e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.027,
+            0.03,
+            0.006,
+            0.004,
+            0.016,
+            0.025,
+            0.018,
+            0.023,
+            0.022
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.03,
+            "mean": 0.019,
+            "median": 0.022,
+            "std": 0.009013878188659973
+          },
+          "description": "Sodium concentration probability scores, ranging 0.004 to 0.03."
+        },
+        "Ni_2": {
+          "column_name": "Ni_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.013,
+            0.009,
+            0.016,
+            0.011,
+            0.011,
+            0.012,
+            0.01,
+            0.009,
+            0.008
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.008,
+            "max": 0.016,
+            "mean": 0.011,
+            "median": 0.011,
+            "std": 0.0024494897427831783
+          },
+          "description": "Nickel concentration probability scores, ranging 0.008 to 0.016."
+        },
+        "Ni e": {
+          "column_name": "Ni e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Nickel concentration in sediment samples, measured in parts per million (ppm)."
+        },
+        "P_2": {
+          "column_name": "P_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.104,
+            0.12,
+            0.105,
+            0.104,
+            0.109,
+            0.111,
+            0.11,
+            0.103,
+            0.112
+          ],
+          "data_patterns": {
+            "9.999": 7,
+            "9.99": 2
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.103,
+            "max": 0.12,
+            "mean": 0.10866666666666666,
+            "median": 0.109,
+            "std": 0.005431390245600109
+          },
+          "description": "Probability scores ranging from 0.103 to 0.12, mean 0.1087, median 0.109."
+        },
+        "P e": {
+          "column_name": "P e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.01,
+            0.024,
+            0.041,
+            0.203,
+            0.039,
+            0.105,
+            0.048,
+            0.029,
+            0.022
+          ],
+          "data_patterns": {
+            "9.999": 8,
+            "9.99": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.01,
+            "max": 0.203,
+            "mean": 0.05788888888888889,
+            "median": 0.039,
+            "std": 0.06080798558669011
+          },
+          "description": "Probability scores ranging from 0.01 to 0.203, mean 0.058."
+        },
+        "Sr_2": {
+          "column_name": "Sr_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.016,
+            0.017,
+            0.017,
+            0.016,
+            0.016,
+            0.017,
+            0.016,
+            0.017,
+            0.017
+          ],
+          "data_patterns": {
+            "9.999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.016,
+            "max": 0.017,
+            "mean": 0.01655555555555556,
+            "median": 0.017,
+            "std": 0.0005270462766947304
+          },
+          "description": "Strontium isotope ratio (Sr-87/Sr-86) probability scores, ranging 0.016 to 0.017."
+        },
+        "Sr e": {
+          "column_name": "Sr e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Strontium concentration in sediment samples, measured in parts per million."
+        },
+        "Ti_2": {
+          "column_name": "Ti_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.361,
+            0.372,
+            0.365,
+            0.36,
+            0.37,
+            0.361,
+            0.354,
+            0.36,
+            0.375
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 3
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.354,
+            "max": 0.375,
+            "mean": 0.36422222222222217,
+            "median": 0.361,
+            "std": 0.006815016100086964
+          },
+          "description": "Titanium probability score, continuous, range 0.354 to 0.375."
+        },
+        "Ti e": {
+          "column_name": "Ti e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.066,
+            0.0,
+            0.004,
+            0.013,
+            0.01,
+            0.027,
+            0.011,
+            0.015,
+            0.007
+          ],
+          "data_patterns": {
+            "9.999": 7,
+            "9.99": 1,
+            "9.9": 1
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.066,
+            "mean": 0.017,
+            "median": 0.011,
+            "std": 0.019887181801351343
+          },
+          "description": "Titanium elemental probability score in sediment samples, ranging 0.0 to 0.066."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "SO268/1_74-1",
+            "SO268/1_74-1",
+            "SO268/1_74-1",
+            "SO268/1_74-1",
+            "SO268/1_74-1",
+            "SO268/1_74-1",
+            "SO268/1_74-1",
+            "SO268/1_74-1",
+            "SO268/1_74-1"
+          ],
+          "data_patterns": {
+            "AA999/9_99-9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "SO268/1_74-1",
+                9
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Sediment analysis event identifier, consistently labeled SO268/174-1."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            14.13508333,
+            14.13508333,
+            14.13508333,
+            14.13508333,
+            14.13508333,
+            14.13508333,
+            14.13508333,
+            14.13508333,
+            14.13508333
+          ],
+          "data_patterns": {
+            "99.99999999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 14.13508333,
+            "max": 14.13508333,
+            "mean": 14.13508333,
+            "median": 14.13508333,
+            "std": 0.0
+          },
+          "description": "Geographic coordinate in decimal degrees, constant value of 14.13508333."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -125.86365,
+            -125.86365,
+            -125.86365,
+            -125.86365,
+            -125.86365,
+            -125.86365,
+            -125.86365,
+            -125.86365,
+            -125.86365
+          ],
+          "data_patterns": {
+            "-999.99999": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -125.86365,
+            "max": -125.86365,
+            "mean": -125.86365,
+            "median": -125.86365,
+            "std": 0.0
+          },
+          "description": "Longitude in decimal degrees, constant at -125.86365 for all records."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -4518.1,
+            -4518.1,
+            -4518.1,
+            -4518.1,
+            -4518.1,
+            -4518.1,
+            -4518.1,
+            -4518.1,
+            -4518.1
+          ],
+          "data_patterns": {
+            "-9999.9": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -4518.1,
+            "max": -4518.1,
+            "mean": -4518.1,
+            "median": -4518.1,
+            "std": 0.0
+          },
+          "description": "Elevation in meters, constant at -4518.1 across all sediment samples."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12",
+            "2019-03-20T02:30:12"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 9
+          },
+          "total_rows": 9,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2019-03-20T02:30:12",
+            "max_date": "2019-03-20T02:30:12"
+          },
+          "description": "Timestamp of sediment analysis recorded on 2019-03-20 02:30:12."
+        }
+      },
+      "time_period_covered": {
+        "start": "2019-03-20T02:30:12",
+        "end": "2019-03-20T02:30:12"
+      },
+      "sample_rows": [
+        {
+          "Station": "SO268_074MUC",
+          "Area": "Belgian collector trial pre-impact",
+          "Core": 18,
+          "Depth sed": 0.185,
+          "Al": 254.521,
+          "Al e rel": 1.098,
+          "Ba": 16.264,
+          "Ba e rel": 0.977,
+          "Ca2+": 43.325,
+          "Cr": 229.054,
+          "Cr e rel": 0.465,
+          "Cu": 926.52,
+          "Cu e rel": 0.593,
+          "Fe": 160.003,
+          "Fe e rel": 1.738,
+          "K+": 88.982,
+          "K e rel": 0.383,
+          "La": 160.983,
+          "La e rel": 0.367,
+          "Li": 193.919,
+          "Li e rel": 1.424,
+          "Mg2+": 63.865,
+          "Mg e rel": 0.571,
+          "Mn": 5.45,
+          "Mn e rel": 1.105,
+          "Na+": 106.854,
+          "Na e rel": 0.505,
+          "Ni": 272.705,
+          "Ni e rel": 0.674,
+          "P": 3.817,
+          "P e rel": 0.667,
+          "Sr": 606.17,
+          "Sr e rel": 1.588,
+          "Ti": 13.153,
+          "Ti e rel": 1.503,
+          "Al_2": 7.267,
+          "Al e": 0.048,
+          "Ba_2": 0.464,
+          "Ba e": 0,
+          "Cr_2": 0.007,
+          "Cr e": 0,
+          "Cu_2": 0.026,
+          "Cu e": 0,
+          "Fe_2": 4.567,
+          "Fe e": 0.076,
+          "K": 2.54,
+          "K e": 0.017,
+          "La_2": 0.005,
+          "La e": 0,
+          "Li_2": 0.006,
+          "Li e": 0,
+          "Mg": 1.822,
+          "Mg e": 0.025,
+          "Mn_2": 0.156,
+          "Mn e": 0.048,
+          "Na": null,
+          "Na e": 0.022,
+          "Ni_2": 0.008,
+          "Ni e": 0,
+          "P_2": 0.109,
+          "P e": 0.029,
+          "Sr_2": 0.017,
+          "Sr e": 0,
+          "Ti_2": 0.375,
+          "Ti e": 0.066,
+          "Event": "SO268/1_74-1",
+          "Latitude": 14.13508333,
+          "Longitude": -125.86365,
+          "Elevation": -4518.1,
+          "Date/Time": "2019-03-20T02:30:12"
+        },
+        {
+          "Station": "SO268_074MUC",
+          "Area": "Belgian collector trial pre-impact",
+          "Core": 18,
+          "Depth sed": 0.0725,
+          "Al": 246.787,
+          "Al e rel": 0.093,
+          "Ba": 15.404,
+          "Ba e rel": 0.579,
+          "Ca2+": 43.325,
+          "Cr": 232.938,
+          "Cr e rel": 1.085,
+          "Cu": 956.391,
+          "Cu e rel": 1.26,
+          "Fe": 154.432,
+          "Fe e rel": 0.209,
+          "K+": 85.49,
+          "K e rel": 0.179,
+          "La": 152.141,
+          "La e rel": 1.835,
+          "Li": 186.32,
+          "Li e rel": 0.22,
+          "Mg2+": 62.759,
+          "Mg e rel": 1.012,
+          "Mn": 10.104,
+          "Mn e rel": 0.205,
+          "Na+": 105.861,
+          "Na e rel": 0.086,
+          "Ni": 457.308,
+          "Ni e rel": 0.833,
+          "P": 3.701,
+          "P e rel": 0.952,
+          "Sr": 586.899,
+          "Sr e rel": 0.156,
+          "Ti": 12.915,
+          "Ti e rel": 0.222,
+          "Al_2": 6.912,
+          "Al e": 0.004,
+          "Ba_2": 0.431,
+          "Ba e": 0,
+          "Cr_2": 0.007,
+          "Cr e": 0,
+          "Cu_2": 0.027,
+          "Cu e": 0,
+          "Fe_2": 4.324,
+          "Fe e": 0.009,
+          "K": 2.394,
+          "K e": 0.008,
+          "La_2": 0.004,
+          "La e": 0,
+          "Li_2": 0.005,
+          "Li e": 0,
+          "Mg": 1.757,
+          "Mg e": 0.044,
+          "Mn_2": 0.283,
+          "Mn e": 0.009,
+          "Na": 2.965,
+          "Na e": 0.004,
+          "Ni_2": 0.013,
+          "Ni e": 0,
+          "P_2": 0.104,
+          "P e": 0.041,
+          "Sr_2": 0.016,
+          "Sr e": 0,
+          "Ti_2": 0.361,
+          "Ti e": 0.01,
+          "Event": "SO268/1_74-1",
+          "Latitude": 14.13508333,
+          "Longitude": -125.86365,
+          "Elevation": -4518.1,
+          "Date/Time": "2019-03-20T02:30:12"
+        },
+        {
+          "Station": "SO268_074MUC",
+          "Area": "Belgian collector trial pre-impact",
+          "Core": 18,
+          "Depth sed": 0.125,
+          "Al": 245.708,
+          "Al e rel": 0.463,
+          "Ba": 15.662,
+          "Ba e rel": 1.387,
+          "Ca2+": 43.325,
+          "Cr": 236.733,
+          "Cr e rel": 0.406,
+          "Cu": 979.42,
+          "Cu e rel": 0.595,
+          "Fe": 159.229,
+          "Fe e rel": 0.412,
+          "K+": 90.42,
+          "K e rel": 0.547,
+          "La": 161.008,
+          "La e rel": 0.539,
+          "Li": 199.018,
+          "Li e rel": 0.694,
+          "Mg2+": 64.167,
+          "Mg e rel": 0.781,
+          "Mn": 6.46,
+          "Mn e rel": 0.584,
+          "Na+": 108.28,
+          "Na e rel": 0.567,
+          "Ni": 346.065,
+          "Ni e rel": 1.164,
+          "P": 3.937,
+          "P e rel": 1.101,
+          "Sr": 587.639,
+          "Sr e rel": 0.66,
+          "Ti": 12.871,
+          "Ti e rel": 0.628,
+          "Al_2": 6.888,
+          "Al e": 0.02,
+          "Ba_2": 0.439,
+          "Ba e": 0,
+          "Cr_2": 0.007,
+          "Cr e": 0,
+          "Cu_2": 0.027,
+          "Cu e": 0,
+          "Fe_2": 4.463,
+          "Fe e": 0.018,
+          "K": 2.535,
+          "K e": 0.024,
+          "La_2": 0.005,
+          "La e": 0,
+          "Li_2": 0.006,
+          "Li e": 0,
+          "Mg": 1.798,
+          "Mg e": 0.034,
+          "Mn_2": 0.181,
+          "Mn e": 0.025,
+          "Na": 3.036,
+          "Na e": 0.025,
+          "Ni_2": 0.01,
+          "Ni e": 0,
+          "P_2": 0.11,
+          "P e": 0.048,
+          "Sr_2": 0.016,
+          "Sr e": 0,
+          "Ti_2": 0.36,
+          "Ti e": 0.027,
+          "Event": "SO268/1_74-1",
+          "Latitude": 14.13508333,
+          "Longitude": -125.86365,
+          "Elevation": -4518.1,
+          "Date/Time": "2019-03-20T02:30:12"
+        }
+      ],
+      "description": "Earth/environmental science data from 2019-03-20, 9 rows, 50 columns, sediment analysis.",
+      "is_row_capped": false,
+      "rows_processed": 9,
+      "total_rows_in_file": 9
+    }
+  },
+  "time_period_covered": {
+    "start": "2019-03-20T02:30:12",
+    "end": "2019-03-20T02:30:12"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Single-table dataset with 9 rows, covering Earth/environmental science on 2019-03-20."
+}

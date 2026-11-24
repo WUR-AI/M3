@@ -1,0 +1,952 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "cybench_IE",
+  "description": "Cybench Ireland maize benchmark: crop calendar, crop mask, fAPAR, location, meteorology, NDVI, soil, soil moisture, and yield tables.",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Dataset Creator",
+    "email": "creator@example.com"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_0",
+      "name": "meteo_maize_IE.csv",
+      "contentSize": "1865431",
+      "contentUrl": "meteo_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "791e1b0651f41c168cb4d6bc96bcb10559552d1eed7da28fc371eee2bd99f155"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_1",
+      "name": "yield_maize_IE.csv",
+      "contentSize": "2026",
+      "contentUrl": "yield_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "9718e7251adfc921792a7824bf2b639752ac8b099c10932d26f35523d0b20e36"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_2",
+      "name": "ndvi_maize_IE.csv",
+      "contentSize": "80115",
+      "contentUrl": "ndvi_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "6e1aa067200fc93959900ebf276f7592fe86dba5533d07e08211213ea645f6cc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_3",
+      "name": "crop_calendar_maize_IE.csv",
+      "contentSize": "106",
+      "contentUrl": "crop_calendar_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "452b3cd33dee535b1a7ca647221edbcbda05dc598d3dfa222087365c64bf3601"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_4",
+      "name": "fpar_maize_IE.csv",
+      "contentSize": "66811",
+      "contentUrl": "fpar_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "c1977b0789a06c54035da6510f6a0d1c4cf16db03022fca0a6a9b8642222ba8d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_5",
+      "name": "crop_mask_maize_IE.csv",
+      "contentSize": "113",
+      "contentUrl": "crop_mask_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "80abb6335caec798edeac17eb99027a696f06f4a23403a40a739b475c0e7e0f2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_6",
+      "name": "soil_maize_IE.csv",
+      "contentSize": "127",
+      "contentUrl": "soil_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "f99ff7378e6ca60bfaa962a83cded6a5ec5b1b5be9bf41c94406f5cefb3cad50"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_7",
+      "name": "location_maize_IE.csv",
+      "contentSize": "152",
+      "contentUrl": "location_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "4b187b7b5152dd86c76b35f2353d1cf3b7af6635e421d61c33f9fc962a247367"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file_8",
+      "name": "soil_moisture_maize_IE.csv",
+      "contentSize": "774063",
+      "contentUrl": "soil_moisture_maize_IE.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "b3311b91d1471982bec8452a11362dfe06a3895e19fb3cdf2ba8d45d349f3995"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "meteo_maize_IE",
+      "name": "meteo_maize_IE",
+      "description": "Records from meteo_maize_IE.csv (25200 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from meteo_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from meteo_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/date",
+          "name": "date",
+          "description": "Column 'date' from meteo_maize_IE.csv",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/tmin",
+          "name": "tmin",
+          "description": "Column 'tmin' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "tmin"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/tmax",
+          "name": "tmax",
+          "description": "Column 'tmax' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "tmax"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/prec",
+          "name": "prec",
+          "description": "Column 'prec' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "prec"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/rad",
+          "name": "rad",
+          "description": "Column 'rad' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "rad"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/tavg",
+          "name": "tavg",
+          "description": "Column 'tavg' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "tavg"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/et0",
+          "name": "et0",
+          "description": "Column 'et0' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "et0"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/vpd",
+          "name": "vpd",
+          "description": "Column 'vpd' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "vpd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "meteo_maize_IE/cwb",
+          "name": "cwb",
+          "description": "Column 'cwb' from meteo_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_0"
+            },
+            "extract": {
+              "column": "cwb"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "yield_maize_IE",
+      "name": "yield_maize_IE",
+      "description": "Records from yield_maize_IE.csv (63 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "yield_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from yield_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "yield_maize_IE/country_code",
+          "name": "country_code",
+          "description": "Column 'country_code' from yield_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "country_code"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "yield_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from yield_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "yield_maize_IE/harvest_year",
+          "name": "harvest_year",
+          "description": "Column 'harvest_year' from yield_maize_IE.csv",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "harvest_year"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "yield_maize_IE/yield",
+          "name": "yield",
+          "description": "Column 'yield' from yield_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "yield"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "yield_maize_IE/harvest_area",
+          "name": "harvest_area",
+          "description": "Column 'harvest_area' from yield_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "harvest_area"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "yield_maize_IE/production",
+          "name": "production",
+          "description": "Column 'production' from yield_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_1"
+            },
+            "extract": {
+              "column": "production"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "ndvi_maize_IE",
+      "name": "ndvi_maize_IE",
+      "description": "Records from ndvi_maize_IE.csv (3094 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "ndvi_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from ndvi_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_2"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "ndvi_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from ndvi_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_2"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "ndvi_maize_IE/date",
+          "name": "date",
+          "description": "Column 'date' from ndvi_maize_IE.csv",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "file_2"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "ndvi_maize_IE/ndvi",
+          "name": "ndvi",
+          "description": "Column 'ndvi' from ndvi_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_2"
+            },
+            "extract": {
+              "column": "ndvi"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "crop_calendar_maize_IE",
+      "name": "crop_calendar_maize_IE",
+      "description": "Records from crop_calendar_maize_IE.csv (3 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "crop_calendar_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from crop_calendar_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_3"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "crop_calendar_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from crop_calendar_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_3"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "crop_calendar_maize_IE/sos",
+          "name": "sos",
+          "description": "Column 'sos' from crop_calendar_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_3"
+            },
+            "extract": {
+              "column": "sos"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "crop_calendar_maize_IE/eos",
+          "name": "eos",
+          "description": "Column 'eos' from crop_calendar_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_3"
+            },
+            "extract": {
+              "column": "eos"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "fpar_maize_IE",
+      "name": "fpar_maize_IE",
+      "description": "Records from fpar_maize_IE.csv (2484 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "fpar_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from fpar_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_4"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fpar_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from fpar_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_4"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fpar_maize_IE/date",
+          "name": "date",
+          "description": "Column 'date' from fpar_maize_IE.csv",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "file_4"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fpar_maize_IE/fpar",
+          "name": "fpar",
+          "description": "Column 'fpar' from fpar_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_4"
+            },
+            "extract": {
+              "column": "fpar"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "crop_mask_maize_IE",
+      "name": "crop_mask_maize_IE",
+      "description": "Records from crop_mask_maize_IE.csv (3 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "crop_mask_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from crop_mask_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_5"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "crop_mask_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from crop_mask_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_5"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "crop_mask_maize_IE/crop_area",
+          "name": "crop_area",
+          "description": "Column 'crop_area' from crop_mask_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_5"
+            },
+            "extract": {
+              "column": "crop_area"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "crop_mask_maize_IE/crop_area_percentage",
+          "name": "crop_area_percentage",
+          "description": "Column 'crop_area_percentage' from crop_mask_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_5"
+            },
+            "extract": {
+              "column": "crop_area_percentage"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "soil_maize_IE",
+      "name": "soil_maize_IE",
+      "description": "Records from soil_maize_IE.csv (3 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "soil_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from soil_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from soil_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_maize_IE/awc",
+          "name": "awc",
+          "description": "Column 'awc' from soil_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "awc"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_maize_IE/bulk_density",
+          "name": "bulk_density",
+          "description": "Column 'bulk_density' from soil_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "bulk_density"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_maize_IE/drainage_class",
+          "name": "drainage_class",
+          "description": "Column 'drainage_class' from soil_maize_IE.csv",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "file_6"
+            },
+            "extract": {
+              "column": "drainage_class"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "location_maize_IE",
+      "name": "location_maize_IE",
+      "description": "Records from location_maize_IE.csv (3 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "location_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from location_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_7"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "location_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from location_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_7"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "location_maize_IE/latitude",
+          "name": "latitude",
+          "description": "Column 'latitude' from location_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_7"
+            },
+            "extract": {
+              "column": "latitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "location_maize_IE/longitude",
+          "name": "longitude",
+          "description": "Column 'longitude' from location_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_7"
+            },
+            "extract": {
+              "column": "longitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "location_maize_IE/region_area",
+          "name": "region_area",
+          "description": "Column 'region_area' from location_maize_IE.csv",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "file_7"
+            },
+            "extract": {
+              "column": "region_area"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "soil_moisture_maize_IE",
+      "name": "soil_moisture_maize_IE",
+      "description": "Records from soil_moisture_maize_IE.csv (22914 rows)",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "soil_moisture_maize_IE/crop_name",
+          "name": "crop_name",
+          "description": "Column 'crop_name' from soil_moisture_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "crop_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_moisture_maize_IE/adm_id",
+          "name": "adm_id",
+          "description": "Column 'adm_id' from soil_moisture_maize_IE.csv",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "adm_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_moisture_maize_IE/date",
+          "name": "date",
+          "description": "Column 'date' from soil_moisture_maize_IE.csv",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_moisture_maize_IE/ssm",
+          "name": "ssm",
+          "description": "Column 'ssm' from soil_moisture_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "ssm"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "soil_moisture_maize_IE/rsm",
+          "name": "rsm",
+          "description": "Column 'rsm' from soil_moisture_maize_IE.csv",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "file_8"
+            },
+            "extract": {
+              "column": "rsm"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

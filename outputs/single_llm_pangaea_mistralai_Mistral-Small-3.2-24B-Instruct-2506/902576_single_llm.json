@@ -1,0 +1,35 @@
+{
+  "csv": "902576.csv",
+  "dataset_id": "902576",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b06c3394469ddd9b33f1f543a33543a85632b83506b0cb72086d0f8e099211ea",
+  "contract_sha256": "f405174a498a800ead7d275a1325ced94d762743f217962d72b623049d2acf44",
+  "prompt_tokens": 885,
+  "metadata": {
+    "name": "Permafrost Extent and Ground Temperature",
+    "description": "This dataset contains mean annual ground temperature (MAGT), MAGT standard deviation (MAGTSTD), and permafrost probability fraction (PERPROB) data for Antarctica from 2000 to 2017.",
+    "keywords": [
+      "Permafrost",
+      "Ground Temperature",
+      "Antarctica",
+      "MAGT",
+      "MAGTSTD",
+      "PERPROB"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2000-01-01",
+      "to": "2017-12-31"
+    },
+    "spatial": "0.005 degree",
+    "temporal": "yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.729,
+  "status": "ok"
+}

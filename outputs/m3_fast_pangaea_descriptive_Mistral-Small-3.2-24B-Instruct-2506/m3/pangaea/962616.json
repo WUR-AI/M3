@@ -1,0 +1,33 @@
+{
+  "dataset_id": "962616",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/962616.csv",
+  "source_sha256": "53878bd4aff9f3cab58fba0c5229d29a9b6de5e5bd93a55093c97e80fb7cd00e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T15:19:42.356207+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Cape Blossom Project Data 2021",
+    "description": "Dataset containing information about the Cape Blossom project, including content type, binary files, event details, geographical coordinates, and timestamps from a single data collection point on June 25, 2021.",
+    "keywords": [
+      "Cape Blossom",
+      "Project Data",
+      "Geographical Coordinates",
+      "Binary Files",
+      "Event Details",
+      "2021",
+      "Latitude",
+      "Longitude",
+      "Date/Time",
+      "Permafrost",
+      "Alaska"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/962616_2c9f6447d1bc44399c2cb9b43a8688ca.jsonl",
+  "runtime_seconds": 413.24
+}

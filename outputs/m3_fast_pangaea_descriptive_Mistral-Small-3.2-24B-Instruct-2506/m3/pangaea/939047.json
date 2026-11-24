@@ -1,0 +1,29 @@
+{
+  "dataset_id": "939047",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/939047.csv",
+  "source_sha256": "5b90ade135286bbd4e3faecda84f9f5bedba033ad13f9eb079cc10bf010109b3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T12:53:48.821632+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Isotopic Composition and Water Vapor Mixing Ratios in Antarctica",
+    "description": "This dataset contains measurements of isotopic composition (δ18O H2O, δD H2O vapour) and water vapor mixing ratios at a specific location in Antarctica. The data includes observations from February 2017 to January 2019, with measurements taken at various heights and events. Each record includes the date, time, height, water vapor mix ratio, its error, number of observations, isotopic ratios, their standard deviations, and location coordinates.",
+    "keywords": [
+      "Antarctica",
+      "isotopic composition",
+      "water vapor",
+      "δ18O",
+      "δD",
+      "meteorological measurements",
+      "2017-2019"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/939047_b4089cfebb6845539db9cbfaf1057d25.jsonl",
+  "runtime_seconds": 762.18
+}

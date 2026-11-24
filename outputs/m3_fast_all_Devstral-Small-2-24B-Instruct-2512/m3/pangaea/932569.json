@@ -1,0 +1,41 @@
+{
+  "dataset_id": "932569",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/932569.csv",
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T22:02:07.643211+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Aerosol Chemical Composition Dataset",
+    "description": "This dataset contains chemical composition data of aerosols collected during the PS106/1-track event. It includes measurements of various ions such as Cl-, [NO3]-, [SO4]2-, and others, along with spatial and temporal information for each sample.",
+    "keywords": [
+      "aerosol",
+      "chemical composition",
+      "ions",
+      "latitude",
+      "longitude",
+      "temporal",
+      "spatial"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.420486,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24T20:50:00+00:00",
+      "to": "2017-07-16T10:35:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/932569_a89e54e20aa3407bafcfd03793629018.jsonl",
+  "runtime_seconds": 316.01
+}

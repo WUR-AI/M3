@@ -1,0 +1,39 @@
+{
+  "csv": "990159.csv",
+  "dataset_id": "990159",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5007b7d93b30afc7d7831d726516842ce7d797b656068ef61a8267a80e9e4aeb",
+  "contract_sha256": "2e308d43e091275556960219a995ed71f983cc8cac78c2b953e1e6bd69947c23",
+  "prompt_tokens": 2379,
+  "metadata": {
+    "name": "990159",
+    "description": "This dataset contains sediment depth profiles with measurements of 210Pb (lead-210) and its supported and unsupported fractions. The data includes latitude, longitude, elevation, and date/time information for a single location.",
+    "keywords": [
+      "sediment",
+      "210Pb",
+      "lead-210",
+      "depth profile",
+      "radiometric dating"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 8.868,
+  "status": "ok"
+}

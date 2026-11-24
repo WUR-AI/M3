@@ -1,0 +1,119 @@
+{
+  "csv": "961119.csv",
+  "dataset_id": "961119",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4411,
+  "metadata": {
+    "name": "Baltic Sea pCO2 climatology and trend",
+    "description": "Dataset containing Baltic Sea partial pressure of CO2 (pCO2) data, including a climatology and a long-term trend analysis.",
+    "keywords": [
+      "Baltic Sea",
+      "pCO2",
+      "partial pressure of CO2",
+      "climatology",
+      "trend",
+      "ocean acidification"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "961119"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "961119",
+        "resource": "Baltic_Sea_pCO2_climato",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "961119"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "961119",
+        "resource": "961119",
+        "field": "Description",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 17.46,
+  "status": "ok"
+}

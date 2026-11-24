@@ -1,0 +1,92 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 8515,
+  "metadata": {
+    "name": "Belgian collector trial pre‑impact core geochemistry",
+    "description": "Geochemical measurements of sediment core samples from the Belgian collector trial (pre‑impact) including element concentrations, depth, latitude/longitude, elevation and a timestamp for each observation.",
+    "keywords": [
+      "geochemistry",
+      "sediment core",
+      "Belgian collector",
+      "element concentrations",
+      "latitude",
+      "longitude",
+      "environmental data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20T02:30:12+00:00",
+      "to": "2019-03-20T02:30:12+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single observation"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "944039"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "n": 5
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "944039"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "944039"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 14.556,
+  "status": "ok"
+}

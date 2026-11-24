@@ -1,0 +1,66 @@
+{
+  "csv": "lactuca_viminea.csv",
+  "dataset_id": "lactuca_viminea",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d08b817053f69667f465199f2fecb8c501dc2d0a3be8b947c93640cd49cafcb3",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 3338,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.606585,
+      "min_lon": -17.907803,
+      "max_lat": 50.041159,
+      "max_lon": 47.839824
+    },
+    "temporalCoverage": {
+      "from": "2001-08-02",
+      "to": "2026-06-07"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "lactuca_viminea"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "lactuca_viminea",
+        "resource": "lactuca_viminea",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 10.022,
+  "status": "ok"
+}

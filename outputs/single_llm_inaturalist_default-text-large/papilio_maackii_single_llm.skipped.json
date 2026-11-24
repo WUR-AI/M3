@@ -1,0 +1,15 @@
+{
+  "csv": "papilio_maackii.csv",
+  "dataset_id": "papilio_maackii",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "913ce2acd52a01ad7be320c3e06714cadb9f7fe6d4f18198063deab5af02be86",
+  "contract_sha256": "324c476f98993c3a8e92902ae316f18e3288bd7391d7dc331cd7efd32c66b0a0",
+  "prompt_tokens": 322401,
+  "status": "skipped",
+  "reason": "context_window"
+}

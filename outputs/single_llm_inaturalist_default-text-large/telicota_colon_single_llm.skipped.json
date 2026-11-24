@@ -1,0 +1,15 @@
+{
+  "csv": "telicota_colon.csv",
+  "dataset_id": "telicota_colon",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ba587820d0cf514ed0fc43ee044af233c19801ed232a29235d7d1c5a97467c2d",
+  "contract_sha256": "522d4129e08cc6c90ab808bf59b69fabb74b2d893f8566878871f743e4c49445",
+  "prompt_tokens": 304569,
+  "status": "skipped",
+  "reason": "context_window"
+}

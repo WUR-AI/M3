@@ -1,0 +1,83 @@
+{
+  "csv": "916167.csv",
+  "dataset_id": "916167",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 2197,
+  "metadata": {
+    "name": "ECdata_LE_tk31",
+    "description": "Dataset containing file information, event details, and geographic coordinates for the Katharinentalerhof_Pforzheim event.",
+    "keywords": [
+      "ECdata",
+      "Katharinentalerhof_Pforzheim",
+      "geographic coordinates",
+      "file metadata"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01",
+      "to": "1970-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "916167"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "916167",
+        "resource": "916167",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 11.974,
+  "status": "ok"
+}

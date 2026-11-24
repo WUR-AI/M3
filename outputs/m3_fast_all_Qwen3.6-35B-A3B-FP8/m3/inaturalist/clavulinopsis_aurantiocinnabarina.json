@@ -1,0 +1,28 @@
+{
+  "dataset_id": "clavulinopsis_aurantiocinnabarina",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/clavulinopsis_aurantiocinnabarina.csv",
+  "source_sha256": "dc0948be4539ff05293c804aa97d27394d988b323ed356596cb9c6a18cfd1f51",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:22:31.235313+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 3.484675,
+      "min_lon": -122.379326,
+      "max_lat": 50.676255,
+      "max_lon": 114.389815
+    },
+    "temporalCoverage": {
+      "from": "2004-08-14T00:00:00+00:00",
+      "to": "2026-06-11T13:33:58+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/clavulinopsis_aurantiocinnabarina_ccb08c6bb4424abfb94a2b0a53ebc751.jsonl",
+  "runtime_seconds": 46.69
+}

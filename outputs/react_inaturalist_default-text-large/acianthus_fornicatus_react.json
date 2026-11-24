@@ -1,0 +1,71 @@
+{
+  "csv": "acianthus_fornicatus.csv",
+  "dataset_id": "acianthus_fornicatus",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6237171c3f3b863dce2c40040e6ab2f500a886a241851de3dbed2e96e4268374",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3325,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -37.349986,
+      "min_lon": 145.459858,
+      "max_lat": -17.177542,
+      "max_lon": 153.748307
+    },
+    "temporalCoverage": {
+      "from": "1994-07-03T15:36:00+00:00",
+      "to": "2026-06-15T14:39:53+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "acianthus_fornicatus"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "acianthus_fornicatus",
+        "resource": "acianthus_fornicatus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "acianthus_fornicatus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "acianthus_fornicatus",
+        "resource": "acianthus_fornicatus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "acianthus_fornicatus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "acianthus_fornicatus",
+        "resource": "acianthus_fornicatus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.915,
+  "status": "ok"
+}

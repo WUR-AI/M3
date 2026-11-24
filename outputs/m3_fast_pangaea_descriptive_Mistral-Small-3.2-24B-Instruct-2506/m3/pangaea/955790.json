@@ -1,0 +1,33 @@
+{
+  "dataset_id": "955790",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/955790.csv",
+  "source_sha256": "32ff85ba761f2a60c1fca4b652694970cb3bcf7223b0d2f265d2c0637be78677",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T13:56:00.420071+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Manganese Nodule Chemical Composition and Location Data",
+    "description": "Dataset containing chemical composition and geographic location data for manganese nodules collected during various events in the Pacific Ocean from September 1970.",
+    "keywords": [
+      "Manganese nodules",
+      "Chemical composition",
+      "Pacific Ocean",
+      "Geographic coordinates",
+      "Marine geology",
+      "1970",
+      "Mn",
+      "Fe",
+      "Ni",
+      "Co",
+      "Cu"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/955790_fa63f582c9a44ce6a439e3b9ce1145ce.jsonl",
+  "runtime_seconds": 464.63
+}

@@ -1,0 +1,118 @@
+{
+  "csv": "973041.csv",
+  "dataset_id": "973041",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 14028,
+  "metadata": {
+    "name": "Radiocarbon dating from archaeological sites in Borneo",
+    "description": "Dataset containing radiocarbon ages from 42 archaeological sites across Borneo, including sites in Sabah and Sarawak (Malaysia) and Kalimantan provinces (Indonesia). The data includes uncalibrated and calibrated radiocarbon ages with standard deviations, lab labels, and references to published studies.",
+    "keywords": [
+      "radiocarbon",
+      "archaeology",
+      "Borneo",
+      "Sabah",
+      "Sarawak",
+      "Kalimantan",
+      "dating",
+      "chronology"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "point"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973041"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "n": 10
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Site",
+        "limit": 50
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Country",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "field": "Province",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041"
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "973041"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "973041",
+        "resource": "973041",
+        "n": 5
+      }
+    }
+  ],
+  "runtime_seconds": 49.99,
+  "status": "ok"
+}

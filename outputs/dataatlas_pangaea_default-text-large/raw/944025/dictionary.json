@@ -1,0 +1,3465 @@
+{
+  "dataset_name": "944025",
+  "list_of_tables": [
+    "944025"
+  ],
+  "tables": {
+    "944025": {
+      "table_name": "944025",
+      "row_count": 7,
+      "number_of_columns": 105,
+      "list_of_columns": [
+        "Station",
+        "Area",
+        "Core",
+        "Depth sed",
+        "Al",
+        "Al e rel",
+        "Ba",
+        "Ba e rel",
+        "Ca2+",
+        "Ca e rel",
+        "Cr",
+        "Cr e rel",
+        "Cu",
+        "Cu e rel",
+        "Fe",
+        "Fe e rel",
+        "K+",
+        "K e rel",
+        "La",
+        "La e rel",
+        "Li",
+        "Li e rel",
+        "Mg2+",
+        "Mg e rel",
+        "Mn",
+        "Mn e rel",
+        "Na+",
+        "Na e rel",
+        "Ni",
+        "Ni e rel",
+        "P",
+        "P e rel",
+        "Sr",
+        "Sr e rel",
+        "Ti",
+        "Ti e rel",
+        "Al_2",
+        "Al e",
+        "Ba_2",
+        "Ba e",
+        "Ca",
+        "Ca e",
+        "Cr_2",
+        "Cr e",
+        "Cu_2",
+        "Cu e",
+        "Fe_2",
+        "Fe e",
+        "K",
+        "K e",
+        "La_2",
+        "La e",
+        "Li_2",
+        "Li e",
+        "Mg",
+        "Mg e",
+        "Mn_2",
+        "Mn e",
+        "Na",
+        "Na e",
+        "Ni_2",
+        "Ni e",
+        "P_2",
+        "P e",
+        "Sr_2",
+        "Sr e",
+        "Ti_2",
+        "Ti e",
+        "Al_3",
+        "Al e_2",
+        "Ba_3",
+        "Ba e_2",
+        "Ca_2",
+        "Ca e_2",
+        "Cr_3",
+        "Cr e_2",
+        "Cu_3",
+        "Cu e_2",
+        "Fe_3",
+        "Fe e_2",
+        "K_2",
+        "K e_2",
+        "La_3",
+        "La e_2",
+        "Li_3",
+        "Li e_2",
+        "Mg_2",
+        "Mg e_2",
+        "Mn_3",
+        "Mn e_2",
+        "Na_2",
+        "Na e_2",
+        "Ni_3",
+        "Ni e_2",
+        "P_3",
+        "P e_2",
+        "Sr_3",
+        "Sr e_2",
+        "Ti_3",
+        "Ti e_2",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Station": {
+          "column_name": "Station",
+          "data_type": "string",
+          "sample_values": [
+            "SO268_043MUC",
+            "SO268_043MUC",
+            "SO268_043MUC",
+            "SO268_043MUC",
+            "SO268_043MUC",
+            "SO268_043MUC",
+            "SO268_043MUC"
+          ],
+          "data_patterns": {
+            "AA999_999AAA": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "SO268_043MUC",
+                7
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Station identifier for all samples, consistently SO268043MUC."
+        },
+        "Area": {
+          "column_name": "Area",
+          "data_type": "string",
+          "sample_values": [
+            "German collector trial pre-impact",
+            "German collector trial pre-impact",
+            "German collector trial pre-impact",
+            "German collector trial pre-impact",
+            "German collector trial pre-impact",
+            "German collector trial pre-impact",
+            "German collector trial pre-impact"
+          ],
+          "data_patterns": {
+            "Aaaaaa aaaaaaaaa aaaaa aaa-aaaaaa": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "German collector trial pre-impact",
+                7
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "All records share the same trial phase designation for the German collector."
+        },
+        "Core": {
+          "column_name": "Core",
+          "data_type": "integer",
+          "sample_values": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "data_patterns": {
+            "99": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 20.0,
+            "max": 20.0,
+            "mean": 20.0,
+            "median": 20.0,
+            "std": 0.0
+          },
+          "description": "Core identifier for sediment sample, constant value 20 across observations."
+        },
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.225,
+            0.0625,
+            0.0725,
+            0.0825,
+            0.165,
+            0.105,
+            0.0925
+          ],
+          "data_patterns": {
+            "9.9999": 4,
+            "9.999": 3
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0625,
+            "max": 0.225,
+            "mean": 0.115,
+            "median": 0.0925,
+            "std": 0.05891377880711213
+          },
+          "description": "Sediment depth probability scores ranging from 0.06 to 0.23."
+        },
+        "Al": {
+          "column_name": "Al",
+          "data_type": "float",
+          "sample_values": [
+            215.962,
+            198.448,
+            195.741,
+            195.988,
+            215.937,
+            209.431,
+            215.541
+          ],
+          "data_patterns": {
+            "999.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 195.741,
+            "max": 215.962,
+            "mean": 206.72114285714287,
+            "median": 209.431,
+            "std": 9.658048930444341
+          },
+          "description": "Al content in sediment cores, recorded as continuous numeric values."
+        },
+        "Al e rel": {
+          "column_name": "Al e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.145,
+            0.674,
+            0.723,
+            0.248,
+            0.371,
+            0.713,
+            1.249
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.145,
+            "max": 1.249,
+            "mean": 0.5890000000000001,
+            "median": 0.674,
+            "std": 0.37351885271473695
+          },
+          "description": "Relative aluminum concentration measured as a continuous proportion."
+        },
+        "Ba": {
+          "column_name": "Ba",
+          "data_type": "float",
+          "sample_values": [
+            28.11,
+            29.537,
+            29.962,
+            25.678,
+            26.555,
+            26.583,
+            29.645
+          ],
+          "data_patterns": {
+            "99.999": 6,
+            "99.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 25.678,
+            "max": 29.962,
+            "mean": 28.009999999999998,
+            "median": 28.11,
+            "std": 1.75199105781584
+          },
+          "description": "Barium concentration values ranging from 25.7 to 30 in the sediment cores."
+        },
+        "Ba e rel": {
+          "column_name": "Ba e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.227,
+            1.057,
+            3.177,
+            0.64,
+            0.654,
+            0.626,
+            1.06
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.227,
+            "max": 3.177,
+            "mean": 1.063,
+            "median": 0.654,
+            "std": 0.9751167451473012
+          },
+          "description": "Relative concentration of barium in sediment cores (unitless)."
+        },
+        "Ca2+": {
+          "column_name": "Ca2+",
+          "data_type": "float",
+          "sample_values": [
+            140.046,
+            204.099,
+            43.325,
+            43.325,
+            43.325,
+            43.325,
+            43.325
+          ],
+          "data_patterns": {
+            "99.999": 5,
+            "999.999": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 43.325,
+            "max": 204.099,
+            "mean": 80.11,
+            "median": 43.325,
+            "std": 65.48699278228209
+          },
+          "description": "Calcium ion concentration measured in sediment core samples."
+        },
+        "Ca e rel": {
+          "column_name": "Ca e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.251,
+            0.684
+          ],
+          "data_patterns": {
+            "9.999": 2
+          },
+          "total_rows": 7,
+          "null_count": 5,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.684,
+            "max": 1.251,
+            "mean": 0.9675,
+            "median": 0.9675,
+            "std": 0.40092954493277233
+          },
+          "description": "Dimensionless ratio of calcium equivalents in sediment samples."
+        },
+        "Cr": {
+          "column_name": "Cr",
+          "data_type": "float",
+          "sample_values": [
+            194.012,
+            167.415,
+            201.022,
+            194.441,
+            188.818,
+            183.169,
+            180.073
+          ],
+          "data_patterns": {
+            "999.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 167.415,
+            "max": 201.022,
+            "mean": 186.99285714285716,
+            "median": 188.818,
+            "std": 11.185481593395542
+          },
+          "description": "Continuous numeric measurement of element concentration in sediment cores."
+        },
+        "Cr e rel": {
+          "column_name": "Cr e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.534,
+            0.643,
+            0.773,
+            0.803,
+            1.273,
+            0.417,
+            0.997
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.417,
+            "max": 1.534,
+            "mean": 0.9199999999999999,
+            "median": 0.803,
+            "std": 0.3813506697690897
+          },
+          "description": "Relative concentration of chromium expressed as a dimensionless ratio."
+        },
+        "Cu": {
+          "column_name": "Cu",
+          "data_type": "float",
+          "sample_values": [
+            1035.705,
+            906.183,
+            905.703,
+            1123.963,
+            1177.253,
+            1150.862,
+            1018.779
+          ],
+          "data_patterns": {
+            "9999.999": 5,
+            "999.999": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 905.703,
+            "max": 1177.253,
+            "mean": 1045.4925714285714,
+            "median": 1035.705,
+            "std": 111.33944164858673
+          },
+          "description": "Copper concentration in sediment core samples."
+        },
+        "Cu e rel": {
+          "column_name": "Cu e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.813,
+            1.613,
+            0.606,
+            0.619,
+            0.275,
+            1.355,
+            1.729
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.275,
+            "max": 1.813,
+            "mean": 1.1442857142857144,
+            "median": 1.355,
+            "std": 0.6290862988720796
+          },
+          "description": "Relative copper concentration measured as a unitless ratio across sediment core samples."
+        },
+        "Fe": {
+          "column_name": "Fe",
+          "data_type": "float",
+          "sample_values": [
+            145.82,
+            133.92,
+            144.941,
+            133.593,
+            142.225,
+            131.621,
+            146.381
+          ],
+          "data_patterns": {
+            "999.999": 5,
+            "999.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 131.621,
+            "max": 146.381,
+            "mean": 139.7858571428571,
+            "median": 142.225,
+            "std": 6.478893383610389
+          },
+          "description": "Iron concentration measured in the sediment cores, expressed as a continuous numeric value."
+        },
+        "Fe e rel": {
+          "column_name": "Fe e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.406,
+            0.237,
+            0.336,
+            1.124,
+            0.161,
+            0.17,
+            0.201
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.161,
+            "max": 1.124,
+            "mean": 0.37642857142857145,
+            "median": 0.237,
+            "std": 0.34171374820789074
+          },
+          "description": "Relative iron concentration expressed as a proportion of total sediment composition."
+        },
+        "K+": {
+          "column_name": "K+",
+          "data_type": "float",
+          "sample_values": [
+            69.913,
+            73.904,
+            72.472,
+            70.308,
+            74.957,
+            69.056,
+            70.974
+          ],
+          "data_patterns": {
+            "99.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 69.056,
+            "max": 74.957,
+            "mean": 71.65485714285714,
+            "median": 70.974,
+            "std": 2.1869395989655955
+          },
+          "description": "Potassium ion concentration recorded as a continuous numeric measurement."
+        },
+        "K e rel": {
+          "column_name": "K e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.493,
+            0.147,
+            0.423,
+            0.56,
+            0.172,
+            0.187,
+            0.25
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.147,
+            "max": 1.493,
+            "mean": 0.46171428571428574,
+            "median": 0.25,
+            "std": 0.4792319251627944
+          },
+          "description": "Relative potassium exchange coefficient measured as a dimensionless ratio."
+        },
+        "La": {
+          "column_name": "La",
+          "data_type": "float",
+          "sample_values": [
+            126.311,
+            134.677,
+            135.234,
+            137.713,
+            130.172,
+            137.563,
+            134.423
+          ],
+          "data_patterns": {
+            "999.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 126.311,
+            "max": 137.713,
+            "mean": 133.72757142857145,
+            "median": 134.677,
+            "std": 4.1210058584906495
+          },
+          "description": "Lanthanum concentration in each sediment core sample, expressed as a continuous numeric value."
+        },
+        "La e rel": {
+          "column_name": "La e rel",
+          "data_type": "float",
+          "sample_values": [
+            1.03,
+            1.237,
+            0.638,
+            1.441,
+            0.14,
+            1.796,
+            0.606
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.14,
+            "max": 1.796,
+            "mean": 0.984,
+            "median": 1.03,
+            "std": 0.5641001684098312
+          },
+          "description": "Relative concentration of lanthanum in sediment cores (unitless ratio)."
+        },
+        "Li": {
+          "column_name": "Li",
+          "data_type": "float",
+          "sample_values": [
+            149.787,
+            160.486,
+            155.71,
+            148.416,
+            153.834,
+            161.031,
+            146.388
+          ],
+          "data_patterns": {
+            "999.999": 6,
+            "999.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 146.388,
+            "max": 161.031,
+            "mean": 153.66457142857143,
+            "median": 153.834,
+            "std": 5.781294487602317
+          },
+          "description": "Lithium content in sediment samples, measured as continuous concentration values."
+        },
+        "Li e rel": {
+          "column_name": "Li e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.347,
+            0.551,
+            0.562,
+            1.527,
+            0.151,
+            0.554,
+            0.635
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.151,
+            "max": 1.527,
+            "mean": 0.6181428571428571,
+            "median": 0.554,
+            "std": 0.4339394844796636
+          },
+          "description": "Relative lithium concentration measured as a unitless ratio across sediment cores."
+        },
+        "Mg2+": {
+          "column_name": "Mg2+",
+          "data_type": "float",
+          "sample_values": [
+            56.788,
+            56.511,
+            57.455,
+            51.209,
+            56.472,
+            52.523,
+            49.219
+          ],
+          "data_patterns": {
+            "99.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 49.219,
+            "max": 57.455,
+            "mean": 54.311,
+            "median": 56.472,
+            "std": 3.2730719006258724
+          },
+          "description": "Magnesium ion concentration in sediment samples, expressed as continuous numeric values."
+        },
+        "Mg e rel": {
+          "column_name": "Mg e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.986,
+            1.302,
+            1.494,
+            0.332,
+            1.199,
+            0.302,
+            0.274
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.274,
+            "max": 1.494,
+            "mean": 0.8412857142857142,
+            "median": 0.986,
+            "std": 0.5258658619476119
+          },
+          "description": "Relative magnesium concentration measured as a unitless ratio across sediment core samples."
+        },
+        "Mn": {
+          "column_name": "Mn",
+          "data_type": "float",
+          "sample_values": [
+            16.895,
+            7.884,
+            18.453,
+            14.836,
+            17.254,
+            12.999,
+            7.956
+          ],
+          "data_patterns": {
+            "99.999": 5,
+            "9.999": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 7.884,
+            "max": 18.453,
+            "mean": 13.753857142857143,
+            "median": 14.836,
+            "std": 4.3591079908841985
+          },
+          "description": "Manganese concentration in each sediment core sample."
+        },
+        "Mn e rel": {
+          "column_name": "Mn e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.527,
+            0.238,
+            0.081,
+            0.643,
+            0.552,
+            0.511,
+            1.135
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.081,
+            "max": 1.135,
+            "mean": 0.5267142857142858,
+            "median": 0.527,
+            "std": 0.3332760188821043
+          },
+          "description": "Relative manganese concentration measured as a unitless proportion across sediment core samples."
+        },
+        "Na+": {
+          "column_name": "Na+",
+          "data_type": "float",
+          "sample_values": [
+            129.075,
+            115.429,
+            134.971,
+            138.668,
+            131.602,
+            139.712,
+            120.534
+          ],
+          "data_patterns": {
+            "999.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 115.429,
+            "max": 139.712,
+            "mean": 129.99871428571427,
+            "median": 131.602,
+            "std": 9.124228035187151
+          },
+          "description": "Sodium ion concentration in sediment samples, measured as a continuous numeric value."
+        },
+        "Na e rel": {
+          "column_name": "Na e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.235,
+            1.426,
+            0.154,
+            0.291,
+            0.139,
+            0.302,
+            0.499
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.139,
+            "max": 1.426,
+            "mean": 0.4351428571428571,
+            "median": 0.291,
+            "std": 0.45298617659976803
+          },
+          "description": "Unitless ratio ranging from approximately 0.14 to 1.43 across the seven samples."
+        },
+        "Ni": {
+          "column_name": "Ni",
+          "data_type": "float",
+          "sample_values": [
+            583.079,
+            601.03,
+            459.205,
+            514.584,
+            273.338,
+            318.976,
+            558.165
+          ],
+          "data_patterns": {
+            "999.999": 6,
+            "999.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 273.338,
+            "max": 601.03,
+            "mean": 472.6252857142857,
+            "median": 514.584,
+            "std": 129.91599811123376
+          },
+          "description": "Nickel concentration in each"
+        },
+        "Ni e rel": {
+          "column_name": "Ni e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.952,
+            1.593,
+            0.328,
+            0.225,
+            0.885,
+            1.238,
+            0.515
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.225,
+            "max": 1.593,
+            "mean": 0.8194285714285715,
+            "median": 0.885,
+            "std": 0.4971608918458414
+          },
+          "description": "Relative nickel concentration (unitless) measured in sediment cores."
+        },
+        "P": {
+          "column_name": "P",
+          "data_type": "float",
+          "sample_values": [
+            3.777,
+            3.568,
+            3.564,
+            3.484,
+            3.921,
+            3.757,
+            3.804
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 3.484,
+            "max": 3.921,
+            "mean": 3.6964285714285716,
+            "median": 3.757,
+            "std": 0.1588089598048098
+          },
+          "description": "P is a continuous numeric measurement ranging from 3.48 to 3.92."
+        },
+        "P e rel": {
+          "column_name": "P e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.681,
+            0.973,
+            0.531,
+            1.604,
+            0.64,
+            0.046,
+            1.34
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.046,
+            "max": 1.604,
+            "mean": 0.8307142857142857,
+            "median": 0.681,
+            "std": 0.523128318957441
+          },
+          "description": "Continuous value ranging between 0.046 and 1.604."
+        },
+        "Sr": {
+          "column_name": "Sr",
+          "data_type": "float",
+          "sample_values": [
+            878.151,
+            876.428,
+            856.399,
+            796.231,
+            851.924,
+            1242.854,
+            1005.352
+          ],
+          "data_patterns": {
+            "999.999": 5,
+            "9999.999": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 796.231,
+            "max": 1242.854,
+            "mean": 929.6198571428571,
+            "median": 876.428,
+            "std": 151.94293335704316
+          },
+          "description": "Strontium measurements ranging from 796 to 1242 in the sediment cores."
+        },
+        "Sr e rel": {
+          "column_name": "Sr e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.111,
+            0.489,
+            0.14,
+            0.156,
+            0.177,
+            0.115,
+            1.007
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.111,
+            "max": 1.007,
+            "mean": 0.3135714285714286,
+            "median": 0.156,
+            "std": 0.3330895060604867
+          },
+          "description": "Relative concentration of strontium expressed as a unitless ratio."
+        },
+        "Ti": {
+          "column_name": "Ti",
+          "data_type": "float",
+          "sample_values": [
+            9.927,
+            10.713,
+            10.746,
+            9.6,
+            9.796,
+            10.719,
+            10.417
+          ],
+          "data_patterns": {
+            "99.999": 4,
+            "9.999": 2,
+            "9.9": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 9.6,
+            "max": 10.746,
+            "mean": 10.274,
+            "median": 10.417,
+            "std": 0.4894125730574019
+          },
+          "description": "Titanium concentration measured in unspecified units across sediment core samples."
+        },
+        "Ti e rel": {
+          "column_name": "Ti e rel",
+          "data_type": "float",
+          "sample_values": [
+            0.154,
+            0.17,
+            0.437,
+            0.272,
+            1.085,
+            0.169,
+            0.247
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.154,
+            "max": 1.085,
+            "mean": 0.362,
+            "median": 0.247,
+            "std": 0.33343065246014797
+          },
+          "description": "Relative titanium concentration expressed as a unitless proportion."
+        },
+        "Al_2": {
+          "column_name": "Al_2",
+          "data_type": "float",
+          "sample_values": [
+            6.05,
+            5.822,
+            5.511,
+            5.489,
+            6.052,
+            6.076,
+            6.101
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 5.489,
+            "max": 6.101,
+            "mean": 5.871571428571428,
+            "median": 6.05,
+            "std": 0.2700770613132833
+          },
+          "description": "Aluminum concentration measured in sediment cores."
+        },
+        "Al e": {
+          "column_name": "Al e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.032,
+            0.016,
+            0.055,
+            0.03,
+            0.031,
+            0.011,
+            0.006
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.006,
+            "max": 0.055,
+            "mean": 0.02585714285714286,
+            "median": 0.03,
+            "std": 0.016547190813232433
+          },
+          "description": "Probability score for aluminum presence in sediment core samples."
+        },
+        "Ba_2": {
+          "column_name": "Ba_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.846,
+            0.83,
+            0.792,
+            0.745,
+            0.722,
+            0.779,
+            0.853
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.722,
+            "max": 0.853,
+            "mean": 0.7952857142857143,
+            "median": 0.792,
+            "std": 0.05047017035079329
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Ba e": {
+          "column_name": "Ba e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Barium measurement is zero across all sediment core samples."
+        },
+        "Ca": {
+          "column_name": "Ca",
+          "data_type": "float",
+          "sample_values": [
+            5.723,
+            3.938
+          ],
+          "data_patterns": {
+            "9.999": 2
+          },
+          "total_rows": 7,
+          "null_count": 5,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 3.938,
+            "max": 5.723,
+            "mean": 4.8305,
+            "median": 4.8305,
+            "std": 1.262185604417987
+          },
+          "description": "Calcium concentration measured as a continuous variable in sediment cores."
+        },
+        "Ca e": {
+          "column_name": "Ca e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.03,
+            0.055
+          ],
+          "data_patterns": {
+            "9.99": 1,
+            "9.999": 1
+          },
+          "total_rows": 7,
+          "null_count": 5,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.03,
+            "max": 0.055,
+            "mean": 0.042499999999999996,
+            "median": 0.042499999999999996,
+            "std": 0.01767766952966369
+          },
+          "description": "Probability score ranging from 0.03 to 0.055 for each sediment core sample."
+        },
+        "Cr_2": {
+          "column_name": "Cr_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.005,
+            0.006,
+            0.005,
+            0.005,
+            0.005,
+            0.005,
+            0.005
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.005,
+            "max": 0.006,
+            "mean": 0.0051428571428571435,
+            "median": 0.005,
+            "std": 0.0003779644730092273
+          },
+          "description": "Probability score ranging between 0.005 and 0.006 for each sediment core sample."
+        },
+        "Cr e": {
+          "column_name": "Cr e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Constant zero value across all samples."
+        },
+        "Cu_2": {
+          "column_name": "Cu_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.025,
+            0.029,
+            0.032,
+            0.03,
+            0.025,
+            0.032,
+            0.033
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.025,
+            "max": 0.033,
+            "mean": 0.029428571428571425,
+            "median": 0.03,
+            "std": 0.003309438162646486
+          },
+          "description": "Probability score for copper concentration in sediment core samples."
+        },
+        "Cu e": {
+          "column_name": "Cu e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Uniform integer value, consistently zero across all sediment core samples."
+        },
+        "Fe_2": {
+          "column_name": "Fe_2",
+          "data_type": "float",
+          "sample_values": [
+            3.928,
+            4.1,
+            3.756,
+            4.085,
+            4.109,
+            4.119,
+            3.69
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.9": 1,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 3.69,
+            "max": 4.119,
+            "mean": 3.9695714285714288,
+            "median": 4.085,
+            "std": 0.18147805849271617
+          },
+          "description": "Iron concentration measured as a continuous numeric value in each sediment core sample."
+        },
+        "Fe e": {
+          "column_name": "Fe e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.018,
+            0.009,
+            0.049,
+            0.01,
+            0.007,
+            0.007,
+            0.015
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.007,
+            "max": 0.049,
+            "mean": 0.016428571428571428,
+            "median": 0.01,
+            "std": 0.014942747882692604
+          },
+          "description": "Probability score indicating iron presence likelihood in each sediment core sample."
+        },
+        "K": {
+          "column_name": "K",
+          "data_type": "float",
+          "sample_values": [
+            2.082,
+            1.977,
+            2.07,
+            1.936,
+            2.02,
+            2.048,
+            2.113
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 1.936,
+            "max": 2.113,
+            "mean": 2.035142857142857,
+            "median": 2.048,
+            "std": 0.06201727869830192
+          },
+          "description": "K is a continuous measurement ranging approximately from 1.94 to 2.11."
+        },
+        "K e": {
+          "column_name": "K e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.007,
+            0.018,
+            0.024,
+            0.011,
+            0.007,
+            0.066,
+            0.008
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.007,
+            "max": 0.066,
+            "mean": 0.020142857142857146,
+            "median": 0.011,
+            "std": 0.02120871339354474
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "La_2": {
+          "column_name": "La_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.004,
+            "mean": 0.004,
+            "median": 0.004,
+            "std": 0.0
+          },
+          "description": "Probability score of 0.004 assigned to each sediment core sample."
+        },
+        "La e": {
+          "column_name": "La e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "La e measurement is uniformly zero for all sediment core samples."
+        },
+        "Li_2": {
+          "column_name": "Li_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.005,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.005,
+            0.004
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.005,
+            "mean": 0.004285714285714286,
+            "median": 0.004,
+            "std": 0.0004879500364742666
+          },
+          "description": "Probability score ranging between 0.004 and 0.005 for each sediment core sample."
+        },
+        "Li e": {
+          "column_name": "Li e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "All entries are zero, indicating a constant integer field."
+        },
+        "Mg": {
+          "column_name": "Mg",
+          "data_type": "float",
+          "sample_values": [
+            1.591,
+            1.603,
+            1.54,
+            1.609,
+            1.439,
+            1.379,
+            1.632
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 1.379,
+            "max": 1.632,
+            "mean": 1.5418571428571428,
+            "median": 1.591,
+            "std": 0.09651671456528234
+          },
+          "description": "Magnesium concentration in sediment cores, expressed as a continuous numeric value."
+        },
+        "Mg e": {
+          "column_name": "Mg e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.065,
+            0.013,
+            0.053,
+            0.012,
+            0.014,
+            0.043,
+            0.057
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.012,
+            "max": 0.065,
+            "mean": 0.03671428571428571,
+            "median": 0.043,
+            "std": 0.023113591136776978
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Mn_2": {
+          "column_name": "Mn_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.498,
+            0.222,
+            0.473,
+            0.435,
+            0.521,
+            0.366,
+            0.223
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.222,
+            "max": 0.521,
+            "mean": 0.3911428571428571,
+            "median": 0.435,
+            "std": 0.1254451122622009
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Mn e": {
+          "column_name": "Mn e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.028,
+            0.023,
+            0.01,
+            0.024,
+            0.023,
+            0.004,
+            0.05
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.05,
+            "mean": 0.023142857142857142,
+            "median": 0.023,
+            "std": 0.014633620780342
+          },
+          "description": "Probability score for manganese enrichment in sediment core samples."
+        },
+        "Na": {
+          "column_name": "Na",
+          "data_type": "float",
+          "sample_values": [
+            3.237,
+            3.39,
+            3.787,
+            3.814,
+            3.885,
+            4.037,
+            3.71
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 3.237,
+            "max": 4.037,
+            "mean": 3.6942857142857144,
+            "median": 3.787,
+            "std": 0.2824592680285744
+          },
+          "description": "Continuous numeric measurement from sediment core samples."
+        },
+        "Na e": {
+          "column_name": "Na e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.063,
+            0.013,
+            0.006,
+            0.007,
+            0.013,
+            0.01,
+            0.022
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.006,
+            "max": 0.063,
+            "mean": 0.019142857142857145,
+            "median": 0.013,
+            "std": 0.020045187048504283
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Ni_2": {
+          "column_name": "Ni_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.009,
+            0.015,
+            0.017,
+            0.016,
+            0.017,
+            0.008,
+            0.013
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.008,
+            "max": 0.017,
+            "mean": 0.013571428571428571,
+            "median": 0.015,
+            "std": 0.0037352886036263588
+          },
+          "description": "Probability score ranging from 0.008 to 0.017 for each sediment core sample."
+        },
+        "Ni e": {
+          "column_name": "Ni e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Nickel measurement in sediment core, expressed as integer count."
+        },
+        "P_2": {
+          "column_name": "P_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.11,
+            0.1,
+            0.107,
+            0.102,
+            0.106,
+            0.11,
+            0.1
+          ],
+          "data_patterns": {
+            "9.999": 3,
+            "9.99": 2,
+            "9.9": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.1,
+            "max": 0.11,
+            "mean": 0.105,
+            "median": 0.106,
+            "std": 0.004358898943540672
+          },
+          "description": "Probability score ranging between 0.1 and 0.11 for each sediment core sample."
+        },
+        "P e": {
+          "column_name": "P e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.07,
+            0.024,
+            0.058,
+            0.03,
+            0.002,
+            0.028,
+            0.043
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 2
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.002,
+            "max": 0.07,
+            "mean": 0.03642857142857143,
+            "median": 0.03,
+            "std": 0.02268521649927652
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Sr_2": {
+          "column_name": "Sr_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.025,
+            0.035,
+            0.028,
+            0.023,
+            0.025,
+            0.025,
+            0.024
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.023,
+            "max": 0.035,
+            "mean": 0.02642857142857143,
+            "median": 0.025,
+            "std": 0.004076646614442761
+          },
+          "description": "Probability score ranging from 0.023 to 0.035 for each sediment core sample."
+        },
+        "Sr e": {
+          "column_name": "Sr e",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "All observations have a value of zero for this integer field."
+        },
+        "Ti_2": {
+          "column_name": "Ti_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.29,
+            0.3,
+            0.299,
+            0.275,
+            0.303,
+            0.268,
+            0.301
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.9": 1,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.268,
+            "max": 0.303,
+            "mean": 0.29085714285714287,
+            "median": 0.299,
+            "std": 0.01399319562535747
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Ti e": {
+          "column_name": "Ti e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.011,
+            0.012,
+            0.007,
+            0.007,
+            0.019,
+            0.007,
+            0.047
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.007,
+            "max": 0.047,
+            "mean": 0.015714285714285715,
+            "median": 0.011,
+            "std": 0.014453538041073606
+          },
+          "description": "Probability score ranging from 0.007 to 0.047 for each sediment core sample."
+        },
+        "Al_3": {
+          "column_name": "Al_3",
+          "data_type": "float",
+          "sample_values": [
+            6.674,
+            6.672,
+            5.952,
+            6.394,
+            6.747,
+            5.993,
+            6.758
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 5.952,
+            "max": 6.758,
+            "mean": 6.4557142857142855,
+            "median": 6.672,
+            "std": 0.3517322439421376
+          },
+          "description": "Al3 measurements are continuous numeric values centered near six."
+        },
+        "Al e_2": {
+          "column_name": "Al e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.035,
+            0.007,
+            0.033,
+            0.012,
+            0.035,
+            0.059,
+            0.018
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.007,
+            "max": 0.059,
+            "mean": 0.02842857142857143,
+            "median": 0.033,
+            "std": 0.01769987893421066
+          },
+          "description": "Probability score for aluminum isotope E2 in sediment samples."
+        },
+        "Ba_3": {
+          "column_name": "Ba_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.87,
+            0.785,
+            0.856,
+            0.808,
+            0.916,
+            0.936,
+            0.953
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.785,
+            "max": 0.953,
+            "mean": 0.8748571428571428,
+            "median": 0.87,
+            "std": 0.0638498983852717
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Ba e_2": {
+          "column_name": "Ba e_2",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Zero-valued integer field for all sediment core samples."
+        },
+        "Ca_2": {
+          "column_name": "Ca_2",
+          "data_type": "float",
+          "sample_values": [
+            6.206,
+            4.282
+          ],
+          "data_patterns": {
+            "9.999": 2
+          },
+          "total_rows": 7,
+          "null_count": 5,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 4.282,
+            "max": 6.206,
+            "mean": 5.244,
+            "median": 5.244,
+            "std": 1.3604734470029176
+          },
+          "description": "Calcium concentration measured in sediment cores, ranging approximately 4.3–6.2"
+        },
+        "Ca e_2": {
+          "column_name": "Ca e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.032,
+            0.06
+          ],
+          "data_patterns": {
+            "9.999": 1,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 5,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.032,
+            "max": 0.06,
+            "mean": 0.046,
+            "median": 0.046,
+            "std": 0.01979898987322333
+          },
+          "description": "Probability score for calcium e₂ in sediment core samples."
+        },
+        "Cr_3": {
+          "column_name": "Cr_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.006,
+            0.005,
+            0.006,
+            0.006,
+            0.006,
+            0.006,
+            0.006
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.005,
+            "max": 0.006,
+            "mean": 0.005857142857142857,
+            "median": 0.006,
+            "std": 0.0003779644730092272
+          },
+          "description": "Probability score ranging between 0.005 and 0.006 for each sediment core sample."
+        },
+        "Cr e_2": {
+          "column_name": "Cr e_2",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "All observations have a value of zero for this integer measurement."
+        },
+        "Cu_3": {
+          "column_name": "Cu_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.037,
+            0.035,
+            0.027,
+            0.028,
+            0.036,
+            0.033,
+            0.031
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.027,
+            "max": 0.037,
+            "mean": 0.03242857142857143,
+            "median": 0.033,
+            "std": 0.003909694909544002
+          },
+          "description": "Probability score ranging from 0.027 to 0.037 for each sediment core sample."
+        },
+        "Cu e_2": {
+          "column_name": "Cu e_2",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Copper concentration measurement, recorded as integer values, uniformly zero across all samples."
+        },
+        "Fe_3": {
+          "column_name": "Fe_3",
+          "data_type": "float",
+          "sample_values": [
+            4.314,
+            4.487,
+            4.084,
+            4.555,
+            4.522,
+            4.001,
+            4.588
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 4.001,
+            "max": 4.588,
+            "mean": 4.364428571428572,
+            "median": 4.487,
+            "std": 0.23784368616303242
+          },
+          "description": "Iron content values across sediment cores, measured as continuous numeric data."
+        },
+        "Fe e_2": {
+          "column_name": "Fe e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.008,
+            0.019,
+            0.011,
+            0.016,
+            0.053,
+            0.01,
+            0.008
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.008,
+            "max": 0.053,
+            "mean": 0.017857142857142856,
+            "median": 0.011,
+            "std": 0.01603567451474546
+          },
+          "description": "Probability score of iron (Fe) presence in sediment, ranging from 0 to 1."
+        },
+        "K_2": {
+          "column_name": "K_2",
+          "data_type": "float",
+          "sample_values": [
+            2.256,
+            2.287,
+            2.321,
+            2.283,
+            2.1,
+            2.264,
+            2.15
+          ],
+          "data_patterns": {
+            "9.999": 5,
+            "9.99": 1,
+            "9.9": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 2.1,
+            "max": 2.321,
+            "mean": 2.237285714285714,
+            "median": 2.264,
+            "std": 0.08072528370078005
+          },
+          "description": "K2 values range between 2.1 and 2.321, measured as a continuous numeric variable."
+        },
+        "K e_2": {
+          "column_name": "K e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.012,
+            0.008,
+            0.009,
+            0.007,
+            0.027,
+            0.02,
+            0.073
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.007,
+            "max": 0.073,
+            "mean": 0.022285714285714287,
+            "median": 0.012,
+            "std": 0.023521013907527356
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "La_3": {
+          "column_name": "La_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.004,
+            "mean": 0.004,
+            "median": 0.004,
+            "std": 0.0
+          },
+          "description": "Uniform probability score of 0.004 assigned to each sediment core sample."
+        },
+        "La e_2": {
+          "column_name": "La e_2",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "All observations recorded a value of zero for this integer field."
+        },
+        "Li_3": {
+          "column_name": "Li_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.005,
+            0.005,
+            0.004,
+            0.005,
+            0.005,
+            0.005,
+            0.005
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.005,
+            "mean": 0.004857142857142858,
+            "median": 0.005,
+            "std": 0.0003779644730092272
+          },
+          "description": "Probability score ranging between 0.004 and 0.005 for each sediment core sample."
+        },
+        "Li e_2": {
+          "column_name": "Li e_2",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "All observations have a value of zero for this integer field."
+        },
+        "Mg_2": {
+          "column_name": "Mg_2",
+          "data_type": "float",
+          "sample_values": [
+            1.774,
+            1.822,
+            1.748,
+            1.773,
+            1.496,
+            1.565,
+            1.691
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 1.496,
+            "max": 1.822,
+            "mean": 1.6955714285714287,
+            "median": 1.748,
+            "std": 0.12095296212833752
+          },
+          "description": "Continuous measurement of magnesium concentration in sediment cores, ranging approximately 1.5–1.8."
+        },
+        "Mg e_2": {
+          "column_name": "Mg e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.062,
+            0.07,
+            0.015,
+            0.013,
+            0.059,
+            0.047,
+            0.016
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.013,
+            "max": 0.07,
+            "mean": 0.04028571428571429,
+            "median": 0.047,
+            "std": 0.02491127111512836
+          },
+          "description": "Probability score of magnesium e₂ measurement."
+        },
+        "Mn_3": {
+          "column_name": "Mn_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.557,
+            0.241,
+            0.522,
+            0.402,
+            0.242,
+            0.478,
+            0.576
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.241,
+            "max": 0.576,
+            "mean": 0.4311428571428571,
+            "median": 0.478,
+            "std": 0.14145249917837976
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Mn e_2": {
+          "column_name": "Mn e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.054,
+            0.004,
+            0.025,
+            0.031,
+            0.026,
+            0.026,
+            0.011
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.004,
+            "max": 0.054,
+            "mean": 0.025285714285714283,
+            "median": 0.026,
+            "std": 0.01589249598305529
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Na_2": {
+          "column_name": "Na_2",
+          "data_type": "float",
+          "sample_values": [
+            4.284,
+            4.075,
+            3.686,
+            4.217,
+            4.159,
+            3.51,
+            4.508
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 3.51,
+            "max": 4.508,
+            "mean": 4.062714285714286,
+            "median": 4.159,
+            "std": 0.3483004997056968
+          },
+          "description": "Sodium concentration measured in sediment samples, expressed as a continuous numeric value."
+        },
+        "Na e_2": {
+          "column_name": "Na e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.007,
+            0.007,
+            0.014,
+            0.012,
+            0.024,
+            0.014,
+            0.07
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.007,
+            "max": 0.07,
+            "mean": 0.02114285714285715,
+            "median": 0.014,
+            "std": 0.02228922438779609
+          },
+          "description": "Probability score ranging from 0.007 to 0.07 for each sediment core sample."
+        },
+        "Ni_3": {
+          "column_name": "Ni_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.008,
+            0.019,
+            0.019,
+            0.01,
+            0.014,
+            0.017,
+            0.017
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.008,
+            "max": 0.019,
+            "mean": 0.014857142857142859,
+            "median": 0.017,
+            "std": 0.004375255094603872
+          },
+          "description": "Probability score ranging from 0.008 to 0.019 for each sediment core sample."
+        },
+        "Ni e_2": {
+          "column_name": "Ni e_2",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Ni e2 is a constant integer value of zero across all samples."
+        },
+        "P_3": {
+          "column_name": "P_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.108,
+            0.109,
+            0.112,
+            0.123,
+            0.118,
+            0.116,
+            0.121
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.108,
+            "max": 0.123,
+            "mean": 0.11528571428571428,
+            "median": 0.116,
+            "std": 0.005822779568622007
+          },
+          "description": "Probability score ranging from 0.108 to 0.123 for each sediment core sample."
+        },
+        "P e_2": {
+          "column_name": "P e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.002,
+            0.064,
+            0.026,
+            0.076,
+            0.048,
+            0.03,
+            0.033
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 0.002,
+            "max": 0.076,
+            "mean": 0.03985714285714286,
+            "median": 0.033,
+            "std": 0.02491604952253715
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Sr_3": {
+          "column_name": "Sr_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.031,
+            0.027,
+            0.026,
+            0.027,
+            0.028,
+            0.026,
+            0.038
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.026,
+            "max": 0.038,
+            "mean": 0.028999999999999998,
+            "median": 0.027,
+            "std": 0.004320493798938573
+          },
+          "description": "Probability score ranging from 0.026 to 0.038 for each sediment core sample."
+        },
+        "Sr e_2": {
+          "column_name": "Sr e_2",
+          "data_type": "integer",
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "data_patterns": {
+            "9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0
+          },
+          "description": "Sr e2 measurement is uniformly zero across all samples."
+        },
+        "Ti_3": {
+          "column_name": "Ti_3",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.299,
+            0.291,
+            0.33,
+            0.335,
+            0.335,
+            0.319,
+            0.331
+          ],
+          "data_patterns": {
+            "9.999": 6,
+            "9.99": 1
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.291,
+            "max": 0.335,
+            "mean": 0.32,
+            "median": 0.33,
+            "std": 0.018046236911518902
+          },
+          "description": "Probability score ranging between 0 and 1 for each sediment core sample."
+        },
+        "Ti e_2": {
+          "column_name": "Ti e_2",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.021,
+            0.008,
+            0.013,
+            0.008,
+            0.012,
+            0.052,
+            0.008
+          ],
+          "data_patterns": {
+            "9.999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.008,
+            "max": 0.052,
+            "mean": 0.017428571428571425,
+            "median": 0.012,
+            "std": 0.015935883438089677
+          },
+          "description": "Probability score ranging from 0 to 1 for each sediment core sample."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "SO268/1_43-1",
+            "SO268/1_43-1",
+            "SO268/1_43-1",
+            "SO268/1_43-1",
+            "SO268/1_43-1",
+            "SO268/1_43-1",
+            "SO268/1_43-1"
+          ],
+          "data_patterns": {
+            "AA999/9_99-9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "SO268/1_43-1",
+                7
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Sampling session identifier for the German sediment core observations."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            11.93056667,
+            11.93056667,
+            11.93056667,
+            11.93056667,
+            11.93056667,
+            11.93056667,
+            11.93056667
+          ],
+          "data_patterns": {
+            "99.99999999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 11.93056667,
+            "max": 11.93056667,
+            "mean": 11.930566670000001,
+            "median": 11.93056667,
+            "std": 1.9186846773327266e-15
+          },
+          "description": "Geographic latitude of the sampling location in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -117.0224333,
+            -117.0224333,
+            -117.0224333,
+            -117.0224333,
+            -117.0224333,
+            -117.0224333,
+            -117.0224333
+          ],
+          "data_patterns": {
+            "-999.9999999": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -117.0224333,
+            "max": -117.0224333,
+            "mean": -117.0224333,
+            "median": -117.0224333,
+            "std": 0.0
+          },
+          "description": "Geographic longitude in decimal degrees for each sediment core location."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            -4087.8,
+            -4087.8,
+            -4087.8,
+            -4087.8,
+            -4087.8,
+            -4087.8,
+            -4087.8
+          ],
+          "data_patterns": {
+            "-9999.9": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -4087.8,
+            "max": -4087.8,
+            "mean": -4087.7999999999997,
+            "median": -4087.8,
+            "std": 4.91183277397178e-13
+          },
+          "description": "Elevation of the core location, measured in meters below sea level."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2019-03-10T10:48:26",
+            "2019-03-10T10:48:26",
+            "2019-03-10T10:48:26",
+            "2019-03-10T10:48:26",
+            "2019-03-10T10:48:26",
+            "2019-03-10T10:48:26",
+            "2019-03-10T10:48:26"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 7
+          },
+          "total_rows": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2019-03-10T10:48:26",
+            "max_date": "2019-03-10T10:48:26"
+          },
+          "description": "Timestamp of the observation recorded on 2019‑03‑10."
+        }
+      },
+      "time_period_covered": {
+        "start": "2019-03-10T10:48:26",
+        "end": "2019-03-10T10:48:26"
+      },
+      "sample_rows": [
+        {
+          "Station": "SO268_043MUC",
+          "Area": "German collector trial pre-impact",
+          "Core": 20,
+          "Depth sed": 0.0625,
+          "Al": 209.431,
+          "Al e rel": 0.674,
+          "Ba": 29.537,
+          "Ba e rel": 1.06,
+          "Ca2+": 43.325,
+          "Ca e rel": null,
+          "Cr": 188.818,
+          "Cr e rel": 0.803,
+          "Cu": 1123.963,
+          "Cu e rel": 1.613,
+          "Fe": 142.225,
+          "Fe e rel": 0.161,
+          "K+": 69.913,
+          "K e rel": 1.493,
+          "La": 134.677,
+          "La e rel": 1.237,
+          "Li": 148.416,
+          "Li e rel": 0.635,
+          "Mg2+": 56.511,
+          "Mg e rel": 1.199,
+          "Mn": 17.254,
+          "Mn e rel": 0.527,
+          "Na+": 139.712,
+          "Na e rel": 1.426,
+          "Ni": 583.079,
+          "Ni e rel": 0.885,
+          "P": 3.804,
+          "P e rel": 0.973,
+          "Sr": 856.399,
+          "Sr e rel": 0.156,
+          "Ti": 10.417,
+          "Ti e rel": 0.169,
+          "Al_2": 6.052,
+          "Al e": 0.03,
+          "Ba_2": 0.853,
+          "Ba e": 0,
+          "Ca": null,
+          "Ca e": null,
+          "Cr_2": 0.005,
+          "Cr e": 0,
+          "Cu_2": 0.032,
+          "Cu e": 0,
+          "Fe_2": 4.109,
+          "Fe e": 0.007,
+          "K": 2.02,
+          "K e": 0.066,
+          "La_2": 0.004,
+          "La e": 0,
+          "Li_2": 0.004,
+          "Li e": 0,
+          "Mg": 1.632,
+          "Mg e": 0.053,
+          "Mn_2": 0.498,
+          "Mn e": 0.023,
+          "Na": 4.037,
+          "Na e": 0.063,
+          "Ni_2": 0.017,
+          "Ni e": 0,
+          "P_2": 0.11,
+          "P e": 0.043,
+          "Sr_2": 0.025,
+          "Sr e": 0,
+          "Ti_2": 0.3,
+          "Ti e": 0.007,
+          "Al_3": 6.758,
+          "Al e_2": 0.033,
+          "Ba_3": 0.953,
+          "Ba e_2": 0,
+          "Ca_2": null,
+          "Ca e_2": null,
+          "Cr_3": 0.006,
+          "Cr e_2": 0,
+          "Cu_3": 0.036,
+          "Cu e_2": 0,
+          "Fe_3": 4.588,
+          "Fe e_2": 0.008,
+          "K_2": 2.256,
+          "K e_2": 0.073,
+          "La_3": 0.004,
+          "La e_2": 0,
+          "Li_3": 0.005,
+          "Li e_2": 0,
+          "Mg_2": 1.822,
+          "Mg e_2": 0.059,
+          "Mn_3": 0.557,
+          "Mn e_2": 0.026,
+          "Na_2": 4.508,
+          "Na e_2": 0.07,
+          "Ni_3": 0.019,
+          "Ni e_2": 0,
+          "P_3": 0.123,
+          "P e_2": 0.048,
+          "Sr_3": 0.028,
+          "Sr e_2": 0,
+          "Ti_3": 0.335,
+          "Ti e_2": 0.008,
+          "Event": "SO268/1_43-1",
+          "Latitude": 11.93056667,
+          "Longitude": -117.0224333,
+          "Elevation": -4087.8,
+          "Date/Time": "2019-03-10T10:48:26"
+        },
+        {
+          "Station": "SO268_043MUC",
+          "Area": "German collector trial pre-impact",
+          "Core": 20,
+          "Depth sed": 0.0725,
+          "Al": 215.937,
+          "Al e rel": 0.723,
+          "Ba": 29.962,
+          "Ba e rel": 0.626,
+          "Ca2+": 43.325,
+          "Ca e rel": null,
+          "Cr": 194.441,
+          "Cr e rel": 0.997,
+          "Cu": 1177.253,
+          "Cu e rel": 1.355,
+          "Fe": 145.82,
+          "Fe e rel": 0.17,
+          "K+": 72.472,
+          "K e rel": 0.423,
+          "La": 137.713,
+          "La e rel": 1.03,
+          "Li": 155.71,
+          "Li e rel": 0.562,
+          "Mg2+": 56.788,
+          "Mg e rel": 0.986,
+          "Mn": 18.453,
+          "Mn e rel": 0.552,
+          "Na+": 134.971,
+          "Na e rel": 0.302,
+          "Ni": 601.03,
+          "Ni e rel": 1.238,
+          "P": 3.777,
+          "P e rel": 1.34,
+          "Sr": 876.428,
+          "Sr e rel": 0.115,
+          "Ti": 10.746,
+          "Ti e rel": 0.247,
+          "Al_2": 6.101,
+          "Al e": 0.031,
+          "Ba_2": 0.846,
+          "Ba e": 0,
+          "Ca": null,
+          "Ca e": null,
+          "Cr_2": 0.005,
+          "Cr e": 0,
+          "Cu_2": 0.033,
+          "Cu e": 0,
+          "Fe_2": 4.119,
+          "Fe e": 0.007,
+          "K": 2.048,
+          "K e": 0.018,
+          "La_2": 0.004,
+          "La e": 0,
+          "Li_2": 0.004,
+          "Li e": 0,
+          "Mg": 1.603,
+          "Mg e": 0.043,
+          "Mn_2": 0.521,
+          "Mn e": 0.024,
+          "Na": 3.814,
+          "Na e": 0.013,
+          "Ni_2": 0.017,
+          "Ni e": 0,
+          "P_2": 0.107,
+          "P e": 0.058,
+          "Sr_2": 0.025,
+          "Sr e": 0,
+          "Ti_2": 0.303,
+          "Ti e": 0.011,
+          "Al_3": 6.747,
+          "Al e_2": 0.035,
+          "Ba_3": 0.936,
+          "Ba e_2": 0,
+          "Ca_2": null,
+          "Ca e_2": null,
+          "Cr_3": 0.006,
+          "Cr e_2": 0,
+          "Cu_3": 0.037,
+          "Cu e_2": 0,
+          "Fe_3": 4.555,
+          "Fe e_2": 0.008,
+          "K_2": 2.264,
+          "K e_2": 0.02,
+          "La_3": 0.004,
+          "La e_2": 0,
+          "Li_3": 0.005,
+          "Li e_2": 0,
+          "Mg_2": 1.773,
+          "Mg e_2": 0.047,
+          "Mn_3": 0.576,
+          "Mn e_2": 0.026,
+          "Na_2": 4.217,
+          "Na e_2": 0.014,
+          "Ni_3": 0.019,
+          "Ni e_2": 0,
+          "P_3": 0.118,
+          "P e_2": 0.064,
+          "Sr_3": 0.027,
+          "Sr e_2": 0,
+          "Ti_3": 0.335,
+          "Ti e_2": 0.012,
+          "Event": "SO268/1_43-1",
+          "Latitude": 11.93056667,
+          "Longitude": -117.0224333,
+          "Elevation": -4087.8,
+          "Date/Time": "2019-03-10T10:48:26"
+        },
+        {
+          "Station": "SO268_043MUC",
+          "Area": "German collector trial pre-impact",
+          "Core": 20,
+          "Depth sed": 0.165,
+          "Al": 195.988,
+          "Al e rel": 1.249,
+          "Ba": 25.678,
+          "Ba e rel": 3.177,
+          "Ca2+": 140.046,
+          "Ca e rel": 1.251,
+          "Cr": 180.073,
+          "Cr e rel": 1.273,
+          "Cu": 906.183,
+          "Cu e rel": 1.813,
+          "Fe": 133.593,
+          "Fe e rel": 1.124,
+          "K+": 70.308,
+          "K e rel": 0.187,
+          "La": 130.172,
+          "La e rel": 1.441,
+          "Li": 149.787,
+          "Li e rel": 0.151,
+          "Mg2+": 51.209,
+          "Mg e rel": 1.302,
+          "Mn": 7.884,
+          "Mn e rel": 1.135,
+          "Na+": 120.534,
+          "Na e rel": 0.154,
+          "Ni": 318.976,
+          "Ni e rel": 0.952,
+          "P": 3.568,
+          "P e rel": 0.64,
+          "Sr": 1005.352,
+          "Sr e rel": 1.007,
+          "Ti": 9.796,
+          "Ti e rel": 1.085,
+          "Al_2": 5.511,
+          "Al e": 0.055,
+          "Ba_2": 0.722,
+          "Ba e": 0,
+          "Ca": 3.938,
+          "Ca e": 0.055,
+          "Cr_2": 0.005,
+          "Cr e": 0,
+          "Cu_2": 0.025,
+          "Cu e": 0,
+          "Fe_2": 3.756,
+          "Fe e": 0.049,
+          "K": 1.977,
+          "K e": 0.008,
+          "La_2": 0.004,
+          "La e": 0,
+          "Li_2": 0.004,
+          "Li e": 0,
+          "Mg": 1.439,
+          "Mg e": 0.057,
+          "Mn_2": 0.222,
+          "Mn e": 0.05,
+          "Na": 3.39,
+          "Na e": 0.007,
+          "Ni_2": 0.009,
+          "Ni e": 0,
+          "P_2": 0.1,
+          "P e": 0.028,
+          "Sr_2": 0.028,
+          "Sr e": 0,
+          "Ti_2": 0.275,
+          "Ti e": 0.047,
+          "Al_3": 5.993,
+          "Al e_2": 0.059,
+          "Ba_3": 0.785,
+          "Ba e_2": 0,
+          "Ca_2": 4.282,
+          "Ca e_2": 0.06,
+          "Cr_3": 0.006,
+          "Cr e_2": 0,
+          "Cu_3": 0.028,
+          "Cu e_2": 0,
+          "Fe_3": 4.084,
+          "Fe e_2": 0.053,
+          "K_2": 2.15,
+          "K e_2": 0.009,
+          "La_3": 0.004,
+          "La e_2": 0,
+          "Li_3": 0.005,
+          "Li e_2": 0,
+          "Mg_2": 1.565,
+          "Mg e_2": 0.062,
+          "Mn_3": 0.241,
+          "Mn e_2": 0.054,
+          "Na_2": 3.686,
+          "Na e_2": 0.007,
+          "Ni_3": 0.01,
+          "Ni e_2": 0,
+          "P_3": 0.109,
+          "P e_2": 0.03,
+          "Sr_3": 0.031,
+          "Sr e_2": 0,
+          "Ti_3": 0.299,
+          "Ti e_2": 0.052,
+          "Event": "SO268/1_43-1",
+          "Latitude": 11.93056667,
+          "Longitude": -117.0224333,
+          "Elevation": -4087.8,
+          "Date/Time": "2019-03-10T10:48:26"
+        }
+      ],
+      "description": "Seven sediment core samples from German trial",
+      "is_row_capped": false,
+      "rows_processed": 7,
+      "total_rows_in_file": 7
+    }
+  },
+  "time_period_covered": {
+    "start": "2019-03-10T10:48:26",
+    "end": "2019-03-10T10:48:26"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Seven Earth‑environment observations recorded on 2019‑03‑10 for scientific analysis."
+}

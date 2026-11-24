@@ -1,0 +1,43 @@
+{
+  "dataset_id": "917831",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917831.csv",
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:39:11.332131+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Biological and Biochemical Measurements of Marine Organisms from Macapule Lagoon",
+    "description": "This dataset contains 123 records of biological measurements for marine organisms sampled at Macapule Lagoon (25.35°N, 108.50°W) between December 2013 and August 2015. The data includes morphometric variables (length, total mass, eviscerated mass), organ weights (gut, liver, stomach, heart), physiological indices (HSI, condition factor K, GRI), and biochemical parameters (total protein, triglycerides, cholesterol, glucose). Sampling was conducted seasonally, with records clustered in winter (December) and summer (July-August).",
+    "keywords": [
+      "marine biology",
+      "fish",
+      "morphometrics",
+      "organ weights",
+      "biochemical parameters",
+      "Macapule Lagoon",
+      "Gulf of California",
+      "physiological indices",
+      "seasonal sampling"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12T00:00:00+00:00",
+      "to": "2015-08-31T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917831_16d56b418b314d76b1d073e83f2694aa.jsonl",
+  "runtime_seconds": 128.04
+}

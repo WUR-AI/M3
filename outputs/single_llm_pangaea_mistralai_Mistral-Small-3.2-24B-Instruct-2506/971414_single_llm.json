@@ -1,0 +1,44 @@
+{
+  "csv": "971414.csv",
+  "dataset_id": "971414",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "contract_sha256": "a6cb7f9c8d27633fe275696cea9b41b5566e69a8a459eda3509161fb7827856a",
+  "prompt_tokens": 1536,
+  "metadata": {
+    "name": "Kiwada Kazusa Chiba River Sections",
+    "description": "Dataset containing sample information from river sections in Kazusa, Chiba, including age, SR, reference, latitude, longitude, and date/time.",
+    "keywords": [
+      "Kiwada",
+      "Kazusa",
+      "Chiba",
+      "river sections",
+      "age",
+      "SR",
+      "reference",
+      "latitude",
+      "longitude",
+      "date/time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": {
+      "from": "1198-01-01",
+      "to": "1310-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.893,
+  "status": "ok"
+}

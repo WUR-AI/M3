@@ -1,0 +1,16 @@
+{
+  "csv": "roepera_morgiana.csv",
+  "dataset_id": "roepera_morgiana",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1003,
+  "n_columns": 50,
+  "description": "Species occurrence records for Roepera morgiana, 1995-2026, with 1003 entries.",
+  "dataset_description": "Species occurrence records for Roepera morgiana, 1995-2026, biodiversity domain.",
+  "runtime_seconds": 32.433,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/roepera_morgiana/dictionary.json"
+}

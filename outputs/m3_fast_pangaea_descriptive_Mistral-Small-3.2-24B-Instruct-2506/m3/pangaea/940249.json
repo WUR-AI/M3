@@ -1,0 +1,29 @@
+{
+  "dataset_id": "940249",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/940249.csv",
+  "source_sha256": "ffa4a37e09f9eea211d093f3922c021eba2066b56fa4d80fea1d68ec7cf9c123",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T13:06:31.006085+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "WDC06A Ice Core Data",
+    "description": "This dataset contains ice core data from the WDC06A core, including measurements of depth, gas age, stable isotopes (δ18O), and clumped isotopes (Δ36). The data is georeferenced with latitude, longitude, and elevation, and is dated to December 9, 2006.",
+    "keywords": [
+      "ice core",
+      "WDC06A",
+      "paleoclimate",
+      "stable isotopes",
+      "clumped isotopes",
+      "Antarctica",
+      "2006"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/940249_bff2000f27424483be9d5f99477cb065.jsonl",
+  "runtime_seconds": 307.31
+}

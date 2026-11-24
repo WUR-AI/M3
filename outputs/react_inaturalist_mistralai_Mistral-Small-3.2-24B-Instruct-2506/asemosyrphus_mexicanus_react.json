@@ -1,0 +1,88 @@
+{
+  "csv": "asemosyrphus_mexicanus.csv",
+  "dataset_id": "asemosyrphus_mexicanus",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "fafc0b8a3151e28ebb764d5fc3f05e63c9c61d84297bd5602d32f68d165e231b",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4382,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -7.201442,
+      "min_lon": -105.80497,
+      "max_lat": 28.295121,
+      "max_lon": -71.151672
+    },
+    "temporalCoverage": {
+      "from": "1994-07-03",
+      "to": "2026-06-07"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "asemosyrphus_mexicanus",
+        "resource": "asemosyrphus_mexicanus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 21.113,
+  "status": "ok"
+}

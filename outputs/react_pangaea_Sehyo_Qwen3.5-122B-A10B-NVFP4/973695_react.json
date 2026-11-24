@@ -1,0 +1,120 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 11630,
+  "metadata": {
+    "name": "ODP Leg 112 Site 680A Sediment Core Geochemical Data",
+    "description": "Geochemical measurements from sediment core samples collected at ODP Leg 112, Site 680A. The dataset includes elemental concentrations (Al, Ca, Fe, K, Mn, Na, P, Mo, U, N, S), total organic carbon (TOC), total carbon (TC), elemental ratios (Fe/Al, Mn/Al), enrichment factors (EF, EF_2), iron fractions (Feac, FeD, Femag, Fe Py, Fe react), excess Mo and U (Mo xs, U xs), and stable isotope measurements (δ15N, δ13C Corg, δ98Mo auth). Samples span the Pleistocene and Pliocene epochs with depth measurements from 0.72 to 6.26 meters.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "ODP",
+      "Leg 112",
+      "Site 680A",
+      "core",
+      "Pleistocene",
+      "Pliocene",
+      "elemental concentrations",
+      "isotopes",
+      "TOC",
+      "δ15N",
+      "δ13C",
+      "δ98Mo",
+      "Mo",
+      "U",
+      "Fe",
+      "Al",
+      "enrichment factor",
+      "iron fractions"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05",
+      "to": "1986-11-05"
+    },
+    "spatial": "point locations",
+    "temporal": "single sampling event"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "973695"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "field": "Epoch",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695",
+        "field": "Leg",
+        "limit": 5
+      }
+    }
+  ],
+  "runtime_seconds": 37.931,
+  "status": "ok"
+}

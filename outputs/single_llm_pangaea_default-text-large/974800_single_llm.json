@@ -1,0 +1,32 @@
+{
+  "csv": "974800.csv",
+  "dataset_id": "974800",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "contract_sha256": "7eaac6ee82a43b5f5874d97b12dbd155a9052ed10137606bef870dd38402b691",
+  "prompt_tokens": 1711,
+  "metadata": {
+    "name": "Laboratory experiment zooplankton and phytoplankton pulsation dataset",
+    "description": "Measurements of X. umbellata pulsation (unitless) recorded in twelve experimental tanks (T1‑T12) under different treatments (Zooplankton, Control, DOC, Phytoplankton) at several time points (DOE = 0, 7, 14, 21, 28). The data are from a controlled laboratory experiment.",
+    "keywords": [
+      "zooplankton",
+      "phytoplankton",
+      "DOC",
+      "laboratory experiment",
+      "pulsation",
+      "X. umbellata"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.884,
+  "status": "ok"
+}

@@ -1,0 +1,41 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ecb7b5ed9a1a17db139f60404906a6597234581b11225c226aeee09add86bffa",
+  "contract_sha256": "fd36036754707f3f29753e833a8872b8bfb5ebb4051a90e3b43f30d7e386bfad",
+  "prompt_tokens": 13400,
+  "metadata": {
+    "name": "Uvigerina spp. δ13C and δ18O measurements",
+    "description": "This dataset contains measurements of Uvigerina spp. δ13C and δ18O from sediment cores collected at a single location in the Gulf of Mexico. The data includes depth, age, isotopic values, and associated metadata such as latitude, longitude, elevation, and date/time of sampling.",
+    "keywords": [
+      "Uvigerina spp.",
+      "δ13C",
+      "δ18O",
+      "paleoceanography",
+      "sediment core",
+      "Gulf of Mexico",
+      "stable isotopes"
+    ],
+    "spatialCoverage": {
+      "min_lat": 29.0,
+      "min_lon": -88.33333333,
+      "max_lat": 29.0,
+      "max_lon": -88.33333333
+    },
+    "temporalCoverage": {
+      "from": "2009-03-04",
+      "to": "2009-03-04"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.434,
+  "status": "ok"
+}

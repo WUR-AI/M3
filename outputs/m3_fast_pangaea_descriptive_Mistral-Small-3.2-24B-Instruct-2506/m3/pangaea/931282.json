@@ -1,0 +1,28 @@
+{
+  "dataset_id": "931282",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931282.csv",
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T11:55:31.000110+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sensor Data Collection",
+    "description": "Dataset containing sensor data with binary files, event information, and geographical coordinates. The data is concentrated at a single location with latitude 41.393, longitude 2.12, and elevation 115.0 meters, recorded on March 11, 2020.",
+    "keywords": [
+      "sensor data",
+      "geographical coordinates",
+      "binary files",
+      "event tracking",
+      "March 2020",
+      "Barcelona"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931282_7c3dad2951ef4b62b6d610728f2257f6.jsonl",
+  "runtime_seconds": 445.01
+}

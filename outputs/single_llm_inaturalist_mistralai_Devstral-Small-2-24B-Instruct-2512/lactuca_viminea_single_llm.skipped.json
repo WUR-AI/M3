@@ -1,0 +1,15 @@
+{
+  "csv": "lactuca_viminea.csv",
+  "dataset_id": "lactuca_viminea",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d08b817053f69667f465199f2fecb8c501dc2d0a3be8b947c93640cd49cafcb3",
+  "contract_sha256": "d70c6107facdea79ed6fc8a5fe9b2bd2867e9c143b860c9c47f2b73ad1e0e5e1",
+  "prompt_tokens": 331686,
+  "status": "skipped",
+  "reason": "context_window"
+}

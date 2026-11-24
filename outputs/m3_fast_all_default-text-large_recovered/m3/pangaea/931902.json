@@ -1,0 +1,45 @@
+{
+  "dataset_id": "931902",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931902.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:36:15.340869+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Birkeland Cruise 1 (H07) Fish & Siphonophore Video Observations",
+    "description": "Dataset of two video recordings captured during the Birkeland Cruise 1 (H07) on 2016-07-07, including file names, sizes, hashes, geographic coordinates (latitude and longitude) in the North Atlantic Ocean, and the observation timestamps.",
+    "keywords": [
+      "Birkeland Cruise",
+      "fish",
+      "siphonophores",
+      "video",
+      "marine",
+      "North Atlantic",
+      "latitude",
+      "longitude",
+      "2016-07-07",
+      "oceanography"
+    ],
+    "spatialCoverage": {
+      "min_lat": 46.15,
+      "min_lon": -26.26667,
+      "max_lat": 46.55,
+      "max_lon": -26.01667
+    },
+    "temporalCoverage": {
+      "from": "2016-07-07T00:00:00+00:00",
+      "to": "2016-07-07T00:00:00+00:00"
+    },
+    "spatial": "point‑level (approx 44 km N‑S, 22 km E‑W between observations)",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931902_95d3832ab5bd466a81a962cd73a39c67.jsonl",
+  "runtime_seconds": 126.03,
+  "recovered_from_trace": true,
+  "source_sha256": "db1a2eb73ef4f30d6bd56b579eac3100f881d914d9eff214542eda53b0500dc3"
+}

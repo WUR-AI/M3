@@ -1,0 +1,29 @@
+{
+  "dataset_id": "porophyllum_ruderale",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/porophyllum_ruderale.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:35:42.699968+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.639413,
+      "min_lon": -157.789633,
+      "max_lat": 41.54517,
+      "max_lon": 153.219904
+    },
+    "temporalCoverage": {
+      "from": "2003-05-11T09:14:00Z",
+      "to": "2026-06-08T12:00:20Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/porophyllum_ruderale_01ef58ed3a5441b4bebd6aba27cc2b55.jsonl",
+  "runtime_seconds": 76.91,
+  "recovered_from_trace": true,
+  "source_sha256": "ad771d6c7d557f21d859d0f98880daaf4547021eadf1a28382610a2e9661606b"
+}

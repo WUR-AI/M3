@@ -1,0 +1,28 @@
+{
+  "dataset_id": "agromyza_aristata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/agromyza_aristata.csv",
+  "source_sha256": "acad9f06afe3ce830e33e010e61b3b73887d10bf3e764c290fbc650c292feda0",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-16T23:38:57.935991+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.080883,
+      "min_lon": -116.290338,
+      "max_lat": 53.558752,
+      "max_lon": -60.18718
+    },
+    "temporalCoverage": {
+      "from": "2011-05-10T08:51:00+00:00",
+      "to": "2026-06-08T17:53:56+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/agromyza_aristata_dc26b978f8724b36893a77aeecb9abc2.jsonl",
+  "runtime_seconds": 55.08
+}

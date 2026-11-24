@@ -1,0 +1,44 @@
+{
+  "dataset_id": "956208",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/956208.csv",
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:24:28.401225+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Cod (Boreogadus saida) Biological Sampling Data from Expedition PS80 and Related Campaigns",
+    "description": "Dataset containing biological measurements and sampling metadata for the species Boreogadus saida (Arctic cod), collected during Expedition PS80 and other Arctic expeditions between 2012 and 2020. The data includes specimen identification, geographic coordinates, sampling gear, depth, and biological metrics such as total length, standard length, weight, sex, condition index, and stomach analysis.",
+    "keywords": [
+      "Boreogadus saida",
+      "Arctic cod",
+      "PS80",
+      "Arctic",
+      "biological sampling",
+      "fish",
+      "stomach content",
+      "condition index",
+      "length-weight",
+      "marine biology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 89.143898,
+      "max_lon": 130.863
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2020-09-19"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/956208_4f51d0092a8e4e32994b9027565865fb.jsonl",
+  "runtime_seconds": 166.77
+}

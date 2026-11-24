@@ -1,0 +1,88 @@
+{
+  "csv": "paeonia_caucasica.csv",
+  "dataset_id": "paeonia_caucasica",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "87f39c45fb88b07fd6d3b969bda5d7e5c340e69f7d92cea084b16e2adafe4fee",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4327,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 41.520111,
+      "min_lon": 37.364618,
+      "max_lat": 55.836338,
+      "max_lon": 45.757789
+    },
+    "temporalCoverage": {
+      "from": "2000-05-13",
+      "to": "2026-06-10"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "paeonia_caucasica",
+        "resource": "paeonia_caucasica",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 20.131,
+  "status": "ok"
+}

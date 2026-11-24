@@ -1,0 +1,30 @@
+{
+  "dataset_id": "974295",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/974295.csv",
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T18:58:41.721147+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic Radar Profiles 1997/98",
+    "description": "Dataset containing radar profile information from the Antarctic 1997/98 season, including instrument details, radar products, and associated files in netCDF, GIS, and image formats.",
+    "keywords": [
+      "Antarctica",
+      "Radar",
+      "EMR",
+      "netCDF",
+      "GIS",
+      "1997/98",
+      "Profile ID",
+      "Radar products"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/974295_0e8a8f76c3d240fb809c8cee9fead8b3.jsonl",
+  "runtime_seconds": 332.36
+}

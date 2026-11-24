@@ -1,0 +1,165 @@
+{
+  "csv": "960522.csv",
+  "dataset_id": "960522",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3bb28cd5e16d4d59f094461b12276b04514b16f4838bc2b41b39519704550e84",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 17824,
+  "metadata": {
+    "name": "Laboratory experiment on Limacina helicina carbonate chemistry and respiration under varying CO2 conditions",
+    "description": "Laboratory incubation experiment on the pteropod Limacina helicina measuring carbonate system parameters (pHT, DIC, AT, pCO2, bicarbonate, carbonate, aragonite and calcite saturation states) and oxygen consumption rates under supersaturated and undersaturated CO2 conditions. Samples include controls, initial collections, and incubations with 2-4 individuals over approximately 8-9 hours.",
+    "keywords": [
+      "Limacina helicina",
+      "pteropod",
+      "carbonate chemistry",
+      "ocean acidification",
+      "CO2 incubation",
+      "respiration",
+      "oxygen consumption",
+      "laboratory experiment",
+      "supersaturated",
+      "undersaturated"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.43,
+      "min_lon": -126.23,
+      "max_lat": 48.43,
+      "max_lon": -126.23
+    },
+    "temporalCoverage": {
+      "from": "2019-09-01",
+      "to": "2019-09-01"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "960522"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "960522",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude",
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522",
+        "time_column": "Year sampl"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522",
+        "field": "Species UID",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522",
+        "field": "Study type",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522",
+        "field": "Treat",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "960522",
+        "field": "Month",
+        "limit": 20,
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "960522",
+        "field": "Day",
+        "limit": 20,
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "960522",
+        "field": "Samp type",
+        "limit": 20,
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "960522",
+        "resource": "960522"
+      }
+    }
+  ],
+  "runtime_seconds": 18.908,
+  "status": "ok"
+}

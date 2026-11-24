@@ -1,0 +1,15 @@
+{
+  "csv": "dioctria_linearis.csv",
+  "dataset_id": "dioctria_linearis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1a233647f2b04f9f2da42159a0a851fcd3d6d3fb98445e7d62efacf06a668423",
+  "contract_sha256": "55d7fa56def1dac50376627cd2fffd6c6dc894c6e96145a0a5de2a034e576c41",
+  "prompt_tokens": 323682,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,114 @@
+{
+  "csv": "veniliornis_passerinus.csv",
+  "dataset_id": "veniliornis_passerinus",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ae351f023b67a0c064c01e5273eef9b1a262b3d97fc64dcc575e0b3e777b8d4d",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5884,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -29.27865,
+      "min_lon": -78.888391,
+      "max_lat": 6.024162,
+      "max_lon": -34.841307
+    },
+    "temporalCoverage": {
+      "from": "2002-07-18",
+      "to": "2026-06-13"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "column": "eventDate"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "analyze_temporal_column",
+      "args": {
+        "context_key": "veniliornis_passerinus",
+        "resource": "veniliornis_passerinus",
+        "column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 30.782,
+  "status": "ok"
+}

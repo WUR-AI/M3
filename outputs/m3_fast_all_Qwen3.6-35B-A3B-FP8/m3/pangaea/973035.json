@@ -1,0 +1,43 @@
+{
+  "dataset_id": "973035",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973035.csv",
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:18:40.826239+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Luminescence Dating Dataset of Soil Samples from NEP Site",
+    "description": "A dataset containing luminescence dating results (OSL) for 7 soil/sediment samples collected at a single site in April 2023. The data includes radioelement concentrations (U, Th, K in ppm), total dose rates (mGy/a), equivalent doses (Gy), and two sets of calculated age estimates (ka) with associated uncertainties.",
+    "keywords": [
+      "luminescence dating",
+      "OSL",
+      "geochronology",
+      "soil samples",
+      "dose rate",
+      "equivalent dose",
+      "Uranium",
+      "Thorium",
+      "Potassium"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03T09:00:00+00:00",
+      "to": "2023-04-03T09:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single point in time"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973035_3e4bd6b109a04b43bdd9616e8730f360.jsonl",
+  "runtime_seconds": 132.42
+}

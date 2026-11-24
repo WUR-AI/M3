@@ -1,0 +1,18 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "title": "954529",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-27B-FP8",
+  "n_rows": 10,
+  "n_columns": 2,
+  "sample_size": 10,
+  "topic": "Topographic GIS Data",
+  "dataset_profile": "The key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. ",
+  "datamart_semantic_notes": "",
+  "semantic_profile": "The key semantic information for this dataset includes:\n**GIS**: Represents file/resource. Contains spatial data (resolution: Location Name). Domain-specific type: geospatial. Function/Usage context: identifier. \n**XLSX**: Represents file/resource. Domain-specific type: general. Function/Usage context: identifier. ",
+  "prompt": "Answer the question using the following information.\n\nFirst, consider the dataset sample:\n\nGIS,XLSX\nBig_Skidder.zip,\nBlack_Hills.zip,\nBlue_Hills.zip,\nCougar_Mountain.zip,\nDevils_Mountain.zip,\nDow_Mountain.zip,\nFidalgo_Island.zip,\nLopez_Island.zip,\nSan_Juan.zip,\n,TopographicHigh_RawData.xlsx\n\n\nAdditionally, the dataset profile is as follows:\n\nThe key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. \n\nBased on this profile, please add sentence(s) to enrich the dataset description.\n\nFurthermore, the semantic profile of the dataset columns is as follows:\nThe key semantic information for this dataset includes:\n**GIS**: Represents file/resource. Contains spatial data (resolution: Location Name). Domain-specific type: geospatial. Function/Usage context: identifier. \n**XLSX**: Represents file/resource. Domain-specific type: general. Function/Usage context: identifier. \n\nBased on this information, please add sentence(s) discussing the semantic profile in the description.\n\nMoreover, the dataset topic is: Topographic GIS Data. Based on this topic, please add sentence(s) describing what this dataset can be used for.\n\nQuestion: Based on the information above and the requirements, provide a dataset description in sentences. Use only natural, readable sentences without special formatting.\n\nAnswer:\n\nTarget length: approximately 100 words.",
+  "description": "This dataset provides topographic GIS data organized into two primary columns. The GIS column contains nine unique text entries representing specific geographic locations, such as Big Skidder, Black Hills, and Fidalgo Island, serving as identifiers for spatial data. The XLSX column includes a single text value, TopographicHigh_RawData, which identifies the associated general file resource. Semantically, the GIS column functions as a geospatial identifier with location name resolution, while the XLSX column acts as a general file identifier. This collection is ideal for users seeking detailed topographic information for various regions, enabling applications in geographic analysis, land use planning, and environmental studies where precise spatial data is required.",
+  "runtime_seconds": 8.483,
+  "status": "ok"
+}

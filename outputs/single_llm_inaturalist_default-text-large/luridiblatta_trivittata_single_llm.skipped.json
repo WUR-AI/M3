@@ -1,0 +1,15 @@
+{
+  "csv": "luridiblatta_trivittata.csv",
+  "dataset_id": "luridiblatta_trivittata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e7e05ed62f883f5d399eec7e0640ff26ed43608e869a227bfc075accc91ec6bb",
+  "contract_sha256": "b0cce421a4cf7592a65e51c5ecb741d881efe57400e8838a41528632babac485",
+  "prompt_tokens": 332022,
+  "status": "skipped",
+  "reason": "context_window"
+}

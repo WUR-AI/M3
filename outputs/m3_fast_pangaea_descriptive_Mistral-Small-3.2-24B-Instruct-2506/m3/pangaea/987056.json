@@ -1,0 +1,31 @@
+{
+  "dataset_id": "987056",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/987056.csv",
+  "source_sha256": "c679b64af9656205fbe4f33f6f7a71f57f9f0abe1933a8d0c5b51b6657b297a9",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T19:51:45.151471+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Core Analysis Data",
+    "description": "Dataset containing sediment core analysis data, including depth, total organic carbon (TOC), total inorganic carbon (TIC), event information, geographic coordinates, elevation, and date/time of sampling. The data is concentrated at a single geographic location with a specific event identifier.",
+    "keywords": [
+      "sediment core",
+      "TOC",
+      "TIC",
+      "GeoB16310-2",
+      "marine sediment",
+      "carbon analysis",
+      "geographic coordinates",
+      "2012",
+      "Gulf of Mexico"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/987056_6714909cbc384531bd13993feaeca678.jsonl",
+  "runtime_seconds": 405.68
+}

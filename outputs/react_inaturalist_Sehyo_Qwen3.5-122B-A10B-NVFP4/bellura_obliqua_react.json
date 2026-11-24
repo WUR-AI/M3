@@ -1,0 +1,74 @@
+{
+  "csv": "bellura_obliqua.csv",
+  "dataset_id": "bellura_obliqua",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3781a21e38e5e8af8138dec3ebc255f4fe5075ed9a944d6bf1e703b23b6c0064",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 4305,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 27.708221,
+      "min_lon": -128.0531,
+      "max_lat": 55.41135,
+      "max_lon": -60.459063
+    },
+    "temporalCoverage": {
+      "from": "1987-05-19T22:30:00+00:00",
+      "to": "2026-06-14T08:20:19+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "bellura_obliqua"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "bellura_obliqua",
+        "resource": "bellura_obliqua"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "bellura_obliqua",
+        "resource": "bellura_obliqua",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "bellura_obliqua",
+        "resource": "bellura_obliqua"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "bellura_obliqua",
+        "resource": "bellura_obliqua",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "bellura_obliqua",
+        "resource": "bellura_obliqua",
+        "time_column": "dateIdentified"
+      }
+    }
+  ],
+  "runtime_seconds": 12.927,
+  "status": "ok"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "lepomis_marginatus.csv",
+  "dataset_id": "lepomis_marginatus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1001,
+  "n_columns": 50,
+  "description": "Lepomis marginatus species occurrence records from 1992 to 2026, including taxonomic, geographic, and observation metadata.",
+  "dataset_description": "Species occurrence records for Lepomis marginatus from 1992 to 2026 in biodiversity domain.",
+  "runtime_seconds": 33.788,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/lepomis_marginatus/dictionary.json"
+}

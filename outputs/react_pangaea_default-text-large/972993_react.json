@@ -1,0 +1,92 @@
+{
+  "csv": "972993.csv",
+  "dataset_id": "972993",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e025ea37fdfb8676c93e7a6316bc0e2b338a8f54454d19976b10958278c38745",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 4954,
+  "metadata": {
+    "name": "Marine Sediment Core Geochemical Dataset",
+    "description": "A collection of marine sediment core samples with geochemical measurements. Each record includes the sampling event, geographic coordinates (latitude, longitude), site identifier, literature source, δ34S values, age estimates, sample type, distance to shore, water‑depth description, elevation, sediment depth, sedimentation rate, methane concentration, dominant lithology, CaCO₃ content, total organic carbon (TOC), analytical method, and the date/time of sampling.",
+    "keywords": [
+      "marine",
+      "sediment",
+      "core",
+      "geochemistry",
+      "δ34S",
+      "paleoceanography",
+      "ODP",
+      "age",
+      "CH4",
+      "TOC",
+      "CaCO3",
+      "lithology"
+    ],
+    "spatialCoverage": {
+      "min_lat": -46.5797,
+      "min_lon": -178.1665,
+      "max_lat": 87.89,
+      "max_lon": 174.3141
+    },
+    "temporalCoverage": {
+      "from": "1974-07-18T00:00:00+00:00",
+      "to": "2016-07-04T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "972993"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 15.207,
+  "status": "ok"
+}

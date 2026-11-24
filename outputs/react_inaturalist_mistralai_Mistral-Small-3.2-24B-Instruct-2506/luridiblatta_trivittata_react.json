@@ -1,0 +1,104 @@
+{
+  "csv": "luridiblatta_trivittata.csv",
+  "dataset_id": "luridiblatta_trivittata",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e7e05ed62f883f5d399eec7e0640ff26ed43608e869a227bfc075accc91ec6bb",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5246,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.935157,
+      "min_lon": -124.151688,
+      "max_lat": 43.710541,
+      "max_lon": -114.349992
+    },
+    "temporalCoverage": {
+      "from": "2013-06-27T17:23:23+00:00",
+      "to": "2026-06-07T10:58:15+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "luridiblatta_trivittata",
+        "resource": "luridiblatta_trivittata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 27.708,
+  "status": "ok"
+}

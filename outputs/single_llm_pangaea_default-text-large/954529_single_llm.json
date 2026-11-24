@@ -1,0 +1,33 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "contract_sha256": "bf2d2f16916aba3b1598344cd25415a82645741021b811c94ea005a62dbf2574",
+  "prompt_tokens": 592,
+  "metadata": {
+    "name": "Geographic Topographic Data Collection",
+    "description": "A list of file references to geographic and topographic data archives, including zip files for regions such as Big Skidder, Black Hills, Blue Hills, Cougar Mountain, Devils Mountain, Dow Mountain, Fidalgo Island, Lopez Island, San Juan, and an Excel file containing raw topographic high data.",
+    "keywords": [
+      "GIS",
+      "topography",
+      "zip",
+      "Excel",
+      "geographic",
+      "mountain",
+      "island"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.627,
+  "status": "ok"
+}

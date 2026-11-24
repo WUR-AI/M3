@@ -1,0 +1,35 @@
+{
+  "dataset_id": "973041",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973041.csv",
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:35:38.038416+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Radiocarbon Dating Data from Archaeological Sites in Malaysia",
+    "description": "A compilation of radiocarbon dating measurements from archaeological sites in Malaysia, with a focus on the Sarawak and Sabah regions, including calibrated and uncalibrated age estimates, standard deviations, and laboratory references.",
+    "keywords": [
+      "radiocarbon dating",
+      "archaeology",
+      "Malaysia",
+      "Sarawak",
+      "Sabah",
+      "Gua Niah",
+      "chronology",
+      "prehistoric",
+      "calibrated age"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973041_12ab2aafed584636851e493b5ab89a58.jsonl",
+  "runtime_seconds": 147.78
+}

@@ -1,0 +1,35 @@
+{
+  "dataset_id": "982395",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/982395.csv",
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T19:28:45.515747+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Chemical and Physical Properties Dataset",
+    "description": "This dataset contains environmental and chemical measurements from sediment samples, including total organic carbon (TOC), black carbon (BC), calcium carbonate (CaCO3), pH levels, particle size distribution, and various chemical concentrations. The data spans from July 22, 2018, to August 12, 2019, and covers a specific geographic area with precise latitude and longitude coordinates.",
+    "keywords": [
+      "sediment",
+      "chemical properties",
+      "environmental measurements",
+      "TOC",
+      "BC",
+      "CaCO3",
+      "pH",
+      "particle size distribution",
+      "geographic coordinates",
+      "temporal data",
+      "spatial data",
+      "2018-2019",
+      "Germany"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/982395_24bc61a995f5494cb1eb38d77e91c2d9.jsonl",
+  "runtime_seconds": 550.65
+}

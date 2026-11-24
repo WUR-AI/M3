@@ -1,0 +1,46 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db",
+  "contract_sha256": "3edab174c4d23947d0a135c529a2ecc08e2d395961f8eecaa5084a0cfa5460e3",
+  "prompt_tokens": 1253,
+  "metadata": {
+    "name": "MITAPI 2015-2010 Difference by Sector",
+    "description": "Dataset containing NetCDF files representing the difference in MIT API (likely a model or index) between the years 2015 and 2010, categorized by various economic sectors including Agriculture (AGR), Energy (ENE), Industry (IND), Power Plant (PPA), Process (PRO), Residential/Commercial (RCO), Reference (REF), Shipping (SHIP), Shortwave (SWD), Transport (TNG), Traffic (TRF), and Tourism (TRO).",
+    "keywords": [
+      "MITAPI",
+      "2015",
+      "2010",
+      "difference",
+      "AGR",
+      "ENE",
+      "IND",
+      "PPA",
+      "PRO",
+      "RCO",
+      "REF",
+      "SHIP",
+      "SWD",
+      "TNG",
+      "TRF",
+      "TRO",
+      "NetCDF"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2010-01-01",
+      "to": "2015-12-31"
+    },
+    "spatial": "0.01 degree",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.334,
+  "status": "ok"
+}

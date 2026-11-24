@@ -1,0 +1,66 @@
+{
+  "csv": "pectocarya_recurvata.csv",
+  "dataset_id": "pectocarya_recurvata",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2c1205162ae0eee5a57bfff2983a6e11d44981c1558d464a4c82db5fb0fea28e",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3188,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 29.725293,
+      "min_lon": -118.363963,
+      "max_lat": 37.339383,
+      "max_lon": -107.647989
+    },
+    "temporalCoverage": {
+      "from": "2008-03-01T02:44:00+00:00",
+      "to": "2026-05-03T09:09:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "pectocarya_recurvata"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "pectocarya_recurvata",
+        "resource": "pectocarya_recurvata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "pectocarya_recurvata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude",
+        "resource": "pectocarya_recurvata"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "pectocarya_recurvata",
+        "resource": "pectocarya_recurvata"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "pectocarya_recurvata",
+        "resource": "pectocarya_recurvata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.848,
+  "status": "ok"
+}

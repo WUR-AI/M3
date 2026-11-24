@@ -1,0 +1,16 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 45,
+  "n_columns": 46,
+  "description": "Earth/environmental science data from 1986-11-05, 45 rows, sediment chemistry, isotopic ratios, location.",
+  "dataset_description": "Single-table dataset with 45 rows, covering Earth/environmental science on 1986-11-05.",
+  "runtime_seconds": 29.115,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/973695/dictionary.json"
+}

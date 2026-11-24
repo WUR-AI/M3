@@ -1,0 +1,66 @@
+{
+  "csv": "muhlenbergia_lindheimeri.csv",
+  "dataset_id": "muhlenbergia_lindheimeri",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "30f6271c3bb7ec0a1c6f22d04a355c286c69c45bb30d401432ef4d308f906e36",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 3348,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 29.303842,
+      "min_lon": -117.756805,
+      "max_lat": 33.712517,
+      "max_lon": -97.19223
+    },
+    "temporalCoverage": {
+      "from": "2010-10-24",
+      "to": "2026-05-21"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "muhlenbergia_lindheimeri"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "muhlenbergia_lindheimeri",
+        "resource": "muhlenbergia_lindheimeri"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "muhlenbergia_lindheimeri",
+        "resource": "muhlenbergia_lindheimeri"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "muhlenbergia_lindheimeri",
+        "resource": "muhlenbergia_lindheimeri",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "muhlenbergia_lindheimeri",
+        "resource": "muhlenbergia_lindheimeri",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 10.375,
+  "status": "ok"
+}

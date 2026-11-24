@@ -1,0 +1,44 @@
+{
+  "csv": "958774.csv",
+  "dataset_id": "958774",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1",
+  "contract_sha256": "50e219c12785fa48e7e7a141d7853d9529d03830f00b37f6c1083947f1a950ff",
+  "prompt_tokens": 7462,
+  "metadata": {
+    "name": "Lake Constance Total Phosphorus Concentration (1951-2010)",
+    "description": "Annual measurements of total phosphorus (TP) concentrations in Lake Constance at the Fischbach-Uttwil site. The dataset includes summer averages for the upper 20 m of the water column (July‑September) from 1967 to 2010 and winter mixing period concentrations for the full water column from 1951 to 1966. Each record provides the year, depth information, TP value, a description of the sampling period, and the geographic coordinates of the sampling location.",
+    "keywords": [
+      "total phosphorus",
+      "TP",
+      "Lake Constance",
+      "Fischbach-Uttwil",
+      "lake",
+      "water quality",
+      "depth profile",
+      "annual",
+      "summer average",
+      "winter mixing"
+    ],
+    "spatialCoverage": {
+      "min_lat": 47.6240037651,
+      "min_lon": 9.3754994815,
+      "max_lat": 47.6240037651,
+      "max_lon": 9.3754994815
+    },
+    "temporalCoverage": {
+      "from": "1951-01-01",
+      "to": "2010-12-31"
+    },
+    "spatial": "point location",
+    "temporal": "yearly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.625,
+  "status": "ok"
+}

@@ -1,0 +1,31 @@
+{
+  "dataset_id": "901510",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901510.csv",
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T09:19:22.702726+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Elwha River Delta Survey Data",
+    "description": "This dataset contains survey data from the Elwha River Delta, including geographic coordinates (latitude, longitude, elevation), timestamps, horizontal and vertical accuracy measures (HRMS, VRMS), status, descriptions, and event information. The data was collected on February 3, 2012, with high precision coordinates and high frequency data points.",
+    "keywords": [
+      "Elwha River Delta",
+      "survey data",
+      "geographic coordinates",
+      "elevation",
+      "HRMS",
+      "VRMS",
+      "geospatial data",
+      "February 2012",
+      "Washington State"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901510_22597ef37b384cc49ad33c294b33e176.jsonl",
+  "runtime_seconds": 345.12
+}

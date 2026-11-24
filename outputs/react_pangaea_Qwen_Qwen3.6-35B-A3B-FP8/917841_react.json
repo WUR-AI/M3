@@ -1,0 +1,105 @@
+{
+  "csv": "917841.csv",
+  "dataset_id": "917841",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 5307,
+  "metadata": {
+    "name": "Water quality measurements at Macapule Lagoon",
+    "description": "Water quality parameters including temperature, salinity, dissolved oxygen, pH, ammonia, nitrate, and phosphate measured at Macapule Lagoon from December 2013 to June 2015.",
+    "keywords": [
+      "water quality",
+      "Macapule Lagoon",
+      "temperature",
+      "salinity",
+      "dissolved oxygen",
+      "pH",
+      "ammonia",
+      "nitrate",
+      "phosphate"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-01",
+      "to": "2015-06-01"
+    },
+    "spatial": "point locations",
+    "temporal": "biannual"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "917841"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "917841",
+        "resource": "917841",
+        "n": 12
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "917841",
+        "resource": "917841",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "917841",
+        "resource": "917841",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "917841",
+        "resource": "917841"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "917841",
+        "resource": "917841"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "917841",
+        "resource": "917841"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "917841",
+        "resource": "917841",
+        "field": "Event",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 11.496,
+  "status": "ok"
+}

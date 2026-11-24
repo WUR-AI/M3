@@ -1,0 +1,139 @@
+{
+  "csv": "965137.csv",
+  "dataset_id": "965137",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "040ea113a6459c88179610e781f09b1e537c72d84cbcae2faf2a0ceb52eca11c",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 7599,
+  "metadata": {
+    "name": "Porites sp. geochemical and isotopic records from TIAREI-3B",
+    "description": "High-resolution Sr/Ca, Mg/Ca, δ18O, and δ13C measurements from Porites sp. coral samples collected at a single location in French Polynesia (17.5°S, 149.4°W, 15 m depth). The dataset contains 91 sub-annual (approximately monthly) measurements spanning the period 2000–2008, providing a proxy record of sea surface conditions.",
+    "keywords": [
+      "Porites",
+      "coral",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "geochemistry",
+      "isotopes",
+      "paleoclimate",
+      "French Polynesia",
+      "TIAREI-3B"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "2000-01-01",
+      "to": "2008-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-annual (approximately monthly)"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "965137"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "time_column": "Age_2"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "field": "Date/Time",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "965137",
+        "resource": "965137",
+        "field": "Age_2",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 15.883,
+  "status": "ok"
+}

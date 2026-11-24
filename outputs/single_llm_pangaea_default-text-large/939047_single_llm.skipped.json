@@ -1,0 +1,15 @@
+{
+  "csv": "939047.csv",
+  "dataset_id": "939047",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5b90ade135286bbd4e3faecda84f9f5bedba033ad13f9eb079cc10bf010109b3",
+  "contract_sha256": "53beb76789cfe8a2bda9bceca88fe8f6ed7bdb60f5c0b1f7d10ae8062390d2f1",
+  "prompt_tokens": 1330837,
+  "status": "skipped",
+  "reason": "context_window"
+}

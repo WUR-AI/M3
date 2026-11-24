@@ -1,0 +1,43 @@
+{
+  "dataset_id": "972054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972054.csv",
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:10:32.537236+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Multi-temporal archive of Uelzen, Germany (Site c3126) satellite imagery and shapefiles",
+    "description": "A multi-temporal archive for a single fixed observation site in Uelzen, Germany (Site ID: c3126). The dataset contains 285 records spanning 1984 to 2023, cataloging associated GeoTIFF satellite imagery and Shapefile data. The data structure is split into two subsets: records with date ranges and GeoTIFF file references (153 records), and records with Shapefile references but lacking specific date ranges (132 records).",
+    "keywords": [
+      "Uelzen",
+      "Germany",
+      "satellite imagery",
+      "GeoTIFF",
+      "Shapefile",
+      "remote sensing",
+      "multi-temporal",
+      "c3126",
+      "ESIS_Uelzen"
+    ],
+    "spatialCoverage": {
+      "min_lat": 52.798539332,
+      "min_lon": 9.998781436,
+      "max_lat": 52.798539332,
+      "max_lon": 9.998781436
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "Point-level (52.798539332, 9.998781436)",
+    "temporal": "Daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972054_a2dfbce86a1c4f8fb8b3fb263dd24938.jsonl",
+  "runtime_seconds": 264.09
+}

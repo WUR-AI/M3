@@ -1,0 +1,15 @@
+{
+  "csv": "spragueia_dama.csv",
+  "dataset_id": "spragueia_dama",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "238cb9edd9ff01d1237053899a4967cc95be90e399a997f96cc54490decda37f",
+  "contract_sha256": "379f2abe73b6706bcdb2468e07c40e1d954671e737ac9b73bfbb5ddf893757d0",
+  "prompt_tokens": 312053,
+  "status": "skipped",
+  "reason": "context_window"
+}

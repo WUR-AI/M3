@@ -1,0 +1,47 @@
+{
+  "dataset_id": "924558",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924558.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:24:18.730067+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Lab carbonate chemistry of Mytilus galloprovincialis",
+    "description": "Laboratory measurements of seawater carbonate system parameters (pH, temperature, salinity, total alkalinity, dissolved inorganic carbon, CO₂, bicarbonate, carbonate, calcium, and saturation states) for the mussel Mytilus galloprovincialis. Includes treatment (Control/Other), exposure time in hours (2–144 h), and developmental stage. All samples were collected at a single site (Nagasaki University).",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "laboratory",
+      "carbonate chemistry",
+      "pH",
+      "DIC",
+      "CO2",
+      "alkalinity",
+      "salinity",
+      "temperature",
+      "ocean acidification",
+      "marine biology",
+      "Nagasaki University"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01T00:00:00.000000002+00:00",
+      "to": "1970-01-01T00:00:00.000000144+00:00"
+    },
+    "spatial": "single point location (no spatial variation)",
+    "temporal": "exposure duration recorded in hours (2–144 h); timestamps are sub‑second artifacts of epoch conversion"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924558_1bc119a344e740bf8d0a08541c5af356.jsonl",
+  "runtime_seconds": 562.72,
+  "recovered_from_trace": true,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd"
+}

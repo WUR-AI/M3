@@ -1,0 +1,92 @@
+{
+  "csv": "972178.csv",
+  "dataset_id": "972178",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4160,
+  "metadata": {
+    "name": "Aalen, Germany",
+    "description": "Dataset containing 6 band color composits for the Aalen, Germany area, with associated metadata such as observation year, date/time ranges, file types, and geographic coordinates.",
+    "keywords": [
+      "Aalen",
+      "Germany",
+      "color composits",
+      "remote sensing",
+      "geospatial data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.79899472,
+      "min_lon": 9.998824433,
+      "max_lat": 48.79899472,
+      "max_lon": 9.998824433
+    },
+    "temporalCoverage": {
+      "from": "1984-08-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "972178"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "time_column": "Date/time start"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "time_column": "Date/time end"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "972178",
+        "resource": "972178",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 16.276,
+  "status": "ok"
+}

@@ -1,0 +1,40 @@
+{
+  "dataset_id": "913861",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/913861.csv",
+  "source_sha256": "4f12a0e5810b32b5ec78c9788b9f5e7c7f24d917d0544d283992885714b59cc2",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T20:49:01.757461+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Neumayer_SPUSO Particle Concentration Data",
+    "description": "This dataset contains particle concentration measurements (dN/dlogDp) across various diameters, collected at a fixed location in Neumayer, Antarctica. The data spans a full year from 2018-01-01 to 2018-12-31, with hourly measurements. It includes temporal columns for start and end times, as well as particle concentration values for diameters ranging from 92.87 nm to 4845.51 nm.",
+    "keywords": [
+      "particle concentration",
+      "aerosol",
+      "Neumayer",
+      "Antarctica",
+      "time series",
+      "environmental data"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01T00:25:00+00:00",
+      "to": "2018-12-31T23:55:00+00:00"
+    },
+    "spatial": "point location",
+    "temporal": "hourly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/913861_d7d01985d8cb4acb9e6377611ec9039b.jsonl",
+  "runtime_seconds": 422.51
+}

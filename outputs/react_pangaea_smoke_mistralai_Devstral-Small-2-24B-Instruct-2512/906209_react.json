@@ -1,0 +1,66 @@
+{
+  "csv": "906209.csv",
+  "dataset_id": "906209",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 1778,
+  "metadata": {
+    "name": "Pregnancy Diagnoses, Hunting Registers, and CPUE Records",
+    "description": "This dataset contains three files related to pregnancy diagnoses, hunting records, and catch-per-unit-effort (CPUE) records. The files include interviews, hunting registers for pregnancy and immatures, and CPUE records, all in XLSX format.",
+    "keywords": [
+      "Interviews",
+      "Hunting Registers",
+      "Pregnancy Diagnoses",
+      "CPUE",
+      "XLSX"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "Point locations",
+    "temporal": "Not specified"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "906209"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    }
+  ],
+  "runtime_seconds": 10.445,
+  "status": "ok"
+}

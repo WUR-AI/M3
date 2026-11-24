@@ -1,0 +1,42 @@
+{
+  "dataset_id": "995133",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995133.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T19:05:19.115461+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "M. balthica shell length and frequency measurements from Rönnebank (Baltic Sea) – June 2023",
+    "description": "Dataset of 36 records collected during Expedition EMB320 at Rönnebank (Baltic Sea) in June 2023. Columns include constant values (Expedition = EMB320, Location = Rönnebank (Baltic Sea), Sampling date = June 2023), a balanced two‑level categorical factor \"Site\" (18 records each), shell length (mm) and shell‑frequency counts for the bivalve abbreviated as \"M. balthica\". No missing values are present. (based on get_field_statistics and get_resource_info)",
+    "keywords": [
+      "M. balthica",
+      "shell length",
+      "shell frequency",
+      "Baltic Sea",
+      "Rönnebank",
+      "Expedition EMB320",
+      "June 2023"
+    ],
+    "spatialCoverage": {
+      "min_lat": 1.0,
+      "min_lon": 0.0,
+      "max_lat": 18.0,
+      "max_lon": 167.0
+    },
+    "temporalCoverage": {
+      "from": "2023-06-01T00:00:00+00:00",
+      "to": "2023-06-01T00:00:00+00:00"
+    },
+    "spatial": "approx. 1° latitude steps; longitude spacing variable across a 0–167° range (derived from the numeric range of the possible coordinate pair, which may not represent true geographic coordinates) (based on get_spatial_extent and detect_spatial_columns)",
+    "temporal": "source granularity month (June 2023); parsed timestamps have sub‑second precision (based on analyze_temporal_column and get_temporal_extent)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995133_67c0fee83a774e5fa4a68b380146ff46.jsonl",
+  "runtime_seconds": 156.29,
+  "recovered_from_trace": true,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328"
+}

@@ -1,0 +1,44 @@
+{
+  "dataset_id": "973035",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973035.csv",
+  "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:39:30.275946+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Soil radionuclide and dose‑rate data – NEP (2023)",
+    "description": "Dataset of 7 soil samples collected at the NEP site on 2023‑04‑03, containing depth, elevation, uranium, thorium, potassium concentrations, total and external dose rates, and two radiometric age estimates with uncertainties. Includes latitude, longitude and a timestamp for each sample.",
+    "keywords": [
+      "soil",
+      "radionuclide",
+      "uranium",
+      "thorium",
+      "potassium",
+      "dose‑rate",
+      "age dating",
+      "NEP",
+      "geochemistry",
+      "2023"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.8672,
+      "min_lon": 10.5115,
+      "max_lat": 48.8682,
+      "max_lon": 10.5127
+    },
+    "temporalCoverage": {
+      "from": "2023-04-03T09:00:00Z",
+      "to": "2023-04-03T09:00:00Z"
+    },
+    "spatial": "≈0.001° (~100 m)",
+    "temporal": "instant (sub‑second granularity)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973035_9d19ec244b284535a47a693aeb90855a.jsonl",
+  "runtime_seconds": 208.61
+}

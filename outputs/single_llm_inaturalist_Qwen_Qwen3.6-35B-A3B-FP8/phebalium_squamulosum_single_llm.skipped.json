@@ -1,0 +1,15 @@
+{
+  "csv": "phebalium_squamulosum.csv",
+  "dataset_id": "phebalium_squamulosum",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e0710fb9cd8e05bde812f41412f515d98bc73618bfdcca901507617a975c61f1",
+  "contract_sha256": "6aacb4802c7f8fb5e5125a1b437083e9cc895dda21449ac5c71bb3d969b7a609",
+  "prompt_tokens": 322964,
+  "status": "skipped",
+  "reason": "context_window"
+}

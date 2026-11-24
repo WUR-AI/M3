@@ -1,0 +1,42 @@
+{
+  "dataset_id": "916167",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/916167.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:14:55.991354+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Katharinentalerhof Pforzheim EC Data Files",
+    "description": "Metadata for 12 files from the Pangaea repository (Bohm et al. 2020) related to the Katharinentalerhof event in Pforzheim. Each record includes file name, format (11 CSV, 1 DAT), size, download URL, and a uniform spatial location (latitude 48.92 N, longitude 8.70 E). No temporal information is available; the Date/Time column contains only null values.",
+    "keywords": [
+      "environmental data",
+      "pangaea",
+      "katharinentalerhof",
+      "pforzheim",
+      "csv",
+      "dat",
+      "file-metadata",
+      "download-url",
+      "latitude",
+      "longitude"
+    ],
+    "spatialCoverage": {
+      "min_lat": 48.92,
+      "min_lon": 8.7,
+      "max_lat": 48.92,
+      "max_lon": 8.7
+    },
+    "temporalCoverage": null,
+    "spatial": "point",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/916167_5dae6aaca348475c8354d704ce8bf1fb.jsonl",
+  "runtime_seconds": 339.44,
+  "recovered_from_trace": true,
+  "source_sha256": "242ca6ab7d53e7d866bd417783a6e2cdc1b84000a4023d9b9cbf277090f402c9"
+}

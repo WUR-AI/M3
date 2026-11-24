@@ -1,0 +1,60 @@
+{
+  "csv": "chlorurus_bleekeri.csv",
+  "dataset_id": "chlorurus_bleekeri",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f6eff0930d2c82a613e823ce4e05eb28fcd765ace3184b0299c02ffd44a3a1d5",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2549,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -23.303405,
+      "min_lon": -174.742082,
+      "max_lat": 13.728148,
+      "max_lon": 179.995321
+    },
+    "temporalCoverage": {
+      "from": "2004-08-05",
+      "to": "2026-06-08"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "chlorurus_bleekeri",
+        "resource": "chlorurus_bleekeri.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "chlorurus_bleekeri",
+        "resource": "chlorurus_bleekeri"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "chlorurus_bleekeri",
+        "resource": "chlorurus_bleekeri",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "chlorurus_bleekeri",
+        "resource": "chlorurus_bleekeri",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.614,
+  "status": "ok"
+}

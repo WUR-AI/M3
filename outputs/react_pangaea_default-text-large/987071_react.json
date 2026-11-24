@@ -1,0 +1,58 @@
+{
+  "csv": "987071.csv",
+  "dataset_id": "987071",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2159,
+  "metadata": {
+    "name": "Geochemical profile (TOC, TIC, depth) for site GeoB16320‑2",
+    "description": "A sediment geochemistry dataset containing depth, total organic carbon (TOC), total inorganic carbon (TIC), and related measurements collected at the GeoB16320‑2 site. Each record includes the sampling depth, latitude, longitude, elevation, and the date‑time of the observation.",
+    "keywords": [
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "sediment",
+      "depth profile",
+      "GeoB16320‑2",
+      "latitude",
+      "longitude",
+      "elevation",
+      "marine sediment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24T21:28:00",
+      "to": "2012-03-24T21:28:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single observation"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "987071"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "987071",
+        "resource": "987071"
+      }
+    }
+  ],
+  "runtime_seconds": 8.641,
+  "status": "ok"
+}

@@ -1,0 +1,85 @@
+{
+  "csv": "959883.csv",
+  "dataset_id": "959883",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "de3317d8fc807ed86c4722f03ef6a7bf025cc4bf9ffc0fd8a0c71f52b6b45ce0",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 3882,
+  "metadata": {
+    "name": "959883",
+    "description": "Dataset containing sediment sample data with various chemical measurements, including nutrients, metals, and other elements. The data includes spatial and temporal information for each sample.",
+    "keywords": [
+      "sediment",
+      "chemical analysis",
+      "nutrients",
+      "metals",
+      "geochemistry",
+      "marine science"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74047,
+      "min_lon": -28.58108,
+      "max_lat": 38.74047,
+      "max_lon": -28.58108
+    },
+    "temporalCoverage": {
+      "from": "2022-12-15",
+      "to": "2022-12-15"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "959883"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "959883",
+        "resource": "959883"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "959883",
+        "resource": "959883"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "959883",
+        "resource": "959883",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "959883",
+        "resource": "959883"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "959883",
+        "resource": "959883",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 14.648,
+  "status": "ok"
+}

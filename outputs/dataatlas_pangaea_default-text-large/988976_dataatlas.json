@@ -1,0 +1,16 @@
+{
+  "csv": "988976.csv",
+  "dataset_id": "988976",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 31,
+  "n_columns": 41,
+  "description": "Sediment core samples (31 rows) with depth, age, diatom counts, species abundances, and coordinates.",
+  "dataset_description": "Contains 31 records of Earth and environmental science measurements for analysis.",
+  "runtime_seconds": 146.198,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/988976/dictionary.json"
+}

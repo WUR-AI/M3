@@ -1,0 +1,37 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "contract_sha256": "419e70b16f8d86c34a2df3d5dfb7fb95a83f331d465e07e36942483ebd34e510",
+  "prompt_tokens": 1622,
+  "metadata": {
+    "name": "M. balthica shell length and frequency data from Rönnebank (Baltic Sea)",
+    "description": "Dataset containing measurements of shell length (M. balthica shell l) and length-frequency distribution (M. balthica l-freq) for the bivalve Macoma balthica collected during expedition EMB320 in June 2023 at Rönnebank in the Baltic Sea. Data is categorized by site type, specifically Marine Protected Area and Reference area.",
+    "keywords": [
+      "Macoma balthica",
+      "shell length",
+      "length-frequency",
+      "Baltic Sea",
+      "Rönnebank",
+      "Marine Protected Area",
+      "EMB320",
+      "benthic invertebrates"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": {
+      "from": "2023-06-01",
+      "to": "2023-06-30"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.06,
+  "status": "ok"
+}

@@ -1,0 +1,44 @@
+{
+  "dataset_id": "962616",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/962616.csv",
+  "source_sha256": "53878bd4aff9f3cab58fba0c5229d29a9b6de5e5bd93a55093c97e80fb7cd00e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T00:01:58.772896+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "WA_CapeBlossom_20210625_7cm_01",
+    "description": "Dataset containing preview images and binary files related to a specific project and event, all recorded at the same location and time.",
+    "keywords": [
+      "WA_CapeBlossom",
+      "20210625",
+      "7cm",
+      "Perma_X",
+      "RGB",
+      "CIR",
+      "DSM",
+      "Ortho",
+      "GeoTIFF",
+      "preview"
+    ],
+    "spatialCoverage": {
+      "min_lat": 66.891836,
+      "min_lon": -162.596512,
+      "max_lat": 66.891836,
+      "max_lon": -162.596512
+    },
+    "temporalCoverage": {
+      "from": "2021-06-25T21:21:30+00:00",
+      "to": "2021-06-25T21:21:30+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/962616_b6cff50004a8489d863335446fe632bb.jsonl",
+  "runtime_seconds": 268.3
+}

@@ -63,3 +63,6 @@ tracking = [
     "wandb>=0.27.0",
     "weave>=0.52.41",
 ]
+
+[tool.setuptools.package-data]
+"src.baseline.autoddg" = ["configurations/prompts.yaml", "LICENSE"]

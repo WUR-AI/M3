@@ -1,0 +1,15 @@
+{
+  "csv": "paeonia_caucasica.csv",
+  "dataset_id": "paeonia_caucasica",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "87f39c45fb88b07fd6d3b969bda5d7e5c340e69f7d92cea084b16e2adafe4fee",
+  "contract_sha256": "312906e85622df17de9e77723d85a6430f640a7c01f7c2a931d1bd68a3555bb8",
+  "prompt_tokens": 332037,
+  "status": "skipped",
+  "reason": "context_window"
+}

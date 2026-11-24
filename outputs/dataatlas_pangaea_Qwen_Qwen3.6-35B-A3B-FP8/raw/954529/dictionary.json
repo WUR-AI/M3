@@ -1,0 +1,134 @@
+{
+  "dataset_name": "954529",
+  "list_of_tables": [
+    "954529"
+  ],
+  "tables": {
+    "954529": {
+      "table_name": "954529",
+      "row_count": 10,
+      "number_of_columns": 2,
+      "list_of_columns": [
+        "GIS",
+        "XLSX"
+      ],
+      "columns": {
+        "GIS": {
+          "column_name": "GIS",
+          "data_type": "string",
+          "sample_values": [
+            "Devils_Mountain.zip",
+            "Big_Skidder.zip",
+            "Black_Hills.zip",
+            "Fidalgo_Island.zip",
+            "San_Juan.zip",
+            "Dow_Mountain.zip",
+            "Blue_Hills.zip",
+            "Lopez_Island.zip",
+            "Cougar_Mountain.zip"
+          ],
+          "data_patterns": {
+            "Aaaaaa_Aaaaaaaa.aaa": 2,
+            "Aaaaa_Aaaaaa.aaa": 1,
+            "Aaa_Aaaaaaaa.aaa": 1,
+            "Aaaaa_Aaaaa.aaa": 1,
+            "Aaa_Aaaaaaa.aaa": 1,
+            "Aaa_Aaaa.aaa": 1,
+            "Aaaa_Aaaaa.aaa": 1,
+            "Aaaaaaa_Aaaaaa.aaa": 1
+          },
+          "total_rows": 10,
+          "null_count": 1,
+          "unique_count": 10,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Lopez_Island.zip",
+                1
+              ],
+              [
+                "Black_Hills.zip",
+                1
+              ],
+              [
+                "Dow_Mountain.zip",
+                1
+              ],
+              [
+                "Big_Skidder.zip",
+                1
+              ],
+              [
+                "San_Juan.zip",
+                1
+              ],
+              [
+                "Blue_Hills.zip",
+                1
+              ],
+              [
+                "Devils_Mountain.zip",
+                1
+              ],
+              [
+                "Cougar_Mountain.zip",
+                1
+              ],
+              [
+                "Fidalgo_Island.zip",
+                1
+              ]
+            ],
+            "unique_count": 9
+          },
+          "description": "GIS file names for geographic regions, such as DevilsMountain.zip and SanJuan.zip."
+        },
+        "XLSX": {
+          "column_name": "XLSX",
+          "data_type": "string",
+          "sample_values": [
+            "TopographicHigh_RawData.xlsx"
+          ],
+          "data_patterns": {
+            "AaaaaaaaaaaAaaa_AaaAaaa.aaaa": 1
+          },
+          "total_rows": 10,
+          "null_count": 9,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "TopographicHigh_RawData.xlsx",
+                1
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "File names with the XLSX extension."
+        }
+      },
+      "sample_rows": [
+        {
+          "GIS": "San_Juan.zip",
+          "XLSX": null
+        },
+        {
+          "GIS": "Black_Hills.zip",
+          "XLSX": null
+        },
+        {
+          "GIS": "Dow_Mountain.zip",
+          "XLSX": null
+        }
+      ],
+      "description": "Contains ten rows of GIS and XLSX file names, including SanJuan.zip and BlackHills.zip.",
+      "is_row_capped": false,
+      "rows_processed": 10,
+      "total_rows_in_file": 10
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "954,529 tables of Earth and environmental science data, each containing ten rows."
+}

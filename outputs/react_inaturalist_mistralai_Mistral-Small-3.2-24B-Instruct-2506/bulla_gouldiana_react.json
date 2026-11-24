@@ -1,0 +1,90 @@
+{
+  "csv": "bulla_gouldiana.csv",
+  "dataset_id": "bulla_gouldiana",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "13e51a020b12d9206106b5e65236fa5522099fc00e87a4235cb0faf5570e152b",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4932,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -2.205288,
+      "min_lon": -122.879824,
+      "max_lat": 38.143208,
+      "max_lon": -80.792543
+    },
+    "temporalCoverage": {
+      "from": "1970-09-01T14:58:00+00:00",
+      "to": "2026-06-12T11:25:03+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "bulla_gouldiana",
+        "resource": "bulla_gouldiana",
+        "time_column": "lastInterpreted"
+      }
+    }
+  ],
+  "runtime_seconds": 26.966,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "echium_angustifolium.csv",
+  "dataset_id": "echium_angustifolium",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5fbf4d4f1c580eb9dc5fbdfc9673d4e20e3fedacbc84036d0d4df6fd842ec92f",
+  "contract_sha256": "0e9e015382d691d8cdef1c5eb1790613068b4fc68edcb5d21079afcdbb3f535a",
+  "prompt_tokens": 323268,
+  "status": "skipped",
+  "reason": "context_window"
+}

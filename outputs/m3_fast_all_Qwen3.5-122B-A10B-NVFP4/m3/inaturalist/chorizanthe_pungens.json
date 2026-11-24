@@ -1,0 +1,28 @@
+{
+  "dataset_id": "chorizanthe_pungens",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/chorizanthe_pungens.csv",
+  "source_sha256": "5a7172072bf1547a22cc104c0ab85db3e45a36d4498c3e80a1d6f23b2719694f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-16T23:59:58.097153+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 36.424869,
+      "min_lon": -122.374875,
+      "max_lat": 37.199948,
+      "max_lon": -121.600442
+    },
+    "temporalCoverage": {
+      "from": "2011-04-24T12:23:00+00:00",
+      "to": "2026-06-13T18:06:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/chorizanthe_pungens_a412efd10f1b499291f268dc838585b7.jsonl",
+  "runtime_seconds": 56.23
+}

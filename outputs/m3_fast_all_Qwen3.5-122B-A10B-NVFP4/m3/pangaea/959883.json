@@ -1,0 +1,43 @@
+{
+  "dataset_id": "959883",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959883.csv",
+  "source_sha256": "de3317d8fc807ed86c4722f03ef6a7bf025cc4bf9ffc0fd8a0c71f52b6b45ce0",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:37:49.088066+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Analysis of Marine Sediment Core M186_50-1GC",
+    "description": "A dataset containing geochemical measurements of ions and elements from a vertical sediment core profile collected at a single location in the North Atlantic Ocean. The data includes concentrations of major ions, nutrients, and trace elements measured at varying sediment depths, representing a snapshot of porewater chemistry at the time of collection.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "porewater",
+      "ions",
+      "nutrients",
+      "trace elements",
+      "sediment core",
+      "diagenesis",
+      "North Atlantic"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74047,
+      "min_lon": -28.58108,
+      "max_lat": 38.74047,
+      "max_lon": -28.58108
+    },
+    "temporalCoverage": {
+      "from": "2022-12-15T15:14:36+00:00",
+      "to": "2022-12-15T15:14:36+00:00"
+    },
+    "spatial": "point",
+    "temporal": "instantaneous"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959883_60291dd7b226498c980e19de25ae9024.jsonl",
+  "runtime_seconds": 148.86
+}

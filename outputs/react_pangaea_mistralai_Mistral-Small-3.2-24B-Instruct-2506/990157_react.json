@@ -1,0 +1,98 @@
+{
+  "csv": "990157.csv",
+  "dataset_id": "990157",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1783f619857ad835a2a0ca14fccc4da08e4c0ffcf008dccad424fd57de27c4e8",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3754,
+  "metadata": {
+    "name": "990157",
+    "description": "Dataset containing sediment depth, radioactive isotope measurements, and location data.",
+    "keywords": [
+      "sediment",
+      "210Pb",
+      "137Cs",
+      "radioactive isotopes",
+      "geospatial data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.365278,
+      "min_lon": -104.568333,
+      "max_lat": 21.365278,
+      "max_lon": -104.568333
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "990157"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "990157",
+        "resource": "990157"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "990157",
+        "resource": "990157"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "990157",
+        "resource": "990157"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "990157",
+        "resource": "990157"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "990157",
+        "resource": "990157"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "990157",
+        "resource": "990157",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "990157",
+        "resource": "990157",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 24.465,
+  "status": "ok"
+}

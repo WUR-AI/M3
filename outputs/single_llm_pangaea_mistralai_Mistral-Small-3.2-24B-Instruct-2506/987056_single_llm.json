@@ -1,0 +1,40 @@
+{
+  "csv": "987056.csv",
+  "dataset_id": "987056",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c679b64af9656205fbe4f33f6f7a71f57f9f0abe1933a8d0c5b51b6657b297a9",
+  "contract_sha256": "1c799ea75f605ef6f9e4654477ee3fd7fcddcdea3530eb2faaa5bb02c087f2ff",
+  "prompt_tokens": 1367,
+  "metadata": {
+    "name": "GeoB16310-2 Sediment Core Data",
+    "description": "This dataset contains sediment core data from GeoB16310-2, including measurements of depth, total organic carbon (TOC), total inorganic carbon (TIC), latitude, longitude, elevation, and date/time.",
+    "keywords": [
+      "sediment core",
+      "TOC",
+      "TIC",
+      "GeoB16310-2",
+      "marine sediment",
+      "carbon content"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.82405,
+      "min_lon": -87.170283333333,
+      "max_lat": 23.82405,
+      "max_lon": -87.170283333333
+    },
+    "temporalCoverage": {
+      "from": "2012-03-22",
+      "to": "2012-03-22"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 9.683,
+  "status": "ok"
+}

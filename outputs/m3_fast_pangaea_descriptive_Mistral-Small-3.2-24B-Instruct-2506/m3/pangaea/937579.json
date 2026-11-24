@@ -1,0 +1,33 @@
+{
+  "dataset_id": "937579",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/937579.csv",
+  "source_sha256": "156fa955ff4d43d3d0a0f15b5f40e346e65b3ba52e0f21a776a715bde33d718e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T12:38:18.553807+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Isotopic Measurements from Mackenzie River Expeditions",
+    "description": "This dataset contains isotopic measurements (δ18O, δD, and d xs) collected during scientific expeditions in the Mackenzie River region. It includes geographical coordinates, dates, stations, and water depth measurements for each event.",
+    "keywords": [
+      "Mackenzie River",
+      "Isotopic measurements",
+      "δ18O",
+      "δD",
+      "d xs",
+      "Scientific expeditions",
+      "Environmental research",
+      "Climate research",
+      "Geographical coordinates",
+      "Water depth",
+      "2019"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/937579_545109fe86d042289cb9b684dd16689b.jsonl",
+  "runtime_seconds": 496.97
+}

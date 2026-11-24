@@ -1,0 +1,16 @@
+{
+  "csv": "899705.csv",
+  "dataset_id": "899705",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 12,
+  "n_columns": 4,
+  "description": "Environmental data files with names, formats, sizes, and URLs.",
+  "dataset_description": "Environmental data tables, each with 12 rows, for Earth and environmental science research.",
+  "runtime_seconds": 4.43,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/899705/dictionary.json"
+}

@@ -1,0 +1,43 @@
+{
+  "csv": "973041.csv",
+  "dataset_id": "973041",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "contract_sha256": "df68fd892ff54acc041ee23dff2d91fb76d0f30562c4ec116da8260973db45a3",
+  "prompt_tokens": 49289,
+  "metadata": {
+    "name": "Radiocarbon and U-series dating from archaeological sites in Borneo",
+    "description": "A compilation of radiocarbon and U-series dating results from various archaeological sites across Borneo, including Malaysia (Sabah, Sarawak) and Indonesia (Kalimantan). The dataset contains sample identifiers, site names, dating methods (Radiocarbon age, U-series, U-Th), uncalibrated and calibrated ages with standard deviations, and associated references.",
+    "keywords": [
+      "Radiocarbon dating",
+      "U-series dating",
+      "Archaeology",
+      "Borneo",
+      "Sabah",
+      "Sarawak",
+      "Kalimantan",
+      "Holocene",
+      "Pleistocene",
+      "Caves",
+      "Pottery",
+      "Human occupation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 109.0,
+      "max_lat": 7.0,
+      "max_lon": 119.0
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.167,
+  "status": "ok"
+}

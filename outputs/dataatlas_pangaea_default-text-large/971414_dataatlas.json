@@ -1,0 +1,16 @@
+{
+  "csv": "971414.csv",
+  "dataset_id": "971414",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 19,
+  "n_columns": 9,
+  "description": "19 river-section measurements with sample IDs, depth, age, SR, references, and coordinates.",
+  "dataset_description": "Contains 19 records of Earth and environmental science measurements for analysis.",
+  "runtime_seconds": 36.445,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/971414/dictionary.json"
+}

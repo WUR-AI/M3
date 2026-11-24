@@ -1,0 +1,173 @@
+{
+  "csv": "972993.csv",
+  "dataset_id": "972993",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "e025ea37fdfb8676c93e7a6316bc0e2b338a8f54454d19976b10958278c38745",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 8643,
+  "metadata": {
+    "name": "Pyrite δ³⁴S and methane data from marine sediments and rocks",
+    "description": "A compilation of pyrite sulfur isotope (δ³⁴S Py) measurements, methane content, and associated geochemical data (CaCO₃, TOC, sulfur reduction rates) from marine sediment cores and rock samples worldwide. The dataset includes sample type, lithology, water depth, distance to shore, elevation, sediment depth, and age information, sourced from 94 published references.",
+    "keywords": [
+      "pyrite",
+      "sulfur isotopes",
+      "δ³⁴S",
+      "methane",
+      "marine sediments",
+      "geochemistry",
+      "biogeochemistry",
+      "sediment core",
+      "isotope geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": -46.5797,
+      "min_lon": -178.1665,
+      "max_lat": 87.89,
+      "max_lon": 174.3141
+    },
+    "temporalCoverage": {
+      "from": "1974-07-18",
+      "to": "2016-07-04"
+    },
+    "spatial": "point locations",
+    "temporal": "variable"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "972993"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "972993"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "972993",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "field": "Samp type",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "field": "Water depth descr",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "field": "Main lith",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "field": "Analyt method",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "field": "CH4",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972993",
+        "resource": "972993",
+        "field": "Source",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "972993",
+        "field": "Source",
+        "limit": 100,
+        "resource": "972993"
+      }
+    }
+  ],
+  "runtime_seconds": 19.815,
+  "status": "ok"
+}

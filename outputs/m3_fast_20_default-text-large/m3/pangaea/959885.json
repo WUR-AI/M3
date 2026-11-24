@@ -1,0 +1,40 @@
+{
+  "dataset_id": "959885",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959885.csv",
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:17:12.155368+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment ion concentrations at 38.74553 N, -28.56587 E on 2022-12-16",
+    "description": "Dataset of 19 sediment samples collected at a single location (38.74553 N, -28.56587 E, elevation -1234 m) on 2022-12-16. Each record includes depth (0.28–3.81 m), temperature, and concentrations (mg L⁻¹) of major ions and trace metals (NO₃⁻, NO₂⁻, NH₄⁺, PO₄³⁻, Cl⁻, SO₄²⁻, Br⁻, B, Mn, Ca, Fe, Na, Mg, Sr, Si, Ba, Li, K). All rows share the identical timestamp and geographic point, representing a single‑point observation.",
+    "keywords": [
+      "sediment chemistry",
+      "ion concentrations",
+      "depth series",
+      "single point observation",
+      "marine sediment",
+      "environmental monitoring"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "max_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16T07:56:17+00:00",
+      "to": "2022-12-16T07:56:17+00:00"
+    },
+    "spatial": "point",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959885_adf662cefa8f4b6aba8d617107641448.jsonl",
+  "runtime_seconds": 195.45
+}

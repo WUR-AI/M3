@@ -1,0 +1,15 @@
+{
+  "csv": "sphenophorus_interstitialis.csv",
+  "dataset_id": "sphenophorus_interstitialis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b35571d10cb4f25590bc23334f33933035f0f39638fea17da6c79da6af16c63f",
+  "contract_sha256": "495aa662e440d16eaa7fafadf173862c873452a3326a2bb3663fa734f074c4a7",
+  "prompt_tokens": 321170,
+  "status": "skipped",
+  "reason": "context_window"
+}

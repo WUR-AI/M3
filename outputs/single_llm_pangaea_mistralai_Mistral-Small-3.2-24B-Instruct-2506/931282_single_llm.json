@@ -1,0 +1,38 @@
+{
+  "csv": "931282.csv",
+  "dataset_id": "931282",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "contract_sha256": "2a627f983e4f10e51e986e8db8279ecbf13e512c94f551b1c86c76d43c52d15b",
+  "prompt_tokens": 642,
+  "metadata": {
+    "name": "UPC Event Data",
+    "description": "This dataset contains information about events recorded by sensors, including binary files, event types, and geographic coordinates.",
+    "keywords": [
+      "sensors",
+      "events",
+      "geographic data",
+      "UPC"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11",
+      "to": "2020-03-11"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.522,
+  "status": "ok"
+}

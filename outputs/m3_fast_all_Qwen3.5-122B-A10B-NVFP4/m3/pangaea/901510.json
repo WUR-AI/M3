@@ -1,0 +1,43 @@
+{
+  "dataset_id": "901510",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901510.csv",
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:03:54.483168+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "High-Precision GPS Survey of Elwha River Delta",
+    "description": "A high-fidelity, localized GPS survey dataset capturing a vertical cross-section of the terrain at the Elwha River Delta. The data consists of 106 records collected on February 3, 2012, featuring 'FIXED' GPS solutions with sub-centimeter to centimeter-level precision (HRMS and VRMS). The survey includes latitude, longitude, elevation, and accuracy metrics, primarily representing a professional profile (PROF132) with a single test record.",
+    "keywords": [
+      "GPS survey",
+      "Elwha River Delta",
+      "high-precision",
+      "topography",
+      "FIXED solution",
+      "HRMS",
+      "VRMS",
+      "elevation profile",
+      "geospatial"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00+00:00",
+      "to": "2012-02-03T13:11:00+00:00"
+    },
+    "spatial": "Point locations (survey-grade GPS, ~2-4 cm precision)",
+    "temporal": "Discrete bursts (single day, ~26 minutes duration)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901510_c19897570b86479f9048ebdb6588405c.jsonl",
+  "runtime_seconds": 114.42
+}

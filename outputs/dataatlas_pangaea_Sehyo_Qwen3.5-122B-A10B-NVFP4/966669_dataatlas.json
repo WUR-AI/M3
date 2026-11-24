@@ -1,0 +1,16 @@
+{
+  "csv": "966669.csv",
+  "dataset_id": "966669",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "domain": "Earth and environmental science",
+  "n_rows": 48,
+  "n_columns": 38,
+  "description": "August 2022 cryoconite samples from Flade Isblink ice cap with radiometric and geochemical data.",
+  "dataset_description": "Earth and environmental science data from August 2022 containing 48 records.",
+  "runtime_seconds": 18.715,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Sehyo_Qwen3.5-122B-A10B-NVFP4/raw/966669/dictionary.json"
+}

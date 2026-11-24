@@ -1,0 +1,45 @@
+{
+  "dataset_id": "986963",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/986963.csv",
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:00:07.327171+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Sediment Geochemistry and Grain Size Data (2018-2021)",
+    "description": "A dataset containing 140 sediment samples from the High Arctic region (Svalbard archipelago and adjacent Arctic Ocean), featuring geochemical proxies (TOC, TIC, TN, δ13C, δ15N), grain size distributions, and sedimentological parameters collected during expeditions in 2018 and 2021.",
+    "keywords": [
+      "Arctic",
+      "Sediment",
+      "Geochemistry",
+      "TOC",
+      "TIC",
+      "TN",
+      "δ13C",
+      "δ15N",
+      "Grain Size",
+      "Svalbard",
+      "Sedimentation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "2018-09-28T19:07:00+00:00",
+      "to": "2021-03-06T02:53:02+00:00"
+    },
+    "spatial": "Point locations",
+    "temporal": "Event-based"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/986963_48eabd79a8d7483993a7b33ef3bfc36a.jsonl",
+  "runtime_seconds": 187.49
+}

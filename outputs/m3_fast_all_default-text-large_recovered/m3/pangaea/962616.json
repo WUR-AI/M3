@@ -1,0 +1,46 @@
+{
+  "dataset_id": "962616",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/962616.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:35:54.466654+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Cape Blossom RGB preview (2021-06-25)",
+    "description": "Dataset of 11 preview PNG files of RGB imagery captured at Cape Blossom on 2021-06-25. Each record includes project identifier, event code, binary filename, file size, latitude, longitude, and timestamp. All records share the same geographic point (66.891836 N, -162.596512 W) and the same instant (2021-06-25T21:21:30Z).",
+    "keywords": [
+      "Cape Blossom",
+      "RGB",
+      "preview",
+      "imagery",
+      "2021",
+      "PNG",
+      "remote sensing",
+      "Alaska",
+      "single location",
+      "binary size",
+      "event code"
+    ],
+    "spatialCoverage": {
+      "min_lat": 66.891836,
+      "min_lon": -162.596512,
+      "max_lat": 66.891836,
+      "max_lon": -162.596512
+    },
+    "temporalCoverage": {
+      "from": "2021-06-25T21:21:30+00:00",
+      "to": "2021-06-25T21:21:30+00:00"
+    },
+    "spatial": "point location (single coordinate)",
+    "temporal": "single instant (no variation)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/962616_4599b2200d4c40b9893747ee4c70a8f5.jsonl",
+  "runtime_seconds": 126.63,
+  "recovered_from_trace": true,
+  "source_sha256": "53878bd4aff9f3cab58fba0c5229d29a9b6de5e5bd93a55093c97e80fb7cd00e"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "banksia_robur.csv",
+  "dataset_id": "banksia_robur",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2c267af00f6198b54f51707d343cb79b367007646e19bf38fd3e6c9342eacb53",
+  "contract_sha256": "deb7804c92a6a84d40c2e6a40ae1138e06b5ee43a57c1b177b04a6dbb0543b8b",
+  "prompt_tokens": 307338,
+  "status": "skipped",
+  "reason": "context_window"
+}

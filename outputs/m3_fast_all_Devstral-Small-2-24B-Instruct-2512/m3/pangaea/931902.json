@@ -1,0 +1,39 @@
+{
+  "dataset_id": "931902",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931902.csv",
+  "source_sha256": "db1a2eb73ef4f30d6bd56b579eac3100f881d914d9eff214542eda53b0500dc3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T21:57:53.905072+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Birkeland Cruise Event Data",
+    "description": "Dataset containing information about Birkeland Cruise events, including binary file details, geographic coordinates, and timestamps.",
+    "keywords": [
+      "Birkeland Cruise",
+      "marine data",
+      "geographic coordinates",
+      "binary files",
+      "siphonophores"
+    ],
+    "spatialCoverage": {
+      "min_lat": 46.15,
+      "min_lon": -26.26667,
+      "max_lat": 46.55,
+      "max_lon": -26.01667
+    },
+    "temporalCoverage": {
+      "from": "2016-07-07",
+      "to": "2016-07-07"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931902_abe4bfb5e4374a82ad8ccf47f21ca118.jsonl",
+  "runtime_seconds": 253.74
+}

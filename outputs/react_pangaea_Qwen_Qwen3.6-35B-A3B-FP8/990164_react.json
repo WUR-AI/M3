@@ -1,0 +1,92 @@
+{
+  "csv": "990164.csv",
+  "dataset_id": "990164",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "1d710fa4e7e67deb32c461c72ea2cec1a2a5054abd977ba644575d06fdf628bd",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 9433,
+  "metadata": {
+    "name": "Geochemical composition of sediment core LTp22-1 from the eastern Pacific",
+    "description": "Geochemical measurements (Si, K, Ca, Ti, V, Cr, Mn, Fe, Ni, Cu, Zn, Ge, Sr, Zr, Cd, Ce, Ta in centered log-ratio format) from sediment core LTp22-1, including depth, age estimates, and backscatter intensity data.",
+    "keywords": [
+      "geochemistry",
+      "sediment core",
+      "CLR",
+      "elemental composition",
+      "Pacific Ocean"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "1866-07-01",
+      "to": "2022-04-08"
+    },
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "990164"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "990164",
+        "resource": "990164"
+      }
+    }
+  ],
+  "runtime_seconds": 12.266,
+  "status": "ok"
+}

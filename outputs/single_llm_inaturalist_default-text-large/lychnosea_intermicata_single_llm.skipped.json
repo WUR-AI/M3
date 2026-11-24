@@ -1,0 +1,15 @@
+{
+  "csv": "lychnosea_intermicata.csv",
+  "dataset_id": "lychnosea_intermicata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "d7734a076515ca9e69d2c38405113b3a1ada316b63946169fa410c90ec0895ee",
+  "contract_sha256": "da013ae5969e9fb2c5a3fc12fcadfac6aa8d96c64fe428c3e215015100a0d2b9",
+  "prompt_tokens": 318559,
+  "status": "skipped",
+  "reason": "context_window"
+}

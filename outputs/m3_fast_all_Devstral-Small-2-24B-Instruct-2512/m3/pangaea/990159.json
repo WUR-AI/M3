@@ -1,0 +1,39 @@
+{
+  "dataset_id": "990159",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990159.csv",
+  "source_sha256": "5007b7d93b30afc7d7831d726516842ce7d797b656068ef61a8267a80e9e4aeb",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T03:06:04.153767+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Core Radiometric Data from Event LTp22-1",
+    "description": "This dataset contains sediment core radiometric measurements, including 210Pb activity, depth measurements, and associated uncertainties. All data were collected during a single event on April 8, 2022, at a fixed location in Mexico (Latitude: 21.277661, Longitude: -104.690167, Elevation: 1430.0 meters).",
+    "keywords": [
+      "sediment core",
+      "210Pb",
+      "radiometric dating",
+      "Mexico",
+      "paleoenvironmental reconstruction"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "2022-04-08",
+      "to": "2022-04-08"
+    },
+    "spatial": "point location",
+    "temporal": "single-day snapshot"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990159_99c4b618b86e4a9eb19e2b742001825c.jsonl",
+  "runtime_seconds": 293.28
+}

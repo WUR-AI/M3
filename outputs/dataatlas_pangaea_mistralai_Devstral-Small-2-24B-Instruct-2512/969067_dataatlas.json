@@ -1,0 +1,16 @@
+{
+  "csv": "969067.csv",
+  "dataset_id": "969067",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 2191,
+  "n_columns": 17,
+  "description": "Daily Earth science measurements: datetime, heights, solar radiation, temperatures, humidity, wind speeds, location, elevation.",
+  "dataset_description": "Earth and environmental science data, 969,067 tables, 2,191 rows each, 2018-2023.",
+  "runtime_seconds": 10.297,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/969067/dictionary.json"
+}

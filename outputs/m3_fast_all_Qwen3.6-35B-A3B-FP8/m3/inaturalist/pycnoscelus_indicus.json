@@ -1,0 +1,28 @@
+{
+  "dataset_id": "pycnoscelus_indicus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/pycnoscelus_indicus.csv",
+  "source_sha256": "16e3aff280a785d28fb130040007353a5ac4766d0f81e99826fc0288f9f93dbd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T03:06:17.493623+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -33.436517,
+      "min_lon": -162.086547,
+      "max_lat": 28.472296,
+      "max_lon": 177.371856
+    },
+    "temporalCoverage": {
+      "from": "1994-03-01T00:00:00+00:00",
+      "to": "2026-06-15T20:42:24+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/pycnoscelus_indicus_33495ab66c424d008aacb43bcec0a23b.jsonl",
+  "runtime_seconds": 56.21
+}

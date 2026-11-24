@@ -1,0 +1,41 @@
+{
+  "dataset_id": "963353",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/963353.csv",
+  "source_sha256": "d3518df69c24bf623efa16940fd790900b0a2d9177bc8d03033bd76598a0b5dd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:48:06.920977+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic Ice and Snow Sampling Profile NM01_04_S01",
+    "description": "Vertical profile dataset of 53 ice and snow samples collected at a single location in the Antarctic region (-70.65491, -8.25491) on December 29, 2004. The dataset includes sample identifiers, depth measurements (ice/snow and descriptive), ice density, and associated imagery.",
+    "keywords": [
+      "Antarctic",
+      "ice core",
+      "snow sampling",
+      "vertical profile",
+      "ice density",
+      "depth",
+      "NM01_04_S01"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65491,
+      "min_lon": -8.25491,
+      "max_lat": -70.65491,
+      "max_lon": -8.25491
+    },
+    "temporalCoverage": {
+      "from": "2004-12-29T00:00:00+00:00",
+      "to": "2004-12-29T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/963353_577e7c918638403db1d8802aba12db29.jsonl",
+  "runtime_seconds": 88.99
+}

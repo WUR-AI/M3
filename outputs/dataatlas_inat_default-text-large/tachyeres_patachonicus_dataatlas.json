@@ -1,0 +1,16 @@
+{
+  "csv": "tachyeres_patachonicus.csv",
+  "dataset_id": "tachyeres_patachonicus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 999,
+  "n_columns": 50,
+  "description": "Occurrence records of Tachyeres patachonicus (2002‑2026) with taxonomic, geographic, temporal, and observer metadata.",
+  "dataset_description": "Records of Tachyeres patachonicus occurrences from 2002 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 78.059,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/tachyeres_patachonicus/dictionary.json"
+}

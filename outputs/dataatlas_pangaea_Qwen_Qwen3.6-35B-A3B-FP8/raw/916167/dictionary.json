@@ -1,0 +1,399 @@
+{
+  "dataset_name": "916167",
+  "list_of_tables": [
+    "916167"
+  ],
+  "tables": {
+    "916167": {
+      "table_name": "916167",
+      "row_count": 12,
+      "number_of_columns": 8,
+      "list_of_columns": [
+        "File name",
+        "File format",
+        "File size",
+        "URL file",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Date/Time"
+      ],
+      "columns": {
+        "File name": {
+          "column_name": "File name",
+          "data_type": "string",
+          "sample_values": [
+            "Noah-MP_ECC62-LCC38",
+            "Noah-MP_ECC70-LCC30",
+            "ECdata_LE_tk31",
+            "Noah-MP_ECC30-LCC70",
+            "Kraichgau_Plant performance data",
+            "Noah-MP_ECC72-LCC28",
+            "Kraichgau_Weather_data_EC1",
+            "Noah-MP_ECC10-LCC90",
+            "Noah-MP_ECC90-LCC10",
+            "Noah-MP_LCC",
+            "Noah-MP_ECC",
+            "Noah-MP_ECC50-LCC50"
+          ],
+          "data_patterns": {
+            "Aaaa-AA_AAA99-AAA99": 7,
+            "Aaaa-AA_AAA": 2,
+            "AAaaaa_AA_aa99": 1,
+            "Aaaaaaaaa_Aaaaaaa_aaaa_AA9": 1,
+            "Aaaaaaaaa_Aaaaa aaaaaaaaaaa aaaa": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Noah-MP_ECC90-LCC10",
+                1
+              ],
+              [
+                "Noah-MP_ECC72-LCC28",
+                1
+              ],
+              [
+                "ECdata_LE_tk31",
+                1
+              ],
+              [
+                "Noah-MP_ECC70-LCC30",
+                1
+              ],
+              [
+                "Noah-MP_ECC30-LCC70",
+                1
+              ],
+              [
+                "Kraichgau_Weather_data_EC1",
+                1
+              ],
+              [
+                "Kraichgau_Plant performance data",
+                1
+              ],
+              [
+                "Noah-MP_LCC",
+                1
+              ],
+              [
+                "Noah-MP_ECC10-LCC90",
+                1
+              ],
+              [
+                "Noah-MP_ECC62-LCC38",
+                1
+              ]
+            ],
+            "unique_count": 12
+          },
+          "description": "File names identifying specific environmental data files and their associated geographic coordinates."
+        },
+        "File format": {
+          "column_name": "File format",
+          "data_type": "string",
+          "sample_values": [
+            "csv",
+            "csv",
+            "csv",
+            "csv",
+            "csv",
+            "dat",
+            "csv",
+            "csv",
+            "csv",
+            "csv",
+            "csv",
+            "csv"
+          ],
+          "data_patterns": {
+            "aaa": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "csv",
+                11
+              ],
+              [
+                "dat",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "File format specifies the data structure, primarily CSV or DAT."
+        },
+        "File size": {
+          "column_name": "File size",
+          "data_type": "integer",
+          "sample_values": [
+            9240,
+            9240,
+            4599,
+            9240,
+            9240,
+            9240,
+            6,
+            9240,
+            875,
+            9240,
+            9240,
+            9240
+          ],
+          "data_patterns": {
+            "9999": 10,
+            "999": 1,
+            "9": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 6.0,
+            "max": 9240.0,
+            "mean": 7386.666666666667,
+            "median": 9240.0,
+            "std": 3510.5131542355184
+          },
+          "description": "File size in bytes for environmental data files."
+        },
+        "URL file": {
+          "column_name": "URL file",
+          "data_type": "string",
+          "sample_values": [
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_LCC.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/ECdata_LE_tk31.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC50-LCC50.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC62-LCC38.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Kraichgau_Weather_data_EC1.dat",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Kraichgau_Plant_performance_data.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC90-LCC10.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC30-LCC70.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC72-LCC28.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC10-LCC90.csv",
+            "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC70-LCC30.csv"
+          ],
+          "data_patterns": {
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aaaa-aaaa_9999/Aaaa-AA_AAA99-AAA99.aaa": 7,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aaaa-aaaa_9999/Aaaa-AA_AAA.aaa": 2,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aaaa-aaaa_9999/AAaaaa_AA_aa99.aaa": 1,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aaaa-aaaa_9999/Aaaaaaaaa_Aaaaaaa_aaaa_AA9.aaa": 1,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aaaa-aaaa_9999/Aaaaaaaaa_Aaaaa_aaaaaaaaaaa_aaaa.aaa": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC90-LCC10.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC72-LCC28.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/ECdata_LE_tk31.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC70-LCC30.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC30-LCC70.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Kraichgau_Weather_data_EC1.dat",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Kraichgau_Plant_performance_data.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_LCC.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC10-LCC90.csv",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC62-LCC38.csv",
+                1
+              ]
+            ],
+            "unique_count": 12
+          },
+          "description": "Uniformly distributed URLs linking to specific environmental data files."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim",
+            "Katharinentalerhof_Pforzheim"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaaaaaaaaaaa_Aaaaaaaaa": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Katharinentalerhof_Pforzheim",
+                12
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "The event location is KatharinentalerhofPforzheim."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92,
+            48.92
+          ],
+          "data_patterns": {
+            "99.99": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 48.92,
+            "max": 48.92,
+            "mean": 48.919999999999995,
+            "median": 48.92,
+            "std": 7.421376833848022e-15
+          },
+          "description": "Geographic latitude coordinate measured in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7,
+            8.7
+          ],
+          "data_patterns": {
+            "9.9": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 8.7,
+            "max": 8.7,
+            "mean": 8.700000000000001,
+            "median": 8.7,
+            "std": 1.8553442084620055e-15
+          },
+          "description": "Geographic longitude coordinates measured in decimal degrees."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "null",
+          "semantic_type": "timestamp",
+          "sample_values": [],
+          "data_patterns": {},
+          "total_rows": 12,
+          "null_count": 12,
+          "unique_count": 1,
+          "description": "Timestamp of environmental events, currently containing no recorded data."
+        }
+      },
+      "sample_rows": [
+        {
+          "File name": "Noah-MP_ECC90-LCC10",
+          "File format": "csv",
+          "File size": 9240,
+          "URL file": "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC90-LCC10.csv",
+          "Event": "Katharinentalerhof_Pforzheim",
+          "Latitude": 48.92,
+          "Longitude": 8.7,
+          "Date/Time": null
+        },
+        {
+          "File name": "Noah-MP_ECC72-LCC28",
+          "File format": "csv",
+          "File size": 9240,
+          "URL file": "https://store.pangaea.de/Publications/Bohm-etal_2020/Noah-MP_ECC72-LCC28.csv",
+          "Event": "Katharinentalerhof_Pforzheim",
+          "Latitude": 48.92,
+          "Longitude": 8.7,
+          "Date/Time": null
+        },
+        {
+          "File name": "ECdata_LE_tk31",
+          "File format": "csv",
+          "File size": 875,
+          "URL file": "https://store.pangaea.de/Publications/Bohm-etal_2020/ECdata_LE_tk31.csv",
+          "Event": "Katharinentalerhof_Pforzheim",
+          "Latitude": 48.92,
+          "Longitude": 8.7,
+          "Date/Time": null
+        }
+      ],
+      "description": "Twelve rows of environmental data files with geographic coordinates and event details.",
+      "is_row_capped": false,
+      "rows_processed": 12,
+      "total_rows_in_file": 12
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "A dataset containing 916,167 tables with 12 rows each, covering Earth and environmental science."
+}

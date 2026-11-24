@@ -1,0 +1,16 @@
+{
+  "csv": "rhodostrophia_calabra.csv",
+  "dataset_id": "rhodostrophia_calabra",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 999,
+  "n_columns": 50,
+  "description": "Species occurrence data for Rhodostrophia calabra, 1992-2026, with 999 records.",
+  "dataset_description": "Species occurrence data from 1992 to 2026, documenting biodiversity observations.",
+  "runtime_seconds": 38.438,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/rhodostrophia_calabra/dictionary.json"
+}

@@ -1,0 +1,39 @@
+{
+  "csv": "959885.csv",
+  "dataset_id": "959885",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "contract_sha256": "17233a6edf8bc545fff0b675cda27e9f3988deeb7acc9a9c92c827b4c6a79f78",
+  "prompt_tokens": 3306,
+  "metadata": {
+    "name": "959885",
+    "description": "This dataset contains geochemical and physical data from sediment samples collected at a single station (M186_54-1GC). The data includes measurements of various chemical elements and compounds, such as nitrate, nitrite, ammonium, phosphate, chloride, sulfate, bromide, and others, along with depth, temperature, and salinity information.",
+    "keywords": [
+      "geochemistry",
+      "sediment",
+      "chemical elements",
+      "marine chemistry",
+      "water column"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16",
+      "to": "2022-12-16"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 9.251,
+  "status": "ok"
+}

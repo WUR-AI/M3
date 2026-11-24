@@ -1,0 +1,15 @@
+{
+  "csv": "agromyza_aristata.csv",
+  "dataset_id": "agromyza_aristata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "acad9f06afe3ce830e33e010e61b3b73887d10bf3e764c290fbc650c292feda0",
+  "contract_sha256": "978a00e723b6e85f6cd3baecc957bf85d4c0f72421b21e1c3270bf3089af90ae",
+  "prompt_tokens": 315803,
+  "status": "skipped",
+  "reason": "context_window"
+}

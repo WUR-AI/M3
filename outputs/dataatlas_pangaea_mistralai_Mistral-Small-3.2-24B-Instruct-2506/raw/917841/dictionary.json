@@ -1,0 +1,492 @@
+{
+  "dataset_name": "917841",
+  "list_of_tables": [
+    "917841"
+  ],
+  "tables": {
+    "917841": {
+      "table_name": "917841",
+      "row_count": 12,
+      "number_of_columns": 12,
+      "list_of_columns": [
+        "Date/Time",
+        "Zone",
+        "Temp",
+        "Sal",
+        "DO",
+        "pH",
+        "NH3",
+        "[NO3]-",
+        "[PO4]3-",
+        "Event",
+        "Latitude",
+        "Longitude"
+      ],
+      "columns": {
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2014-06-01",
+            "2015-06-01",
+            "2013-12-01",
+            "2013-12-01",
+            "2014-06-01",
+            "2013-12-01",
+            "2015-06-01",
+            "2015-06-01",
+            "2014-06-01",
+            "2014-12-01",
+            "2014-12-01",
+            "2014-12-01"
+          ],
+          "data_patterns": {
+            "9999-99-99": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2013-12-01T00:00:00",
+            "max_date": "2015-06-01T00:00:00"
+          },
+          "description": "Measurement dates from December 2013 to June 2015."
+        },
+        "Zone": {
+          "column_name": "Zone",
+          "data_type": "integer",
+          "sample_values": [
+            2,
+            2,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            3,
+            3,
+            1,
+            3
+          ],
+          "data_patterns": {
+            "9": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 3.0,
+            "mean": 2.0,
+            "median": 2.0,
+            "std": 0.8528028654224418
+          },
+          "description": "Categorical zone identifiers ranging from 1 to 3."
+        },
+        "Temp": {
+          "column_name": "Temp",
+          "data_type": "float",
+          "semantic_type": "clinical_measurement",
+          "sample_values": [
+            20.4,
+            20.5,
+            20.6,
+            28.5,
+            32.5,
+            30.8,
+            31.0,
+            28.5,
+            30.0,
+            31.3,
+            32.1,
+            28.0
+          ],
+          "data_patterns": {
+            "99.9": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 20.4,
+            "max": 32.5,
+            "mean": 27.849999999999998,
+            "median": 29.25,
+            "std": 4.649437893689164
+          },
+          "description": "Temperature readings in degrees Celsius."
+        },
+        "Sal": {
+          "column_name": "Sal",
+          "data_type": "float",
+          "sample_values": [
+            40.0,
+            37.2,
+            41.2,
+            40.0,
+            38.0,
+            37.0,
+            38.0,
+            38.1,
+            41.0,
+            41.0,
+            39.0,
+            37.2
+          ],
+          "data_patterns": {
+            "99.9": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 37.0,
+            "max": 41.2,
+            "mean": 38.975,
+            "median": 38.55,
+            "std": 1.5989343041822914
+          },
+          "description": "Salinity measurements in unspecified units, ranging from 37.0 to 41.2."
+        },
+        "DO": {
+          "column_name": "DO",
+          "data_type": "float",
+          "sample_values": [
+            6.7,
+            5.4,
+            2.8,
+            2.9,
+            5.2,
+            5.3,
+            7.1,
+            5.1,
+            3.0,
+            7.02,
+            4.5,
+            7.2
+          ],
+          "data_patterns": {
+            "9.9": 11,
+            "9.99": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "numeric",
+            "min": 2.8,
+            "max": 7.2,
+            "mean": 5.185,
+            "median": 5.25,
+            "std": 1.6406678241164203
+          },
+          "description": "Dissolved oxygen concentration in milligrams per liter."
+        },
+        "pH": {
+          "column_name": "pH",
+          "data_type": "float",
+          "sample_values": [
+            6.6,
+            7.9,
+            7.4,
+            7.7,
+            6.75,
+            7.9,
+            7.4,
+            6.75,
+            7.8,
+            7.5,
+            7.5,
+            7.5
+          ],
+          "data_patterns": {
+            "9.9": 10,
+            "9.99": 2
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 6.6,
+            "max": 7.9,
+            "mean": 7.391666666666667,
+            "median": 7.5,
+            "std": 0.45368858629387343
+          },
+          "description": "pH level measurements ranging from 6.6 to 7.9."
+        },
+        "NH3": {
+          "column_name": "NH3",
+          "data_type": "integer",
+          "sample_values": [
+            460,
+            1150,
+            130,
+            850,
+            120,
+            1200,
+            70,
+            90,
+            1150,
+            1890,
+            50,
+            80
+          ],
+          "data_patterns": {
+            "999": 4,
+            "99": 4,
+            "9999": 4
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 50.0,
+            "max": 1890.0,
+            "mean": 603.3333333333334,
+            "median": 295.0,
+            "std": 623.4994107066302
+          },
+          "description": "Ammonia concentration in micrograms per liter."
+        },
+        "[NO3]-": {
+          "column_name": "[NO3]-",
+          "data_type": "float",
+          "sample_values": [
+            10.0,
+            9.8,
+            2.89,
+            9.0,
+            1.26,
+            1.5,
+            1.28,
+            1.39,
+            1.2,
+            1.18,
+            1.2,
+            4.25
+          ],
+          "data_patterns": {
+            "9.99": 6,
+            "9.9": 5,
+            "99.9": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 1.18,
+            "max": 10.0,
+            "mean": 3.7458333333333336,
+            "median": 1.4449999999999998,
+            "std": 3.652644019519741
+          },
+          "description": "Nitrate concentration in micromoles per liter."
+        },
+        "[PO4]3-": {
+          "column_name": "[PO4]3-",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.17,
+            0.1,
+            0.27,
+            0.05,
+            0.09,
+            0.11,
+            0.17,
+            0.08,
+            0.21,
+            0.3,
+            0.09,
+            0.05
+          ],
+          "data_patterns": {
+            "9.99": 10,
+            "9.9": 2
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 9,
+          "stats": {
+            "type": "numeric",
+            "min": 0.05,
+            "max": 0.3,
+            "mean": 0.14083333333333337,
+            "median": 0.10500000000000001,
+            "std": 0.0833893750953194
+          },
+          "description": "Phosphate concentration probability scores, ranging 0.05 to 0.3."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon",
+            "Macapule_Lagoon"
+          ],
+          "data_patterns": {
+            "Aaaaaaaa_Aaaaaa": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Macapule_Lagoon",
+                12
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event location consistently recorded as Macapule Lagoon."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35,
+            25.35
+          ],
+          "data_patterns": {
+            "99.99": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 25.35,
+            "max": 25.35,
+            "mean": 25.350000000000005,
+            "median": 25.35,
+            "std": 3.710688416924011e-15
+          },
+          "description": "Geographical locations northern coordinate in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5,
+            -108.5
+          ],
+          "data_patterns": {
+            "-999.9": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -108.5,
+            "max": -108.5,
+            "mean": -108.5,
+            "median": -108.5,
+            "std": 0.0
+          },
+          "description": "Longitude in decimal degrees, constant value of -108.5."
+        }
+      },
+      "time_period_covered": {
+        "start": "2013-12-01T00:00:00",
+        "end": "2015-06-01T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Date/Time": "2015-06-01",
+          "Zone": 2,
+          "Temp": 32.5,
+          "Sal": 40.0,
+          "DO": 5.1,
+          "pH": 7.5,
+          "NH3": 130,
+          "[NO3]-": 9.0,
+          "[PO4]3-": 0.21,
+          "Event": "Macapule_Lagoon",
+          "Latitude": 25.35,
+          "Longitude": -108.5
+        },
+        {
+          "Date/Time": "2015-06-01",
+          "Zone": 1,
+          "Temp": 32.1,
+          "Sal": 40.0,
+          "DO": 4.5,
+          "pH": 7.4,
+          "NH3": 70,
+          "[NO3]-": 10.0,
+          "[PO4]3-": 0.05,
+          "Event": "Macapule_Lagoon",
+          "Latitude": 25.35,
+          "Longitude": -108.5
+        },
+        {
+          "Date/Time": "2013-12-01",
+          "Zone": 1,
+          "Temp": 28.5,
+          "Sal": 37.2,
+          "DO": 5.2,
+          "pH": 7.8,
+          "NH3": 1150,
+          "[NO3]-": 1.2,
+          "[PO4]3-": 0.17,
+          "Event": "Macapule_Lagoon",
+          "Latitude": 25.35,
+          "Longitude": -108.5
+        }
+      ],
+      "description": "Environmental data from 2013-2015, including temperature, salinity, and location.",
+      "is_row_capped": false,
+      "rows_processed": 12,
+      "total_rows_in_file": 12
+    }
+  },
+  "time_period_covered": {
+    "start": "2013-12-01T00:00:00",
+    "end": "2015-06-01T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Environmental data tables (917841) with 12 rows each, 2013-2015."
+}

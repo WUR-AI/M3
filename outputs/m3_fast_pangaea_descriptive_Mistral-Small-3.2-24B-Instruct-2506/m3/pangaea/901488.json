@@ -1,0 +1,32 @@
+{
+  "dataset_id": "901488",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901488.csv",
+  "source_sha256": "c43d3f554bb169bcda8fb03f880a0f8620b128000d75d47294281b850cc47662",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T09:11:29.505380+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Elwha River Delta GPS Data",
+    "description": "This dataset contains GPS measurements from the Elwha River Delta event, including latitude, longitude, elevation, timestamps, and error metrics (HRMS, VRMS). The data covers a short period on March 20, 2011, with measurements taken approximately every 11 minutes.",
+    "keywords": [
+      "GPS data",
+      "Elwha River Delta",
+      "geospatial measurements",
+      "latitude",
+      "longitude",
+      "elevation",
+      "HRMS",
+      "VRMS",
+      "2011",
+      "Washington State"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901488_ca14fc0c32f4423eab4c8371adf12f72.jsonl",
+  "runtime_seconds": 473.2
+}

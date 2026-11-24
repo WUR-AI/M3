@@ -1,0 +1,29 @@
+{
+  "dataset_id": "colpomenia_peregrina",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/colpomenia_peregrina.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:36:16.195822+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -45.844548,
+      "min_lon": -135.846019,
+      "max_lat": 59.355803,
+      "max_lon": 175.811111
+    },
+    "temporalCoverage": {
+      "from": "2009-10-09T10:26:06+00:00",
+      "to": "2026-06-15T15:36:44+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/colpomenia_peregrina_e752bc722a6f4290bf6fb3b8f2f24037.jsonl",
+  "runtime_seconds": 73.2,
+  "recovered_from_trace": true,
+  "source_sha256": "5bc906a0341b4d38c2e058aac9b7f62d331a4357a14916adb022ffde81c3305a"
+}

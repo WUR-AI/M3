@@ -1,0 +1,15 @@
+{
+  "csv": "chrysocoma_ciliata.csv",
+  "dataset_id": "chrysocoma_ciliata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "50bd5ec29dd47018ec8508a0d48c609e5a502d65d117018a7eb88d491f264872",
+  "contract_sha256": "0bb1539fa7f732d0442da2281bad25cc7046644d83eb0aa238f65d79e5b0f7a4",
+  "prompt_tokens": 314168,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,43 @@
+{
+  "dataset_id": "995327",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995327.csv",
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:29:58.628782+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Lanaittu_core heavy mineral sediment samples",
+    "description": "Geological dataset containing heavy mineral composition percentages and sample metadata from a single sediment core (Lanaittu_core) collected on January 1, 1994. The data includes 5 samples at varying sediment depths (12.43 to 27.5), detailing the abundance of minerals such as Garnet, Zircon, Tourmaline, and others, along with bulk physical properties like Transparent, Opaque, and Turbid fractions.",
+    "keywords": [
+      "heavy minerals",
+      "sediment core",
+      "mineralogy",
+      "geology",
+      "Lanaittu",
+      "Garnet",
+      "Zircon",
+      "Tourmaline",
+      "sediment depth"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01T00:00:00+00:00",
+      "to": "1994-01-01T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single event"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995327_8b763344541249c5a325ced60618c49f.jsonl",
+  "runtime_seconds": 158.78
+}

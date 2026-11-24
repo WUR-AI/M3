@@ -1,0 +1,16 @@
+{
+  "csv": "916167.csv",
+  "dataset_id": "916167",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 12,
+  "n_columns": 8,
+  "description": "Twelve Earth science records of CSV files with metadata: name, format, size, URL, event, coordinates.",
+  "dataset_description": "Contains twelve Earth and environmental science records across a single table for scientific analysis.",
+  "runtime_seconds": 29.005,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/916167/dictionary.json"
+}

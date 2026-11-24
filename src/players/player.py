@@ -1,38 +1,109 @@
 """
 Unified Player class for the multi-agent system.
 
-A ``Player`` is a self-contained agent that can:
-    1. Execute tasks using tools.
-    2. Participate in debates by generating work, critiquing, and revising.
-    3. Synthesize results from multiple sources.
+A Player is a self-contained agent that can:
+1. Execute tasks using tools
+2. Participate in debates (generate work, critique, revise)
+3. Synthesize results from multiple sources
 
 Each player has a role/persona defined by a prompt, and a set of tools
 it can use to accomplish tasks.
 
-Uses the unified :class:`~src.context.ExecutionContext` abstraction for all data
-access.
+Uses the unified ExecutionContext abstraction for all data access.
 """
-from typing import List, Dict, Any, Optional, Union, Type
+from __future__ import annotations
+
+import json
+import logging
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, Union, Type
 
 from pydantic import BaseModel
 from langchain_core.tools import BaseTool
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+from src.core.tool_trace import tool_result_is_error
 
-from src.config import LLM_PROVIDER, PLAYER_TEMPERATURE, create_llm
+from ..config import (
+    PLAYER_TEMPERATURE,
+    create_llm,
+    LLM_PROVIDER,
+    PLAYER_MAX_TOOL_ITERATIONS,
+)
+
+if TYPE_CHECKING:
+    from src.core import ToolTrace
+    from src.core.run_trace import RunTraceRecorder
+
+
+def _stringify_message_content(content: Any) -> str:
+    if content is None:
+        return ""
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts: List[str] = []
+        for block in content:
+            if isinstance(block, str):
+                parts.append(block)
+            elif isinstance(block, dict) and "text" in block:
+                parts.append(str(block["text"]))
+            else:
+                parts.append(str(block))
+        return "\n".join(parts)
+    return str(content)
+
+
+def _serialize_tool_result(obj: Any) -> str:
+    if isinstance(obj, str):
+        return obj
+    try:
+        return json.dumps(obj, default=str)
+    except TypeError:
+        return str(obj)
+
+
+def _format_results_for_synthesis(all_results: List[Dict[str, Any]]) -> str:
+    blocks: List[str] = []
+    for r in all_results:
+        player = r.get("player", "Unknown")
+        analysis = r.get("analysis", str(r))
+        block = f"=== {player} ===\nAnalysis:\n{analysis}"
+        tool_results = r.get("tool_results")
+        if tool_results:
+            block += f"\n\nTool results:\n{_serialize_tool_result(tool_results)}"
+        blocks.append(block)
+    return "\n\n".join(blocks)
+
+
+def _normalize_tool_call_args(raw: Any) -> Dict[str, Any]:
+    if raw is None:
+        return {}
+    if isinstance(raw, dict):
+        return dict(raw)
+    if isinstance(raw, str):
+        raw = raw.strip()
+        if not raw:
+            return {}
+        try:
+            parsed = json.loads(raw)
+            return dict(parsed) if isinstance(parsed, dict) else {}
+        except json.JSONDecodeError:
+            return {}
+    return {}
 
 
 class Player:
     """
     A unified player agent capable of executing tasks and participating in debates.
-    
+
     Attributes:
         name: Unique identifier for this player instance
         role_prompt: The persona/role description that guides the player's behavior
         tools: List of tools available to this player
         llm: The language model instance for this player
     """
-    
+
     def __init__(
         self,
         name: str,
@@ -41,11 +112,14 @@ class Player:
         model_name: Optional[str] = None,
         temperature: Optional[float] = None,
         provider: Optional[str] = None,
+        max_tool_iterations: Optional[int] = None,
         role_key: Optional[str] = None,
+        require_tool_calls: bool = False,
+        required_tools: Optional[List[str]] = None,
     ):
         """
         Initialize a Player with a role and tools.
-        
+
         Args:
             name: Unique identifier for this player
             role_prompt: Description of the player's role/persona
@@ -53,23 +127,182 @@ class Player:
             model_name: The LLM model to use (default from config)
             temperature: LLM temperature (default from config)
             provider: LLM provider to use (default from config)
-            role_key: Canonical player role key from PLAYER_CONFIGS
+            max_tool_iterations: Cap for LLM tool rounds (default from config).
+            role_key: PLAYER_CONFIGS role name (e.g. spatial_temporal_specialist), if known.
+            require_tool_calls: When True, required_tools must be called before finish.
+            required_tools: Tool names that must each be called at least once.
         """
-        # Use config defaults if not specified
         temperature = temperature if temperature is not None else PLAYER_TEMPERATURE
         provider = provider or LLM_PROVIDER
-        
+
         self.name = name
-        self.role_key = role_key or name
         self.role_prompt = role_prompt
         self.tools = tools or []
         self.llm = create_llm(
             model_name=model_name,
             temperature=temperature,
-            provider=provider
+            provider=provider,
         )
         self._output_parser = StrOutputParser()
-    
+        self.max_tool_iterations = (
+            max_tool_iterations
+            if max_tool_iterations is not None
+            else PLAYER_MAX_TOOL_ITERATIONS
+        )
+        self.role_key = role_key
+        self.require_tool_calls = require_tool_calls
+        self.required_tools = list(required_tools or [])
+
+    def _invoke_recorded(
+        self,
+        model: Any,
+        messages: List[Any],
+        *,
+        recorder: Optional["RunTraceRecorder"],
+        step_index: Optional[int],
+        phase: str,
+    ) -> Any:
+        if recorder is not None:
+            from src.core.run_trace import message_record
+
+            recorder.record(
+                "model_input", step_index=step_index, agent=self.name,
+                phase=phase, messages=[message_record(msg) for msg in messages],
+            )
+        try:
+            response = model.invoke(messages)
+        except Exception as exc:
+            if recorder is not None:
+                recorder.record(
+                    "model_error", step_index=step_index, agent=self.name,
+                    phase=phase, error=str(exc),
+                )
+            raise
+        if recorder is not None:
+            from src.core.run_trace import message_record
+
+            recorder.record(
+                "model_output", step_index=step_index, agent=self.name,
+                phase=phase, message=message_record(response),
+            )
+        return response
+
+    def _missing_required_tools(
+        self, tool_trace: List[Dict[str, Any]],
+        required_resources: Optional[List[str]] = None,
+    ) -> List[str]:
+        if not self.require_tool_calls:
+            return []
+        called = {
+            entry["tool"]
+            for entry in tool_trace
+            if self._successful_tool_entry(entry)
+        }
+        if not self.required_tools:
+            return [] if called else ["at least one assigned tool"]
+        if required_resources:
+            return [
+                f"{tool}(resource={resource!r})"
+                for resource in required_resources
+                for tool in self.required_tools
+                if not any(
+                    self._successful_tool_entry(entry)
+                    and entry.get("tool") == tool
+                    and (entry.get("args") or {}).get("resource") == resource
+                    for entry in tool_trace
+                )
+            ]
+        return [tool for tool in self.required_tools if tool not in called]
+
+    def _tool_call_matches(
+        self,
+        actual: Dict[str, Any],
+        recommended: Dict[str, Any],
+    ) -> bool:
+        if actual.get("tool") != recommended.get("tool"):
+            return False
+        actual_args = actual.get("args") or {}
+        recommended_args = recommended.get("args") or {}
+        return all(actual_args.get(key) == value for key, value in recommended_args.items())
+
+    @staticmethod
+    def _successful_tool_entry(entry: Dict[str, Any]) -> bool:
+        return (
+            entry.get("source") == "llm" and "tool" in entry
+            and "error" not in entry
+            and entry.get("result") is not None
+            and not tool_result_is_error(entry.get("result"))
+        )
+
+    def _format_recommended_call(self, call: Dict[str, Any]) -> str:
+        args = call.get("args") or {}
+        arg_text = ", ".join(f"{key}={value!r}" for key, value in args.items())
+        return f"{call.get('tool')}({arg_text})"
+
+    def _missing_recommended_followups(
+        self,
+        tool_trace: List[Dict[str, Any]],
+    ) -> List[str]:
+        """
+        Detection tools can return follow-up calls when they find columns.
+
+        required_followup_calls are a checklist: every call must run.
+        recommended_followup_calls are alternatives when no required calls are present:
+        at least one recommended follow-up from that result must run.
+        """
+        called = [
+            entry
+            for entry in tool_trace
+            if self._successful_tool_entry(entry)
+        ]
+        missing: List[str] = []
+
+        for entry in called:
+            result = entry.get("result")
+            if not isinstance(result, dict):
+                continue
+            required = result.get("required_followup_calls") or []
+            for call in required:
+                if not any(self._tool_call_matches(actual, call) for actual in called):
+                    missing.append(self._format_recommended_call(call))
+
+            if required:
+                continue
+
+            recommendations = result.get("recommended_followup_calls") or []
+            if not recommendations:
+                continue
+            if any(
+                self._tool_call_matches(actual, recommended)
+                for actual in called
+                for recommended in recommendations
+            ):
+                continue
+            missing.append(
+                " or ".join(
+                    self._format_recommended_call(call) for call in recommendations
+                )
+            )
+
+        return missing
+
+    def _tool_loop_guidance(self) -> Tuple[str, str]:
+        if self.require_tool_calls:
+            return (
+                "CRITICAL: You MUST call your assigned tools before producing your final "
+                "analysis. Do not skip tool calls or infer spatial/temporal coverage from "
+                "prior step text alone. Run detection tools for each target resource, then "
+                "call extent/analysis tools when relevant columns are found.",
+                "You MUST invoke your tools first, then summarize tool results in your final "
+                "analysis (approach, findings, and concrete spatial/temporal values).",
+            )
+        return (
+            "You may call tools when they help complete the task. Tools are optional — "
+            "skip them if not needed.",
+            "Use tools only when necessary, then give a clear analysis covering approach, "
+            "findings, and results.",
+        )
+
     def get_tool_manifest(self) -> str:
         """
         Generates a string manifest of the tools available to this player.
@@ -77,13 +310,296 @@ class Player:
         """
         if not self.tools:
             return f"Player: {self.name}\n  Description: {self.role_prompt}\n  Tools: None"
-        
+
         manifest = f"Player: {self.name}\n"
         manifest += f"  Description: {self.role_prompt}\n"
         tasks = [f"{tool.name}: {tool.description}" for tool in self.tools]
-        manifest += f"  Tools:\n" + "\n".join([f"    - {task}" for task in tasks])
+        manifest += "  Tools:\n" + "\n".join([f"    - {task}" for task in tasks])
         return manifest
-    
+
+    def _build_task_context_block(
+        self,
+        context_key: str,
+        context_info: Dict[str, Any],
+        is_multi_csv: bool,
+        resources: List[str],
+        target_resources: List[str],
+    ) -> str:
+        if is_multi_csv:
+            ctx_info = f"Multi-CSV Context: {context_info.get('name', 'context')}\n"
+            ctx_info += f"Context type: {context_info.get('context_type', 'unknown')}\n"
+            ctx_info += f"Resources: {', '.join(resources)}\n"
+            if target_resources:
+                ctx_info += (
+                    f"Target resources for this step: {', '.join(target_resources)}\n"
+                )
+            ctx_info += f"\ncontext_key for tools (injected if omitted): {context_key}"
+        else:
+            resource_name = resources[0] if resources else "unknown"
+            ctx_info = f"Context: {context_info.get('name', 'context')}\n"
+            ctx_info += f"Context type: {context_info.get('context_type', 'unknown')}\n"
+            ctx_info += f"Resource: {resource_name}\n"
+            ctx_info += f"\ncontext_key for tools (injected if omitted): {context_key}"
+        return ctx_info
+
+    def _run_llm_tool_loop(
+        self,
+        context_key: str,
+        task: str,
+        target_resources: str,
+        input_context: str,
+        ctx_info: str,
+        tool_descriptions: str,
+        tool_tracer: Optional["ToolTrace"] = None,
+        messages: Optional[List[Any]] = None,
+        tool_results: Optional[Dict[str, Any]] = None,
+        tool_trace: Optional[List[Dict[str, Any]]] = None,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        phase: str = "initial",
+        required_resources: Optional[List[str]] = None,
+    ) -> Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str, List[Any]]]:
+        """
+        Optional model-driven tool calling. Returns None if bind_tools is unavailable.
+        """
+        if not self.tools:
+            logging.info(
+                "Player '%s': LLM tool loop skipped (no tools configured)",
+                self.name,
+            )
+            return {}, [], "", list(messages or [])
+
+        tools_by_name = {t.name: t for t in self.tools}
+        tool_names = [t.name for t in self.tools]
+        tool_guidance, human_guidance = self._tool_loop_guidance()
+        try:
+            llm_tools = self.llm.bind_tools(self.tools)
+        except Exception as e:
+            logging.warning(
+                "Player '%s': bind_tools FAILED — LLM tool calling unavailable. Error: %s",
+                self.name,
+                e,
+            )
+            return None
+
+        logging.info(
+            "Player '%s': bind_tools OK — starting LLM tool loop "
+            "(%d tools, max %d iterations): %s",
+            self.name,
+            len(self.tools),
+            self.max_tool_iterations,
+            ", ".join(tool_names),
+        )
+
+        system = f"""You are {self.name}. {self.role_prompt}
+
+{tool_guidance}
+When you call a tool, pass correct argument names and values (e.g. resource, column, lat_column, lon_column, time_column).
+The execution environment always provides context_key; if you omit context_key it will be filled in for you.
+
+Available tools:
+{tool_descriptions}
+
+{ctx_info}
+"""
+        human = f"""Task: {task}
+
+Target resources for this step: {target_resources}
+
+Input context from previous steps:
+{input_context}
+
+{human_guidance}"""
+
+        if messages is None:
+            messages = [SystemMessage(content=system), HumanMessage(content=human)]
+        tool_results = dict(tool_results or {})
+        tool_trace = list(tool_trace or [])
+
+        for iteration in range(self.max_tool_iterations):
+            ai_msg: AIMessage = self._invoke_recorded(
+                llm_tools, messages, recorder=recorder,
+                step_index=step_index, phase=phase,
+            )
+            messages.append(ai_msg)
+            tcalls = list(getattr(ai_msg, "tool_calls", None) or [])
+            if not tcalls:
+                text = _stringify_message_content(ai_msg.content)
+                missing = self._missing_required_tools(tool_trace, required_resources)
+                if missing:
+                    logging.info(
+                        "Player '%s': blocking finish — still need: %s",
+                        self.name,
+                        ", ".join(missing),
+                    )
+                    messages.append(
+                        HumanMessage(
+                            content=(
+                                "Cannot finish yet. Call these tools first: "
+                                + ", ".join(missing)
+                            )
+                        )
+                    )
+                    continue
+                missing_followups = self._missing_recommended_followups(tool_trace)
+                if missing_followups:
+                    logging.info(
+                        "Player '%s': blocking finish — still need recommended "
+                        "follow-up tool call(s): %s",
+                        self.name,
+                        "; ".join(missing_followups),
+                    )
+                    messages.append(
+                        HumanMessage(
+                            content=(
+                                "Cannot finish yet. Detection tools returned follow-up "
+                                "calls for detected columns. Call the required follow-ups "
+                                "and at least one recommended follow-up from each "
+                                "alternative group before final analysis:\n- "
+                                + "\n- ".join(missing_followups)
+                            )
+                        )
+                    )
+                    continue
+                logging.info(
+                    "Player '%s': LLM tool loop finished after %d iteration(s), "
+                    "%d tool invocation(s) — model returned final analysis",
+                    self.name,
+                    iteration + 1,
+                    len(tool_trace),
+                )
+                return tool_results, tool_trace, text, messages
+
+            called_names = []
+            for idx, tc in enumerate(tcalls):
+                name = tc.get("name")
+                if not name and isinstance(tc.get("function"), dict):
+                    name = tc["function"].get("name")
+                called_names.append(name or "?")
+                raw_args = tc.get("args")
+                if raw_args is None and isinstance(tc.get("function"), dict):
+                    raw_args = tc["function"].get("arguments")
+                args = _normalize_tool_call_args(raw_args)
+                tid = tc.get("id") or f"{phase}_iter{iteration}_tc{idx}"
+
+                tool = tools_by_name.get(name or "")
+                if tool is None:
+                    err = f"Unknown tool: {name}"
+                    out = {"error": err}
+                    tool_trace.append(
+                        {"tool": name, "args": args, "error": err, "source": "llm"}
+                    )
+                    if tool_tracer is not None:
+                        tool_tracer.record_tool_call(
+                            tool=name,
+                            agent=self.name,
+                            tool_input=args,
+                            output=out,
+                        )
+                    if recorder is not None:
+                        recorder.record(
+                            "tool_output", step_index=step_index, agent=self.name,
+                            phase=phase, tool=name, arguments=args, output=out,
+                        )
+                    messages.append(
+                        ToolMessage(
+                            content=_serialize_tool_result(out),
+                            tool_call_id=tid,
+                        )
+                    )
+                    continue
+
+                merged = dict(args)
+                merged["context_key"] = context_key
+                try:
+                    if tool.args_schema is not None:
+                        merged = tool.args_schema.model_validate(merged).model_dump()
+                    out = tool.invoke(merged)
+                except Exception as ex:
+                    out = {"error": str(ex)}
+                    tool_trace.append(
+                        {
+                            "tool": tool.name,
+                            "args": merged,
+                            "error": str(ex),
+                            "source": "llm",
+                        }
+                    )
+                else:
+                    tool_trace.append(
+                        {
+                            "tool": tool.name,
+                            "args": merged,
+                            "result": out,
+                            "source": "llm",
+                        }
+                    )
+                if tool_tracer is not None:
+                    tool_tracer.record_tool_call(
+                        tool=tool.name,
+                        agent=self.name,
+                        tool_input=merged,
+                        output=out,
+                    )
+                if recorder is not None:
+                    recorder.record(
+                        "tool_output", step_index=step_index, agent=self.name,
+                        phase=phase, tool=name, arguments=merged, output=out,
+                    )
+
+                trace_key = f"{phase}:{iteration}:{tool.name}:{tid}"
+                tool_results[trace_key] = out
+                messages.append(
+                    ToolMessage(
+                        content=_serialize_tool_result(out),
+                        tool_call_id=tid,
+                    )
+                )
+
+            logging.info(
+                "Player '%s': LLM tool loop iteration %d — model requested %d tool(s): %s",
+                self.name,
+                iteration + 1,
+                len(tcalls),
+                ", ".join(called_names),
+            )
+
+        missing = self._missing_required_tools(tool_trace, required_resources)
+        missing_followups = self._missing_recommended_followups(tool_trace)
+        unmet = missing + missing_followups
+        nudge = "Provide your final analysis for the task. Do not request more tools."
+        if unmet:
+            logging.warning(
+                "Player '%s': tool iteration limit reached with unmet calls: %s. "
+                "Continuing with a final summary so the plan can proceed.",
+                self.name,
+                "; ".join(unmet),
+            )
+            nudge += (
+                " These calls were still unmet when the tool limit was reached: "
+                + "; ".join(unmet)
+                + ". State that they could not be completed and summarize the tool results you do have."
+            )
+        final_nudge = HumanMessage(content=nudge)
+        messages.append(final_nudge)
+        final_ai = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase=phase,
+        )
+        messages.append(final_ai)
+        text = _stringify_message_content(final_ai.content)
+        tool_trace.append(
+            {"note": "max_tool_iterations reached; final summary without bind_tools", "source": "llm"}
+        )
+        logging.info(
+            "Player '%s': LLM tool loop hit max iterations (%d), "
+            "%d tool invocation(s) — requesting final summary without tools",
+            self.name,
+            self.max_tool_iterations,
+            len(tool_trace),
+        )
+        return tool_results, tool_trace, text, messages
+
     def execute_task(
         self,
         task: str,
@@ -91,98 +607,45 @@ class Player:
         context_info: Dict[str, Any],
         workspace: Dict[str, Any],
         inputs: Dict[str, str],
-        target_resources: Optional[List[str]] = None
+        target_resources: List[str] = None,
+        tool_tracer: Optional["ToolTrace"] = None,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
     ) -> Dict[str, Any]:
         """
-        Execute a specific task using available tools.
-        
-        This is the main execution method where the player uses its tools
-        to accomplish a task from the plan.
+        Execute a specific task using available tools via LLM-driven tool calling.
 
-        Prompt used:
-            System:
-                You are {player_name}. {role_prompt}
-
-                You have access to the following tools:
-                {tool_descriptions}
-
-                Your task is to analyze the context and provide a detailed
-                response. When you need to use a tool, describe what you would
-                do and provide your analysis.
-
-                {context_info}
-
-                For multi-CSV contexts (multiple CSV resources), consider:
-                - How resources might relate to each other
-                - Common fields that could be foreign keys
-                - Data integrity across resources
-
-            Human:
-                Task: {task}
-
-                Target resources for this step: {target_resources}
-
-                Input context from previous steps:
-                {input_context}
-
-                Execute this task and provide a comprehensive response.
-                Include:
-                1. Your approach to the task
-                2. Any relevant observations or findings
-                3. The result of your analysis
-        
-        Args:
-            task: The task description to execute
-            context_key: Key for the ExecutionContext in the tool registry
-            context_info: Serialized info about the ExecutionContext
-            workspace: Dictionary of artifacts from previous steps
-            inputs: Mapping of parameter names to artifact names in workspace
-            target_resources: List of specific resources this task targets
-            
-        Returns:
-            Dictionary containing the execution result and any produced artifacts
+        Returns tool_trace for debugging (tool calls / skips / errors).
         """
-        # Resolve input artifacts from workspace
-        resolved_inputs = {}
+        resolved_inputs: Dict[str, Any] = {}
         for param_name, artifact_name in inputs.items():
             if artifact_name in workspace:
                 resolved_inputs[param_name] = workspace[artifact_name]
             else:
                 resolved_inputs[param_name] = f"[MISSING: {artifact_name}]"
-        
-        # Build the execution prompt
-        tool_descriptions = "\n".join([
-            f"- {tool.name}: {tool.description}" 
-            for tool in self.tools
-        ]) if self.tools else "No tools available."
-        
-        # Build context info section
+
+        tool_descriptions = (
+            "\n".join(
+                f"- {tool.name}: {tool.description}" for tool in self.tools
+            )
+            if self.tools
+            else "No tools available."
+        )
+
         is_multi_csv = context_info.get("is_multi_csv", False)
-        resources = context_info.get("resources", [])
+        resources = list(context_info.get("resources", []) or [])
         target_resources = target_resources or []
-        
-        if is_multi_csv:
-            ctx_info = f"Multi-CSV Context: {context_info.get('name', 'context')}\n"
-            ctx_info += f"Context type: {context_info.get('context_type', 'unknown')}\n"
-            ctx_info += f"Resources: {', '.join(resources)}\n"
-            if target_resources:
-                ctx_info += f"Target resources for this step: {', '.join(target_resources)}\n"
-            ctx_info += f"\nTo use tools, pass context_key='{context_key}'"
-        else:
-            resource_name = resources[0] if resources else "unknown"
-            ctx_info = f"Context: {context_info.get('name', 'context')}\n"
-            ctx_info += f"Context type: {context_info.get('context_type', 'unknown')}\n"
-            ctx_info += f"Resource: {resource_name}\n"
-            ctx_info += f"\nTo use tools, pass context_key='{context_key}'"
-        
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", f"""You are {self.name}. {self.role_prompt}
+
+        ctx_info = self._build_task_context_block(
+            context_key, context_info, is_multi_csv, resources, target_resources
+        )
+
+        system_content = f"""You are {self.name}. {self.role_prompt}
 
 You have access to the following tools:
 {tool_descriptions}
 
 Your task is to analyze the context and provide a detailed response.
-When you need to use a tool, describe what you would do and provide your analysis.
 
 {ctx_info}
 
@@ -190,8 +653,13 @@ For multi-CSV contexts (multiple CSV resources), consider:
 - How resources might relate to each other
 - Common fields that could be foreign keys
 - Data integrity across resources
-"""),
-            ("human", """Task: {task}
+"""
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                SystemMessage(content=system_content),
+                (
+                    "human",
+                    """Task: {task}
 
 Target resources for this step: {target_resources}
 
@@ -201,129 +669,143 @@ Input context from previous steps:
 Execute this task and provide a comprehensive response. Include:
 1. Your approach to the task
 2. Any relevant observations or findings
-3. The result of your analysis""")
-        ])
-        
-        input_context = "\n".join([
-            f"- {k}: {v}" for k, v in resolved_inputs.items()
-        ]) if resolved_inputs else "No inputs from previous steps."
-        
-        # Execute with LLM
-        chain = prompt | self.llm | self._output_parser
-        
-        # Actually invoke tools if available
-        tool_results = {}
-        
-        # Invoke tools with context_key
-        for tool in self.tools:
-            tool_name = tool.name.lower()
-            try:
-                # Determine which tables to analyze
-                if target_resources:
-                    resources_to_analyze = target_resources
-                else:
-                    resources_to_analyze = resources
-                
-                # Check if tool needs table parameter
-                if any(
-                    kw in tool_name
-                    for kw in [
-                        "resource_info",
-                        "item_count",
-                        "field",
-                        "sample",
-                        "statistics",
-                        "missing",
-                        "unique",
-                    ]
-                ):
-                    # Resource-specific tools - run on each target resource
-                    for resource in resources_to_analyze:
-                        try:
-                            result = tool.invoke({
-                                "context_key": context_key,
-                                "resource": resource
-                            })
-                            tool_results[f"{resource}:{tool.name}"] = result
-                        except Exception as e:
-                            # Try without table parameter
-                            try:
-                                result = tool.invoke({"context_key": context_key})
-                                tool_results[tool.name] = result
-                                break
-                            except Exception:
-                                tool_results[f"{resource}:{tool.name}"] = f"Error: {str(e)}"
-                else:
-                    # Context-level tools
-                    result = tool.invoke({"context_key": context_key})
-                    tool_results[tool.name] = result
-                    
-            except Exception as e:
-                tool_results[tool.name] = f"Error: {str(e)}"
-        
-        # Get LLM analysis
-        target_info = ", ".join(target_resources) if target_resources else (
-            "All resources" if is_multi_csv else "N/A"
+3. The result of your analysis""",
+                ),
+            ]
         )
-        llm_response = chain.invoke({
-            "task": task,
-            "target_resources": target_info,
-            "input_context": input_context + "\n\nTool Results:\n" + str(tool_results)
-        })
-        
+
+        input_context = (
+            "\n".join(f"- {k}: {v}" for k, v in resolved_inputs.items())
+            if resolved_inputs
+            else "No inputs from previous steps."
+        )
+        if self.role_key in {
+            "metadata_generator", "croissant_metadata_generator",
+            "croissant_pangaea_metadata_generator",
+            "croissant_inaturalist_metadata_generator",
+        } and workspace.get("_verified_evidence"):
+            input_context += (
+                "\n\nVerified tool observations from previous steps "
+                "(prefer these to summaries when they conflict):\n"
+                + json.dumps(workspace["_verified_evidence"], ensure_ascii=False, default=str)
+            )
+
+        target_info = (
+            ", ".join(target_resources)
+            if target_resources
+            else ("All resources" if is_multi_csv else "N/A")
+        )
+
+        tool_trace: List[Dict[str, Any]] = []
+        llm_result: Optional[Tuple[Dict[str, Any], List[Dict[str, Any]], str, List[Any]]] = None
+
+        logging.info(
+            "Player '%s' (role=%s): %d tool(s) available",
+            self.name,
+            self.role_key or "unknown",
+            len(self.tools),
+        )
+        if self.tools:
+            logging.info(
+                "Player '%s': attempting LLM-driven tool calling",
+                self.name,
+            )
+            llm_result = self._run_llm_tool_loop(
+                context_key=context_key,
+                task=task,
+                target_resources=target_info,
+                input_context=input_context,
+                ctx_info=ctx_info,
+                tool_descriptions=tool_descriptions,
+                tool_tracer=tool_tracer,
+                recorder=recorder,
+                step_index=step_index,
+                required_resources=(target_resources or resources) if is_multi_csv else None,
+            )
+
+        if llm_result is not None:
+            tool_results, tool_trace, analysis_text, messages = llm_result
+            llm_tool_calls = sum(
+                1 for e in tool_trace if e.get("source") == "llm" and "tool" in e
+            )
+            logging.info(
+                "Player '%s': using LLM tool path — %d tool result(s), "
+                "%d trace entry/entries",
+                self.name,
+                len(tool_results),
+                llm_tool_calls,
+            )
+            if not analysis_text.strip():
+                messages.append(HumanMessage(content="Summarize the verified tool results for this task."))
+                final_message = self._invoke_recorded(
+                    self.llm, messages, recorder=recorder,
+                    step_index=step_index, phase="initial",
+                )
+                messages.append(final_message)
+                analysis_text = _stringify_message_content(final_message.content)
+            if not analysis_text.strip():
+                raise RuntimeError("Player returned empty analysis")
+            return {
+                "player": self.name,
+                "task": task,
+                "tool_results": tool_results,
+                "tool_trace": tool_trace,
+                "analysis": analysis_text,
+                "messages": messages,
+                "success": True,
+                "is_multi_csv": is_multi_csv,
+            }
+
+        if self.tools:
+            raise RuntimeError(f"Tool calling is unavailable for player {self.name}")
+
+        messages = prompt.format_messages(
+            task=task, target_resources=target_info, input_context=input_context,
+        )
+        llm_response = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase="initial",
+        )
+        messages.append(llm_response)
+        analysis = _stringify_message_content(llm_response.content)
+        if not analysis.strip():
+            raise RuntimeError("Player returned empty analysis")
+
         return {
             "player": self.name,
             "task": task,
-            "tool_results": tool_results,
-            "analysis": llm_response,
+            "tool_results": {},
+            "tool_trace": tool_trace,
+            "analysis": analysis,
+            "messages": messages,
             "success": True,
             "is_multi_csv": is_multi_csv,
         }
-    
+
     def generate_initial_work(
         self,
         task: str,
         context_info: Dict[str, Any],
-        context: Dict[str, Any]
+        context: Dict[str, Any],
     ) -> str:
         """
         Generate initial work/analysis for a debate round.
 
-        Prompt:
-            System: You are {self.name}. {self.role_prompt}
-
-            You are participating in a multi-agent analysis of a context
-            (dataset, API, etc.). Your goal is to provide your unique
-            perspective and insights.
-
-            Human:
-                Task: {task}
-
-                Context: {context_name} ({context_type})
-                Resources: {resources}
-
-                Context and available information:
-                {context}
-
-                Provide your initial analysis. Be thorough and specific.
-                Focus on what you can contribute based on your role.
-        
         Args:
             task: The task to work on
             context_info: Info about the ExecutionContext
             context: Additional context (workspace, tool results, etc.)
-            
+
         Returns:
             The player's initial analysis as a string
         """
         prompt = ChatPromptTemplate.from_messages(
             [
-                (
-                    "system",
-                    f"""You are {self.name}. {self.role_prompt}
+                SystemMessage(
+                    content=f"""You are {self.name}. {self.role_prompt}
 
 You are participating in a multi-agent analysis of a context (dataset, API, etc.).
-Your goal is to provide your unique perspective and insights.""",
+Your goal is to provide your unique perspective and insights."""
                 ),
                 (
                     "human",
@@ -340,58 +822,48 @@ Focus on what you can contribute based on your role.""",
                 ),
             ]
         )
-        
+
         chain = prompt | self.llm | self._output_parser
-        
-        return chain.invoke({
-            "task": task,
-            "context_name": context_info.get("name", "context"),
-            "context_type": context_info.get("context_type", "unknown"),
-            "resources": ", ".join(context_info.get("resources", [])),
-            "context": str(context),
-        })
+
+        return chain.invoke(
+            {
+                "task": task,
+                "context_name": context_info.get("name", "context"),
+                "context_type": context_info.get("context_type", "unknown"),
+                "resources": ", ".join(context_info.get("resources", [])),
+                "context": str(context),
+            }
+        )
+
     def critique_work(
-        self,
-        task: str,
-        other_players_work: Dict[str, str]
-    ) -> str:
+        self, task: str, other_players_work: Dict[str, str],
+        *, recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        round_index: int = 0,
+        messages: Optional[List[Any]] = None,
+    ) -> Dict[str, Any]:
         """
         Critique the work of other players.
 
-        Prompt:
-            System:
-                You are {self.name}. {self.role_prompt}
-
-                You are reviewing the work of other analysts. Provide constructive criticism
-                that helps improve the overall analysis. Be specific about what could be
-                improved, what's missing, or what might be incorrect.
-
-            Human:
-                Task: {task}
-
-                Work from other players to critique:
-                {other_work}
-
-                Provide your critique. Focus on:
-                1. Accuracy and correctness
-                2. Completeness
-                3. Clarity and specificity
-                4. Suggestions for improvement
-        
         Args:
             task: The task being worked on
             other_players_work: Dictionary mapping player names to their work
-            
+
         Returns:
-            Critique as a string
+            Critique and the continued conversation
         """
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", f"""You are {self.name}. {self.role_prompt}
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                SystemMessage(
+                    content=f"""You are {self.name}. {self.role_prompt}
 
 You are reviewing the work of other analysts. Provide constructive criticism
 that helps improve the overall analysis. Be specific about what could be
-improved, what's missing, or what might be incorrect."""),
-            ("human", """Task: {task}
+improved, what's missing, or what might be incorrect."""
+                ),
+                (
+                    "human",
+                    """Task: {task}
 
 Work from other players to critique:
 {other_work}
@@ -400,177 +872,127 @@ Provide your critique. Focus on:
 1. Accuracy and correctness
 2. Completeness
 3. Clarity and specificity
-4. Suggestions for improvement""")
-        ])
-        
-        chain = prompt | self.llm | self._output_parser
-        
-        other_work_str = "\n\n".join([
-            f"=== {name} ===\n{work}" 
-            for name, work in other_players_work.items()
-        ])
-        
-        return chain.invoke({
-            "task": task,
-            "other_work": other_work_str
-        })
-    
+4. Suggestions for improvement""",
+                ),
+            ]
+        )
+
+        other_work_str = "\n\n".join(
+            f"=== {name} ===\n{work}" for name, work in other_players_work.items()
+        )
+        if messages is None:
+            messages = prompt.format_messages(task=task, other_work=other_work_str)
+        else:
+            messages = list(messages)
+            messages.append(HumanMessage(content=(
+                f"Task: {task}\nPeer work to critique:\n{other_work_str}\n\n"
+                "Check accuracy, completeness, and the cited tool evidence. "
+                "Give concrete feedback for the next revision."
+            )))
+        response = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase=f"critique_{round_index + 1}",
+        )
+        messages.append(response)
+        return {"analysis": _stringify_message_content(response.content), "messages": messages}
+
     def revise_work(
         self,
         task: str,
-        my_original_work: str,
-        critiques: List[str]
-    ) -> str:
-        """
-        Revise work based on critiques received.
-
-        Prompt:
-            System:
-                You are {self.name}. {self.role_prompt}
-
-                You are revising your work based on feedback from other analysts.
-                Incorporate valid criticisms while maintaining your unique perspective.
-
-            Human:
-                Task: {task}
-
-                Your original work:
-                {original_work}
-
-                Critiques received:
-                {critiques}
-
-                Provide your revised analysis. Address the valid points raised in the critiques
-                while maintaining accuracy and your analytical perspective.
-        
-        Args:
-            task: The task being worked on
-            my_original_work: This player's original work
-            critiques: List of critiques from other players
-            
-        Returns:
-            Revised work as a string
-        """
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", f"""You are {self.name}. {self.role_prompt}
-
-You are revising your work based on feedback from other analysts.
-Incorporate valid criticisms while maintaining your unique perspective."""),
-            ("human", """Task: {task}
-
-Your original work:
-{original_work}
-
-Critiques received:
-{critiques}
-
-Provide your revised analysis. Address the valid points raised in the critiques
-while maintaining accuracy and your analytical perspective.""")
-        ])
-        
-        chain = prompt | self.llm | self._output_parser
-        
-        critiques_str = "\n\n".join([
-            f"Critique {i+1}:\n{c}" 
-            for i, c in enumerate(critiques)
-        ])
-        
-        return chain.invoke({
-            "task": task,
-            "original_work": my_original_work,
-            "critiques": critiques_str
-        })
+        messages: List[Any],
+        critiques: List[str],
+        *, context_key: str,
+        tool_results: Dict[str, Any],
+        tool_trace: List[Dict[str, Any]],
+        tool_tracer: Optional["ToolTrace"] = None,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        round_index: int = 1,
+        required_resources: Optional[List[str]] = None,
+    ) -> Dict[str, Any]:
+        """Continue this agent's own conversation, including its tool evidence."""
+        messages = list(messages)
+        feedback = "\n\n".join(critiques) if critiques else "No peer critique was available."
+        messages.append(HumanMessage(content=(
+            f"Task: {task}\nPeer feedback:\n{feedback}\n\n"
+            "Recheck your own tool evidence. Call tools again if the feedback reveals a "
+            "gap or a conflict. Give a revised answer grounded in successful tool results."
+        )))
+        phase = f"revision_{round_index}"
+        if self.tools:
+            result = self._run_llm_tool_loop(
+                context_key=context_key, task=task, target_resources="",
+                input_context="", ctx_info="", tool_descriptions="",
+                tool_tracer=tool_tracer, messages=messages,
+                tool_results=tool_results, tool_trace=tool_trace,
+                recorder=recorder, step_index=step_index, phase=phase,
+                required_resources=required_resources,
+            )
+            if result is None:
+                raise RuntimeError(f"Tool calling is unavailable for player {self.name}")
+            tool_results, tool_trace, analysis, messages = result
+        else:
+            response = self._invoke_recorded(
+                self.llm, messages, recorder=recorder,
+                step_index=step_index, phase=phase,
+            )
+            messages.append(response)
+            analysis = _stringify_message_content(response.content)
+        if not analysis.strip():
+            raise RuntimeError("Player returned empty revised analysis")
+        return {
+            "analysis": analysis,
+            "messages": messages,
+            "tool_results": tool_results,
+            "tool_trace": tool_trace,
+            "success": True,
+        }
 
     def synthesize_results(
         self,
         task: str,
         all_results: List[Dict[str, Any]],
-        output_schema: Optional[Type[BaseModel]] = None
+        output_schema: Optional[Type[BaseModel]] = None,
+        *,
+        recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        conversation: Optional[List[Any]] = None,
     ) -> Union[str, BaseModel]:
         """
         Synthesize multiple results into a consolidated output.
         Uses this player's role/expertise to consolidate debate results.
 
-        Prompt used for string output:
-            System:
-                You are {player_name}. {role_prompt}
-
-                You are now synthesizing results from multiple analysts who
-                worked on the same task.
-
-                Your job:
-                - Consolidate the findings into a single, authoritative result
-                - Resolve conflicts by choosing the most accurate/complete information
-                - Preserve important details while removing redundancy
-                - Output a clear, concise result appropriate for the task
-
-                Output requirements:
-                - Output ONLY the consolidated result
-                - NO meta-commentary like "Based on the analyses..." or "The players found..."
-                - NO explanations of your synthesis process
-                - Keep the format appropriate for the task
-
-            Human:
-                Task: {task}
-
-                Results from all analysts:
-                {all_results}
-
-                Provide the consolidated result for this task. Output only the
-                result, no commentary.
-
-        Prompt used for structured output:
-            System:
-                You are {player_name}. {role_prompt}
-
-                You are synthesizing results from multiple analysts into a
-                structured format.
-
-                Your job:
-                - Extract and consolidate all relevant information from the analyses
-                - Fill in ALL fields in the schema with concrete values from the gathered information
-                - Use null/None for fields where information is truly unavailable
-                - Resolve conflicts by choosing the most accurate/complete information
-
-                Critical:
-                - Output MUST conform exactly to the provided schema
-                - Use actual values, not placeholders like "..."
-                - Be specific and concrete
-
-            Human:
-                Task: {task}
-
-                Results from all analysts:
-                {all_results}
-
-                Generate the final structured output.
-        
         Args:
             task: The task that was worked on
             all_results: List of results from all players
             output_schema: Optional Pydantic model class for structured output.
                           If provided, returns a validated Pydantic model instance.
                           If None, returns a string (legacy behavior).
-            
+
         Returns:
             Synthesized result as a string or Pydantic model instance
         """
-        results_str = "\n\n".join([
-            f"=== {r.get('player', 'Unknown')} ===\n{r.get('analysis', str(r))}"
-            for r in all_results
-        ])
-        
+        results_str = _format_results_for_synthesis(all_results)
+
         if output_schema is not None:
-            # Use structured output with Pydantic schema
-            return self._synthesize_structured(task, results_str, output_schema)
-        else:
-            # Legacy string output
-            return self._synthesize_string(task, results_str)
-    
-    def _synthesize_string(self, task: str, results_str: str) -> str:
+            return self._synthesize_structured(
+                task, results_str, output_schema,
+                recorder=recorder, step_index=step_index,
+                conversation=conversation,
+            )
+        return self._synthesize_string(
+            task, results_str, recorder=recorder, step_index=step_index,
+            conversation=conversation,
+        )
+
+    def _synthesize_string(
+        self, task: str, results_str: str,
+        *, recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        conversation: Optional[List[Any]] = None,
+    ) -> str:
         """Synthesize results as a string (legacy behavior)."""
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", f"""You are {self.name}. {self.role_prompt}
+        system_content = f"""You are {self.name}. {self.role_prompt}
 
 You are now synthesizing results from multiple analysts who worked on the same task.
 
@@ -578,100 +1000,150 @@ You are now synthesizing results from multiple analysts who worked on the same t
 - Consolidate the findings into a single, authoritative result
 - Resolve any conflicts by choosing the most accurate/complete information
 - Preserve important details while removing redundancy
+- Prefer structured tool results over incomplete analysis prose when they conflict
+- For spatial/temporal coverage, use extent tool outputs
+  (get_spatial_extent, get_spatial_extent_from_tuple_column, get_temporal_extent).
+  Never compute coverage from detect_* sample_values.
 - Output a clear, concise result appropriate for the task
 
 **Output requirements:**
 - Output ONLY the consolidated result
 - NO meta-commentary like "Based on the analyses..." or "The players found..."
 - NO explanations of your synthesis process
-- Keep the format appropriate for the task (e.g., numbers for counts, lists for columns)"""),
-            ("human", """Task: {task}
+- Keep the format appropriate for the task (e.g., numbers for counts, lists for columns)"""
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                SystemMessage(content=system_content),
+                (
+                    "human",
+                    """Task: {task}
 
 Results from all analysts:
 {all_results}
 
-Provide the consolidated result for this task. Output only the result, no commentary.""")
-        ])
-        
-        chain = prompt | self.llm | self._output_parser
-        
-        return chain.invoke({
-            "task": task,
-            "all_results": results_str
-        })
-    
+Provide the consolidated result for this task. Output only the result, no commentary.""",
+                ),
+            ]
+        )
+
+        if conversation is not None:
+            messages = list(conversation) + [HumanMessage(content=(
+                f"Task: {task}\n\nAgent findings and conversations:\n{results_str}\n\n"
+                "Synthesize the final result. Preserve verified tool values and "
+                "resolve conflicts using the tool outputs. Output only the result."
+            ))]
+        else:
+            messages = prompt.format_messages(task=task, all_results=results_str)
+        response = self._invoke_recorded(
+            self.llm, messages, recorder=recorder,
+            step_index=step_index, phase="synthesis",
+        )
+        return _stringify_message_content(response.content)
+
     def _synthesize_structured(
-        self, 
-        task: str, 
-        results_str: str, 
-        output_schema: Type[BaseModel]
+        self,
+        task: str,
+        results_str: str,
+        output_schema: Type[BaseModel],
+        *, recorder: Optional["RunTraceRecorder"] = None,
+        step_index: Optional[int] = None,
+        conversation: Optional[List[Any]] = None,
     ) -> BaseModel:
         """
         Synthesize results into a structured Pydantic model.
-        
+
         Uses LangChain's with_structured_output() for guaranteed schema compliance.
         """
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", f"""You are {self.name}. {self.role_prompt}
+        system_content = f"""You are {self.name}. {self.role_prompt}
 
-You are synthesizing results from multiple analysts into a structured format.
+You are consolidating prior analysis into the required structured metadata format.
+
+The analyses and tool results below already contain the findings from earlier steps. Your job is NOT to
+re-analyze the dataset or discover new information—only to consolidate what is already
+present into the required schema.
 
 **Your job:**
-- Extract and consolidate all relevant information from the analyses
-- Fill in ALL fields in the schema with concrete values from the gathered information
-- Use null/None for fields where information is truly unavailable
+- Extract and map relevant information from the analyses and tool results into each schema field
+- Prefer structured tool results over incomplete analysis prose when they conflict
+- For spatial/temporal coverage, use extent tool outputs
+  (get_spatial_extent, get_spatial_extent_from_tuple_column, get_temporal_extent).
+  Never compute coverage from detect_* sample_values.
 - Resolve conflicts by choosing the most accurate/complete information
+- Use null/None for fields with no supporting information in the analyses
 
 **CRITICAL:**
 - Output MUST conform exactly to the provided schema
-- Use actual values, not placeholders like "..." 
-- Be specific and concrete"""),
-            ("human", """Task: {task}
+- Use actual values from the analyses, not placeholders like "..."
+- Do not invent or infer values beyond what the analyses already provide"""
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                SystemMessage(content=system_content),
+                (
+                    "human",
+                    """Task: {task}
 
 Results from all analysts:
 {all_results}
 
-Generate the final structured output.""")
-        ])
-        
-        # Use with_structured_output for guaranteed schema compliance
-        structured_llm = self.llm.with_structured_output(output_schema)
-        chain = prompt | structured_llm
-        
-        return chain.invoke({
-            "task": task,
-            "all_results": results_str
-        })
-    
+Consolidate the above into the required structured output.""",
+                ),
+            ]
+        )
+
+        if conversation is not None:
+            messages = list(conversation) + [HumanMessage(content=(
+                f"Task: {task}\n\nAgent findings and conversations:\n{results_str}\n\n"
+                "Return final metadata from the verified tool results and prior "
+                "analysis. Use the required structured schema."
+            ))]
+        else:
+            messages = prompt.format_messages(task=task, all_results=results_str)
+        try:
+            model = self.llm.with_structured_output(output_schema)
+            return self._invoke_recorded(
+                model, messages, recorder=recorder,
+                step_index=step_index, phase="synthesis",
+            )
+        except ValueError:
+            model = self.llm.with_structured_output(
+                output_schema, method="function_calling"
+            )
+            return self._invoke_recorded(
+                model, messages, recorder=recorder,
+                step_index=step_index, phase="synthesis_retry",
+            )
+
     def __repr__(self):
         return f"Player(name={self.name}, tools={len(self.tools)})"
 
 
 def create_player_from_config(
-    config: Dict[str, Any], 
+    config: Dict[str, Any],
     name: str,
     provider: Optional[str] = None,
     role_key: Optional[str] = None,
 ) -> Player:
     """
     Factory function to create a Player from a configuration dictionary.
-    
+
     Args:
         config: Dictionary with 'role_prompt', 'tools', and optional 'model_name', 'temperature'
         name: The name to assign to this player instance
         provider: LLM provider to use (default from config)
-        role_key: Canonical player role key from PLAYER_CONFIGS
-        
+
     Returns:
         Configured Player instance
     """
-    resolved_role_key = role_key if role_key is not None else config.get("_role_key")
+    rk = role_key if role_key is not None else config.get("_role_key")
     return Player(
         name=name,
         role_prompt=config.get("role_prompt", "You are a helpful analyst."),
         tools=config.get("tools", []),
-        model_name=config.get("model_name"),  # None means use config default
-        temperature=config.get("temperature"),  # None means use config default
+        model_name=config.get("model_name"),
+        temperature=config.get("temperature"),
         provider=provider,
-        role_key=resolved_role_key,
+        max_tool_iterations=config.get("max_tool_iterations"),
+        role_key=rk,
+        require_tool_calls=config.get("require_tool_calls", False),
+        required_tools=config.get("required_tools"),
     )

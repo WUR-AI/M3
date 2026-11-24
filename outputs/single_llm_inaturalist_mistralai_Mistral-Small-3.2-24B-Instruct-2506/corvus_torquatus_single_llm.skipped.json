@@ -1,0 +1,15 @@
+{
+  "csv": "corvus_torquatus.csv",
+  "dataset_id": "corvus_torquatus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "97ab93f16ef676b37fd174bca510e5108072df15b91d63c266e4aaff6741eafa",
+  "contract_sha256": "410b0f1b319fb7ddb1a465b344d5a4aea4bb12237a816f517003311cb2d4d989",
+  "prompt_tokens": 315869,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,44 @@
+{
+  "csv": "962616.csv",
+  "dataset_id": "962616",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "53878bd4aff9f3cab58fba0c5229d29a9b6de5e5bd93a55093c97e80fb7cd00e",
+  "contract_sha256": "c62ee1de1f7dca96d3389401472d260202d3a615d855224ace636b9889e60965",
+  "prompt_tokens": 1646,
+  "metadata": {
+    "name": "WA Cape Blossom 2021-06-25 7cm RGB, CIR, DSM, Hillshade, and Point Cloud Data",
+    "description": "Dataset containing cloud-optimized GeoTIFFs (Ortho, DSM, Hillshade), preview images (RGB, CIR), point clouds, tile footprints, and processing info for the WA Cape Blossom survey conducted on 2021-06-25 with a 7cm resolution.",
+    "keywords": [
+      "Cape Blossom",
+      "orthophoto",
+      "DSM",
+      "hillshade",
+      "point cloud",
+      "NIR",
+      "RGB",
+      "CIR",
+      "GeoTIFF",
+      "aerial survey"
+    ],
+    "spatialCoverage": {
+      "min_lat": 66.891836,
+      "min_lon": -162.596512,
+      "max_lat": 66.891836,
+      "max_lon": -162.596512
+    },
+    "temporalCoverage": {
+      "from": "2021-06-25",
+      "to": "2021-06-25"
+    },
+    "spatial": "7 cm",
+    "temporal": "2021-06-25 21:21:30"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.349,
+  "status": "ok"
+}

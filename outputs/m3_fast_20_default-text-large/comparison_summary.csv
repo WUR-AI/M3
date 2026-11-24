@@ -1,0 +1,7 @@
+corpus,method,n,successes,skips,failures_or_missing,min_lon_accuracy,min_lon_precision,min_lon_recall,max_lon_accuracy,max_lon_precision,max_lon_recall,min_lat_accuracy,min_lat_precision,min_lat_recall,max_lat_accuracy,max_lat_precision,max_lat_recall,min_time_accuracy,min_time_precision,min_time_recall,max_time_accuracy,max_time_precision,max_time_recall,technical_accuracy,spatial_accuracy,temporal_accuracy,technical_precision,technical_recall,faithfulness,similarity
+pangaea,M3_fast,20,19,0,1,0.6,1.0,0.8823529411764706,0.65,1.0,0.8823529411764706,0.7,1.0,0.8823529411764706,0.55,1.0,0.8823529411764706,0.65,1.0,0.875,0.7,1.0,0.875,0.6416666666666666,0.625,0.675,1.0,0.8799019607843137,0.9,0.1895
+pangaea,ReAct,20,20,0,0,0.6,1.0,0.9411764705882353,0.7,1.0,0.9411764705882353,0.7,1.0,0.9411764705882353,0.6,1.0,0.9411764705882353,0.65,0.9333333333333333,0.875,0.6,0.9333333333333333,0.875,0.6416666666666666,0.6499999999999999,0.625,0.9777777777777779,0.9191176470588235,1.0,0.342
+pangaea,SingleLLM,20,19,1,0,0.55,1.0,0.8823529411764706,0.6,1.0,0.8823529411764706,0.65,1.0,0.8823529411764706,0.55,1.0,0.8823529411764706,0.6,0.8666666666666667,0.8125,0.6,0.8666666666666667,0.8125,0.5916666666666667,0.5874999999999999,0.6,0.9555555555555557,0.8590686274509803,0.7875,0.376
+inaturalist,M3_fast,20,20,0,0,1.0,,,1.0,,,1.0,,,1.0,,,1.0,,,1.0,,,1.0,1.0,1.0,,,,
+inaturalist,ReAct,20,20,0,0,1.0,,,1.0,,,1.0,,,1.0,,,0.9,,,0.8,,,0.9500000000000001,1.0,0.8500000000000001,,,,
+inaturalist,SingleLLM,20,0,20,0,0.0,,,0.0,,,0.0,,,0.0,,,0.0,,,0.0,,,0.0,0.0,0.0,,,,

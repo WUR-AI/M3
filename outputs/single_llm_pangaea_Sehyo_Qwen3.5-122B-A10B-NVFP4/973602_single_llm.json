@@ -1,0 +1,47 @@
+{
+  "csv": "973602.csv",
+  "dataset_id": "973602",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "fbdd17a1da291bff3da59cc7371ccf8e55bfb0b47ba5f0e376f7264ea887d8be",
+  "contract_sha256": "7cd4a9691d567e7897a3841e98e847a67f5879086e2eb0f77e00ea0fd8f827ea",
+  "prompt_tokens": 774,
+  "metadata": {
+    "name": "PS101/186-R1 and PS101/186-R2 Geochemical Data",
+    "description": "Dataset containing geochemical composition (SiO2, TiO2, Al2O3, Fe2O3, MnO, MgO, CaO, Na2O, K2O, P2O5) and total values for samples PS101/186-R1 and PS101/186-R2, collected at event PS101/186-1 with associated location (Latitude, Longitude, Elevation) and timestamp.",
+    "keywords": [
+      "geochemistry",
+      "SiO2",
+      "TiO2",
+      "Al2O3",
+      "Fe2O3",
+      "MnO",
+      "MgO",
+      "CaO",
+      "Na2O",
+      "K2O",
+      "P2O5",
+      "PS101/186",
+      "sediment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 86.961,
+      "min_lon": 55.68667,
+      "max_lat": 86.961,
+      "max_lon": 55.68667
+    },
+    "temporalCoverage": {
+      "from": "2016-10-04T17:21:00",
+      "to": "2016-10-04T17:21:00"
+    },
+    "spatial": "point locations",
+    "temporal": "instantaneous"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.752,
+  "status": "ok"
+}

@@ -1,0 +1,244 @@
+{
+  "dataset_name": "931902",
+  "list_of_tables": [
+    "931902"
+  ],
+  "tables": {
+    "931902": {
+      "table_name": "931902",
+      "row_count": 2,
+      "number_of_columns": 7,
+      "list_of_columns": [
+        "Event",
+        "Binary",
+        "Binary (Size)",
+        "Binary (Hash)",
+        "Latitude",
+        "Longitude",
+        "Date/Time"
+      ],
+      "columns": {
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Birkeland_Cruise_1-H08",
+            "Birkeland_Cruise_1-H07"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaa_Aaaaaa_9-A99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Birkeland_Cruise_1-H08",
+                1
+              ],
+              [
+                "Birkeland_Cruise_1-H07",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Event identifiers for Birkeland Cruise."
+        },
+        "Binary": {
+          "column_name": "Binary",
+          "data_type": "string",
+          "sample_values": [
+            "Fish_siphonophores_1-H07_0.mp4",
+            "Siphonophores_1-H08_0.mp4"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaaaaaa_9-A99_9.aa9": 1,
+            "Aaaa_aaaaaaaaaaaaa_9-A99_9.aa9": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Siphonophores_1-H08_0.mp4",
+                1
+              ],
+              [
+                "Fish_siphonophores_1-H07_0.mp4",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Binary filenames of recorded events."
+        },
+        "Binary (Size)": {
+          "column_name": "Binary (Size)",
+          "data_type": "string",
+          "sample_values": [
+            "33 MBytes",
+            "40.8 MBytes"
+          ],
+          "data_patterns": {
+            "99.9 AAaaaa": 1,
+            "99 AAaaaa": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "40.8 MBytes",
+                1
+              ],
+              [
+                "33 MBytes",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Binary file sizes in megabytes."
+        },
+        "Binary (Hash)": {
+          "column_name": "Binary (Hash)",
+          "data_type": "string",
+          "sample_values": [
+            "e3c4e5654af538a01736fb3fd5c2439a",
+            "b682278e871f31853cae7a441b58a863"
+          ],
+          "data_patterns": {
+            "a999999a999a99999aaa9a999a99a999": 1,
+            "a9a9a9999aa999a99999aa9aa9a9999a": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "b682278e871f31853cae7a441b58a863",
+                1
+              ],
+              [
+                "e3c4e5654af538a01736fb3fd5c2439a",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Binary file identifiers for Earth and environmental science data."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            46.55,
+            46.15
+          ],
+          "data_patterns": {
+            "99.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 46.15,
+            "max": 46.55,
+            "mean": 46.349999999999994,
+            "median": 46.349999999999994,
+            "std": 0.282842712474618
+          },
+          "description": "Geographic coordinate measuring degrees north of the equator."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -26.01667,
+            -26.26667
+          ],
+          "data_patterns": {
+            "-99.99999": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": -26.26667,
+            "max": -26.01667,
+            "mean": -26.14167,
+            "median": -26.14167,
+            "std": 0.1767766952966369
+          },
+          "description": "Geographical coordinate measuring east-west position in decimal degrees."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2016-07-07",
+            "2016-07-07"
+          ],
+          "data_patterns": {
+            "9999-99-99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2016-07-07T00:00:00",
+            "max_date": "2016-07-07T00:00:00"
+          },
+          "description": "Event occurrence timestamp recorded on July 7, 2016."
+        }
+      },
+      "time_period_covered": {
+        "start": "2016-07-07T00:00:00",
+        "end": "2016-07-07T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Event": "Birkeland_Cruise_1-H08",
+          "Binary": "Siphonophores_1-H08_0.mp4",
+          "Binary (Size)": "40.8 MBytes",
+          "Binary (Hash)": "b682278e871f31853cae7a441b58a863",
+          "Latitude": 46.15,
+          "Longitude": -26.26667,
+          "Date/Time": "2016-07-07"
+        },
+        {
+          "Event": "Birkeland_Cruise_1-H07",
+          "Binary": "Fish_siphonophores_1-H07_0.mp4",
+          "Binary (Size)": "33 MBytes",
+          "Binary (Hash)": "e3c4e5654af538a01736fb3fd5c2439a",
+          "Latitude": 46.55,
+          "Longitude": -26.01667,
+          "Date/Time": "2016-07-07"
+        }
+      ],
+      "description": "Earth and environmental science data with event details, binary files, and geolocation.",
+      "is_row_capped": false,
+      "rows_processed": 2,
+      "total_rows_in_file": 2
+    }
+  },
+  "time_period_covered": {
+    "start": "2016-07-07T00:00:00",
+    "end": "2016-07-07T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science data, two records, single timestamp, 2016-07-07."
+}

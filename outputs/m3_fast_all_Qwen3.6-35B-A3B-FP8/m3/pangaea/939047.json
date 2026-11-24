@@ -1,0 +1,44 @@
+{
+  "dataset_id": "939047",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/939047.csv",
+  "source_sha256": "5b90ade135286bbd4e3faecda84f9f5bedba033ad13f9eb079cc10bf010109b3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:07:13.371353+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Hourly Atmospheric Water Vapor Isotope Measurements at Rothera Station, Antarctica",
+    "description": "Hourly time-series dataset of atmospheric water vapor isotopic composition (δ18O, δD, deuterium excess) and water vapor mixing ratios collected at Rothera Research Station (70.65°S, 8.25°W) from February 2017 to January 2019. The dataset includes quality metrics (observation counts, standard deviations) and metadata (event type, elevation, measurement height).",
+    "keywords": [
+      "water vapor isotopes",
+      "δ18O",
+      "δD",
+      "deuterium excess",
+      "mixing ratio",
+      "Antarctica",
+      "Rothera",
+      "British Antarctic Survey",
+      "atmospheric monitoring",
+      "time series"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2017-02-17T02:00:00+00:00",
+      "to": "2019-01-31T22:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "hourly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/939047_4e5ca924f1cd4a30980455429d171ab2.jsonl",
+  "runtime_seconds": 107.31
+}

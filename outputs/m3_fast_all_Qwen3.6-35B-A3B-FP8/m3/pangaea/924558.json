@@ -1,0 +1,41 @@
+{
+  "dataset_id": "924558",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924558.csv",
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:42:41.724771+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Laboratory experiment on Mytilus galloprovincialis responses to ocean acidification",
+    "description": "Dataset containing 122 laboratory experiments on the blue mussel (Mytilus galloprovincialis) from Nagasaki University, examining biological responses to varying carbonate chemistry conditions (pH 7.42-8.13, CO2 14.3-83.3 μatm) under controlled temperature (13°C) and salinity (35.5). Includes environmental parameters, biological response measurements (percentage response, morphological measurements), and derived carbonate system calculations.",
+    "keywords": [
+      "ocean acidification",
+      "Mytilus galloprovincialis",
+      "blue mussel",
+      "carbonate chemistry",
+      "laboratory experiment",
+      "pH",
+      "CO2",
+      "aragonite saturation",
+      "Nagasaki University",
+      "marine biology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": null,
+    "spatial": "point location",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924558_b8de5cee42d249408e523912f624d017.jsonl",
+  "runtime_seconds": 340.7
+}

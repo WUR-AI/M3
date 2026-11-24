@@ -1,0 +1,2953 @@
+{
+  "dataset_name": "960522",
+  "list_of_tables": [
+    "960522"
+  ],
+  "tables": {
+    "960522": {
+      "table_name": "960522",
+      "row_count": 20,
+      "number_of_columns": 64,
+      "list_of_columns": [
+        "Study type",
+        "Species UID",
+        "Species UID (URI)",
+        "Species UID (Semantic URI)",
+        "ID",
+        "Sample label",
+        "Station",
+        "Year sampl",
+        "Month",
+        "Day",
+        "Latitude",
+        "Longitude",
+        "Sigma H",
+        "Temp",
+        "Temp_2",
+        "Sal",
+        "Sigma-theta",
+        "DO",
+        "O2",
+        "QF",
+        "O2_2",
+        "DIC",
+        "QF_2",
+        "AT",
+        "QF_3",
+        "[NO3]- + [NO2]-",
+        "QF_4",
+        "Si(OH)4",
+        "QF_5",
+        "[PO4]3-",
+        "QF_6",
+        "Samp type",
+        "Treat",
+        "Ind",
+        "Ind_2",
+        "Inc dur",
+        "Inc dur_2",
+        "pHT",
+        "pCO2water_SST_wet",
+        "Omega Arg",
+        "Omega Cal",
+        "DIC std e",
+        "AT std e",
+        "pCO2water_SST_wet std e",
+        "Omega Arg std e",
+        "Omega Cal std e",
+        "Change",
+        "Change_2",
+        "O2_3",
+        "O2 sat",
+        "N O2 con",
+        "N O2 con_2",
+        "Resp O2/dm",
+        "Resp O2/dm_2",
+        "Resp O2/wm",
+        "CSC flag",
+        "pHT_2",
+        "CO2",
+        "fCO2water_SST_wet",
+        "pCO2water_SST_wet_2",
+        "[HCO3]-",
+        "[CO3]2-",
+        "Omega Arg_2",
+        "Omega Cal_2"
+      ],
+      "columns": {
+        "Study type": {
+          "column_name": "Study type",
+          "data_type": "string",
+          "sample_values": [
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory",
+            "laboratory"
+          ],
+          "data_patterns": {
+            "aaaaaaaaaa": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "laboratory",
+                20
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Study type specifies the laboratory setting for Limacina helicina oceanographic research."
+        },
+        "Species UID": {
+          "column_name": "Species UID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina",
+            "Limacina helicina"
+          ],
+          "data_patterns": {
+            "Aaaaaaaa aaaaaaaa": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Limacina helicina",
+                20
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Unique identifier for the Limacina helicina species in the study."
+        },
+        "Species UID (URI)": {
+          "column_name": "Species UID (URI)",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223"
+          ],
+          "data_patterns": {
+            "aaaaa://aaa.aaaaaaaaaaaaa.aaa/aaaaa.aaa?a=aaaaaaaaaa&aa=999999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+                20
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Marine species identifier URI linking to taxonomic details."
+        },
+        "Species UID (Semantic URI)": {
+          "column_name": "Species UID (Semantic URI)",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223",
+            "urn:lsid:marinespecies.org:taxname:140223"
+          ],
+          "data_patterns": {
+            "aaa:aaaa:aaaaaaaaaaaaa.aaa:aaaaaaa:999999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "urn:lsid:marinespecies.org:taxname:140223",
+                20
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Marine species identifier using LSID URIs from the World Register of Marine Species."
+        },
+        "ID": {
+          "column_name": "ID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023",
+            "2019-023"
+          ],
+          "data_patterns": {
+            "9999-999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "2019-023",
+                20
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Unique identifier for the 2019-023 Limacina helicina laboratory study."
+        },
+        "Sample label": {
+          "column_name": "Sample label",
+          "data_type": "string",
+          "sample_values": [
+            "M21",
+            "M20",
+            "M26",
+            "M9",
+            "M12",
+            "M28",
+            "M10",
+            "M30",
+            "M5",
+            "M8",
+            "M29",
+            "M1",
+            "M7",
+            "173",
+            "M2",
+            "M17",
+            "M16",
+            "M6",
+            "163",
+            "M24"
+          ],
+          "data_patterns": {
+            "A99": 11,
+            "A9": 7,
+            "999": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "M1",
+                1
+              ],
+              [
+                "M30",
+                1
+              ],
+              [
+                "M28",
+                1
+              ],
+              [
+                "M2",
+                1
+              ],
+              [
+                "M12",
+                1
+              ],
+              [
+                "M8",
+                1
+              ],
+              [
+                "M20",
+                1
+              ],
+              [
+                "M6",
+                1
+              ],
+              [
+                "163",
+                1
+              ],
+              [
+                "M29",
+                1
+              ]
+            ],
+            "unique_count": 20
+          },
+          "description": "Unique alphanumeric identifiers for individual Limacina helicina laboratory samples."
+        },
+        "Station": {
+          "column_name": "Station",
+          "data_type": "integer",
+          "sample_values": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 9.0,
+            "max": 9.0,
+            "mean": 9.0,
+            "median": 9.0,
+            "std": 0.0
+          },
+          "description": "Station identifier 9 for the Limacina helicina laboratory study."
+        },
+        "Year sampl": {
+          "column_name": "Year sampl",
+          "data_type": "integer",
+          "sample_values": [
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019,
+            2019
+          ],
+          "data_patterns": {
+            "9999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 2019.0,
+            "max": 2019.0,
+            "mean": 2019.0,
+            "median": 2019.0,
+            "std": 0.0
+          },
+          "description": "Sampling year recorded as 2019 for all laboratory observations."
+        },
+        "Month": {
+          "column_name": "Month",
+          "data_type": "integer",
+          "sample_values": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 9.0,
+            "max": 9.0,
+            "mean": 9.0,
+            "median": 9.0,
+            "std": 0.0
+          },
+          "description": "Month recorded as integer 9 for all laboratory study observations."
+        },
+        "Day": {
+          "column_name": "Day",
+          "data_type": "integer",
+          "sample_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "std": 0.0
+          },
+          "description": "Day of the experiment when measurements were recorded."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43,
+            48.43
+          ],
+          "data_patterns": {
+            "99.99": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 48.43,
+            "max": 48.43,
+            "mean": 48.42999999999999,
+            "median": 48.43,
+            "std": 7.290014651212246e-15
+          },
+          "description": "Geographic latitude in degrees for the Limacina helicina laboratory study location."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23,
+            -126.23
+          ],
+          "data_patterns": {
+            "-999.99": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -126.23,
+            "max": -126.23,
+            "mean": -126.22999999999999,
+            "median": -126.23,
+            "std": 1.4580029302424492e-14
+          },
+          "description": "Geographic longitude coordinate in decimal degrees for the study site."
+        },
+        "Sigma H": {
+          "column_name": "Sigma H",
+          "data_type": "integer",
+          "sample_values": [
+            2993,
+            2993,
+            500,
+            2993,
+            2993,
+            500,
+            500,
+            500,
+            2993,
+            2993,
+            2993,
+            500,
+            500,
+            500,
+            500,
+            2993,
+            2993,
+            500,
+            2993,
+            500
+          ],
+          "data_patterns": {
+            "999": 10,
+            "9999": 10
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 500.0,
+            "max": 2993.0,
+            "mean": 1746.5,
+            "median": 1746.5,
+            "std": 1278.8820158741446
+          },
+          "description": "Sigma H records discrete integer identifiers for experimental conditions or sample groups."
+        },
+        "Temp": {
+          "column_name": "Temp",
+          "data_type": "float",
+          "semantic_type": "clinical_measurement",
+          "sample_values": [
+            6.1726,
+            6.1726,
+            10.4877,
+            6.1726,
+            10.4877,
+            10.4877,
+            10.4877,
+            6.1726,
+            6.1726,
+            6.1726,
+            10.4877,
+            6.1726,
+            10.4877,
+            10.4877,
+            6.1726,
+            10.4877,
+            6.1726,
+            6.1726,
+            10.4877,
+            10.4877
+          ],
+          "data_patterns": {
+            "99.9999": 10,
+            "9.9999": 10
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 6.1726,
+            "max": 10.4877,
+            "mean": 8.330149999999998,
+            "median": 8.33015,
+            "std": 2.2135995935413244
+          },
+          "description": "Water temperature in degrees Celsius for Limacina helicina laboratory experiments."
+        },
+        "Temp_2": {
+          "column_name": "Temp_2",
+          "data_type": "float",
+          "semantic_type": "clinical_measurement",
+          "sample_values": [
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556,
+            8.955555556
+          ],
+          "data_patterns": {
+            "9.999999999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 8.955555556,
+            "max": 8.955555556,
+            "mean": 8.955555556000002,
+            "median": 8.955555556,
+            "std": 1.8225036628030615e-15
+          },
+          "description": "Temperature measurement recorded as 8.955555556 degrees for all observations."
+        },
+        "Sal": {
+          "column_name": "Sal",
+          "data_type": "float",
+          "sample_values": [
+            33.9714,
+            33.9714,
+            32.3714,
+            33.9714,
+            33.9714,
+            32.3714,
+            33.9714,
+            32.3714,
+            33.9714,
+            32.3714,
+            32.3714,
+            33.9714,
+            33.9714,
+            32.3714,
+            33.9714,
+            32.3714,
+            33.9714,
+            32.3714,
+            32.3714,
+            32.3714
+          ],
+          "data_patterns": {
+            "99.9999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 32.3714,
+            "max": 33.9714,
+            "mean": 33.171400000000006,
+            "median": 33.171400000000006,
+            "std": 0.820782681668124
+          },
+          "description": "Salinity measurements in practical salinity units ranging from 32.3714 to 33.9714."
+        },
+        "Sigma-theta": {
+          "column_name": "Sigma-theta",
+          "data_type": "float",
+          "sample_values": [
+            1026.319728,
+            1025.067253,
+            1026.319728,
+            1025.067253,
+            1026.319728,
+            1025.067253,
+            1026.319728,
+            1025.067253,
+            1025.067253,
+            1025.067253,
+            1026.319728,
+            1025.067253,
+            1026.319728,
+            1026.319728,
+            1025.067253,
+            1025.067253,
+            1026.319728,
+            1026.319728,
+            1025.067253,
+            1026.319728
+          ],
+          "data_patterns": {
+            "9999.999999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 1025.067253,
+            "max": 1026.319728,
+            "mean": 1025.6934904999998,
+            "median": 1025.6934904999998,
+            "std": 0.6425061182639288
+          },
+          "description": "Seawater density anomaly values in kilograms per cubic meter."
+        },
+        "DO": {
+          "column_name": "DO",
+          "data_type": "float",
+          "sample_values": [
+            1.714,
+            1.714,
+            1.714,
+            6.841,
+            1.714,
+            1.714,
+            6.841,
+            1.714,
+            6.841,
+            6.841,
+            1.714,
+            6.841,
+            6.841,
+            6.841,
+            1.714,
+            1.714,
+            6.841,
+            6.841,
+            1.714,
+            6.841
+          ],
+          "data_patterns": {
+            "9.999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 1.714,
+            "max": 6.841,
+            "mean": 4.277499999999999,
+            "median": 4.2775,
+            "std": 2.6300955055702926
+          },
+          "description": "Dissolved oxygen concentration measured in milligrams per liter."
+        },
+        "O2": {
+          "column_name": "O2",
+          "data_type": "float",
+          "sample_values": [
+            74.5,
+            74.5,
+            298.0,
+            298.0,
+            74.5,
+            74.5,
+            298.0,
+            74.5,
+            298.0,
+            298.0,
+            298.0,
+            74.5,
+            298.0,
+            74.5,
+            74.5,
+            298.0,
+            298.0,
+            74.5,
+            298.0,
+            74.5
+          ],
+          "data_patterns": {
+            "999.9": 10,
+            "99.9": 10
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 74.5,
+            "max": 298.0,
+            "mean": 186.25,
+            "median": 186.25,
+            "std": 114.65308084551597
+          },
+          "description": "Dissolved oxygen concentration in micromoles per liter."
+        },
+        "QF": {
+          "column_name": "QF",
+          "data_type": "integer",
+          "sample_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "median": 2.0,
+            "std": 0.0
+          },
+          "description": "Quality flag code with a constant value of two."
+        },
+        "O2_2": {
+          "column_name": "O2_2",
+          "data_type": "float",
+          "sample_values": [
+            298.0,
+            162.6260185,
+            298.0,
+            162.6260185,
+            162.6260185,
+            162.6260185,
+            162.6260185,
+            298.0,
+            162.6260185,
+            162.6260185,
+            162.6260185,
+            298.0,
+            298.0,
+            298.0,
+            298.0,
+            162.6260185,
+            298.0,
+            298.0,
+            162.6260185,
+            298.0
+          ],
+          "data_patterns": {
+            "999.9": 10,
+            "999.9999999": 10
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 162.6260185,
+            "max": 298.0,
+            "mean": 230.31300925,
+            "median": 230.31300925,
+            "std": 69.44538722728808
+          },
+          "description": "Dissolved oxygen concentration measured in micromoles per liter."
+        },
+        "DIC": {
+          "column_name": "DIC",
+          "data_type": "float",
+          "sample_values": [
+            2285.91,
+            2283.19,
+            2047.65,
+            2035.29,
+            2296.29,
+            2044.96,
+            2261.75,
+            2058.54,
+            2287.45,
+            1998.71,
+            2029.05,
+            2006.76,
+            2264.15,
+            2258.7,
+            2302.62,
+            2029.18,
+            2298.68,
+            2330.18,
+            2002.51,
+            2030.05
+          ],
+          "data_patterns": {
+            "9999.99": 19,
+            "9999.9": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 1998.71,
+            "max": 2330.18,
+            "mean": 2157.581,
+            "median": 2158.62,
+            "std": 134.2344047160551
+          },
+          "description": "Dissolved inorganic carbon concentration measured in micromoles per kilogram."
+        },
+        "QF_2": {
+          "column_name": "QF_2",
+          "data_type": "integer",
+          "sample_values": [
+            2,
+            2,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 6.0,
+            "mean": 2.2,
+            "median": 2.0,
+            "std": 0.8944271909999161
+          },
+          "description": "Quality flag code for Limacina helicina carbonate chemistry measurements."
+        },
+        "AT": {
+          "column_name": "AT",
+          "data_type": "float",
+          "sample_values": [
+            2166.64,
+            2284.92,
+            2160.86,
+            2165.5,
+            2281.3,
+            2167.91,
+            2288.43,
+            2169.93,
+            2279.97,
+            2263.43,
+            2277.99,
+            2169.14,
+            2162.99,
+            2168.77,
+            2284.71,
+            2273.2,
+            2176.38,
+            2263.5,
+            2282.0,
+            2165.28
+          ],
+          "data_patterns": {
+            "9999.99": 15,
+            "9999.9": 5
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 2160.86,
+            "max": 2288.43,
+            "mean": 2222.6425000000004,
+            "median": 2219.9049999999997,
+            "std": 57.12793250563527
+          },
+          "description": "AT records oceanographic carbonate chemistry measurements in the laboratory study."
+        },
+        "QF_3": {
+          "column_name": "QF_3",
+          "data_type": "integer",
+          "sample_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "median": 2.0,
+            "std": 0.0
+          },
+          "description": "Quality flag value 2 for Limacina helicina laboratory measurements."
+        },
+        "[NO3]- + [NO2]-": {
+          "column_name": "[NO3]- + [NO2]-",
+          "data_type": "float",
+          "sample_values": [
+            36.7,
+            36.7,
+            36.7,
+            2.29,
+            2.29,
+            2.29,
+            36.7,
+            2.29,
+            36.7,
+            36.7,
+            2.29,
+            2.29,
+            2.29,
+            2.29,
+            2.29,
+            36.7,
+            2.29,
+            36.7,
+            36.7,
+            36.7
+          ],
+          "data_patterns": {
+            "9.99": 10,
+            "99.9": 10
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 2.29,
+            "max": 36.7,
+            "mean": 19.495,
+            "median": 19.495,
+            "std": 17.651957547625077
+          },
+          "description": "Sum of nitrate and nitrite concentrations in micromoles per liter."
+        },
+        "QF_4": {
+          "column_name": "QF_4",
+          "data_type": "integer",
+          "sample_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "median": 2.0,
+            "std": 0.0
+          },
+          "description": "Quality flag value 2 for Limacina helicina laboratory measurements."
+        },
+        "Si(OH)4": {
+          "column_name": "Si(OH)4",
+          "data_type": "float",
+          "sample_values": [
+            2.91,
+            2.91,
+            60.45,
+            2.91,
+            2.91,
+            2.91,
+            60.45,
+            60.45,
+            60.45,
+            60.45,
+            60.45,
+            2.91,
+            60.45,
+            2.91,
+            2.91,
+            60.45,
+            2.91,
+            60.45,
+            60.45,
+            2.91
+          ],
+          "data_patterns": {
+            "9.99": 10,
+            "99.99": 10
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 2.91,
+            "max": 60.45,
+            "mean": 31.68,
+            "median": 31.68,
+            "std": 29.517397189489884
+          },
+          "description": "Silicic acid concentration in micromoles per liter."
+        },
+        "QF_5": {
+          "column_name": "QF_5",
+          "data_type": "integer",
+          "sample_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "median": 2.0,
+            "std": 0.0
+          },
+          "description": "Quality flag code with a constant value of 2."
+        },
+        "[PO4]3-": {
+          "column_name": "[PO4]3-",
+          "data_type": "float",
+          "sample_values": [
+            2.586,
+            2.586,
+            0.603,
+            2.586,
+            0.603,
+            0.603,
+            0.603,
+            0.603,
+            2.586,
+            0.603,
+            0.603,
+            0.603,
+            2.586,
+            2.586,
+            2.586,
+            2.586,
+            0.603,
+            2.586,
+            0.603,
+            2.586
+          ],
+          "data_patterns": {
+            "9.999": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "numeric",
+            "min": 0.603,
+            "max": 2.586,
+            "mean": 1.5945,
+            "median": 1.5945,
+            "std": 1.0172575360924303
+          },
+          "description": "Phosphate concentration measured in micromoles per liter."
+        },
+        "QF_6": {
+          "column_name": "QF_6",
+          "data_type": "integer",
+          "sample_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "median": 2.0,
+            "std": 0.0
+          },
+          "description": "Constant integer value of 2 recorded for all laboratory study entries."
+        },
+        "Samp type": {
+          "column_name": "Samp type",
+          "data_type": "string",
+          "sample_values": [
+            "incubation (3 individuals)",
+            "incubation (3 individuals)",
+            "initial collection",
+            "incubation (3 individuals)",
+            "incubation (3 individuals)",
+            "incubation (3 individuals)",
+            "control end",
+            "incubation (3 individuals)",
+            "incubation (3 individuals)",
+            "control end",
+            "incubation (3 individuals)",
+            "incubation (4 individuals)",
+            "control start",
+            "control start",
+            "initial collection",
+            "incubation (4 individuals)",
+            "incubation (3 individuals)",
+            "incubation (4 individuals)",
+            "incubation (3 individuals)",
+            "incubation (4 individuals)"
+          ],
+          "data_patterns": {
+            "aaaaaaaaaa (9 aaaaaaaaaaa)": 14,
+            "aaaaaaa aaa": 2,
+            "aaaaaaa aaaaa": 2,
+            "aaaaaaa aaaaaaaaaa": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "incubation (3 individuals)",
+                10
+              ],
+              [
+                "incubation (4 individuals)",
+                4
+              ],
+              [
+                "control end",
+                2
+              ],
+              [
+                "control start",
+                2
+              ],
+              [
+                "initial collection",
+                2
+              ]
+            ],
+            "unique_count": 5
+          },
+          "description": "Sampling stage and group size for Limacina helicina laboratory study."
+        },
+        "Treat": {
+          "column_name": "Treat",
+          "data_type": "string",
+          "sample_values": [
+            "undersaturated",
+            "undersaturated",
+            "undersaturated",
+            "undersaturated",
+            "undersaturated",
+            "undersaturated",
+            "supersaturated",
+            "supersaturated",
+            "supersaturated",
+            "undersaturated",
+            "supersaturated",
+            "supersaturated",
+            "undersaturated",
+            "undersaturated",
+            "supersaturated",
+            "supersaturated",
+            "supersaturated",
+            "supersaturated",
+            "undersaturated",
+            "supersaturated"
+          ],
+          "data_patterns": {
+            "aaaaaaaaaaaaaa": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "supersaturated",
+                10
+              ],
+              [
+                "undersaturated",
+                10
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Experimental treatment condition defined as supersaturated or undersaturated carbonate states."
+        },
+        "Ind": {
+          "column_name": "Ind",
+          "data_type": "float",
+          "sample_values": [
+            4.0,
+            3.0,
+            3.0,
+            3.0,
+            4.0,
+            3.0,
+            3.0,
+            4.0,
+            3.0,
+            3.0,
+            4.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "data_patterns": {
+            "9.9": 14
+          },
+          "total_rows": 20,
+          "null_count": 6,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 3.0,
+            "max": 4.0,
+            "mean": 3.2857142857142856,
+            "median": 3.0,
+            "std": 0.4688072309384955
+          },
+          "description": "Numeric identifier distinguishing experimental groups or treatment conditions."
+        },
+        "Ind_2": {
+          "column_name": "Ind_2",
+          "data_type": "float",
+          "sample_values": [
+            3.0,
+            2.0,
+            4.0,
+            3.0,
+            4.0,
+            2.0,
+            2.0,
+            4.0,
+            0.0,
+            3.0,
+            3.0,
+            2.0,
+            3.0,
+            3.0
+          ],
+          "data_patterns": {
+            "9.9": 14
+          },
+          "total_rows": 20,
+          "null_count": 6,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 4.0,
+            "mean": 2.7142857142857144,
+            "median": 3.0,
+            "std": 1.0690449676496974
+          },
+          "description": "Integer values from zero to four representing a discrete measurement category."
+        },
+        "Inc dur": {
+          "column_name": "Inc dur",
+          "data_type": "float",
+          "sample_values": [
+            8.190972222,
+            6.791666667,
+            8.289583333,
+            8.554166667,
+            9.036111111,
+            9.055555556,
+            8.008333333,
+            8.96875,
+            8.278472222,
+            6.800694444,
+            8.51875,
+            8.543055556,
+            8.181944444
+          ],
+          "data_patterns": {
+            "9.999999999": 11,
+            "9.99999": 2
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 6.791666667,
+            "max": 9.055555556,
+            "mean": 8.247542735,
+            "median": 8.289583333,
+            "std": 0.72630100564293
+          },
+          "description": "Incubation duration in days for Limacina helicina laboratory experiments."
+        },
+        "Inc dur_2": {
+          "column_name": "Inc dur_2",
+          "data_type": "float",
+          "sample_values": [
+            196.5833333,
+            163.0,
+            198.95,
+            205.3,
+            196.3666667,
+            205.0333333,
+            204.45,
+            217.3333333,
+            198.6833333,
+            216.8666667,
+            215.25,
+            163.2166667,
+            192.2
+          ],
+          "data_patterns": {
+            "999.9999999": 7,
+            "999.9": 3,
+            "999.99": 3
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 163.0,
+            "max": 217.3333333,
+            "mean": 197.94102563846153,
+            "median": 198.95,
+            "std": 17.4312241264373
+          },
+          "description": "Incubation duration in hours for Limacina helicina laboratory study."
+        },
+        "pHT": {
+          "column_name": "pHT",
+          "data_type": "float",
+          "sample_values": [
+            7.908615754,
+            8.00176152,
+            8.077534366,
+            7.935474347,
+            7.950782581,
+            7.372063733,
+            7.542899605,
+            7.532827351,
+            7.521202334,
+            7.5184498,
+            7.995547346,
+            7.481899523,
+            8.056375614,
+            8.071385164,
+            8.001466436,
+            7.445944482,
+            7.507605768,
+            7.501585911,
+            7.982180542,
+            7.557811696
+          ],
+          "data_patterns": {
+            "9.999999999": 18,
+            "9.9999999": 1,
+            "9.99999999": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 7.372063733,
+            "max": 8.077534366,
+            "mean": 7.7481706936500006,
+            "median": 7.733213725000001,
+            "std": 0.26214126944774385
+          },
+          "description": "pH values measured on the total hydrogen scale."
+        },
+        "pCO2water_SST_wet": {
+          "column_name": "pCO2water_SST_wet",
+          "data_type": "float",
+          "sample_values": [
+            1479.941055,
+            1416.156501,
+            351.8898534,
+            427.3719981,
+            1467.955096,
+            1339.064085,
+            1755.899951,
+            427.4646272,
+            433.606608,
+            369.6059661,
+            1615.955066,
+            449.065337,
+            504.4082424,
+            2097.923236,
+            486.9859194,
+            355.7422654,
+            1543.738207,
+            1382.124086,
+            541.2178555,
+            1515.877559
+          ],
+          "data_patterns": {
+            "9999.999999": 10,
+            "999.9999999": 8,
+            "999.999999": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 351.8898534,
+            "max": 2097.923236,
+            "mean": 998.0996757250001,
+            "median": 940.14097025,
+            "std": 599.7035036565319
+          },
+          "description": "Partial pressure of carbon dioxide in surface seawater at wet conditions."
+        },
+        "Omega Arg": {
+          "column_name": "Omega Arg",
+          "data_type": "float",
+          "sample_values": [
+            1.548800291,
+            0.629189934,
+            0.604518595,
+            1.613072716,
+            1.453470762,
+            1.882783818,
+            0.654652345,
+            1.33023466,
+            0.626337369,
+            1.611231325,
+            1.402993217,
+            0.610295124,
+            1.850251515,
+            0.679343331,
+            1.79396989,
+            0.532172626,
+            0.64036911,
+            1.590433134,
+            0.577952816,
+            0.452460048
+          ],
+          "data_patterns": {
+            "9.999999999": 17,
+            "9.99999999": 3
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 0.452460048,
+            "max": 1.882783818,
+            "mean": 1.1042266313,
+            "median": 1.0047889955,
+            "std": 0.5343620920974376
+          },
+          "description": "Omega Aragonite saturation state values from oceanographic carbonate chemistry measurements."
+        },
+        "Omega Cal": {
+          "column_name": "Omega Cal",
+          "data_type": "float",
+          "sample_values": [
+            0.962850584,
+            2.839868066,
+            2.220949001,
+            1.010297719,
+            2.517667824,
+            0.839598261,
+            1.032832098,
+            0.953737069,
+            2.55059152,
+            0.713837298,
+            2.928962309,
+            0.992660554,
+            1.07178658,
+            2.451762714,
+            0.911824763,
+            0.988160118,
+            2.553506455,
+            2.300855342,
+            2.980461195,
+            2.105771649
+          ],
+          "data_patterns": {
+            "9.999999999": 18,
+            "9.99999999": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 0.713837298,
+            "max": 2.980461195,
+            "mean": 1.7463990559499998,
+            "median": 1.5887791144999999,
+            "std": 0.8474658504674949
+          },
+          "description": "Omega calcite saturation state values ranging from 0.71 to 2.98."
+        },
+        "DIC std e": {
+          "column_name": "DIC std e",
+          "data_type": "integer",
+          "sample_values": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 6.0,
+            "max": 6.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "std": 0.0
+          },
+          "description": "Standard error of dissolved inorganic carbon measurements in micromoles per kilogram."
+        },
+        "AT std e": {
+          "column_name": "AT std e",
+          "data_type": "integer",
+          "sample_values": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "data_patterns": {
+            "9": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 5.0,
+            "max": 5.0,
+            "mean": 5.0,
+            "median": 5.0,
+            "std": 0.0
+          },
+          "description": "Standard error of the mean for atmospheric temperature measurements."
+        },
+        "pCO2water_SST_wet std e": {
+          "column_name": "pCO2water_SST_wet std e",
+          "data_type": "float",
+          "sample_values": [
+            22.26301604,
+            104.684213,
+            23.85952618,
+            22.24251291,
+            88.55634086,
+            98.18071114,
+            83.92810289,
+            93.38019433,
+            17.24319757,
+            26.68441019,
+            16.88094759,
+            22.73721404,
+            86.66539634,
+            30.90733929,
+            90.84614412,
+            18.21557773,
+            28.13344938,
+            117.4029341,
+            94.55383962,
+            91.38239598
+          ],
+          "data_patterns": {
+            "99.99999999": 18,
+            "999.9999999": 1,
+            "999.999999": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 16.88094759,
+            "max": 117.4029341,
+            "mean": 58.93737316500001,
+            "median": 57.41772109,
+            "std": 37.710842849629856
+          },
+          "description": "Standard error of surface water partial pressure of carbon dioxide at sea surface temperature."
+        },
+        "Omega Arg std e": {
+          "column_name": "Omega Arg std e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.066980087,
+            0.037028263,
+            0.038217671,
+            0.024969544,
+            0.072501441,
+            0.069720649,
+            0.067782592,
+            0.037258117,
+            0.033878216,
+            0.069172977,
+            0.065668262,
+            0.071973415,
+            0.069982261,
+            0.03083421,
+            0.072816365,
+            0.036076571,
+            0.04041758,
+            0.03557752,
+            0.039091802,
+            0.070005264
+          ],
+          "data_patterns": {
+            "9.999999999": 17,
+            "9.99999999": 3
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 0.024969544,
+            "max": 0.072816365,
+            "mean": 0.05249764035,
+            "median": 0.05304292100000001,
+            "std": 0.01795741199672015
+          },
+          "description": "Standard error of the aragonite saturation state."
+        },
+        "Omega Cal std e": {
+          "column_name": "Omega Cal std e",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.02606958,
+            0.023106518,
+            0.021220447,
+            0.02072531,
+            0.019396681,
+            0.02657236,
+            0.019016795,
+            0.025516957,
+            0.026286644,
+            0.026518868,
+            0.026202478,
+            0.020709678,
+            0.022010701,
+            0.026527892,
+            0.018797735,
+            0.022463894,
+            0.024124333,
+            0.020890322,
+            0.026235378,
+            0.025911455
+          ],
+          "data_patterns": {
+            "9.999999999": 17,
+            "9.99999999": 3
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 0.018797735,
+            "max": 0.02657236,
+            "mean": 0.023415201299999997,
+            "median": 0.023615425500000002,
+            "std": 0.002874476521301613
+          },
+          "description": "Standard error of the calcite saturation state probability score."
+        },
+        "Change": {
+          "column_name": "Change",
+          "data_type": "float",
+          "sample_values": [
+            26.53845714,
+            42.44697732,
+            4.250754908,
+            23.30371367,
+            38.46579735,
+            -3.798612987,
+            45.13783229,
+            -2.405100598,
+            32.13590545,
+            34.52699199,
+            66.02816708,
+            56.03115553,
+            26.67299989,
+            27.53592924,
+            32.77845703,
+            21.75599486,
+            -5.454199334,
+            19.0405361
+          ],
+          "data_patterns": {
+            "99.99999999": 13,
+            "-9.999999999": 3,
+            "9.999999999": 1,
+            "99.9999999": 1
+          },
+          "total_rows": 20,
+          "null_count": 2,
+          "unique_count": 19,
+          "stats": {
+            "type": "numeric",
+            "min": -5.454199334,
+            "max": 66.02816708,
+            "mean": 26.943986496055555,
+            "median": 27.104464565,
+            "std": 19.80874389068684
+          },
+          "description": "Change in Limacina helicina measurements ranging from negative to positive values."
+        },
+        "Change_2": {
+          "column_name": "Change_2",
+          "data_type": "float",
+          "sample_values": [
+            -38.30550889,
+            -49.83612995,
+            -38.49970738,
+            -31.40252088,
+            -39.74525635,
+            -80.87515845,
+            -55.52138674,
+            -27.48303796,
+            -65.15177679,
+            -46.38484465,
+            -47.31230119,
+            -33.63649237,
+            -61.26780688
+          ],
+          "data_patterns": {
+            "-99.99999999": 13
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": -80.87515845,
+            "max": -27.48303796,
+            "mean": -47.34014834461538,
+            "median": -46.38484465,
+            "std": 15.17528179151968
+          },
+          "description": "Change in Limacina helicina carbonate chemistry measurements expressed as negative float values."
+        },
+        "O2_3": {
+          "column_name": "O2_3",
+          "data_type": "float",
+          "sample_values": [
+            112.7898886,
+            259.6944911,
+            259.5002926,
+            232.8482232,
+            116.2411739,
+            128.9895262,
+            258.2547436,
+            236.7321931,
+            217.1248416,
+            107.1046318,
+            131.2234977,
+            250.6876988,
+            135.1429806
+          ],
+          "data_patterns": {
+            "999.9999999": 13
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 107.1046318,
+            "max": 259.6944911,
+            "mean": 188.1795525230769,
+            "median": 217.1248416,
+            "std": 65.32069467959597
+          },
+          "description": "Dissolved oxygen concentration measured in micromoles per kilogram."
+        },
+        "O2 sat": {
+          "column_name": "O2 sat",
+          "data_type": "float",
+          "sample_values": [
+            45.57862923,
+            39.85446466,
+            87.56174465,
+            90.63986173,
+            75.83870299,
+            37.84557124,
+            81.33066265,
+            90.20480871,
+            47.75296094,
+            90.70769258,
+            82.6872796,
+            46.36800618,
+            41.07398114
+          ],
+          "data_patterns": {
+            "99.99999999": 12,
+            "99.9999999": 1
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 37.84557124,
+            "max": 90.70769258,
+            "mean": 65.95725894615384,
+            "median": 75.83870299,
+            "std": 22.567702945416453
+          },
+          "description": "Oxygen saturation levels measured as a percentage of saturation."
+        },
+        "N O2 con": {
+          "column_name": "N O2 con",
+          "data_type": "float",
+          "sample_values": [
+            41.43638743,
+            17.26561153,
+            25.5808855,
+            24.24045751,
+            33.38051284,
+            23.80934076,
+            28.49912782,
+            20.36348209,
+            16.11891397,
+            31.39056086,
+            14.10704339,
+            19.72532508,
+            19.62582748
+          ],
+          "data_patterns": {
+            "99.99999999": 12,
+            "99.9999999": 1
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 14.10704339,
+            "max": 41.43638743,
+            "mean": 24.27257509692308,
+            "median": 23.80934076,
+            "std": 7.770007850897801
+          },
+          "description": "Dissolved oxygen concentration measured in micromoles per kilogram."
+        },
+        "N O2 con_2": {
+          "column_name": "N O2 con_2",
+          "data_type": "float",
+          "sample_values": [
+            6.575108359,
+            8.526961835,
+            5.755203844,
+            10.35909686,
+            8.080152504,
+            11.12683761,
+            5.372971322,
+            6.787827364,
+            7.93644692,
+            7.847640214,
+            6.541942493,
+            4.702347795,
+            7.124781954
+          ],
+          "data_patterns": {
+            "9.999999999": 10,
+            "99.99999999": 2,
+            "9.99999999": 1
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 4.702347795,
+            "max": 11.12683761,
+            "mean": 7.4413322364615375,
+            "median": 7.124781954,
+            "std": 1.8439746010938831
+          },
+          "description": "Dissolved oxygen concentration in millimoles per liter."
+        },
+        "Resp O2/dm": {
+          "column_name": "Resp O2/dm",
+          "data_type": "float",
+          "sample_values": [
+            28.72554611,
+            22.10131194,
+            20.68263055,
+            23.10227061,
+            28.05266085,
+            27.59072582,
+            22.69223229,
+            16.54037785,
+            33.2412373,
+            24.94084653,
+            37.43529395,
+            22.76802529,
+            28.72531046
+          ],
+          "data_patterns": {
+            "99.99999999": 12,
+            "99.9999999": 1
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 16.54037785,
+            "max": 37.43529395,
+            "mean": 25.892189965384617,
+            "median": 24.94084653,
+            "std": 5.541618125075469
+          },
+          "description": "Oxygen consumption rate in cubic decimeters per hour."
+        },
+        "Resp O2/dm_2": {
+          "column_name": "Resp O2/dm_2",
+          "data_type": "float",
+          "sample_values": [
+            23.23687196,
+            20.08006968,
+            19.28695245,
+            14.45793469,
+            26.1686749,
+            11.56234465,
+            15.4496462,
+            20.0802344,
+            15.8627217,
+            17.43458741,
+            15.91570385,
+            16.14935387,
+            19.60986237
+          ],
+          "data_patterns": {
+            "99.99999999": 9,
+            "99.9999999": 4
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 11.56234465,
+            "max": 26.1686749,
+            "mean": 18.099612163846153,
+            "median": 17.43458741,
+            "std": 3.873798969747915
+          },
+          "description": "Oxygen respiration rate per square decimeter measured in laboratory conditions."
+        },
+        "Resp O2/wm": {
+          "column_name": "Resp O2/wm",
+          "data_type": "float",
+          "sample_values": [
+            4.981399338,
+            3.728024268,
+            5.207004717,
+            6.474430874,
+            4.661643726,
+            8.437514886,
+            5.114586465,
+            6.322769734,
+            6.474377762,
+            5.131669397,
+            5.621400066,
+            7.492219373,
+            6.218654517
+          ],
+          "data_patterns": {
+            "9.999999999": 13
+          },
+          "total_rows": 20,
+          "null_count": 7,
+          "unique_count": 14,
+          "stats": {
+            "type": "numeric",
+            "min": 3.728024268,
+            "max": 8.437514886,
+            "mean": 5.835822701769231,
+            "median": 5.621400066,
+            "std": 1.2490214578864158
+          },
+          "description": "Oxygen consumption rate per wet mass in laboratory Limacina helicina measurements."
+        },
+        "CSC flag": {
+          "column_name": "CSC flag",
+          "data_type": "integer",
+          "sample_values": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "data_patterns": {
+            "99": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 15.0,
+            "max": 15.0,
+            "mean": 15.0,
+            "median": 15.0,
+            "std": 0.0
+          },
+          "description": "Constant integer value 15 indicating a specific CSC flag status."
+        },
+        "pHT_2": {
+          "column_name": "pHT_2",
+          "data_type": "float",
+          "sample_values": [
+            7.37,
+            7.51,
+            7.48,
+            8.08,
+            7.45,
+            7.54,
+            8.0,
+            7.53,
+            7.91,
+            8.07,
+            7.98,
+            7.95,
+            7.52,
+            7.56,
+            7.94,
+            7.52,
+            8.0,
+            8.06,
+            8.0,
+            7.5
+          ],
+          "data_patterns": {
+            "9.99": 16,
+            "9.9": 4
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 17,
+          "stats": {
+            "type": "numeric",
+            "min": 7.37,
+            "max": 8.08,
+            "mean": 7.748499999999998,
+            "median": 7.734999999999999,
+            "std": 0.2627040560262282
+          },
+          "description": "pH of seawater measured at 25 degrees Celsius."
+        },
+        "CO2": {
+          "column_name": "CO2",
+          "data_type": "float",
+          "sample_values": [
+            73.57,
+            20.63,
+            64.47,
+            70.28,
+            23.18,
+            19.64,
+            24.87,
+            67.37,
+            62.92,
+            16.35,
+            22.38,
+            79.94,
+            60.96,
+            16.98,
+            19.92,
+            19.64,
+            69.01,
+            66.83,
+            16.17,
+            95.51
+          ],
+          "data_patterns": {
+            "99.99": 20
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "numeric",
+            "min": 16.17,
+            "max": 95.51,
+            "mean": 45.531,
+            "median": 42.915,
+            "std": 27.212023832354543
+          },
+          "description": "Carbon dioxide concentration in micromoles per liter."
+        },
+        "fCO2water_SST_wet": {
+          "column_name": "fCO2water_SST_wet",
+          "data_type": "float",
+          "sample_values": [
+            1410.68,
+            447.32,
+            1609.69,
+            1462.25,
+            1749.05,
+            368.16,
+            539.1,
+            1333.86,
+            2089.77,
+            485.08,
+            1376.73,
+            1509.99,
+            1537.74,
+            1474.06,
+            431.9,
+            354.36,
+            425.81,
+            502.47,
+            350.51,
+            425.71
+          ],
+          "data_patterns": {
+            "9999.99": 10,
+            "999.99": 8,
+            "999.9": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 350.51,
+            "max": 2089.77,
+            "mean": 994.2120000000002,
+            "median": 936.48,
+            "std": 597.3691473769755
+          },
+          "description": "fCO2waterSSTwet records dissolved carbon dioxide partial pressure in water at sea surface temperature."
+        },
+        "pCO2water_SST_wet_2": {
+          "column_name": "pCO2water_SST_wet_2",
+          "data_type": "float",
+          "sample_values": [
+            504.44,
+            1755.92,
+            486.98,
+            369.6,
+            1479.84,
+            2097.98,
+            449.07,
+            1515.91,
+            351.89,
+            1416.21,
+            541.21,
+            355.75,
+            1339.1,
+            427.38,
+            1382.13,
+            1543.78,
+            433.59,
+            427.48,
+            1616.0,
+            1467.99
+          ],
+          "data_patterns": {
+            "999.99": 9,
+            "9999.99": 8,
+            "9999.9": 2,
+            "999.9": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 351.89,
+            "max": 2097.98,
+            "mean": 998.1125,
+            "median": 940.155,
+            "std": 599.7151484959559
+          },
+          "description": "Partial pressure of carbon dioxide in water at sea surface temperature."
+        },
+        "[HCO3]-": {
+          "column_name": "[HCO3]-",
+          "data_type": "float",
+          "sample_values": [
+            2176.74,
+            2204.9,
+            1903.99,
+            2155.14,
+            2186.23,
+            1929.99,
+            1946.64,
+            2187.08,
+            1904.88,
+            2152.7,
+            1861.31,
+            2178.86,
+            2174.96,
+            1913.33,
+            1905.2,
+            1868.15,
+            2187.66,
+            1930.18,
+            1867.41,
+            2158.49
+          ],
+          "data_patterns": {
+            "9999.99": 17,
+            "9999.9": 3
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 1861.31,
+            "max": 2204.9,
+            "mean": 2039.6919999999998,
+            "median": 2049.67,
+            "std": 142.03462852787914
+          },
+          "description": "Bicarbonate ion concentration in micromoles per kilogram."
+        },
+        "[CO3]2-": {
+          "column_name": "[CO3]2-",
+          "data_type": "float",
+          "sample_values": [
+            87.03,
+            39.78,
+            101.33,
+            105.41,
+            95.1,
+            104.06,
+            41.4,
+            38.03,
+            43.08,
+            91.79,
+            42.14,
+            105.54,
+            29.77,
+            40.16,
+            41.22,
+            123.18,
+            121.05,
+            35.02,
+            117.37,
+            44.7
+          ],
+          "data_patterns": {
+            "99.99": 10,
+            "999.99": 7,
+            "99.9": 3
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 20,
+          "stats": {
+            "type": "numeric",
+            "min": 29.77,
+            "max": 123.18,
+            "mean": 72.358,
+            "median": 65.86500000000001,
+            "std": 34.849592854225186
+          },
+          "description": "Carbonate ion concentration in micromoles per kilogram."
+        },
+        "Omega Arg_2": {
+          "column_name": "Omega Arg_2",
+          "data_type": "float",
+          "sample_values": [
+            0.65,
+            0.64,
+            1.33,
+            1.45,
+            1.59,
+            1.4,
+            0.45,
+            1.61,
+            1.61,
+            0.63,
+            1.79,
+            0.68,
+            1.55,
+            0.61,
+            0.53,
+            0.58,
+            1.85,
+            0.63,
+            1.88,
+            0.6
+          ],
+          "data_patterns": {
+            "9.99": 18,
+            "9.9": 2
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 0.45,
+            "max": 1.88,
+            "mean": 1.1030000000000002,
+            "median": 1.0050000000000001,
+            "std": 0.5338647571692371
+          },
+          "description": "Omega Arg2 measures aragonite saturation state in laboratory oceanographic carbonate chemistry."
+        },
+        "Omega Cal_2": {
+          "column_name": "Omega Cal_2",
+          "data_type": "float",
+          "sample_values": [
+            2.11,
+            0.91,
+            1.03,
+            2.45,
+            2.93,
+            0.99,
+            2.52,
+            0.96,
+            2.55,
+            2.3,
+            2.84,
+            2.98,
+            0.84,
+            2.22,
+            1.07,
+            0.99,
+            0.71,
+            0.95,
+            1.01,
+            2.55
+          ],
+          "data_patterns": {
+            "9.99": 19,
+            "9.9": 1
+          },
+          "total_rows": 20,
+          "null_count": 0,
+          "unique_count": 18,
+          "stats": {
+            "type": "numeric",
+            "min": 0.71,
+            "max": 2.98,
+            "mean": 1.7455000000000003,
+            "median": 1.5899999999999999,
+            "std": 0.8482767361260307
+          },
+          "description": "Omega Cal2 measures aragonite saturation state in laboratory oceanographic carbonate chemistry."
+        }
+      },
+      "sample_rows": [
+        {
+          "Study type": "laboratory",
+          "Species UID": "Limacina helicina",
+          "Species UID (URI)": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+          "Species UID (Semantic URI)": "urn:lsid:marinespecies.org:taxname:140223",
+          "ID": "2019-023",
+          "Sample label": "M1",
+          "Station": 9,
+          "Year sampl": 2019,
+          "Month": 9,
+          "Day": 1,
+          "Latitude": 48.43,
+          "Longitude": -126.23,
+          "Sigma H": 500,
+          "Temp": 10.4877,
+          "Temp_2": 8.955555556,
+          "Sal": 32.3714,
+          "Sigma-theta": 1025.067253,
+          "DO": 6.841,
+          "O2": 298.0,
+          "QF": 2,
+          "O2_2": 298.0,
+          "DIC": 2006.76,
+          "QF_2": 2,
+          "AT": 2176.38,
+          "QF_3": 2,
+          "[NO3]- + [NO2]-": 2.29,
+          "QF_4": 2,
+          "Si(OH)4": 2.91,
+          "QF_5": 2,
+          "[PO4]3-": 0.603,
+          "QF_6": 2,
+          "Samp type": "control end",
+          "Treat": "supersaturated",
+          "Ind": null,
+          "Ind_2": null,
+          "Inc dur": null,
+          "Inc dur_2": null,
+          "pHT": 8.077534366,
+          "pCO2water_SST_wet": 351.8898534,
+          "Omega Arg": 1.882783818,
+          "Omega Cal": 2.980461195,
+          "DIC std e": 6,
+          "AT std e": 5,
+          "pCO2water_SST_wet std e": 16.88094759,
+          "Omega Arg std e": 0.072816365,
+          "Omega Cal std e": 0.018797735,
+          "Change": 4.250754908,
+          "Change_2": null,
+          "O2_3": null,
+          "O2 sat": null,
+          "N O2 con": null,
+          "N O2 con_2": null,
+          "Resp O2/dm": null,
+          "Resp O2/dm_2": null,
+          "Resp O2/wm": null,
+          "CSC flag": 15,
+          "pHT_2": 8.08,
+          "CO2": 16.17,
+          "fCO2water_SST_wet": 350.51,
+          "pCO2water_SST_wet_2": 351.89,
+          "[HCO3]-": 1867.41,
+          "[CO3]2-": 123.18,
+          "Omega Arg_2": 1.88,
+          "Omega Cal_2": 2.98
+        },
+        {
+          "Study type": "laboratory",
+          "Species UID": "Limacina helicina",
+          "Species UID (URI)": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+          "Species UID (Semantic URI)": "urn:lsid:marinespecies.org:taxname:140223",
+          "ID": "2019-023",
+          "Sample label": "M30",
+          "Station": 9,
+          "Year sampl": 2019,
+          "Month": 9,
+          "Day": 1,
+          "Latitude": 48.43,
+          "Longitude": -126.23,
+          "Sigma H": 2993,
+          "Temp": 6.1726,
+          "Temp_2": 8.955555556,
+          "Sal": 33.9714,
+          "Sigma-theta": 1026.319728,
+          "DO": 1.714,
+          "O2": 74.5,
+          "QF": 2,
+          "O2_2": 162.6260185,
+          "DIC": 2287.45,
+          "QF_2": 2,
+          "AT": 2284.71,
+          "QF_3": 2,
+          "[NO3]- + [NO2]-": 36.7,
+          "QF_4": 2,
+          "Si(OH)4": 60.45,
+          "QF_5": 2,
+          "[PO4]3-": 2.586,
+          "QF_6": 2,
+          "Samp type": "incubation (3 individuals)",
+          "Treat": "undersaturated",
+          "Ind": 3.0,
+          "Ind_2": 3.0,
+          "Inc dur": 8.008333333,
+          "Inc dur_2": 192.2,
+          "pHT": 7.5184498,
+          "pCO2water_SST_wet": 1479.941055,
+          "Omega Arg": 0.626337369,
+          "Omega Cal": 0.988160118,
+          "DIC std e": 6,
+          "AT std e": 5,
+          "pCO2water_SST_wet std e": 91.38239598,
+          "Omega Arg std e": 0.037028263,
+          "Omega Cal std e": 0.026235378,
+          "Change": 23.30371367,
+          "Change_2": -33.63649237,
+          "O2_3": 128.9895262,
+          "O2 sat": 45.57862923,
+          "N O2 con": 17.26561153,
+          "N O2 con_2": 5.755203844,
+          "Resp O2/dm": 20.68263055,
+          "Resp O2/dm_2": 14.45793469,
+          "Resp O2/wm": 4.661643726,
+          "CSC flag": 15,
+          "pHT_2": 7.52,
+          "CO2": 67.37,
+          "fCO2water_SST_wet": 1474.06,
+          "pCO2water_SST_wet_2": 1479.84,
+          "[HCO3]-": 2178.86,
+          "[CO3]2-": 41.22,
+          "Omega Arg_2": 0.63,
+          "Omega Cal_2": 0.99
+        },
+        {
+          "Study type": "laboratory",
+          "Species UID": "Limacina helicina",
+          "Species UID (URI)": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=140223",
+          "Species UID (Semantic URI)": "urn:lsid:marinespecies.org:taxname:140223",
+          "ID": "2019-023",
+          "Sample label": "M28",
+          "Station": 9,
+          "Year sampl": 2019,
+          "Month": 9,
+          "Day": 1,
+          "Latitude": 48.43,
+          "Longitude": -126.23,
+          "Sigma H": 2993,
+          "Temp": 6.1726,
+          "Temp_2": 8.955555556,
+          "Sal": 33.9714,
+          "Sigma-theta": 1026.319728,
+          "DO": 1.714,
+          "O2": 74.5,
+          "QF": 2,
+          "O2_2": 162.6260185,
+          "DIC": 2283.19,
+          "QF_2": 2,
+          "AT": 2281.3,
+          "QF_3": 2,
+          "[NO3]- + [NO2]-": 36.7,
+          "QF_4": 2,
+          "Si(OH)4": 60.45,
+          "QF_5": 2,
+          "[PO4]3-": 2.586,
+          "QF_6": 2,
+          "Samp type": "incubation (3 individuals)",
+          "Treat": "undersaturated",
+          "Ind": 3.0,
+          "Ind_2": 2.0,
+          "Inc dur": 8.181944444,
+          "Inc dur_2": 196.3666667,
+          "pHT": 7.521202334,
+          "pCO2water_SST_wet": 1467.955096,
+          "Omega Arg": 0.629189934,
+          "Omega Cal": 0.992660554,
+          "DIC std e": 6,
+          "AT std e": 5,
+          "pCO2water_SST_wet std e": 90.84614412,
+          "Omega Arg std e": 0.037258117,
+          "Omega Cal std e": 0.026286644,
+          "Change": 19.0405361,
+          "Change_2": -27.48303796,
+          "O2_3": 135.1429806,
+          "O2 sat": 47.75296094,
+          "N O2 con": 14.10704339,
+          "N O2 con_2": 4.702347795,
+          "Resp O2/dm": 16.54037785,
+          "Resp O2/dm_2": 11.56234465,
+          "Resp O2/wm": 3.728024268,
+          "CSC flag": 15,
+          "pHT_2": 7.52,
+          "CO2": 66.83,
+          "fCO2water_SST_wet": 1462.25,
+          "pCO2water_SST_wet_2": 1467.99,
+          "[HCO3]-": 2174.96,
+          "[CO3]2-": 41.4,
+          "Omega Arg_2": 0.63,
+          "Omega Cal_2": 0.99
+        }
+      ],
+      "description": "Laboratory study of Limacina helicina with oceanographic and carbonate chemistry measurements.",
+      "is_row_capped": false,
+      "rows_processed": 20,
+      "total_rows_in_file": 20
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset containing 960,522 tables with 20 rows each."
+}

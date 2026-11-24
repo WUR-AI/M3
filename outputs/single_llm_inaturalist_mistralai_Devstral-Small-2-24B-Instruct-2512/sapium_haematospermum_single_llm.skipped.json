@@ -1,0 +1,15 @@
+{
+  "csv": "sapium_haematospermum.csv",
+  "dataset_id": "sapium_haematospermum",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "bdc0443ab65fba07247a201c7d786d8159da4c7ac747301b6c7c89539d50223a",
+  "contract_sha256": "9c2088c85ae747da3f88d3bac0735b908a56768bc85b38c44a48ed33a0fd7adc",
+  "prompt_tokens": 322426,
+  "status": "skipped",
+  "reason": "context_window"
+}

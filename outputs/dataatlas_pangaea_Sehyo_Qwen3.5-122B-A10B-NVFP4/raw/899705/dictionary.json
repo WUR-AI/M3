@@ -1,0 +1,262 @@
+{
+  "dataset_name": "899705",
+  "list_of_tables": [
+    "899705"
+  ],
+  "tables": {
+    "899705": {
+      "table_name": "899705",
+      "row_count": 12,
+      "number_of_columns": 4,
+      "list_of_columns": [
+        "File name",
+        "File format",
+        "File size",
+        "URL file"
+      ],
+      "columns": {
+        "File name": {
+          "column_name": "File name",
+          "data_type": "string",
+          "sample_values": [
+            "MITAPI_20152010DIFF_RCO_01x01",
+            "MITAPI_20152010DIFF_TNG_01x01",
+            "MITAPI_20152010DIFF_IND_01x01",
+            "MITAPI_20152010DIFF_ENE_01x01",
+            "MITAPI_20152010DIFF_TRF_01x01",
+            "MITAPI_20152010DIFF_REF_01x01",
+            "MITAPI_20152010DIFF_PPA_01x01",
+            "MITAPI_20152010DIFF_SHIP_01x01",
+            "MITAPI_20152010DIFF_PRO_01x01",
+            "MITAPI_20152010DIFF_AGR_01x01",
+            "MITAPI_20152010DIFF_TRO_01x01",
+            "MITAPI_20152010DIFF_SWD_01x01"
+          ],
+          "data_patterns": {
+            "AAAAAA_99999999AAAA_AAA_99a99": 11,
+            "AAAAAA_99999999AAAA_AAAA_99a99": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "MITAPI_20152010DIFF_TRF_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_TNG_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_AGR_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_SWD_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_RCO_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_IND_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_ENE_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_TRO_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_PRO_01x01",
+                1
+              ],
+              [
+                "MITAPI_20152010DIFF_SHIP_01x01",
+                1
+              ]
+            ],
+            "unique_count": 12
+          },
+          "description": "MITAPI20152010DIFF file names for 01x01 resolution Earth science data."
+        },
+        "File format": {
+          "column_name": "File format",
+          "data_type": "string",
+          "sample_values": [
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc",
+            "nc"
+          ],
+          "data_patterns": {
+            "aa": 12
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "nc",
+                12
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "NetCDF file format for all listed Earth science data files."
+        },
+        "File size": {
+          "column_name": "File size",
+          "data_type": "integer",
+          "semantic_type": "zip_code",
+          "sample_values": [
+            8849,
+            287,
+            2958,
+            6165,
+            1509,
+            10477,
+            10571,
+            21692,
+            10700,
+            19248,
+            30650,
+            21017
+          ],
+          "data_patterns": {
+            "99999": 7,
+            "9999": 4,
+            "999": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "numeric",
+            "min": 287.0,
+            "max": 30650.0,
+            "mean": 12010.25,
+            "median": 10524.0,
+            "std": 9315.855039320671
+          },
+          "description": "File size in bytes for each Earth science data file."
+        },
+        "URL file": {
+          "column_name": "URL file",
+          "data_type": "string",
+          "sample_values": [
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_SHIP_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TRO_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_SWD_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TRF_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_ENE_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_PPA_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_REF_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_RCO_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_AGR_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TNG_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_PRO_01x01.nc",
+            "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_IND_01x01.nc"
+          ],
+          "data_patterns": {
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aaaaaaaaaaa-aaaa_9999/AAAAAA_99999999AAAA_AAA_99a99.aa": 11,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aaaaaaaaaaa-aaaa_9999/AAAAAA_99999999AAAA_AAAA_99a99.aa": 1
+          },
+          "total_rows": 12,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TRF_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TNG_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_AGR_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_SWD_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_RCO_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_IND_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_ENE_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TRO_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_PRO_01x01.nc",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_SHIP_01x01.nc",
+                1
+              ]
+            ],
+            "unique_count": 12
+          },
+          "description": "Direct download links for 12 distinct Earth science NetCDF data files."
+        }
+      },
+      "sample_rows": [
+        {
+          "File name": "MITAPI_20152010DIFF_TRF_01x01",
+          "File format": "nc",
+          "File size": 2958,
+          "URL file": "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TRF_01x01.nc"
+        },
+        {
+          "File name": "MITAPI_20152010DIFF_TNG_01x01",
+          "File format": "nc",
+          "File size": 10700,
+          "URL file": "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_TNG_01x01.nc"
+        },
+        {
+          "File name": "MITAPI_20152010DIFF_AGR_01x01",
+          "File format": "nc",
+          "File size": 21692,
+          "URL file": "https://store.pangaea.de/Publications/Dasadhikari-etal_2019/MITAPI_20152010DIFF_AGR_01x01.nc"
+        }
+      ],
+      "description": "Table lists 12 Earth science data files with names, formats, sizes, and URLs.",
+      "is_row_capped": false,
+      "rows_processed": 12,
+      "total_rows_in_file": 12
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset containing 899,705 tables with 12 rows each."
+}

@@ -1,0 +1,65 @@
+{
+  "csv": "ancylis_burgessiana.csv",
+  "dataset_id": "ancylis_burgessiana",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "dd8c769148d1b6aa70f519fbd5fe0f04d0a18f747e977874d016f31477c1a410",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 2711,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.801885,
+      "min_lon": -97.271913,
+      "max_lat": 49.85558,
+      "max_lon": -60.050659
+    },
+    "temporalCoverage": {
+      "from": "2004-06-06T10:43:00+00:00",
+      "to": "2026-06-12T22:40:49+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "ancylis_burgessiana"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "ancylis_burgessiana",
+        "resource": "ancylis_burgessiana"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "ancylis_burgessiana",
+        "resource": "ancylis_burgessiana",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "ancylis_burgessiana"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "ancylis_burgessiana",
+        "resource": "ancylis_burgessiana",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 7.575,
+  "status": "ok"
+}

@@ -1,0 +1,53 @@
+{
+  "csv": "902576.csv",
+  "dataset_id": "902576",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b06c3394469ddd9b33f1f543a33543a85632b83506b0cb72086d0f8e099211ea",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1392,
+  "metadata": {
+    "name": "Mean Annual Ground Temperature",
+    "description": "Mean Annual Ground Temperature (MAGTM) [C°]",
+    "keywords": [],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "902576"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    }
+  ],
+  "runtime_seconds": 11.393,
+  "status": "ok"
+}

@@ -1,0 +1,42 @@
+{
+  "dataset_id": "990164",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990164.csv",
+  "source_sha256": "1d710fa4e7e67deb32c461c72ea2cec1a2a5054abd977ba644575d06fdf628bd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T23:25:26.468868+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Sediment Core Log LTp22-1 from Pacific Ocean (2022)",
+    "description": "A geochemical sediment core dataset containing CLR-normalized elemental concentrations (Si, K, Ca, Ti, V, Cr, Mn, Fe, Ni, Cu, Zn, Ge, Sr, Zr, Cd, Ce, Ta) and scattering metrics from a single core (Event LTp22-1) collected on April 8, 2022. The data covers a depth range of 0.0 to 0.2 meters, representing a temporal span from approximately 1867 to 2022 CE, collected at a fixed point location (21.28°N, 104.69°W) at 1430m elevation.",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "CLR normalization",
+      "paleoenvironmental",
+      "elemental concentrations",
+      "LTp22-1",
+      "Pacific Ocean",
+      "time-series"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.277661,
+      "min_lon": -104.690167,
+      "max_lat": 21.277661,
+      "max_lon": -104.690167
+    },
+    "temporalCoverage": {
+      "from": "1866.7",
+      "to": "2022.2"
+    },
+    "spatial": "Point location (21.277661°N, 104.690167°W)",
+    "temporal": "5 mm depth intervals (reconstructed time series)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990164_0af49c56dada442390890c2993497e23.jsonl",
+  "runtime_seconds": 144.35
+}

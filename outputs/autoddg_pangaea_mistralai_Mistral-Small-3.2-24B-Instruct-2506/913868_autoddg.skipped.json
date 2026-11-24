@@ -1,0 +1,11 @@
+{
+  "status": "skipped",
+  "reason": "timeout",
+  "csv": "913868.csv",
+  "dataset_id": "913868",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "timeout_seconds": 600,
+  "runtime_seconds": 600,
+  "message": "AutoDDG exceeded 600s on 913868.csv"
+}

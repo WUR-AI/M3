@@ -1,0 +1,42 @@
+{
+  "csv": "948933.csv",
+  "dataset_id": "948933",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "contract_sha256": "513711b16d946aa95f5bfd4d0d4048f908073dd5be28ae33d898b578fd24a95a",
+  "prompt_tokens": 1159,
+  "metadata": {
+    "name": "Sylt trawl survey data",
+    "description": "Dataset containing trawl survey observations from the Sylt region, including geographic coordinates, bathymetry, sampling dates, habitat type, Scomber scombrus (Atlantic mackerel) total length and counts, salinity, and temperature.",
+    "keywords": [
+      "trawl",
+      "Sylt",
+      "Scomber scombrus",
+      "mackerel",
+      "benthic",
+      "salinity",
+      "temperature",
+      "bathymetry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.98965,
+      "min_lon": 8.426567,
+      "max_lat": 55.058033,
+      "max_lon": 8.51045
+    },
+    "temporalCoverage": {
+      "from": "2021-06-29",
+      "to": "2021-09-07"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.918,
+  "status": "ok"
+}

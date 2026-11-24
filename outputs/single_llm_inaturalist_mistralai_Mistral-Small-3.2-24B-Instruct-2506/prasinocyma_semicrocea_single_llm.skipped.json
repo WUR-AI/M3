@@ -1,0 +1,15 @@
+{
+  "csv": "prasinocyma_semicrocea.csv",
+  "dataset_id": "prasinocyma_semicrocea",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "44c1bf7f8d6e847e922a8f123482ba418df3f3764ce6dece8a789090849ff898",
+  "contract_sha256": "e0ef2b9aedcd23c011233776a8477f4dc7ff97bfc586ca12f0515d99c2a9c696",
+  "prompt_tokens": 325761,
+  "status": "skipped",
+  "reason": "context_window"
+}

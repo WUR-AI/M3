@@ -1,0 +1,85 @@
+{
+  "csv": "924708.csv",
+  "dataset_id": "924708",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2581,
+  "metadata": {
+    "name": "Whale Sightings in the Arctic",
+    "description": "Dataset contains records of whale sightings in the Arctic region, including the date and time, latitude, longitude, type of whale, certainty of identification, individual count, and event identifier.",
+    "keywords": [
+      "whale",
+      "sightings",
+      "marine",
+      "wildlife",
+      "tracking",
+      "Arctic"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06",
+      "to": "2014-10-01"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "924708"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "924708",
+        "resource": "924708",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 25.011,
+  "status": "ok"
+}

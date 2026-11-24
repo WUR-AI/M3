@@ -1,0 +1,59 @@
+{
+  "csv": "porophyllum_ruderale.csv",
+  "dataset_id": "porophyllum_ruderale",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ad771d6c7d557f21d859d0f98880daaf4547021eadf1a28382610a2e9661606b",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 1788,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.639413,
+      "min_lon": -157.789633,
+      "max_lat": 41.54517,
+      "max_lon": 153.219904
+    },
+    "temporalCoverage": {
+      "from": "2003-05-11T09:14:00+00:00",
+      "to": "2026-06-08T12:00:20+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "porophyllum_ruderale"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "porophyllum_ruderale",
+        "resource": "porophyllum_ruderale"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "porophyllum_ruderale",
+        "resource": "porophyllum_ruderale",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "porophyllum_ruderale",
+        "resource": "porophyllum_ruderale",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.194,
+  "status": "ok"
+}

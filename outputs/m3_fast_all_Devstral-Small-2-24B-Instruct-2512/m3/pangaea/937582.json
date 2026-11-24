@@ -1,0 +1,42 @@
+{
+  "dataset_id": "937582",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/937582.csv",
+  "source_sha256": "1b4437a62c7a6600b478b9acf419a05aebf9f4af6fd8023b6d8e709a67082012",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T22:23:33.364113+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Ocean FDOM and IFDOM Measurements",
+    "description": "This dataset contains measurements of fluorescent dissolved organic matter (FDOM) and inorganic fluorescent dissolved organic matter (IFDOM) collected during expeditions in the Arctic Ocean, specifically in the Beaufort Sea region. The data includes spatial coordinates, water depth, and various FDOM and IFDOM parameters measured at different stations and times between April and September 2019.",
+    "keywords": [
+      "Arctic Ocean",
+      "Beaufort Sea",
+      "FDOM",
+      "IFDOM",
+      "fluorescent dissolved organic matter",
+      "oceanography",
+      "marine chemistry",
+      "2019"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20T15:34:00+00:00",
+      "to": "2019-09-08T12:00:00+00:00"
+    },
+    "spatial": "Decimal degrees",
+    "temporal": "Minute-level precision"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/937582_2ff7f6abf3214e1190812dbb1e0d4484.jsonl",
+  "runtime_seconds": 317.16
+}

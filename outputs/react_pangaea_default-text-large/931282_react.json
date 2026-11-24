@@ -1,0 +1,71 @@
+{
+  "csv": "931282.csv",
+  "dataset_id": "931282",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2220,
+  "metadata": {
+    "name": "UPC Sensor Data with Location and Timestamp",
+    "description": "A small dataset containing zip‑file binaries of sensor data (identified by the UPC event), each associated with geographic coordinates (latitude, longitude, elevation) and a recording date.",
+    "keywords": [
+      "sensor",
+      "UPC",
+      "zip",
+      "location",
+      "elevation",
+      "timestamp"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11",
+      "to": "2020-03-11"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "931282"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "931282",
+        "resource": "931282",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 10.959,
+  "status": "ok"
+}

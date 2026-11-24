@@ -1,0 +1,16 @@
+{
+  "csv": "muhlenbergia_lindheimeri.csv",
+  "dataset_id": "muhlenbergia_lindheimeri",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 997,
+  "n_columns": 50,
+  "description": "997 Muhlenbergia lindheimeri occurrence records from iNaturalist observations in Texas, USA.",
+  "dataset_description": "997 records of Muhlenbergia lindheimeri occurrences spanning 2013 to 2026.",
+  "runtime_seconds": 19.188,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_Qwen_Qwen3.6-35B-A3B-FP8/raw/muhlenbergia_lindheimeri/dictionary.json"
+}

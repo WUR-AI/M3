@@ -1,0 +1,15 @@
+{
+  "csv": "genista_germanica.csv",
+  "dataset_id": "genista_germanica",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "35e546b1513c22ab969f75667e4dd26db15ed9453e4e5a8295bb087dd6eaa834",
+  "contract_sha256": "a271b26be1187fd25f2469c5099d7e433c3c7f37f93bafb4e127f7aa9e72d548",
+  "prompt_tokens": 308679,
+  "status": "skipped",
+  "reason": "context_window"
+}

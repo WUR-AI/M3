@@ -1,0 +1,28 @@
+{
+  "dataset_id": "sphenophorus_interstitialis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/sphenophorus_interstitialis.csv",
+  "source_sha256": "b35571d10cb4f25590bc23334f33933035f0f39638fea17da6c79da6af16c63f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:55:12.280015+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 28.768189,
+      "min_lon": -123.890835,
+      "max_lat": 50.733805,
+      "max_lon": -63.586463
+    },
+    "temporalCoverage": {
+      "from": "1987-08-04T00:00:00+00:00",
+      "to": "2026-06-13T19:01:03+00:00"
+    }
+  },
+  "plan_steps_count": 5,
+  "steps_completed": 5,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/sphenophorus_interstitialis_a1bdf68863f5493186761c3932ac7e78.jsonl",
+  "runtime_seconds": 233.64
+}

@@ -1,0 +1,33 @@
+{
+  "dataset_id": "954529",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/954529.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:09:26.178168+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Inventory of GIS zip and Excel files",
+    "description": "A table of 10 records where each row contains either a GIS zip file name or an Excel file name. The GIS column holds 9 distinct zip files (e.g., Big_Skidder.zip) and the XLSX column holds a single Excel file (TopographicHigh_RawData.xlsx). Exactly one of the two columns is populated per row. (Based on get_item_count=10 and get_field_statistics).",
+    "keywords": [
+      "GIS",
+      "XLSX",
+      "Excel",
+      "file inventory",
+      "zip",
+      "metadata"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/954529_30de6bc092824bd1a92adafa98133908.jsonl",
+  "runtime_seconds": 87.2,
+  "recovered_from_trace": true,
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088"
+}

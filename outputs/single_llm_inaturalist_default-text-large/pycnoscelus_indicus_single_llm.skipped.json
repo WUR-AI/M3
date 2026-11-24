@@ -1,0 +1,15 @@
+{
+  "csv": "pycnoscelus_indicus.csv",
+  "dataset_id": "pycnoscelus_indicus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "16e3aff280a785d28fb130040007353a5ac4766d0f81e99826fc0288f9f93dbd",
+  "contract_sha256": "c7bec58d0d55b281cc6de714e8d91521a7bbf6fe7252968f8df91b288428f291",
+  "prompt_tokens": 325609,
+  "status": "skipped",
+  "reason": "context_window"
+}

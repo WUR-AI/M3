@@ -1,0 +1,28 @@
+{
+  "dataset_id": "rhinomuraena_quaesita",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/rhinomuraena_quaesita.csv",
+  "source_sha256": "9e0ea7a96a83b2ff1e4eb43581d60fd160933a5151b5911d32e62d8050124796",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T03:08:08.912381+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -30.205409,
+      "min_lon": -179.993328,
+      "max_lat": 33.150943,
+      "max_lon": 179.968328
+    },
+    "temporalCoverage": {
+      "from": "1989-07-13T00:00:00+00:00",
+      "to": "2026-06-10T11:58:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/rhinomuraena_quaesita_8a2ecd6baef74e27bae2114106c01adb.jsonl",
+  "runtime_seconds": 48.33
+}

@@ -1,0 +1,43 @@
+{
+  "dataset_id": "931282",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/931282.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:34:09.302108+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "UPC Sensor ZIP Files – 2020-03-11",
+    "description": "Dataset containing two records of sensor output zip files (Binary) linked to the UPC event, each with latitude 41.393, longitude 2.12, elevation 115 m, and acquisition date 2020-03-11.",
+    "keywords": [
+      "sensor",
+      "binary",
+      "zip",
+      "UPC",
+      "latitude",
+      "longitude",
+      "elevation",
+      "2020-03-11"
+    ],
+    "spatialCoverage": {
+      "min_lat": 41.393,
+      "min_lon": 2.12,
+      "max_lat": 41.393,
+      "max_lon": 2.12
+    },
+    "temporalCoverage": {
+      "from": "2020-03-11T00:00:00+00:00",
+      "to": "2020-03-11T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/931282_6543be452f1944e1adfb04c766e8b46c.jsonl",
+  "runtime_seconds": 123.34,
+  "recovered_from_trace": true,
+  "source_sha256": "f4af3cd05b6d9db1457e45602832f8ede13b70cac968d7fc7f33124c59ba7e19"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "mycena_renati.csv",
+  "dataset_id": "mycena_renati",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "731d459ea4b538a9c644e9ca713b1aeaa054c40091788ed9a31b0e6727d13fb7",
+  "contract_sha256": "493883b256fb863efc035b9cf5378dbca445558a0c5ac952821e67d8323b62f8",
+  "prompt_tokens": 313305,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,44 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ecb7b5ed9a1a17db139f60404906a6597234581b11225c226aeee09add86bffa",
+  "contract_sha256": "02f8add44e7ef5f0e8c292920a249ab313dfdcc7e2722544065591208a750f11",
+  "prompt_tokens": 13400,
+  "metadata": {
+    "name": "Sediment core isotopic dataset M78/1_181-3",
+    "description": "A marine sediment core dataset containing depth (cm), age (ka), Uvigerina spp. δ13C and δ18O isotopic measurements, event identifiers, and site metadata (latitude, longitude, elevation, and collection timestamp). All samples are from a single location (29.0° N, 88.33° W) collected on 2009‑03‑04.",
+    "keywords": [
+      "sediment",
+      "core",
+      "isotope",
+      "δ13C",
+      "δ18O",
+      "Uvigerina",
+      "paleoceanography",
+      "age",
+      "depth",
+      "Gulf of Mexico"
+    ],
+    "spatialCoverage": {
+      "min_lat": 29.0,
+      "min_lon": -88.33333333,
+      "max_lat": 29.0,
+      "max_lon": -88.33333333
+    },
+    "temporalCoverage": {
+      "from": "2009-03-04",
+      "to": "2009-03-04"
+    },
+    "spatial": "point location",
+    "temporal": "single observation"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 6.036,
+  "status": "ok"
+}

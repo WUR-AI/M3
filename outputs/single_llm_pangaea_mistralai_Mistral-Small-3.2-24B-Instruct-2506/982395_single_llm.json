@@ -1,0 +1,44 @@
+{
+  "csv": "982395.csv",
+  "dataset_id": "982395",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "contract_sha256": "018597f24c8aa97d024db7e2786a5db02895cb7c357bed6401bbb1160db35a20",
+  "prompt_tokens": 3038,
+  "metadata": {
+    "name": "Sediment Core Analysis",
+    "description": "This dataset contains sediment core analysis data, including various chemical and physical properties such as total organic carbon (TOC), black carbon (BC), calcium carbonate (CaCO3), pH, grain size distribution, magnetic susceptibility, and concentrations of trace metals (Pb, Zn, Cu) and nutrients (TP, S). The data is collected from two sediment cores (BH-II and BH-rec) with associated geographic and temporal information.",
+    "keywords": [
+      "sediment core",
+      "TOC",
+      "black carbon",
+      "calcium carbonate",
+      "pH",
+      "grain size",
+      "magnetic susceptibility",
+      "trace metals",
+      "nutrients",
+      "geochemical analysis"
+    ],
+    "spatialCoverage": {
+      "min_lat": 51.410785,
+      "min_lon": 12.079572,
+      "max_lat": 51.41327778,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22",
+      "to": "2019-08-12"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 11.474,
+  "status": "ok"
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_id": "901488",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901488.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T15:53:48.921960+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Elwha River Delta sensor RMS measurements (20 March 2011)",
+    "description": "Dataset of 211 fixed‑site observations collected on 20 March 2011 at the Elwha River Delta. Each row provides latitude, longitude, elevation (m), timestamp, horizontal RMS (HRMS) and vertical RMS (VRMS) voltages, a fixed status flag, a station description code, and the event identifier.",
+    "keywords": [
+      "elwha river",
+      "delta",
+      "hrms",
+      "vrms",
+      "rms voltage",
+      "environmental monitoring",
+      "latitude",
+      "longitude",
+      "elevation",
+      "2011",
+      "fixed sensor"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551062,
+      "min_lon": -125.9387874,
+      "max_lat": 49.570186,
+      "max_lon": -125.9302033
+    },
+    "temporalCoverage": {
+      "from": "2011-03-20T05:21:00+00:00",
+      "to": "2011-03-20T07:32:00+00:00"
+    },
+    "spatial": "≈0.1 m (~1 µ°) based on six‑decimal‑place coordinate precision (analyze_spatial_column)",
+    "temporal": "≈5 minutes (minimum interval observed between timestamps; inferred from Date/Time values)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901488_2babb29859804b7b8010dc750e113849.jsonl",
+  "runtime_seconds": 157.92,
+  "recovered_from_trace": true,
+  "source_sha256": "c43d3f554bb169bcda8fb03f880a0f8620b128000d75d47294281b850cc47662"
+}

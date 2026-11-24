@@ -1,0 +1,29 @@
+{
+  "dataset_id": "954529",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/954529.csv",
+  "source_sha256": "1bb2450f8f8cbe779e72cc4118f1aa9bd2c86d2a9b5412ab4d048f0717981088",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T23:01:13.905214+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Dataset containing GIS and XLSX file references",
+    "description": "This dataset contains references to GIS and XLSX files, with the GIS column mostly populated and the XLSX column mostly empty.",
+    "keywords": [
+      "GIS",
+      "XLSX",
+      "file references"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/954529_06b19645db0e492c8dad92224c6e1d6f.jsonl",
+  "runtime_seconds": 150.22
+}

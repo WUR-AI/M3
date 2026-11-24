@@ -1,0 +1,9 @@
+{
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "output_dir": "/home/com3dian/Github/metadata_agent/outputs/react_pangaea_smoke_mistralai_Devstral-Small-2-24B-Instruct-2512",
+  "expected": 10,
+  "successful": 10,
+  "skipped": 0,
+  "processed": 10,
+  "remaining": 0
+}

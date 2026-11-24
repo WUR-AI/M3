@@ -1,0 +1,42 @@
+{
+  "dataset_id": "953747",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/953747.csv",
+  "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:19:06.601898+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Deep-Sea Survey Event Manifest: PS122/5_61-35",
+    "description": "A manifest dataset containing 22 records linking a single deep-sea survey event (PS122/5_61-35) conducted on September 8, 2020, to unique data artifacts (image files) from ROV and ADCP operations at a fixed location in the Arctic Ocean (88.68°N, 112.32°E, -4291m depth).",
+    "keywords": [
+      "Arctic Ocean",
+      "Deep-sea survey",
+      "ROV",
+      "ADCP",
+      "PS122",
+      "Oceanographic data",
+      "Survey event manifest",
+      "Binary data index"
+    ],
+    "spatialCoverage": {
+      "min_lat": 88.675993,
+      "min_lon": 112.324519,
+      "max_lat": 88.675993,
+      "max_lon": 112.324519
+    },
+    "temporalCoverage": {
+      "from": "2020-09-08T00:00:00+00:00",
+      "to": "2020-09-08T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "instant"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/953747_a691b78c9212432e9c86b08874557ff7.jsonl",
+  "runtime_seconds": 117.76
+}

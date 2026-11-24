@@ -107,12 +107,12 @@ PLANNING_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE_PLANNING", "0.0"))
 # Can be overridden by environment variable: LLM_TEMPERATURE_PLAYER  
 PLAYER_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE_PLAYER", "0.3"))
 
-# Player tool execution: "llm" = model chooses tools and arguments (bind_tools loop);
-# "eager" = invoke all compatible tools deterministically (legacy).
-PLAYER_TOOL_EXECUTION_MODE = os.getenv("PLAYER_TOOL_EXECUTION_MODE", "eager")
+# Max model↔tool rounds per player task.
+PLAYER_MAX_TOOL_ITERATIONS = int(os.getenv("PLAYER_MAX_TOOL_ITERATIONS", "16"))
 
-# Max model↔tool rounds per task when tool_execution_mode is "llm".
-PLAYER_MAX_TOOL_ITERATIONS = int(os.getenv("PLAYER_MAX_TOOL_ITERATIONS", "8"))
+# Per-request LLM timeout (seconds). Prevents calls from hanging forever.
+# Can be overridden by environment variable: LLM_REQUEST_TIMEOUT
+LLM_REQUEST_TIMEOUT = float(os.getenv("LLM_REQUEST_TIMEOUT", "180"))
 
 
 # =============================================================================
@@ -185,6 +185,21 @@ def get_model_name(override: Optional[str] = None) -> str:
     return PROVIDER_CONFIGS.get(LLM_PROVIDER, {}).get("default_model", "gpt-4o-mini")
 
 
+def get_surf_extra_body(model_name: Optional[str] = None) -> dict[str, Any]:
+    """Return Willma/SURF extra_body defaults for a chat-completions request.
+
+    Mistral/Devstral tokenizers reject ``chat_template_kwargs``. Other models
+    get ``enable_thinking`` so reasoning traces do not leak into generations.
+    """
+    model = (model_name or get_model_name() or "").lower()
+    extra_body: dict[str, Any] = {}
+    if "mistral" not in model and "devstral" not in model:
+        extra_body["chat_template_kwargs"] = {
+            "enable_thinking": SURF_ENABLE_THINKING,
+        }
+    return extra_body
+
+
 def create_llm(
     model_name: Optional[str] = None,
     temperature: float = 0.0,
@@ -234,14 +249,20 @@ def create_llm(
                 "SURF_API_KEY not found. Set it in your .env file."
             )
         
-        model_kwargs = kwargs.pop("model_kwargs", {}) or {}
-        extra_body = model_kwargs.get("extra_body", {}) or {}
-        chat_template_kwargs = extra_body.get("chat_template_kwargs", {}) or {}
-        # Disable reasoning/thinking output by default for Surf-compatible backends.
-        # This helps keep responses clean for downstream structured parsing.
-        chat_template_kwargs.setdefault("enable_thinking", SURF_ENABLE_THINKING)
-        extra_body["chat_template_kwargs"] = chat_template_kwargs
-        model_kwargs["extra_body"] = extra_body
+        model_kwargs = dict(kwargs.pop("model_kwargs", {}) or {})
+        extra_body = dict(get_surf_extra_body(model))
+        for supplied_extra in (
+            model_kwargs.pop("extra_body", None),
+            kwargs.pop("extra_body", None),
+        ):
+            caller_extra = dict(supplied_extra or {})
+            caller_ctk = dict(caller_extra.pop("chat_template_kwargs", None) or {})
+            extra_body.update(caller_extra)
+            if caller_ctk or extra_body.get("chat_template_kwargs"):
+                extra_body["chat_template_kwargs"] = {
+                    **dict(extra_body.get("chat_template_kwargs") or {}),
+                    **caller_ctk,
+                }
 
         return ChatOpenAI(
             model=model,
@@ -249,6 +270,8 @@ def create_llm(
             openai_api_key=SURF_API_KEY,
             openai_api_base=SURF_API_BASE,
             model_kwargs=model_kwargs,
+            extra_body=extra_body or None,
+            request_timeout=kwargs.pop("request_timeout", LLM_REQUEST_TIMEOUT),
             **kwargs
         )
     
@@ -264,6 +287,7 @@ def create_llm(
             model=model,
             temperature=temperature,
             openai_api_key=OPENAI_API_KEY,
+            request_timeout=kwargs.pop("request_timeout", LLM_REQUEST_TIMEOUT),
             **kwargs
         )
     

@@ -1,0 +1,15 @@
+{
+  "csv": "nemognatha_piazata.csv",
+  "dataset_id": "nemognatha_piazata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "07e210698659a6a3aed8a882bb3dbb2a24c71b67eee91b06f79d6e96fa8d37be",
+  "contract_sha256": "df3a29cd635eba8b2c199039d93c1caca60d1c523b6204dbc43fe540b2794f24",
+  "prompt_tokens": 312850,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,97 @@
+{
+  "csv": "948933.csv",
+  "dataset_id": "948933",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "c4a8a487446c96efaf6f4c41f9d7b644a85b104d8a1ea7feae92cd2036f65fab",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3935,
+  "metadata": {
+    "name": "948933",
+    "description": "The dataset contains information about samples collected during a survey. Each sample is labeled and includes geographic coordinates (latitude and longitude), bathymetric depth measurements, date and time information, habitat type, and specific data about S. scombrus, including total length and count. Additionally, salinity (Sal) and temperature (Temp) measurements are recorded for each sample, along with an event identifier.",
+    "keywords": [
+      "Survey",
+      "Sample",
+      "Geographic Coordinates",
+      "Bathymetric Depth",
+      "Date/Time",
+      "Habitat",
+      "S. scombrus",
+      "Salinity",
+      "Temperature",
+      "Event"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.996367,
+      "min_lon": 8.432083,
+      "max_lat": 55.056917,
+      "max_lon": 8.492533
+    },
+    "temporalCoverage": {
+      "from": "2021-06-29T07:50:07+00:00",
+      "to": "2021-09-07T08:26:01+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "948933"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "time_column": "Date/Time_2"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "948933",
+        "resource": "948933",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 33.051,
+  "status": "ok"
+}

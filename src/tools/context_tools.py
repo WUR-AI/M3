@@ -1,7 +1,10 @@
 """
 Unified ExecutionContext Tools for the Multi-Agent System.
 """
+#TODO: date modified tool
+
 import ast
+import json
 import re
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -25,6 +28,11 @@ def get_context(key: str) -> Any:
     if key not in _context_registry:
         raise KeyError(f"ExecutionContext '{key}' not found in registry")
     return _context_registry[key]
+
+
+def unregister_context(key: str) -> None:
+    """Release one run's context without disturbing concurrent runs."""
+    _context_registry.pop(key, None)
 
 
 def clear_registry():
@@ -159,6 +167,56 @@ def get_sample_items(context_key: str, resource: str = "", n: int = 5) -> str:
         return df.to_string()
     except Exception as e:
         return f"Error: {str(e)}"
+
+
+def _serialize_cell(value: Any) -> Any:
+    """Convert a DataFrame cell to a JSON-serializable value."""
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return None
+    if pd.isna(value):
+        return None
+    item = getattr(value, "item", None)
+    if callable(item):
+        try:
+            return item()
+        except (ValueError, AttributeError):
+            pass
+    return value
+
+
+def _preview_resource_columns_and_first_row(ctx: Any, resource: str) -> Dict[str, Any]:
+    info = ctx.get_resource_info(resource)
+    df = ctx.read_resource(resource, limit=1)
+    if df.empty:
+        first_row: Dict[str, Any] = {}
+    else:
+        first_row = {
+            col: _serialize_cell(df.iloc[0][col]) for col in info.field_names
+        }
+    return {"columns": info.field_names, "first_row": first_row}
+
+
+@tool
+def get_columns_with_first_row(context_key: str, resource: str = "") -> str:
+    """
+    Get column names and the first data row for one or all resources.
+
+    Returns dictionary-style text: for each resource, lists every column name
+    and the first row as column -> value pairs. Omit resource to preview all
+    resources in the context in a single call.
+    """
+    try:
+        ctx = get_context(context_key)
+        if resource:
+            preview = {resource: _preview_resource_columns_and_first_row(ctx, resource)}
+        else:
+            preview = {
+                res: _preview_resource_columns_and_first_row(ctx, res)
+                for res in ctx.resources
+            }
+        return json.dumps(preview, indent=2, default=str)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
 
 
 @tool
@@ -316,7 +374,7 @@ def _detect_temporal_dtype(series: pd.Series) -> Optional[str]:
         
         # Try to parse as datetime
         try:
-            parsed = pd.to_datetime(sample, errors="coerce", format="mixed")
+            parsed = _parse_datetime_series(sample)
             valid_ratio = parsed.notna().sum() / len(sample)
             if valid_ratio > 0.8:
                 return "datetime_string"
@@ -348,9 +406,49 @@ def _detect_coordinate_values(series: pd.Series) -> Optional[str]:
     return None
 
 
+def _rank_axis_candidates(
+    spatial_columns: Dict[str, Any], axis: str
+) -> List[str]:
+    """Rank columns as latitude/longitude candidates, name match beating value match.
+
+    A column named like the axis (e.g. ``Latitude``, ``decimalLongitude``) is a
+    stronger signal than a numeric column that merely falls in the coordinate
+    range (e.g. ``Temp``, ``Sample ID``). This prevents science/index columns
+    from being paired ahead of the real coordinate columns.
+    """
+    name_pattern = r"lat" if axis == "lat" else r"lon"
+    value_type = "possible_latitude" if axis == "lat" else "possible_longitude"
+
+    scored = []
+    for idx, (col, info) in enumerate(spatial_columns.items()):
+        name_match = bool(re.search(name_pattern, col.lower()))
+        value_match = info.get("detected_type") == value_type
+        if not (name_match or value_match):
+            continue
+        # Tier: name+value (3) > name only (2) > value only (1).
+        tier = (2 if name_match else 0) + (1 if value_match else 0)
+        # Higher tier first; break ties by original column order.
+        scored.append((tier, -idx, col))
+
+    scored.sort(reverse=True)
+    return [col for _, _, col in scored]
+
+
+def _parse_datetime_series(series: pd.Series) -> pd.Series:
+    """Parse datetimes consistently, normalizing mixed timezone values to UTC."""
+    if pd.api.types.is_datetime64_any_dtype(series):
+        return pd.to_datetime(series, errors="coerce", utc=True, format="mixed")
+    return pd.to_datetime(series, errors="coerce", utc=True, format="mixed")
+
+
+def _is_standalone_calendar_component(column_name: str) -> bool:
+    """Avoid treating day/month/year component columns as full temporal or spatial data."""
+    return column_name.strip().lower() in {"day", "month", "year"}
+
+
 def _detect_wkt_geometry(series: pd.Series) -> Optional[str]:
     """Detect if string values contain WKT geometry."""
-    if series.dtype != object and str(series.dtype) != "string":
+    if series.dtype != object and not pd.api.types.is_string_dtype(series.dtype):
         return None
     
     sample = series.dropna().head(50)
@@ -428,14 +526,17 @@ def detect_temporal_columns(context_key: str, resource: str = "") -> Dict[str, A
         temporal_columns = {}
         
         for col in df.columns:
+            is_calendar_component = _is_standalone_calendar_component(col)
             col_info = {
-                "name_suggests_temporal": _is_temporal_column_name(col),
+                "name_suggests_temporal": (
+                    _is_temporal_column_name(col) and not is_calendar_component
+                ),
                 "detected_type": None,
                 "sample_values": [],
             }
             
             # Detect type from data
-            detected_type = _detect_temporal_dtype(df[col])
+            detected_type = None if is_calendar_component else _detect_temporal_dtype(df[col])
             if detected_type:
                 col_info["detected_type"] = detected_type
             
@@ -445,11 +546,58 @@ def detect_temporal_columns(context_key: str, resource: str = "") -> Dict[str, A
                 sample = df[col].dropna().head(5).tolist()
                 col_info["sample_values"] = [str(v) for v in sample]
                 temporal_columns[col] = col_info
+
+        recommended_time_column = None
+        if temporal_columns:
+            def temporal_priority(item: Tuple[str, Dict[str, Any]]) -> Tuple[int, int, int]:
+                name, info = item
+                lower_name = name.lower()
+                detected_score = 1 if info.get("detected_type") else 0
+                name_score = 1 if info.get("name_suggests_temporal") else 0
+                event_score = 1 if any(
+                    token in lower_name
+                    for token in ("event", "timestamp", "datetime", "date", "time")
+                ) else 0
+                return (detected_score, event_score, name_score)
+
+            recommended_time_column = max(
+                temporal_columns.items(),
+                key=temporal_priority,
+            )[0]
+        
+        required_followup_calls = [
+            {
+                "tool": "get_temporal_extent",
+                "args": {
+                    "context_key": context_key,
+                    "resource": resource,
+                    "time_column": column,
+                },
+            }
+            for column in temporal_columns
+        ]
+        recommended_followup_calls = [
+            *required_followup_calls,
+            *[
+                {
+                    "tool": "analyze_temporal_column",
+                    "args": {
+                        "context_key": context_key,
+                        "resource": resource,
+                        "column": column,
+                    },
+                }
+                for column in temporal_columns
+            ],
+        ]
         
         return {
             "resource": resource,
             "temporal_column_count": len(temporal_columns),
             "temporal_columns": temporal_columns,
+            "recommended_time_column": recommended_time_column,
+            "required_followup_calls": required_followup_calls,
+            "recommended_followup_calls": recommended_followup_calls,
         }
     except Exception as e:
         return {"error": str(e)}
@@ -481,13 +629,10 @@ def analyze_temporal_column(
         
         # Try to parse as datetime
         parsed = None
-        if pd.api.types.is_datetime64_any_dtype(series):
-            parsed = series
-        else:
-            try:
-                parsed = pd.to_datetime(series, errors="coerce", format="mixed")
-            except Exception:
-                pass
+        try:
+            parsed = _parse_datetime_series(series)
+        except Exception:
+            pass
         
         if parsed is not None and parsed.notna().any():
             valid_dates = parsed.dropna()
@@ -495,36 +640,34 @@ def analyze_temporal_column(
             
             if len(valid_dates) > 0:
                 result["date_range"] = {
-                    "min": str(valid_dates.min()),
-                    "max": str(valid_dates.max()),
+                    "min": valid_dates.min().isoformat(),
+                    "max": valid_dates.max().isoformat(),
                     "span_days": (valid_dates.max() - valid_dates.min()).days,
                 }
                 
                 # Detect granularity
                 if len(valid_dates) > 1:
                     diffs = valid_dates.sort_values().diff().dropna()
-                    median_diff = diffs.median()
+                    median_delta: Any = diffs.median()
+                    median_seconds = median_delta.total_seconds()
+                    median_days = median_seconds / 86400
                     
-                    if median_diff.total_seconds() < 1:
+                    if median_seconds < 1:
                         result["apparent_granularity"] = "sub-second"
-                    elif median_diff.total_seconds() < 60:
+                    elif median_seconds < 60:
                         result["apparent_granularity"] = "second"
-                    elif median_diff.total_seconds() < 3600:
+                    elif median_seconds < 3600:
                         result["apparent_granularity"] = "minute"
-                    elif median_diff.total_seconds() < 86400:
+                    elif median_seconds < 86400:
                         result["apparent_granularity"] = "hourly"
-                    elif median_diff.days < 7:
+                    elif median_days < 7:
                         result["apparent_granularity"] = "daily"
-                    elif median_diff.days < 32:
+                    elif median_days < 32:
                         result["apparent_granularity"] = "weekly/monthly"
                     else:
                         result["apparent_granularity"] = "monthly+"
                 
-                # Check for timezone info
-                if hasattr(valid_dates.dtype, "tz") and valid_dates.dtype.tz is not None:
-                    result["timezone"] = str(valid_dates.dtype.tz)
-                else:
-                    result["timezone"] = "none/naive"
+                result["timezone"] = "UTC"
         else:
             result["parse_success_rate"] = 0
             result["note"] = "Could not parse as datetime"
@@ -557,8 +700,11 @@ def detect_spatial_columns(context_key: str, resource: str = "") -> Dict[str, An
         tuple_coord_columns: List[Dict[str, Any]] = []
 
         for col in df.columns:
+            is_calendar_component = _is_standalone_calendar_component(col)
             col_info = {
-                "name_suggests_spatial": _is_spatial_column_name(col),
+                "name_suggests_spatial": (
+                    _is_spatial_column_name(col) and not is_calendar_component
+                ),
                 "detected_type": None,
                 "sample_values": [],
             }
@@ -569,14 +715,14 @@ def detect_spatial_columns(context_key: str, resource: str = "") -> Dict[str, An
                 col_info["detected_type"] = wkt_type
 
             # Check for coordinate values
-            coord_type = _detect_coordinate_values(df[col])
+            coord_type = None if is_calendar_component else _detect_coordinate_values(df[col])
             if coord_type:
                 col_info["detected_type"] = coord_type
 
             # Tuple string pairs "(lon, lat)" — common in ecology / BMS exports
             if (
                 col_info["detected_type"] is None
-                and (df[col].dtype == object or str(df[col].dtype) == "string")
+                and (df[col].dtype == object or pd.api.types.is_string_dtype(df[col].dtype))
             ):
                 parsed, tried = _sample_tuple_parse_rate(df[col])
                 if tried > 0 and parsed / tried >= 0.75:
@@ -600,22 +746,78 @@ def detect_spatial_columns(context_key: str, resource: str = "") -> Dict[str, An
                 col_info["sample_values"] = [str(v) for v in sample]
                 spatial_columns[col] = col_info
 
-        # Try to detect lat/lon pairs
-        lat_cols = [
-            c
-            for c, info in spatial_columns.items()
-            if info.get("detected_type") == "possible_latitude"
-            or re.search(r"lat", c.lower())
-        ]
-        lon_cols = [
-            c
-            for c, info in spatial_columns.items()
-            if info.get("detected_type") == "possible_longitude"
-            or re.search(r"lon", c.lower())
-        ]
+        # Try to detect lat/lon pairs. Rank candidates so columns named like a
+        # coordinate axis win over columns that only fall in the numeric range.
+        lat_cols = _rank_axis_candidates(spatial_columns, "lat")
+        lon_cols = _rank_axis_candidates(spatial_columns, "lon")
 
-        if lat_cols and lon_cols:
-            coordinate_pairs = [{"latitude": lat_cols[0], "longitude": lon_cols[0]}]
+        lat_col = lat_cols[0] if lat_cols else None
+        lon_col = lon_cols[0] if lon_cols else None
+
+        # A single column cannot be both axes; resolve to a distinct pair.
+        if lat_col is not None and lat_col == lon_col:
+            alt_lon = next((c for c in lon_cols if c != lat_col), None)
+            alt_lat = next((c for c in lat_cols if c != lon_col), None)
+            if alt_lon is not None:
+                lon_col = alt_lon
+            elif alt_lat is not None:
+                lat_col = alt_lat
+            else:
+                lat_col = lon_col = None
+
+        # A parsed coordinate tuple is stronger evidence than two unrelated
+        # numeric columns whose values merely fit the latitude/longitude ranges.
+        named_axes = (
+            any(re.search(r"lat", name.lower()) for name in spatial_columns)
+            and any(re.search(r"lon", name.lower()) for name in spatial_columns)
+        )
+        if tuple_coord_columns and not named_axes:
+            lat_col = lon_col = None
+
+        if lat_col and lon_col:
+            coordinate_pairs = [{"latitude": lat_col, "longitude": lon_col}]
+
+        required_followup_calls = []
+        recommended_followup_calls = []
+        if coordinate_pairs:
+            pair = coordinate_pairs[0]
+            required_followup_calls.append(
+                {
+                    "tool": "get_spatial_extent",
+                    "args": {
+                        "context_key": context_key,
+                        "resource": resource,
+                        "lat_column": pair["latitude"],
+                        "lon_column": pair["longitude"],
+                    },
+                }
+            )
+        elif tuple_coord_columns:
+            tuple_column = tuple_coord_columns[0]
+            required_followup_calls.append(
+                {
+                    "tool": "get_spatial_extent_from_tuple_column",
+                    "args": {
+                        "context_key": context_key,
+                        "resource": resource,
+                        "column": tuple_column["column"],
+                        "tuple_order": tuple_column["tuple_order"],
+                    },
+                }
+            )
+        elif spatial_columns:
+            first_spatial_column = next(iter(spatial_columns))
+            recommended_followup_calls.append(
+                {
+                    "tool": "analyze_spatial_column",
+                    "args": {
+                        "context_key": context_key,
+                        "resource": resource,
+                        "column": first_spatial_column,
+                    },
+                }
+            )
+        recommended_followup_calls.extend(required_followup_calls)
 
         return {
             "resource": resource,
@@ -623,6 +825,8 @@ def detect_spatial_columns(context_key: str, resource: str = "") -> Dict[str, An
             "spatial_columns": spatial_columns,
             "detected_coordinate_pairs": coordinate_pairs,
             "tuple_coord_columns": tuple_coord_columns,
+            "required_followup_calls": required_followup_calls,
+            "recommended_followup_calls": recommended_followup_calls,
         }
     except Exception as e:
         return {"error": str(e)}
@@ -716,8 +920,11 @@ def get_spatial_extent(
         if lon_column not in df.columns:
             return {"error": f"Column '{lon_column}' not found"}
         
-        lat = pd.to_numeric(df[lat_column], errors="coerce").dropna()
-        lon = pd.to_numeric(df[lon_column], errors="coerce").dropna()
+        lat = pd.to_numeric(df[lat_column], errors="coerce")
+        lon = pd.to_numeric(df[lon_column], errors="coerce")
+        valid = lat.notna() & lon.notna()
+        lat = lat[valid]
+        lon = lon[valid]
         
         if len(lat) == 0 or len(lon) == 0:
             return {"error": "No valid numeric coordinates found"}
@@ -726,7 +933,7 @@ def get_spatial_extent(
             "resource": resource,
             "lat_column": lat_column,
             "lon_column": lon_column,
-            "valid_point_count": min(len(lat), len(lon)),
+            "valid_point_count": int(valid.sum()),
             "bounding_box": {
                 "min_lat": float(lat.min()),
                 "max_lat": float(lat.max()),
@@ -857,12 +1064,9 @@ def get_temporal_extent(
         if time_column not in df.columns:
             return {"error": f"Column '{time_column}' not found"}
         
-        # Parse as datetime
+        # Parse as datetime and normalize mixed timezone values.
         series = df[time_column]
-        if pd.api.types.is_datetime64_any_dtype(series):
-            parsed = series
-        else:
-            parsed = pd.to_datetime(series, errors="coerce", format="mixed")
+        parsed = _parse_datetime_series(series)
         
         valid = parsed.dropna()
         
@@ -874,12 +1078,14 @@ def get_temporal_extent(
             "time_column": time_column,
             "total_records": len(series),
             "valid_timestamps": len(valid),
-            "null_timestamps": series.isnull().sum(),
+            "null_timestamps": int(series.isnull().sum()),
             "temporal_extent": {
-                "start": str(valid.min()),
-                "end": str(valid.max()),
+                "start": valid.min().isoformat(),
+                "end": valid.max().isoformat(),
                 "duration_days": (valid.max() - valid.min()).days,
             },
+            "from": valid.min().isoformat(),
+            "to": valid.max().isoformat(),
         }
         
         # Add temporal distribution info
@@ -906,6 +1112,7 @@ def get_all_context_tools() -> List:
         get_field_names,
         get_field_types,
         get_sample_items,
+        get_columns_with_first_row,
         get_field_statistics,
         get_missing_values,
         get_unique_values,
@@ -933,6 +1140,7 @@ def _get_tool_context_compatibility() -> Dict[str, Set[ContextType]]:
         "get_field_names": csv_types,
         "get_field_types": csv_types,
         "get_sample_items": csv_types,
+        "get_columns_with_first_row": csv_types,
         "get_field_statistics": csv_types,
         "get_missing_values": csv_types,
         "get_unique_values": csv_types,

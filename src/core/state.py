@@ -21,6 +21,7 @@ class PlayerResult(TypedDict):
     player_name: str
     task: str
     tool_results: Dict[str, Any]
+    tool_trace: List[Dict[str, Any]]
     analysis: str
     success: bool
 
@@ -66,7 +67,10 @@ class StepExecutionState(TypedDict):
         synthesizer: Player instance for synthesis (one of the players).
         max_debate_rounds: Maximum debate rounds for this step.
         current_debate_round: Current debate round (starts at 1).
+        tool_tracer: Shared tool trace for this plan execution.
+        recorder: Durable run trace.
         player_results: Results from parallel execution.
+        agent_messages: Each agent's uninterrupted conversation.
         debate_log: Log of debate entries.
         output_schema: Pydantic schema for structured output (final step only).
         consolidated_result: Final synthesized result (str or BaseModel).
@@ -87,6 +91,8 @@ class StepExecutionState(TypedDict):
     context_info: Dict[str, Any]
     workspace: Dict[str, Any]
     metadata_standard: str
+    tool_tracer: Optional[Any]
+    recorder: Optional[Any]
     
     # --- Player Configuration ---
     players: List[Any]
@@ -98,6 +104,7 @@ class StepExecutionState(TypedDict):
     
     # --- Dynamic State ---
     player_results: List[PlayerResult]
+    agent_messages: Dict[str, List[Any]]
     debate_log: List[DebateEntry]
     
     # --- Structured Output ---

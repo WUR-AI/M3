@@ -1,0 +1,32 @@
+{
+  "dataset_id": "990164",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/990164.csv",
+  "source_sha256": "1d710fa4e7e67deb32c461c72ea2cec1a2a5054abd977ba644575d06fdf628bd",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T20:49:50.507357+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Chemical and Age Measurements of Sediment Core LTp22-1",
+    "description": "This dataset contains chemical measurements (Si, K, Ca, Ti, V, Cr, Mn, Fe, Ni, Cu, Zn, Ge, Sr, Zr, Cd, Ce, Ta) and age data (Age, Age_2) from a sediment core sample (LTp22-1) collected at a specific location (21.277661, -104.690167) on April 8, 2022. The data includes depth measurements and event identifiers.",
+    "keywords": [
+      "sediment core",
+      "chemical measurements",
+      "age data",
+      "geochemistry",
+      "paleoenvironment",
+      "Mexico",
+      "2022",
+      "sediment analysis",
+      "elemental composition",
+      "geological sampling"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/990164_259862f2efa14cfeba520add41d1d817.jsonl",
+  "runtime_seconds": 570.75
+}

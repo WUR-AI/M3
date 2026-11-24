@@ -1,0 +1,45 @@
+{
+  "dataset_id": "966669",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/966669.csv",
+  "source_sha256": "38d45ebddb5ad7c83655f2d23207ed3d800aa60a12fe7468bb6274122192cd99",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:54:18.607705+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Radiochemical and geochemical measurements of cryoconite samples from Flade Isblink ice cap, Greenland",
+    "description": "Dataset containing radioisotope concentrations (137Cs, 210Pb, 214Pb, 241Am, 207Bi, 228Ac, 7Be, 40K, 238Pu, 239+240Pu) and geochemical properties (LOI, Carbon content) for 48 cryoconite samples collected from the Flade Isblink ice cap in August 2022. Samples were collected at the surface (0 m depth) across a ~3 km x 4 km area with 5-minute temporal resolution during a single measurement campaign.",
+    "keywords": [
+      "cryoconite",
+      "radioisotopes",
+      "Flade Isblink",
+      "Greenland",
+      "ice cap",
+      "210Pb",
+      "137Cs",
+      "plutonium",
+      "geochemistry",
+      "LOI",
+      "carbon content"
+    ],
+    "spatialCoverage": {
+      "min_lat": 81.5169,
+      "min_lon": -16.1222,
+      "max_lat": 81.5441,
+      "max_lon": -15.8786
+    },
+    "temporalCoverage": {
+      "from": "2022-08-02T22:00:00+00:00",
+      "to": "2022-08-04T02:00:00+00:00"
+    },
+    "spatial": "point locations with ~111 m latitude and ~16 m longitude precision",
+    "temporal": "5-minute intervals"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/966669_3d4dba5b68c34d889d99184b4b4c0cf8.jsonl",
+  "runtime_seconds": 170.93
+}

@@ -1,0 +1,66 @@
+{
+  "csv": "cladium_mariscoides.csv",
+  "dataset_id": "cladium_mariscoides",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5c0f70d131d5fd23375e81ac243223f88e04804fb74bd34960fbc70e47f371e7",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3454,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.417485,
+      "min_lon": -96.54264,
+      "max_lat": 50.405276,
+      "max_lon": -60.016594
+    },
+    "temporalCoverage": {
+      "from": "1979-07-18T12:15:00+00:00",
+      "to": "2026-04-04T12:58:32+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "cladium_mariscoides"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "cladium_mariscoides",
+        "resource": "cladium_mariscoides"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "cladium_mariscoides",
+        "resource": "cladium_mariscoides",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "cladium_mariscoides",
+        "resource": "cladium_mariscoides"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "cladium_mariscoides",
+        "resource": "cladium_mariscoides",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 6.856,
+  "status": "ok"
+}

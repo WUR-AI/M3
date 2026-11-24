@@ -1,0 +1,15 @@
+{
+  "csv": "pterostylis_graminea.csv",
+  "dataset_id": "pterostylis_graminea",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c38db7e2e5492e9a87b32b09af09428289606518e806aab8a4b80ca5e5a9c8f1",
+  "contract_sha256": "83b13b85769218e00f1e53d93f1f98af884b2cd285b2d32261e448859a1915d7",
+  "prompt_tokens": 322287,
+  "status": "skipped",
+  "reason": "context_window"
+}

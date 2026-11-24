@@ -1,0 +1,102 @@
+{
+  "csv": "913861.csv",
+  "dataset_id": "913861",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "4f12a0e5810b32b5ec78c9788b9f5e7c7f24d917d0544d283992885714b59cc2",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 25225,
+  "metadata": {
+    "name": "Aerosol particle size distribution measurements at Neumayer station, 2018",
+    "description": "Dataset containing aerosol particle size distribution (dN/dlogDp) measurements across 72 particle diameter channels ranging from 92.87 nm to 4845.51 nm, collected at Neumayer station in Antarctica throughout 2018.",
+    "keywords": [
+      "aerosol",
+      "particle size distribution",
+      "atmospheric science",
+      "Neumayer",
+      "Antarctica",
+      "dN/dlogDp"
+    ],
+    "spatialCoverage": {
+      "min_lat": -70.65,
+      "min_lon": -8.25,
+      "max_lat": -70.65,
+      "max_lon": -8.25
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01",
+      "to": "2018-12-31"
+    },
+    "spatial": "point",
+    "temporal": "hourly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "913861"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861",
+        "n": 3
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861",
+        "field": "Event",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "913861",
+        "resource": "913861"
+      }
+    }
+  ],
+  "runtime_seconds": 33.851,
+  "status": "ok"
+}

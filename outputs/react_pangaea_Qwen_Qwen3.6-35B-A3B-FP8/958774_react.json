@@ -1,0 +1,105 @@
+{
+  "csv": "958774.csv",
+  "dataset_id": "958774",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4613,
+  "metadata": {
+    "name": "Total Phosphorus Concentrations in Lake Constance (Fischbach-Uttwil)",
+    "description": "Total phosphorus (TP) concentration measurements in Lake Constance at the Fischbach-Uttwil monitoring station, spanning 1951-2010. Data includes summer (July-September) concentrations averaged over the upper 20m of the water column, and winter mixing period concentrations for the entire water column.",
+    "keywords": [
+      "total phosphorus",
+      "TP",
+      "Lake Constance",
+      "water quality",
+      "nutrients",
+      "limnology",
+      "phosphorus concentration"
+    ],
+    "spatialCoverage": {
+      "min_lat": 47.6240037651,
+      "min_lon": 9.3754994815,
+      "max_lat": 47.6240037651,
+      "max_lon": 9.3754994815
+    },
+    "temporalCoverage": {
+      "from": "1951-01-01",
+      "to": "2010-12-31"
+    },
+    "spatial": "point location",
+    "temporal": "yearly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "958774"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "field": "Description",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "field": "Year obs",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "time_column": "Year obs"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "958774",
+        "resource": "958774",
+        "n": 5
+      }
+    }
+  ],
+  "runtime_seconds": 11.537,
+  "status": "ok"
+}

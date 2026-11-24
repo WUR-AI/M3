@@ -1,0 +1,43 @@
+{
+  "csv": "972054.csv",
+  "dataset_id": "972054",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd",
+  "contract_sha256": "2f12df809fb97c1f46d8b6c3386f0d9145390528df112e9b0408c973eabd138a",
+  "prompt_tokens": 23495,
+  "metadata": {
+    "name": "Uelzen, Germany",
+    "description": "6 band color composits, Vegetation index, Metabolism index, Shape file - Attribute format, Shape file - projection description, Shape file - shape format (geometry), Shape file - Shape index format",
+    "keywords": [
+      "Uelzen",
+      "Germany",
+      "6 band color composits",
+      "Vegetation index",
+      "Metabolism index",
+      "Shape file - Attribute format",
+      "Shape file - projection description",
+      "Shape file - shape format (geometry)",
+      "Shape file - Shape index format"
+    ],
+    "spatialCoverage": {
+      "min_lat": 52.798539332,
+      "min_lon": 9.998781436,
+      "max_lat": 52.798539332,
+      "max_lon": 9.998781436
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 15.672,
+  "status": "ok"
+}

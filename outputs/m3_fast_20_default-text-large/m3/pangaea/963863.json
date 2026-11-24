@@ -1,0 +1,38 @@
+{
+  "dataset_id": "963863",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/963863.csv",
+  "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:25:51.317719+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Physico‑chemical Data File Index",
+    "description": "Metadata table describing physico‑chemical data files. Each row provides the file name, size, character set, MIME type, checksum hash, and a free‑text summary of the file contents, which include in‑situ parameters, basic physicochemistry, nutrients, trace elements, and contaminants.",
+    "keywords": [
+      "physico‑chemical",
+      "water quality",
+      "nutrients",
+      "trace elements",
+      "contaminants",
+      "in‑situ",
+      "metadata",
+      "file index",
+      "chemical analysis",
+      "file size",
+      "checksum",
+      "MIME type"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/963863_e11fa14754374d93a103d8a5e19df940.jsonl",
+  "runtime_seconds": 98.88
+}

@@ -1,0 +1,41 @@
+{
+  "csv": "975181.csv",
+  "dataset_id": "975181",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "ecb7b5ed9a1a17db139f60404906a6597234581b11225c226aeee09add86bffa",
+  "contract_sha256": "fd36036754707f3f29753e833a8872b8bfb5ebb4051a90e3b43f30d7e386bfad",
+  "prompt_tokens": 13400,
+  "metadata": {
+    "name": "Uvigerina spp. stable isotope data from sediment core M78/1_181-3",
+    "description": "Dataset containing depth, age, and stable isotope measurements (δ13C and δ18O) of Uvigerina spp. from sediment core M78/1_181-3. The data includes geographic coordinates (latitude, longitude, elevation) and sampling date.",
+    "keywords": [
+      "Uvigerina",
+      "stable isotopes",
+      "δ13C",
+      "δ18O",
+      "sediment core",
+      "paleoclimate",
+      "M78/1_181-3"
+    ],
+    "spatialCoverage": {
+      "min_lat": 29.0,
+      "min_lon": -88.33333333,
+      "max_lat": 29.0,
+      "max_lon": -88.33333333
+    },
+    "temporalCoverage": {
+      "from": "2009-03-04",
+      "to": "2009-03-04"
+    },
+    "spatial": "point locations",
+    "temporal": "point samples"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.063,
+  "status": "ok"
+}

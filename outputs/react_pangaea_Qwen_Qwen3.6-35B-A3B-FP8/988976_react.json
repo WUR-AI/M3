@@ -1,0 +1,107 @@
+{
+  "csv": "988976.csv",
+  "dataset_id": "988976",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 10162,
+  "metadata": {
+    "name": "AMK75-6150 Diatom Abundance Data from Arctic Sediment Core",
+    "description": "Diatom species abundance and ecological group composition data from marine sediment core AMK75-6150 collected at 74.78°N, 8.44°E in the Arctic Ocean. The dataset contains 31 depth intervals spanning 0.005 to 0.305 meters of sediment, with age estimates ranging from 0.062 to 2.847 thousand years. Data includes counts for 26 diatom species and percentages for ecological groups (warm-water, cold-water, ice-neritic, sea ice, sublittoral, freshwater, and fossil diatoms).",
+    "keywords": [
+      "diatoms",
+      "sediment core",
+      "Arctic",
+      "Svalbard",
+      "paleoceanography",
+      "marine sediment",
+      "AMK75"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "988976"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "988976",
+        "resource": "988976",
+        "field": "Event",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 16.856,
+  "status": "ok"
+}

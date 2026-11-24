@@ -1,0 +1,58 @@
+{
+  "csv": "974295.csv",
+  "dataset_id": "974295",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "6604b8a13470969c766611adb4600ebb36684eb9dad4a82de9ed016baaa62889",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 1471,
+  "metadata": {
+    "name": "ANT 1997/98",
+    "description": "Dataset containing radar profiles collected during the Antarctic expedition in the 1997/98 season.",
+    "keywords": [
+      "Antarctica",
+      "Radar",
+      "EMR",
+      "1997/98"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "Point locations",
+    "temporal": "Seasonal"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974295"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "974295",
+        "resource": "974295"
+      }
+    }
+  ],
+  "runtime_seconds": 13.309,
+  "status": "ok"
+}

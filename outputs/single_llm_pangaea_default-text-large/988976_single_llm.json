@@ -1,0 +1,39 @@
+{
+  "csv": "988976.csv",
+  "dataset_id": "988976",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "b1999760a0482b027b9e232eb69f47799159cc301c12913c77a391ef38521031",
+  "contract_sha256": "d4e66faccd9caf95bcb4220c82ecd4b3560e420e3167ed768f0385dc2dbcc625",
+  "prompt_tokens": 6396,
+  "metadata": {
+    "name": "AMK75-6150 diatom and environmental dataset",
+    "description": "A dataset of sediment core measurements from the AMK75-6150 site, including depth, age, diatom species abundances, and associated environmental variables, with geographic coordinates (latitude 74.779983, longitude 8.435083) and elevation for each sample.",
+    "keywords": [
+      "diatoms",
+      "paleoecology",
+      "core sample",
+      "marine",
+      "sediment",
+      "age",
+      "depth",
+      "Antarctica"
+    ],
+    "spatialCoverage": {
+      "min_lat": 74.779983,
+      "min_lon": 8.435083,
+      "max_lat": 74.779983,
+      "max_lon": 8.435083
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.692,
+  "status": "ok"
+}

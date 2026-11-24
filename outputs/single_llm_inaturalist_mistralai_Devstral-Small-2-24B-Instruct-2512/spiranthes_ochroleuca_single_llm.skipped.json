@@ -1,0 +1,15 @@
+{
+  "csv": "spiranthes_ochroleuca.csv",
+  "dataset_id": "spiranthes_ochroleuca",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a9bddfa54fd9dd2d5ec0ce3259667796a658dcff4379d127566c46474efed0c4",
+  "contract_sha256": "d3ed78b826436a653d1e28fdcfabb70e966cd9bf727b20403914ad26ce726f14",
+  "prompt_tokens": 330597,
+  "status": "skipped",
+  "reason": "context_window"
+}

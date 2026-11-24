@@ -1,0 +1,47 @@
+{
+  "dataset_id": "965135",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/965135.csv",
+  "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:56:34.388883+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Porites sp. Coral Geochemical Time-Series from TIAREI-A1, French Polynesia",
+    "description": "High-resolution geochemical time-series dataset from a single Porites coral core (Event TIAREI-A1) collected at 15m depth in the Tuamotu Archipelago, French Polynesia. Contains 96 records of Sr/Ca, Mg/Ca, δ18O, and δ13C measurements spanning approximately 8 years (1999.71 to 2007.63), representing seasonal to interannual climate variability.",
+    "keywords": [
+      "Porites",
+      "coral",
+      "geochemistry",
+      "Sr/Ca",
+      "Mg/Ca",
+      "δ18O",
+      "δ13C",
+      "paleoclimate",
+      "French Polynesia",
+      "Tuamotu",
+      "time-series",
+      "temperature proxy",
+      "salinity proxy"
+    ],
+    "spatialCoverage": {
+      "min_lat": -17.506944,
+      "min_lon": -149.4225,
+      "max_lat": -17.506944,
+      "max_lon": -149.4225
+    },
+    "temporalCoverage": {
+      "from": "1999-09-01",
+      "to": "2007-08-01"
+    },
+    "spatial": "Point location (single coral core at 15m depth)",
+    "temporal": "Sub-annual resolution (approximately monthly based on 96 records over ~8 years)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/965135_d9c33229040b4b37975813ec85e074a7.jsonl",
+  "runtime_seconds": 146.1
+}

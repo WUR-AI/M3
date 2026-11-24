@@ -1,0 +1,16 @@
+{
+  "csv": "901488.csv",
+  "dataset_id": "901488",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 211,
+  "n_columns": 9,
+  "description": "Atmospheric measurements (HRMS, VRMS) with location, elevation, timestamp, status, and event details.",
+  "dataset_description": "Measurements of atmospheric parameters collected March 20 2011 for Earth environmental analysis.",
+  "runtime_seconds": 22.905,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/901488/dictionary.json"
+}

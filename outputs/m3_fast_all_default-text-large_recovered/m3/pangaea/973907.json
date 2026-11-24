@@ -1,0 +1,49 @@
+{
+  "dataset_id": "973907",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973907.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:22:16.479554+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic seismic core measurements – MSM44 event (2015-07-12)",
+    "description": "Dataset of 249 observations collected at a single Arctic location (75.97917° N, ‑66.04717° W) on 12 July 2015. Each row records sediment depth, section depth, core diameter deviation, P‑wave travel time, Vp‑a, AGR, and a categorical section identifier. Latitude, longitude, elevation, event ID and timestamp are identical for all rows. (based on the data in the dataset)",
+    "keywords": [
+      "Arctic",
+      "seismic",
+      "P-wave travel time",
+      "Vp-a",
+      "core diameter deviation",
+      "sediment depth",
+      "section depth",
+      "MSM44",
+      "2015-07-12",
+      "geophysical survey",
+      "Depth sed",
+      "Depth sect",
+      "Sect",
+      "AGR"
+    ],
+    "spatialCoverage": {
+      "min_lat": 75.97917,
+      "min_lon": -66.04717,
+      "max_lat": 75.97917,
+      "max_lon": -66.04717
+    },
+    "temporalCoverage": {
+      "from": "2015-07-12T15:22:00+00:00",
+      "to": "2015-07-12T15:22:00+00:00"
+    },
+    "spatial": "point-level (single fixed location)",
+    "temporal": "event-level (single timestamp)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973907_9f3ebdad98184bafa15c4f4c1a1d14fc.jsonl",
+  "runtime_seconds": 203.3,
+  "recovered_from_trace": true,
+  "source_sha256": "75f1c79e08533c978df3975e4cee74bb25fbc689f309c30bd91fc6df07318c2f"
+}

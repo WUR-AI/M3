@@ -1,0 +1,59 @@
+{
+  "csv": "982395.csv",
+  "dataset_id": "982395",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3629,
+  "metadata": {
+    "name": "Sediment core geochemical measurements from BH‑II site",
+    "description": "Geochemical dataset containing depth‑resolved measurements of total organic carbon (TOC), black carbon (BC), calcium carbonate, pH, grain‑size fractions, trace metal concentrations (Pb, Zn, Cu, S, etc.), stable isotope ratios (δ13C, δ15N), and associated metadata (latitude, longitude, elevation, sampling date) for the BH‑II sediment core.",
+    "keywords": [
+      "sediment",
+      "core",
+      "geochemistry",
+      "TOC",
+      "black carbon",
+      "trace metals",
+      "isotopes",
+      "BH‑II",
+      "depth profile",
+      "pH",
+      "grain size"
+    ],
+    "spatialCoverage": {
+      "min_lat": 51.41327778,
+      "min_lon": 12.08452778,
+      "max_lat": 51.41327778,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22",
+      "to": "2018-07-22"
+    },
+    "spatial": "point location",
+    "temporal": "single date"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "982395"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "982395",
+        "resource": "982395"
+      }
+    }
+  ],
+  "runtime_seconds": 8.364,
+  "status": "ok"
+}

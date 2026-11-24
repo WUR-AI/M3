@@ -35,6 +35,8 @@ uv pip install -e .
 
 See [`src/readme.md`](./src/readme.md) for optional dependency groups, LLM configuration, and usage.
 
+<br>
+
 ## Where to find what
 
 | Path | What you'll find |
@@ -44,7 +46,7 @@ See [`src/readme.md`](./src/readme.md) for optional dependency groups, LLM confi
 | [`src/players/`](./src/players) | Agent roles, prompts, and tool assignments |
 | [`src/context/`](./src/context) | Unified data layer for CSV, SQLite, and multi-table inputs |
 | [`src/tools/`](./src/tools) | Tools agents use to inspect datasets (schema, samples, relationships) |
-| [`src/standards.py`](./src/standards.py) | Predefined metadata output formats (e.g. Dublin Core, relational) |
+| [`src/standards/`](./src/standards) | Predefined metadata output formats (e.g. Dublin Core, relational, Croissant) |
 | [`src/topology.py`](./src/topology.py) | Execution topologies (player count, debate rounds) |
 | [`src/main.py`](./src/main.py) | CLI entry point (`metadata-agent`) |
 | [`src/tui/`](./src/tui) | Terminal UI for interactive metadata extraction |

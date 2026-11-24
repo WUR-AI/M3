@@ -1,0 +1,115 @@
+{
+  "csv": "902576.csv",
+  "dataset_id": "902576",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b06c3394469ddd9b33f1f543a33543a85632b83506b0cb72086d0f8e099211ea",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 4408,
+  "metadata": {
+    "name": "Permafrost Extent - Mean Annual Ground Temperature and Permafrost Probability for Antarctica",
+    "description": "Associated files for a permafrost dataset containing Mean Annual Ground Temperature (MAGTM), MAGT Standard Deviation, and Permafrost Probability Fraction for Antarctica, covering the period 2000-2017. Published by Obu et al. 2019.",
+    "keywords": [
+      "permafrost",
+      "ground temperature",
+      "Antarctica",
+      "MAGT",
+      "permafrost probability",
+      "PANGAEA"
+    ],
+    "spatialCoverage": {
+      "min_lat": 0.0,
+      "min_lon": 0.0,
+      "max_lat": 0.0,
+      "max_lon": 0.0
+    },
+    "temporalCoverage": {
+      "from": "2000-01-01",
+      "to": "2017-12-31"
+    },
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "902576"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576",
+        "n": 4
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576",
+        "field": "File name",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576",
+        "field": "Content",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 13.471,
+  "status": "ok"
+}

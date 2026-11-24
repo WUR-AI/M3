@@ -1,0 +1,36 @@
+{
+  "dataset_id": "960522",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/960522.csv",
+  "source_sha256": "3bb28cd5e16d4d59f094461b12276b04514b16f4838bc2b41b39519704550e84",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T14:45:57.932486+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Limacina helicina Environmental and Chemical Measurements",
+    "description": "This dataset contains environmental and chemical measurements related to the species Limacina helicina, collected in a laboratory setting. The data includes various parameters such as temperature, salinity, dissolved oxygen, pH, partial pressure of CO2, and saturation states of aragonite and calcite. The measurements were taken at a single location (48.43° N, -126.23° E) in the year 2019.",
+    "keywords": [
+      "Limacina helicina",
+      "Environmental measurements",
+      "Chemical measurements",
+      "Temperature",
+      "Salinity",
+      "Dissolved oxygen",
+      "pH",
+      "CO2",
+      "Aragonite",
+      "Calcite",
+      "Marine chemistry",
+      "Oceanography",
+      "2019",
+      "Pacific Ocean"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/960522_7c9f9e8427a445208d032049345c1dcb.jsonl",
+  "runtime_seconds": 614.65
+}

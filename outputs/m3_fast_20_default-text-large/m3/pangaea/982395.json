@@ -1,0 +1,46 @@
+{
+  "dataset_id": "982395",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/982395.csv",
+  "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:46:46.191623+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment geochemistry and grain‑size data from two German field campaigns (2018‑2019)",
+    "description": "21 sediment samples collected at a single site (51.4108 N, 12.0796 E, 113.8 m a.s.l.) during two campaigns (BH‑II 2018‑07‑22, BH‑rec 2019‑08‑12). Each record includes depth, TOC, BC, CaCO₃, pH, four grain‑size fractions, CPA, trace‑element concentrations, S/V, C/V (available for 8 samples), and δ¹³C/δ¹⁵N values.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "grain size",
+      "TOC",
+      "black carbon",
+      "CaCO3",
+      "pH",
+      "trace elements",
+      "δ13C",
+      "δ15N",
+      "Germany",
+      "2018‑2019"
+    ],
+    "spatialCoverage": {
+      "min_lat": 51.410785,
+      "max_lat": 51.41327778,
+      "min_lon": 12.079572,
+      "max_lon": 12.08452778
+    },
+    "temporalCoverage": {
+      "from": "2018-07-22T00:00:00+00:00",
+      "to": "2019-08-12T00:00:00+00:00"
+    },
+    "spatial": "Coordinate precision ≈1 mm (8 dp); points span ~0.3 km N‑S by ~0.34 km E‑W",
+    "temporal": "daily (date strings, no time component)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/982395_1eb6bf3662df45b0b5b9cd06ebe0aeec.jsonl",
+  "runtime_seconds": 206.68
+}

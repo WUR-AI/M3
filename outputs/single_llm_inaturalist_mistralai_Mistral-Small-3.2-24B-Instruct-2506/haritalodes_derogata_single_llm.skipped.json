@@ -1,0 +1,15 @@
+{
+  "csv": "haritalodes_derogata.csv",
+  "dataset_id": "haritalodes_derogata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "4bbdffe6dbf974ac6b436bbb7c812608fd302503f78afa73008ed9637096e7b0",
+  "contract_sha256": "9ae0acd2dc00634564d963c73904f65d1669a15c4ed661193e160f0f736d8b89",
+  "prompt_tokens": 312012,
+  "status": "skipped",
+  "reason": "context_window"
+}

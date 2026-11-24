@@ -1,0 +1,15 @@
+{
+  "csv": "macolor_niger.csv",
+  "dataset_id": "macolor_niger",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b678f76bb6f3c43b2dc6f453dbd9a1d40580ab0b18af05911bf5c1869498a943",
+  "contract_sha256": "3aed65aa1c6e5caa35c4b631d8c8ac1e0aa734a1020e7b32c9a0ec7b85508fa3",
+  "prompt_tokens": 309784,
+  "status": "skipped",
+  "reason": "context_window"
+}

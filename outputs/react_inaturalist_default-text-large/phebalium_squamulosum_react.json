@@ -1,0 +1,59 @@
+{
+  "csv": "phebalium_squamulosum.csv",
+  "dataset_id": "phebalium_squamulosum",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e0710fb9cd8e05bde812f41412f515d98bc73618bfdcca901507617a975c61f1",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 2010,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -38.178698,
+      "min_lon": 144.992263,
+      "max_lat": -29.456289,
+      "max_lon": 152.188308
+    },
+    "temporalCoverage": {
+      "from": "1990-12-30T15:15:00+00:00",
+      "to": "2026-06-12T11:35:11+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "phebalium_squamulosum"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "phebalium_squamulosum",
+        "resource": "phebalium_squamulosum"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "phebalium_squamulosum",
+        "resource": "phebalium_squamulosum",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "phebalium_squamulosum",
+        "resource": "phebalium_squamulosum",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.292,
+  "status": "ok"
+}

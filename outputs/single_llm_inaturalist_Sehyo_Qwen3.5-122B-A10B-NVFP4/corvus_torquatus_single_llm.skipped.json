@@ -1,0 +1,15 @@
+{
+  "csv": "corvus_torquatus.csv",
+  "dataset_id": "corvus_torquatus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "97ab93f16ef676b37fd174bca510e5108072df15b91d63c266e4aaff6741eafa",
+  "contract_sha256": "8030fa927d17bbb059180d7b50d9dfdb5e821b74588be870c26a222c50380a25",
+  "prompt_tokens": 315869,
+  "status": "skipped",
+  "reason": "context_window"
+}

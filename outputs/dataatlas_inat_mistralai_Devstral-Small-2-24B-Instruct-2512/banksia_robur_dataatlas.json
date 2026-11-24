@@ -1,0 +1,16 @@
+{
+  "csv": "banksia_robur.csv",
+  "dataset_id": "banksia_robur",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1004,
+  "n_columns": 50,
+  "description": "Banksia robur species occurrence records from 1989 to 2026 in Australia.",
+  "dataset_description": "Species occurrence records for Banksia robur from 1989 to 2026 in biodiversity domain.",
+  "runtime_seconds": 31.934,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/banksia_robur/dictionary.json"
+}

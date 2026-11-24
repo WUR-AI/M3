@@ -1,0 +1,43 @@
+{
+  "dataset_id": "924708",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924708.csv",
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:48:22.427141+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Marine Mammal Sighting Records from PS87 Expedition",
+    "description": "Dataset containing 8 marine mammal observation records from the PS87 tracking expedition in the high Arctic (Norwegian/Barents Sea region). Each record includes timestamp, geographic coordinates, species identification (primarily unidentified dolphins), certainty level, and number of individuals observed.",
+    "keywords": [
+      "marine mammals",
+      "whales",
+      "dolphins",
+      "Arctic",
+      "sightings",
+      "PS87",
+      "Norwegian Sea",
+      "Barents Sea",
+      "cetaceans"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06T10:34:00+00:00",
+      "to": "2014-10-01T11:50:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular hourly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924708_e4b23e3bd2aa4b1cb29fb5ede0ff9048.jsonl",
+  "runtime_seconds": 74.84
+}

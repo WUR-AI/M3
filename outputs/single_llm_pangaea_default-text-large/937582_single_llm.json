@@ -1,0 +1,43 @@
+{
+  "csv": "937582.csv",
+  "dataset_id": "937582",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "1b4437a62c7a6600b478b9acf419a05aebf9f4af6fd8023b6d8e709a67082012",
+  "contract_sha256": "56b784adb3e5e5a08db6b61e574d9a397853aff23d9990beb769c796e3f7156c",
+  "prompt_tokens": 17932,
+  "metadata": {
+    "name": "Nuna WP4 Mackenzie 2019‑2020 Fluorescence Dataset",
+    "description": "Point‑based measurements of fluorescence dissolved organic matter (FDOM) and related optical parameters collected at multiple stations during several expeditions (Expedition 1‑4) in the Mackenzie River/Arctic region between April 2019 and September 2020.",
+    "keywords": [
+      "Mackenzie",
+      "Arctic",
+      "fluorescence",
+      "FDOM",
+      "expedition",
+      "water column",
+      "marine science",
+      "CTD",
+      "2020"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20",
+      "to": "2020-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 10.283,
+  "status": "ok"
+}

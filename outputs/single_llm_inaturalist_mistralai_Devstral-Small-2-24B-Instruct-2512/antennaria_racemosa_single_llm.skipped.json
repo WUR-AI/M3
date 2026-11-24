@@ -1,0 +1,15 @@
+{
+  "csv": "antennaria_racemosa.csv",
+  "dataset_id": "antennaria_racemosa",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a0082804826202276c78998302de267b81bf2c22269f656fb7c895c309920012",
+  "contract_sha256": "c19b151bab3911c74073b604d37324be906ddb6bbfc38d80f7b3defd7afb5cba",
+  "prompt_tokens": 309323,
+  "status": "skipped",
+  "reason": "context_window"
+}

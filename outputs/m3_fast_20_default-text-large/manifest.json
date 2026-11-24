@@ -1,0 +1,172 @@
+{
+  "seed": 9,
+  "n_per_corpus": 20,
+  "model": "default-text-large",
+  "topology": "fast",
+  "datasets": {
+    "pangaea": [
+      {
+        "id": "899705",
+        "source_sha256": "bf282511254300120623c4e1ade579ff3f0e355f58483e120ce48df5674787db"
+      },
+      {
+        "id": "913868",
+        "source_sha256": "c0511e76b8edf563e4cac8c8b2d4c1f3fc73731ceba37608306521e4ec2d8afa"
+      },
+      {
+        "id": "917831",
+        "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59"
+      },
+      {
+        "id": "917841",
+        "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7"
+      },
+      {
+        "id": "944025",
+        "source_sha256": "a530a26bc0e4fe56a3fdc94260921220a39b3ec5b60be156d609cd00803f6e1c"
+      },
+      {
+        "id": "953747",
+        "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8"
+      },
+      {
+        "id": "958774",
+        "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1"
+      },
+      {
+        "id": "959885",
+        "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f"
+      },
+      {
+        "id": "961119",
+        "source_sha256": "2f0b84eeab99425dbb234add19202f7e5d806caa38f0fafe6436988f7e254f4a"
+      },
+      {
+        "id": "961147",
+        "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24"
+      },
+      {
+        "id": "963863",
+        "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e"
+      },
+      {
+        "id": "965135",
+        "source_sha256": "60e24bc4453c67f75ee83c8f6ed8a0343eed958b5a1c1e75437da24b9f9a1a4d"
+      },
+      {
+        "id": "965137",
+        "source_sha256": "040ea113a6459c88179610e781f09b1e537c72d84cbcae2faf2a0ceb52eca11c"
+      },
+      {
+        "id": "971851",
+        "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13"
+      },
+      {
+        "id": "972178",
+        "source_sha256": "01924990922f1923b0151b1600fe85752736b22b31372a315bb197b3454a4df4"
+      },
+      {
+        "id": "973035",
+        "source_sha256": "29e651ef62a35ab255e95f32dcb44d14bf301bd76420e6755626061630696cfc"
+      },
+      {
+        "id": "973041",
+        "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805"
+      },
+      {
+        "id": "982395",
+        "source_sha256": "cfd0269d733f62b31d0cf5877442e4b2fb4ef95c016b4eeb4a144378c9782205"
+      },
+      {
+        "id": "987056",
+        "source_sha256": "c679b64af9656205fbe4f33f6f7a71f57f9f0abe1933a8d0c5b51b6657b297a9"
+      },
+      {
+        "id": "990054",
+        "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660"
+      }
+    ],
+    "inaturalist": [
+      {
+        "id": "acianthus_fornicatus",
+        "source_sha256": "6237171c3f3b863dce2c40040e6ab2f500a886a241851de3dbed2e96e4268374"
+      },
+      {
+        "id": "amyema_preissii",
+        "source_sha256": "ff548a023a4fb1a050cbdd2c377da489e8c69c6e70b947268175d50adc7c88c7"
+      },
+      {
+        "id": "asemosyrphus_mexicanus",
+        "source_sha256": "fafc0b8a3151e28ebb764d5fc3f05e63c9c61d84297bd5602d32f68d165e231b"
+      },
+      {
+        "id": "chlorurus_bleekeri",
+        "source_sha256": "f6eff0930d2c82a613e823ce4e05eb28fcd765ace3184b0299c02ffd44a3a1d5"
+      },
+      {
+        "id": "cinnyris_pulchellus",
+        "source_sha256": "ddc15a0c8a3ff9a94bae2d95048c53b18ef8a6c7f295156ee77642bc51cb4d93"
+      },
+      {
+        "id": "clarias_gariepinus",
+        "source_sha256": "c314e5d79c1e7fa3b8657c666bbf0e6d785a17db9dad4cb9157d873b4234c731"
+      },
+      {
+        "id": "eucalyptus_regnans",
+        "source_sha256": "dde21dc3dedd4567d4dd4dfbcd5b607b2438bdb2df760e94d9c0da3c568e15ea"
+      },
+      {
+        "id": "hibbertia_hypericoides",
+        "source_sha256": "c1e6262795108323b0a9de588aab51e92795f715dbfa830aca09d2ebe8253b55"
+      },
+      {
+        "id": "hymeniacidon_perlevis",
+        "source_sha256": "dbdcf480e98bfaa4b7b7c22c8772bac31bae189d826906062a6a22871a2e44c9"
+      },
+      {
+        "id": "lachnagrostis_billardierei",
+        "source_sha256": "6aeaf7ffbf2724abed133cb21f87960abe4833b94bf0bffa8b6489bf55d6caad"
+      },
+      {
+        "id": "lactuca_graminifolia",
+        "source_sha256": "be2194ec06d81abca373d5f54da1795912a343fbed2bcfb5b28c67ac441a9f99"
+      },
+      {
+        "id": "muhlenbergia_lindheimeri",
+        "source_sha256": "30f6271c3bb7ec0a1c6f22d04a355c286c69c45bb30d401432ef4d308f906e36"
+      },
+      {
+        "id": "nannophya_pygmaea",
+        "source_sha256": "a6cfd2ab9d732bd13948840b94ef5bb36dc4bf688bf33e3caf0a6ff92f9a3ef0"
+      },
+      {
+        "id": "pectocarya_recurvata",
+        "source_sha256": "2c1205162ae0eee5a57bfff2983a6e11d44981c1558d464a4c82db5fb0fea28e"
+      },
+      {
+        "id": "pterostylis_graminea",
+        "source_sha256": "c38db7e2e5492e9a87b32b09af09428289606518e806aab8a4b80ca5e5a9c8f1"
+      },
+      {
+        "id": "ptychoramphus_aleuticus",
+        "source_sha256": "80bfff6219ff696f223ae202c2d3cba494e22facb5b9b9c22706699c63f449c1"
+      },
+      {
+        "id": "sapium_haematospermum",
+        "source_sha256": "bdc0443ab65fba07247a201c7d786d8159da4c7ac747301b6c7c89539d50223a"
+      },
+      {
+        "id": "sesamum_indicum",
+        "source_sha256": "c8f4c84876bf4a93d7fc94ae7cdf7114f028269b8b8d40b4d86b1b5f5e571703"
+      },
+      {
+        "id": "sphenophorus_interstitialis",
+        "source_sha256": "b35571d10cb4f25590bc23334f33933035f0f39638fea17da6c79da6af16c63f"
+      },
+      {
+        "id": "struthiolaria_papulosa",
+        "source_sha256": "9f17658d337b2df68728fbc6f5605ff7ad6c0aae51b18485c48b0d7d9cef3a8f"
+      }
+    ]
+  }
+}

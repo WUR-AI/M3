@@ -1,0 +1,18 @@
+{
+  "csv": "954529.csv",
+  "dataset_id": "954529",
+  "title": "954529",
+  "provider": "surf",
+  "model": "default-text-large",
+  "n_rows": 10,
+  "n_columns": 2,
+  "sample_size": 10,
+  "topic": "Topographic Data",
+  "dataset_profile": "The key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. ",
+  "datamart_semantic_notes": "",
+  "semantic_profile": "The key semantic information for this dataset includes:\n**GIS**: Represents location. Contains spatial data (resolution: Place). Domain-specific type: geospatial. Function/Usage context: dataset identifier. \n**XLSX**: ",
+  "prompt": "Answer the question using the following information.\n\nFirst, consider the dataset sample:\n\nGIS,XLSX\nBig_Skidder.zip,\nBlack_Hills.zip,\nBlue_Hills.zip,\nCougar_Mountain.zip,\nDevils_Mountain.zip,\nDow_Mountain.zip,\nFidalgo_Island.zip,\nLopez_Island.zip,\nSan_Juan.zip,\n,TopographicHigh_RawData.xlsx\n\n\nAdditionally, the dataset profile is as follows:\n\nThe key data profile information for this dataset includes:\n**GIS**: Data is of type text. There are 9 unique values. \n**XLSX**: Data is of type text. There are 1 unique values. \n\nBased on this profile, please add sentence(s) to enrich the dataset description.\n\nFurthermore, the semantic profile of the dataset columns is as follows:\nThe key semantic information for this dataset includes:\n**GIS**: Represents location. Contains spatial data (resolution: Place). Domain-specific type: geospatial. Function/Usage context: dataset identifier. \n**XLSX**: \n\nBased on this information, please add sentence(s) discussing the semantic profile in the description.\n\nMoreover, the dataset topic is: Topographic Data. Based on this topic, please add sentence(s) describing what this dataset can be used for.\n\nQuestion: Based on the information above and the requirements, provide a dataset description in sentences. Use only natural, readable sentences without special formatting.\n\nAnswer:\n\nTarget length: approximately 100 words.",
+  "description": "The collection comprises a set of zip files and an Excel workbook that together provide topographic information for several locations. The GIS column lists nine distinct place names, such as Big Skidder, Black Hills, and San Juan, serving as the primary identifier for each spatial record. The XLSX column contains a single entry, the file TopographicHigh_RawData.xlsx, which holds the raw elevation data. Because the GIS field is a geospatial identifier with place‑level resolution, the dataset can be used for mapping, terrain analysis, environmental planning, and other topographic studies. It is well suited for researchers and GIS professionals needing location‑specific elevation data.",
+  "runtime_seconds": 40.681,
+  "status": "ok"
+}

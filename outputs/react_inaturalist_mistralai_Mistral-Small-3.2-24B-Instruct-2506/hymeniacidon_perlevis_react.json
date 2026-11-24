@@ -1,0 +1,88 @@
+{
+  "csv": "hymeniacidon_perlevis.csv",
+  "dataset_id": "hymeniacidon_perlevis",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "dbdcf480e98bfaa4b7b7c22c8772bac31bae189d826906062a6a22871a2e44c9",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4361,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -42.732837,
+      "min_lon": -124.164397,
+      "max_lat": 57.362572,
+      "max_lon": 153.606811
+    },
+    "temporalCoverage": {
+      "from": "2010-07-10",
+      "to": "2026-06-13"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "hymeniacidon_perlevis",
+        "resource": "hymeniacidon_perlevis",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 21.004,
+  "status": "ok"
+}

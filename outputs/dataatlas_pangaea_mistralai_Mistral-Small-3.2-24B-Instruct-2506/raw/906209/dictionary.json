@@ -1,0 +1,210 @@
+{
+  "dataset_name": "906209",
+  "list_of_tables": [
+    "906209"
+  ],
+  "tables": {
+    "906209": {
+      "table_name": "906209",
+      "row_count": 3,
+      "number_of_columns": 5,
+      "list_of_columns": [
+        "Content",
+        "File name",
+        "File format",
+        "File size",
+        "URL file"
+      ],
+      "columns": {
+        "Content": {
+          "column_name": "Content",
+          "data_type": "string",
+          "sample_values": [
+            "Interviews",
+            "Pacas hunting record",
+            "Catch-per-unit-effort record"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaaa": 1,
+            "Aaaaa aaaaaaa aaaaaa": 1,
+            "Aaaaa-aaa-aaaa-aaaaaa aaaaaa": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Interviews",
+                1
+              ],
+              [
+                "Pacas hunting record",
+                1
+              ],
+              [
+                "Catch-per-unit-effort record",
+                1
+              ]
+            ],
+            "unique_count": 3
+          },
+          "description": "Content types of Earth and environmental science data files."
+        },
+        "File name": {
+          "column_name": "File name",
+          "data_type": "string",
+          "sample_values": [
+            "3_Archive_Hunting_Registers_CPUE",
+            "2_Archive_Hunting_Registers_Pregnancy_Immatures",
+            "1_Archive_Interviews_Pregnancy_Diagnoses_Final"
+          ],
+          "data_patterns": {
+            "9_Aaaaaaa_Aaaaaaaaaa_Aaaaaaaaa_Aaaaaaaaa_Aaaaa": 1,
+            "9_Aaaaaaa_Aaaaaaa_Aaaaaaaaa_Aaaaaaaaa_Aaaaaaaaa": 1,
+            "9_Aaaaaaa_Aaaaaaa_Aaaaaaaaa_AAAA": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "1_Archive_Interviews_Pregnancy_Diagnoses_Final",
+                1
+              ],
+              [
+                "2_Archive_Hunting_Registers_Pregnancy_Immatures",
+                1
+              ],
+              [
+                "3_Archive_Hunting_Registers_CPUE",
+                1
+              ]
+            ],
+            "unique_count": 3
+          },
+          "description": "File names of earth and environmental science data archives."
+        },
+        "File format": {
+          "column_name": "File format",
+          "data_type": "string",
+          "sample_values": [
+            "XLSX",
+            "XLSX",
+            "XLSX"
+          ],
+          "data_patterns": {
+            "AAAA": 3
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "XLSX",
+                3
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "File format consistently listed as XLSX."
+        },
+        "File size": {
+          "column_name": "File size",
+          "data_type": "float",
+          "sample_values": [
+            156.236,
+            254.888,
+            24.848
+          ],
+          "data_patterns": {
+            "999.999": 2,
+            "99.999": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 24.848,
+            "max": 254.888,
+            "mean": 145.324,
+            "median": 156.236,
+            "std": 115.40755697960164
+          },
+          "description": "File sizes in unspecified units."
+        },
+        "URL file": {
+          "column_name": "URL file",
+          "data_type": "string",
+          "sample_values": [
+            "https://store.pangaea.de/Publications/El_Bizri-etal_2019/2_Archive_Hunting_Registers_Pregnancy_Immatures.xlsx",
+            "https://store.pangaea.de/Publications/El_Bizri-etal_2019/1_Archive_Interviews_Pregnancy_Diagnoses_Final.xlsx",
+            "https://store.pangaea.de/Publications/El_Bizri-etal_2019/3_Archive_Hunting_Registers_CPUE.xlsx"
+          ],
+          "data_patterns": {
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aa_Aaaaa-aaaa_9999/9_Aaaaaaa_Aaaaaaaaaa_Aaaaaaaaa_Aaaaaaaaa_Aaaaa.aaaa": 1,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aa_Aaaaa-aaaa_9999/9_Aaaaaaa_Aaaaaaa_Aaaaaaaaa_Aaaaaaaaa_Aaaaaaaaa.aaaa": 1,
+            "aaaaa://aaaaa.aaaaaaa.aa/Aaaaaaaaaaaa/Aa_Aaaaa-aaaa_9999/9_Aaaaaaa_Aaaaaaa_Aaaaaaaaa_AAAA.aaaa": 1
+          },
+          "total_rows": 3,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "https://store.pangaea.de/Publications/El_Bizri-etal_2019/1_Archive_Interviews_Pregnancy_Diagnoses_Final.xlsx",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/El_Bizri-etal_2019/2_Archive_Hunting_Registers_Pregnancy_Immatures.xlsx",
+                1
+              ],
+              [
+                "https://store.pangaea.de/Publications/El_Bizri-etal_2019/3_Archive_Hunting_Registers_CPUE.xlsx",
+                1
+              ]
+            ],
+            "unique_count": 3
+          },
+          "description": "Links to Earth and environmental science data files."
+        }
+      },
+      "sample_rows": [
+        {
+          "Content": "Interviews",
+          "File name": "1_Archive_Interviews_Pregnancy_Diagnoses_Final",
+          "File format": "XLSX",
+          "File size": 254.888,
+          "URL file": "https://store.pangaea.de/Publications/El_Bizri-etal_2019/1_Archive_Interviews_Pregnancy_Diagnoses_Final.xlsx"
+        },
+        {
+          "Content": "Pacas hunting record",
+          "File name": "2_Archive_Hunting_Registers_Pregnancy_Immatures",
+          "File format": "XLSX",
+          "File size": 156.236,
+          "URL file": "https://store.pangaea.de/Publications/El_Bizri-etal_2019/2_Archive_Hunting_Registers_Pregnancy_Immatures.xlsx"
+        },
+        {
+          "Content": "Catch-per-unit-effort record",
+          "File name": "3_Archive_Hunting_Registers_CPUE",
+          "File format": "XLSX",
+          "File size": 24.848,
+          "URL file": "https://store.pangaea.de/Publications/El_Bizri-etal_2019/3_Archive_Hunting_Registers_CPUE.xlsx"
+        }
+      ],
+      "description": "Earth and environmental science data files with metadata and download links.",
+      "is_row_capped": false,
+      "rows_processed": 3,
+      "total_rows_in_file": 3
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science data, 906209 tables, 3 rows each, unspecified time coverage."
+}

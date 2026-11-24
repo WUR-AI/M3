@@ -1,0 +1,66 @@
+{
+  "csv": "hellula_rogatalis.csv",
+  "dataset_id": "hellula_rogatalis",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "095adc5831b9a4bc58e4116789902cee37cd1285cecdd2ddfd7037b7adf8fdf6",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3211,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 18.903435,
+      "min_lon": -123.681117,
+      "max_lat": 42.633347,
+      "max_lon": -9.662854
+    },
+    "temporalCoverage": {
+      "from": "2002-09-02T00:00:00+00:00",
+      "to": "2026-06-11T21:39:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "hellula_rogatalis"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude",
+        "resource": "hellula_rogatalis"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "hellula_rogatalis",
+        "resource": "hellula_rogatalis",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 5.903,
+  "status": "ok"
+}

@@ -1,0 +1,15 @@
+{
+  "csv": "bulla_gouldiana.csv",
+  "dataset_id": "bulla_gouldiana",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "13e51a020b12d9206106b5e65236fa5522099fc00e87a4235cb0faf5570e152b",
+  "contract_sha256": "cda87cbb41eeadeda754c5dae0469059f1db7eead5c8a39db8a33ca3d07c16fa",
+  "prompt_tokens": 303906,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": "amyema_preissii",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/amyema_preissii.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T13:58:58.519928+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -38.599571,
+      "min_lon": 113.553928,
+      "max_lat": -20.854222,
+      "max_lon": 147.263089
+    },
+    "temporalCoverage": {
+      "from": "1990-01-23T12:15:00Z",
+      "to": "2026-06-14T11:26:03Z"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/amyema_preissii_d08b8579bc7f40708110c822a95cbef7.jsonl",
+  "runtime_seconds": 72.41,
+  "recovered_from_trace": true,
+  "source_sha256": "ff548a023a4fb1a050cbdd2c377da489e8c69c6e70b947268175d50adc7c88c7"
+}

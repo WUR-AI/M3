@@ -1,0 +1,39 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "55d46e24577143b018c4593de878282a9eae1a62cd1170fd5c86363b4d761535",
+  "prompt_tokens": 3759,
+  "metadata": {
+    "name": "SO268_074MUC Sediment Core Analysis",
+    "description": "Dataset containing geochemical analysis of sediment core samples from the Belgian collector trial pre-impact area, including concentrations of various elements and their relative enrichments.",
+    "keywords": [
+      "sediment core",
+      "geochemistry",
+      "elemental analysis",
+      "marine sediment",
+      "Belgian collector trial"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20",
+      "to": "2019-03-20"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.135,
+  "status": "ok"
+}

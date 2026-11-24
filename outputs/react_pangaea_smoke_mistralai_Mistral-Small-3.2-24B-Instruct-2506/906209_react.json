@@ -1,0 +1,83 @@
+{
+  "csv": "906209.csv",
+  "dataset_id": "906209",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "7a709b8410aa33007e12b2c4e7c41f9845412599357b446a23c181e2e2359e1c",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2150,
+  "metadata": {
+    "name": "Interviews, Pacas hunting record, Catch-per-unit-effort record",
+    "description": "Archive of interviews, pacas hunting record, and catch-per-unit-effort record",
+    "keywords": [
+      "Interviews",
+      "Pacas hunting record",
+      "Catch-per-unit-effort record",
+      "XLSX"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "906209"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209",
+        "field": "Content",
+        "limit": 100
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "906209",
+        "resource": "906209",
+        "field": "File format",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 19.517,
+  "status": "ok"
+}

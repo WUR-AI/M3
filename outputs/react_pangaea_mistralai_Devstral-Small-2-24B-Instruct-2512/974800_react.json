@@ -1,0 +1,86 @@
+{
+  "csv": "974800.csv",
+  "dataset_id": "974800",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "78cecdada1c2ccc5a24a6e49569602f99e492f415361504b0cdc4d9464446ae8",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 2352,
+  "metadata": {
+    "name": "Laboratory experiment on X. umbellata pulsation",
+    "description": "Dataset containing measurements of X. umbellata pulsation under different treatments in a laboratory experiment. The experiment includes tanks with various treatments such as Zooplankton, Control, DOC, and Phytoplankton.",
+    "keywords": [
+      "laboratory experiment",
+      "X. umbellata",
+      "pulsation",
+      "treatment",
+      "zooplankton",
+      "phytoplankton",
+      "DOC",
+      "control"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "single measurement"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "974800"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "n": 10
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800"
+      }
+    },
+    {
+      "tool": "analyze_spatial_column",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "column": "DOE"
+      }
+    },
+    {
+      "tool": "analyze_spatial_column",
+      "args": {
+        "context_key": "974800",
+        "resource": "974800",
+        "column": "X. umbellata pulsation"
+      }
+    }
+  ],
+  "runtime_seconds": 12.721,
+  "status": "ok"
+}

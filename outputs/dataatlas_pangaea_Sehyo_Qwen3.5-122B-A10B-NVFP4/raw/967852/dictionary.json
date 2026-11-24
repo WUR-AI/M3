@@ -1,0 +1,783 @@
+{
+  "dataset_name": "967852",
+  "list_of_tables": [
+    "967852"
+  ],
+  "tables": {
+    "967852": {
+      "table_name": "967852",
+      "row_count": 19,
+      "number_of_columns": 16,
+      "list_of_columns": [
+        "Sample ID",
+        "Sample label",
+        "Thick",
+        "Ratio",
+        "Strat height",
+        "Qz",
+        "Clay",
+        "Cal",
+        "Gp",
+        "Dol",
+        "Py",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Sample ID": {
+          "column_name": "Sample ID",
+          "data_type": "string",
+          "semantic_type": "identifier",
+          "sample_values": [
+            "ST21L3",
+            "ST19MA3",
+            "ST19LA3",
+            "ST19MC3",
+            "ST18M3",
+            "ST19LC2",
+            "ST21M3",
+            "ST20L3",
+            "ST22MC2",
+            "ST22MA3",
+            "ST22MB5",
+            "ST22AM3",
+            "ST19LB3",
+            "ST22LB3",
+            "ST19MB3",
+            "ST20M2",
+            "ST18L3",
+            "ST22LA3",
+            "ST22LC4"
+          ],
+          "data_patterns": {
+            "AA99AA9": 13,
+            "AA99A9": 6
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "ST18M3",
+                1
+              ],
+              [
+                "ST19LB3",
+                1
+              ],
+              [
+                "ST21L3",
+                1
+              ],
+              [
+                "ST18L3",
+                1
+              ],
+              [
+                "ST20M2",
+                1
+              ],
+              [
+                "ST22MC2",
+                1
+              ],
+              [
+                "ST19LA3",
+                1
+              ],
+              [
+                "ST22LA3",
+                1
+              ],
+              [
+                "ST22LB3",
+                1
+              ],
+              [
+                "ST22LC4",
+                1
+              ]
+            ],
+            "unique_count": 19
+          },
+          "description": "Unique alphanumeric codes identifying individual geological samples."
+        },
+        "Sample label": {
+          "column_name": "Sample label",
+          "data_type": "string",
+          "sample_values": [
+            "ST 22L",
+            "ST 22AM",
+            "ST 21L",
+            "ST 21M",
+            "ST 21AM",
+            "ST 19M",
+            "ST 18AL",
+            "ST 21BM",
+            "ST 18BM",
+            "ST 21AL",
+            "ST 19L",
+            "ST 18AM",
+            "ST 18M",
+            "ST 21BL",
+            "ST 22M",
+            "ST 20M",
+            "ST 18BL",
+            "ST 18L",
+            "ST 20L"
+          ],
+          "data_patterns": {
+            "AA 99A": 10,
+            "AA 99AA": 9
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "ST 18M",
+                1
+              ],
+              [
+                "ST 18BL",
+                1
+              ],
+              [
+                "ST 21L",
+                1
+              ],
+              [
+                "ST 18L",
+                1
+              ],
+              [
+                "ST 20M",
+                1
+              ],
+              [
+                "ST 22M",
+                1
+              ],
+              [
+                "ST 18AL",
+                1
+              ],
+              [
+                "ST 21AL",
+                1
+              ],
+              [
+                "ST 21BL",
+                1
+              ],
+              [
+                "ST 22L",
+                1
+              ]
+            ],
+            "unique_count": 19
+          },
+          "description": "Unique alphanumeric identifiers for each geological sample."
+        },
+        "Thick": {
+          "column_name": "Thick",
+          "data_type": "integer",
+          "sample_values": [
+            19,
+            30,
+            20,
+            19,
+            17,
+            15,
+            20,
+            20,
+            21,
+            19,
+            19,
+            11,
+            20,
+            19,
+            23,
+            23,
+            8,
+            22,
+            10
+          ],
+          "data_patterns": {
+            "99": 18,
+            "9": 1
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "numeric",
+            "min": 8.0,
+            "max": 30.0,
+            "mean": 18.68421052631579,
+            "median": 19.0,
+            "std": 5.022755237460671
+          },
+          "description": "Thickness of geological samples measured in unspecified units."
+        },
+        "Ratio": {
+          "column_name": "Ratio",
+          "data_type": "float",
+          "sample_values": [
+            1.0,
+            0.33,
+            1.15,
+            1.36,
+            0.95,
+            0.95,
+            1.15,
+            0.81,
+            0.36
+          ],
+          "data_patterns": {
+            "9.99": 8,
+            "9.9": 1
+          },
+          "total_rows": 19,
+          "null_count": 10,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.33,
+            "max": 1.36,
+            "mean": 0.8955555555555554,
+            "median": 0.95,
+            "std": 0.34928896028614725
+          },
+          "description": "Ratio of mineral components in geological samples."
+        },
+        "Strat height": {
+          "column_name": "Strat height",
+          "data_type": "float",
+          "sample_values": [
+            12.5,
+            13.07,
+            14.17,
+            15.85,
+            14.74,
+            15.08,
+            15.28,
+            13.87,
+            13.27,
+            14.35,
+            12.69,
+            12.88,
+            14.54,
+            14.89,
+            15.43,
+            13.65,
+            13.46,
+            15.73,
+            14.04
+          ],
+          "data_patterns": {
+            "99.99": 18,
+            "99.9": 1
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "numeric",
+            "min": 12.5,
+            "max": 15.85,
+            "mean": 14.183684210526316,
+            "median": 14.17,
+            "std": 1.0397019365948417
+          },
+          "description": "Stratigraphic height measurements in meters for geological samples."
+        },
+        "Qz": {
+          "column_name": "Qz",
+          "data_type": "integer",
+          "sample_values": [
+            13,
+            9,
+            3,
+            9,
+            11,
+            3,
+            10,
+            13,
+            12,
+            9,
+            10,
+            10,
+            10,
+            12,
+            12,
+            10,
+            4,
+            3,
+            5
+          ],
+          "data_patterns": {
+            "99": 11,
+            "9": 8
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 3.0,
+            "max": 13.0,
+            "mean": 8.842105263157896,
+            "median": 10.0,
+            "std": 3.4683194440653633
+          },
+          "description": "Quartz content measured as integer percentage points across geological samples."
+        },
+        "Clay": {
+          "column_name": "Clay",
+          "data_type": "integer",
+          "sample_values": [
+            13,
+            9,
+            43,
+            48,
+            50,
+            40,
+            41,
+            15,
+            32,
+            35,
+            44,
+            11,
+            25,
+            37,
+            14,
+            29,
+            30,
+            45,
+            47
+          ],
+          "data_patterns": {
+            "99": 18,
+            "9": 1
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 19,
+          "stats": {
+            "type": "numeric",
+            "min": 9.0,
+            "max": 50.0,
+            "mean": 32.0,
+            "median": 35.0,
+            "std": 13.792107243718133
+          },
+          "description": "Clay content measured as integer percentage values across geological samples."
+        },
+        "Cal": {
+          "column_name": "Cal",
+          "data_type": "integer",
+          "sample_values": [
+            84,
+            45,
+            44,
+            32,
+            44,
+            57,
+            36,
+            81,
+            55,
+            79,
+            28,
+            82,
+            54,
+            38,
+            61,
+            36,
+            48,
+            33,
+            83
+          ],
+          "data_patterns": {
+            "99": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 17,
+          "stats": {
+            "type": "numeric",
+            "min": 28.0,
+            "max": 84.0,
+            "mean": 53.68421052631579,
+            "median": 48.0,
+            "std": 19.376539742628477
+          },
+          "description": "Calcium content measured in percentage units for geological samples."
+        },
+        "Gp": {
+          "column_name": "Gp",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            1.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "data_patterns": {
+            "9.9": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 3,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.3157894736842105,
+            "median": 0.0,
+            "std": 0.44754038662540696
+          },
+          "description": "Gp probability scores for geological samples range from 0.0 to 1.0."
+        },
+        "Dol": {
+          "column_name": "Dol",
+          "data_type": "float",
+          "sample_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            0.0,
+            0.5,
+            1.0,
+            2.0,
+            2.0,
+            0.0,
+            2.0,
+            2.0
+          ],
+          "data_patterns": {
+            "9.9": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 4.0,
+            "mean": 0.8157894736842105,
+            "median": 0.0,
+            "std": 1.169170246083728
+          },
+          "description": "Dolomite content percentage in geological samples ranging from zero to four."
+        },
+        "Py": {
+          "column_name": "Py",
+          "data_type": "float",
+          "sample_values": [
+            4.0,
+            6.0,
+            9.0,
+            3.0,
+            8.0,
+            4.0,
+            2.0,
+            2.0,
+            4.0,
+            9.0,
+            2.0,
+            2.0,
+            9.0,
+            2.0,
+            4.0,
+            0.5,
+            7.0,
+            3.0,
+            4.0
+          ],
+          "data_patterns": {
+            "9.9": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 9.0,
+            "mean": 4.447368421052632,
+            "median": 4.0,
+            "std": 2.733001691476614
+          },
+          "description": "Pyrite content in geological samples measured as a percentage."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section",
+            "Santiurde_section"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaa_aaaaaaa": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Santiurde_section",
+                19
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Santiurdesection geological sample event identifier."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608,
+            43.0685608
+          ],
+          "data_patterns": {
+            "99.9999999": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 43.0685608,
+            "max": 43.0685608,
+            "mean": 43.0685608,
+            "median": 43.0685608,
+            "std": 0.0
+          },
+          "description": "Geographic latitude coordinate in decimal degrees for all samples."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295,
+            -4.0878295
+          ],
+          "data_patterns": {
+            "-9.9999999": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -4.0878295,
+            "max": -4.0878295,
+            "mean": -4.0878295,
+            "median": -4.0878295,
+            "std": 0.0
+          },
+          "description": "Geographic longitude coordinate in decimal degrees for all samples."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0,
+            730.0
+          ],
+          "data_patterns": {
+            "999.9": 19
+          },
+          "total_rows": 19,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 730.0,
+            "max": 730.0,
+            "mean": 730.0,
+            "median": 730.0,
+            "std": 0.0
+          },
+          "description": "Elevation in meters for all geological samples."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "null",
+          "semantic_type": "timestamp",
+          "sample_values": [],
+          "data_patterns": {},
+          "total_rows": 19,
+          "null_count": 19,
+          "unique_count": 1,
+          "description": "No date or time data is available for these geological samples."
+        }
+      },
+      "sample_rows": [
+        {
+          "Sample ID": "ST18M3",
+          "Sample label": "ST 18M",
+          "Thick": 20,
+          "Ratio": 0.95,
+          "Strat height": 12.5,
+          "Qz": 13,
+          "Clay": 41,
+          "Cal": 36,
+          "Gp": 1.0,
+          "Dol": 0.0,
+          "Py": 9.0,
+          "Event": "Santiurde_section",
+          "Latitude": 43.0685608,
+          "Longitude": -4.0878295,
+          "Elevation": 730.0,
+          "Date/Time": null
+        },
+        {
+          "Sample ID": "ST19LB3",
+          "Sample label": "ST 18BL",
+          "Thick": 19,
+          "Ratio": null,
+          "Strat height": 13.46,
+          "Qz": 9,
+          "Clay": 25,
+          "Cal": 61,
+          "Gp": 0.0,
+          "Dol": 1.0,
+          "Py": 4.0,
+          "Event": "Santiurde_section",
+          "Latitude": 43.0685608,
+          "Longitude": -4.0878295,
+          "Elevation": 730.0,
+          "Date/Time": null
+        },
+        {
+          "Sample ID": "ST21L3",
+          "Sample label": "ST 21L",
+          "Thick": 17,
+          "Ratio": null,
+          "Strat height": 14.54,
+          "Qz": 4,
+          "Clay": 15,
+          "Cal": 79,
+          "Gp": 0.0,
+          "Dol": 0.0,
+          "Py": 2.0,
+          "Event": "Santiurde_section",
+          "Latitude": 43.0685608,
+          "Longitude": -4.0878295,
+          "Elevation": 730.0,
+          "Date/Time": null
+        }
+      ],
+      "description": "Table of 19 geological samples with mineral composition, location, and stratigraphic data.",
+      "is_row_capped": false,
+      "rows_processed": 19,
+      "total_rows_in_file": 19
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset containing 967,852 tables with 19 rows each."
+}

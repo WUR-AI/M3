@@ -1,0 +1,32 @@
+{
+  "dataset_id": "937582",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/937582.csv",
+  "source_sha256": "1b4437a62c7a6600b478b9acf419a05aebf9f4af6fd8023b6d8e709a67082012",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T12:46:35.520111+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Mackenzie River Expedition 2019: Fluorescence and Optical Measurements",
+    "description": "This dataset contains measurements of fluorescence and optical properties collected during the Mackenzie River Expedition in 2019. It includes data on various fluorescence peaks (A-peak, C-peak, M-peak, T-peak) and fluorescence indices (FI, HI, BI) at different stations and depths. The data is geotagged with latitude and longitude coordinates and includes timestamps for each measurement.",
+    "keywords": [
+      "Mackenzie River",
+      "Expedition",
+      "Fluorescence",
+      "Optical Measurements",
+      "IFDOM",
+      "FDOM",
+      "Water Quality",
+      "2019",
+      "Arctic",
+      "Canada"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/937582_4bc45e26bc454cf8b2974dc58480d72b.jsonl",
+  "runtime_seconds": 433.3
+}

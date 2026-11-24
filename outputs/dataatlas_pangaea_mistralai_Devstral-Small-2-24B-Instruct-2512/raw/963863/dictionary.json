@@ -1,0 +1,379 @@
+{
+  "dataset_name": "963863",
+  "list_of_tables": [
+    "963863"
+  ],
+  "tables": {
+    "963863": {
+      "table_name": "963863",
+      "row_count": 8,
+      "number_of_columns": 6,
+      "list_of_columns": [
+        "Binary",
+        "Binary (Size)",
+        "Binary (Charset)",
+        "Binary (Type)",
+        "Binary (Hash)",
+        "Content"
+      ],
+      "columns": {
+        "Binary": {
+          "column_name": "Binary",
+          "data_type": "string",
+          "sample_values": [
+            "3_METADATA_Temperature.txt",
+            "4_DATA_Hydrological.txt",
+            "3_DATA_Temperature.txt",
+            "2_METADATA_Particulate_matter.txt",
+            "4_METADATA_Hydrological.txt",
+            "2_DATA_Particulate_matter.txt",
+            "1_DATA_Physico-chemical.txt",
+            "1_METADATA_Physico-chemical.txt"
+          ],
+          "data_patterns": {
+            "9_AAAAAAAA_Aaaaaaa-aaaaaaaa.aaa": 1,
+            "9_AAAAAAAA_Aaaaaaaaaaa.aaa": 1,
+            "9_AAAA_Aaaaaaa-aaaaaaaa.aaa": 1,
+            "9_AAAAAAAA_Aaaaaaaaaaaa.aaa": 1,
+            "9_AAAA_Aaaaaaaaaaa_aaaaaa.aaa": 1,
+            "9_AAAA_Aaaaaaaaaaa.aaa": 1,
+            "9_AAAAAAAA_Aaaaaaaaaaa_aaaaaa.aaa": 1,
+            "9_AAAA_Aaaaaaaaaaaa.aaa": 1
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "1_METADATA_Physico-chemical.txt",
+                1
+              ],
+              [
+                "3_METADATA_Temperature.txt",
+                1
+              ],
+              [
+                "1_DATA_Physico-chemical.txt",
+                1
+              ],
+              [
+                "4_METADATA_Hydrological.txt",
+                1
+              ],
+              [
+                "2_DATA_Particulate_matter.txt",
+                1
+              ],
+              [
+                "3_DATA_Temperature.txt",
+                1
+              ],
+              [
+                "2_METADATA_Particulate_matter.txt",
+                1
+              ],
+              [
+                "4_DATA_Hydrological.txt",
+                1
+              ]
+            ],
+            "unique_count": 8
+          },
+          "description": "Binary filenames categorizing metadata and data files by type and subject."
+        },
+        "Binary (Size)": {
+          "column_name": "Binary (Size)",
+          "data_type": "string",
+          "sample_values": [
+            "95.2 kBytes",
+            "158 kBytes",
+            "5.2 kBytes",
+            "4.2 kBytes",
+            "28 kBytes",
+            "22.7 kBytes",
+            "229.7 kBytes",
+            "5.3 MBytes"
+          ],
+          "data_patterns": {
+            "9.9 aAaaaa": 2,
+            "99.9 aAaaaa": 2,
+            "99 aAaaaa": 1,
+            "999.9 aAaaaa": 1,
+            "9.9 AAaaaa": 1,
+            "999 aAaaaa": 1
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "28 kBytes",
+                1
+              ],
+              [
+                "5.2 kBytes",
+                1
+              ],
+              [
+                "229.7 kBytes",
+                1
+              ],
+              [
+                "4.2 kBytes",
+                1
+              ],
+              [
+                "95.2 kBytes",
+                1
+              ],
+              [
+                "5.3 MBytes",
+                1
+              ],
+              [
+                "22.7 kBytes",
+                1
+              ],
+              [
+                "158 kBytes",
+                1
+              ]
+            ],
+            "unique_count": 8
+          },
+          "description": "File sizes in kilobytes or megabytes, stored as strings."
+        },
+        "Binary (Charset)": {
+          "column_name": "Binary (Charset)",
+          "data_type": "string",
+          "sample_values": [
+            "UTF-16LE",
+            "UTF-16LE",
+            "UTF-16LE",
+            "UTF-16LE",
+            "UTF-16LE",
+            "UTF-16LE",
+            "UTF-16LE",
+            "UTF-16LE"
+          ],
+          "data_patterns": {
+            "AAA-99AA": 8
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "UTF-16LE",
+                8
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Binary file character encoding format, consistently UTF-16LE."
+        },
+        "Binary (Type)": {
+          "column_name": "Binary (Type)",
+          "data_type": "string",
+          "sample_values": [
+            "text/plain",
+            "text/plain",
+            "text/plain",
+            "text/plain",
+            "text/plain",
+            "text/plain",
+            "text/plain",
+            "text/plain"
+          ],
+          "data_patterns": {
+            "aaaa/aaaaa": 8
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "text/plain",
+                8
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Binary file format specified as text/plain for all entries."
+        },
+        "Binary (Hash)": {
+          "column_name": "Binary (Hash)",
+          "data_type": "string",
+          "sample_values": [
+            "e4f52459da3b0a10cef68ebc556b67f6",
+            "34342509f7489cd74c38131c079ab158",
+            "e6c0a5b52ed9958c60e3c782007d5c1b",
+            "9095ce6954fe153f14e2f1745947cefa",
+            "e06ddd0b6aba0e3420db77a0336c9619",
+            "acf876226d2476e3a456a52927a8b26f",
+            "f5339eb12d3219665f3c2ceb15b122b3",
+            "785278b9056b43d95310bd56fc5ad7e9"
+          ],
+          "data_patterns": {
+            "a99aaa9a9aaa9a9999aa99a9999a9999": 1,
+            "99999999a9999aa99a99999a999aa999": 1,
+            "a9a99999aa9a9a99aaa99aaa999a99a9": 1,
+            "aaa999999a9999a9a999a99999a9a99a": 1,
+            "a9999aa99a9999999a9a9aaa99a999a9": 1,
+            "999999a9999a99a99999aa99aa9aa9a9": 1,
+            "9999aa9999aa999a99a9a9999999aaaa": 1,
+            "a9a9a9a99aa9999a99a9a999999a9a9a": 1
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "e06ddd0b6aba0e3420db77a0336c9619",
+                1
+              ],
+              [
+                "34342509f7489cd74c38131c079ab158",
+                1
+              ],
+              [
+                "e4f52459da3b0a10cef68ebc556b67f6",
+                1
+              ],
+              [
+                "acf876226d2476e3a456a52927a8b26f",
+                1
+              ],
+              [
+                "f5339eb12d3219665f3c2ceb15b122b3",
+                1
+              ],
+              [
+                "785278b9056b43d95310bd56fc5ad7e9",
+                1
+              ],
+              [
+                "9095ce6954fe153f14e2f1745947cefa",
+                1
+              ],
+              [
+                "e6c0a5b52ed9958c60e3c782007d5c1b",
+                1
+              ]
+            ],
+            "unique_count": 8
+          },
+          "description": "Unique hash identifiers for binary files in hexadecimal format."
+        },
+        "Content": {
+          "column_name": "Content",
+          "data_type": "string",
+          "sample_values": [
+            "Column descriptions of Particulate matter dataset.",
+            "Physico-chemical data, including in situ parameters, basic physicochemistry, nutrients, trace elements, and contaminants.",
+            "Particulate matter data, including cations, trace elements, and mineralogy obtained via X-Ray Diffraction.",
+            "Column descriptions of Temperature dataset.",
+            "Column descriptions of Physicochemical dataset.",
+            "Continuous temperature data at each sampling site.",
+            "Column descriptions of Hydrological dataset.",
+            "Hydrological data, meaning modeled (all 14 sampling sites) and Water Survey of Canada measured (2 sampling sites) mean daily discharge."
+          ],
+          "data_patterns": {
+            "Aaaaaa aaaaaaaaaaaa aa Aaaaaaaaaaaaaaa aaaaaaa.": 1,
+            "Aaaaaa aaaaaaaaaaaa aa Aaaaaaaaaaa aaaaaaa.": 1,
+            "Aaaaaaa-aaaaaaaa aaaa, aaaaaaaaa aa aaaa aaaaaaaaaa, aaaaa aaaaaaaaaaaaaaaa, aaaaaaaaa, aaaaa aaaaaaaa, aaa aaaaaaaaaaaa.": 1,
+            "Aaaaaa aaaaaaaaaaaa aa Aaaaaaaaaaaa aaaaaaa.": 1,
+            "Aaaaaaaaaaa aaaaaa aaaa, aaaaaaaaa aaaaaaa, aaaaa aaaaaaaa, aaa aaaaaaaaaa aaaaaaaa aaa A-Aaa Aaaaaaaaaaa.": 1,
+            "Aaaaaaaaaa aaaaaaaaaaa aaaa aa aaaa aaaaaaaa aaaa.": 1,
+            "Aaaaaa aaaaaaaaaaaa aa Aaaaaaaaaaa aaaaaa aaaaaaa.": 1,
+            "Aaaaaaaaaaaa aaaa, aaaaaaa aaaaaaa (aaa 99 aaaaaaaa aaaaa) aaa Aaaaa Aaaaaa aa Aaaaaa aaaaaaaa (9 aaaaaaaa aaaaa) aaaa aaaaa aaaaaaaaa.": 1
+          },
+          "total_rows": 8,
+          "null_count": 0,
+          "unique_count": 8,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Column descriptions of Physicochemical dataset.",
+                1
+              ],
+              [
+                "Column descriptions of Temperature dataset.",
+                1
+              ],
+              [
+                "Physico-chemical data, including in situ parameters, basic physicochemistry, nutrients, trace elements, and contaminants.",
+                1
+              ],
+              [
+                "Column descriptions of Hydrological dataset.",
+                1
+              ],
+              [
+                "Particulate matter data, including cations, trace elements, and mineralogy obtained via X-Ray Diffraction.",
+                1
+              ],
+              [
+                "Continuous temperature data at each sampling site.",
+                1
+              ],
+              [
+                "Column descriptions of Particulate matter dataset.",
+                1
+              ],
+              [
+                "Hydrological data, meaning modeled (all 14 sampling sites) and Water Survey of Canada measured (2 sampling sites) mean daily discharge.",
+                1
+              ]
+            ],
+            "unique_count": 8
+          },
+          "description": "Descriptions of datasets covering particulate matter, physicochemical data, temperature, hydrology, and related parameters."
+        }
+      },
+      "sample_rows": [
+        {
+          "Binary": "1_METADATA_Physico-chemical.txt",
+          "Binary (Size)": "28 kBytes",
+          "Binary (Charset)": "UTF-16LE",
+          "Binary (Type)": "text/plain",
+          "Binary (Hash)": "e06ddd0b6aba0e3420db77a0336c9619",
+          "Content": "Column descriptions of Physicochemical dataset."
+        },
+        {
+          "Binary": "3_METADATA_Temperature.txt",
+          "Binary (Size)": "5.2 kBytes",
+          "Binary (Charset)": "UTF-16LE",
+          "Binary (Type)": "text/plain",
+          "Binary (Hash)": "34342509f7489cd74c38131c079ab158",
+          "Content": "Column descriptions of Temperature dataset."
+        },
+        {
+          "Binary": "1_DATA_Physico-chemical.txt",
+          "Binary (Size)": "229.7 kBytes",
+          "Binary (Charset)": "UTF-16LE",
+          "Binary (Type)": "text/plain",
+          "Binary (Hash)": "e4f52459da3b0a10cef68ebc556b67f6",
+          "Content": "Physico-chemical data, including in situ parameters, basic physicochemistry, nutrients, trace elements, and contaminants."
+        }
+      ],
+      "description": "Earth and environmental science metadata table with 8 rows detailing binary files.",
+      "is_row_capped": false,
+      "rows_processed": 8,
+      "total_rows_in_file": 8
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science dataset with 963863 tables, 8 rows each, no time coverage."
+}

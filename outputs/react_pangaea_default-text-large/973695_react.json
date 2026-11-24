@@ -1,0 +1,58 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 5478,
+  "metadata": {
+    "name": "Geochemical analysis of Pleistocene sediment core 112‑680A (Site 680) from Ecuador",
+    "description": "A dataset of geochemical measurements (elemental concentrations, isotopic ratios, TOC, etc.) for sediment core samples collected at a single site (Latitude ‑11.065, Longitude ‑78.07783, Elevation ‑272 m) in Ecuador. Each row corresponds to a sample at a specific depth, with associated metadata such as leg, core, section, and the sampling date/time (1986‑11‑05 07:15:00).",
+    "keywords": [
+      "sediment",
+      "core",
+      "geochemistry",
+      "Pleistocene",
+      "elemental analysis",
+      "TOC",
+      "latitude",
+      "longitude",
+      "Ecuador",
+      "depth profile"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05T07:15:00",
+      "to": "1986-11-05T07:15:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single observation"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "973695"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "973695",
+        "resource": "973695"
+      }
+    }
+  ],
+  "runtime_seconds": 9.848,
+  "status": "ok"
+}

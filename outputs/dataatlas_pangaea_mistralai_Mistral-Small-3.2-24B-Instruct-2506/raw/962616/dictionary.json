@@ -1,0 +1,462 @@
+{
+  "dataset_name": "962616",
+  "list_of_tables": [
+    "962616"
+  ],
+  "tables": {
+    "962616": {
+      "table_name": "962616",
+      "row_count": 11,
+      "number_of_columns": 8,
+      "list_of_columns": [
+        "Project",
+        "Content",
+        "Binary",
+        "Binary (Size)",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Date/Time"
+      ],
+      "columns": {
+        "Project": {
+          "column_name": "Project",
+          "data_type": "string",
+          "sample_values": [
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01",
+            "WA_CapeBlossom_20210625_7cm_01"
+          ],
+          "data_patterns": {
+            "AA_AaaaAaaaaaa_99999999_9aa_99": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "WA_CapeBlossom_20210625_7cm_01",
+                11
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Project identifier for environmental data collection in Cape Blossom, Washington."
+        },
+        "Content": {
+          "column_name": "Content",
+          "data_type": "string",
+          "sample_values": [
+            "GeoTiffs all tiles and virtual mosaic Ortho",
+            "Preview png of CIR",
+            "PointClouds all tiles NIR and RGB",
+            "Cloud-optimized GeoTIFF of DSM",
+            "Preview png of DSM",
+            "Cloud-optimized GeoTIFF of Ortho",
+            "Cloud-optimized GeoTIFF of hillshade",
+            "Preview png of RGB",
+            "GeoTiffs all tiles and virtual mosaic DSM",
+            "Tile footprints geojson",
+            "Processing info"
+          ],
+          "data_patterns": {
+            "Aaaaaaa aaa aa AAA": 3,
+            "Aaaaa-aaaaaaaaa AaaAAAA aa AAA": 1,
+            "Aaaa aaaaaaaaaa aaaaaaa": 1,
+            "Aaaaaaaaaa aaaa": 1,
+            "AaaaaAaaaaa aaa aaaaa AAA aaa AAA": 1,
+            "AaaAaaaa aaa aaaaa aaa aaaaaaa aaaaaa Aaaaa": 1,
+            "Aaaaa-aaaaaaaaa AaaAAAA aa aaaaaaaaa": 1,
+            "Aaaaa-aaaaaaaaa AaaAAAA aa Aaaaa": 1,
+            "AaaAaaaa aaa aaaaa aaa aaaaaaa aaaaaa AAA": 1
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Cloud-optimized GeoTIFF of DSM",
+                1
+              ],
+              [
+                "Preview png of RGB",
+                1
+              ],
+              [
+                "Tile footprints geojson",
+                1
+              ],
+              [
+                "Processing info",
+                1
+              ],
+              [
+                "Preview png of DSM",
+                1
+              ],
+              [
+                "Preview png of CIR",
+                1
+              ],
+              [
+                "PointClouds all tiles NIR and RGB",
+                1
+              ],
+              [
+                "GeoTiffs all tiles and virtual mosaic Ortho",
+                1
+              ],
+              [
+                "Cloud-optimized GeoTIFF of hillshade",
+                1
+              ],
+              [
+                "Cloud-optimized GeoTIFF of Ortho",
+                1
+              ]
+            ],
+            "unique_count": 11
+          },
+          "description": "Content types of environmental data files, including GeoTiffs, PointClouds, and GeoJSON."
+        },
+        "Binary": {
+          "column_name": "Binary",
+          "data_type": "string",
+          "sample_values": [
+            "WA_CapeBlossom_20210625_7cm_01_processing_info.zip",
+            "WA_CapeBlossom_20210625_7cm_01_DSM.tif",
+            "WA_CapeBlossom_20210625_7cm_01_Ortho_tiles.zip",
+            "WA_CapeBlossom_20210625_7cm_01_preview_CIR.png",
+            "WA_CapeBlossom_20210625_7cm_01_preview_DSM.png",
+            "WA_CapeBlossom_20210625_7cm_01_DSM_tiles.zip",
+            "WA_CapeBlossom_20210625_7cm_01_PointClouds_tiles.zip",
+            "WA_CapeBlossom_20210625_7cm_01_Ortho.tif",
+            "WA_CapeBlossom_20210625_7cm_01_tile_footprints.geojson",
+            "WA_CapeBlossom_20210625_7cm_01_preview_RGB.png",
+            "WA_CapeBlossom_20210625_7cm_01_Hillshade.tif"
+          ],
+          "data_patterns": {
+            "AA_AaaaAaaaaaa_99999999_9aa_99_aaaaaaa_AAA.aaa": 3,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_AAA.aaa": 1,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_aaaa_aaaaaaaaaa.aaaaaaa": 1,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_aaaaaaaaaa_aaaa.aaa": 1,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_AaaaaAaaaaa_aaaaa.aaa": 1,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_Aaaaa_aaaaa.aaa": 1,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_Aaaaaaaaa.aaa": 1,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_Aaaaa.aaa": 1,
+            "AA_AaaaAaaaaaa_99999999_9aa_99_AAA_aaaaa.aaa": 1
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 11,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "WA_CapeBlossom_20210625_7cm_01_DSM.tif",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_preview_RGB.png",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_tile_footprints.geojson",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_processing_info.zip",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_preview_DSM.png",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_preview_CIR.png",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_PointClouds_tiles.zip",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_Ortho_tiles.zip",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_Hillshade.tif",
+                1
+              ],
+              [
+                "WA_CapeBlossom_20210625_7cm_01_Ortho.tif",
+                1
+              ]
+            ],
+            "unique_count": 11
+          },
+          "description": "Binary filenames of environmental data project files."
+        },
+        "Binary (Size)": {
+          "column_name": "Binary (Size)",
+          "data_type": "string",
+          "sample_values": [
+            "10.6 GBytes",
+            "341.7 kBytes",
+            "4.1 MBytes",
+            "4.1 GBytes",
+            "345.2 kBytes",
+            "15.4 GBytes",
+            "5.3 GBytes",
+            "15.4 GBytes",
+            "526.7 MBytes",
+            "1.5 MBytes",
+            "112.1 kBytes"
+          ],
+          "data_patterns": {
+            "9.9 AAaaaa": 4,
+            "999.9 aAaaaa": 3,
+            "99.9 AAaaaa": 3,
+            "999.9 AAaaaa": 1
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 10,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "15.4 GBytes",
+                2
+              ],
+              [
+                "5.3 GBytes",
+                1
+              ],
+              [
+                "341.7 kBytes",
+                1
+              ],
+              [
+                "4.1 MBytes",
+                1
+              ],
+              [
+                "1.5 MBytes",
+                1
+              ],
+              [
+                "112.1 kBytes",
+                1
+              ],
+              [
+                "345.2 kBytes",
+                1
+              ],
+              [
+                "10.6 GBytes",
+                1
+              ],
+              [
+                "526.7 MBytes",
+                1
+              ],
+              [
+                "4.1 GBytes",
+                1
+              ]
+            ],
+            "unique_count": 10
+          },
+          "description": "Binary file sizes in gigabytes, megabytes, kilobytes."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301",
+            "P6_224_Perma_X_2021_2106250301"
+          ],
+          "data_patterns": {
+            "A9_999_Aaaaa_A_9999_9999999999": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "P6_224_Perma_X_2021_2106250301",
+                11
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event identifier for environmental data collection."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836,
+            66.891836
+          ],
+          "data_patterns": {
+            "99.999999": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 66.891836,
+            "max": 66.891836,
+            "mean": 66.891836,
+            "median": 66.891836,
+            "std": 0.0
+          },
+          "description": "Locations northern coordinate in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512,
+            -162.596512
+          ],
+          "data_patterns": {
+            "-999.999999": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": -162.596512,
+            "max": -162.596512,
+            "mean": -162.59651200000002,
+            "median": -162.596512,
+            "std": 2.9808940330728763e-14
+          },
+          "description": "Geographic coordinate measuring east-west position in decimal degrees."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30",
+            "2021-06-25T21:21:30"
+          ],
+          "data_patterns": {
+            "9999-99-99 99:99:99": 11
+          },
+          "total_rows": 11,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2021-06-25T21:21:30",
+            "max_date": "2021-06-25T21:21:30"
+          },
+          "description": "Data collection timestamp on June 25, 2021."
+        }
+      },
+      "time_period_covered": {
+        "start": "2021-06-25T21:21:30",
+        "end": "2021-06-25T21:21:30"
+      },
+      "sample_rows": [
+        {
+          "Project": "WA_CapeBlossom_20210625_7cm_01",
+          "Content": "Cloud-optimized GeoTIFF of DSM",
+          "Binary": "WA_CapeBlossom_20210625_7cm_01_DSM.tif",
+          "Binary (Size)": "5.3 GBytes",
+          "Event": "P6_224_Perma_X_2021_2106250301",
+          "Latitude": 66.891836,
+          "Longitude": -162.596512,
+          "Date/Time": "2021-06-25T21:21:30"
+        },
+        {
+          "Project": "WA_CapeBlossom_20210625_7cm_01",
+          "Content": "Preview png of RGB",
+          "Binary": "WA_CapeBlossom_20210625_7cm_01_preview_RGB.png",
+          "Binary (Size)": "341.7 kBytes",
+          "Event": "P6_224_Perma_X_2021_2106250301",
+          "Latitude": 66.891836,
+          "Longitude": -162.596512,
+          "Date/Time": "2021-06-25T21:21:30"
+        },
+        {
+          "Project": "WA_CapeBlossom_20210625_7cm_01",
+          "Content": "Tile footprints geojson",
+          "Binary": "WA_CapeBlossom_20210625_7cm_01_tile_footprints.geojson",
+          "Binary (Size)": "4.1 MBytes",
+          "Event": "P6_224_Perma_X_2021_2106250301",
+          "Latitude": 66.891836,
+          "Longitude": -162.596512,
+          "Date/Time": "2021-06-25T21:21:30"
+        }
+      ],
+      "description": "Environmental data with project details, location, and binary file information from June 25, 2021.",
+      "is_row_capped": false,
+      "rows_processed": 11,
+      "total_rows_in_file": 11
+    }
+  },
+  "time_period_covered": {
+    "start": "2021-06-25T21:21:30",
+    "end": "2021-06-25T21:21:30"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Environmental data collected on June 25, 2021, with 962616 tables, each containing 11 rows."
+}

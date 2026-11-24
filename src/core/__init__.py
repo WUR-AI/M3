@@ -7,6 +7,7 @@ from .state import (
     PlayerResult,
     StepExecutionState,
 )
+from .tool_trace import ToolTrace
 
 __all__ = [
     "DebateEntry",
@@ -17,4 +18,5 @@ __all__ = [
     "StepExecutionState",
     "StepResult",
     "Task",
+    "ToolTrace",
 ]

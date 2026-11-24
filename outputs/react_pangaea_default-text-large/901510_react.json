@@ -1,0 +1,79 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3616,
+  "metadata": {
+    "name": "Elwha River Delta point measurements (Latitude, Longitude, Elevation, HRMS, VRMS)",
+    "description": "A collection of 106 point observations recorded at the Elwha River Delta. Each record includes geographic coordinates (latitude, longitude), elevation, a timestamp, and sensor readings (HRMS and VRMS). All observations were taken on 3 February 2012.",
+    "keywords": [
+      "Elwha River Delta",
+      "latitude",
+      "longitude",
+      "elevation",
+      "HRMS",
+      "VRMS",
+      "time series",
+      "environmental monitoring",
+      "point observations"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00",
+      "to": "2012-02-03T13:11:00"
+    },
+    "spatial": "point locations",
+    "temporal": "minutes"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "901510"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510"
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "901510"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510",
+        "field": "Date/Time",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 22.065,
+  "status": "ok"
+}

@@ -1,0 +1,85 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 7518,
+  "metadata": {
+    "name": "Belgian collector trial pre-impact sediment geochemistry",
+    "description": "Sediment geochemistry data from the Belgian collector trial pre-impact, including concentrations of various elements (Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) and their relative errors at different sediment depths. The data also includes location information (latitude, longitude, elevation) and sampling event details.",
+    "keywords": [
+      "sediment geochemistry",
+      "Belgian collector trial",
+      "pre-impact",
+      "elemental analysis",
+      "marine sediment",
+      "geochemical data"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20",
+      "to": "2019-03-20"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "944039"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "944039",
+        "resource": "944039",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 18.887,
+  "status": "ok"
+}

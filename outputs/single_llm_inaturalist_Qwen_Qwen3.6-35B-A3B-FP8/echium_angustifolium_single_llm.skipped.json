@@ -1,0 +1,15 @@
+{
+  "csv": "echium_angustifolium.csv",
+  "dataset_id": "echium_angustifolium",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5fbf4d4f1c580eb9dc5fbdfc9673d4e20e3fedacbc84036d0d4df6fd842ec92f",
+  "contract_sha256": "1f9672611e09dde255b64e4c9ae86878060da91f53b7985b19a6cea45fa46a62",
+  "prompt_tokens": 323268,
+  "status": "skipped",
+  "reason": "context_window"
+}

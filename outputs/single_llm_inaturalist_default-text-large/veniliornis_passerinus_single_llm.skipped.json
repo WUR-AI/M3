@@ -1,0 +1,15 @@
+{
+  "csv": "veniliornis_passerinus.csv",
+  "dataset_id": "veniliornis_passerinus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "ae351f023b67a0c064c01e5273eef9b1a262b3d97fc64dcc575e0b3e777b8d4d",
+  "contract_sha256": "cb2bccd45260503784c2d18a70f06e480a5a2f1a7fa0a6e8ab2d583662c9f36c",
+  "prompt_tokens": 318176,
+  "status": "skipped",
+  "reason": "context_window"
+}

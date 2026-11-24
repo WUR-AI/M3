@@ -1,0 +1,28 @@
+{
+  "dataset_id": "rhamnus_prinoides",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/rhamnus_prinoides.csv",
+  "source_sha256": "8ee8278168643beaf4fc2fec06e84f6d772962f5a3a0c26a145bb2126b9204b9",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:36:58.639399+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -34.270302,
+      "min_lon": 18.623497,
+      "max_lat": 9.583515,
+      "max_lon": 39.979389
+    },
+    "temporalCoverage": {
+      "from": "1971-10-02T00:00:00+00:00",
+      "to": "2026-06-15T12:34:06+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/rhamnus_prinoides_0b7b7dde741c4db9a5aade110ddde793.jsonl",
+  "runtime_seconds": 58.52
+}

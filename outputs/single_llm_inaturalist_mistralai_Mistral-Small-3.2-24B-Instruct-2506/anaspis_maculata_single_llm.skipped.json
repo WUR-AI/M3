@@ -1,0 +1,15 @@
+{
+  "csv": "anaspis_maculata.csv",
+  "dataset_id": "anaspis_maculata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "8b426ec76e169131799f5173869a6c3b44a45e5d44ea433e0c81deb3038e3224",
+  "contract_sha256": "1bfaa591eec6371f0299e414b3f3b5c57b4b121c41ba57afb7ec9d1b56d60b4f",
+  "prompt_tokens": 323933,
+  "status": "skipped",
+  "reason": "context_window"
+}

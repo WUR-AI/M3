@@ -1,0 +1,16 @@
+{
+  "csv": "917841.csv",
+  "dataset_id": "917841",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 12,
+  "n_columns": 12,
+  "description": "12 water-quality records from Macapule Lagoon (2013‑2015) with temperature, salinity, DO, pH, nutrients.",
+  "dataset_description": "Earth environmental observations for monitoring, Dec 2013–Jun",
+  "runtime_seconds": 53.717,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/917841/dictionary.json"
+}

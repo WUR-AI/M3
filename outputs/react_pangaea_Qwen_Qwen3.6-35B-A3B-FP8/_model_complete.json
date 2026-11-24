@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "output_dir": "/home/com3dian/Github/metadata_agent/outputs/react_pangaea_Qwen_Qwen3.6-35B-A3B-FP8",
+  "expected": 75,
+  "successful": 74,
+  "skipped": 1,
+  "processed": 75,
+  "remaining": 0
+}

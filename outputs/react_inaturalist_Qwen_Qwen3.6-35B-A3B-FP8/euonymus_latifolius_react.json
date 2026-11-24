@@ -1,0 +1,66 @@
+{
+  "csv": "euonymus_latifolius.csv",
+  "dataset_id": "euonymus_latifolius",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "4605294cd787b9674aa9d7c779a1d6e4f13aef24067a753e664f536ff515c639",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3463,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 36.82312,
+      "min_lon": -77.304868,
+      "max_lat": 60.382925,
+      "max_lon": 139.435162
+    },
+    "temporalCoverage": {
+      "from": "1989-08-01T12:00:00+00:00",
+      "to": "2026-06-10T15:42:00+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "euonymus_latifolius"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "euonymus_latifolius",
+        "resource": "euonymus_latifolius"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "euonymus_latifolius",
+        "resource": "euonymus_latifolius",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "euonymus_latifolius",
+        "resource": "euonymus_latifolius"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "euonymus_latifolius",
+        "resource": "euonymus_latifolius",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 6.993,
+  "status": "ok"
+}

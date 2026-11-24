@@ -1,0 +1,43 @@
+{
+  "dataset_id": "995133",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995133.csv",
+  "source_sha256": "29c2b3f9565d0369ae887c83ca6f813a9f9c8ea1d388642bb6cd4727fc035328",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T02:00:29.235126+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Macoma balthica shell length frequency distribution from EMB320 expedition, Baltic Sea",
+    "description": "Frequency distribution dataset of Macoma balthica (baltic clam) shell lengths collected during the EMB320 expedition in June 2023 at Rönnebank, Baltic Sea. The dataset contains 36 records representing shell length bins (1-18 mm) and their corresponding frequency counts (0-167 individuals) for two site types: Marine Protected Area and Other Site.",
+    "keywords": [
+      "Macoma balthica",
+      "bivalve",
+      "shell length",
+      "frequency distribution",
+      "Baltic Sea",
+      "Rönnebank",
+      "marine biology",
+      "EMB320",
+      "size structure"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.3,
+      "min_lon": 10.8,
+      "max_lat": 54.4,
+      "max_lon": 10.9
+    },
+    "temporalCoverage": {
+      "from": "2023-06-01",
+      "to": "2023-06-30"
+    },
+    "spatial": "point locations",
+    "temporal": "monthly"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995133_8839b2588a434973a49996b1dfe41986.jsonl",
+  "runtime_seconds": 88.12
+}

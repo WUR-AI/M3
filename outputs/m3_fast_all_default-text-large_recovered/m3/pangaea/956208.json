@@ -1,0 +1,48 @@
+{
+  "dataset_id": "956208",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/956208.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:15:16.628740+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Fish Specimen Measurements from PS80 Expedition (2012‑2020)",
+    "description": "Dataset of 86 B. saida fish specimens collected during PS80 and related Arctic expeditions (e.g., PS80, PS122). Includes event IDs, expedition codes, sample IDs, collection dates (Date/Time), gear type, water depth, latitude, longitude, elevation, and biological measurements such as total length, standard length, wet mass, condition index, degree of digestion, stomach mass and content, and sex where available.",
+    "keywords": [
+      "fish",
+      "B. saida",
+      "Arctic",
+      "specimen",
+      "size",
+      "wet mass",
+      "condition index",
+      "stomach content",
+      "latitude",
+      "longitude",
+      "depth",
+      "SUIT",
+      "marine biology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 89.143898,
+      "max_lon": 130.863
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07T00:00:00Z",
+      "to": "2020-09-19T00:00:00Z"
+    },
+    "spatial": "≈0.001° (≈100 m at ~83° N)",
+    "temporal": "day‑level"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/956208_d4b8d5fc9bad4d0583d6c3eb7b1decdb.jsonl",
+  "runtime_seconds": 199.47,
+  "recovered_from_trace": true,
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff"
+}

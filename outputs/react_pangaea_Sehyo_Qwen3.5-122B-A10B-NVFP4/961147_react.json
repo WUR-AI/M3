@@ -1,0 +1,141 @@
+{
+  "csv": "961147.csv",
+  "dataset_id": "961147",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 17854,
+  "metadata": {
+    "name": "Elemental composition of salps and pyrosomes from multiple oceanographic expeditions",
+    "description": "Dataset containing elemental composition measurements (Carbon, Nitrogen, Hydrogen) and related parameters for salp and pyrosome species (tunicates) collected during various oceanographic expeditions. The data includes size, mass, tissue composition, C/N/H ratios, and other biological parameters for marine zooplankton samples from the Northeast Pacific, Hawaii, Southern Ocean, and Chatham Rise.",
+    "keywords": [
+      "salps",
+      "pyrosomes",
+      "tunicates",
+      "elemental composition",
+      "C/N ratios",
+      "marine biology",
+      "zooplankton",
+      "carbon",
+      "nitrogen",
+      "hydrogen"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -158.259,
+      "max_lat": 50.941,
+      "max_lon": 179.03683
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12",
+      "to": "2021-05-27"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "961147"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "n": 10
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "field": "Species UID",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "field": "Order",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "field": "Life stage",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "field": "Location",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147",
+        "field": "Expedition",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "961147",
+        "resource": "961147"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "961147"
+      }
+    }
+  ],
+  "runtime_seconds": 43.963,
+  "status": "ok"
+}

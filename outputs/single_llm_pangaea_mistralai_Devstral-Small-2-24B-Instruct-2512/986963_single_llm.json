@@ -1,0 +1,42 @@
+{
+  "csv": "986963.csv",
+  "dataset_id": "986963",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "contract_sha256": "840d2fb34dbddc286d74afca8a4a40fd9c74983a7c1cf5e09e7feb7fd2ad8cce",
+  "prompt_tokens": 14577,
+  "metadata": {
+    "name": "Paleoceanographic Sediment Core Data",
+    "description": "Dataset containing sediment core data with various geochemical and physical measurements, including age, depth, carbon and nitrogen isotopes, and grain size distribution.",
+    "keywords": [
+      "sediment core",
+      "paleoceanography",
+      "geochemistry",
+      "carbon isotopes",
+      "nitrogen isotopes",
+      "grain size",
+      "Arctic",
+      "North Pole"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "1833-01-01",
+      "to": "2021-03-06"
+    },
+    "spatial": "point locations",
+    "temporal": "variable (ranging from annual to millennial scale)"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.172,
+  "status": "ok"
+}

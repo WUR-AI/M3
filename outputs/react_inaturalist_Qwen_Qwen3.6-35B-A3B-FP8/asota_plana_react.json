@@ -1,0 +1,66 @@
+{
+  "csv": "asota_plana.csv",
+  "dataset_id": "asota_plana",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "52f4e3c2299dfa0840da2d6641c81c907d3d770def638f66afb4e6cb05950cc5",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3322,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -9.228321,
+      "min_lon": 73.239488,
+      "max_lat": 33.111278,
+      "max_lon": 144.097689
+    },
+    "temporalCoverage": {
+      "from": "2005-05-16T09:24:00+00:00",
+      "to": "2026-06-12T11:24:28+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "asota_plana"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "asota_plana",
+        "resource": "asota_plana"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "asota_plana",
+        "resource": "asota_plana",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "asota_plana",
+        "resource": "asota_plana"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "asota_plana",
+        "resource": "asota_plana",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.089,
+  "status": "ok"
+}

@@ -1,0 +1,59 @@
+{
+  "csv": "senega_cruciata.csv",
+  "dataset_id": "senega_cruciata",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "839b7f36dc19d38652bd8ea18d66a3666d5191a83740009ef90667b4dae7dff7",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 1747,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.888251,
+      "min_lon": -95.888397,
+      "max_lat": 41.132766,
+      "max_lon": -71.882847
+    },
+    "temporalCoverage": {
+      "from": "1993-06-13T00:00:00+00:00",
+      "to": "2026-06-13T11:08:18+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "senega_cruciata"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "senega_cruciata",
+        "resource": "senega_cruciata"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "senega_cruciata",
+        "resource": "senega_cruciata",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "senega_cruciata",
+        "resource": "senega_cruciata",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 6.413,
+  "status": "ok"
+}

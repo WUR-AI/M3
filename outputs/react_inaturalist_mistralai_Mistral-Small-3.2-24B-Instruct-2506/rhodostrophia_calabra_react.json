@@ -1,0 +1,104 @@
+{
+  "csv": "rhodostrophia_calabra.csv",
+  "dataset_id": "rhodostrophia_calabra",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "91a846da3a46d2cf8af6b391ce5a65f69bc85e5557c3d922c03569ba1e858a7f",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5094,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.936147,
+      "min_lon": -9.089605,
+      "max_lat": 50.16351,
+      "max_lon": 48.135948
+    },
+    "temporalCoverage": {
+      "from": "1980-01-01T00:03:28+00:00",
+      "to": "2026-06-14T23:29:31+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "rhodostrophia_calabra",
+        "resource": "rhodostrophia_calabra",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 25.836,
+  "status": "ok"
+}

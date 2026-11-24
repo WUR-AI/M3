@@ -1,0 +1,66 @@
+{
+  "csv": "pterostylis_alpina.csv",
+  "dataset_id": "pterostylis_alpina",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "05aa054705df401d185cfd3ba54c9fe2e7e32290d77ad72467f187974b8b03bb",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 3012,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -41.92005,
+      "min_lon": 142.241305,
+      "max_lat": -35.349831,
+      "max_lon": 148.652738
+    },
+    "temporalCoverage": {
+      "from": "1989-09-24T13:20:00+00:00",
+      "to": "2025-12-30T15:18:08+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "pterostylis_alpina"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "pterostylis_alpina",
+        "resource": "pterostylis_alpina"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "pterostylis_alpina",
+        "resource": "pterostylis_alpina"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "pterostylis_alpina",
+        "resource": "pterostylis_alpina",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "pterostylis_alpina",
+        "resource": "pterostylis_alpina",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.335,
+  "status": "ok"
+}

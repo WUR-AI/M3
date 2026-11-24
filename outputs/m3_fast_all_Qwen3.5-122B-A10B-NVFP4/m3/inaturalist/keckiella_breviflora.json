@@ -1,0 +1,28 @@
+{
+  "dataset_id": "keckiella_breviflora",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/keckiella_breviflora.csv",
+  "source_sha256": "db9ff0c96bde78cf0292d5c384542de769b975108ac5bd9fb62e5c67bc84a18d",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:40:09.173061+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 34.456438,
+      "min_lon": -122.81298,
+      "max_lat": 40.405092,
+      "max_lon": -117.956259
+    },
+    "temporalCoverage": {
+      "from": "2006-06-25T08:33:17+00:00",
+      "to": "2026-06-10T10:34:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/keckiella_breviflora_dff3392b671a474d93849551f14fe68e.jsonl",
+  "runtime_seconds": 58.85
+}

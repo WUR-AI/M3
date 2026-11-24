@@ -1,0 +1,15 @@
+{
+  "csv": "idea_leuconoe.csv",
+  "dataset_id": "idea_leuconoe",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d842e3d2f74c9f7a37e90c376a8cd45b3195e171648746b82b5cebc268c19649",
+  "contract_sha256": "abe3a2383e3f23716ecdb3dea10dd0e87b77750d43422c9b41297439fa4f8235",
+  "prompt_tokens": 318298,
+  "status": "skipped",
+  "reason": "context_window"
+}

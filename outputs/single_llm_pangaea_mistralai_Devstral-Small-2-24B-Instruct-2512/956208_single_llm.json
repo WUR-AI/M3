@@ -1,0 +1,39 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "f3b128c08402299e74e26f3c20bbbc7986f41a758f423793c900c3ad590d2bff",
+  "contract_sha256": "1a3c3f7cc0a85bbe7e407200ae8e551872da67e1d9f49613226f4177974a4fec",
+  "prompt_tokens": 9503,
+  "metadata": {
+    "name": "B. saida measurements and specimen data",
+    "description": "Dataset containing measurements and specimen data for B. saida, including total length, standard length, weight, sex, condition index, and stomach content measurements from various expeditions and locations.",
+    "keywords": [
+      "B. saida",
+      "fish measurements",
+      "specimen data",
+      "expedition data",
+      "Arctic research"
+    ],
+    "spatialCoverage": {
+      "min_lat": 79.524373,
+      "min_lon": -16.222676,
+      "max_lat": 87.874,
+      "max_lon": 130.863
+    },
+    "temporalCoverage": {
+      "from": "2012-08-07",
+      "to": "2021-08-12"
+    },
+    "spatial": "point locations",
+    "temporal": "single date per specimen"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.944,
+  "status": "ok"
+}

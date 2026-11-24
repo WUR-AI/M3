@@ -1,0 +1,104 @@
+{
+  "csv": "keckiella_breviflora.csv",
+  "dataset_id": "keckiella_breviflora",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "db9ff0c96bde78cf0292d5c384542de769b975108ac5bd9fb62e5c67bc84a18d",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 5182,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 34.456438,
+      "min_lon": -122.81298,
+      "max_lat": 40.405092,
+      "max_lon": -117.956259
+    },
+    "temporalCoverage": {
+      "from": "2006-06-25",
+      "to": "2026-06-10"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora",
+        "time_column": "dateIdentified"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora",
+        "time_column": "lastInterpreted"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "keckiella_breviflora",
+        "resource": "keckiella_breviflora",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    }
+  ],
+  "runtime_seconds": 25.791,
+  "status": "ok"
+}

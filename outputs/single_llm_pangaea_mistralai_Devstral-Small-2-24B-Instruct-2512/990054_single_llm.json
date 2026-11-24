@@ -1,0 +1,40 @@
+{
+  "csv": "990054.csv",
+  "dataset_id": "990054",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "contract_sha256": "c5dd19a781e57ae91108bec6de180bdb0fe4de43a8de4e4b4bd8f9da3044ee6b",
+  "prompt_tokens": 23006,
+  "metadata": {
+    "name": "MOSAiC Ice Core Measurements",
+    "description": "Dataset containing ice core measurements from the MOSAiC expedition, including chlorophyll a, phaeopigments, and other parameters at various depths and locations.",
+    "keywords": [
+      "MOSAiC",
+      "ice core",
+      "chlorophyll a",
+      "phaeopigments",
+      "Arctic",
+      "sea ice"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28",
+      "to": "2020-07-20"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 7.728,
+  "status": "ok"
+}

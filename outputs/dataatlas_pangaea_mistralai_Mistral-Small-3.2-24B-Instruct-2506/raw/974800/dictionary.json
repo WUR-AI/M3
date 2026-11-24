@@ -1,0 +1,466 @@
+{
+  "dataset_name": "974800",
+  "list_of_tables": [
+    "974800"
+  ],
+  "tables": {
+    "974800": {
+      "table_name": "974800",
+      "row_count": 60,
+      "number_of_columns": 5,
+      "list_of_columns": [
+        "Study type",
+        "Tank No",
+        "Treat",
+        "DOE",
+        "X. umbellata pulsation"
+      ],
+      "columns": {
+        "Study type": {
+          "column_name": "Study type",
+          "data_type": "string",
+          "sample_values": [
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment",
+            "Laboratory experiment"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaaa aaaaaaaaaa": 60
+          },
+          "total_rows": 60,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Laboratory experiment",
+                60
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Study type: Laboratory experiment."
+        },
+        "Tank No": {
+          "column_name": "Tank No",
+          "data_type": "string",
+          "sample_values": [
+            "T6",
+            "T3",
+            "T12",
+            "T9",
+            "T7",
+            "T8",
+            "T9",
+            "T2",
+            "T5",
+            "T5",
+            "T7",
+            "T3",
+            "T5",
+            "T9",
+            "T8",
+            "T4",
+            "T4",
+            "T9",
+            "T5",
+            "T6",
+            "T11",
+            "T3",
+            "T12",
+            "T10",
+            "T3",
+            "T1",
+            "T11",
+            "T12",
+            "T12",
+            "T8",
+            "T5",
+            "T6",
+            "T2",
+            "T12",
+            "T6",
+            "T4",
+            "T7",
+            "T2",
+            "T11",
+            "T8",
+            "T10",
+            "T10",
+            "T7",
+            "T4",
+            "T4",
+            "T1",
+            "T10",
+            "T9",
+            "T1",
+            "T10"
+          ],
+          "data_patterns": {
+            "A9": 45,
+            "A99": 15
+          },
+          "total_rows": 60,
+          "null_count": 0,
+          "unique_count": 12,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "T1",
+                5
+              ],
+              [
+                "T6",
+                5
+              ],
+              [
+                "T10",
+                5
+              ],
+              [
+                "T2",
+                5
+              ],
+              [
+                "T7",
+                5
+              ],
+              [
+                "T11",
+                5
+              ],
+              [
+                "T3",
+                5
+              ],
+              [
+                "T8",
+                5
+              ],
+              [
+                "T4",
+                5
+              ],
+              [
+                "T5",
+                5
+              ]
+            ],
+            "unique_count": 12
+          },
+          "description": "Tank identifiers, labeled T1 through T12."
+        },
+        "Treat": {
+          "column_name": "Treat",
+          "data_type": "string",
+          "sample_values": [
+            "Zooplankton",
+            "Phytoplankton",
+            "Phytoplankton",
+            "Zooplankton",
+            "DOC",
+            "DOC",
+            "Phytoplankton",
+            "Zooplankton",
+            "DOC",
+            "Control",
+            "DOC",
+            "Control",
+            "Control",
+            "Control",
+            "Zooplankton",
+            "Phytoplankton",
+            "Control",
+            "DOC",
+            "Zooplankton",
+            "Zooplankton",
+            "DOC",
+            "Control",
+            "Phytoplankton",
+            "Zooplankton",
+            "Control",
+            "Zooplankton",
+            "Control",
+            "DOC",
+            "DOC",
+            "DOC",
+            "Phytoplankton",
+            "Control",
+            "Control",
+            "Phytoplankton",
+            "Phytoplankton",
+            "Control",
+            "Zooplankton",
+            "DOC",
+            "DOC",
+            "Zooplankton",
+            "Phytoplankton",
+            "Zooplankton",
+            "Phytoplankton",
+            "Zooplankton",
+            "DOC",
+            "Phytoplankton",
+            "Phytoplankton",
+            "Control",
+            "Control",
+            "Control"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaaaa": 15,
+            "AAA": 15,
+            "Aaaaaaaaaaaaa": 15,
+            "Aaaaaaa": 15
+          },
+          "total_rows": 60,
+          "null_count": 0,
+          "unique_count": 4,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Zooplankton",
+                15
+              ],
+              [
+                "DOC",
+                15
+              ],
+              [
+                "Phytoplankton",
+                15
+              ],
+              [
+                "Control",
+                15
+              ]
+            ],
+            "unique_count": 4
+          },
+          "description": "Tank treatment types: Zooplankton, Phytoplankton, DOC, Control."
+        },
+        "DOE": {
+          "column_name": "DOE",
+          "data_type": "integer",
+          "sample_values": [
+            14,
+            28,
+            7,
+            7,
+            21,
+            14,
+            0,
+            21,
+            21,
+            21,
+            21,
+            7,
+            7,
+            0,
+            0,
+            14,
+            21,
+            28,
+            14,
+            28,
+            0,
+            0,
+            0,
+            7,
+            28,
+            0,
+            28,
+            0,
+            7,
+            21,
+            14,
+            7,
+            28,
+            14,
+            28,
+            7,
+            0,
+            0,
+            28,
+            28,
+            14,
+            21,
+            14,
+            0,
+            14,
+            21,
+            7,
+            21,
+            14,
+            21
+          ],
+          "data_patterns": {
+            "99": 36,
+            "9": 24
+          },
+          "total_rows": 60,
+          "null_count": 0,
+          "unique_count": 5,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 28.0,
+            "mean": 14.0,
+            "median": 14.0,
+            "std": 9.983036459372094
+          },
+          "description": "Design of experiment treatment levels, ranging from 0 to 28."
+        },
+        "X. umbellata pulsation": {
+          "column_name": "X. umbellata pulsation",
+          "data_type": "float",
+          "sample_values": [
+            41.33333333,
+            32.66666667,
+            26.0,
+            34.0,
+            32.0,
+            32.66666667,
+            41.33333333,
+            37.33333333,
+            38.0,
+            40.66666667,
+            36.0,
+            30.0,
+            29.33333333,
+            27.33333333,
+            23.33333333,
+            32.66666667,
+            36.0,
+            38.66666667,
+            37.33333333,
+            26.0,
+            34.0,
+            28.66666667,
+            36.0,
+            40.0,
+            39.33333333,
+            28.0,
+            40.0,
+            26.0,
+            28.66666667,
+            29.33333333,
+            22.0,
+            37.33333333,
+            23.33333333,
+            39.33333333,
+            31.33333333,
+            39.33333333,
+            41.33333333,
+            39.33333333,
+            35.33333333,
+            38.0,
+            36.66666667,
+            36.0,
+            36.66666667,
+            38.66666667,
+            34.66666667,
+            34.66666667,
+            36.0,
+            39.33333333,
+            34.66666667,
+            23.33333333
+          ],
+          "data_patterns": {
+            "99.99999999": 38,
+            "99.9": 22
+          },
+          "total_rows": 60,
+          "null_count": 0,
+          "unique_count": 24,
+          "stats": {
+            "type": "numeric",
+            "min": 22.0,
+            "max": 41.33333333,
+            "mean": 33.91111111066667,
+            "median": 35.33333333,
+            "std": 5.458236115373617
+          },
+          "description": "X. umbellata pulsation rate measured in unspecified units."
+        }
+      },
+      "sample_rows": [
+        {
+          "Study type": "Laboratory experiment",
+          "Tank No": "T1",
+          "Treat": "Zooplankton",
+          "DOE": 0,
+          "X. umbellata pulsation": 36.66666667
+        },
+        {
+          "Study type": "Laboratory experiment",
+          "Tank No": "T6",
+          "Treat": "DOC",
+          "DOE": 0,
+          "X. umbellata pulsation": 32.66666667
+        },
+        {
+          "Study type": "Laboratory experiment",
+          "Tank No": "T1",
+          "Treat": "Zooplankton",
+          "DOE": 21,
+          "X. umbellata pulsation": 28.0
+        }
+      ],
+      "description": "Laboratory experiment data on X. umbellata pulsation, tank treatments, and DOE.",
+      "is_row_capped": false,
+      "rows_processed": 60,
+      "total_rows_in_file": 60
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth and environmental science data, 974800 tables, 60 rows each, unspecified time coverage."
+}

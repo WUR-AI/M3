@@ -1,0 +1,88 @@
+{
+  "csv": "synemosyna_formica.csv",
+  "dataset_id": "synemosyna_formica",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "5766fa71053e80ca8cfece110da946527981c7670e404803159daf6cc5787f70",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4181,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 10.451246,
+      "min_lon": -98.35227,
+      "max_lat": 46.165417,
+      "max_lon": -70.2761
+    },
+    "temporalCoverage": {
+      "from": "1996-08-25",
+      "to": "2026-06-13"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "synemosyna_formica",
+        "resource": "synemosyna_formica",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 18.953,
+  "status": "ok"
+}

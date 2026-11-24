@@ -1,0 +1,15 @@
+{
+  "csv": "crasilogia_gressitti.csv",
+  "dataset_id": "crasilogia_gressitti",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "8de58cc367040c3d345434be5bf241e8967189aa510281099e44194b2ba491fa",
+  "contract_sha256": "c53c95043c6c3824a6964fb07306c112bccec074fc3efcca164e31229f018da2",
+  "prompt_tokens": 317406,
+  "status": "skipped",
+  "reason": "context_window"
+}

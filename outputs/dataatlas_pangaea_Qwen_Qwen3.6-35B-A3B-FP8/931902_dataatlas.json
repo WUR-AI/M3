@@ -1,0 +1,16 @@
+{
+  "csv": "931902.csv",
+  "dataset_id": "931902",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Earth and environmental science",
+  "n_rows": 2,
+  "n_columns": 7,
+  "description": "Two July 7, 2016 Birkeland Cruise records with video metadata, coordinates, and hashes.",
+  "dataset_description": "Contains two records of Earth and environmental science data from July 7, 2016.",
+  "runtime_seconds": 3.408,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Qwen_Qwen3.6-35B-A3B-FP8/raw/931902/dictionary.json"
+}

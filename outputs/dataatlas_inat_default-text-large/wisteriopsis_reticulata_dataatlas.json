@@ -1,0 +1,16 @@
+{
+  "csv": "wisteriopsis_reticulata.csv",
+  "dataset_id": "wisteriopsis_reticulata",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1002,
+  "n_columns": 50,
+  "description": "1002 Wisteriopsis reticulata observations (2007‑2026) with taxonomic, geographic, temporal, and observer details.",
+  "dataset_description": "Records 1002 occurrences of Wisteriopsis reticulata from 2007 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 71.998,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/wisteriopsis_reticulata/dictionary.json"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "995327.csv",
+  "dataset_id": "995327",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 5,
+  "n_columns": 32,
+  "description": "Five 1994 sediment samples with depth, mineral abundances, optical properties, coordinates, and timestamps.",
+  "dataset_description": "Five Earth and environmental measurements from 1994",
+  "runtime_seconds": 140.258,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/995327/dictionary.json"
+}

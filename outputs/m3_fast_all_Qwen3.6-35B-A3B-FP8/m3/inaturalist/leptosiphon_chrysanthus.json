@@ -1,0 +1,28 @@
+{
+  "dataset_id": "leptosiphon_chrysanthus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/leptosiphon_chrysanthus.csv",
+  "source_sha256": "7d754e08467544214f5d4e66e56dce7053b21a9cbc2071de9d4c1aedb97c1386",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:44:29.007359+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 31.377441,
+      "min_lon": -119.300555,
+      "max_lat": 37.419597,
+      "max_lon": -108.167052
+    },
+    "temporalCoverage": {
+      "from": "1995-06-12T00:00:00+00:00",
+      "to": "2026-05-15T12:21:00+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/leptosiphon_chrysanthus_8017b8e7298b411a96b24a6140dddb16.jsonl",
+  "runtime_seconds": 52.22
+}

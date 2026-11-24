@@ -1,0 +1,34 @@
+{
+  "dataset_id": "908459",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/908459.csv",
+  "source_sha256": "b08ef1a0c309b4a4def9f5e67e45bd39c8e3237b14d0e69bd9b469b86c4cda96",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "topology": "fast",
+  "standard": "croissant_pangaea_standard",
+  "finished_utc": "2026-10-19T09:36:50.006152+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Magallana hongkongensis Laboratory Measurements",
+    "description": "Dataset containing laboratory measurements of Magallana hongkongensis (mollusk) including physical properties, chemical parameters, and environmental conditions recorded on June 1, 2016, at a specific location in Zhanjiang.",
+    "keywords": [
+      "Magallana hongkongensis",
+      "mollusk",
+      "laboratory measurements",
+      "physical properties",
+      "chemical parameters",
+      "environmental conditions",
+      "Zhanjiang",
+      "June 2016",
+      "pH",
+      "temperature",
+      "salinity",
+      "carbonate chemistry"
+    ]
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/908459_52401f211a0f4451bc28273ff8da1535.jsonl",
+  "runtime_seconds": 589.58
+}

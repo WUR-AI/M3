@@ -1,0 +1,28 @@
+{
+  "dataset_id": "muhlenbergia_lindheimeri",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/muhlenbergia_lindheimeri.csv",
+  "source_sha256": "30f6271c3bb7ec0a1c6f22d04a355c286c69c45bb30d401432ef4d308f906e36",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:50:54.392517+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 29.303842,
+      "min_lon": -117.756805,
+      "max_lat": 33.712517,
+      "max_lon": -97.19223
+    },
+    "temporalCoverage": {
+      "from": "2010-10-24T14:08:00+00:00",
+      "to": "2026-05-21T19:21:39+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/muhlenbergia_lindheimeri_6ba6274890d1499ebc01acec9ab29bcc.jsonl",
+  "runtime_seconds": 44.96
+}

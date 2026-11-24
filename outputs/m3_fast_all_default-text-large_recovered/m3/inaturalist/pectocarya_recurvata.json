@@ -1,0 +1,29 @@
+{
+  "dataset_id": "pectocarya_recurvata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/pectocarya_recurvata.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T14:17:13.813934+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 29.725293,
+      "min_lon": -118.363963,
+      "max_lat": 37.339383,
+      "max_lon": -107.647989
+    },
+    "temporalCoverage": {
+      "from": "2008-03-01T02:44:00+00:00",
+      "to": "2026-06-23T19:07:02.672000+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/pectocarya_recurvata_d6c0373f434c4e57954c5afb73355c63.jsonl",
+  "runtime_seconds": 164.22,
+  "recovered_from_trace": true,
+  "source_sha256": "2c1205162ae0eee5a57bfff2983a6e11d44981c1558d464a4c82db5fb0fea28e"
+}

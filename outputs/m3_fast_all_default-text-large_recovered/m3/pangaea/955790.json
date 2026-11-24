@@ -1,0 +1,47 @@
+{
+  "dataset_id": "955790",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/955790.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:11:57.148509+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Mn Nodule Geochemical Measurements – Pacific Ocean (1970)",
+    "description": "Dataset of seven marine manganese nodule samples collected in 1970, containing geochemical composition (Mn, Fe, Ni, Co, Cu), location coordinates (latitude, longitude), elevation/depth, deposit type, sample type, descriptive notes, and collection dates. Description based on the 7 rows of the dataset.",
+    "keywords": [
+      "Mn nodule",
+      "manganese nodule",
+      "geochemistry",
+      "marine sediment",
+      "Pacific Ocean",
+      "latitude",
+      "longitude",
+      "depth",
+      "elevation",
+      "1970",
+      "sample",
+      "geochemical analysis"
+    ],
+    "spatialCoverage": {
+      "min_lat": -14.05,
+      "min_lon": -175.7167,
+      "max_lat": 12.0,
+      "max_lon": -149.3
+    },
+    "temporalCoverage": {
+      "from": "1970-09-02T00:00:00Z",
+      "to": "1970-09-25T00:00:00Z"
+    },
+    "spatial": "point observations (irregular spacing)",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/955790_393206324d164ce9afc59c220ae9af0c.jsonl",
+  "runtime_seconds": 150.96,
+  "recovered_from_trace": true,
+  "source_sha256": "32ff85ba761f2a60c1fca4b652694970cb3bcf7223b0d2f265d2c0637be78677"
+}

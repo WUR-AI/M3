@@ -1,0 +1,16 @@
+{
+  "csv": "939047.csv",
+  "dataset_id": "939047",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "domain": "Earth and environmental science",
+  "n_rows": 17133,
+  "n_columns": 18,
+  "description": "Water vapor isotopic measurements at 24 meters elevation in Antarctica from 2017 to 2019.",
+  "dataset_description": "939,047 tables of Earth science data from February 2017 to January 2019.",
+  "runtime_seconds": 7.504,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_Qwen_Qwen3.6-35B-A3B-FP8/raw/939047/dictionary.json"
+}

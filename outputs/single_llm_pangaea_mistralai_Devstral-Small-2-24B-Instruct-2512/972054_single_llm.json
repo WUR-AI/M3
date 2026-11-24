@@ -1,0 +1,43 @@
+{
+  "csv": "972054.csv",
+  "dataset_id": "972054",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd",
+  "contract_sha256": "18e3283dee41b9693f83cba2a8cbabad180ac9cab197eb770e3b3c16d253dfb9",
+  "prompt_tokens": 23495,
+  "metadata": {
+    "name": "Uelzen Remote Sensing Dataset",
+    "description": "A dataset containing remote sensing data for Uelzen, Germany, including 6-band color composites, vegetation indices (NDVI), metabolism indices (NirV), and shape files for various years from 1984 to 2023.",
+    "keywords": [
+      "remote sensing",
+      "Uelzen",
+      "Germany",
+      "vegetation index",
+      "NDVI",
+      "metabolism index",
+      "NirV",
+      "6-band color composites",
+      "shape files"
+    ],
+    "spatialCoverage": {
+      "min_lat": 52.798539332,
+      "min_lon": 9.998781436,
+      "max_lat": 52.798539332,
+      "max_lon": 9.998781436
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "bi-annual"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 9.601,
+  "status": "ok"
+}

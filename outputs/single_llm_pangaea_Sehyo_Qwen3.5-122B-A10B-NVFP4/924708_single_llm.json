@@ -1,0 +1,43 @@
+{
+  "csv": "924708.csv",
+  "dataset_id": "924708",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3",
+  "contract_sha256": "d53d16c0c6fd0f9f06c6b5c8b66dfc3d10e6ede15974168a5c89fa9a099912e4",
+  "prompt_tokens": 887,
+  "metadata": {
+    "name": "PS87-track Whale Observations",
+    "description": "Dataset containing whale and dolphin observations recorded during the PS87 track, including date/time, geographic coordinates, species identification, certainty level, individual count, and event identifier.",
+    "keywords": [
+      "whale",
+      "dolphin",
+      "marine mammals",
+      "PS87",
+      "Arctic",
+      "observations",
+      "Balaenoptera physalus",
+      "Megaptera novaeangliae",
+      "Orcinus orca"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06",
+      "to": "2014-10-01"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.792,
+  "status": "ok"
+}

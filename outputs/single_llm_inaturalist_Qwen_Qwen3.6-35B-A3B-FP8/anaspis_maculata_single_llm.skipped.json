@@ -1,0 +1,15 @@
+{
+  "csv": "anaspis_maculata.csv",
+  "dataset_id": "anaspis_maculata",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "8b426ec76e169131799f5173869a6c3b44a45e5d44ea433e0c81deb3038e3224",
+  "contract_sha256": "8736530291a7f0449c5cd190835270b67b2d3794be000d68f48e792d581b0159",
+  "prompt_tokens": 323933,
+  "status": "skipped",
+  "reason": "context_window"
+}

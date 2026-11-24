@@ -1,0 +1,46 @@
+{
+  "dataset_id": "972054",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/972054.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:08:32.428032+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Uelzen, Germany remote sensing dataset (1984‑2023)",
+    "description": "A collection of remote sensing products for the Uelzen area in Germany, comprising 6‑band colour composite GeoTIFF rasters and associated vector shapefiles. Each record includes observation year, acquisition start and end dates (for rasters), content description, file type, site identifier, event label, and a constant geographic point (latitude 52.798539332 N, longitude 9.998781436 E). Temporal coverage spans from May 1 1984 to October 31 2023.",
+    "keywords": [
+      "Uelzen",
+      "Germany",
+      "remote sensing",
+      "GeoTIFF",
+      "shapefile",
+      "raster",
+      "vector",
+      "satellite imagery",
+      "6‑band colour composites",
+      "time series",
+      "spatial point"
+    ],
+    "spatialCoverage": {
+      "min_lat": 52.798539332,
+      "min_lon": 9.998781436,
+      "max_lat": 52.798539332,
+      "max_lon": 9.998781436
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01T00:00:00+00:00",
+      "to": "2023-10-31T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/972054_ffcdc69b71c74543ab1cbdc0c7faa0bf.jsonl",
+  "runtime_seconds": 279.95,
+  "recovered_from_trace": true,
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd"
+}

@@ -1,0 +1,16 @@
+{
+  "csv": "porophyllum_ruderale.csv",
+  "dataset_id": "porophyllum_ruderale",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 999,
+  "n_columns": 50,
+  "description": "Contains 999 Porophyllum ruderale occurrence records (2014‑2026) with taxonomy, location, date, and observer metadata.",
+  "dataset_description": "Records 999 observations of Porophyllum ruderale occurrences from 2014 to 2026 for biodiversity monitoring.",
+  "runtime_seconds": 128.051,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/porophyllum_ruderale/dictionary.json"
+}

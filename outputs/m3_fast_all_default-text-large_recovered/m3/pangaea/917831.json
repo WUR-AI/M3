@@ -1,0 +1,52 @@
+{
+  "dataset_id": "917831",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917831.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:03:47.609752+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Macapule Lagoon fish biometric & biochemical data (2013‑2015)",
+    "description": "A dataset of 123 fish observations from Macapule Lagoon collected between 12 Dec 2013 and 31 Aug 2015. Each record includes sampling date, season, size class, length, total mass, organ masses (gut, liver, stomach, heart), eviscerated mass, condition indices (HSI, K, GRI), plasma biochemistry (total protein, triglycerides, cholesterol, glucose), an individual identifier, and a constant event label.",
+    "keywords": [
+      "fish",
+      "biometric",
+      "morphometrics",
+      "biochemical",
+      "lagoon",
+      "Macapule",
+      "seasonal",
+      "length",
+      "mass",
+      "organ mass",
+      "HSI",
+      "condition factor",
+      "GRI",
+      "triglycerides",
+      "cholesterol",
+      "glucose",
+      "2013‑2015"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-12T00:00:00+00:00",
+      "to": "2015-08-31T00:00:00+00:00"
+    },
+    "spatial": "single point (no variation across records)",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917831_3e6072b9485147e7881b668ce3bf2caf.jsonl",
+  "runtime_seconds": 351.44,
+  "recovered_from_trace": true,
+  "source_sha256": "b062f232588bebf6ba01ab8bb48f253cfa4c4e88fc37e89f386e8edd7d18da59"
+}

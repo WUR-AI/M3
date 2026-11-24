@@ -1,0 +1,16 @@
+{
+  "csv": "idea_leuconoe.csv",
+  "dataset_id": "idea_leuconoe",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1000,
+  "n_columns": 50,
+  "description": "Species occurrence records of Idea leuconoe butterflies from 2003 to 2026.",
+  "dataset_description": "Species occurrence records of Leuconoe butterflies from 2003 to 2026.",
+  "runtime_seconds": 31.86,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/idea_leuconoe/dictionary.json"
+}

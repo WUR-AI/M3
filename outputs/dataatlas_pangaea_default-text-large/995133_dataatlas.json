@@ -1,0 +1,16 @@
+{
+  "csv": "995133.csv",
+  "dataset_id": "995133",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 36,
+  "n_columns": 6,
+  "description": "Observations from Expedition EMB320, Baltic Sea sites, June 2023, shell counts and frequencies.",
+  "dataset_description": "Contains 36 records of Earth and environmental science observations across a single table.",
+  "runtime_seconds": 30.81,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/995133/dictionary.json"
+}

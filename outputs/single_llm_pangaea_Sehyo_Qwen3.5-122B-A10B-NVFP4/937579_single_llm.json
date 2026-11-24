@@ -1,0 +1,43 @@
+{
+  "csv": "937579.csv",
+  "dataset_id": "937579",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "156fa955ff4d43d3d0a0f15b5f40e346e65b3ba52e0f21a776a715bde33d718e",
+  "contract_sha256": "958420a9a3c733862f86e7d61a050ce7908dd1ee8fd137edac48070e2a1ab7aa",
+  "prompt_tokens": 10467,
+  "metadata": {
+    "name": "NunaWP4 Mackenzie 2019 Stable Isotope Data",
+    "description": "Dataset containing water stable isotope measurements (delta18O, deltaD, and d xs) collected at various stations in the Mackenzie River region during the NunaWP4 expedition in 2019. The data includes geographic coordinates, water depth, and sampling timestamps for multiple stations across four expedition legs.",
+    "keywords": [
+      "delta18O",
+      "deltaD",
+      "d xs",
+      "water isotopes",
+      "Mackenzie River",
+      "NunaWP4",
+      "2019",
+      "Arctic",
+      "hydrology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 68.264,
+      "min_lon": -138.13512,
+      "max_lat": 69.649,
+      "max_lon": -133.03141
+    },
+    "temporalCoverage": {
+      "from": "2019-04-20",
+      "to": "2019-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular (campaign-based)"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.665,
+  "status": "ok"
+}

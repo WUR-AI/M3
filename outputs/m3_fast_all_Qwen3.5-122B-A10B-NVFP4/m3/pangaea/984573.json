@@ -1,0 +1,43 @@
+{
+  "dataset_id": "984573",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/984573.csv",
+  "source_sha256": "091ca8fc4435bce03f857f31f55d706c49a7bb2568db46eb23333b3fc886c50a",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:57:54.496519+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Deep-Sea Sediment Core Data from Site 383-U1539C",
+    "description": "High-resolution paleoceanographic dataset containing 150 sediment core samples from a single deep-sea location in the Southern Ocean. The data includes physical measurements, geographic coordinates, estimated ages, and Sea Surface Temperature (SST) reconstructions derived from the core, collected during a concentrated sampling campaign in late May to early June 2019.",
+    "keywords": [
+      "paleoceanography",
+      "sediment core",
+      "Sea Surface Temperature",
+      "SST",
+      "deep-sea",
+      "Southern Ocean",
+      "383-U1539C",
+      "stratigraphy",
+      "climate reconstruction"
+    ],
+    "spatialCoverage": {
+      "min_lat": -56.1512,
+      "min_lon": -115.1341,
+      "max_lat": -56.151,
+      "max_lon": -115.1338
+    },
+    "temporalCoverage": {
+      "from": "2019-05-31T15:15:00+00:00",
+      "to": "2019-06-05T15:30:00+00:00"
+    },
+    "spatial": "Point locations (single core site, ~22m x ~27m bounding box)",
+    "temporal": "High-frequency sampling over 5 days (batch data entry)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/984573_e0ed503a781c478e813e3099146c706c.jsonl",
+  "runtime_seconds": 132.83
+}

@@ -1,0 +1,44 @@
+{
+  "csv": "973695.csv",
+  "dataset_id": "973695",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "contract_sha256": "2c3100ca2a5a6b1a603be708054cc2b62b85189c908d6ac7f0d4713a78689b18",
+  "prompt_tokens": 10311,
+  "metadata": {
+    "name": "112-680A Sediment Geochemistry",
+    "description": "This dataset contains geochemical data from sediment cores collected during ODP Leg 112 at Site 680A. The data includes measurements of various elements and isotopes, such as Al, Ca, Fe, K, Mn, Na, P, Mo, U, N, S, TOC, TC, and stable isotopes (δ15N, δ13C Corg, δ98Mo auth, δ98Mo std dev). The samples are from different depths and sections of the core, and the data provides insights into the sediment composition and environmental conditions during the Pleistocene and Pliocene epochs.",
+    "keywords": [
+      "ODP",
+      "Leg 112",
+      "Site 680A",
+      "Sediment geochemistry",
+      "Pleistocene",
+      "Pliocene",
+      "Elemental analysis",
+      "Isotope analysis",
+      "Marine sediments",
+      "Paleoenvironment"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05",
+      "to": "1986-11-05"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 14.443,
+  "status": "ok"
+}

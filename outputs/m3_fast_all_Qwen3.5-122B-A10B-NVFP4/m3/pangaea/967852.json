@@ -1,0 +1,40 @@
+{
+  "dataset_id": "967852",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/967852.csv",
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:04:26.099559+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Santiurde Section Geological Sample Data",
+    "description": "Geological sample dataset containing mineralogical composition (Quartz, Clay, Calcite, Gypsum, Dolomite, Pyrite), stratigraphic measurements (thickness, ratio, stratigraphic height), and geospatial coordinates from 19 unique samples collected at the Santiurde section in northern Spain.",
+    "keywords": [
+      "geology",
+      "sedimentology",
+      "mineral composition",
+      "stratigraphy",
+      "Santiurde",
+      "Spain",
+      "calcite",
+      "clay",
+      "quartz"
+    ],
+    "spatialCoverage": {
+      "min_lat": 43.0685608,
+      "min_lon": -4.0878295,
+      "max_lat": 43.0685608,
+      "max_lon": -4.0878295
+    },
+    "temporalCoverage": null,
+    "spatial": "point",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/967852_7bf0a548bf024cd090ca925243919a79.jsonl",
+  "runtime_seconds": 404.17
+}

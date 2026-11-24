@@ -1,0 +1,42 @@
+{
+  "dataset_id": "959885",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/959885.csv",
+  "source_sha256": "ff635dbf165fab9a27628190255b50bfb89c09b6929ee5d442f5376e0d35e60f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:40:17.944868+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Depth Profile from Station M186_54-1GC",
+    "description": "Dataset containing geochemical and environmental data from 19 samples collected at a single location in the Atlantic Ocean. The data represents a vertical depth profile of sediment or pore water, measuring concentrations of nutrients, major ions, and trace elements.",
+    "keywords": [
+      "geochemistry",
+      "marine sediment",
+      "pore water",
+      "nutrients",
+      "trace elements",
+      "depth profile",
+      "Atlantic Ocean",
+      "Azores"
+    ],
+    "spatialCoverage": {
+      "min_lat": 38.74553,
+      "min_lon": -28.56587,
+      "max_lat": 38.74553,
+      "max_lon": -28.56587
+    },
+    "temporalCoverage": {
+      "from": "2022-12-16T07:56:17+00:00",
+      "to": "2022-12-16T07:56:17+00:00"
+    },
+    "spatial": "point",
+    "temporal": "instantaneous"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/959885_17c75571077e434abd9ef44d27aa03d8.jsonl",
+  "runtime_seconds": 151.52
+}

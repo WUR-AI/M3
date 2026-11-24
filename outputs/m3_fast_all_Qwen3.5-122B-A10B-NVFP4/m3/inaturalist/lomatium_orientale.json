@@ -1,0 +1,28 @@
+{
+  "dataset_id": "lomatium_orientale",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/lomatium_orientale.csv",
+  "source_sha256": "981e31e0610cdeda7420d35952429df5e0de0b3bf794c05f8370dc1ecb6984cf",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:53:45.187038+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 38.270662,
+      "min_lon": -109.533447,
+      "max_lat": 49.127095,
+      "max_lon": -94.833821
+    },
+    "temporalCoverage": {
+      "from": "2003-04-13T14:46:00+00:00",
+      "to": "2026-05-17T13:41:16+00:00"
+    }
+  },
+  "plan_steps_count": 5,
+  "steps_completed": 5,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/lomatium_orientale_0f16a8edf98d43468e9aacc3f33a0f18.jsonl",
+  "runtime_seconds": 225.67
+}

@@ -1,0 +1,66 @@
+{
+  "csv": "902576.csv",
+  "dataset_id": "902576",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b06c3394469ddd9b33f1f543a33543a85632b83506b0cb72086d0f8e099211ea",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 1500,
+  "metadata": {
+    "name": "Mean Annual Ground Temperature (MAGTM) [C°]",
+    "description": "Dataset containing mean annual ground temperature data in degrees Celsius.",
+    "keywords": [
+      "Mean Annual Ground Temperature",
+      "MAGTM",
+      "Ground Temperature",
+      "Climate",
+      "Antarctica"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "yearly"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "902576"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "902576",
+        "resource": "902576"
+      }
+    }
+  ],
+  "runtime_seconds": 7.824,
+  "status": "ok"
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_id": "973695",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973695.csv",
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:40:17.625670+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical and Sedimentological Data from Marine Sediment Core 112-680A, ODP Leg 112, Site 680",
+    "description": "A comprehensive geochemical profile of 45 samples from marine sediment core 112-680A, spanning depths from 0.72m to 78.14m. The dataset includes major and trace element concentrations (Al, Ca, Fe, K, Mn, Na, P, Mo, U, N, S), total organic carbon (TOC), total carbon (TC), elemental ratios (Fe/Al, Mn/Al), enrichment factors (EF, Mo xs, U xs), iron speciation data (Feac, FeD, Femag, Fe Py, Fe react), and isotopic measurements (δ15N, δ13C Corg, δ98Mo auth). Samples were collected during ODP Leg 112 at Site 680 in the Pacific Ocean, covering the Pleistocene epoch with a transition to a secondary epoch, providing data suitable for paleoceanographic analysis of redox conditions and organic carbon burial.",
+    "keywords": [
+      "marine sediment",
+      "geochemistry",
+      "ODP Leg 112",
+      "Site 680",
+      "paleoceanography",
+      "redox proxies",
+      "trace elements",
+      "isotopes",
+      "Pleistocene",
+      "sediment core",
+      "organic carbon",
+      "iron speciation"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05T07:15:00+00:00",
+      "to": "1986-11-05T07:15:00+00:00"
+    },
+    "spatial": "Point location (single core site)",
+    "temporal": "Single sampling event (1986-11-05)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973695_627c4ecd851d42e0aa464470cdda0faa.jsonl",
+  "runtime_seconds": 160.05
+}

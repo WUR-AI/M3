@@ -1,0 +1,66 @@
+{
+  "csv": "formica_cunicularia.csv",
+  "dataset_id": "formica_cunicularia",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0101be02e4c3b07b529d7b6c88e4d515436183b7b29989b9c0649cbcdfd83866",
+  "contract_sha256": "a956a3a63bef09667afee9e71082931e0f8ca267aebb1926d4e798ce4bc37fd3",
+  "prompt_tokens": 3375,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 35.317627,
+      "min_lon": -8.832608,
+      "max_lat": 59.254922,
+      "max_lon": 116.836866
+    },
+    "temporalCoverage": {
+      "from": "2009-04-05T14:11:00+00:00",
+      "to": "2026-06-14T14:19:34+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "formica_cunicularia"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "formica_cunicularia",
+        "resource": "formica_cunicularia"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "formica_cunicularia",
+        "resource": "formica_cunicularia",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "formica_cunicularia",
+        "resource": "formica_cunicularia"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "formica_cunicularia",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude",
+        "resource": "formica_cunicularia"
+      }
+    }
+  ],
+  "runtime_seconds": 8.112,
+  "status": "ok"
+}

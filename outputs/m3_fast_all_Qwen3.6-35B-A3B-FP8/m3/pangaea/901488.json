@@ -1,0 +1,43 @@
+{
+  "dataset_id": "901488",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/901488.csv",
+  "source_sha256": "c43d3f554bb169bcda8fb03f880a0f8620b128000d75d47294281b850cc47662",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:20:50.760805+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "High-Precision GNSS Survey Observations, Elwha River Delta Campaign, March 20, 2011",
+    "description": "This dataset contains 211 high-precision GNSS survey observations collected during a single survey session on March 20, 2011. The data includes latitude, longitude, and elevation coordinates, along with horizontal and vertical root mean square (HRMS/VRMS) error estimates and solution status. All observations feature a 'FIXED' GNSS solution status, indicating centimeter-level positioning accuracy. The survey was conducted in a compact area off the coast of Vancouver Island, British Columbia.",
+    "keywords": [
+      "GNSS",
+      "GPS",
+      "geodetic survey",
+      "Vancouver Island",
+      "Elwha River Delta",
+      "positioning",
+      "HRMS",
+      "VRMS",
+      "fixed solution"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551062,
+      "min_lon": -125.9387874,
+      "max_lat": 49.570186,
+      "max_lon": -125.9302033
+    },
+    "temporalCoverage": {
+      "from": "2011-03-20T05:21:00+00:00",
+      "to": "2011-03-20T07:32:00+00:00"
+    },
+    "spatial": "Point locations with centimeter-level precision (approx. 0.01 m)",
+    "temporal": "Single session survey (approx. 2 hours 11 minutes)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/901488_5e2cc887907d4fa0909bbf01f7798a70.jsonl",
+  "runtime_seconds": 108.07
+}

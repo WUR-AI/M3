@@ -1,0 +1,102 @@
+{
+  "csv": "953747.csv",
+  "dataset_id": "953747",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 3746,
+  "metadata": {
+    "name": "PS122 Survey Images 2020-09-08",
+    "description": "A collection of ROV quicklook image file names from the PS122 survey (event PS122/5_61-35) recorded on 2020-09-08, including associated latitude, longitude, and elevation metadata for each image.",
+    "keywords": [
+      "ROV",
+      "quicklook",
+      "ADCP",
+      "survey",
+      "PS122",
+      "2020-09-08",
+      "image",
+      "latitude",
+      "longitude",
+      "elevation"
+    ],
+    "spatialCoverage": {
+      "min_lat": 88.675993,
+      "min_lon": 112.324519,
+      "max_lat": 88.675993,
+      "max_lon": 112.324519
+    },
+    "temporalCoverage": {
+      "from": "2020-09-08T00:00:00+00:00",
+      "to": "2020-09-08T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "953747"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "953747",
+        "resource": "953747"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "953747",
+        "resource": "953747",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "953747",
+        "resource": "953747"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "953747"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "953747",
+        "resource": "953747",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "953747"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "953747",
+        "resource": "953747",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 18.661,
+  "status": "ok"
+}

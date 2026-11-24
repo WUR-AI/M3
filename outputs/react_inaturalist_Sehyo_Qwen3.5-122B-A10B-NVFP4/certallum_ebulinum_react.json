@@ -1,0 +1,73 @@
+{
+  "csv": "certallum_ebulinum.csv",
+  "dataset_id": "certallum_ebulinum",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b234456ec36a3cdaeb49ce542420989a3260ec0b7aaa787a280f0f24fcbd5b98",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 9570,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.852297,
+      "min_lon": -9.380752,
+      "max_lat": 46.91084,
+      "max_lon": 47.650066
+    },
+    "temporalCoverage": {
+      "from": "2007-04-15T13:32:00+00:00",
+      "to": "2026-06-04T13:48:43+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "certallum_ebulinum"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "certallum_ebulinum",
+        "resource": "certallum_ebulinum"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "certallum_ebulinum",
+        "resource": "certallum_ebulinum",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "certallum_ebulinum",
+        "resource": "certallum_ebulinum"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "certallum_ebulinum",
+        "resource": "certallum_ebulinum",
+        "time_column": "eventDate"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "certallum_ebulinum",
+        "resource": "certallum_ebulinum"
+      }
+    }
+  ],
+  "runtime_seconds": 17.198,
+  "status": "ok"
+}

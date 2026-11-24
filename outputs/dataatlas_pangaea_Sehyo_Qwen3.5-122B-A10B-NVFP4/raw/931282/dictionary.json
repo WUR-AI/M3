@@ -1,0 +1,261 @@
+{
+  "dataset_name": "931282",
+  "list_of_tables": [
+    "931282"
+  ],
+  "tables": {
+    "931282": {
+      "table_name": "931282",
+      "row_count": 2,
+      "number_of_columns": 8,
+      "list_of_columns": [
+        "Binary",
+        "Binary (Type)",
+        "Binary (Size)",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Binary": {
+          "column_name": "Binary",
+          "data_type": "string",
+          "sample_values": [
+            "sensors-20210202T183221Z-001_Input_files.zip",
+            "sensors-1074075_Output_files.zip"
+          ],
+          "data_patterns": {
+            "aaaaaaa-99999999A999999A-999_Aaaaa_aaaaa.aaa": 1,
+            "aaaaaaa-9999999_Aaaaaa_aaaaa.aaa": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "sensors-20210202T183221Z-001_Input_files.zip",
+                1
+              ],
+              [
+                "sensors-1074075_Output_files.zip",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Names of binary archive files containing input or output sensor data."
+        },
+        "Binary (Type)": {
+          "column_name": "Binary (Type)",
+          "data_type": "string",
+          "sample_values": [
+            "application/zip",
+            "application/zip"
+          ],
+          "data_patterns": {
+            "aaaaaaaaaaa/aaa": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "application/zip",
+                2
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "MIME type of the binary file, consistently application/zip."
+        },
+        "Binary (Size)": {
+          "column_name": "Binary (Size)",
+          "data_type": "string",
+          "sample_values": [
+            "246.9 kBytes",
+            "446.5 MBytes"
+          ],
+          "data_patterns": {
+            "999.9 AAaaaa": 1,
+            "999.9 aAaaaa": 1
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "446.5 MBytes",
+                1
+              ],
+              [
+                "246.9 kBytes",
+                1
+              ]
+            ],
+            "unique_count": 2
+          },
+          "description": "Binary file size in kilobytes or megabytes."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "UPC",
+            "UPC"
+          ],
+          "data_patterns": {
+            "AAA": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "UPC",
+                2
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Event type designated as UPC for March 2020 records."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            41.393,
+            41.393
+          ],
+          "data_patterns": {
+            "99.999": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 41.393,
+            "max": 41.393,
+            "mean": 41.393,
+            "median": 41.393,
+            "std": 0.0
+          },
+          "description": "Geographic latitude coordinate in decimal degrees for recorded events."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            2.12,
+            2.12
+          ],
+          "data_patterns": {
+            "9.99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 2.12,
+            "max": 2.12,
+            "mean": 2.12,
+            "median": 2.12,
+            "std": 0.0
+          },
+          "description": "Geographic longitude coordinate in decimal degrees for the recorded event location."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            115.0,
+            115.0
+          ],
+          "data_patterns": {
+            "999.9": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 115.0,
+            "max": 115.0,
+            "mean": 115.0,
+            "median": 115.0,
+            "std": 0.0
+          },
+          "description": "Elevation in meters above sea level for the recorded locations."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "datetime",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "2020-03-11",
+            "2020-03-11"
+          ],
+          "data_patterns": {
+            "9999-99-99": 2
+          },
+          "total_rows": 2,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "datetime",
+            "min_date": "2020-03-11T00:00:00",
+            "max_date": "2020-03-11T00:00:00"
+          },
+          "description": "Event occurrence date and time recorded on March 11, 2020."
+        }
+      },
+      "time_period_covered": {
+        "start": "2020-03-11T00:00:00",
+        "end": "2020-03-11T00:00:00"
+      },
+      "sample_rows": [
+        {
+          "Binary": "sensors-20210202T183221Z-001_Input_files.zip",
+          "Binary (Type)": "application/zip",
+          "Binary (Size)": "446.5 MBytes",
+          "Event": "UPC",
+          "Latitude": 41.393,
+          "Longitude": 2.12,
+          "Elevation": 115.0,
+          "Date/Time": "2020-03-11"
+        },
+        {
+          "Binary": "sensors-1074075_Output_files.zip",
+          "Binary (Type)": "application/zip",
+          "Binary (Size)": "246.9 kBytes",
+          "Event": "UPC",
+          "Latitude": 41.393,
+          "Longitude": 2.12,
+          "Elevation": 115.0,
+          "Date/Time": "2020-03-11"
+        }
+      ],
+      "description": "Two March 2020 UPC event records with binary files and geographic coordinates.",
+      "is_row_capped": false,
+      "rows_processed": 2,
+      "total_rows_in_file": 2
+    }
+  },
+  "time_period_covered": {
+    "start": "2020-03-11T00:00:00",
+    "end": "2020-03-11T00:00:00"
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Earth science dataset containing two records from March 11, 2020."
+}

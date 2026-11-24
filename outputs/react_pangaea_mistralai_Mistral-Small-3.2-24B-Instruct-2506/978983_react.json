@@ -1,0 +1,84 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 5180,
+  "metadata": {
+    "name": "386-M0095B",
+    "description": "The dataset contains mineralogical composition data of marine sediment samples, including various minerals and compounds such as Quartz (Qz), Cristobalite (Crs), Tridymite (Trd), Plagioclase (Pl), K-feldspar (Kfs), Calcite (Cal), and others. Each sample is associated with specific location coordinates (Latitude, Longitude) and elevation data.",
+    "keywords": [
+      "mineralogical composition",
+      "marine sediments",
+      "geochemical analysis",
+      "mineral content",
+      "sediment samples"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "978983"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 28.427,
+  "status": "ok"
+}

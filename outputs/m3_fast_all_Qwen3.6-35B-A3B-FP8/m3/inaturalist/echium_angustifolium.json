@@ -1,0 +1,28 @@
+{
+  "dataset_id": "echium_angustifolium",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/echium_angustifolium.csv",
+  "source_sha256": "5fbf4d4f1c580eb9dc5fbdfc9673d4e20e3fedacbc84036d0d4df6fd842ec92f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:28:50.931188+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.593615,
+      "min_lon": 10.512658,
+      "max_lat": 40.000793,
+      "max_lon": 36.048932
+    },
+    "temporalCoverage": {
+      "from": "2000-04-09T13:40:00+00:00",
+      "to": "2026-06-15T08:39:19+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/echium_angustifolium_d10361527b284186a00e55099ecb61b3.jsonl",
+  "runtime_seconds": 43.54
+}

@@ -1,0 +1,179 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "react",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "fe5634c2e1221d9491f6e72f9745afb23d539e124945e446ae656e60d8e9e9bd",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 14305,
+  "metadata": {
+    "name": "Laboratory experiment on Mytilus galloprovincialis embryo development under ocean acidification conditions",
+    "description": "Laboratory experiment investigating the effects of elevated CO2 (ocean acidification) on early development stages of the Mediterranean mussel Mytilus galloprovincialis. The dataset contains measurements of embryo development percentages across multiple developmental stages (1-cell through D-larva), morphological measurements (length, height), and seawater chemistry parameters (pH, temperature, salinity, DIC, CO2, bicarbonate, carbonate, calcium, and saturation states) under control and high CO2 treatment conditions.",
+    "keywords": [
+      "Mytilus galloprovincialis",
+      "mollusk",
+      "embryo development",
+      "ocean acidification",
+      "CO2",
+      "laboratory experiment",
+      "Nagasaki University",
+      "seawater chemistry",
+      "pH",
+      "saturation state",
+      "aragonite",
+      "calcite"
+    ],
+    "spatialCoverage": {
+      "min_lat": 32.8095,
+      "min_lon": 129.7708,
+      "max_lat": 32.8095,
+      "max_lon": 129.7708
+    },
+    "temporalCoverage": null,
+    "spatial": "point locations",
+    "temporal": "hours (2–144 h exposure duration)"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "924558"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "n": 5
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "get_field_types",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "field": "Type",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "field": "Species",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "field": "Treat",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "field": "Event",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "time_column": "Time h"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "field": "Stage",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "get_missing_values",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "924558",
+        "resource": "924558",
+        "field": "Status",
+        "limit": 20
+      }
+    }
+  ],
+  "runtime_seconds": 18.166,
+  "status": "ok"
+}

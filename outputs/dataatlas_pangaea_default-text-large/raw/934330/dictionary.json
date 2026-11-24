@@ -1,0 +1,689 @@
+{
+  "dataset_name": "934330",
+  "list_of_tables": [
+    "934330"
+  ],
+  "tables": {
+    "934330": {
+      "table_name": "934330",
+      "row_count": 27,
+      "number_of_columns": 14,
+      "list_of_columns": [
+        "Depth sed",
+        "Samp thick",
+        "Age dated",
+        "Age unc",
+        "Dated material",
+        "Lab label",
+        "Age",
+        "Age unc_2",
+        "Comment",
+        "Event",
+        "Latitude",
+        "Longitude",
+        "Elevation",
+        "Date/Time"
+      ],
+      "columns": {
+        "Depth sed": {
+          "column_name": "Depth sed",
+          "data_type": "float",
+          "sample_values": [
+            0.2805,
+            0.438,
+            1.005,
+            0.765,
+            0.0025,
+            0.0575,
+            0.0775,
+            0.0425,
+            0.0525,
+            0.0075,
+            0.0925,
+            0.0275,
+            0.0225,
+            1.325,
+            0.0175,
+            0.0325,
+            0.0125,
+            1.6025,
+            2.225,
+            0.0,
+            1.795,
+            0.0825,
+            0.0375,
+            2.1675,
+            0.4125,
+            0.1025,
+            2.0225
+          ],
+          "data_patterns": {
+            "9.9999": 20,
+            "9.999": 6,
+            "9.9": 1
+          },
+          "total_rows": 27,
+          "null_count": 0,
+          "unique_count": 27,
+          "stats": {
+            "type": "numeric",
+            "min": 0.0,
+            "max": 2.225,
+            "mean": 0.5446666666666667,
+            "median": 0.0825,
+            "std": 0.768487525548123
+          },
+          "description": "Sediment core depth measured in meters, ranging from surface to 2.225 m."
+        },
+        "Samp thick": {
+          "column_name": "Samp thick",
+          "data_type": "float",
+          "semantic_type": "probability_score",
+          "sample_values": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.6,
+            0.5,
+            1.0,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.5,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "data_patterns": {
+            "9.9": 26
+          },
+          "total_rows": 27,
+          "null_count": 1,
+          "unique_count": 4,
+          "stats": {
+            "type": "numeric",
+            "min": 0.5,
+            "max": 1.0,
+            "mean": 0.6,
+            "median": 0.5,
+            "std": 0.2
+          },
+          "description": "Probability score indicating relative sample thickness, ranging from 0.5 to 1.0."
+        },
+        "Age dated": {
+          "column_name": "Age dated",
+          "data_type": "float",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            3.66,
+            3.5,
+            3.76,
+            1.28,
+            4.2,
+            0.59,
+            0.605,
+            4.17,
+            2.675,
+            0.825,
+            4.12
+          ],
+          "data_patterns": {
+            "9.99": 6,
+            "9.999": 3,
+            "9.9": 2
+          },
+          "total_rows": 27,
+          "null_count": 16,
+          "unique_count": 12,
+          "stats": {
+            "type": "numeric",
+            "min": 0.59,
+            "max": 4.2,
+            "mean": 2.671363636363637,
+            "median": 3.5,
+            "std": 1.5322289171483008
+          },
+          "description": "Age dated values are continuous ages measured in millions of years."
+        },
+        "Age unc": {
+          "column_name": "Age unc",
+          "data_type": "float",
+          "semantic_type": "age",
+          "sample_values": [
+            0.04,
+            0.04,
+            0.04,
+            0.06,
+            0.03,
+            0.03,
+            0.09,
+            0.03,
+            0.05,
+            0.05,
+            0.06
+          ],
+          "data_patterns": {
+            "9.99": 11
+          },
+          "total_rows": 27,
+          "null_count": 16,
+          "unique_count": 6,
+          "stats": {
+            "type": "numeric",
+            "min": 0.03,
+            "max": 0.09,
+            "mean": 0.04727272727272727,
+            "median": 0.04,
+            "std": 0.017939291563999447
+          },
+          "description": "Age uncertainty in millions of years for each sediment sample"
+        },
+        "Dated material": {
+          "column_name": "Dated material",
+          "data_type": "string",
+          "semantic_type": "timestamp",
+          "sample_values": [
+            "sph. Lindbergii",
+            "beatle, bark",
+            "moss",
+            "moss",
+            "moss, TM",
+            "carex",
+            "moss",
+            "Carex, Betula",
+            "moss",
+            "moss",
+            "sph. Lindbergii"
+          ],
+          "data_patterns": {
+            "aaaa": 5,
+            "aaa. Aaaaaaaaaa": 2,
+            "aaaa, AA": 1,
+            "aaaaaa, aaaa": 1,
+            "Aaaaa, Aaaaaa": 1,
+            "aaaaa": 1
+          },
+          "total_rows": 27,
+          "null_count": 16,
+          "unique_count": 7,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "moss",
+                5
+              ],
+              [
+                "sph. Lindbergii",
+                2
+              ],
+              [
+                "moss, TM",
+                1
+              ],
+              [
+                "beatle, bark",
+                1
+              ],
+              [
+                "Carex, Betula",
+                1
+              ],
+              [
+                "carex",
+                1
+              ]
+            ],
+            "unique_count": 6
+          },
+          "description": "Dated material identifies organic source types such as moss, Carex, Betula, and sph. Lindbergii."
+        },
+        "Lab label": {
+          "column_name": "Lab label",
+          "data_type": "string",
+          "sample_values": [
+            "LuS 6263",
+            "LuS 6264",
+            "Poz-7781",
+            "Poz-7780",
+            "Poz-7783",
+            "Poz-7787",
+            "LuS 6265",
+            "Poz-7784",
+            "Poz-7782",
+            "Poz-7786",
+            "LuS 6262"
+          ],
+          "data_patterns": {
+            "Aaa-9999": 7,
+            "AaA 9999": 4
+          },
+          "total_rows": 27,
+          "null_count": 16,
+          "unique_count": 12,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "LuS 6264",
+                1
+              ],
+              [
+                "LuS 6262",
+                1
+              ],
+              [
+                "Poz-7786",
+                1
+              ],
+              [
+                "Poz-7787",
+                1
+              ],
+              [
+                "Poz-7782",
+                1
+              ],
+              [
+                "Poz-7781",
+                1
+              ],
+              [
+                "Poz-7784",
+                1
+              ],
+              [
+                "LuS 6263",
+                1
+              ],
+              [
+                "LuS 6265",
+                1
+              ],
+              [
+                "Poz-7780",
+                1
+              ]
+            ],
+            "unique_count": 11
+          },
+          "description": "Sample identifier assigned by laboratory for each sediment core."
+        },
+        "Age": {
+          "column_name": "Age",
+          "data_type": "float",
+          "semantic_type": "age",
+          "sample_values": [
+            1936.0,
+            1993.0,
+            1953.0,
+            1985.0,
+            1922.0,
+            1898.0,
+            1971.0,
+            1988.0,
+            1997.0,
+            1958.0,
+            1967.0,
+            2001.0,
+            1940.0,
+            1981.0,
+            1975.0,
+            2003.0
+          ],
+          "data_patterns": {
+            "9999.9": 16
+          },
+          "total_rows": 27,
+          "null_count": 11,
+          "unique_count": 17,
+          "stats": {
+            "type": "numeric",
+            "min": 1898.0,
+            "max": 2003.0,
+            "mean": 1966.75,
+            "median": 1973.0,
+            "std": 30.35457131965464
+          },
+          "description": "Sample ages expressed as calendar years ranging from late 19th to early 21st century."
+        },
+        "Age unc_2": {
+          "column_name": "Age unc_2",
+          "data_type": "float",
+          "semantic_type": "age",
+          "sample_values": [
+            6.0,
+            2.0,
+            2.0,
+            9.0,
+            2.0,
+            3.0,
+            4.0,
+            2.0,
+            2.0,
+            2.0,
+            3.0,
+            3.0,
+            16.0,
+            6.0,
+            4.0
+          ],
+          "data_patterns": {
+            "9.9": 14,
+            "99.9": 1
+          },
+          "total_rows": 27,
+          "null_count": 12,
+          "unique_count": 7,
+          "stats": {
+            "type": "numeric",
+            "min": 2.0,
+            "max": 16.0,
+            "mean": 4.4,
+            "median": 3.0,
+            "std": 3.794733192202055
+          },
+          "description": "Age uncertainty in years for each sediment sample."
+        },
+        "Comment": {
+          "column_name": "Comment",
+          "data_type": "string",
+          "sample_values": [
+            "Sediment surface (0 cm) date"
+          ],
+          "data_patterns": {
+            "Aaaaaaaa aaaaaaa (9 aa) aaaa": 1
+          },
+          "total_rows": 27,
+          "null_count": 26,
+          "unique_count": 2,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Sediment surface (0 cm) date",
+                1
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Annotation specifying if the record corresponds to the sediment surface (0 cm) date."
+        },
+        "Event": {
+          "column_name": "Event",
+          "data_type": "string",
+          "sample_values": [
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2",
+            "Stordalen_2"
+          ],
+          "data_patterns": {
+            "Aaaaaaaaa_9": 27
+          },
+          "total_rows": 27,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "categorical",
+            "top_values": [
+              [
+                "Stordalen_2",
+                27
+              ]
+            ],
+            "unique_count": 1
+          },
+          "description": "Uniform sample label Stordalen2 for all records."
+        },
+        "Latitude": {
+          "column_name": "Latitude",
+          "data_type": "float",
+          "sample_values": [
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35,
+            68.35
+          ],
+          "data_patterns": {
+            "99.99": 27
+          },
+          "total_rows": 27,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 68.35,
+            "max": 68.35,
+            "mean": 68.34999999999998,
+            "median": 68.35,
+            "std": 1.4481561986629803e-14
+          },
+          "description": "Geographic latitude of the sampling site in decimal degrees."
+        },
+        "Longitude": {
+          "column_name": "Longitude",
+          "data_type": "float",
+          "sample_values": [
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05,
+            19.05
+          ],
+          "data_patterns": {
+            "99.99": 27
+          },
+          "total_rows": 27,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 19.05,
+            "max": 19.05,
+            "mean": 19.05,
+            "median": 19.05,
+            "std": 0.0
+          },
+          "description": "Geographic longitude of sampling site in decimal degrees."
+        },
+        "Elevation": {
+          "column_name": "Elevation",
+          "data_type": "float",
+          "sample_values": [
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0,
+            350.0
+          ],
+          "data_patterns": {
+            "999.9": 27
+          },
+          "total_rows": 27,
+          "null_count": 0,
+          "unique_count": 1,
+          "stats": {
+            "type": "numeric",
+            "min": 350.0,
+            "max": 350.0,
+            "mean": 350.0,
+            "median": 350.0,
+            "std": 0.0
+          },
+          "description": "Elevation of sampling site, measured at 350 meters above sea level."
+        },
+        "Date/Time": {
+          "column_name": "Date/Time",
+          "data_type": "null",
+          "semantic_type": "timestamp",
+          "sample_values": [],
+          "data_patterns": {},
+          "total_rows": 27,
+          "null_count": 27,
+          "unique_count": 1,
+          "description": "Date/Time field intended to record sampling timestamps for each core."
+        }
+      },
+      "sample_rows": [
+        {
+          "Depth sed": 0.0375,
+          "Samp thick": 0.5,
+          "Age dated": null,
+          "Age unc": null,
+          "Dated material": null,
+          "Lab label": null,
+          "Age": 1971.0,
+          "Age unc_2": 3.0,
+          "Comment": null,
+          "Event": "Stordalen_2",
+          "Latitude": 68.35,
+          "Longitude": 19.05,
+          "Elevation": 350.0,
+          "Date/Time": null
+        },
+        {
+          "Depth sed": 0.0825,
+          "Samp thick": 0.5,
+          "Age dated": null,
+          "Age unc": null,
+          "Dated material": null,
+          "Lab label": null,
+          "Age": 1936.0,
+          "Age unc_2": 6.0,
+          "Comment": null,
+          "Event": "Stordalen_2",
+          "Latitude": 68.35,
+          "Longitude": 19.05,
+          "Elevation": 350.0,
+          "Date/Time": null
+        },
+        {
+          "Depth sed": 0.0425,
+          "Samp thick": 0.5,
+          "Age dated": null,
+          "Age unc": null,
+          "Dated material": null,
+          "Lab label": null,
+          "Age": 1967.0,
+          "Age unc_2": 3.0,
+          "Comment": null,
+          "Event": "Stordalen_2",
+          "Latitude": 68.35,
+          "Longitude": 19.05,
+          "Elevation": 350.0,
+          "Date/Time": null
+        }
+      ],
+      "description": "Sediment core measurements with depths, ages, uncertainties, and site coordinates for 27 samples.",
+      "is_row_capped": false,
+      "rows_processed": 27,
+      "total_rows_in_file": 27
+    }
+  },
+  "domain_covered": "Earth and environmental science",
+  "description": "Contains 27 records of Earth and environmental science measurements."
+}

@@ -1,0 +1,39 @@
+{
+  "csv": "927062.csv",
+  "dataset_id": "927062",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "8fa8ce18fcf3886496e5e497904b5445dc0264cbda7418dfd321664c04feb595",
+  "contract_sha256": "a0e9f6f6f223b67cc3023fb010a544c4ece4e96e1f80319246446a089c157aa4",
+  "prompt_tokens": 120502,
+  "metadata": {
+    "name": "Balloon_20180818_1109_1139",
+    "description": "Dataset containing atmospheric measurements from a balloon flight on August 18, 2018, including date/time, longitude, latitude, height, pressure, temperature, relative humidity, wind direction, wind speed, and event information.",
+    "keywords": [
+      "balloon",
+      "atmospheric measurements",
+      "meteorology",
+      "weather data",
+      "2018"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.54034,
+      "min_lon": 89.5537,
+      "max_lat": 37.0094,
+      "max_lon": 89.5599
+    },
+    "temporalCoverage": {
+      "from": "2018-08-18T11:09:00",
+      "to": "2018-08-18T11:39:00"
+    },
+    "spatial": "point locations",
+    "temporal": "1-second intervals"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 53.143,
+  "status": "ok"
+}

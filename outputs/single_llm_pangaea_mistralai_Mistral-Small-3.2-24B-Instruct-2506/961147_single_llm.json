@@ -1,0 +1,41 @@
+{
+  "csv": "961147.csv",
+  "dataset_id": "961147",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "0f8b526c103b6fc9864b966cc04817f34ac0314866156be765cd6a990da51f24",
+  "contract_sha256": "4befa3f5553d33970ddeada8adabdaf23b0e26e0eb2b1bc3e127da82ab933acc",
+  "prompt_tokens": 24039,
+  "metadata": {
+    "name": "Salpa aspera and other species elemental composition",
+    "description": "Elemental composition of Salpa aspera and other species collected during various expeditions.",
+    "keywords": [
+      "Salpa aspera",
+      "elemental composition",
+      "marine biology",
+      "biogeochemistry",
+      "Northeast Pacific",
+      "Southern Ocean",
+      "Chatham Rise"
+    ],
+    "spatialCoverage": {
+      "min_lat": -69.0392,
+      "min_lon": -145.0,
+      "max_lat": 50.941,
+      "max_lon": 6.2182
+    },
+    "temporalCoverage": {
+      "from": "2004-04-12",
+      "to": "2021-05-27"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 12.574,
+  "status": "ok"
+}

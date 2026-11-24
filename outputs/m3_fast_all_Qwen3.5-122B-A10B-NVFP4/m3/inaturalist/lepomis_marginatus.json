@@ -1,0 +1,28 @@
+{
+  "dataset_id": "lepomis_marginatus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/lepomis_marginatus.csv",
+  "source_sha256": "201489860b58ed8160622c29ab2dedc2a01399f31af50d749ed840efe18b86a8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T00:46:55.756213+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 25.426387,
+      "min_lon": -96.438837,
+      "max_lat": 37.197585,
+      "max_lon": -76.849875
+    },
+    "temporalCoverage": {
+      "from": "1992-03-15T12:00:00+00:00",
+      "to": "2026-06-13T14:32:44+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/lepomis_marginatus_aa23fec9c8834c88a96bcc101d2ccf34.jsonl",
+  "runtime_seconds": 62.81
+}

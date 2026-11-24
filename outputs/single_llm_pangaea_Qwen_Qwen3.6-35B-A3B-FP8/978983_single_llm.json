@@ -1,0 +1,39 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "5c4891e412846ec0df000b65852143ce5eeeac59d3c56cf2dc6259f3b9302605",
+  "prompt_tokens": 2812,
+  "metadata": {
+    "name": "Mineralogical composition of sediment samples from borehole 386-M0095B",
+    "description": "Dataset containing mineralogical proportions (e.g., Quartz, K-feldspar, Illite, Chlorite) and physical properties for sediment samples collected from borehole 386-M0095B at various depths.",
+    "keywords": [
+      "mineralogy",
+      "sediment",
+      "borehole",
+      "386-M0095B",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.40788333,
+      "max_lat": 36.89168333,
+      "max_lon": 143.40788333
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 1.997,
+  "status": "ok"
+}

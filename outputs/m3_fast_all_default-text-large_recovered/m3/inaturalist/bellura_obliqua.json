@@ -1,0 +1,29 @@
+{
+  "dataset_id": "bellura_obliqua",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/bellura_obliqua.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:23:16.690206+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 27.708221,
+      "min_lon": -128.0531,
+      "max_lat": 55.41135,
+      "max_lon": -60.459063
+    },
+    "temporalCoverage": {
+      "from": "1987-05-19T22:30:00+00:00",
+      "to": "2026-06-14T08:20:19+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/bellura_obliqua_6c3be12497f24ef2abc84bfe9ecbc91b.jsonl",
+  "runtime_seconds": 85.23,
+  "recovered_from_trace": true,
+  "source_sha256": "3781a21e38e5e8af8138dec3ebc255f4fe5075ed9a944d6bf1e703b23b6c0064"
+}

@@ -1,0 +1,84 @@
+{
+  "csv": "901510.csv",
+  "dataset_id": "901510",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "e25fdcd160b3957a98cc253aee1e288051b06e54002cc805a67c747291f96ac7",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 2767,
+  "metadata": {
+    "name": "901510",
+    "description": "The dataset contains geographic and temporal data with coordinates, elevation, and event information.",
+    "keywords": [
+      "geographic",
+      "temporal",
+      "coordinates",
+      "elevation",
+      "events"
+    ],
+    "spatialCoverage": {
+      "min_lat": 49.5551131,
+      "min_lon": -125.938783,
+      "max_lat": 49.5570529,
+      "max_lon": -125.9357415
+    },
+    "temporalCoverage": {
+      "from": "2012-02-03T12:45:00+00:00",
+      "to": "2012-02-03T13:11:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "minutely"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "901510"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "901510",
+        "resource": "901510",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    }
+  ],
+  "runtime_seconds": 25.619,
+  "status": "ok"
+}

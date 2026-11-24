@@ -1,0 +1,88 @@
+{
+  "csv": "myripristis_jacobus.csv",
+  "dataset_id": "myripristis_jacobus",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "250b641ea5b52d323b215a4a995d691c02abe17d968b24c2d19418b638e70ffb",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 4465,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -13.013937,
+      "min_lon": -97.282286,
+      "max_lat": 34.0253,
+      "max_lon": 8.786316
+    },
+    "temporalCoverage": {
+      "from": "1987-09-22",
+      "to": "2026-06-07"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus.csv"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus.csv"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "myripristis_jacobus",
+        "resource": "myripristis_jacobus",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 20.97,
+  "status": "ok"
+}

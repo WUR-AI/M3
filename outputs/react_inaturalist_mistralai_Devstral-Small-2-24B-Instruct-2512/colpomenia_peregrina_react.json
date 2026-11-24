@@ -1,0 +1,60 @@
+{
+  "csv": "colpomenia_peregrina.csv",
+  "dataset_id": "colpomenia_peregrina",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "5bc906a0341b4d38c2e058aac9b7f62d331a4357a14916adb022ffde81c3305a",
+  "contract_sha256": "7c58282c3b2249fced82139f41ebac0b0b7b47259221b7a47930108d147955fd",
+  "prompt_tokens": 2552,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -45.844548,
+      "min_lon": -135.846019,
+      "max_lat": 59.355803,
+      "max_lon": 175.811111
+    },
+    "temporalCoverage": {
+      "from": "2009-10-09",
+      "to": "2026-06-15"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "colpomenia_peregrina",
+        "resource": "colpomenia_peregrina.csv"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "colpomenia_peregrina",
+        "resource": "colpomenia_peregrina"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "colpomenia_peregrina",
+        "resource": "colpomenia_peregrina",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "colpomenia_peregrina",
+        "resource": "colpomenia_peregrina",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 9.753,
+  "status": "ok"
+}

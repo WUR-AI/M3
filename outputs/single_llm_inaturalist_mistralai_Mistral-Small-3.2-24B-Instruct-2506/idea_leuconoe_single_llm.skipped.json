@@ -1,0 +1,15 @@
+{
+  "csv": "idea_leuconoe.csv",
+  "dataset_id": "idea_leuconoe",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "d842e3d2f74c9f7a37e90c376a8cd45b3195e171648746b82b5cebc268c19649",
+  "contract_sha256": "a38f8194233a2eae30abffa9eb214f60b678bf449fe15f340784dc16ab0e8f2d",
+  "prompt_tokens": 318298,
+  "status": "skipped",
+  "reason": "context_window"
+}

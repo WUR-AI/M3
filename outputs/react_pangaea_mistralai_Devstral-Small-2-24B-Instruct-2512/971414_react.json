@@ -1,0 +1,101 @@
+{
+  "csv": "971414.csv",
+  "dataset_id": "971414",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "bd530d5cf9985c33c1519385705710150dad2921f8a01dbddbdfe8918a7ffa54",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 2509,
+  "metadata": {
+    "name": "Kiwada_Kazusa_Chiba_Ono_River_section",
+    "description": "Dataset containing sample information from river sections in Kazusa, Chiba, Japan. It includes details such as sample IDs, section measurements, age, and geographic coordinates.",
+    "keywords": [
+      "Kiwada",
+      "Kazusa",
+      "Chiba",
+      "Ono River",
+      "Yuki River",
+      "Sample ID",
+      "Section",
+      "Age",
+      "SR",
+      "Reference",
+      "Latitude",
+      "Longitude",
+      "Date/Time"
+    ],
+    "spatialCoverage": {
+      "min_lat": 35.22,
+      "min_lon": 140.15,
+      "max_lat": 35.27,
+      "max_lon": 140.29
+    },
+    "temporalCoverage": {
+      "from": "1970-01-01",
+      "to": "1970-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": null
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "971414"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "971414",
+        "resource": "971414",
+        "field": "Event",
+        "limit": 100
+      }
+    }
+  ],
+  "runtime_seconds": 16.438,
+  "status": "ok"
+}

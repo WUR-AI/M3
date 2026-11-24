@@ -1,0 +1,15 @@
+{
+  "csv": "hymeniacidon_perlevis.csv",
+  "dataset_id": "hymeniacidon_perlevis",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "dbdcf480e98bfaa4b7b7c22c8772bac31bae189d826906062a6a22871a2e44c9",
+  "contract_sha256": "fb49b9ce2485689ac6375fff1e7061fc9a7688a9e300c7250f040892c7c66835",
+  "prompt_tokens": 324375,
+  "status": "skipped",
+  "reason": "context_window"
+}

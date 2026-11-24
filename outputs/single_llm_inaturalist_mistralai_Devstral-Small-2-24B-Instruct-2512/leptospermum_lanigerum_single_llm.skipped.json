@@ -1,0 +1,15 @@
+{
+  "csv": "leptospermum_lanigerum.csv",
+  "dataset_id": "leptospermum_lanigerum",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "309aa0ea36911ec27f5c96ee735a3ff037195af42efc700b6952a046c2f4f4fc",
+  "contract_sha256": "a5332efec993d7d809ba0506bb19825a5d992c75d73c6876850912d9a8b8223a",
+  "prompt_tokens": 331060,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,43 @@
+{
+  "dataset_id": "924708",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/924708.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T16:26:48.496455+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Arctic Whale and Dolphin Sightings (August–October 2014)",
+    "description": "Dataset of 8 marine‑mammal sighting events recorded between 2014‑08‑06 and 2014‑10‑01, each with a UTC timestamp, latitude, longitude, species label, certainty level, and event identifier (based on the data in the dataset).",
+    "keywords": [
+      "whale",
+      "dolphin",
+      "marine mammals",
+      "Arctic",
+      "GPS",
+      "tracking",
+      "2014",
+      "sighting"
+    ],
+    "spatialCoverage": {
+      "min_lat": 73.71687,
+      "min_lon": 2.7874,
+      "max_lat": 78.66195,
+      "max_lon": 61.78372
+    },
+    "temporalCoverage": {
+      "from": "2014-08-06T10:34:00+00:00",
+      "to": "2014-10-01T11:50:00+00:00"
+    },
+    "spatial": "point locations (≈10‑100 m precision)",
+    "temporal": "hourly granularity (timestamps recorded to the second)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/924708_8469024e5a38479e826ed1a7b36d5926.jsonl",
+  "runtime_seconds": 149.75,
+  "recovered_from_trace": true,
+  "source_sha256": "86388279e1cdbfddd12c9ac23bbd9ebc09a6d13ed09f81864ea07be7d5279ea3"
+}

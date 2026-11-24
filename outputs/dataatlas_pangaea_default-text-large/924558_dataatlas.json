@@ -1,0 +1,16 @@
+{
+  "csv": "924558.csv",
+  "dataset_id": "924558",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 122,
+  "n_columns": 49,
+  "description": "Laboratory measurements of Mytilus galloprovincialis under various CO₂ treatments, recording chemistry and development.",
+  "dataset_description": "Contains 122 Earth and environmental science records across a single table for scientific analysis.",
+  "runtime_seconds": 252.403,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/924558/dictionary.json"
+}

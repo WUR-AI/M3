@@ -1,0 +1,47 @@
+{
+  "dataset_id": "917841",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/917841.csv",
+  "source_sha256": "cffd447b6d884d351cd053b15c2a6807261b7b1481a60093478046a2951badc7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:41:19.377894+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Macapule Lagoon Water Quality Time Series (2013-2015)",
+    "description": "A complete time-series dataset of water quality parameters collected at a fixed station in Macapule Lagoon, Baja California, Mexico. The dataset includes measurements of temperature, salinity, dissolved oxygen, pH, ammonia, nitrate, and phosphate across three zones (likely depth strata) sampled biannually from December 2013 to June 2015.",
+    "keywords": [
+      "water quality",
+      "lagoon",
+      "Macapule",
+      "Baja California",
+      "Gulf of California",
+      "dissolved oxygen",
+      "nutrients",
+      "ammonia",
+      "nitrate",
+      "phosphate",
+      "hypoxia",
+      "eutrophication",
+      "time series"
+    ],
+    "spatialCoverage": {
+      "min_lat": 25.35,
+      "min_lon": -108.5,
+      "max_lat": 25.35,
+      "max_lon": -108.5
+    },
+    "temporalCoverage": {
+      "from": "2013-12-01T00:00:00+00:00",
+      "to": "2015-06-01T00:00:00+00:00"
+    },
+    "spatial": "Single fixed point (25.35°N, 108.5°W) with three internal zones (likely depth strata)",
+    "temporal": "6 months (biannual sampling in June and December)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/917841_3996f3d1b2584e298b8061f4e9af1f62.jsonl",
+  "runtime_seconds": 82.35
+}

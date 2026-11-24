@@ -1,0 +1,29 @@
+{
+  "dataset_id": "dioctria_linearis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/dioctria_linearis.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:42:34.671356+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 37.959187,
+      "min_lon": -4.139842,
+      "max_lat": 56.946173,
+      "max_lon": 43.007263
+    },
+    "temporalCoverage": {
+      "from": "2005-06-05T00:00:00+00:00",
+      "to": "2026-06-15T17:29:39+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/dioctria_linearis_d4beeaeadccc4960b245ce3d58004cb3.jsonl",
+  "runtime_seconds": 76.35,
+  "recovered_from_trace": true,
+  "source_sha256": "1a233647f2b04f9f2da42159a0a851fcd3d6d3fb98445e7d62efacf06a668423"
+}

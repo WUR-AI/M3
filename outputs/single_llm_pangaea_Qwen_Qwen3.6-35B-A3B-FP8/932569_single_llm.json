@@ -1,0 +1,41 @@
+{
+  "csv": "932569.csv",
+  "dataset_id": "932569",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "contract_sha256": "1d980cc3d8e72cda4c1da277d6b7c03aea9bfe6c0afe8637a580299e597083e9",
+  "prompt_tokens": 10844,
+  "metadata": {
+    "name": "Aerosol chemical composition during PS106 expedition",
+    "description": "Dataset containing aerosol size-resolved chemical composition data (ions and MSA) collected during the PS106 expedition. The data includes concentrations of Cl-, NO3-, SO42-, C2O42-, NO2-, Br-, F-, MSA, PO43-, Na+, NH4+, K+, Mg2+ across five particle size stages.",
+    "keywords": [
+      "aerosol",
+      "chemical composition",
+      "ions",
+      "MSA",
+      "PS106",
+      "expedition",
+      "size-resolved"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.229915,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24",
+      "to": "2017-07-16"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.953,
+  "status": "ok"
+}

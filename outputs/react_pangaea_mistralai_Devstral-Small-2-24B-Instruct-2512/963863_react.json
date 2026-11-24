@@ -1,0 +1,53 @@
+{
+  "csv": "963863.csv",
+  "dataset_id": "963863",
+  "method": "react",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "a3358c24e4ec40723de66c029ed0c9badc6c0a63cb914ec8ec9df064e5a2446e",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 2080,
+  "metadata": {
+    "name": "Environmental Monitoring Dataset",
+    "description": "Dataset containing environmental monitoring data, including physico-chemical parameters, particulate matter, temperature, and hydrological data. The files include both data and metadata descriptions.",
+    "keywords": [
+      "environmental monitoring",
+      "physico-chemical data",
+      "particulate matter",
+      "temperature",
+      "hydrological data"
+    ],
+    "spatialCoverage": null,
+    "temporalCoverage": null,
+    "spatial": "Not specified",
+    "temporal": "Not specified"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "963863"
+      }
+    },
+    {
+      "tool": "get_columns_with_first_row",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "963863",
+        "resource": "963863",
+        "n": 8
+      }
+    }
+  ],
+  "runtime_seconds": 9.645,
+  "status": "ok"
+}

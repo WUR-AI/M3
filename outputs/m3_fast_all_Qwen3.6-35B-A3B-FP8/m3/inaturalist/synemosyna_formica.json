@@ -1,0 +1,28 @@
+{
+  "dataset_id": "synemosyna_formica",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/synemosyna_formica.csv",
+  "source_sha256": "5766fa71053e80ca8cfece110da946527981c7670e404803159daf6cc5787f70",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T03:18:33.388123+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 10.451246,
+      "min_lon": -98.35227,
+      "max_lat": 46.165417,
+      "max_lon": -70.2761
+    },
+    "temporalCoverage": {
+      "from": "1996-08-25T00:00:00+00:00",
+      "to": "2026-06-13T16:53:52+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/synemosyna_formica_da5c8efa10c44c78ae24856c1ce58a26.jsonl",
+  "runtime_seconds": 48.64
+}

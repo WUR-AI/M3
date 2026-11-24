@@ -1,0 +1,44 @@
+{
+  "dataset_id": "973041",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973041.csv",
+  "source_sha256": "3227edc49b0c69be1ab09e226bedac284120c76eea890b9bd07a9e1fd4f54805",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T01:20:53.250651+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Archaeological Radiocarbon Dating Records from Malaysia",
+    "description": "A compilation of 335 archaeological radiocarbon dating records from Malaysia, primarily from the states of Sarawak (58%) and Sabah (42%). The dataset contains site metadata, dating methods (94% Radiocarbon), raw and calibrated age values, and laboratory information. The data is heavily concentrated at the Gua Niah site (31%). Ages are stored as numeric values in thousands of years BP (ka BP).",
+    "keywords": [
+      "archaeology",
+      "radiocarbon dating",
+      "Malaysia",
+      "Sarawak",
+      "Sabah",
+      "Gua Niah",
+      "Neolithic",
+      "Holocene",
+      "calibrated age",
+      "Southeast Asia"
+    ],
+    "spatialCoverage": {
+      "min_lat": 1.0,
+      "min_lon": 109.5,
+      "max_lat": 6.5,
+      "max_lon": 119.0
+    },
+    "temporalCoverage": {
+      "from": "0.008 ka BP",
+      "to": "49.91 ka BP"
+    },
+    "spatial": "Point locations at archaeological sites in Malaysia (Country and Province level)",
+    "temporal": "Radiocarbon ages in thousands of years BP (ka BP), ranging from 0.008 to 49.91 ka"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973041_b288014f01014a39bd3e4f69c73abd50.jsonl",
+  "runtime_seconds": 121.72
+}

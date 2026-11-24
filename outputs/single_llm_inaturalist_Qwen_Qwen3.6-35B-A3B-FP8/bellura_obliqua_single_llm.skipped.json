@@ -1,0 +1,15 @@
+{
+  "csv": "bellura_obliqua.csv",
+  "dataset_id": "bellura_obliqua",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "3781a21e38e5e8af8138dec3ebc255f4fe5075ed9a944d6bf1e703b23b6c0064",
+  "contract_sha256": "8adefd9fed45c37054cf2ad5b5190b4d151c6885431afad4ba5dc3a051f2cb44",
+  "prompt_tokens": 304682,
+  "status": "skipped",
+  "reason": "context_window"
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_id": "969067",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/969067.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T17:56:11.641602+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Antarctic AWS Daily Meteorological Observations (2018‑2023)",
+    "description": "Daily time‑series of meteorological measurements from the Puchalski automatic weather station in Antarctica, covering 2018‑01‑01 to 2023‑12‑31. Variables include solar radiation sum, daily minimum/mean/maximum temperature, relative humidity (min, mean, max), wind speed statistics (min, mean, max), and constant station metadata such as height, elevation, latitude, longitude, and event identifier. Several variables contain missing records (e.g., solar radiation, wind, humidity).",
+    "keywords": [
+      "Antarctica",
+      "AWS",
+      "automatic weather station",
+      "meteorology",
+      "temperature",
+      "humidity",
+      "relative humidity",
+      "wind",
+      "solar radiation",
+      "daily observations",
+      "Puchalski"
+    ],
+    "spatialCoverage": {
+      "min_lat": -62.1641,
+      "max_lat": -62.1641,
+      "min_lon": -58.4701,
+      "max_lon": -58.4701
+    },
+    "temporalCoverage": {
+      "from": "2018-01-01T00:00:00+00:00",
+      "to": "2023-12-31T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/969067_43764a9fad2247ccbf262597ebedddab.jsonl",
+  "runtime_seconds": 232.71,
+  "recovered_from_trace": true,
+  "source_sha256": "7f0009de0409d11e20040ec51d5d017676533d678668d8751deb28f03b0fd453"
+}

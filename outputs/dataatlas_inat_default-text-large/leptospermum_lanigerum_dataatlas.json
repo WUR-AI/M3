@@ -1,0 +1,16 @@
+{
+  "csv": "leptospermum_lanigerum.csv",
+  "dataset_id": "leptospermum_lanigerum",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1004,
+  "n_columns": 50,
+  "description": "Occurrences of Leptospermum lanigerum in Australia (2014‑2026), 1004 records with taxonomy, location, date, observer details.",
+  "dataset_description": "Biodiversity records of Leptospermum lanigerum occurrences from 2014 to 2026, 1004 entries.",
+  "runtime_seconds": 86.636,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/leptospermum_lanigerum/dictionary.json"
+}

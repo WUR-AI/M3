@@ -1,0 +1,15 @@
+{
+  "csv": "nannophya_pygmaea.csv",
+  "dataset_id": "nannophya_pygmaea",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "a6cfd2ab9d732bd13948840b94ef5bb36dc4bf688bf33e3caf0a6ff92f9a3ef0",
+  "contract_sha256": "eabe56623d53c86e43853ec25710799a2264c574b326d770ebc50b001f9a4a8c",
+  "prompt_tokens": 319827,
+  "status": "skipped",
+  "reason": "context_window"
+}

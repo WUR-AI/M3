@@ -1,0 +1,28 @@
+{
+  "dataset_id": "certallum_ebulinum",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/certallum_ebulinum.csv",
+  "source_sha256": "b234456ec36a3cdaeb49ce542420989a3260ec0b7aaa787a280f0f24fcbd5b98",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-04T02:16:19.207758+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 30.852297,
+      "min_lon": -9.380752,
+      "max_lat": 46.91084,
+      "max_lon": 47.650066
+    },
+    "temporalCoverage": {
+      "from": "2007-04-15T13:32:00+00:00",
+      "to": "2026-06-04T13:48:43+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/certallum_ebulinum_38b2a33b83b845c58d8a514979971ae1.jsonl",
+  "runtime_seconds": 51.69
+}

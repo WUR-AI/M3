@@ -1,0 +1,45 @@
+{
+  "dataset_id": "932569",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/932569.csv",
+  "source_sha256": "36fe0d883f75a7dd0ae1d8d1ed969f86065a41a7b006744073a23a114bbab563",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T20:49:26.942414+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "PS106 Arctic Aerosol Sampling Campaign 2017",
+    "description": "Atmospheric aerosol sampling dataset from the PS106 research campaign conducted in the North Atlantic and Arctic regions between May and July 2017. The data contains chemical composition measurements of 75 aerosol samples, including concentrations of 13 ionic species (anions and cations), linked to precise temporal and spatial coordinates. The dataset is dominated by sea salt and secondary sulfate aerosols with evidence of marine biological activity.",
+    "keywords": [
+      "aerosol",
+      "atmospheric chemistry",
+      "Arctic",
+      "North Atlantic",
+      "PS106",
+      "ionic species",
+      "sea salt",
+      "sulfate",
+      "chloride",
+      "MSA",
+      "2017"
+    ],
+    "spatialCoverage": {
+      "min_lat": 54.932913,
+      "min_lon": 3.420486,
+      "max_lat": 83.709847,
+      "max_lon": 33.015915
+    },
+    "temporalCoverage": {
+      "from": "2017-05-24T20:50:00+00:00",
+      "to": "2017-07-13T10:05:00+00:00"
+    },
+    "spatial": "Point locations (variable coordinates across North Atlantic and Arctic)",
+    "temporal": "Variable sampling times (15 unique timestamps over 49 days)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/932569_defdc748daf241f6bcde75c2da835bf4.jsonl",
+  "runtime_seconds": 172.75
+}

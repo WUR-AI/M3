@@ -1,0 +1,94 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "6a6f905e5000f254870dbecc0a5b6926750aa6c6adf4e33a9874a2de40c88d79",
+  "prompt_tokens": 5578,
+  "metadata": {
+    "name": "Geochemical measurements of sediment core samples (978983)",
+    "description": "Dataset of geochemical and mineral composition measurements for sediment core samples, including depth, mineral percentages, latitude, longitude, elevation, and sampling date.",
+    "keywords": [
+      "geochemistry",
+      "sediment",
+      "core",
+      "mineral composition",
+      "latitude",
+      "longitude",
+      "depth",
+      "elevation",
+      "sampling date"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "tool_calls": [
+    {
+      "tool": "list_resources",
+      "args": {
+        "context_key": "978983"
+      }
+    },
+    {
+      "tool": "get_field_names",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "n": 5
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "978983"
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "978983"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "978983",
+        "resource": "978983",
+        "time_column": "Date/Time"
+      }
+    }
+  ],
+  "runtime_seconds": 13.531,
+  "status": "ok"
+}

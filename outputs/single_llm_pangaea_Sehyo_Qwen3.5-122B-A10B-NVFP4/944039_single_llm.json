@@ -1,0 +1,41 @@
+{
+  "csv": "944039.csv",
+  "dataset_id": "944039",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "contract_sha256": "55d46e24577143b018c4593de878282a9eae1a62cd1170fd5c86363b4d761535",
+  "prompt_tokens": 3759,
+  "metadata": {
+    "name": "SO268_074MUC Belgian collector trial pre-impact sediment core geochemistry",
+    "description": "Geochemical data from sediment core SO268_074MUC collected during the Belgian collector trial pre-impact. The dataset includes concentrations and relative abundances of various elements (Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) at different sediment depths, along with station metadata, coordinates, elevation, and sampling timestamps.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "trace elements",
+      "Belgian collector trial",
+      "pre-impact",
+      "SO268",
+      "core"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20T02:30:12",
+      "to": "2019-03-20T02:30:12"
+    },
+    "spatial": "point locations",
+    "temporal": "instantaneous"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.654,
+  "status": "ok"
+}

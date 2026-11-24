@@ -1,0 +1,44 @@
+{
+  "dataset_id": "973695",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973695.csv",
+  "source_sha256": "0c03f5101f4d8f9f7fc6c423d2e0440c7ca2b5e05431bc9522fd5b35aa2dbaa2",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-05T01:41:45.332653+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Chemical and Isotopic Composition of Sediment Cores from Site 680",
+    "description": "This dataset contains chemical composition, derived metrics, and isotopic data from sediment cores collected during Leg 112 of the Ocean Drilling Program. The samples were taken from a single location near the coast of Peru at coordinates -11.065 latitude and -78.07783 longitude, with an elevation of -272.0 units. The data includes measurements of major and trace elements, enrichment factors, and isotopic ratios, providing insights into the geological and environmental conditions of the Pleistocene epoch.",
+    "keywords": [
+      "sediment cores",
+      "chemical composition",
+      "isotopic data",
+      "Pleistocene",
+      "Ocean Drilling Program",
+      "Leg 112",
+      "Site 680",
+      "trace elements",
+      "enrichment factors",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": -11.065,
+      "min_lon": -78.07783,
+      "max_lat": -11.065,
+      "max_lon": -78.07783
+    },
+    "temporalCoverage": {
+      "from": "1986-11-05T07:15:00+00:00",
+      "to": "1986-11-05T07:15:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single timestamp"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973695_7898bd3635f249e986ae2bce8e775f2c.jsonl",
+  "runtime_seconds": 364.86
+}

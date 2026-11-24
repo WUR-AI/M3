@@ -1,0 +1,39 @@
+{
+  "dataset_id": "967852",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/967852.csv",
+  "source_sha256": "12b5b301dd62c7b10b43b3df1987a4722c5824136ce5215c78a37ef62a60abf8",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:57:09.538085+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Santiurde Section Stratigraphic and Mineralogical Analysis",
+    "description": "Geological dataset containing 19 stratigraphic samples from the Santiurde section, including mineral composition percentages (quartz, clay, calcite, gypsum, dolomite, pyrite), stratigraphic measurements (thickness, ratio, stratigraphic height), and location coordinates. All samples were collected from a single outcrop location.",
+    "keywords": [
+      "geology",
+      "stratigraphy",
+      "mineralogy",
+      "sedimentary rocks",
+      "calcite",
+      "clay",
+      "Santiurde",
+      "lithology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 43.0685608,
+      "min_lon": -4.0878295,
+      "max_lat": 43.0685608,
+      "max_lon": -4.0878295
+    },
+    "temporalCoverage": null,
+    "spatial": "Point location (single outcrop)",
+    "temporal": null
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/967852_100556fdf09a4851885266878ed607fb.jsonl",
+  "runtime_seconds": 254.18
+}

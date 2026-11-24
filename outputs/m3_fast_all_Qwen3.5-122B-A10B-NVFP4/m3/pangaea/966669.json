@@ -1,0 +1,45 @@
+{
+  "dataset_id": "966669",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/966669.csv",
+  "source_sha256": "38d45ebddb5ad7c83655f2d23207ed3d800aa60a12fe7468bb6274122192cd99",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T22:01:18.637010+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Flade Isblink Ice Cap Cryoconite Radionuclide Sampling (August 2022)",
+    "description": "Surface sampling dataset of cryoconite and ice/snow samples collected at the Flade Isblink ice cap in the high Arctic (Greenland) during August 2022. The dataset contains 48 records with geographic coordinates, elevation, sample characteristics, and measurements of various radionuclides including 210Pb, 137Cs, 7Be, 40K, and plutonium isotopes.",
+    "keywords": [
+      "cryoconite",
+      "radionuclides",
+      "ice cap",
+      "Arctic",
+      "Greenland",
+      "Flade Isblink",
+      "210Pb",
+      "137Cs",
+      "7Be",
+      "surface sampling",
+      "radioisotopes"
+    ],
+    "spatialCoverage": {
+      "min_lat": 81.5169,
+      "min_lon": -16.1222,
+      "max_lat": 81.5441,
+      "max_lon": -15.8786
+    },
+    "temporalCoverage": {
+      "from": "2022-08-02T22:00:00+00:00",
+      "to": "2022-08-04T02:00:00+00:00"
+    },
+    "spatial": "Point locations (surface sampling)",
+    "temporal": "Sub-daily (sampling interval ~5-35 minutes)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/966669_809a85593070488dbd563ea0aed5853f.jsonl",
+  "runtime_seconds": 187.46
+}

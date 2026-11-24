@@ -1,0 +1,28 @@
+{
+  "dataset_id": "nabalus_hastatus",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/nabalus_hastatus.csv",
+  "source_sha256": "912b7dacd971a10b021861742974bb340282cefc174001edd7dc643ce7e225c1",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:10:24.953047+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 45.37497,
+      "min_lon": -166.471986,
+      "max_lat": 61.262243,
+      "max_lon": -115.825813
+    },
+    "temporalCoverage": {
+      "from": "2002-07-29T10:40:00+00:00",
+      "to": "2026-06-13T10:07:19+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/nabalus_hastatus_901d623c554d41ecb2c23224ed90fa6b.jsonl",
+  "runtime_seconds": 67.82
+}

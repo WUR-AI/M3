@@ -1,0 +1,16 @@
+{
+  "csv": "leptosiphon_chrysanthus.csv",
+  "dataset_id": "leptosiphon_chrysanthus",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Biodiversity and species occurrence",
+  "n_rows": 1004,
+  "n_columns": 50,
+  "description": "1004 occurrence records of Leptosiphon chrysanthus with taxonomy, coordinates, dates, and observer metadata.",
+  "dataset_description": "Biodiversity records of Leptosiphon chrysanthus occurrences from 2005 to 2026, 1004 entries.",
+  "runtime_seconds": 70.689,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_inat_default-text-large/raw/leptosiphon_chrysanthus/dictionary.json"
+}

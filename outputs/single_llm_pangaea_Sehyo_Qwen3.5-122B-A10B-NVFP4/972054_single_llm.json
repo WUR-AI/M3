@@ -1,0 +1,44 @@
+{
+  "csv": "972054.csv",
+  "dataset_id": "972054",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "6e9d0af11989be33ccf1be75b2a423dd91562d07abe03cecb7ae36ea9cbd6ccd",
+  "contract_sha256": "18e3283dee41b9693f83cba2a8cbabad180ac9cab197eb770e3b3c16d253dfb9",
+  "prompt_tokens": 23495,
+  "metadata": {
+    "name": "Uelzen, Germany: 6 band color composits, Vegetation index, Metabolism index, and Shape files",
+    "description": "Dataset containing 6 band color composits, vegetation indices (NDVI), and metabolism indices (NirV) for Uelzen, Germany, spanning from 1984 to 2023. The data is provided as GeoTIFF files covering specific time periods (May-July and August-October) for various years. Additionally, the dataset includes shape files (dbf, prj, shp, shx) representing zones for the same years.",
+    "keywords": [
+      "Uelzen",
+      "Germany",
+      "6 band color composits",
+      "Vegetation index",
+      "NDVI",
+      "Metabolism index",
+      "NirV",
+      "Shape file",
+      "ESIS_Uelzen",
+      "c3126"
+    ],
+    "spatialCoverage": {
+      "min_lat": 52.798539332,
+      "min_lon": 9.998781436,
+      "max_lat": 52.798539332,
+      "max_lon": 9.998781436
+    },
+    "temporalCoverage": {
+      "from": "1984-05-01",
+      "to": "2023-10-31"
+    },
+    "spatial": "point locations",
+    "temporal": "seasonal"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 5.459,
+  "status": "ok"
+}

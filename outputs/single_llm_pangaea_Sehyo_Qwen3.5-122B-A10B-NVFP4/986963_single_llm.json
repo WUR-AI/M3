@@ -1,0 +1,47 @@
+{
+  "csv": "986963.csv",
+  "dataset_id": "986963",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2d1575a8c2611b5e0d4dd247b680804cbe28b7ca15ad532339a8cd0454767f75",
+  "contract_sha256": "840d2fb34dbddc286d74afca8a4a40fd9c74983a7c1cf5e09e7feb7fd2ad8cce",
+  "prompt_tokens": 14577,
+  "metadata": {
+    "name": "Sediment core geochemical and physical properties from Arctic sites",
+    "description": "Dataset containing geochemical and physical properties of sediment cores collected from various Arctic locations. Includes measurements of Total Organic Carbon (TOC), Total Inorganic Carbon (TIC), Total Nitrogen (TN), stable isotopes (delta13C, delta15N), grain size distribution, sedimentation rates, accumulation rates, and age models derived from depth intervals.",
+    "keywords": [
+      "sediment",
+      "geochemistry",
+      "TOC",
+      "TIC",
+      "TN",
+      "isotopes",
+      "delta13C",
+      "delta15N",
+      "grain size",
+      "sedimentation rate",
+      "accumulation rate",
+      "Arctic",
+      "paleoclimate"
+    ],
+    "spatialCoverage": {
+      "min_lat": 76.0,
+      "min_lon": 27.5191,
+      "max_lat": 83.2704,
+      "max_lon": 33.9857
+    },
+    "temporalCoverage": {
+      "from": "1833-01-01",
+      "to": "2021-01-01"
+    },
+    "spatial": "point locations",
+    "temporal": "variable (decadal to centennial resolution based on age model)"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 4.548,
+  "status": "ok"
+}

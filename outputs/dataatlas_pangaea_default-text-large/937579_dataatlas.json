@@ -1,0 +1,16 @@
+{
+  "csv": "937579.csv",
+  "dataset_id": "937579",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 146,
+  "n_columns": 10,
+  "description": "146 Arctic water samples (April‑Sept 2019) with location, depth, and δ18O, δD isotopic data.",
+  "dataset_description": "146 Earth‑environment observations from April to September 2019 for temporal analysis.",
+  "runtime_seconds": 25.572,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/937579/dictionary.json"
+}

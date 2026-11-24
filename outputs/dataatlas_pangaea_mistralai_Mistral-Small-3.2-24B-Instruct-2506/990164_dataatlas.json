@@ -1,0 +1,16 @@
+{
+  "csv": "990164.csv",
+  "dataset_id": "990164",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "domain": "Earth and environmental science",
+  "n_rows": 41,
+  "n_columns": 26,
+  "description": "Environmental sediment data with elemental concentrations, location, and time information.",
+  "dataset_description": "Environmental data collected on April 8, 2022, for Earth and environmental science research.",
+  "runtime_seconds": 20.222,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Mistral-Small-3.2-24B-Instruct-2506/raw/990164/dictionary.json"
+}

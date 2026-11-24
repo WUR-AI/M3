@@ -1,0 +1,172 @@
+{
+  "csv": "990054.csv",
+  "dataset_id": "990054",
+  "method": "react",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "2f2928ce6220097867d416de18e47547f927cf94e473ae1a7f9afb6b6313d660",
+  "contract_sha256": "885728c2c4ee75bb63f36d09159c2eecff8e5f16b1d22d21059e4d49a19f22e8",
+  "prompt_tokens": 11749,
+  "metadata": {
+    "name": "MOSAiC ice core chlorophyll and phaeophytin measurements",
+    "description": "Dataset containing 271 ice core samples collected during the MOSAiC campaign using an Ice Corer Kovacs Mark II device. The dataset includes measurements of Chlorophyll a (Chl a) and Phaeophytin (Phae) at various depths in ice/snow cores, along with location coordinates (latitude, longitude), depth information, section labels, and elevation data.",
+    "keywords": [
+      "MOSAiC",
+      "ice core",
+      "chlorophyll",
+      "phaeophytin",
+      "Chl a",
+      "Phae",
+      "Arctic",
+      "sea ice",
+      "ice sampling"
+    ],
+    "spatialCoverage": {
+      "min_lat": 80.7709,
+      "min_lon": -0.485,
+      "max_lat": 88.0708,
+      "max_lon": 126.3299
+    },
+    "temporalCoverage": {
+      "from": "2019-10-28",
+      "to": "2020-07-20"
+    },
+    "spatial": "point locations",
+    "temporal": "irregular"
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "990054"
+      }
+    },
+    {
+      "tool": "get_resource_info",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_sample_items",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "n": 10
+      }
+    },
+    {
+      "tool": "detect_temporal_columns",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "time_column": "Date/Time"
+      }
+    },
+    {
+      "tool": "detect_spatial_columns",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "field": "Campaign",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "field": "Device",
+        "limit": 10
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "field": "Sec label",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "field": "Event",
+        "limit": 20
+      }
+    },
+    {
+      "tool": "get_field_statistics",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "field": "Date/Time",
+        "limit": 30
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "field": "Activity",
+        "limit": 50
+      }
+    },
+    {
+      "tool": "get_context_schema",
+      "args": {
+        "context_key": "990054"
+      }
+    },
+    {
+      "tool": "get_unique_values",
+      "args": {
+        "context_key": "990054",
+        "resource": "990054",
+        "field": "Sec comm",
+        "limit": 10
+      }
+    }
+  ],
+  "runtime_seconds": 42.021,
+  "status": "ok"
+}

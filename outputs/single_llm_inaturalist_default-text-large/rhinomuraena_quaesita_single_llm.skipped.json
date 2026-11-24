@@ -1,0 +1,15 @@
+{
+  "csv": "rhinomuraena_quaesita.csv",
+  "dataset_id": "rhinomuraena_quaesita",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "9e0ea7a96a83b2ff1e4eb43581d60fd160933a5151b5911d32e62d8050124796",
+  "contract_sha256": "684ae9a8e94cf5db09d279f75b31e9e9617b8406948fd19d9b0c1e57f576dae8",
+  "prompt_tokens": 324213,
+  "status": "skipped",
+  "reason": "context_window"
+}

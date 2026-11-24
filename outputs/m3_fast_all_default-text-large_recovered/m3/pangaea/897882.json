@@ -1,0 +1,50 @@
+{
+  "dataset_id": "897882",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/897882.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T15:51:10.989724+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "E. fimbriata oocyte & environment data – Foundiougne 2014",
+    "description": "101 samples of E. fimbriata collected at Foundiougne (Senegal) on 2014‑01‑01, containing oocyte dimensions, biochemical composition, trace‑element ratios, water temperature, salinity, and geographic coordinates.",
+    "keywords": [
+      "Ba/Ca",
+      "E. fimbriata",
+      "Foundiougne",
+      "Marine biology",
+      "Senegal",
+      "Sr/Ca",
+      "Zn/Ca",
+      "calorific",
+      "environmental",
+      "lipids",
+      "oocyte",
+      "protein",
+      "salinity",
+      "temperature",
+      "trace elements"
+    ],
+    "spatialCoverage": {
+      "min_lat": 13.95406,
+      "max_lat": 14.18116,
+      "min_lon": -16.85028,
+      "max_lon": -16.47588
+    },
+    "temporalCoverage": {
+      "from": "2014-01-01T00:00:00+00:00",
+      "to": "2014-01-01T00:00:00+00:00"
+    },
+    "spatial": "≈0.001° (~100 m) point locations",
+    "temporal": "instant (single timestamp for all records, granularity = sub‑second)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/897882_d345c7ce61fd48c9a7dc114b42bd0be9.jsonl",
+  "runtime_seconds": 191.66,
+  "recovered_from_trace": true,
+  "source_sha256": "aa5e57d0f01d95f0eb7a48b8bdc20d11bb38b036fb2c801708280c23ccdc106d"
+}

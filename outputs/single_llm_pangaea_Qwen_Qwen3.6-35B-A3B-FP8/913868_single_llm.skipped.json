@@ -1,0 +1,15 @@
+{
+  "csv": "913868.csv",
+  "dataset_id": "913868",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "c0511e76b8edf563e4cac8c8b2d4c1f3fc73731ceba37608306521e4ec2d8afa",
+  "contract_sha256": "64581586282c39e8dd129b29061ca595f0b132e6a2a5c0fc594315f793d20272",
+  "prompt_tokens": 3052235,
+  "status": "skipped",
+  "reason": "context_window"
+}

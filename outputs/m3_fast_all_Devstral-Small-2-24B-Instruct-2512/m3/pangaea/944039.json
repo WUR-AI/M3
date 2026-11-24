@@ -1,0 +1,41 @@
+{
+  "dataset_id": "944039",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/944039.csv",
+  "source_sha256": "0b824614b5b9d73163ace6900f088523a5dc18a079f9f53df822b3daccddfb1f",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T22:45:40.111059+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Sediment Chemical Analysis from Belgian Collector Trial",
+    "description": "This dataset contains chemical analysis of sediment samples collected from a single location in the Belgian collector trial pre-impact area. It includes measurements of various elements (e.g., Al, Ba, Fe, Cu) and their relative errors, as well as squared values of these elements. The data is associated with a single core sample (Core 18) and covers a sediment depth range from 0.0625 to 0.225 meters. All samples were collected at the same geographic location (Latitude: 14.13508333, Longitude: -125.86365) and time (2019-03-20 02:30:12).",
+    "keywords": [
+      "sediment",
+      "chemical analysis",
+      "Belgian collector trial",
+      "pre-impact",
+      "element concentration",
+      "marine sediment",
+      "geochemistry"
+    ],
+    "spatialCoverage": {
+      "min_lat": 14.13508333,
+      "min_lon": -125.86365,
+      "max_lat": 14.13508333,
+      "max_lon": -125.86365
+    },
+    "temporalCoverage": {
+      "from": "2019-03-20T02:30:12+00:00",
+      "to": "2019-03-20T02:30:12+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "single time point"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/944039_1a3cfb0bf9a34497b85c36239d5a69a8.jsonl",
+  "runtime_seconds": 359.84
+}

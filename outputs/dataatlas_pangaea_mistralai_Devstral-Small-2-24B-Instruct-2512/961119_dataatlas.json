@@ -1,0 +1,16 @@
+{
+  "csv": "961119.csv",
+  "dataset_id": "961119",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "domain": "Earth and environmental science",
+  "n_rows": 2,
+  "n_columns": 4,
+  "description": "Earth and environmental science dataset with 961119 tables, 2 rows each, no time coverage.",
+  "dataset_description": "Earth and environmental science dataset with 961119 tables, 2 rows each, no time coverage.",
+  "runtime_seconds": 3.719,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_mistralai_Devstral-Small-2-24B-Instruct-2512/raw/961119/dictionary.json"
+}

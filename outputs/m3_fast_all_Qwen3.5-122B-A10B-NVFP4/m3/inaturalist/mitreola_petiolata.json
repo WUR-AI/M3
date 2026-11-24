@@ -1,0 +1,28 @@
+{
+  "dataset_id": "mitreola_petiolata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/mitreola_petiolata.csv",
+  "source_sha256": "650ba50dbea08c7c2bab48943a65b250d27c498059d68b7e63b2f0c3c0a945d4",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:02:11.940997+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 7.919167,
+      "min_lon": -100.143166,
+      "max_lat": 36.322838,
+      "max_lon": 72.905908
+    },
+    "temporalCoverage": {
+      "from": "2008-08-18T11:54:00+00:00",
+      "to": "2026-06-11T14:38:07+00:00"
+    }
+  },
+  "plan_steps_count": 5,
+  "steps_completed": 5,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/mitreola_petiolata_f24634661633424fb10cb5c9815cf589.jsonl",
+  "runtime_seconds": 259.68
+}

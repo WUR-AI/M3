@@ -1,0 +1,46 @@
+{
+  "dataset_id": "995327",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/995327.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T19:08:45.556227+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Lanaittu core mineral composition 1994 (5 records)",
+    "description": "Dataset of five core‑sample observations from the Lanaittu core, all recorded on 1994-01-01 at a single geographic location (latitude 40.2592, longitude 9.5014). Each record includes sediment depth and mineral percentage measurements for major minerals (HM, Transparent, Opaque, Turbid, Zrn, Tur, Rt, Grt, Ep, Brk) as well as a set of trace minerals, together with sample identifiers and comments.",
+    "keywords": [
+      "core sample",
+      "mineral composition",
+      "Lanaittu",
+      "1994",
+      "geology",
+      "depth profile",
+      "sediment",
+      "mineral percentages",
+      "latitude",
+      "longitude",
+      "Portugal"
+    ],
+    "spatialCoverage": {
+      "min_lat": 40.2592,
+      "min_lon": 9.5014,
+      "max_lat": 40.2592,
+      "max_lon": 9.5014
+    },
+    "temporalCoverage": {
+      "from": "1994-01-01T00:00:00+00:00",
+      "to": "1994-01-01T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "sub-second"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/995327_f463aef0e0c549e08bca2855347fd831.jsonl",
+  "runtime_seconds": 206.43,
+  "recovered_from_trace": true,
+  "source_sha256": "55a166a247394730e01afc9265376d9616a986fc44539c18954b2245cfc58954"
+}

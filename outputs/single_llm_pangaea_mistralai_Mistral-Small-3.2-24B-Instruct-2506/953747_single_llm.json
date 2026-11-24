@@ -1,0 +1,46 @@
+{
+  "csv": "953747.csv",
+  "dataset_id": "953747",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8",
+  "contract_sha256": "84e7350431db9e536f8b9d0ba0e4ad0c692a11d1ab095f60c515f2554b1327b9",
+  "prompt_tokens": 2059,
+  "metadata": {
+    "name": "PS122/5_61-35 ROV Quicklook Data",
+    "description": "This dataset contains quicklook images and data from a ROV survey conducted on September 8, 2020, in the Arctic region. The data includes various measurements such as ADCP current and backscatter, DVL, depth profiles, optics, positioning, sea ice draft, telemetry, and pH overview.",
+    "keywords": [
+      "ROV",
+      "Quicklook",
+      "ADCP",
+      "DVL",
+      "Depth Profile",
+      "Optics",
+      "Positioning",
+      "Sea Ice Draft",
+      "Telemetry",
+      "pH",
+      "Arctic",
+      "Survey"
+    ],
+    "spatialCoverage": {
+      "min_lat": 88.675993,
+      "min_lon": 112.324519,
+      "max_lat": 88.675993,
+      "max_lon": 112.324519
+    },
+    "temporalCoverage": {
+      "from": "2020-09-08",
+      "to": "2020-09-08"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 10.978,
+  "status": "ok"
+}

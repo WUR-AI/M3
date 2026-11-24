@@ -1,0 +1,43 @@
+{
+  "dataset_id": "908459",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/908459.csv",
+  "source_sha256": "b08ef1a0c309b4a4def9f5e67e45bd39c8e3237b14d0e69bd9b469b86c4cda96",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T23:26:06.688150+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Ocean acidification experiment on Magallana hongkongensis: carbonate chemistry and shell properties",
+    "description": "Laboratory dataset containing 27 unique treatment conditions for the oyster Magallana hongkongensis, measuring comprehensive carbonate chemistry parameters (pH, pCO2, DIC, alkalinity, saturation states) and a subset of shell physical properties (porosity, stiffness, hardness, density, volume). All samples collected from Zhanjiang, South China Sea on 2016-06-01. Some treatments produce aragonite undersaturation (Omega Arg < 1), relevant for ocean acidification impact studies.",
+    "keywords": [
+      "ocean acidification",
+      "carbonate chemistry",
+      "Magallana hongkongensis",
+      "mollusk",
+      "shell properties",
+      "aragonite saturation",
+      "laboratory experiment",
+      "Zhanjiang",
+      "South China Sea"
+    ],
+    "spatialCoverage": {
+      "min_lat": 21.33333,
+      "min_lon": 110.66667,
+      "max_lat": 21.33333,
+      "max_lon": 110.66667
+    },
+    "temporalCoverage": {
+      "from": "2016-06-01T00:00:00+00:00",
+      "to": "2016-06-01T00:00:00+00:00"
+    },
+    "spatial": "point locations",
+    "temporal": "daily"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/908459_825d9903e7f644688795f00fb6e6b96f.jsonl",
+  "runtime_seconds": 151.77
+}

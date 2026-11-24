@@ -1,0 +1,42 @@
+{
+  "dataset_id": "944025",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/944025.csv",
+  "source_sha256": "a530a26bc0e4fe56a3fdc94260921220a39b3ec5b60be156d609cd00803f6e1c",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-04T00:10:37.443091+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical Sediment Core Analysis from SO268 Cruise Station SO268_043MUC",
+    "description": "Dataset containing geochemical concentrations and enrichment factors for 16 elements (Al, Ba, Ca, Cr, Cu, Fe, K, La, Li, Mg, Mn, Na, Ni, P, Sr, Ti) in shallow sediment sub-samples from Core 20 at Station SO268_043MUC. Includes raw concentrations (ppm), relative enrichment factors, and two variants of normalized concentrations and enrichment factors. All samples collected at a single deep-sea location in the eastern Pacific Ocean on 2019-03-10.",
+    "keywords": [
+      "geochemistry",
+      "sediment core",
+      "enrichment factor",
+      "elemental concentration",
+      "deep-sea",
+      "SO268",
+      "eastern Pacific",
+      "marine geology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.93056667,
+      "min_lon": -117.0224333,
+      "max_lat": 11.93056667,
+      "max_lon": -117.0224333
+    },
+    "temporalCoverage": {
+      "from": "2019-03-10T10:48:26+00:00",
+      "to": "2019-03-10T10:48:26+00:00"
+    },
+    "spatial": "Point location (single station at 11.93°N, 117.02°W)",
+    "temporal": "Single timestamp (2019-03-10 10:48:26 UTC)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/944025_c80cad2c057f4320b98d0116410029f2.jsonl",
+  "runtime_seconds": 205.62
+}

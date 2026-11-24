@@ -1,0 +1,15 @@
+{
+  "csv": "certallum_ebulinum.csv",
+  "dataset_id": "certallum_ebulinum",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b234456ec36a3cdaeb49ce542420989a3260ec0b7aaa787a280f0f24fcbd5b98",
+  "contract_sha256": "a560b66ef319a96d63533cffce327ef79c2f1ac83eb4f80ef2ed1fdb88f0fa3e",
+  "prompt_tokens": 329841,
+  "status": "skipped",
+  "reason": "context_window"
+}

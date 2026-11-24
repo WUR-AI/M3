@@ -1,0 +1,15 @@
+{
+  "dataset_id": "pectocarya_recurvata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/pectocarya_recurvata.csv",
+  "source_sha256": "2c1205162ae0eee5a57bfff2983a6e11d44981c1558d464a4c82db5fb0fea28e",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-17T01:17:20.325650+00:00",
+  "status": "failed",
+  "error": "RuntimeError: Planning failed",
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/pectocarya_recurvata_13a75ac042ff4451af2e796f871d4af1.jsonl",
+  "runtime_seconds": 18.83
+}

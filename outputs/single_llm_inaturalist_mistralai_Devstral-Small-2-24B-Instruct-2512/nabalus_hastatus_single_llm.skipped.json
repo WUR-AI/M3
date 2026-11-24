@@ -1,0 +1,15 @@
+{
+  "csv": "nabalus_hastatus.csv",
+  "dataset_id": "nabalus_hastatus",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "912b7dacd971a10b021861742974bb340282cefc174001edd7dc643ce7e225c1",
+  "contract_sha256": "f0db2b1e22e6f2afdc24f932663e9e2141a0f2eac019e9d8bd400de6ce1da6a7",
+  "prompt_tokens": 306361,
+  "status": "skipped",
+  "reason": "context_window"
+}

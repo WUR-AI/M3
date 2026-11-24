@@ -1,0 +1,53 @@
+{
+  "dataset_id": "953747",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/953747.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T13:14:16.987458+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "ROV Quicklook ADCP Current Backscatter Images for Survey PS122/5_61-35 (2020-09-08)",
+    "description": "A set of 22 image file references captured during a single ROV survey event (PS122/5_61-35) on 2020-09-08. Each record includes the image filename (Binary) and constant contextual metadata: date, survey ID, event ID, latitude 88.675993° N, longitude 112.324519° E, and elevation -4291.4 m. The dataset provides quick‑look visualisation of ADCP backscatter for quality‑control or visual inspection.",
+    "keywords": [
+      "ROV",
+      "ADCP",
+      "quicklook",
+      "current",
+      "backscatter",
+      "image",
+      "binary",
+      "filename",
+      "survey",
+      "PS122",
+      "2020-09-08",
+      "Arctic",
+      "latitude 88.675993",
+      "longitude 112.324519",
+      "elevation",
+      "point",
+      "oceanography",
+      "marine"
+    ],
+    "spatialCoverage": {
+      "min_lat": 88.675993,
+      "min_lon": 112.324519,
+      "max_lat": 88.675993,
+      "max_lon": 112.324519
+    },
+    "temporalCoverage": {
+      "from": "2020-09-08T00:00:00+00:00",
+      "to": "2020-09-08T00:00:00+00:00"
+    },
+    "spatial": "point",
+    "temporal": "single-day"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/953747_7bbf9c668963424091aa693c34d3a0b5.jsonl",
+  "runtime_seconds": 127.96,
+  "recovered_from_trace": true,
+  "source_sha256": "35f76dbea6a7676c9be07833144508e05fda28c21b02e330bdf90b5d14ca77a8"
+}

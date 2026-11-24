@@ -1,0 +1,39 @@
+{
+  "csv": "978983.csv",
+  "dataset_id": "978983",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "05796dc88bde719543668f6a679b7f1d42585b80cf67f66c1e0ae382e4d84a59",
+  "contract_sha256": "3363c2ef1534450a532c77f5c50e8a61cff72a5151667484fab7bbcacf86a415",
+  "prompt_tokens": 2812,
+  "metadata": {
+    "name": "978983",
+    "description": "This dataset contains mineralogical and geochemical data from sediment samples collected during a scientific drilling expedition. The data includes various mineral compositions, sample labels, and geographic coordinates.",
+    "keywords": [
+      "mineralogy",
+      "geochemistry",
+      "sediment",
+      "drilling",
+      "scientific expedition"
+    ],
+    "spatialCoverage": {
+      "min_lat": 36.89168333,
+      "min_lon": 143.4078833,
+      "max_lat": 36.89168333,
+      "max_lon": 143.4078833
+    },
+    "temporalCoverage": {
+      "from": "2021-05-30",
+      "to": "2021-05-30"
+    },
+    "spatial": "point locations",
+    "temporal": "single day"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 8.357,
+  "status": "ok"
+}

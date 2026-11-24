@@ -1,0 +1,38 @@
+{
+  "csv": "971851.csv",
+  "dataset_id": "971851",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "42cdb96eef3241687623ef53723b82760d008e722fbc8dfad25b6c756041cb13",
+  "contract_sha256": "86491fced18b3f094d53e260bd24449976ecc82183944a3ec4e8a6e7f79b75e0",
+  "prompt_tokens": 39107,
+  "metadata": {
+    "name": "Paleomagnetic Virtual Geomagnetic Pole measurements",
+    "description": "A collection of paleomagnetic observations from sediment cores, providing depth, magnetic declination, inclination, Kappa values, VGP (Virtual Geomagnetic Pole) latitude and longitude, and associated uncertainties for each sample.",
+    "keywords": [
+      "paleomagnetism",
+      "virtual geomagnetic pole",
+      "VGP",
+      "declination",
+      "inclination",
+      "sediment core",
+      "geophysics"
+    ],
+    "spatialCoverage": {
+      "min_lat": 50.62362773,
+      "min_lon": -178.9145776,
+      "max_lat": 85.98467611,
+      "max_lon": 179.675696
+    },
+    "temporalCoverage": null,
+    "spatial": null,
+    "temporal": null
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 61.577,
+  "status": "ok"
+}

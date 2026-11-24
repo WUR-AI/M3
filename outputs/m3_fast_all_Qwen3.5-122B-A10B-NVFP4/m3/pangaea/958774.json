@@ -1,0 +1,42 @@
+{
+  "dataset_id": "958774",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/958774.csv",
+  "source_sha256": "9b04d58450b02d304d58de3d5de5025fcaf4cc553598b5ff16510d00e4333ea1",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-16T21:27:15.175365+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Total Phosphorus Concentrations in Lake Constance (1951-2010)",
+    "description": "Long-term environmental monitoring dataset of Total Phosphorus (TP) concentrations at a fixed station in Lake Constance (Fischbach-Uttwil). The data spans 1951 to 2010 and includes two distinct sampling regimes: shallow upper-column sampling (0-20m) during summer stratification (July-September) and deep full-column sampling (0-250m) during winter mixing periods.",
+    "keywords": [
+      "Total Phosphorus",
+      "TP",
+      "Lake Constance",
+      "Water Quality",
+      "Environmental Monitoring",
+      "Fischbach-Uttwil",
+      "Nutrient Concentration",
+      "Limnology"
+    ],
+    "spatialCoverage": {
+      "min_lat": 47.6240037651,
+      "min_lon": 9.3754994815,
+      "max_lat": 47.6240037651,
+      "max_lon": 9.3754994815
+    },
+    "temporalCoverage": {
+      "from": "1951-01-01",
+      "to": "2010-12-31"
+    },
+    "spatial": "Point (Single fixed monitoring station)",
+    "temporal": "Annual"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/958774_dda92b88782f4b27bd2bc3d08d390277.jsonl",
+  "runtime_seconds": 480.36
+}

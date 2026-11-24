@@ -1,0 +1,29 @@
+{
+  "dataset_id": "capsus_ater",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/capsus_ater.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T19:26:12.931958+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 37.179198,
+      "min_lon": -125.045178,
+      "max_lat": 63.839065,
+      "max_lon": 60.294843
+    },
+    "temporalCoverage": {
+      "from": "1996-07-06T09:32:28+00:00",
+      "to": "2026-06-14T19:01:22+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/capsus_ater_2d377c877ba04fbbab0a16364faf185d.jsonl",
+  "runtime_seconds": 101.48,
+  "recovered_from_trace": true,
+  "source_sha256": "b5ae8c8b23df0476c417aa444aaae4e37a5ab5a3782472e6cd6d830a7bb9d711"
+}

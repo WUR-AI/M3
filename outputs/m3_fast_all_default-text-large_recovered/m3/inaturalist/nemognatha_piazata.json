@@ -1,0 +1,29 @@
+{
+  "dataset_id": "nemognatha_piazata",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/nemognatha_piazata.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-03T20:24:02.897968+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 21.157906,
+      "min_lon": -112.713959,
+      "max_lat": 50.87664,
+      "max_lon": -78.840473
+    },
+    "temporalCoverage": {
+      "from": "1932-08-06T13:45:00+00:00",
+      "to": "2026-06-14T09:33:07+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/nemognatha_piazata_10744490fa3d4426bbcc1f89137331c6.jsonl",
+  "runtime_seconds": 74.52,
+  "recovered_from_trace": true,
+  "source_sha256": "07e210698659a6a3aed8a882bb3dbb2a24c71b67eee91b06f79d6e96fa8d37be"
+}

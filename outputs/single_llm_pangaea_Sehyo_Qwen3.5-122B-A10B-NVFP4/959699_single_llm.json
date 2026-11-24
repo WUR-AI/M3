@@ -1,0 +1,39 @@
+{
+  "csv": "959699.csv",
+  "dataset_id": "959699",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Sehyo/Qwen3.5-122B-A10B-NVFP4",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "d87404ae4cb54d2c047cc4dfa914442133bcd62fd72d51157bfe09e65bddd118",
+  "contract_sha256": "f8b3ee766cee25b293602d273be33a97acd7b6fa44366da223bb9089e2e8cbb6",
+  "prompt_tokens": 1101,
+  "metadata": {
+    "name": "PLDS04MV-109BX Mn Nodule Geochemical Data",
+    "description": "Geochemical composition data for Manganese (Mn) nodules collected at a single location in the Pacific Ocean. The dataset includes elemental concentrations (Al, Si, Ca, Mn, Fe, Co, Ni, Cu, Zn, Ba, Sc, Sb, La, Ce, Nd, Sm, Eu, Tb, Ho, Yb, Lu, Hf, Th, U) for different sample types (topside, underside, bulk) taken from a nodule at a depth of 4722 meters.",
+    "keywords": [
+      "Mn nodule",
+      "Geochemistry",
+      "Trace elements",
+      "Pacific Ocean",
+      "Sediment"
+    ],
+    "spatialCoverage": {
+      "min_lat": 11.072,
+      "min_lon": -140.047,
+      "max_lat": 11.072,
+      "max_lon": -140.047
+    },
+    "temporalCoverage": {
+      "from": "1976-08-27",
+      "to": "1976-08-27"
+    },
+    "spatial": "point locations",
+    "temporal": "single date"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 3.149,
+  "status": "ok"
+}

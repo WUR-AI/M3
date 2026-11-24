@@ -1,0 +1,16 @@
+{
+  "csv": "956208.csv",
+  "dataset_id": "956208",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 86,
+  "n_columns": 23,
+  "description": "Observational marine specimen dataset (2012‑2021) with 86 records of location, gear, depth, and fish morphometrics.",
+  "dataset_description": "Observational Earth environmental measurements spanning 2012‑2021, containing 86 records in one table.",
+  "runtime_seconds": 145.781,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/956208/dictionary.json"
+}

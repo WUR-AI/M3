@@ -1,0 +1,16 @@
+{
+  "csv": "987068.csv",
+  "dataset_id": "987068",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 23,
+  "n_columns": 8,
+  "description": "Single‑timestamp environmental measurements of sediment depth",
+  "dataset_description": "Earth environmental measurements captured at a single timestamp, comprising 23 records in one table.",
+  "runtime_seconds": 22.97,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/987068/dictionary.json"
+}

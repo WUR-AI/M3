@@ -1,0 +1,28 @@
+{
+  "dataset_id": "rusa_timorensis",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/inaturalist_100_species_1000_obs/inaturalist_100_species_1000_obs/rusa_timorensis.csv",
+  "source_sha256": "6fa0258ffadc6d9cb8c40e67b641c0301b57168b900a8c4f085faeb57ef692b7",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "topology": "fast",
+  "standard": "croissant_inaturalist_standard",
+  "finished_utc": "2026-10-19T11:50:42.197029+00:00",
+  "status": "ok",
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": -36.785755,
+      "min_lon": -50.143602,
+      "max_lat": 4.383618,
+      "max_lon": 166.828412
+    },
+    "temporalCoverage": {
+      "from": "1986-12-28T00:00:00+00:00",
+      "to": "2026-06-13T10:42:26+00:00"
+    }
+  },
+  "plan_steps_count": 2,
+  "steps_completed": 2,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/rusa_timorensis_af2f1c60e9ef44238a39c4082cedb2d4.jsonl",
+  "runtime_seconds": 109.3
+}

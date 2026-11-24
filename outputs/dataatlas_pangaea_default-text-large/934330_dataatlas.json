@@ -1,0 +1,16 @@
+{
+  "csv": "934330.csv",
+  "dataset_id": "934330",
+  "method": "DataAtlas",
+  "dataatlas_version": "0.1.3",
+  "provider": "surf",
+  "model": "default-text-large",
+  "domain": "Earth and environmental science",
+  "n_rows": 27,
+  "n_columns": 14,
+  "description": "Sediment core measurements with depths, ages, uncertainties, and site coordinates for 27 samples.",
+  "dataset_description": "Contains 27 records of Earth and environmental science measurements.",
+  "runtime_seconds": 28.636,
+  "status": "ok",
+  "raw_dictionary": "/home/com3dian/Github/metadata_agent/outputs/dataatlas_pangaea_default-text-large/raw/934330/dictionary.json"
+}

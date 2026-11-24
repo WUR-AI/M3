@@ -1,0 +1,40 @@
+{
+  "csv": "987071.csv",
+  "dataset_id": "987071",
+  "method": "single_llm",
+  "provider": "surf",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "standard": "single_llm_pangaea_standard",
+  "context_window": 262144,
+  "completion_reserve": 4096,
+  "source_sha256": "b4690143ebc5ec763400ac2b7eb71d44dc9beccc60ba63eb82c1d2675efd7843",
+  "contract_sha256": "ca325d5ed211837a284b03b315f030d98eda6a60d3fcad107a99c4b649ef7007",
+  "prompt_tokens": 2416,
+  "metadata": {
+    "name": "Sediment Geochemistry and Stratigraphy from GeoB16320-2",
+    "description": "Dataset containing sediment depth, total organic carbon (TOC), total inorganic carbon (TIC), event ID, geographic coordinates, elevation, and sampling date/time for core GeoB16320-2.",
+    "keywords": [
+      "sediment",
+      "TOC",
+      "TIC",
+      "GeoB16320-2",
+      "carbon",
+      "stratigraphy"
+    ],
+    "spatialCoverage": {
+      "min_lat": 23.838416666667,
+      "min_lon": -87.15005,
+      "max_lat": 23.838416666667,
+      "max_lon": -87.15005
+    },
+    "temporalCoverage": {
+      "from": "2012-03-24",
+      "to": "2012-03-24"
+    },
+    "spatial": "point locations",
+    "temporal": "point in time"
+  },
+  "finish_reason": "stop",
+  "runtime_seconds": 2.03,
+  "status": "ok"
+}

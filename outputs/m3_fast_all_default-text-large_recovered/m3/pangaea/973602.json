@@ -1,0 +1,43 @@
+{
+  "dataset_id": "973602",
+  "csv": "/home/com3dian/Github/metadata_agent/data/experiment/pangaea_datasets/973602.csv",
+  "method": "M3_fast",
+  "provider": "surf",
+  "model": "default-text-large",
+  "topology": "fast",
+  "standard": "pangaea_descriptive_technical_standard",
+  "finished_utc": "2026-10-03T18:14:27.193259+00:00",
+  "status": "ok",
+  "metadata": {
+    "name": "Geochemical oxide composition of two samples from event PS101/186 (collected 2016-10-04)",
+    "description": "Dataset containing weight‑percent analyses of major oxides (SiO2, TiO2, Al2O3, Fe2O3, MnO, MgO, CaO, Na2O, K2O, P2O5) and total percentage for two rock samples, together with Sample ID, Event code, geographic coordinates (latitude 86.961, longitude 55.68667), elevation (-3254 m), and a collection timestamp of 2016-10-04 17:21:00 UTC.",
+    "keywords": [
+      "geochemistry",
+      "oxide composition",
+      "rock sample",
+      "latitude",
+      "longitude",
+      "elevation",
+      "PS101/186",
+      "2016"
+    ],
+    "spatialCoverage": {
+      "min_lat": 86.961,
+      "max_lat": 86.961,
+      "min_lon": 55.68667,
+      "max_lon": 55.68667
+    },
+    "temporalCoverage": {
+      "from": "2016-10-04T17:21:00+00:00",
+      "to": "2016-10-04T17:21:00+00:00"
+    },
+    "spatial": "point (≈0.00001°) – no variation among records",
+    "temporal": "second-level (timestamp includes HH:MM:SS)"
+  },
+  "plan_steps_count": 4,
+  "steps_completed": 4,
+  "trace_path": "/home/com3dian/Github/metadata_agent/outputs/traces/973602_1cce4828961141f5b4ef2056909fbd06.jsonl",
+  "runtime_seconds": 155.54,
+  "recovered_from_trace": true,
+  "source_sha256": "fbdd17a1da291bff3da59cc7371ccf8e55bfb0b47ba5f0e376f7264ea887d8be"
+}

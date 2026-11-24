@@ -1,0 +1,52 @@
+{
+  "csv": "spiranthes_ochroleuca.csv",
+  "dataset_id": "spiranthes_ochroleuca",
+  "method": "react",
+  "provider": "surf",
+  "model": "default-text-large",
+  "standard": "croissant_inaturalist_standard",
+  "context_window": 131072,
+  "completion_reserve": 4096,
+  "source_sha256": "a9bddfa54fd9dd2d5ec0ce3259667796a658dcff4379d127566c46474efed0c4",
+  "contract_sha256": "3e9132b197dcee9e3b8db893576713818c4ae30e78544d9314abdade75e230cb",
+  "prompt_tokens": 1807,
+  "metadata": {
+    "spatialCoverage": {
+      "min_lat": 35.001456,
+      "min_lon": -89.351334,
+      "max_lat": 46.711733,
+      "max_lon": -59.945866
+    },
+    "temporalCoverage": {
+      "from": "1984-09-29T00:00:00+00:00",
+      "to": "2025-11-04T15:36:57+00:00"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "get_context_overview",
+      "args": {
+        "context_key": "spiranthes_ochroleuca"
+      }
+    },
+    {
+      "tool": "get_spatial_extent",
+      "args": {
+        "context_key": "spiranthes_ochroleuca",
+        "resource": "spiranthes_ochroleuca",
+        "lat_column": "decimalLatitude",
+        "lon_column": "decimalLongitude"
+      }
+    },
+    {
+      "tool": "get_temporal_extent",
+      "args": {
+        "context_key": "spiranthes_ochroleuca",
+        "resource": "spiranthes_ochroleuca",
+        "time_column": "eventDate"
+      }
+    }
+  ],
+  "runtime_seconds": 8.127,
+  "status": "ok"
+}
